@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "San Diego Padres vs Chicago Cubs (Baseball)",
+      "tip": "Výhra San Diego Padres",
+      "kurz": "1.83",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Maccabi Tel Aviv vs Besiktas JK (Basketbal)",
+      "tip": "Maccabi Tel Aviv -4.5",
+      "kurz": "1.90",
+      "duvera": "8",
+      "uspesnost": "82 %"
+    },
+    {
+      "zapas": "Flensburg Handewitt vs Granollers (Házená)",
+      "tip": "Flensburg Handewitt -7.5",
+      "kurz": "1.89",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Kiekko Espoo vs TPS Turku (Hokej)",
+      "tip": "Více než 4.5 gólu",
+      "kurz": "1.82",
+      "duvera": "9",
+      "uspesnost": "84 %"
+    },
+    {
+      "zapas": "Bulaid, Ilias vs Visconde, Erick (Bojové sporty)",
+      "tip": "Výhra Bulaid, Ilias",
+      "kurz": "1.81",
+      "duvera": "9",
+      "uspesnost": "86 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Noppert D. vs Joyce R. (Šipky)",
+      "tip": "Výhra Noppert D.",
+      "kurz": "1.56",
+      "duvera": "9",
+      "uspesnost": "88 %"
+    },
+    {
+      "zapas": "Rychenberg vs Tatran Střešovice (Florbal)",
+      "tip": "Výhra Tatran Střešovice",
+      "kurz": "1.50",
+      "duvera": "10",
+      "uspesnost": "92 %"
+    },
+    {
+      "zapas": "Polsko U21 vs Švédsko U21 (Fotbal)",
+      "tip": "Výhra Polsko U21",
+      "kurz": "1.58",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Jiahui Si vs Wilson G. (Snooker)",
+      "tip": "Výhra Jiahui Si",
+      "kurz": "1.58",
+      "duvera": "8",
+      "uspesnost": "79 %"
+    },
+    {
+      "zapas": "Saint Peters Peacocks vs Rider Broncs (Volejbal)",
+      "tip": "Výhra Rider Broncs",
+      "kurz": "1.50",
+      "duvera": "9",
+      "uspesnost": "87 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: San Diego Padres vs Chicago Cubs (Baseball)",
+      "text": "Padres vstupují do úvodního duelu National League Wild-Card série s neskutečným drivem po zisku 17 výher z posledních 20 zápasů základní části. Na kopci v domácím Petco Parku naskočí nezpochybnitelné eso Michael King, jehož dechberoucí forma z druhé poloviny sezony gradovala s hodnotou ERA 2.93 a fantastickými 67 strikeouty na 76.2 směn. Chicagský veterán Matthew Boyd navíc naráží na brutálně produktivní ofenzivu Padres taženou Mannym Machadem, která trestá každou chybu na pálce. V kombinaci s citelně oslabeným bullpenem bez klíčových ramen Justina Steeleho a Bena Browna bude rotace Cubs drtivě deklasována."
+    },
+    {
+      "nadpis": "ZÁPAS: Maccabi Tel Aviv vs Besiktas JK (Basketbal)",
+      "text": "Taktický systém trenéra Odeda Kattashe dostal po letní pauze naprosto elitní parametry díky příchodu špičkových defenzivních jmen jako Daniel Theis, Bonzie Colson a Yam Madar. Izraelský hegemon využívá svého bělehradského azylu v hale Aleksandar Nikolić s maximální efektivitou a diriguje smrtící ofenzivní tempo hry bez cestovní únavy. Systém Besiktase je založen na postupném budování akcí na perimetru, což tvrdě narazí na extrémně atletický celoplošný presink Madara s Colsonem, jenž naprosto eliminuje tureckou rozehrávku. Zřetelná dominance na doskoku podtrhne výhru Maccabi a bezpečně pokryje stanovený handicap pomocí rychlých protiútoků."
+    },
+    {
+      "nadpis": "ZÁPAS: Flensburg Handewitt vs Granollers (Házená)",
+      "text": "Německý hegemon operuje v drtivém ofenzivním tempu a jeho tranzice z precizní obrany nezná v aktuální Evropě adekvátní brzdu. Zcela zásadním prvkem je hluboká a nezraněná rotace domácích – dánští a švédští reprezentanti z křídel trestají fatální ztráty s chirurgickou přesností, navíc trenéři neaplikují absolutně žádný load management klíčových opor. Španělský Granollers postrádá odpovídající silové a výškové parametry uprostřed defenzivního bloku, aby dokázal celých 60 minut stíhat strojové prolínání Flensburgu. Nepropustný gólman domácích nadto sníží efektivitu hostující střelby z devíti metrů na absolutní minimum."
+    },
+    {
+      "nadpis": "ZÁPAS: Kiekko Espoo vs TPS Turku (Hokej)",
+      "text": "Nováček Liigy z Kiekko-Espoo hraje domácí zápasy s extrémním ofenzivním apetitem, což ovšem v Barona Areně pravidelně vede k fatálním propadům defenzivního slotu a naivním chybám v bekčekingu. Na druhé straně TPS Turku prožívá hlubokou krizi v brankovišti, oba brankáři aktuálně vykazují silně podprůměrná data v pokročilé metrice úspěšnosti zákroků nad očekávání. Střední pásmo projíždějí elitní formace obou celků s nulovým odporem, navíc defenzivy extrémně krvácejí při vhazování ve vlastním obranném pásmu. Brutální nedisciplinovanost zaručí enormní množství přesilovek, což vyústí ve snadné prolomení stanovené gólové hranice."
+    },
+    {
+      "nadpis": "ZÁPAS: Bulaid, Ilias vs Visconde, Erick (Bojové sporty)",
+      "text": "Marocký 'The Blade' Ilias Bulaid přináší do oktagonu Contender Series naprosto devastující kickboxerské zázemí z organizace LFL a vykazuje extrémně vysokou úspěšnost obrany proti strhům (takedown defense). Aktuální vládce LFA Erick Visconde disponuje sice vynikajícím jiu-jitsu, ovšem jeho postoj a práce na nohou zůstávají hrubě statické a neakcelerují v kritických momentech rychlých výměn. Bulaid díky obrovské výhodě v explozivitě a brutálním kopům na spodní patro naprosto zlikviduje Brazilcův pokus o kontrolu vzdálenosti. Zápas nekompromisně ukončí tvrdý knockout v první polovině úvodních kol díky Bulaidovu vražednému načasování klinčů."
+    },
+    {
+      "nadpis": "ZÁPAS: Noppert D. vs Joyce R. (Šipky)",
+      "text": "Konzistence Dannyho Nopperta ve skórování drtí jakoukoliv konkurenci, Nizozemcův the 3-dart average se strojově drží v elitním pásmu těsně pod 100 body. Ryan Joyce letos na okruhu naprosto postrádá stabilitu při nahazování trible 20 a spoléhá primárně na záchranné doubly v kritických okamžicích zavírání, což při formátu delšího zápasu přestává fungovat. Drtivý rozdíl ve skórovací síle nedovolí Joycovi vytvořit konstantní tlak na agresivní servis soupeře. Noppert zlikviduje Brita suverénní hrou a potrestá každé jedno minuté triplo naprosto ledovým klidem při exekuci."
+    },
+    {
+      "nadpis": "ZÁPAS: Rychenberg vs Tatran Střešovice (Florbal)",
+      "text": "Pražský Tatran přijíždí do Švýcarska se strojově fungujícím systémem z rukou trenéra Milana Fridricha a drží míček s absolutní dominancí převyšující 65 % herního času. Švýcarský Rychenberg postrádá rychlostní výbavu nutnou pro eliminaci střešovického bezchybného přechodu do útoku a extrémně chybuje pod brutálním systematickým napadáním obránců. Reprezentační ofenzivní formace s Němečkem, Havlasem a Langerem zneužijí statického obranného bloku Švýcarů k nekonečné sérii smrtících krosových přihrávek. Zápas bude představovat jednosměrnou demolici bez jakéhokoliv rizika propadů ze strany nezastavitelného českého suveréna."
+    },
+    {
+      "nadpis": "ZÁPAS: Polsko U21 vs Švédsko U21 (Fotbal)",
+      "text": "Polská reprezentační záloha disponuje mimořádně vysokým ratingem xA (očekávané asistence) a nekompromisně v posledních týdnech přečíslovala všechny předchozí defenzivy v křídelních prostorech. Švédský výběr na podzim fatálně krvácí v organizaci hry zezadu, systémově chybí sehranost stoperů, což kompletně paralyzuje bezpečné zakládání rychlých protiútoků. Systematický a mimořádně hluboký polský presink vygeneruje smrtící ztráty Švédů na samé hranici pokutového území. Domácí ofenzivní komando tyto taktické minely severského bloku chirurgicky ztrestá milimetrovým zakončením z prvního doteku."
+    },
+    {
+      "nadpis": "ZÁPAS: Jiahui Si vs Wilson G. (Snooker)",
+      "text": "Čínský supertalent Si Jiahui předvádí u kulečníkového stolu v aktuální fázi turnajů absolutně elitní breakbuilding s neuvěřitelnou úspěšností potápění atakující 95 %. Gary Wilson se po dlouhé pauze nedokáže vymanit z herní křeče a jeho bídná přesnost u riskantních úvodních náběhů (long pots) neomylně odevzdává stůl rozjetým soupeřům. Jiahui díky fantastické poziční hře s bílou koulí (positional play) nedovolí Angličanovi ani drobný náznak úspěšné taktické defenzivy. Formát zápasu čínský hráč ovládne brutálním skórovacím tlakem a nasází vysoké náběhy hned ve třech úvodních framech."
+    },
+    {
+      "nadpis": "ZÁPAS: Saint Peters Peacocks vs Rider Broncs (Volejbal)",
+      "text": "Hostující Rider Broncs naprosto dominují na síti precizním defenzivním blokem a jejich hlavní ofenzivní zbraň na kůlu vykazuje dechberoucí útočnou efektivitu (hitting percentage) přesahující hodnotu 0.350 bez nevynucených chyb. Univerzitní tým Peacocks navíc dlouhodobě kolabuje v organizaci přihrávky pod tlakem agresivního plachtícího servisu, což likviduje celou jejich rozehrávku k anténkám. Zřetelná fyzická převaha Broncs zablokuje veškeré zoufalé nahrávky Saint Peters putující ze špatného příjmu rovnou do bloku. Hosté naprosto klidně uřídí zápas smrtícím procentem úspěšnosti po ztrátě bodu (sideout)."
+    }
+  ],
+  "vyhodnoceno": false
+}
