@@ -1,0 +1,47 @@
+name: Ranni Sportovni Report (TipovaciBot)
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # Každé ráno v 07:00 našeho letního času
+  workflow_dispatch: # Tlačítko pro ruční spuštění kdykoliv
+
+permissions:
+  contents: write
+
+jobs:
+  analyzuj-zalohuj-a-publikuj:
+    runs-on: ubuntu-latest
+    env:
+      TZ: 'Europe/Prague'
+
+    steps:
+      - name: 1. Stazeni repozitare a archivu
+        uses: actions/checkout@v4
+
+      - name: 2. Nastaveni Pythonu
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 3. Instalace knihoven a prohlizece Playwright
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: 4. Spusteni TipovaciBot
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WA_INSTANCE_ID: ${{ secrets.WA_INSTANCE_ID }}
+          WA_API_TOKEN: ${{ secrets.WA_API_TOKEN }}
+          WA_GROUP_ID: ${{ secrets.WA_GROUP_ID }}
+          GITHUB_PAGES_URL: https://\({{ github.repository_owner }}.github.io/\){{ github.event.repository.name }}
+        run: python main.py
+
+      - name: 5. Ulozeni HTML reportu, zalohy a chyb na GitHub
+        run: |
+          git config user.name "TipovaciBot"
+          git config user.email "bot@tipovacibot.local"
+          touch lekce_z_chyb.txt
+          git add index.html dnesni_report.html archiv/ lekce_z_chyb.txt
+          git diff --staged --quiet || git commit -m "📊 Novy report a vyhodnoceni $(date +'%Y-%m-%d')"
+          git push
