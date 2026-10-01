@@ -737,11 +737,16 @@ def odesli_na_whatsapp(data_json, dne_datum, url_reportu):
 # HLAVNÍ SPOUŠTĚČ SKRIPTU
 # ==========================================
 if __name__ == "__main__":
-    print("🤖 Spouštím TipovaciBot (Krok 0: Učení z chyb -> Krok 1: Fortuna -> Krok 2: AI 3.1 Pro -> Krok 3: HTML & Záloha)...")
+    print("🤖 Spouštím TipovaciBot...")
     vyhodnot_stare_reporty_a_poucit_se()
-    text_nabidky = stahni_nabidku()
-    if len(text_nabidky) > 5000:
-        data = analyzuj_a_vytvor_data(text_nabidky)
-        vytvor_html_zalohuj_a_publikuj(data)
+    
+    dnesni_soubor = f"archiv/{datetime.datetime.now().strftime('%Y-%m-%d')}.html"
+    if os.path.exists(dnesni_soubor):
+        print(f"✅ Report pro dnešní den ({dnesni_soubor}) již v archivu existuje! Přeskakuji stahování, abych nepřepsal dnešní tipy.")
     else:
-        print("⚠️ KRITICKÁ CHYBA: Málo dat ke zpracování.")
+        text_nabidky = stahni_nabidku()
+        if len(text_nabidky) > 5000:
+            data = analyzuj_a_vytvor_data(text_nabidky)
+            vytvor_html_zalohuj_a_publikuj(data)
+        else:
+            print("⚠️ KRITICKÁ CHYBA: Málo dat ke zpracování.")
