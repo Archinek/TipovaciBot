@@ -737,16 +737,32 @@ def odesli_na_whatsapp(data_json, dne_datum, url_reportu):
 # HLAVNÍ SPOUŠTĚČ SKRIPTU
 # ==========================================
 if __name__ == "__main__":
-    print("🤖 Spouštím TipovaciBot...")
-    vyhodnot_stare_reporty_a_poucit_se()
-    
-    dnesni_soubor = f"archiv/{datetime.datetime.now().strftime('%Y-%m-%d')}.html"
-    if os.path.exists(dnesni_soubor):
-        print(f"✅ Report pro dnešní den ({dnesni_soubor}) již v archivu existuje! Přeskakuji stahování, abych nepřepsal dnešní tipy.")
-    else:
-        text_nabidky = stahni_nabidku()
-        if len(text_nabidky) > 5000:
-            data = analyzuj_a_vytvor_data(text_nabidky)
-            vytvor_html_zalohuj_a_publikuj(data)
+    dnesni_datum = datetime.datetime.now().strftime('%Y-%m-%d')
+    cesta_dnesni_json = f"archiv/{dnesni_datum}.json"
+
+    # SPECIÁLNÍ REŽIM: Pokud uživatel na GitHubu zaškrtl "Pouze znovu odeslat WhatsApp"
+    if os.environ.get("RESEND_WA_ONLY") == "true":
+        print("🔄 REŽIM NOUZE: Byla vyžádána pouze znovukomunikace na WhatsApp.")
+        if os.path.exists(cesta_dnesni_json):
+            with open(cesta_dnesni_json, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            odkaz_na_report = f"{github_pages_url}/archiv/{dnesni_datum}.html"
+            odesli_na_whatsapp(data, dnesni_datum, odkaz_na_report)
         else:
-            print("⚠️ KRITICKÁ CHYBA: Málo dat ke zpracování.")
+            print("⚠️ CHYBA: Dnešní JSON soubor ještě neexistuje. Nelze odeslat zprávu.")
+    
+    # STANDARDNÍ REŽIM: Normální ranní běh
+    else:
+        print("🤖 Spouštím TipovaciBot...")
+        vyhodnot_stare_reporty_a_poucit_se()
+        
+        cesta_dnesni_html = f"archiv/{dnesni_datum}.html"
+        if os.path.exists(cesta_dnesni_html):
+            print(f"✅ Report pro dnešní den ({cesta_dnesni_html}) již v archivu existuje! Přeskakuji stahování, abych nepřepsal dnešní tipy.")
+        else:
+            text_nabidky = stahni_nabidku()
+            if len(text_nabidky) > 5000:
+                data = analyzuj_a_vytvor_data(text_nabidky)
+                vytvor_html_zalohuj_a_publikuj(data)
+            else:
+                print("⚠️ KRITICKÁ CHYBA: Málo dat ke zpracování.")
