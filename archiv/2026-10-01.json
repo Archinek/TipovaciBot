@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Dánsko vs Portugalsko (Fotbal)",
+      "tip": "Výhra Portugalsko",
+      "kurz": "2.02",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Hapoel Tel Aviv vs Real Madrid (Basketbal)",
+      "tip": "Výhra Real Madrid",
+      "kurz": "1.82",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Frölunda vs Brynäs (Hokej)",
+      "tip": "Výhra Frölunda",
+      "kurz": "2.22",
+      "duvera": "7",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "KIA Tigers vs KT Wiz (Baseball)",
+      "tip": "Výhra KIA Tigers (včetně extra inningů)",
+      "kurz": "2.11",
+      "duvera": "8",
+      "uspesnost": "78 %"
+    },
+    {
+      "zapas": "Luminosity Gaming vs B8 (Esport CS)",
+      "tip": "Výhra Luminosity Gaming",
+      "kurz": "2.04",
+      "duvera": "8",
+      "uspesnost": "82 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Paris vs Žalgiris Kaunas (Basketbal)",
+      "tip": "Výhra Žalgiris Kaunas",
+      "kurz": "1.64",
+      "duvera": "8",
+      "uspesnost": "78 %"
+    },
+    {
+      "zapas": "Řecko vs Nizozemsko (Fotbal)",
+      "tip": "Více než 2.5 gólu",
+      "kurz": "1.68",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Skelleftea vs Malmö (Hokej)",
+      "tip": "Výhra Skelleftea",
+      "kurz": "1.49",
+      "duvera": "10",
+      "uspesnost": "90 %"
+    },
+    {
+      "zapas": "New Mexico State Aggies vs Western Kentucky Hilltoppers (Americký fotbal)",
+      "tip": "Výhra New Mexico State Aggies (včetně prodloužení)",
+      "kurz": "1.69",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Fnatic vs BIG (Esport CS)",
+      "tip": "Výhra BIG",
+      "kurz": "1.48",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Dánsko vs Portugalsko (Fotbal)",
+      "text": "Sázka na vítězství stojí na ofenzivním potenciálu Portugalska, které diriguje elitní středová řada vedená Brunem Fernandesem a Vitinhou s obrovskou úspěšností přesných přihrávek. Portugalsko disponuje ničivou šíří kádru, přičemž ofenzivní rotace s Diogo Jotou či Gonçalo Ramosem na hrotu funguje naprosto precizně. Dánská defenziva v posledních těžkých zápasech absolutně propadala při bránění křídelních prostor a rychlý přechod hostujícího týmu zkrátka nedokáže pokrýt. Defenzivní struktura Dánska vykazuje značné trhliny, což znamená snadnou cestu k portugalským gólům."
+    },
+    {
+      "nadpis": "ZÁPAS: Hapoel Tel Aviv vs Real Madrid (Basketbal)",
+      "text": "Sázka na vítězství stojí na obrovské fyzické převaze španělského giganta v prostoru vymezeném trestným územím. Real Madrid nastupuje s neprostupným obranným blokem, kde dominuje obrovitý Edy Tavares, který naprosto eliminuje nájezdy do bedny a průměruje přes dva bloky na utkání. Sestavu navíc nedávno vyztužil Ömer Yurtseven, což dodává Madridu luxusní hloubku při ofenzivním i defenzivním doskakování. Hapoel ofenzivně spoléhá na individuality jako Patrick Beverley, nicméně proti systémové obraně Realu bez plynulého pohybu míče zcela vyhoří. Smrtící perimetr Madridu vedený Mariem Hezonjou tuto taktickou bitvu jednoznačně zlomí."
+    },
+    {
+      "nadpis": "ZÁPAS: Frölunda vs Brynäs (Hokej)",
+      "text": "Sázka na domácí celek těží z enormního ofenzivního tlaku a výborné formy talentovaného útočníka Noaha Dower-Nilssona (11 bodů v 19 zápasech). Frölunda vládne lize díky brutálnímu napadání v útočném pásmu a fenomenální úspěšnosti brankáře Larse Johanssona, který si stabilně drží průměr inkasovaných gólů pod hodnotou 2.00 na zápas. Brynäs jakožto nováček soutěže naprosto selhává v disciplíně a neustále sbírá laciná vyloučení. Na ledě fyzicky a systémově hrajícího soupeře hosté neustojí tlak elitních formací a pod lavinou střel se sesypou."
+    },
+    {
+      "nadpis": "ZÁPAS: KIA Tigers vs KT Wiz (Baseball)",
+      "text": "Tento kurz ukrývá masivní hodnotu díky excelentní formě startujícího nadhazovače KIA Tigers Yanga Hyeon-jonga, který tvrdě diriguje strike zónu a drží si fantastický poměr strikeoutů vůči metám zdarma (K/BB přes 3.5). KT Wiz se potýkají s hlubokou krizí elitní části lineupu a pod extrémním tlakem hraje i jejich oslabený bullpen, který pravidelně hasí problémy startérů už před pátou směnou. Lineup Tigers vedený hvězdným třetím metařem Kim Do-youngem disponuje skvělým timingem proti pravorukým nadhazovačům. Rychlost domácích hráčů na metách a agresivní krádeže bází záhy absolutně rozeberou defenzivu Wiz."
+    },
+    {
+      "nadpis": "ZÁPAS: Luminosity Gaming vs B8 (Esport CS)",
+      "text": "Zápas nabízí tvrdou Bet Value na Luminosity Gaming, kteří dokonale stabilizovali sestavu a dramaticky vylepšili exekuci post-plant a retake situací. Zásadní výhodou brazilského celku je obrovsky silný map pool (především Mirage a Inferno), kde dominují díky preciznímu využívání utility a agresivním entry-fragům svého AWPera v úvodních sekundách kola. B8 naopak trpí fatálními výkyvy formy a ztrácejí koncentraci v kritických koncovkách vyrovnaných her. Taktická nevyzrálost ukrajinského týmu se plně projeví prohranými force-buy koly, což v BO3 sérii znamená jejich rychlý konec."
+    },
+    {
+      "nadpis": "ZÁPAS: Paris vs Žalgiris Kaunas (Basketbal)",
+      "text": "Žalgiris nastupuje se svým typickým utaženým tempem hry (pace), které dokonale limituje a frustruje střelecky laděné ofenzivy. Taktický systém trenéra Trinchieriho se stoprocentně opírá o elitní obranu a dominanci na obranném doskoku, kde litevský celek v průměru sebere přes 75 % dostupných míčů. Pařížská ofenziva bude při zataženém postupném útoku absolutně odříznuta od snadných vniků a tým postrádá odpovídající fyzickou sílu v prostoru pod košem. Zarputilý defenzivní styl a precizní perimeter-defense Kaunasu srazí pařížské procento střelby z dálky k hranici 30 %."
+    },
+    {
+      "nadpis": "ZÁPAS: Řecko vs Nizozemsko (Fotbal)",
+      "text": "Sázka na gólové hody se pevně opírá o agresivní křídelní hru Řecka a jejich perfektně nacvičené standardní situace, které stabilně generují hodnotu xG (očekávaných gólů) přes 1.8 na zápas. Nizozemská reprezentace přijíždí s masivní ofenzivní kvalitou zosobněnou hráči jako Cody Gakpo či Xavi Simons, jejichž náběhy do volných prostorů rozbíjejí většinu obranných bloků. Zraněními zdecimovaná nizozemská obranná čtveřice na druhé straně ovšem pravidelně produkuje hrubé individuální chyby při rozehrávce pod tlakem. Oba celky bezpodmínečně praktikují vysoký presink, což zaručuje otevřený fotbal plný smrtících brejků a snadno překonanou hranici tří branek."
+    },
+    {
+      "nadpis": "ZÁPAS: Skelleftea vs Malmö (Hokej)",
+      "text": "Obhájce titulu Skelleftea drží v lize jednoznačnou dominanci díky neuvěřitelně efektivním přesilovkám s úspěšností 28 %, které diriguje elitní tvůrce hry Jonathan Johnson. Malmö vstupuje do utkání kompletně zatavené z extrémně náročného kalendáře a cestovní únavy po back-to-back zátěži, což se nemilosrdně propíše do ztráty dynamiky pohybu v obranném pásmu. Špatné střídání a celkově snížená rychlost na bruslích vyústí u hostů v nutnost tahat za záchrannou brzdu fauly. Domácí ofenzivní komando tyto hrubé mezery nekompromisně potrestá a unaveného soupeře doslova ustřílí."
+    },
+    {
+      "nadpis": "ZÁPAS: New Mexico State Aggies vs Western Kentucky Hilltoppers (Americký fotbal)",
+      "text": "Defenzivní val New Mexico State naprosto drtí běhovou hru protivníků a drží absolutní dominanci na line of scrimmage. Tato brutální taktická převaha neomylně tlačí ofenzivu Hilltoppers k riskantním třetím downům do dlouhé vzdálenosti. Útok Aggies hraje čistě bez ztrát (turnovers) a řídí ho quarterback produkující nejvyzrálejší výkony kariéry prostřednictvím plynulých play-action passů. Hilltoppers aktuálně trpí masivními výpadky na pozicích levého tackla, což vede k nechráněné slepé straně a zničujícímu tlaku (pass-rushi), jenž hostujícího dirigenta ofenzivy absolutně zneškodní."
+    },
+    {
+      "nadpis": "ZÁPAS: Fnatic vs BIG (Esport CS)",
+      "text": "Německý celek BIG se plně vrátil k preciznímu plnění taktických úkolů a nezadržitelně dominuje na svých silných mapách Ancient a Anubis. Jádro týmu řízené zkušeným kapitánem TabseNem předvádí brilantní exekuci útoků plnou bleskových rotací na T-side, kterým chybí účinná obrana. Fnatic se naopak topí v hlubokých problémech, neustále protáčí role hráčů uvnitř serveru a jejich defenzivní default na midu obsahuje hrubé trhliny. Nedostatečná poziční příprava a děravý map pool posílají dezorientovaný Fnatic do jasné porážky proti takto organizované ofenzivě."
+    }
+  ],
+  "vyhodnoceno": false
+}
