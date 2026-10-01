@@ -18,7 +18,7 @@ api_key = os.environ.get("GEMINI_API_KEY")
 wa_instance = os.environ.get("WA_INSTANCE_ID")
 wa_token = os.environ.get("WA_API_TOKEN")
 wa_group_id = os.environ.get("WA_GROUP_ID")
-github_pages_url = os.environ.get("GITHUB_PAGES_URL", "https://tvoje-jmeno.github.io/TipovaciBot")
+github_pages_url = "https://archinek.github.io/TipovaciBot"
 
 client = genai.Client(api_key=api_key)
 
