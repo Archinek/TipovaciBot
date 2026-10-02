@@ -5,35 +5,40 @@
       "tip": "Výhra Portugalsko",
       "kurz": "2.02",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (2:4)"
     },
     {
       "zapas": "Hapoel Tel Aviv vs Real Madrid (Basketbal)",
       "tip": "Výhra Real Madrid",
       "kurz": "1.82",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (102:98)"
     },
     {
       "zapas": "Frölunda vs Brynäs (Hokej)",
       "tip": "Výhra Frölunda",
       "kurz": "2.22",
       "duvera": "7",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "⏳ Nehráno"
     },
     {
       "zapas": "KIA Tigers vs KT Wiz (Baseball)",
       "tip": "Výhra KIA Tigers (včetně extra inningů)",
       "kurz": "2.11",
       "duvera": "8",
-      "uspesnost": "78 %"
+      "uspesnost": "78 %",
+      "vysledek": "❌ PROHRA (5:7)"
     },
     {
       "zapas": "Luminosity Gaming vs B8 (Esport CS)",
       "tip": "Výhra Luminosity Gaming",
       "kurz": "2.04",
       "duvera": "8",
-      "uspesnost": "82 %"
+      "uspesnost": "82 %",
+      "vysledek": "✅ VÝHRA (2:0)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Výhra Žalgiris Kaunas",
       "kurz": "1.64",
       "duvera": "8",
-      "uspesnost": "78 %"
+      "uspesnost": "78 %",
+      "vysledek": "❌ PROHRA (82:78)"
     },
     {
       "zapas": "Řecko vs Nizozemsko (Fotbal)",
       "tip": "Více než 2.5 gólu",
       "kurz": "1.68",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (2:2)"
     },
     {
       "zapas": "Skelleftea vs Malmö (Hokej)",
       "tip": "Výhra Skelleftea",
       "kurz": "1.49",
       "duvera": "10",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "❌ PROHRA (3:4 pp.)"
     },
     {
       "zapas": "New Mexico State Aggies vs Western Kentucky Hilltoppers (Americký fotbal)",
       "tip": "Výhra New Mexico State Aggies (včetně prodloužení)",
       "kurz": "1.69",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (27:13)"
     },
     {
       "zapas": "Fnatic vs BIG (Esport CS)",
       "tip": "Výhra BIG",
       "kurz": "1.48",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (1:2)"
     }
   ],
   "analyzy": [
@@ -115,5 +125,12 @@
       "text": "Německý celek BIG se plně vrátil k preciznímu plnění taktických úkolů a nezadržitelně dominuje na svých silných mapách Ancient a Anubis. Jádro týmu řízené zkušeným kapitánem TabseNem předvádí brilantní exekuci útoků plnou bleskových rotací na T-side, kterým chybí účinná obrana. Fnatic se naopak topí v hlubokých problémech, neustále protáčí role hráčů uvnitř serveru a jejich defenzivní default na midu obsahuje hrubé trhliny. Nedostatečná poziční příprava a děravý map pool posílají dezorientovaný Fnatic do jasné porážky proti takto organizované ofenzivě."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "5 výher / 4 prohry / 1 nehráno (Úspěšnost 56 %)",
+  "nove_lekce": [
+    "[2026-10-01] POZOR - Basketbal (Real Madrid): Sázení na favorita s údajnou obří fyzickou převahou pod košem narazilo na katastrofální první poločas (43:63 z pohledu Realu). Tým absolutně nedokázal zachytit rychlý nástup outsidera a stíhací jízda ho stála příliš sil. Ponaučení: Nepřeceňovat jména a fyzické parametry při kolísavé psychice a špatných vstupech do zápasů.",
+    "[2026-10-01] POZOR - Baseball (KIA Tigers): Analýza hrubě podcenila ofenzivní tahouny soupeře. Sam Hilliard z KT Wiz ukázal excelentní formu (41. homerun) a oslabený bullpen KIA Tigers v klíčových momentech absolutně zkolaboval. Zásadní chyba byla také ignorace masivní motivace KT Wiz bojujících o play-off. Ponaučení: Vždy zohlednit tzv. motivaci pro magic number a vliv jednotlivců s extrémní fazónou.",
+    "[2026-10-01] POZOR - Basketbal (Žalgiris Kaunas): Sázka na pevnou defenzivu selhala kvůli tragickému obrannému doskoku. Litevci povolili Paříži propastných 16 útočných doskoků, což trenér Masiulis přímo označil za hlavní příčinu porážky. Ponaučení: U utažených 'systémových' defenziv je nutné daleko víc pitvat statistiky schopnosti týmů pohlídat si vlastní koš a nedávat druhé šance.",
+    "[2026-10-01] POZOR - Hokej (Skelleftea): Příliš nízký kurz (1.49) nenabídl reálnou Bet Value na výhru v základní hrací době. Očekávaná tvrdá únava soupeře (Malmö) z back-to-back zátěže nakonec nevedla k hladké výhře a zápas došel do prodloužení. Ponaučení: U nízkých kurzů v těžkých evropských ligách (SHL) je potřeba nejvyšší opatrnost, únava z cestování se často maskuje tuhým hlubokým obranným blokem, který vynutí alespoň remízu."
+  ]
 }

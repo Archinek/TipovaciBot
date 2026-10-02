@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Trump J. vs Selby M. (Snooker)",
+      "tip": "Počet framů v zápasu + 7.5",
+      "kurz": "1.82",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Fubon Guardians vs Wei Chuan Dragons (Baseball)",
+      "tip": "Vítěz zápasu včetně extra inningů Wei Chuan Dragons",
+      "kurz": "1.89",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Baskonia Vitoria vs Olimpia Milano (Basketbal)",
+      "tip": "Vítěz zápasu (včetně prodloužení) Olimpia Milano",
+      "kurz": "1.92",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Square Dubrovnik vs Rijeka (Futsal)",
+      "tip": "Výsledek zápasu Rijeka",
+      "kurz": "1.80",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Besiktas JK vs Barcelona (Basketbal)",
+      "tip": "Výsledek zápasu Besiktas JK",
+      "kurz": "1.84",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Humbert U. vs Lehečka J. (Tenis)",
+      "tip": "Vítěz zápasu Lehečka J.",
+      "kurz": "1.50",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Astralis vs FaZe Clan (Esport Counter Strike)",
+      "tip": "Vítěz zápasu FaZe Clan",
+      "kurz": "1.76",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Van Veen G. vs Wade J. (Šipky)",
+      "tip": "Vítěz zápasu Wade J.",
+      "kurz": "1.78",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Tokyo Yakult Swallows vs Yomiuri Giants (Baseball)",
+      "tip": "Vítěz zápasu včetně extra inningů Yomiuri Giants",
+      "kurz": "1.72",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Berrettini M. vs Vallejo A.D. (Tenis)",
+      "tip": "Vítěz zápasu Berrettini M.",
+      "kurz": "1.62",
+      "duvera": "9",
+      "uspesnost": "90 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Trump J. vs Selby M. (Snooker)",
+      "text": "Očekávaná bitva přinese maximální vyrovnanost a zdlouhavý taktický boj. Historie vzájemných zápasů z poslední doby ukazuje obrovskou rezistenci obou hráčů – Selby loni na UK Championship Trumpa udolal 10:8, zatímco Trump letos v Šanghaji zvítězil 6:4. Formát na pět vítězných framů (Best of 9) na World Grand Prix jednoznačně nahrává delšímu průběhu. Trump sice drží pozici světové jedničky a předvádí ofenzivní snooker plný stovek, ale Selbyho hluboká defenziva a schopnost rozkouskovat hru ho zaručeně donutí k chybám. Hranice 7.5 framu (minimálně skóre 5:3) padne zcela jistě."
+    },
+    {
+      "nadpis": "ZÁPAS: Fubon Guardians vs Wei Chuan Dragons (Baseball)",
+      "text": "Fubon Guardians absolutně zkolabovali v druhé polovině CPBL sezony a nechali se přeskočit v boji o wild-card. Naopak Wei Chuan Dragons nasazují do klíčové fáze sezony bývalého nadhazovače MLB Johna Ganta. Gant ukázal excelentní formu v posledním startu, kde odházel šest bezbodových směn a nasázel sedm strikeoutů proti Uni-Lions. Guardians mají v posledních zápasech ofenzivní průměr pouhých 4,4 bodu na utkání a jejich útok na elitní nadhoz soupeře jednoduše nestačí. Motivace a momentální formové momentum stojí striktně na straně hostujícího celku."
+    },
+    {
+      "nadpis": "ZÁPAS: Baskonia Vitoria vs Olimpia Milano (Basketbal)",
+      "text": "Milano přijíždí do Španělska posilněno o čerstvou výhru v derby nad Virtusem Bologna (87:85), podpořenou vynikající distribucí míče od nového rozehrávače Dariuse Thompsona. Baskonia naproti tomu vykazuje katastrofální defenzivní parametry, což jasně dokumentuje drtivá porážka 88:111 od Valencie z minulého kola. Tým navíc strukturálně trpí po nedávném odchodu podkošového pivota Alexe Lena, čímž ztrácí zásadní fyzickou převahu na obranném doskoku. Nepřítomnost Garrisona Mathewse na straně Milana plně kompenzuje hlubší rotace italského celku, který v útoku systematicky potrestá každou mezeru děravé obrany domácích."
+    },
+    {
+      "nadpis": "ZÁPAS: Square Dubrovnik vs Rijeka (Futsal)",
+      "text": "Rijeka vstoupila do sezony s absolutní dominancí. Čerstvě ovládla Futsal Superkup výhrami nad Olmissum (3:2) a Novým Vrijemem (5:2) a v prvním ligovém kole zdolala silný Hajduk 4:2. Square Dubrovnik naopak hned v úvodu tvrdě narazil a prohrál s Novým Vrijemem propastně 3:7. I přes absenci vykartovaného kapitána Sutona má trenér Rijeky Alen Jukić k dispozici extrémně široký a kvalitní kádr – do sestavy se vrací Kamauli a připraven je i pivot Matijević. Defenzivu hostů navíc pevně drží elitní brankář Viktor Saaf. Rijecký ofenzivní tlak prostupnou defenzivu Dubrovníku naprosto rozebere."
+    },
+    {
+      "nadpis": "ZÁPAS: Besiktas JK vs Barcelona (Basketbal)",
+      "text": "Sázka naplno vytěžuje historicky doloženou chybu bookmakerů, kteří vytrvale podceňují ofenzivní potenciál Besiktase. Turecký celek se v nedávné minulosti prezentoval drtivou útočnou fazonou, při které s takřka 60% úspěšností střelby z pole a 25 asistencemi absolutně zničil papírově elitní obranu Maccabi Tel Aviv. Barcelona mívá na venkovních palubovkách masivní problémy s defenzivním doskokem a bráněním perimetru. Aplikace lekce z minulosti velí jasně – nespoléhat na tabulkovou obranu favorita, pokud domácí celek disponuje nabitým kádrem střelců. Besiktas toto střelecké momentum plně zužitkuje."
+    },
+    {
+      "nadpis": "ZÁPAS: Humbert U. vs Lehečka J. (Tenis)",
+      "text": "Jiří Lehečka se po jarním zranění kotníku vrátil na kurty v naprosto dominantní formě. O jeho obrovské kvalitě a adaptaci na tvrdý povrch svědčí nedávná finálová účast z turnaje ve Winston-Salemu. Ugo Humbert sice loni ovládl jejich jediné vzájemné střetnutí v Dubaji (6:3, 6:0), ovšem aktuální superrychlé podmínky v Tokiu Lehečkovi sedí daleko lépe. Český hráč se opírá o mimořádně razantní první podání a diktuje tempo drtivými údery od základní čáry. Humbertova defenziva na tomto povrchu nestihne pokrýt ostré úhly a Lehečka zápas strhne na svou stranu."
+    },
+    {
+      "nadpis": "ZÁPAS: Astralis vs FaZe Clan (Esport Counter Strike)",
+      "text": "Organizace Astralis prochází velmi kritickým obdobím po bolestivé ztrátě klíčových opor (odchody dev1ce a Magiska) a nastupuje se zcela novou, nesehranou sestavou ve složení HooXi, jabbi, phzy, Staehr a ryu. Tento masivní zásah do týmové chemie a naprostý nedostatek elitní palebné síly dává obrovskou výhodu sehranému rosteru FaZe Clanu. Jádro týmu ve složení karrigan, rain, ropz a broky disponuje nepoměrně větší zkušeností z těžkých offline turnajů. Karriganovo precizní taktické čtení hry v roli in-game leadera zajistí FaZe hladkou kontrolu nad map poolem a celkové vítězství."
+    },
+    {
+      "nadpis": "ZÁPAS: Van Veen G. vs Wade J. (Šipky)",
+      "text": "James Wade prokazuje masivní návrat do elitní formy. V polovině září ovládl podnik European Tour ve Flandrech a v aktuálním turnaji v Leicesteru bez problémů přešel přes Buntinga s vynikajícím průměrem 93.20 a patnácti nahozenými 140kami. Zásadní taktickou výhodou je zde těžký formát 'Double In, Double Out', ve kterém je Wade historicky obrovsky silný a vlastní z něj dva tituly. Jeho strojová neomylnost na úvodních doublech vytvoří na Giana van Veena nepřekonatelný tlak. Holanďan hraje tento specifický formát bez potřebných zkušeností a na Wadeovu otevírací přesnost nedokáže včas odpovídat."
+    },
+    {
+      "nadpis": "ZÁPAS: Tokyo Yakult Swallows vs Yomiuri Giants (Baseball)",
+      "text": "Yomiuri Giants aktuálně bojují o úplné čelo v Central League (76 výher, 62 proher) a disponují excelentní formou se 4 jasnými výhrami z posledních 5 zápasů. Jejich nadhoz naprosto dominuje, což perfektně ilustruje nedávný vzájemný zápas z 27. září, ve kterém Giants rozebrali Yakult Swallows propastným rozdílem 11:0 s výhrou Ogasawary. Swallows se potácejí na chvostu tabulky a trpí obrovskými defenzivními výpadky. Masivní motivace Giants zajistit si titulovou pozici nedovolí absolutně žádné zaváhání a ofenzivní síla hostů hladce prolomí oslabený a odevzdaný nadhoz domácích."
+    },
+    {
+      "nadpis": "ZÁPAS: Berrettini M. vs Vallejo A.D. (Tenis)",
+      "text": "Matteo Berrettini prokázal v prvním kole v Tokiu brutální mentální i fyzickou rezistenci, když otočil ztracený zápas proti čerstvému šampionovi z Chengdu, Alejandru Davidovichovi Fokinovi (1:6, 7:6, 6:4). Jeho drtivý první servis a forhend tvoří na místním rychlém asijském hardu neřešitelnou hrozbu. Vallejo sice překvapil hladkou výhrou nad Rafaelem Jodarem, ale jeho pasivnější hra od základní čáry nedisponuje nástroji k odvrácení Berrettiniho soustavného ofenzivního tlaku. Italský tenista se po zraněních dostává do optimální úderové kondice a brutální rozdíl ve zkušenostech rozhodne."
+    }
+  ],
+  "vyhodnoceno": false
+}
