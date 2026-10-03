@@ -5,35 +5,40 @@
       "tip": "Počet framů v zápasu + 7.5",
       "kurz": "1.82",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (5:0)"
     },
     {
       "zapas": "Fubon Guardians vs Wei Chuan Dragons (Baseball)",
       "tip": "Vítěz zápasu včetně extra inningů Wei Chuan Dragons",
       "kurz": "1.89",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (1:2)"
     },
     {
       "zapas": "Baskonia Vitoria vs Olimpia Milano (Basketbal)",
       "tip": "Vítěz zápasu (včetně prodloužení) Olimpia Milano",
       "kurz": "1.92",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (86:76)"
     },
     {
       "zapas": "Square Dubrovnik vs Rijeka (Futsal)",
       "tip": "Výsledek zápasu Rijeka",
       "kurz": "1.80",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (6:4)"
     },
     {
       "zapas": "Besiktas JK vs Barcelona (Basketbal)",
       "tip": "Výsledek zápasu Besiktas JK",
       "kurz": "1.84",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (82:95)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Vítěz zápasu Lehečka J.",
       "kurz": "1.50",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "⏳ Nehráno"
     },
     {
       "zapas": "Astralis vs FaZe Clan (Esport Counter Strike)",
       "tip": "Vítěz zápasu FaZe Clan",
       "kurz": "1.76",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (2:1)"
     },
     {
       "zapas": "Van Veen G. vs Wade J. (Šipky)",
       "tip": "Vítěz zápasu Wade J.",
       "kurz": "1.78",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (0:3)"
     },
     {
       "zapas": "Tokyo Yakult Swallows vs Yomiuri Giants (Baseball)",
       "tip": "Vítěz zápasu včetně extra inningů Yomiuri Giants",
       "kurz": "1.72",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (5:1)"
     },
     {
       "zapas": "Berrettini M. vs Vallejo A.D. (Tenis)",
       "tip": "Vítěz zápasu Berrettini M.",
       "kurz": "1.62",
       "duvera": "9",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "⏳ Nehráno"
     }
   ],
   "analyzy": [
@@ -115,5 +125,14 @@
       "text": "Matteo Berrettini prokázal v prvním kole v Tokiu brutální mentální i fyzickou rezistenci, když otočil ztracený zápas proti čerstvému šampionovi z Chengdu, Alejandru Davidovichovi Fokinovi (1:6, 7:6, 6:4). Jeho drtivý první servis a forhend tvoří na místním rychlém asijském hardu neřešitelnou hrozbu. Vallejo sice překvapil hladkou výhrou nad Rafaelem Jodarem, ale jeho pasivnější hra od základní čáry nedisponuje nástroji k odvrácení Berrettiniho soustavného ofenzivního tlaku. Italský tenista se po zraněních dostává do optimální úderové kondice a brutální rozdíl ve zkušenostech rozhodne."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "2 výhry / 6 proher / 2 nehráno (Úspěšnost 25 %)",
+  "nove_lekce": [
+    "[2026-10-02] SNOOKER: U hráčů ve vrcholné formě (Trump) nepřeceňovat očekávání dlouhého defenzivního boje – ofenzivní dominance může vést k rychlému whitewashi bez ztráty jediného framu.",
+    "[2026-10-02] BASKETBAL: Předchozí defenzivní selhání týmu se nemusí opakovat v domácím prostředí, kde týmy dokážou ožít a těžit z vysoké úspěšnosti střelby k plné kontrole zápasu (Baskonia).",
+    "[2026-10-02] FUTSAL: Těžká prohra u domácího celku z předchozího kola automaticky neznamená trvalou krizi. Naopak často poslouží jako silný motivační impuls k poražení velkého favorita (Square Dubrovnik).",
+    "[2026-10-02] BASKETBAL: Evropská elita (Barcelona) umí odmazat momentum outsiderů bleskovými šňůrami hned v úvodu. Nespoléhat slepě na domnělou chybu bookmakerů a tabulkové předpoklady.",
+    "[2026-10-02] ESPORT CS2: Zprávy o sporech uvnitř týmu a nalomené morálce (FaZe) po předchozích výpadcích mají katastrofální vliv na výsledek i proti papírově nesehranému a nově složenému soupeři.",
+    "[2026-10-02] BASEBALL: Obrovská motivace zajistit si pozici pro titul (Yomiuri) může hráče paradoxně svázat nervozitou a vést k absolutnímu ofenzivnímu selhání proti uvolněně hrajícímu a oslabenému outsiderovi."
+  ]
 }

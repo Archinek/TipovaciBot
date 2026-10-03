@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Red Dragons Pniewy vs Legia Warszawa (Futsal)",
+      "tip": "Výhra Legia Warszawa",
+      "kurz": "1.97",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Aspinall N. vs Price G. (Šipky)",
+      "tip": "Handicap setů Price G. -1.5",
+      "kurz": "2.00",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Vettori, Marvin vs Naurdiev, Ismail (Bojové sporty)",
+      "tip": "Výhra Vettori, Marvin",
+      "kurz": "2.05",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Ortigia vs De Akker Bologna (Vodní pólo)",
+      "tip": "Výhra Ortigia",
+      "kurz": "1.85",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "G2 vs Liquid (Esport Valorant)",
+      "tip": "Výhra G2",
+      "kurz": "1.82",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Humphries L. vs Wade J. (Šipky)",
+      "tip": "Výhra Humphries L.",
+      "kurz": "1.57",
+      "duvera": "10",
+      "uspesnost": "90 %"
+    },
+    {
+      "zapas": "Trump J. vs Yize Wu (Snooker)",
+      "tip": "Výhra Trump J.",
+      "kurz": "1.52",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Astralis vs BIG (Esport Counter Strike)",
+      "tip": "Výhra Astralis",
+      "kurz": "1.59",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Toronto Argonauts vs BC Lions (Americký fotbal)",
+      "tip": "Výhra BC Lions",
+      "kurz": "1.47",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Wks Slask Wroclaw vs Constract Olsztyn (Futsal)",
+      "tip": "Výhra Constract Olsztyn",
+      "kurz": "1.57",
+      "duvera": "10",
+      "uspesnost": "90 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Red Dragons Pniewy vs Legia Warszawa (Futsal)",
+      "text": "Zápas 7. kola polské Fogo Futsal Ekstraklasy má jasného favorita. Red Dragons Pniewy se nachází v hluboké krizi, prohráli všech 6 úvodních zápasů s celkovým hrozivým skóre 12:36. Legia Warszawa těží z vysokého napadání a rychlých brejků, kterými deptá pomalejší soupeře. Domácí defenziva kolabuje pod sebemenším tlakem, což jednoznačně potvrdil i nedávný debakl 4:7 s týmem Futsal Swiecie. Rychlý přechod hostů do útoku a absence klíčových blokařů domácích povede k přesvědčivému bodovému zisku varšavského klubu."
+    },
+    {
+      "nadpis": "ZÁPAS: Aspinall N. vs Price G. (Šipky)",
+      "text": "Nathan Aspinall nastupuje se zjevným handicapem, delší dobu ho omezuje zranění ruky (dartitis) a statisticky se propadl na samotné dno v procentuální úspěšnosti vyhraných legů při vlastním podání. Gerwyn Price disponuje těžkotonážním skórováním, jeho průměry si drží absolutní světové měřítko s hodnotami pravidelně přesahujícími 104 bodů. Zrádný formát World Grand Prix s double-in začátkem nekompromisně trestá jakoukoliv herní nejistotu a technické výpadky na terči. Velšan díky své absolutní skórovací dominanci a pevnějšímu zdraví získá hladké vítězství minimálně s náskokem dvou setů."
+    },
+    {
+      "nadpis": "ZÁPAS: Vettori, Marvin vs Naurdiev, Ismail (Bojové sporty)",
+      "text": "Ismail Naurdiev se posouvá do vyšší váhové kategorie střední váhy, kde narazí na extrémně odolného veterána. Marvin Vettori v kariéře nikdy neprohrál před limitem, disponuje elitní 69% obranou proti takedownům a produkuje neustálý ofenzivní tlak s kadencí 4,74 signifikantních úderů za minutu. Rakušanův lineární pohyb a slabší kardio v pozdějších kolech mu nedovolí udržet krok s Italovým neúnavným chain-wrestlingem u pletiva. Tvrdý stylistický matchup a fyzická dominance stojí jednoznačně na straně zástupce gymu Xtreme Couture."
+    },
+    {
+      "nadpis": "ZÁPAS: Ortigia vs De Akker Bologna (Vodní pólo)",
+      "text": "Domácí Ortigia maximálně těží z výhody specifického venkovního bazénu Paolo Caldarella na Sicílii a disponuje elitním střelcem Lucou Cupidem z americké reprezentace. De Akker Bologna prochází brutálním zápasovým kalendářem spojeným s kvalifikačním turnajem Euro Cupu, kde čelí gigantům typu Jug Dubrovnik a Panathinaikos. Akumulovaná únava z náročného cestování a minimální regenerace fatálně ovlivní jejich návrat do nohou při náročných defenzivních rotacích. Ortigia plně využije fyzické vyčerpanosti hostů a zkontroluje tempo utkání."
+    },
+    {
+      "nadpis": "ZÁPAS: G2 vs Liquid (Esport Valorant)",
+      "text": "Sestava G2 s lídrem Valynem vykazuje v aktuálním map poolu naprostou stabilitu, což potvrdili ziskem prvenství na těžkém turnaji VCT Americas Stage 2. Liquid se dlouhodobě trápí v mid-round callem a jejich taktická flexibilita na straně útoku zůstává silně předvídatelná. Hráči G2 naprosto dominují v retake situacích a drží propracovaný systém tradování fragů, který okamžitě eliminuje ojedinělé individuální výpady soupeře. Taktická převaha trenérského štábu G2 zajistí jejich jednoznačný postup."
+    },
+    {
+      "nadpis": "ZÁPAS: Humphries L. vs Wade J. (Šipky)",
+      "text": "Luke Humphries aktuálně předvádí nejspolehlivější double-in začátky na okruhu s excelentním průměrem pouhých 1,36 šipek na startovní double. James Wade sice v posledních zápasech doručil vysoká čísla, ale ve specifickém formátu Grand Prix rozhoduje absolutní konzistence první návštěvy u terče. Světová jednička disponuje neuvěřitelnou 40,5% úspěšností zavírání a v klíčových momentech nekompromisně trefuje high-checkouty nad 100 bodů. Extrémní přesnost na vnějším kruhu srazí outsidera do kolen dříve, než se dostane do bodovacího rytmu."
+    },
+    {
+      "nadpis": "ZÁPAS: Trump J. vs Yize Wu (Snooker)",
+      "text": "Judd Trump naprosto kontroluje dlouhé formáty zápasů a svou obří dominanci potvrdil nedávnou výhrou 10:6 nad Wu Yizem v prestižním finále Shanghai Masters. Čínský talent sice ukázal kvalitní break-building, ale pod tlakem elitních defenzivních úderů a mistrných safety shots zcela ztrácí přesnost. Trumpův ofenzivní standard nepolevuje, stoly čistí s maximální jistotou a dokáže plynule přepínat mezi tvrdým útokem a taktickým svazováním hry. Bleskové tempo zápasu a obrovské množství zkušeností zaručí britskému hráči hladký postup."
+    },
+    {
+      "nadpis": "ZÁPAS: Astralis vs BIG (Esport Counter Strike)",
+      "text": "Nástup nového in-game leadera cadiaNa okamžitě pozvedl taktickou úroveň dánské sestavy, která navzdory nedávným změnám přestřílela giganty na BLAST World Final. Astralis se opírají o obrovskou palebnou sílu dua jabbi a device, kteří neomylně trestají poziční chyby. Německý celek BIG dlouhodobě doplácí na zdlouhavé adaptace během zápasu, pasivní přístup k map control a extrémně nízkou úspěšnost entry fragů. Ryzí firepower dánského celku kombinovaná s agresivnějším callováním snadno rozboří statický obranný val soupeře."
+    },
+    {
+      "nadpis": "ZÁPAS: Toronto Argonauts vs BC Lions (Americký fotbal)",
+      "text": "Ofenziva BC Lions operuje na historických číslech, kanadskou CFL doslova drtí a průměrně generuje přes 429 net yardů na zápas díky excelentní ruce quarterbacka Nathana Rourkeho. Toronto zásadně oslabilo, jelikož přišlo o klíčového starting quarterbacka Chada Kellyho kvůli zranění krku a v obraně ztratilo elitního backa Tunde Adelekeho. Náhradník Nick Arbuckle nedisponuje kvalitou k přestřelce s explozivní produktivitou hostů, kteří letos pravidelně a hladce překračují třicetibodovou hranici. Výrazná převaha ofenzivní lajny určí destrukci zdecimovaného domácího týmu."
+    },
+    {
+      "nadpis": "ZÁPAS: Wks Slask Wroclaw vs Constract Olsztyn (Futsal)",
+      "text": "Úřadující vicemistr Constract Olsztyn zakončil minulou sezonu s absolutně dominantním poměrem branek 163:70 a nadále určuje ofenzivní trendy nejvyšší polské soutěže. Nováček Śląsk Wrocław nedisponuje kádrem schopným pokrýt tvrdou pivotovou hru a bleskovou rotaci elitních zahraničních posil hostujícího kádru. Fyzická převaha v osobních soubojích 1 na 1 odhalí mezery v nedostatečně zajištěné domácí defenzivě. Rychlost kombinace v útočné třetině zajistí favoritovi pevnou kontrolu nad vývojem skóre od úvodních minut."
+    }
+  ],
+  "vyhodnoceno": false
+}
