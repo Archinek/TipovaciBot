@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Pardubice vs Sparta Praha (Hokej)",
+      "tip": "Výhra Pardubice",
+      "kurz": "1.84",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Litvínov vs Kladno (Hokej)",
+      "tip": "Výhra Litvínov",
+      "kurz": "2.17",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Havířov vs Vsetín (Hokej)",
+      "tip": "Výhra Vsetín",
+      "kurz": "1.80",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Milwaukee Brewers vs San Diego Padres (Baseball)",
+      "tip": "Výhra San Diego Padres",
+      "kurz": "2.18",
+      "duvera": "7",
+      "uspesnost": "70 %"
+    },
+    {
+      "zapas": "Chiba Lotte Marines vs Tohoku Rakuten GE (Baseball)",
+      "tip": "Výhra Chiba Lotte Marines",
+      "kurz": "1.95",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Pardubice vs Ostrava (Florbal)",
+      "tip": "Výhra Pardubice",
+      "kurz": "1.45",
+      "duvera": "9",
+      "uspesnost": "90 %"
+    },
+    {
+      "zapas": "KT Wiz vs Lotte Giants (Baseball)",
+      "tip": "Výhra KT Wiz",
+      "kurz": "1.42",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Chicago Bears vs NY Jets (Americký fotbal)",
+      "tip": "Výhra Chicago Bears",
+      "kurz": "1.53",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Philadelphia Eagles vs LA Rams (Americký fotbal)",
+      "tip": "Výhra LA Rams",
+      "kurz": "1.52",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Chan H. / Kato M. vs Mihalikova T. / Nicholls O. (Tenis)",
+      "tip": "Výhra Mihalikova T. / Nicholls O.",
+      "kurz": "1.73",
+      "duvera": "7",
+      "uspesnost": "70 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Pardubice vs Sparta Praha (Hokej)",
+      "text": "Sázka na vítězství Pardubic stojí na mimořádně silném základu vzájemných zápasů a aktuální formy brankáře. Roman Will vládne brankovišti Dynama, přičemž v posledním měření sil Pardubice naprosto dominovaly a Spartu na venkovním ledě jasně přehrály 4:1. Ofenzivní systém trenéra Filipa Pešána naplno využívá elitní první formaci v čele s Romanem Červenkou a Martinem Kautem. Sparta se potýká s obrovskými výpadky v koncentraci a absence tlaku do brankoviště její ofenzivu v enteria areně zcela vynuluje."
+    },
+    {
+      "nadpis": "ZÁPAS: Litvínov vs Kladno (Hokej)",
+      "text": "Rytíři Kladno se ocitají v těžké personální krizi, kterou narychlo hasí zkouškou kanadského útočníka Ryana McGregora z AHL. Zdravotní masakr v ofenzivních řadách hostů znamená obrovskou trhlinu v jejich systému rozehrávky. Litvínov se doma opírá o precizní ofenzivní výkon bratrů Kašových a stoprocentní tlak do branky. Kladno v posledních třech zápasech nevyhrálo a nedávná ztráta vedení s Plzní i prohra na nájezdy s Mountfieldem definitivně srazily jejich morálku na samotné dno."
+    },
+    {
+      "nadpis": "ZÁPAS: Havířov vs Vsetín (Hokej)",
+      "text": "Kurzová hladina naprosto neodpovídá brutální herní převaze Vsetína v rámci Maxa ligy. Vsetínský tým vyhrál obě nedávná vzájemná utkání, přičemž v Havířově nedovolil domácím absolutně nic a suverénně diktoval tempo. Hostující obrana v čele se zkušenými beky zcela zavírá střední pásmo, zatímco AZ Havířov vykazuje propastné problémy s efektivitou střelby a proměňováním přesilovek. Vsetínský kádr zacílený na špičku tabulky využívá drtivý forčeking, který defenzivě domácích spolehlivě láme vaz."
+    },
+    {
+      "nadpis": "ZÁPAS: Milwaukee Brewers vs San Diego Padres (Baseball)",
+      "text": "Analýza startujících nadhazovačů pro první zápas NLDS odhaluje absolutní výhodu na straně hostů. Michael King přichází na kopec s excelentní sezónní bilancí, ERA 3.21 a propastnými 159 strikeouty, čímž naprosto převyšuje nevyzkoušeného Logana Hendersona na straně Brewers. Ofenziva Padres se opírá o hvězdného Jacksona Merrilla a Mannyho Machada, kteří produkují drtivý tlak na nadhazovače s vysokým procentem silových odpalů. Mladá rotace Milwaukee pod tlakem play-off proti těmto elitním pálkařům spolehlivě zkolabuje."
+    },
+    {
+      "nadpis": "ZÁPAS: Chiba Lotte Marines vs Tohoku Rakuten GE (Baseball)",
+      "text": "Rakuten Golden Eagles figurují na absolutním dně soutěže s tragickou bilancí 57 výher a 83 proher. Chiba Lotte má na domácím stadionu ZOZO Marine k dispozici odpočatý bullpen a obrovskou motivaci potvrdit svou pozici před blížícím se Climax Series. Ofenziva hostů naprosto postrádá údernou sílu, přičemž produkce doběhů v posledních sériích klesla na naprosté minimum. Nadhazovací rotace Rakutenu povoluje soupeřům extrémní množství hitů a domácí Lotte této strukturální chyby v defenzivě bez milosti využije."
+    },
+    {
+      "nadpis": "ZÁPAS: Pardubice vs Ostrava (Florbal)",
+      "text": "Sázka těží z katastrofálního vstupu Ostravy do nového ročníku Livesport Superligy. Ostrava z úvodních čtyř kol vybojovala pouhý jeden bod a disponuje naprosto nejhorší obranou v lize se 41 inkasovanými góly. Pardubičtí Sokoli naopak nabrali obrovské sebevědomí víkendovou výhrou na půdě Kladna a na domácí palubovce haly Dašická představují ofenzivní stroj. Propustná defenziva hostů nedokáže pokrýt rychlé křižné přihrávky a brejkové situace, ve kterých pardubická křídla naprosto dominují."
+    },
+    {
+      "nadpis": "ZÁPAS: KT Wiz vs Lotte Giants (Baseball)",
+      "text": "Zápas má jednoznačného favorita díky obrovské motivaci zajistit si první místo pro play-off. KT Wiz aktuálně drží sérii pěti vítězství v řadě a agresivně redukují tzv. magic number, k čemuž jim včera pomohl nadhazovač Ko Young-pyo čistým shutoutem 5:0. Lotte Giants naopak ztratilo veškerou energii po těžkém zranění lokte u klíčového hráče Jeona Min-jaeho a jejich defenziva je paralyzována. Tým KT Wiz předvádí ofenzivní explozi podpořenou historickým zápisem Choie Won-joona a hosty z Lotte absolutně přejede."
+    },
+    {
+      "nadpis": "ZÁPAS: Chicago Bears vs NY Jets (Americký fotbal)",
+      "text": "Destruktivní zpráva o zranění klíčového running backa Breece Halla s poraněným stehenním svalem absolutně nabourala herní plán New York Jets. Bez Halla postrádá ofenziva jakýkoliv balance, což umožní elitní obraně Chicaga plně se soustředit na pass rush. Bears přistupují k zápasu ve skvělém rozpoložení po dominantní výhře 27:7 nad Philadelphií, kde zafungoval rychlý útočný systém. Obranný val Chicaga vynuluje jednorozměrný útok Jets hned na linii dotyku a zajistí hladké vítězství domácích."
+    },
+    {
+      "nadpis": "ZÁPAS: Philadelphia Eagles vs LA Rams (Americký fotbal)",
+      "text": "Ofenziva Rams masivně posiluje, neboť návrat hvězdného receivera Puky Nacuy představuje pro quarterbacka Matthewa Stafforda absolutní odemčení hřiště. Naopak Eagles přišli o klíčovou zbraň, jelikož receiver DeVonta Smith s jistotou vynechá zápas kvůli vážné trhlině v hamstringu. Obranný systém Philadelphie pod koordinátorem Vicem Fangiem navíc dlouhodobě vykazuje obrovské strukturální nedostatky, kterých ofenzivní play-calling Seana McVaye nekompromisně využije k hladkému zisku yardů po zachycení."
+    },
+    {
+      "nadpis": "ZÁPAS: Chan H. / Kato M. vs Mihalikova T. / Nicholls O. (Tenis)",
+      "text": "Dvojice Mihaliková a Nicholls disponuje špičkovou aktuální formou a excelentní fází sehranosti z tvrdých povrchů, což naplno demonstrovala postupem až do semifinále prestižního turnaje kategorie WTA 1000 v Torontu. Soupeřky Chan a Kato vykazují na letošním asijském turné silnou nekonzistenci na returnu a produkují nadměrné množství nevynucených chyb při přechodech na síť. Britko-slovenský pár těží z vysokého procenta prvního podání a agresivní hrou na síti si zajistí jasnou postupovou převahu."
+    }
+  ],
+  "vyhodnoceno": false
+}

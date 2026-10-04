@@ -5,35 +5,40 @@
       "tip": "Výhra Legia Warszawa",
       "kurz": "1.97",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (6:6)"
     },
     {
       "zapas": "Aspinall N. vs Price G. (Šipky)",
       "tip": "Handicap setů Price G. -1.5",
       "kurz": "2.00",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (2:5)"
     },
     {
       "zapas": "Vettori, Marvin vs Naurdiev, Ismail (Bojové sporty)",
       "tip": "Výhra Vettori, Marvin",
       "kurz": "2.05",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (Na body)"
     },
     {
       "zapas": "Ortigia vs De Akker Bologna (Vodní pólo)",
       "tip": "Výhra Ortigia",
       "kurz": "1.85",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (14:12)"
     },
     {
       "zapas": "G2 vs Liquid (Esport Valorant)",
       "tip": "Výhra G2",
       "kurz": "1.82",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "✅ VÝHRA (2:0)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Výhra Humphries L.",
       "kurz": "1.57",
       "duvera": "10",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "✅ VÝHRA (5:3)"
     },
     {
       "zapas": "Trump J. vs Yize Wu (Snooker)",
       "tip": "Výhra Trump J.",
       "kurz": "1.52",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (10:6)"
     },
     {
       "zapas": "Astralis vs BIG (Esport Counter Strike)",
       "tip": "Výhra Astralis",
       "kurz": "1.59",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (2:1)"
     },
     {
       "zapas": "Toronto Argonauts vs BC Lions (Americký fotbal)",
       "tip": "Výhra BC Lions",
       "kurz": "1.47",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (17:24)"
     },
     {
       "zapas": "Wks Slask Wroclaw vs Constract Olsztyn (Futsal)",
       "tip": "Výhra Constract Olsztyn",
       "kurz": "1.57",
       "duvera": "10",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "❌ PROHRA (4:0)"
     }
   ],
   "analyzy": [
@@ -115,5 +125,11 @@
       "text": "Úřadující vicemistr Constract Olsztyn zakončil minulou sezonu s absolutně dominantním poměrem branek 163:70 a nadále určuje ofenzivní trendy nejvyšší polské soutěže. Nováček Śląsk Wrocław nedisponuje kádrem schopným pokrýt tvrdou pivotovou hru a bleskovou rotaci elitních zahraničních posil hostujícího kádru. Fyzická převaha v osobních soubojích 1 na 1 odhalí mezery v nedostatečně zajištěné domácí defenzivě. Rychlost kombinace v útočné třetině zajistí favoritovi pevnou kontrolu nad vývojem skóre od úvodních minut."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "7 výher / 3 prohry (Úspěšnost 70 %)",
+  "nove_lekce": [
+    "[2026-10-03] POZOR: Futsal (Red Dragons vs Legia) - Nepodceňovat ofenzivní potenciál domácích týmů s nulou na kontě. Tým v krizi hrající doma může předvést nečekanou ofenzivní explozi (6 vstřelených gólů), čímž zaskočí defenzivu výrazného favorita.",
+    "[2026-10-03] POZOR: Bojové sporty (Vettori vs Naurdiev) - Nespoléhat čistě na výškovou a fyzickou převahu favorita. Když soupeř přechází do vyšší váhové kategorie, může si přinést nečekanou úderovou rychlost a sílu, kterou v postoji dokáže rozhodnout kola ve svůj prospěch na body i proti vyhlášeným ranařům s pevnou bradou.",
+    "[2026-10-03] POZOR: Futsal (Śląsk vs Constract) - Úřadující vicemistři a ofenzivní mašiny mohou nečekaně vyhořet. Dobře připravený nováček (Śląsk) dokáže s rychlým gólem perfektně zformovat obranný val a ofenzivu absolutního favorita zcela vynulovat (výsledek 4:0)."
+  ]
 }
