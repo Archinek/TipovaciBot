@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Philadelphia 76ers vs New York Knicks (Basketbal)",
+      "tip": "Handicap v zápasu (vč. prodl.) Philadelphia 76ers (-1.5)",
+      "kurz": "1.81",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Chiba Lotte Marines vs Saitama Seibu Lions (Baseball)",
+      "tip": "Vítěz zápasu včetně extra inningů Chiba Lotte Marines",
+      "kurz": "1.97",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "MKS Bedzin vs Bielsko-Biala (Volejbal)",
+      "tip": "Vítěz zápasu MKS Bedzin",
+      "kurz": "1.85",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "New Orleans vs Atlanta (Americký fotbal)",
+      "tip": "Počet bodů včetně prodloužení + 47.5",
+      "kurz": "1.85",
+      "duvera": "7",
+      "uspesnost": "70 %"
+    },
+    {
+      "zapas": "Rakuten Monkeys vs Fubon Guardians (Baseball)",
+      "tip": "Vítěz zápasu včetně extra inningů Rakuten Monkeys",
+      "kurz": "1.94",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Lehečka J. vs Vacherot V. (Tenis)",
+      "tip": "Vítěz zápasu Lehečka J.",
+      "kurz": "1.50",
+      "duvera": "9",
+      "uspesnost": "90 %"
+    },
+    {
+      "zapas": "Milwaukee Bucks vs Minnesota Timberwolves (Basketbal)",
+      "tip": "Vítěz zápasu (včetně prodloužení) Minnesota Timberwolves",
+      "kurz": "1.48",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Tuik N. vs Harrysson A. (Šipky)",
+      "tip": "Vítěz zápasu Harrysson A.",
+      "kurz": "1.65",
+      "duvera": "7",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Lavked vs EA Copenhagen (Esport Counter Strike)",
+      "tip": "Vítěz zápasu EA Copenhagen",
+      "kurz": "1.40",
+      "duvera": "9",
+      "uspesnost": "90 %"
+    },
+    {
+      "zapas": "FlyQuest vs Natus Vincere (Esport LOL)",
+      "tip": "Vítěz zápasu Natus Vincere",
+      "kurz": "1.64",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Philadelphia 76ers vs New York Knicks (Basketbal)",
+      "text": "Zápas v Etihad Areně je jasně definován obrovskou převahou Philadelphie pod košem. Knicks pod trenérem Mikem Brownem experimentují s extrémním objemem střelby za tři body, což v přípravě vyústilo v tragickou úspěšnost 26,5 %. Absence Trendona Watforda (hamstring) zužuje rotaci Sixers, ovšem návrat Joela Embiida po operaci kolene dává týmu brutální převahu na doskoku proti Townsovi. Tyrese Maxey navíc svým elitním prvním krokem snadno řeže nepřipravenou perimetrovou obranu New Yorku. Podle pravidla z října 2026 o defenzivním doskoku si Philadelphia striktně hlídá vlastní koš a nepovoluje druhé šance."
+    },
+    {
+      "nadpis": "ZÁPAS: Chiba Lotte Marines vs Saitama Seibu Lions (Baseball)",
+      "text": "Marines agresivně útočí na špičku Pacifické ligy a na kopec posílají svého nového esa Atsukiho Taneichiho (147,1 odházených směn, ERA 3.05). Taneichiho nadstandardní fastball dosahující 94 mil za hodinu omezuje pálkaře soupeře na průměr pouhých .236. Seibu Lions se utápí na dně tabulky a postrádají ofenzivní podporu pro startujícího Natsukiho Takeuchiho. Obrovská motivace Marines upevnit si pozici před play-off maže jakýkoliv náznak útlumu, přičemž bullpen Lotte disponuje drtivou úspěšností v zavírání těsných koncovek bez nebezpečí remízových výkyvů."
+    },
+    {
+      "nadpis": "ZÁPAS: MKS Bedzin vs Bielsko-Biala (Volejbal)",
+      "text": "Bedzin se v PlusLize opírá o dominantní obranu na síti a pevnou formu na domácí palubovce. Bielsko-Biala doplácí na vysoké procento nevynucených chyb na servisu a špatnou rotaci při příjmu tvrdých plachtících podání. MKS Bedzin si nedávno připsal suverénní výhru 3:1 nad Spałou, kde exceloval blokářský systém, jenž naprosto eliminoval útočné opory soupeře. Vysoký objem útoků středem sítě ze strany Bedzinu tvrdě trestá propustný blok hostů. Data ofenzivní efektivity jednoznačně favorizují stabilní výkonnost domácích bez výkonnostních propadů."
+    },
+    {
+      "nadpis": "ZÁPAS: New Orleans vs Atlanta (Americký fotbal)",
+      "text": "Divizní bitva v Superdome garantuje explozivní ofenzivní produkci díky návratu rozehrávače Michaela Penixe do sestavy Falcons. Penix minulý týden zničil obranu soupeře pěti touchdowny a probudil receivera Drakea Londona (194 yardů). Obrana Saints je zdecimována zraněními v přední linii – chybí klíčový linebacker Kaden Elliss (lýtko) a elitní rusher Carl Granderson (kotník). New Orleans reaguje maximálním vytížením Alvina Kamary v passové hře (6 targetů v minulém utkání), protože absence Travise Etienna přesouvá těžiště na rychlé skórování a vzdušné přestřelky."
+    },
+    {
+      "nadpis": "ZÁPAS: Rakuten Monkeys vs Fubon Guardians (Baseball)",
+      "text": "Monkeys útočí na první místo druhé poloviny sezony CPBL s bilancí 15-12 a disponují nejdrtivějším středem line-upu v lize. Fubon Guardians naopak po propadu v tabulce vykazují ofenzivní letargii a letos museli sáhnout k propuštění nadhazovače Shunsuke Suzukiho. Dominance veterána Lin Hung-Yua na pálce zajišťuje Monkeys konzistentní tlak na oslabený bullpen Guardians. Nadhazovačský štáb Fubonu kolabuje ve středních směnách, čehož Rakuten využívá k budování nedostižného ofenzivního náskoku."
+    },
+    {
+      "nadpis": "ZÁPAS: Lehečka J. vs Vacherot V. (Tenis)",
+      "text": "Jiří Lehečka nastupuje do tokijského turnaje v životní formě po dominantních výhrách nad Sheltonem a Tienem v Davis Cupu. Vacherot sice ovládl jejich poslední vzájemný zápas na halovém podniku v Paříži, ale venkovní tvrdý povrch a Lehečkův agresivní return od základní čáry zcela mění dynamiku utkání. Monacký tenista se opírá primárně o první servis, který Lehečka díky skvělému načasování striktně neutralizuje. Stabilní konzistence českého hráče v delších výměnách nedovoluje outsiderovi převzít kontrolu nad tempem zápasu."
+    },
+    {
+      "nadpis": "ZÁPAS: Milwaukee Bucks vs Minnesota Timberwolves (Basketbal)",
+      "text": "Timberwolves disponují v přípravě obrovskou výhodu v širší lavičce, která drží drtivé tempo i po vystřídání základní pětky. I přes absenci Anthonyho Edwardse (udržovací režim pravého chodidla) nasazuje Minnesota elitní obránce na perimetru v čele s McDanielsem, kteří kompletně otupují střelbu Bucks. Milwaukee pod novým systémem trpí častými výpadky v defenzivní tranzici a otevírá prostor pro rychlé protiútoky soupeře. Fyzické parametry Milwaukee v podkošovém prostoru ztrácí na významu kvůli katastrofálním vstupům do utkání a pomalé defenzivní rotaci."
+    },
+    {
+      "nadpis": "ZÁPAS: Tuik N. vs Harrysson A. (Šipky)",
+      "text": "Švédský veterán Andreas Harrysson ovládl v posledních letech hned čtyři turnaje Nordic & Baltic Tour a drží si stabilní průměr přes 83 bodů na tři šipky. Zásadním faktorem v tomto formátu na zisk legů je Harryssonova vynikající 42,38% úspěšnost zavírání, čímž tvrdě trestá zaváhání soupeřů. Tuik postrádá konzistenci při vysokých checkoutech a pod tlakem pravidelně míjí klíčové doubly. Při vědomí lekce o timingu se sázka bezpečně opírá o švédskou chladnokrevnost v kritických momentech zavírání legů."
+    },
+    {
+      "nadpis": "ZÁPAS: Lavked vs EA Copenhagen (Esport Counter Strike)",
+      "text": "Evropská CS sestava EA Copenhagen těží z hlubokého map poolu a precizní koordinace při exekuci smoke strategií. Lavked hrají extrémně reaktivně a postrádají iniciativu v úvodních fragových soubojích na klíčových chokepointech. Kodaňský celek bezchybně trestá přečíslení a drží si vysokou ekonomickou stabilitu na CT straně. Tým nastupuje v naprosté herní pohodě bez vnitřních sporů, čímž nesehraný roster Lavked s přehledem přehrává čistým taktickým průstřelem."
+    },
+    {
+      "nadpis": "ZÁPAS: FlyQuest vs Natus Vincere (Esport LOL)",
+      "text": "Natus Vincere v sérii Demacia Cupu naprosto dominuje díky vynikajícímu objektivnímu macro playi a bezchybné kontrole mapy kolem Dragon pitu. FlyQuest sice produkuje agresivní early game výpady, ale jejich tendence k nesmyslnému overextension ve střední fázi hry silně nahrává disciplinované defenzivě NAVI. Draftová flexibilita evropského týmu okamžitě eliminuje klíčové carry šampiony severoamerického celku. NAVI drží nekompromisní formaci v teamfightech a zápas neúprosně dotahuje do vítězného konce."
+    }
+  ],
+  "vyhodnoceno": false
+}

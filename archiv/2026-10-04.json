@@ -5,35 +5,40 @@
       "tip": "Výhra Pardubice",
       "kurz": "1.84",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (6:4)"
     },
     {
       "zapas": "Litvínov vs Kladno (Hokej)",
       "tip": "Výhra Litvínov",
       "kurz": "2.17",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (2:3p)"
     },
     {
       "zapas": "Havířov vs Vsetín (Hokej)",
       "tip": "Výhra Vsetín",
       "kurz": "1.80",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (4:3sn)"
     },
     {
       "zapas": "Milwaukee Brewers vs San Diego Padres (Baseball)",
       "tip": "Výhra San Diego Padres",
       "kurz": "2.18",
       "duvera": "7",
-      "uspesnost": "70 %"
+      "uspesnost": "70 %",
+      "vysledek": "⏳ Nehráno"
     },
     {
       "zapas": "Chiba Lotte Marines vs Tohoku Rakuten GE (Baseball)",
       "tip": "Výhra Chiba Lotte Marines",
       "kurz": "1.95",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "✅ VÝHRA (3:2)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Výhra Pardubice",
       "kurz": "1.45",
       "duvera": "9",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "✅ VÝHRA (6:5)"
     },
     {
       "zapas": "KT Wiz vs Lotte Giants (Baseball)",
       "tip": "Výhra KT Wiz",
       "kurz": "1.42",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (2:2)"
     },
     {
       "zapas": "Chicago Bears vs NY Jets (Americký fotbal)",
       "tip": "Výhra Chicago Bears",
       "kurz": "1.53",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (23:12)"
     },
     {
       "zapas": "Philadelphia Eagles vs LA Rams (Americký fotbal)",
       "tip": "Výhra LA Rams",
       "kurz": "1.52",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (24:20)"
     },
     {
       "zapas": "Chan H. / Kato M. vs Mihalikova T. / Nicholls O. (Tenis)",
       "tip": "Výhra Mihalikova T. / Nicholls O.",
       "kurz": "1.73",
       "duvera": "7",
-      "uspesnost": "70 %"
+      "uspesnost": "70 %",
+      "vysledek": "⏳ Nehráno"
     }
   ],
   "analyzy": [
@@ -115,5 +125,11 @@
       "text": "Dvojice Mihaliková a Nicholls disponuje špičkovou aktuální formou a excelentní fází sehranosti z tvrdých povrchů, což naplno demonstrovala postupem až do semifinále prestižního turnaje kategorie WTA 1000 v Torontu. Soupeřky Chan a Kato vykazují na letošním asijském turné silnou nekonzistenci na returnu a produkují nadměrné množství nevynucených chyb při přechodech na síť. Britko-slovenský pár těží z vysokého procenta prvního podání a agresivní hrou na síti si zajistí jasnou postupovou převahu."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "5 výher / 3 prohry / 2 nehráno (Úspěšnost 62.5 %)",
+  "nove_lekce": [
+    "[2026-10-04] POZOR (Litvínov vs Kladno): Domácí favorit ztratil koncentraci po slibném vedení 2:0 a začal pasivně bránit. Pravidlo: Nepřeceňovat dvoubrankové vedení týmů s labilnější defenzivou proti houževnatým outsiderům; zápasy mají tendenci se otáčet.",
+    "[2026-10-04] POZOR (Havířov vs Vsetín): Jasný lídr soutěže ztratil výhru inkasováním pouhé 3 sekundy před koncem základní hrací doby při power-play soupeře. Pravidlo: U silných kurzových favoritů hrozí ztráta koncentrace v úplném závěru – pro minimalizaci rizika volit sázku 'Vítěz do rozhodnutí'.",
+    "[2026-10-04] POZOR (KT Wiz vs Lotte Giants): Zápas skončil v asijském baseballu zřídkavou remízou 2:2, čímž propadla sázka na čistou výhru favorita s aktuálně nejlepší formou. Pravidlo: V KBO je nutné počítat s rizikem remízy a náhlého ofenzivního útlumu i u elitních celků; u nižších kurzů je bezpečnější trh Draw-No-Bet (bez remízy)."
+  ]
 }
