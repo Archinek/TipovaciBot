@@ -5,35 +5,40 @@
       "tip": "Handicap v zápasu (vč. prodl.) Philadelphia 76ers (-1.5)",
       "kurz": "1.81",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (120:97)"
     },
     {
       "zapas": "Chiba Lotte Marines vs Saitama Seibu Lions (Baseball)",
       "tip": "Vítěz zápasu včetně extra inningů Chiba Lotte Marines",
       "kurz": "1.97",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (1:7)"
     },
     {
       "zapas": "MKS Bedzin vs Bielsko-Biala (Volejbal)",
       "tip": "Vítěz zápasu MKS Bedzin",
       "kurz": "1.85",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "⏳ Nehráno"
     },
     {
       "zapas": "New Orleans vs Atlanta (Americký fotbal)",
       "tip": "Počet bodů včetně prodloužení + 47.5",
       "kurz": "1.85",
       "duvera": "7",
-      "uspesnost": "70 %"
+      "uspesnost": "70 %",
+      "vysledek": "✅ VÝHRA (24:45)"
     },
     {
       "zapas": "Rakuten Monkeys vs Fubon Guardians (Baseball)",
       "tip": "Vítěz zápasu včetně extra inningů Rakuten Monkeys",
       "kurz": "1.94",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "⏳ Nehráno"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Vítěz zápasu Lehečka J.",
       "kurz": "1.50",
       "duvera": "9",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "✅ VÝHRA (2:0)"
     },
     {
       "zapas": "Milwaukee Bucks vs Minnesota Timberwolves (Basketbal)",
       "tip": "Vítěz zápasu (včetně prodloužení) Minnesota Timberwolves",
       "kurz": "1.48",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (97:116)"
     },
     {
       "zapas": "Tuik N. vs Harrysson A. (Šipky)",
       "tip": "Vítěz zápasu Harrysson A.",
       "kurz": "1.65",
       "duvera": "7",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (4:1)"
     },
     {
       "zapas": "Lavked vs EA Copenhagen (Esport Counter Strike)",
       "tip": "Vítěz zápasu EA Copenhagen",
       "kurz": "1.40",
       "duvera": "9",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "✅ VÝHRA (0:2)"
     },
     {
       "zapas": "FlyQuest vs Natus Vincere (Esport LOL)",
       "tip": "Vítěz zápasu Natus Vincere",
       "kurz": "1.64",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (0:2)"
     }
   ],
   "analyzy": [
@@ -115,5 +125,10 @@
       "text": "Natus Vincere v sérii Demacia Cupu naprosto dominuje díky vynikajícímu objektivnímu macro playi a bezchybné kontrole mapy kolem Dragon pitu. FlyQuest sice produkuje agresivní early game výpady, ale jejich tendence k nesmyslnému overextension ve střední fázi hry silně nahrává disciplinované defenzivě NAVI. Draftová flexibilita evropského týmu okamžitě eliminuje klíčové carry šampiony severoamerického celku. NAVI drží nekompromisní formaci v teamfightech a zápas neúprosně dotahuje do vítězného konce."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "6 výher / 2 prohry / 2 nehráno (Úspěšnost 75 % z odehraných zápasů)",
+  "nove_lekce": [
+    "[2026-10-05] POZOR (Chiba Lotte Marines vs Saitama Seibu Lions): Zásadní faktická chyba v analýze motivace a tabulkového postavení! Bot mylně tvrdil, že Seibu Lions jsou odevzdaní na dně tabulky. Ve skutečnosti Seibu bojovalo o cenné 2. místo v Pacifické lize, které si drtivou výhrou 7:1 (s explozí 4 doběhů v 9. směně) zajistilo, čímž získalo výhodu domácího prostředí pro play-off. Lekce: Ke konci základní části je naprosto kritické ověřovat přesnou postupovou matematiku, nikoliv spoléhat na zastaralý odhad nálady v týmu.",
+    "[2026-10-05] POZOR (Tuik N. vs Harrysson A.): Slepé spoléhání na dlouhodobou statistiku zavírání (42,38 %) favorita. V ultrakrátkém formátu Modus Super Series (hrálo se jen na 4 vítězné legy) se historické dlouhodobé průměry smazávají a do hry vstupuje mnohem vyšší varianc. Papírový outsider Tuik dokázal švédského favorita bez problémů přejet poměrem 4:1. Lekce: V krátkých šipkařských formátech typu Best of 7 zohlednit vyšší varianci a nesázet jen na základě dlouhodobých sezónních průměrů."
+  ]
 }

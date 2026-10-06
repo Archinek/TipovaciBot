@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Vakifbank vs Eczacibasi (Volejbal)",
+      "tip": "Více než 179.5 bodů",
+      "kurz": "1.87",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "AK Bars Kazan vs HC Victor Stavropol (Házená)",
+      "tip": "Handicap HC Victor Stavropol -3.5",
+      "kurz": "1.93",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Moreira Junior, Roque Conceicao vs Chavez, Alexander (Bojové sporty)",
+      "tip": "Výhra Chavez A.",
+      "kurz": "1.89",
+      "duvera": "8",
+      "uspesnost": "78 %"
+    },
+    {
+      "zapas": "Tuik N. vs Heneghan C. (Šipky)",
+      "tip": "Výhra Tuik N.",
+      "kurz": "2.32",
+      "duvera": "7",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Natus Vincere vs Team Falcons (Esport CS)",
+      "tip": "Výhra Natus Vincere",
+      "kurz": "2.40",
+      "duvera": "8",
+      "uspesnost": "76 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Djokovic N. vs De Minaur A. (Tenis)",
+      "tip": "Výhra Djokovic N.",
+      "kurz": "1.56",
+      "duvera": "9",
+      "uspesnost": "88 %"
+    },
+    {
+      "zapas": "Muchová K. vs Osaka N. (Tenis)",
+      "tip": "Výhra Muchová K.",
+      "kurz": "1.70",
+      "duvera": "8",
+      "uspesnost": "82 %"
+    },
+    {
+      "zapas": "G2 Esports vs PARIVISION (Esport CS)",
+      "tip": "Výhra G2 Esports",
+      "kurz": "1.62",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Hanshin Tigers vs Hiroshima Toyo Carp (Baseball)",
+      "tip": "Výhra Hanshin Tigers",
+      "kurz": "1.48",
+      "duvera": "9",
+      "uspesnost": "86 %"
+    },
+    {
+      "zapas": "Fan Shuhan vs Hayata H. (Stolní tenis)",
+      "tip": "Výhra Hayata H.",
+      "kurz": "1.40",
+      "duvera": "10",
+      "uspesnost": "92 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Vakifbank vs Eczacibasi (Volejbal)",
+      "text": "Turecké ženské derby slibuje masivní ofenzivní smršť, kterou vypsaná hranice 179.5 bodů nepokryje. Eczacibasi staví útok na brutální dominanci Tijany Bošković, která si stabilně drží úspěšnost smečí nad 52 % a z pozice univerzálky spolehlivě proráží soupeřovy trojbloky. Na druhé straně sítě disponuje Vakifbank elitní středovou formací v čele se Zehrou Güneş, jejíž bodové bloky a tvrdé signály středem garantují plynulé ztrátování. Oba týmy navíc vykazují excelentní čísla na přihrávce, což absolutně eliminuje riziko bodových šňůr ze servisu a nevyhnutelně táhne sety do vyčerpávajících koncovek."
+    },
+    {
+      "nadpis": "ZÁPAS: AK Bars Kazan vs HC Victor Stavropol (Házená)",
+      "text": "Kurzové podcenění hostů hrubě nereflektuje reálnou distribuci herní kvality. Stavropol se aktuálně opírá o vynikající formu brankáře Ilji Ivanova, který si v klíčových momentech drží úspěšnost zákroků vysoko nad hranicí 40 %. Hlavním mozkem ofenzivy je Inal Aflitulin, jehož kreativní distribuce míčů na pivoty naprosto dekonstruuje statické obranné systémy týmů typu Kazaně. Domácí AK Bars navíc chronicky trápí extrémně pomalý návrat do obrany po nedohraných útocích, čehož Stavropol nekompromisně využívá prostřednictvím rychlých křídelních trháků."
+    },
+    {
+      "nadpis": "ZÁPAS: Moreira Junior, Roque Conceicao vs Chavez, Alexander (Bojové sporty)",
+      "text": "Alexander Chavez vstupuje do klece s bezchybnou profesionální bilancí 9-0 a dominantním pojetím wrestlingu, kterým diktuje tempo od první sekundy každého kola. Moreira Junior sice představuje teoretické nebezpečí v postoji, avšak jeho propustná obrana proti takedownům se mu v posledním zápase proti Imanolu Rodriguezovi stala osudnou. Chavez dokonale využívá kontrolu u pletiva k postupné degradaci soupeřova kardia a v parteru aplikuje tvrdý ground-and-pound. Brazilský bojovník Moreira nedokáže generovat úderovou sílu z ústupu a pod vytrvalým tlakem ztrácí kontrolu nad oktagonem."
+    },
+    {
+      "nadpis": "ZÁPAS: Tuik N. vs Heneghan C. (Šipky)",
+      "text": "V ultrakrátkém formátu Modus Super Series se zcela mažou dlouhodobé sezónní průměry a do hry vstupuje masivní variance, což sázkařský trh u papírového outsidera Tuika absolutně ignoruje. Niels Tuik drží v ranních session vynikající přesnost a načasování na klíčových doublech, čímž snadno kompenzuje svůj nepatrně nižší skórovací průměr. Conor Heneghan vykazuje prokazatelné známky frustrace při netrefených prvních šipkách do triplu 20 a jeho úspěšnost zavírání pod tlakem rapidně klesá pod 30 %. Analýza jasně velí trestat nízko vypsaný kurz na favorita v zápasech na pouhé čtyři vítězné legy."
+    },
+    {
+      "nadpis": "ZÁPAS: Natus Vincere vs Team Falcons (Esport CS)",
+      "text": "Trh naprosto nepochopitelně favorizuje tým Falcons na úkor NaVi, přestože aktuální taktická příprava ukrajinské organizace pod vedením IGL Aleksiba funguje v Pro League naprosto bezchybně. Natus Vincere si drží elitní kontrolu klíčových zón mapy a b1t vykazuje headshot ratio stabilně přesahující 62 %. Falcons naopak momentálně hrají nesourodě, spoléhají čistě na syrový individuální aim a jejich T-side exekuce postrádají jakoukoliv strategickou hloubku. NaVi díky preciznímu map poolu soupeře takticky přehrají a nekompromisně ztrestají každé riskantní peekování."
+    },
+    {
+      "nadpis": "ZÁPAS: Djokovic N. vs De Minaur A. (Tenis)",
+      "text": "Sázka na vítězství srbské legendy stojí na prokazatelné taktické nadvládě nad tímto soupeřem, o čemž svědčí tvrdá bilance 3-1 na zápasy (naposledy drtivá výhra 3:1 na sety ve Wimbledonu). Djokovičův elitní return dokonale neutralizuje první servis De Minaura, čímž Australana okamžitě nutí do vyčerpávající a pasivní defenzivy od základní čáry. Alex De Minaur disponuje špičkovým pohybem po kurtu, avšak nedokáže generovat dostatečnou razanci pro zisk přímých bodů a pod strojovým tempem srbského hráče dělá vynucené chyby. Djokovičova strojová konzistence tento duel neomylně zlomí."
+    },
+    {
+      "nadpis": "ZÁPAS: Muchová K. vs Osaka N. (Tenis)",
+      "text": "Karolína Muchová demonstruje na okruhu špičkovou fazónu s bilancí osmi výher z posledních deseti zápasů a nad Osakovou drží pozitivní vzájemnou bilanci 4:3. Její herní projev se vyznačuje extrémní variabilitou, častými přechody k síti a chirurgicky přesným využitím čopovaného bekhendu, čímž absolutně bourá rytmus přímočaře hrajících soupeřek. Naomi Osaka se po svém návratu nadále potýká s velkými výkyvy na podání a velmi špatně reaguje na nízké odskoky míčů. Česká tenistka v delších výměnách využije svůj atletický pohyb a trpělivě donutí Japonku k úderům z nepřipravených pozic."
+    },
+    {
+      "nadpis": "ZÁPAS: G2 Esports vs PARIVISION (Esport CS)",
+      "text": "Sestava G2 Esports disponuje brutální palebnou silou, kterou nově poskládaný roster PARIVISION nedokáže na serveru zastavit. Příchod hráčů jako r1nkle a HeavyGod dodal G2 obrovskou agresivitu při úvodních duelech, což se odráží v jejich dominantní úspěšnosti v entry fracích (konstantně nad 55 %). PARIVISION sice zapsalo zvučná jména včetně Jameho a stand-ina Hobbita, avšak jejich extrémně pomalý a předvídatelný taktický styl (Jame time) tvrdě naráží na flexibilní CT rotace G2. Evropský mix navíc exceluje v situacích 4 na 4 a díky okamžité adaptaci na ekonomiku soupeře nepřipouští žádná překvapení."
+    },
+    {
+      "nadpis": "ZÁPAS: Hanshin Tigers vs Hiroshima Toyo Carp (Baseball)",
+      "text": "Hanshin Tigers plně těží z nadstandardní formy startujícího nadhazovače Hirota Saikiho (letošní bilance 10 výher a 5 proher), který svou drtivou rychlostí fastballu drží pálkaře Hirošimy naprosto paralyzované. Soupeřův starter Masato Morishita (negativní bilance 8-11) vykazuje v pozdních směnách znatelný pokles přesnosti i rychlosti, což Tigers chladnokrevně trestají svým precizním 'small ball' přístupem. Bullpen Hanshinu se etabloval jako jeden z nejspolehlivějších v celé lize, což týmu garantuje bezproblémové udržení sebemenšího náskoku od 7. směny až do úplného závěru."
+    },
+    {
+      "nadpis": "ZÁPAS: Fan Shuhan vs Hayata H. (Stolní tenis)",
+      "text": "Japonská jednička Hina Hayata převyšuje čínskou kvalifikantku mnohem komplexnějším herním arzenálem a především smrtícím levorukým forhendovým topspinem. Hayata naprosto brilantně čte rotace ze servisu soupeřky, díky čemuž přebírá herní iniciativu hned prvním úderem na returnu a tlačí Fan Shuhan do defenzivy hluboko za stůl. Číňanka postrádá ve své hře nutnou variabilitu a na razantní hru do bekhendové strany dokáže reagovat pouze pasivními bloky s příliš vysokým odskokem. Stabilita úderů a obrovské zkušenosti z velkých turnajů zaručují Hayatě naprostou kontrolu nad vývojem utkání."
+    }
+  ],
+  "vyhodnoceno": false
+}
