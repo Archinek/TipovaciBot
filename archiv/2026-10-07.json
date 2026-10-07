@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "KT Wiz vs Samsung Lions (Baseball)",
+      "tip": "Výhra KT Wiz (vč. extra inningů)",
+      "kurz": "1.89",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Mannarino A. vs Basilashvili N. (Tenis)",
+      "tip": "Výhra Mannarino A.",
+      "kurz": "1.84",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "OGC Nice vs JDA Dijon (Házená)",
+      "tip": "Výhra OGC Nice",
+      "kurz": "1.88",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Chemnitz vs Neptunas Klaipeda (Basketbal)",
+      "tip": "Handicap Chemnitz -5.5",
+      "kurz": "1.93",
+      "duvera": "7",
+      "uspesnost": "70 %"
+    },
+    {
+      "zapas": "Futsal Swiecie vs Wks Slask Wroclaw (Futsal)",
+      "tip": "Méně než 5.5 gólů",
+      "kurz": "2.04",
+      "duvera": "7",
+      "uspesnost": "75 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Natus Vincere vs PARIVISION (Esport CS)",
+      "tip": "Výhra Natus Vincere",
+      "kurz": "1.49",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Halys Q. vs Wong C.L.C. (Tenis)",
+      "tip": "Výhra Halys Q.",
+      "kurz": "1.75",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Tuik N. vs Trueman D. (Šipky)",
+      "tip": "Handicap legů Tuik N. +1.5",
+      "kurz": "1.61",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Paris vs Lyon Villeurbanne (Basketbal)",
+      "tip": "Výhra Paris",
+      "kurz": "1.44",
+      "duvera": "9",
+      "uspesnost": "90 %"
+    },
+    {
+      "zapas": "Ml.Boleslav B vs Varnsdorf (Fotbal)",
+      "tip": "Neprohra Varnsdorf",
+      "kurz": "1.60",
+      "duvera": "7",
+      "uspesnost": "75 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: KT Wiz vs Samsung Lions (Baseball)",
+      "text": "Motivace v asijské KBO lize hraje absolutní prim. KT Wiz hrají o udržení klíčového umístění pro play-off, zatímco Samsung Lions již s jistotou kontrolují druhou příčku a mohou rotovat bullpen. Za domácí nastupuje elitní closer Park Yeong-hyun, který letos s 35 savy útočí na ligový rekord. Zkušený startér Woo Kyu-min (éra 4.23) na kopci spolehlivě eliminuje ofenzivní výpady hostů a dokáže dovést zápas k vítězství i díky pojištění v podobě započítání extra inningů, čímž se efektivně vyhýbáme riziku remízy."
+    },
+    {
+      "nadpis": "ZÁPAS: Mannarino A. vs Basilashvili N. (Tenis)",
+      "text": "Francouzský veterán Adrian Mannarino využívá na rychlém asijském hardu v Šanghaji svůj typický defenzivní a plochý styl hry, který absolutně frustruje silové ranaře. Nikoloz Basilashvili má sice v nohách sérii výher z kvalifikace proti slabším soupeřům (např. Liam Draxl), ale kumulovaná únava z náročného programu a pouhý jeden den odpočinku se negativně projeví na jeho pohybu. Vzájemná bilance H2H hovoří 2:1 ve prospěch Mannarina, který nedávno Gruzínce na tvrdém povrchu udolal ve třech setech 7:6, 3:6, 6:3."
+    },
+    {
+      "nadpis": "ZÁPAS: OGC Nice vs JDA Dijon (Házená)",
+      "text": "Defenzivní systém OGC Nice je v domácím prostředí extrémně utažený, což ofenzivně podporuje i nedávná produktivita elitní spojky Marie-Hélène Sajky. JDA Dijon momentálně prochází výsledkovou krizí po nečekané ztrátě bodů se Saint-Amand (32:29), kde absolutně selhala jejich obranná součinnost. Absence klíčových rotací u hostujícího celku a špatné vstupy do utkání tvoří pro Nice ideální půdu k plné kontrole zápasu. Domácí těží z vysokého procenta úspěšnosti střelby ze sedmimetrových hodů a nekompromisně zamezují soupeřkám přechod do rychlých brejků."
+    },
+    {
+      "nadpis": "ZÁPAS: Chemnitz vs Neptunas Klaipeda (Basketbal)",
+      "text": "Německý Chemnitz v domácím prostředí aplikuje drtivý fyzický tlak na míč a kontroluje obranný doskok, čímž eliminuje jakékoliv ofenzivní momentum a druhé šance soupeře. Neptunas Klaipeda se po náročném cestování a těžké porážce od italského Trenta (73:76) potýká s obrovským úbytkem energie klíčového rozehrávače Elvara Fridrikssona. Hosté mají navíc tragickou úspěšnost střelby za tři body (kolem 29 % z minulých kol) a bez perimetrové hrozby nedokážou překonat hluboký obranný blok favorizovaného Chemnitzu."
+    },
+    {
+      "nadpis": "ZÁPAS: Futsal Swiecie vs Wks Slask Wroclaw (Futsal)",
+      "text": "Nováček soutěže Śląsk Wrocław potvrdil obrovskou taktickou vyspělost v defenzivě, když dokáže po bleskovém prvním gólu zcela zabetonovat hru a vytvořit nepropustný obranný val. Domácí Futsal Świecie dlouhodobě bojuje s neefektivitou v zakončení do postavené obrany. Hranice 5.5 gólu je na polskou ligu v tomto taktickém nastavení příliš vysoká. Śląsk navíc spoléhá na pomalou rozehrávku a minimalizaci nevynucených chyb, což nutí domácí ke střelám z nepřipravených pozic a drží celkové skóre na absolutním minimu."
+    },
+    {
+      "nadpis": "ZÁPAS: Natus Vincere vs PARIVISION (Esport CS)",
+      "text": "Natus Vincere disponují aktuálně nejsilnějším map poolem na scéně a jejich winrate na stěžejních mapách Mirage a Ancient překračuje dominantních 80 %. Sestava PARIVISION vykazuje zásadní nestabilitu v CT stranách, kde často ztrácí ekonomickou výhodu kvůli zbytečně agresivním pushům do palebných pozic soupeře. Snajpr NAVI 'w0nderful' zažívá mimořádně konzistentní období (rating stabilně nad 1.20) a trestá sebemenší poziční zaváhání. Zásadní rozdíl v taktické přípravě nedává ruskému mixu reálný prostor k zisku mapy."
+    },
+    {
+      "nadpis": "ZÁPAS: Halys Q. vs Wong C.L.C. (Tenis)",
+      "text": "Quentin Halys se stabilně opírá o zničující první servis (průměrně přes 15 es na zápas na tvrdém povrchu), kterým absolutně nedovoluje soupeřům dostat se do rytmu na returnu. Coleman Wong sice disponuje solidním forhendem, ale hrubě postrádá zkušenosti s vracením takto razantních podání v důležitých momentech zápasů při záchraně break pointů. Halys si navíc drží nadstandardní konzistenci výměn od základní čáry a využívá kratších míčů k agresivním náběhům na síť, což mladého soupeře z Hong Kongu jednoznačně přehraje."
+    },
+    {
+      "nadpis": "ZÁPAS: Tuik N. vs Trueman D. (Šipky)",
+      "text": "V ultrakrátkém formátu turnaje Modus Super Series hraje klíčovou roli variance a načasování zavírání, nikoliv dlouhodobý sezónní průměr. Niels Tuik již prokázal extrémní odolnost, když v pozici papírového outsidera dokázal zcela přejet favorizovaného Harryssona. Danny Trueman má sice stabilní skórování, ale pod tlakem často chybuje na doublech (úspěšnost padá hluboko pod 30 %). Pozitivní handicap +1.5 legu na Tuika absolutně pokrývá riziko občasných výpadků a reflektuje jeho nadstandardní efektivitu na checkoutu 100+."
+    },
+    {
+      "nadpis": "ZÁPAS: Paris vs Lyon Villeurbanne (Basketbal)",
+      "text": "Pařížský celek pod vedením ofenzivního tahouna TJ Shortse dominuje v rychlosti přechodové fáze (tzv. pace) a absolutně rozkládá pomalejší strukturované obrany. ASVEL Lyon-Villeurbanne čelí kritické únavě z vyčerpávajícího programu Euroligy a jejich stěžejní pivoti Joffrey Lauvergne a Neal Sako nedisponují dostatečnou mobilitou na pokrytí pařížských pick-and-roll situací. Domácí umí skvěle těžit z vysoké úspěšnosti střelby z perimetru a odmazávají momentum soupeře bleskovými bodovými šňůrami hned v samotném úvodu zápasu."
+    },
+    {
+      "nadpis": "ZÁPAS: Ml.Boleslav B vs Varnsdorf (Fotbal)",
+      "text": "Rezervní tým Mladé Boleslavi postrádá ofenzivní stabilitu, trenérský štáb navíc nemůže využít obvyklé pendlující opory z A-týmu kvůli probíhající reprezentační přestávce. Varnsdorf naopak disponuje vysoce konsolidovaným kádrem, který se prezentuje mimořádně pevnou defenzivou s průměrem xG (očekávaných inkasovaných gólů) pod 1.1 na zápas. Zkušený středopolařský blok hostů dokáže efektivně rozbíjet rozehrávku domácích mladíků a permanentně hrozí z nebezpečných standardních situací, což zajišťuje maximální pravděpodobnost bodového zisku."
+    }
+  ],
+  "vyhodnoceno": false
+}
