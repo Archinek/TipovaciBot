@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Vegas Golden Knights vs Toronto Maple Leafs (Hokej)",
+      "tip": "Výhra Vegas Golden Knights",
+      "kurz": "2.00",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "SINNERS vs Team Nemesis (Esport CS2)",
+      "tip": "Výhra SINNERS",
+      "kurz": "1.91",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Santos FC SP vs Flamengo RJ (Fotbal)",
+      "tip": "Výhra Flamengo RJ",
+      "kurz": "1.83",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Valencia vs Hapoel Tel Aviv (Basketbal)",
+      "tip": "Výhra Valencia",
+      "kurz": "1.82",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "RK Zagreb vs Aalborg (Házená)",
+      "tip": "Handicap Aalborg -3.5",
+      "kurz": "1.81",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Vardar 1961 vs Wisla Plock (Házená)",
+      "tip": "Handicap Wisla Plock -1.5",
+      "kurz": "1.76",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Calgary Flames vs Colorado Avalanche (Hokej)",
+      "tip": "Výhra Colorado Avalanche",
+      "kurz": "1.71",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Arkansas State Red Wolves vs South Alabama Jaguars (Americký fotbal)",
+      "tip": "Vítěz zápasu včetně prodloužení Arkansas State Red Wolves",
+      "kurz": "1.65",
+      "duvera": "7",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Maccabi Tel Aviv vs Olimpia Milano (Basketbal)",
+      "tip": "Vítěz zápasu (včetně prodloužení) Maccabi Tel Aviv",
+      "kurz": "1.62",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "HJK Helsinki vs Vaasan PS (Fotbal)",
+      "tip": "Výhra HJK Helsinki",
+      "kurz": "1.55",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Vegas Golden Knights vs Toronto Maple Leafs (Hokej)",
+      "text": "Toronto nasazuje do branky Anthonyho Stolarze, pro kterého jde o první soutěžní start po vleklé pauze způsobené zánětem nervu od listopadu 2025. Návrat po obrovské absenci přímo proti rozjeté ofenzivě Vegas v čele s Jackem Eichelem, jenž drtí ligu deseti body ze čtyř zápasů, znamená pro obranu Leafs kritické přetížení. Golden Knights naopak aktivovali z listiny zraněných elitního brankáře Adina Hilla, čímž absolutně betonují defenzivu. Bodový přísun Kanaďanů doma nezadržitelně zničí jakékoliv naděje torontských hostů."
+    },
+    {
+      "nadpis": "ZÁPAS: SINNERS vs Team Nemesis (Esport CS2)",
+      "text": "Český tým SINNERS disponuje nekompromisní střeleckou formou, kterou podtrhuje cenný skalp Ninjas in Pyjamas v poměru 2:0. Sestava posílená o střelce kissereka a stressarNa funguje jako výborně promazaný stroj. Hráč stressarN vykazuje enormní K/D ratio a pravidelně zavírá kritické clutch situace, což jasně demonstroval čistým 1v3 na mapě Nuke. Team Nemesis postrádá odpovídající hrubý individuální aim a jejich taktický map pool na straně teroristů vykazuje fatální strukturální trhliny, které SINNERS bezezbytku potrestají."
+    },
+    {
+      "nadpis": "ZÁPAS: Santos FC SP vs Flamengo RJ (Fotbal)",
+      "text": "Flamengo nastupuje v drtivé ofenzivní síle, jelikož se z reprezentačních srazů vrací elitní útočník Pedro, křídelník Samuel Lino i ofenzivní štít Valencia. Naopak Santos čelí masivní personální krizi. V bráně absentuje dlouhodobě zraněná jednička Gabriel Brazao kvůli potížím s ramenem a klíčový tahoun Neymar dostal stopku za zbytečnou červenou kartu z minulého kola proti Remu. Flamengo táhne sérii pěti ligových výher v řadě a disponuje bezkonkurenční venkovní bilancí, kterou potvrdí proti těžce zdecimovanému soupeři."
+    },
+    {
+      "nadpis": "ZÁPAS: Valencia vs Hapoel Tel Aviv (Basketbal)",
+      "text": "Izraelský celek přicestoval do Španělska ve značně rozvrácené sestavě. Do hry nezasáhne klíčový podkošový hráč Tomer Ginat vinou zranění kolena, forvard Jacob Toppin ani rozehrávač Amir Coffey kvůli natrženému lýtku. Valencia zažívá dominantní vstup do sezóny a tvrdě těží z famózní formy Nikoly Mirotiče, který v minulém utkání nasázel 22 bodů včetně čtyř přesných trojek. Absence Hapoelu na obranném doskoku umožní španělskému celku absolutně opanovat prostor pod oběma koši a nadiktovat zničující tempo zápasu."
+    },
+    {
+      "nadpis": "ZÁPAS: RK Zagreb vs Aalborg (Házená)",
+      "text": "Aalborg hraje v brutálním ofenzivním laufu. Své kvality o víkendu naplno demonstroval tvrdou demolicí dánského rivala GOG Håndbold propastným rozdílem 39:27. Dánský tým drží extrémně vysokou rychlost míče a těží z bleskových přechodů do protiútoků. RK Zagreb nedisponuje fyzicky připraveným kádrem schopným bránit toto agresivní tempo hry plných 60 minut. Chorvatský blok ve druhém poločase nutně zkolabuje a poskytne dánským střelcům masivní prostor pro pohodlné pokrytí vypsaného handicapu."
+    },
+    {
+      "nadpis": "ZÁPAS: Vardar 1961 vs Wisla Plock (Házená)",
+      "text": "Wisla Plock představuje úzkou evropskou špičku s extrémně agresivní a vysunutou obranou, ze které pramenící tlak generuje obrovské množství gólů z rychlých brejků. Vardar momentálně absolutně postrádá dynamiku pro vzdorování takto těžkému kalibru. Makedonský tým se opírá o přestárlý kádr, kterému v koncovkách zápasů rapidně dochází síly na poctivé návraty do obranného bloku. Vypsaný nízký handicap představuje hrubou chybu, Plock utkání nekompromisně zavře drtivou gólovou šňůrou v poslední desetiminutovce."
+    },
+    {
+      "nadpis": "ZÁPAS: Calgary Flames vs Colorado Avalanche (Hokej)",
+      "text": "Calgary utrpělo fatální ránu do struktury defenzivy. Brankářská jednička Jacob Markström si zlomil prst, putuje na marodku a Flames spoléhají výhradně na nezkušené zálohy. Colorado Avalanche naopak hlásí klíčový návrat ofenzivních es Logana O'Connora a Zacharyho L'Heureuxe do sestavy, čímž se radikálně navyšuje palebná síla útočných formací. Elitní přesilovkové komando dirigované Calem Makarem nemilosrdně ztrestá absenci zkušeností domácího náhradníka a zápas urve v základní hrací době."
+    },
+    {
+      "nadpis": "ZÁPAS: Arkansas State Red Wolves vs South Alabama Jaguars (Americký fotbal)",
+      "text": "South Alabama nastupuje s těžce zdecimovaným útokem. K dispozici nejsou hlavní ofenzivní zbraně v podobě wide receiverů Briana Barnese a Dominica Whitea, oba absentují s nespecifikovanými zraněními. Red Wolves pod velením Butche Jonese aplikují extrémně agresivní obranu proti běhu, čímž zcela eliminují rozehrávku a donutí náhradního quarterbacka Jareda Hollinse do riskantních passových situací. Rozpadlý přijímací sbor nevzdoruje soustavnému pass rushi a Arkansas State opanuje statistiku time of possession pro jasný zisk vítězství."
+    },
+    {
+      "nadpis": "ZÁPAS: Maccabi Tel Aviv vs Olimpia Milano (Basketbal)",
+      "text": "Olimpia Milano tvrdě kolabuje pod náporem marodky. Trenér Ettore Messina postrádá elitní obranné křídlo Shavona Shieldse, podkošovou sílu Joshe Neba i defenzivní opory Bolmara a Causeura. Ztráta klíčových rotujících hráčů vede u italského celku k těžkým kondičním propadům ve druhých poločasech. Maccabi Tel Aviv ve svém srbském azylu hlásí návrat klíčového playmakera Johna DiBartolomea. Znovuzískaný balanc na perimetru rozloží unavenou a absolutně zúženou rotaci milánského týmu."
+    },
+    {
+      "nadpis": "ZÁPAS: HJK Helsinki vs Vaasan PS (Fotbal)",
+      "text": "Helsinky dominují finské lize díky drtivé efektivitě domácího prostředí. Rychlá umělá tráva v Bolt Areně způsobuje defenzivě VPS zásadní a dlouhodobé problémy s včasností rotací. HJK nasazuje do zápasu kompletní zdravý kádr s elitními středopolaři, kteří bez sebemenšího zaváhání kontrolují distribuci míče. Hosté navíc nastupují silně vyčerpaní z náročného pohárového kalendáře a vykazují strmě klesající křivku očekávaných gólů (xG). Favorit utkání převezme otěže ihned po výkopu a nedovolí žádný prostor k překvapení."
+    }
+  ],
+  "vyhodnoceno": false
+}

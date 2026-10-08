@@ -5,35 +5,40 @@
       "tip": "Výhra KT Wiz (vč. extra inningů)",
       "kurz": "1.89",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (9:3)"
     },
     {
       "zapas": "Mannarino A. vs Basilashvili N. (Tenis)",
       "tip": "Výhra Mannarino A.",
       "kurz": "1.84",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (6:3, 2:2 skreč)"
     },
     {
       "zapas": "OGC Nice vs JDA Dijon (Házená)",
       "tip": "Výhra OGC Nice",
       "kurz": "1.88",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (23:30)"
     },
     {
       "zapas": "Chemnitz vs Neptunas Klaipeda (Basketbal)",
       "tip": "Handicap Chemnitz -5.5",
       "kurz": "1.93",
       "duvera": "7",
-      "uspesnost": "70 %"
+      "uspesnost": "70 %",
+      "vysledek": "✅ VÝHRA (93:84)"
     },
     {
       "zapas": "Futsal Swiecie vs Wks Slask Wroclaw (Futsal)",
       "tip": "Méně než 5.5 gólů",
       "kurz": "2.04",
       "duvera": "7",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "✅ VÝHRA (1:3)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Výhra Natus Vincere",
       "kurz": "1.49",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (1:2)"
     },
     {
       "zapas": "Halys Q. vs Wong C.L.C. (Tenis)",
       "tip": "Výhra Halys Q.",
       "kurz": "1.75",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (2:0)"
     },
     {
       "zapas": "Tuik N. vs Trueman D. (Šipky)",
       "tip": "Handicap legů Tuik N. +1.5",
       "kurz": "1.61",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "✅ VÝHRA (3:4)"
     },
     {
       "zapas": "Paris vs Lyon Villeurbanne (Basketbal)",
       "tip": "Výhra Paris",
       "kurz": "1.44",
       "duvera": "9",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "❌ PROHRA (96:98)"
     },
     {
       "zapas": "Ml.Boleslav B vs Varnsdorf (Fotbal)",
       "tip": "Neprohra Varnsdorf",
       "kurz": "1.60",
       "duvera": "7",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "⏳ Nehráno"
     }
   ],
   "analyzy": [
@@ -115,5 +125,11 @@
       "text": "Rezervní tým Mladé Boleslavi postrádá ofenzivní stabilitu, trenérský štáb navíc nemůže využít obvyklé pendlující opory z A-týmu kvůli probíhající reprezentační přestávce. Varnsdorf naopak disponuje vysoce konsolidovaným kádrem, který se prezentuje mimořádně pevnou defenzivou s průměrem xG (očekávaných inkasovaných gólů) pod 1.1 na zápas. Zkušený středopolařský blok hostů dokáže efektivně rozbíjet rozehrávku domácích mladíků a permanentně hrozí z nebezpečných standardních situací, což zajišťuje maximální pravděpodobnost bodového zisku."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "6 výher / 3 prohry / 1 nehráno (Úspěšnost 67 %)",
+  "nove_lekce": [
+    "[2026-10-07] POZOR: OGC Nice vs JDA Dijon (Házená). JDA Dijon i přes deklarovanou krizi předvedl drtivý výkon v defenzivě (výhra 30:23 na palubovce Nice). Ponaučení pro příště: Nepřeceňovat krátkodobé výpadky formy. Pokud má tým pevně zakořeněný funkční obranný systém, dokáže jím zcela vymazat ofenzivu domácího týmu.",
+    "[2026-10-07] POZOR: Natus Vincere vs PARIVISION (Esport CS). NAVI ztratili zápas 1:2 kvůli fatálnímu selhání na CT stranách a zbytečným ztrátám v oslabených ekonomických kolech (eco buys). Ponaučení pro příště: I přes enormní winrate (80+ %) na klíčových mapách nelze ignorovat taktickou a ekonomickou křehkost týmu. Papíroví favorité umí selhat pod agresivním nepředvídatelným tlakem soupeře.",
+    "[2026-10-07] POZOR: Paris vs Lyon Villeurbanne (Basketbal). Paris ztratila vedení trvající celých 27 minut a podlehla těsně 96:98. Ponaučení pro příště: Extrémní ofenzivní tempo (pace) a domácí prostředí nezaručují výhru nad zkušeným týmem s euroligovým kádrem. V koncovkách (clutch time) často rozhoduje čistá úspěšnost střelby a chladná hlava na trestných hodech."
+  ]
 }

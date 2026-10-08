@@ -5,35 +5,40 @@
       "tip": "Více než 179.5 bodů",
       "kurz": "1.87",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (3:2, celkem 205 bodů)"
     },
     {
       "zapas": "AK Bars Kazan vs HC Victor Stavropol (Házená)",
       "tip": "Handicap HC Victor Stavropol -3.5",
       "kurz": "1.93",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (20:30)"
     },
     {
       "zapas": "Moreira Junior, Roque Conceicao vs Chavez, Alexander (Bojové sporty)",
       "tip": "Výhra Chavez A.",
       "kurz": "1.89",
       "duvera": "8",
-      "uspesnost": "78 %"
+      "uspesnost": "78 %",
+      "vysledek": "❌ PROHRA (výhra Moreira Junior v 1. kole na submisi)"
     },
     {
       "zapas": "Tuik N. vs Heneghan C. (Šipky)",
       "tip": "Výhra Tuik N.",
       "kurz": "2.32",
       "duvera": "7",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (1:4)"
     },
     {
       "zapas": "Natus Vincere vs Team Falcons (Esport CS)",
       "tip": "Výhra Natus Vincere",
       "kurz": "2.40",
       "duvera": "8",
-      "uspesnost": "76 %"
+      "uspesnost": "76 %",
+      "vysledek": "❌ PROHRA (1:2)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Výhra Djokovic N.",
       "kurz": "1.56",
       "duvera": "9",
-      "uspesnost": "88 %"
+      "uspesnost": "88 %",
+      "vysledek": "✅ VÝHRA (7:6, 0:1 skreč)"
     },
     {
       "zapas": "Muchová K. vs Osaka N. (Tenis)",
       "tip": "Výhra Muchová K.",
       "kurz": "1.70",
       "duvera": "8",
-      "uspesnost": "82 %"
+      "uspesnost": "82 %",
+      "vysledek": "✅ VÝHRA (2:1 na sety)"
     },
     {
       "zapas": "G2 Esports vs PARIVISION (Esport CS)",
       "tip": "Výhra G2 Esports",
       "kurz": "1.62",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (1:2)"
     },
     {
       "zapas": "Hanshin Tigers vs Hiroshima Toyo Carp (Baseball)",
       "tip": "Výhra Hanshin Tigers",
       "kurz": "1.48",
       "duvera": "9",
-      "uspesnost": "86 %"
+      "uspesnost": "86 %",
+      "vysledek": "✅ VÝHRA (2:1)"
     },
     {
       "zapas": "Fan Shuhan vs Hayata H. (Stolní tenis)",
       "tip": "Výhra Hayata H.",
       "kurz": "1.40",
       "duvera": "10",
-      "uspesnost": "92 %"
+      "uspesnost": "92 %",
+      "vysledek": "✅ VÝHRA (2:3 na sety)"
     }
   ],
   "analyzy": [
@@ -115,5 +125,12 @@
       "text": "Japonská jednička Hina Hayata převyšuje čínskou kvalifikantku mnohem komplexnějším herním arzenálem a především smrtícím levorukým forhendovým topspinem. Hayata naprosto brilantně čte rotace ze servisu soupeřky, díky čemuž přebírá herní iniciativu hned prvním úderem na returnu a tlačí Fan Shuhan do defenzivy hluboko za stůl. Číňanka postrádá ve své hře nutnou variabilitu a na razantní hru do bekhendové strany dokáže reagovat pouze pasivními bloky s příliš vysokým odskokem. Stabilita úderů a obrovské zkušenosti z velkých turnajů zaručují Hayatě naprostou kontrolu nad vývojem utkání."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "6 výher / 4 prohry (Úspěšnost 60 %)",
+  "nove_lekce": [
+    "[2026-10-06] POZOR: U MMA zápasů (Chavez vs Moreira Junior) nelze predikovat výhru čistě na základě dominanci ve wrestlingu a kontroly tempa. Agresivní takedowny mohou být fatálně potrestány, jak se ukázalo u Chaveze, kterého Moreira Junior překvapil zamknutým trianglem už v 1. kole přímo během slamu. Obrana ze zad musí být zahrnuta do analýzy.",
+    "[2026-10-06] POZOR: V šipkách (Tuik vs Heneghan) je zrádné přeceňovat výkyvy favoritů a náhlá ranní zlepšení u jasných outsiderů v Modus Super Series. Údajná frustrace Heneghana se vůbec neprojevila, zavírání zvládl bezchybně (výhra 4:1) a menší výkyvy skórování byly u Tuika nakonec rozhodující.",
+    "[2026-10-06] POZOR: V CS2 (Natus Vincere vs Team Falcons) nesmí špičková taktická připravenost a map control (NaVi) zastínit hrozbu surového a extrémně agresivního individuálního aimu outsidera (Falcons). Na mapách (např. Mirage, prohra 8:13) hrubá síla a bezhlavé riskantní peeky dokážou strategii dokonale dekonstruovat, což stálo NaVi zápas (prohra 1:2).",
+    "[2026-10-06] POZOR: Další CS2 lekce (G2 Esports vs PARIVISION) ukazuje zranitelnost týmů závislých na obrovské agresivitě (G2) vůči extrémně pomalému, uspávacímu 'Jame time' stylu (PARIVISION). Pokud se agresivní tým nedokáže adaptovat na frustrující nedostatek rychlých duelů, ztratí chladnou hlavu v klíčových koncovkách, což potvrdila prohra 11:13 na Infernu a celkově 1:2."
+  ]
 }
