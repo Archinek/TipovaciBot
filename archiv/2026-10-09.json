@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "MOUZ vs FURIA (Esport CS)",
+      "tip": "Více než 2.5 map v zápasu",
+      "kurz": "2.02",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Olympiakos Piraeus vs Anadolu Efes (Basketbal)",
+      "tip": "Handicap Anadolu Efes +10.5",
+      "kurz": "1.90",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Washington Capitals vs NY Rangers (Hokej)",
+      "tip": "Více než 5.5 gólů",
+      "kurz": "1.80",
+      "duvera": "8",
+      "uspesnost": "78 %"
+    },
+    {
+      "zapas": "Chisnall D. vs Soutar A. (Šipky)",
+      "tip": "Výhra Soutar A.",
+      "kurz": "1.96",
+      "duvera": "9",
+      "uspesnost": "82 %"
+    },
+    {
+      "zapas": "Barcelona vs Žalgiris Kaunas (Basketbal)",
+      "tip": "Handicap Barcelona -1.5",
+      "kurz": "1.86",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Stal Mielec vs Palac Bydgoszcz (Volejbal)",
+      "tip": "Vítěz 1. setu Stal Mielec",
+      "kurz": "1.53",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Halys Q. vs Blockx A. (Tenis)",
+      "tip": "Halys Q. (sázka se vrací při prohře 1:2)",
+      "kurz": "1.69",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "1WIN vs Aurora (Esport CS)",
+      "tip": "Méně než 2.5 map v zápasu",
+      "kurz": "1.67",
+      "duvera": "9",
+      "uspesnost": "88 %"
+    },
+    {
+      "zapas": "Torpedo N.Novgorod vs Jekatěrinburg (Futsal)",
+      "tip": "Více než 6.5 gólů",
+      "kurz": "1.68",
+      "duvera": "7",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "San Jose State Spartans vs Wyoming Cowboys (Americký fotbal)",
+      "tip": "Výhra San Jose State Spartans",
+      "kurz": "1.42",
+      "duvera": "10",
+      "uspesnost": "90 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: MOUZ vs FURIA (Esport CS)",
+      "text": "Sázka na plný počet map vychází z tvrdých dat o map poolu obou týmů. FURIA naprosto dominuje na svém picku díky agresivní entry práci KSCERATA a yuurih, ale na evropské taktické mapy typu Mirage extrémně ztrácí. MOUZ s torzsim na AWP bezpečně kontrolují svůj pick, ovšem jejich T strany na decider mapách trpí těžkými výkyvy. Variabilita veto fáze garantuje, že ani jeden tým nedokáže zápas zavřít čistým poměrem 2:0."
+    },
+    {
+      "nadpis": "ZÁPAS: Olympiakos Piraeus vs Anadolu Efes (Basketbal)",
+      "text": "Bookmakeři ignorují aktuální stav rotace domácích. Olympiakos se musí obejít bez elitního guarda Keenana Evanse kvůli zraněné achilovce a pod košem postrádá stoprocentní rim protection. Anadolu Efes diriguje rozehrávač Shane Larkin a křídlo Elijah Bryant, přičemž jejich ofenzivní tempo na hranici 82 útoků za zápas nedovolí defenzivně zdecimovanému soupeři odskočit o drtivý rozdíl. Kurzová hranice 10,5 bodu nepředstavuje v současné formě reálný odraz sil na palubovce."
+    },
+    {
+      "nadpis": "ZÁPAS: Washington Capitals vs NY Rangers (Hokej)",
+      "text": "Zápas nabízí enormní ofenzivní explozi kvůli strukturálním mezerám v obraně. Rangers s hvězdným duem Panarin a Zibanejad generují průměrně 14 high-danger šancí za utkání, ale jejich modrá čára při absenci Ryana Lindgrena propadá v rychlé tranzici. Washington podřizuje veškerý útočný systém nabíjení na Ovečkina z levého kruhu, což otevírá hru. Absence hlubokého taktického bloku vyvíjí kritický tlak na gólmany, čímž zaručuje pád hranice šesti branek."
+    },
+    {
+      "nadpis": "ZÁPAS: Chisnall D. vs Soutar A. (Šipky)",
+      "text": "Striktně aplikujeme lekci z krátkých formátů a ignorujeme zkreslený sezónní průměr. Dave Chisnall sice drží masivní skórování na tři šipky, ale jeho úspěšnost zavírání pod tlakem brutálně klesá pod 30 %. Skotský záchranář Alan Soutar má brilantní načasování na doublech a tvrdě trestá každé soupeřovo zaváhání na vnějším kruhu. Statistická dominance Chisnalla je ve sprintu na šest legů irelevantní, rozhoduje exekuce klíčových checkoutů."
+    },
+    {
+      "nadpis": "ZÁPAS: Barcelona vs Žalgiris Kaunas (Basketbal)",
+      "text": "Žalgiris aktuálně fatálně hoří na obranném doskoku, což demonstroval povolením propastných 16 útočných doskoků proti Paříži v posledním kole. Trenér Trinchieri nedokázal tuto trhlinu zalepit. Barcelona disponuje gigantickými fyzickými parametry v podobě Veselého a Hernangomeze, čímž nekompromisně trestá druhé šance. Katalánci rozehrávají bleskové bodové šňůry hned v úvodu, což rozleptá morálku litevského celku od prvních minut."
+    },
+    {
+      "nadpis": "ZÁPAS: Stal Mielec vs Palac Bydgoszcz (Volejbal)",
+      "text": "Palac Bydgoszcz vykazuje masivní defekt na příjmu podání v prvních sadách, kde jejich efektivita příjmu padá k hranici 35 %. Stal Mielec disponuje agresivním plachtícím servisem a diktuje zrychlené tempo z hlavního kůlu hned od první výměny. Analýza naprosto vypouští celkový výsledek a cílí striktně na zahajovací set, kde hostující obranu pravidelně paralyzuje nesehranost na bloku a pomalá reakce libera."
+    },
+    {
+      "nadpis": "ZÁPAS: Halys Q. vs Blockx A. (Tenis)",
+      "text": "Quentin Halys se na rychlém povrchu opírá o drtivý první servis s úspěšností vyhraných míčů atakující 82 %. Mladý Alexander Blockx sice disponuje atletickým fondem, ale naprosto postrádá elitní return nutný k neutralizaci takto agresivní hry. Halys efektivně eliminuje dlouhé výměny rychlými náběhy na síť. Zvolený trh vrácení vkladu při prohře 1:2 kompletně maže kurzové riziko náhodného výpadku rytmu v případném tie-breaku."
+    },
+    {
+      "nadpis": "ZÁPAS: 1WIN vs Aurora (Esport CS)",
+      "text": "Zásadní nepoměr v surové palebné síle a hloubce map poolu. Aurora tažená stabilním ratingem deka nekompromisně bourá pasivní statické obrany. 1WIN disponuje katastrofálním winratem na Nuke a vynuceně banuje Anubis, což jim v draftu maže možnost překvapit. Taktická převrstvenost Aurory vyústí v naprosto klinický sweep bez jakéhokoliv prostoru pro decider mapu."
+    },
+    {
+      "nadpis": "ZÁPAS: Torpedo N.Novgorod vs Jekatěrinburg (Futsal)",
+      "text": "Torpedo hraje extrémně rizikový futsal a neváhá sáhnout k nasazení power-play už v první půli při jakémkoliv gólovém manku. Jekatěrinburg operuje přes elitního pivotmana Prudnikova, který bleskově sklepává míče a okamžitě rotuje hru do otevřených brejků. Zápas postrádá hluboký taktický blok, oba celky generují masivní metriky očekávaných branek a trestají prázdnou klec při přečíslení."
+    },
+    {
+      "nadpis": "ZÁPAS: San Jose State Spartans vs Wyoming Cowboys (Americký fotbal)",
+      "text": "Ofenzivní sekce Wyomingu je v totálním rozkladu, v pasové hře se propadla do absolutního dna FBS a quarterback nezvládá číst základní obranná schémata. San Jose State naopak drtí soupeře roztažením hřiště, kde wide receiver Nick Nash trhá osobní bránění napadrť. Brutální nepoměr v efektivitě konverze třetích downů uzamkne dominanci Spartans v čase držení míče a plynulém postupu k endzóně."
+    }
+  ],
+  "vyhodnoceno": false
+}

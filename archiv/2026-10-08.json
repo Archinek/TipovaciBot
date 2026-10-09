@@ -5,35 +5,40 @@
       "tip": "Výhra Vegas Golden Knights",
       "kurz": "2.00",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (3:3 v zákl. hrací době)"
     },
     {
       "zapas": "SINNERS vs Team Nemesis (Esport CS2)",
       "tip": "Výhra SINNERS",
       "kurz": "1.91",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (2:1)"
     },
     {
       "zapas": "Santos FC SP vs Flamengo RJ (Fotbal)",
       "tip": "Výhra Flamengo RJ",
       "kurz": "1.83",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (2:2)"
     },
     {
       "zapas": "Valencia vs Hapoel Tel Aviv (Basketbal)",
       "tip": "Výhra Valencia",
       "kurz": "1.82",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (93:82)"
     },
     {
       "zapas": "RK Zagreb vs Aalborg (Házená)",
       "tip": "Handicap Aalborg -3.5",
       "kurz": "1.81",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (23:33)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Handicap Wisla Plock -1.5",
       "kurz": "1.76",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (26:32)"
     },
     {
       "zapas": "Calgary Flames vs Colorado Avalanche (Hokej)",
       "tip": "Výhra Colorado Avalanche",
       "kurz": "1.71",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (3:7)"
     },
     {
       "zapas": "Arkansas State Red Wolves vs South Alabama Jaguars (Americký fotbal)",
       "tip": "Vítěz zápasu včetně prodloužení Arkansas State Red Wolves",
       "kurz": "1.65",
       "duvera": "7",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (49:56)"
     },
     {
       "zapas": "Maccabi Tel Aviv vs Olimpia Milano (Basketbal)",
       "tip": "Vítěz zápasu (včetně prodloužení) Maccabi Tel Aviv",
       "kurz": "1.62",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (97:79)"
     },
     {
       "zapas": "HJK Helsinki vs Vaasan PS (Fotbal)",
       "tip": "Výhra HJK Helsinki",
       "kurz": "1.55",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (6:0)"
     }
   ],
   "analyzy": [
@@ -115,5 +125,11 @@
       "text": "Helsinky dominují finské lize díky drtivé efektivitě domácího prostředí. Rychlá umělá tráva v Bolt Areně způsobuje defenzivě VPS zásadní a dlouhodobé problémy s včasností rotací. HJK nasazuje do zápasu kompletní zdravý kádr s elitními středopolaři, kteří bez sebemenšího zaváhání kontrolují distribuci míče. Hosté navíc nastupují silně vyčerpaní z náročného pohárového kalendáře a vykazují strmě klesající křivku očekávaných gólů (xG). Favorit utkání převezme otěže ihned po výkopu a nedovolí žádný prostor k překvapení."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "7 výher / 3 prohry (Úspěšnost 70 %)",
+  "nove_lekce": [
+    "[2026-10-08] Hokej (Vegas vs Toronto): Tip na čistou výhru v základní hrací době může selhat na podcenění úvodu utkání. Vegas doma zaspalo, po 1. třetině prohrávalo 1:3 a zápas zachraňovalo až v samostatných nájezdech (celková výhra 4:3 po sn.). Je vhodné diverzifikovat sázky na včasné pokrytí remízy nebo sázet sázku na vítěze do rozhodnutí.",
+    "[2026-10-08] Fotbal (Santos vs Flamengo): Ani relativně bezpečné vedení 2:0 z prvního poločasu není zárukou výhry. Hrubá nedisciplinovanost (červená karta Jorginha za hraní rukou ve vápně) a návrat klíčových exekutorů soupeře znamenal absolutní kolaps plánu. Neymar ze dvou penalt v závěru (82' a 88') srovnal skóre na 2:2.",
+    "[2026-10-08] Americký fotbal (Arkansas State vs South Alabama): Predikce na eliminaci běhové hry hrubě selhala. Náhradní ofenziva se nezalekla tlaku a v obrovské přestřelce zničila Red Wolves 56:49. K náhradnímu running backovi Keenanovi Phillipsovi, který zaznamenal 157 yardů, 3 TD a 100-yard kickoff return, nebyl brán v analýze zřetel. Neodsuzuj ofenzivu týmu kvůli absencím ústředních hvězd."
+  ]
 }
