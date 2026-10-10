@@ -1,0 +1,119 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Sunderland vs Brighton (Fotbal)",
+      "tip": "Výhra Brighton",
+      "kurz": "2.31",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    },
+    {
+      "zapas": "Boston Bruins vs Philadelphia Flyers (Hokej)",
+      "tip": "Méně než 5.5 gólu",
+      "kurz": "1.99",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Zorg en Zek.Leiden vs Brussels Basketball (Basketbal)",
+      "tip": "Výhra Brussels Basketball (vč. prodloužení)",
+      "kurz": "1.90",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "Noppert D. vs Heta D. (Šipky)",
+      "tip": "Výhra Heta D.",
+      "kurz": "1.88",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "Allen, Brendan vs Duncan, Christian (MMA)",
+      "tip": "Výhra Duncan, Christian",
+      "kurz": "1.96",
+      "duvera": "8",
+      "uspesnost": "75 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Chelsea vs Bournemouth (Fotbal)",
+      "tip": "Výhra Chelsea",
+      "kurz": "1.79",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "New Jersey Devils vs Vancouver Canucks (Hokej)",
+      "tip": "Výhra New Jersey Devils",
+      "kurz": "1.66",
+      "duvera": "9",
+      "uspesnost": "85 %"
+    },
+    {
+      "zapas": "USK Praha vs Opava (Basketbal)",
+      "tip": "Výhra USK Praha (vč. prodloužení)",
+      "kurz": "1.65",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    },
+    {
+      "zapas": "G2 vs Vitality (Esport VALORANT)",
+      "tip": "Výhra G2",
+      "kurz": "1.69",
+      "duvera": "9",
+      "uspesnost": "90 %"
+    },
+    {
+      "zapas": "Lvi Praha vs VK Liberec (Volejbal)",
+      "tip": "Výhra VK Liberec",
+      "kurz": "1.59",
+      "duvera": "8",
+      "uspesnost": "80 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Sunderland vs Brighton (Fotbal)",
+      "text": "Zápas je silně ovlivněn propastným rozdílem v ofenzivní potenci a hloubce kádru. Brighton disponuje drtivou palebnou silou s průměrem téměř 2 očekávaných gólů (xG) na zápas, přičemž těží ze smrtící spolupráce ofenzivních hráčů jako Kostoulas a De Cuyper. Na druhé straně Sunderland čelí kritické personální krizi v defenzivě kvůli absencím klíčového stopera Ballarda a elitního útočníka Brobbeyho. Oslabení zadních řad domácích umožní křídlům Brightonu neustálý průnik do pokutového území, což vytvoří kýžený drtivý ofenzivní tlak bez adekvátní odpovědi."
+    },
+    {
+      "nadpis": "ZÁPAS: Boston Bruins vs Philadelphia Flyers (Hokej)",
+      "text": "Sázka na podprůměrný počet gólů se zakládá na špičkových formách brankářů a tvrdé defenzivní taktice. Boston nasazuje do brány Jeremyho Swaymana, který chytá ve famózním rytmu, zatímco Philadelphii drží nad vodou Dan Vladar s excelentní úspěšností zákroků z posledních utkání (minule zastavil 32 z 35 střel). Flyers navíc po ztrátě klíčového ofenzivního beka Ristolainena aplikují extrémně hluboký obranný blok a minimalizují přečíslení, čímž naprosto úspěšně gumují tempo ofenzivy soupeře. Obě mužstva prioritně střeží obrannou modrou čáru, což absolutně eliminuje brankové hody z rychlých brejků."
+    },
+    {
+      "nadpis": "ZÁPAS: Zorg en Zek.Leiden vs Brussels Basketball (Basketbal)",
+      "text": "Sázka na Brusel těží z enormní nesehranosti a masivní přestavby kádru domácího celku. Leiden nastupuje pod novým trenérem Radenkem Varagicem se zcela přebudovanou soupiskou plnou mladíků bez klíčových zkušeností, což se hrubě projevuje tragickým bráněním tranzitní fáze. Zkušení ofenzivní střelci Bruselu absolutně převezmou kontrolu nad perimetrem a tvrdě potrestají chyby v rotaci nesehrané obrany. Drtivá převaha Bruselu na defenzivním doskoku zcela znemožní Leidenu napravovat útočné minely druhou šancí pod košem."
+    },
+    {
+      "nadpis": "ZÁPAS: Noppert D. vs Heta D. (Šipky)",
+      "text": "Sázka na vítězství australského borce vychází z propastného rozdílu v konzistenci na zavíracích doublech pod tlakem. Heta disponuje nadstandardní úspěšností zavírání stabilně přesahující 40 % a drží si průměr blížící se k 94 bodům na 3 šipky. Noppert sice bodově stačí, ale pod neúprosným pódiovým tlakem pravidelně absolutně kolabuje na klíčových doublech, kde se úspěšnost snižuje na 39 %. Rozhodujícím aspektem tohoto utkání je takzvaný 'timing' Austalana, který chirurgicky přesně ztrestá sebemenší Noppertovo zaváhání při checkoutech."
+    },
+    {
+      "nadpis": "ZÁPAS: Allen, Brendan vs Duncan, Christian (MMA)",
+      "text": "Britský postojář Duncan má k dispozici masivní výhodu 79 palců dosahu proti 75 palcům Allena a vstupuje do klece s drtivým momentem 5 výher v řadě. Allen ve svých nedávných duelech absolutně upustil od své nejsilnější zbraně v podobě taktického grapplingu a zbytečně se vrhá do otevřených boxerských výměn, což proti tvrdému strikerovi představuje fatální chybu. Obrovská rychlost a preciznost Duncanova pohybu na nohách zaručuje dokonalou kontrolu vzdálenosti. Allenova rostoucí tendence nezapojovat systematické strhy na pletivo dává Duncanovi volné pole k jednoznačné dominanci v postoji."
+    },
+    {
+      "nadpis": "ZÁPAS: Chelsea vs Bournemouth (Fotbal)",
+      "text": "Drtivá ofenzivní síla na Stamford Bridge a kritický návrat klíčových hráčů zaručují totální převahu domácích. Trenér Xabi Alonso hlásí k dispozici elitního Colea Palmera a Reece Jamese, což skokově zvedá domácí xG (očekávané góly). Bournemouth dorazí značně oslaben v záloze kvůli zranění Alexe Scotta a v útoku bez Justina Kluiverta, čímž ztrácí veškerou schopnost rychlého a nebezpečného přechodu do protiútoku. Historická bezmoc hostů, kteří s Chelsea neuspěli už devětkrát v řadě, pečetí suverénní herní dominanci londýnského giganta."
+    },
+    {
+      "nadpis": "ZÁPAS: New Jersey Devils vs Vancouver Canucks (Hokej)",
+      "text": "Sázka na domácí se odvíjí od katastrofální situace v brankovišti a kolabující obraně Vancouveru. Canucks v úvodu sezóny inkasovali propastných 22 gólů ve 4 zápasech, protože zraněná hvězdná jednička Thatcher Demko chybí a náhradník Kevin Lankinen předvádí tragickou úspěšnost hluboko pod 80 %. Ofenzivní jádro Devils s útočníky Jackem Hughesem a Jesperem Brattem tuto defenzivní prostupnost trestat zkrátka musí a to od úvodních vhazování. Odpočinutí domácí s kompaktní sestavou zamezí jakékoliv snaze zlomených Canucks o vyrovnanou přestřelku."
+    },
+    {
+      "nadpis": "ZÁPAS: USK Praha vs Opava (Basketbal)",
+      "text": "Tento tip využívá fatální absenci dirigenta opavské hry, rozehrávače Jakuba Šiřiny, bez něhož je organizace útoku Slezanů tragicky předvídatelná. Pražská Folimanka se naopak stala pevností, kde elitní ofenzivní americká posila K.J. Doucet nesmírně dominuje (v posledním klání doslova zdemoloval Písek neuvěřitelnými 36 body). Neschopnost improvizované opavské obrany zastavit individuality s výbušným prvním krokem rovnou k obruči garantuje domácím plynulé budování dvojciferného náskoku. Hrubá kontrola doskoku i vysoké tempo dává USK Praha pevnou palubovku k rychlému odstoupení ve skóre."
+    },
+    {
+      "nadpis": "ZÁPAS: G2 vs Vitality (Esport VALORANT)",
+      "text": "Americký supertým G2 nekompromisně drtí soupeře díky dokonalému vedení zápasu od in-game leadera valyna a extrémně brutálnímu aimu hráčů jako leaf a trent, o čemž svědčí hladká dominantní výhra 2:0 nad těžkými 100 Thieves. Vitality trpí hlubokými strukturálními nedostatky na mapách s malou ekonomikou a nedokáže efektivně reagovat na agresivní čtení vlastních rotací. G2 operuje na drtivém 75% winratu s absolutní map kontrolou, kde bezchybně popravují strnulý herní plán francouzské organizace a nedovolují jim vyhrávat klíčová kola v koncovce půlek."
+    },
+    {
+      "nadpis": "ZÁPAS: Lvi Praha vs VK Liberec (Volejbal)",
+      "text": "Důvěra v Liberec vychází z extrémní kumulace únavy a selhávajícího příjmu domácích Lvů Praha po těžké sérii a náročných semifinále. Liberecká Dukla se naproti tomu chlubí výtečně konsolidovaným blokem, o který se rozbijí čitelné a zpomalené smeče unavených křídel pražského mančaftu. Lvi v kritických momentech na servisu hromadí nevynucené chyby a ztrácí jistotu na příjmu. Konzistentní defenzivní hra Dukly na liberu likviduje tvrdé nahrávky a postupně absolutně rozvrátí psychickou odolnost pražského favorita v delších klíčových výměnách."
+    }
+  ],
+  "vyhodnoceno": false
+}

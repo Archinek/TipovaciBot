@@ -5,35 +5,40 @@
       "tip": "Více než 2.5 map v zápasu",
       "kurz": "2.02",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (0:2)"
     },
     {
       "zapas": "Olympiakos Piraeus vs Anadolu Efes (Basketbal)",
       "tip": "Handicap Anadolu Efes +10.5",
       "kurz": "1.90",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (89:91)"
     },
     {
       "zapas": "Washington Capitals vs NY Rangers (Hokej)",
       "tip": "Více než 5.5 gólů",
       "kurz": "1.80",
       "duvera": "8",
-      "uspesnost": "78 %"
+      "uspesnost": "78 %",
+      "vysledek": "❌ PROHRA (3:1)"
     },
     {
       "zapas": "Chisnall D. vs Soutar A. (Šipky)",
       "tip": "Výhra Soutar A.",
       "kurz": "1.96",
       "duvera": "9",
-      "uspesnost": "82 %"
+      "uspesnost": "82 %",
+      "vysledek": "❌ PROHRA (6:5)"
     },
     {
       "zapas": "Barcelona vs Žalgiris Kaunas (Basketbal)",
       "tip": "Handicap Barcelona -1.5",
       "kurz": "1.86",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (81:88)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Vítěz 1. setu Stal Mielec",
       "kurz": "1.53",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (0:3, 1. set 22:25)"
     },
     {
       "zapas": "Halys Q. vs Blockx A. (Tenis)",
       "tip": "Halys Q. (sázka se vrací při prohře 1:2)",
       "kurz": "1.69",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (2:1)"
     },
     {
       "zapas": "1WIN vs Aurora (Esport CS)",
       "tip": "Méně než 2.5 map v zápasu",
       "kurz": "1.67",
       "duvera": "9",
-      "uspesnost": "88 %"
+      "uspesnost": "88 %",
+      "vysledek": "✅ VÝHRA (0:2)"
     },
     {
       "zapas": "Torpedo N.Novgorod vs Jekatěrinburg (Futsal)",
       "tip": "Více než 6.5 gólů",
       "kurz": "1.68",
       "duvera": "7",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "⏳ Nehráno"
     },
     {
       "zapas": "San Jose State Spartans vs Wyoming Cowboys (Americký fotbal)",
       "tip": "Výhra San Jose State Spartans",
       "kurz": "1.42",
       "duvera": "10",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "✅ VÝHRA (24:14)"
     }
   ],
   "analyzy": [
@@ -115,5 +125,13 @@
       "text": "Ofenzivní sekce Wyomingu je v totálním rozkladu, v pasové hře se propadla do absolutního dna FBS a quarterback nezvládá číst základní obranná schémata. San Jose State naopak drtí soupeře roztažením hřiště, kde wide receiver Nick Nash trhá osobní bránění napadrť. Brutální nepoměr v efektivitě konverze třetích downů uzamkne dominanci Spartans v čase držení míče a plynulém postupu k endzóně."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "4 výhry / 5 proher / 1 nehráno (Úspěšnost 44 %)",
+  "nove_lekce": [
+    "[2026-10-09] POZOR (Esport CS - MOUZ vs FURIA): Predikce plného počtu map na základě rozdílného map poolu se nenaplnila. V aktuální meta CS2 často rozhoduje momentum z první mapy, které vede k rychlému uzavření zápasu poměrem 2:0 bez ohledu na variabilitu draftu.",
+    "[2026-10-09] POZOR (Hokej - WSH vs NYR): Sázka na over 5.5 gólů kvůli mezerám v obraně nevyšla (padly pouze 4 góly). Divizní utkání často přinášejí defenzivnější taktický přístup a nadprůměrné výkony brankářů navzdory oslabeným formacím na modré čáře.",
+    "[2026-10-09] POZOR (Šipky - Chisnall vs Soutar): Soutar hrál dle očekávání výborně, ale pod tlakem nevyužil šipky na vítězství (match darts). V krátkém formátu na 6 legů je čistá výhra outsidera extrémní riziko kvůli tlaku na klíčové doubly, příště je nutné volit aspoň lehký handicap.",
+    "[2026-10-09] POZOR (Basketbal - Barcelona vs Žalgiris): Barcelona neudržela vedení a ve 4. čtvrtině se naprosto rozsypala, což umožnilo litevskému celku drtivý comeback. Analýza přecenila dominanci domácích pod košem a ignorovala riziko kolapsu v koncovce utkání.",
+    "[2026-10-09] POZOR (Volejbal - Stal Mielec vs Palac Bydgoszcz): Předpoklad agresivního tlaku na servisu hned od první výměny selhal, Bydgoszcz rychle odskočila na 4:8 a vyhrála první set 25:22. V ženském volejbale je vysoce rizikové sázet na 1. set u týmu, který nemá garantovanou stabilitu na příjmu k udržení rytmu."
+  ]
 }
