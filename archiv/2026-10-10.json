@@ -5,35 +5,40 @@
       "tip": "Výhra Brighton",
       "kurz": "2.31",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "✅ VÝHRA (0:2)"
     },
     {
       "zapas": "Boston Bruins vs Philadelphia Flyers (Hokej)",
       "tip": "Méně než 5.5 gólu",
       "kurz": "1.99",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "❌ PROHRA (5:1)"
     },
     {
       "zapas": "Zorg en Zek.Leiden vs Brussels Basketball (Basketbal)",
       "tip": "Výhra Brussels Basketball (vč. prodloužení)",
       "kurz": "1.90",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (61:77)"
     },
     {
       "zapas": "Noppert D. vs Heta D. (Šipky)",
       "tip": "Výhra Heta D.",
       "kurz": "1.88",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (3:6)"
     },
     {
       "zapas": "Allen, Brendan vs Duncan, Christian (MMA)",
       "tip": "Výhra Duncan, Christian",
       "kurz": "1.96",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (Výhra Allena na submisi)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Výhra Chelsea",
       "kurz": "1.79",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (5:1)"
     },
     {
       "zapas": "New Jersey Devils vs Vancouver Canucks (Hokej)",
       "tip": "Výhra New Jersey Devils",
       "kurz": "1.66",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (4:1)"
     },
     {
       "zapas": "USK Praha vs Opava (Basketbal)",
       "tip": "Výhra USK Praha (vč. prodloužení)",
       "kurz": "1.65",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "❌ PROHRA (88:97)"
     },
     {
       "zapas": "G2 vs Vitality (Esport VALORANT)",
       "tip": "Výhra G2",
       "kurz": "1.69",
       "duvera": "9",
-      "uspesnost": "90 %"
+      "uspesnost": "90 %",
+      "vysledek": "❌ PROHRA (0:2)"
     },
     {
       "zapas": "Lvi Praha vs VK Liberec (Volejbal)",
       "tip": "Výhra VK Liberec",
       "kurz": "1.59",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "⏳ Nehráno"
     }
   ],
   "analyzy": [
@@ -115,5 +125,12 @@
       "text": "Důvěra v Liberec vychází z extrémní kumulace únavy a selhávajícího příjmu domácích Lvů Praha po těžké sérii a náročných semifinále. Liberecká Dukla se naproti tomu chlubí výtečně konsolidovaným blokem, o který se rozbijí čitelné a zpomalené smeče unavených křídel pražského mančaftu. Lvi v kritických momentech na servisu hromadí nevynucené chyby a ztrácí jistotu na příjmu. Konzistentní defenzivní hra Dukly na liberu likviduje tvrdé nahrávky a postupně absolutně rozvrátí psychickou odolnost pražského favorita v delších klíčových výměnách."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "5 výher / 4 prohry / 1 nehráno (Úspěšnost 55 %)",
+  "nove_lekce": [
+    "[2026-10-10] HOKEJ (Boston vs Philadelphia): Sázení na podprůměrný počet gólů (Under 5.5) čistě na základě dobré formy brankářů představuje velké riziko, pokud zároveň ignorujeme, že defenziva outsidera může absolutně propadnout proti agresivnímu ofenzivnímu tlaku elitního týmu. Skóre 5:1 obnažilo defenzivní kolaps Flyers, kterým ani dobrý brankář nepomohl.",
+    "[2026-10-10] MMA (Allen vs Duncan): Zásadní chyba v předzápasové predikci o tom, že elitní grappler trvale opustil svou nejsilnější zbraň na úkor postoje. Brendan Allen se dokázal vrátit ke svým taktickým kořenům a Duncana systematicky utáhl na submisi. Nikdy nelze spoléhat na to, že bojovník záměrně nepoužije svou nejlepší dovednost, pokud je v ohrožení.",
+    "[2026-10-10] BASKETBAL (USK Praha vs Opava): Přílišné spoléhání na zranění a absenci jednoho klíčového hráče (Šiřiny) jako na určující faktor zápasu vede k falešné predikci. Slezané prokázali kolektivní adaptabilitu, rychle našli nový ofenzivní rytmus a navzdory oslabení a předpokladům dokázali v Praze dominovat a nasázet 97 bodů.",
+    "[2026-10-10] ESPORT (G2 vs Vitality): Přecenění takzvané absolutní mapové kontroly (Abyss pro G2). Elitní soupeři typu Vitality jsou velmi dobře analyticky připraveni a dokážou efektivně přečíst předvídatelný herní plán favorita. Zvítězili pomocí překvapivého draftu (kompozice s Jett a Yoru), čímž zbourali dosavadní strategickou výhodu G2 a zápas hladce vyhráli 2:0."
+  ]
 }
