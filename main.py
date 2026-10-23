@@ -24,60 +24,66 @@ client = genai.Client(api_key=api_key)
 
 
 # ==========================================
-# POMOCNÁ FUNKCE: KOMPLETNÍ HTML ŠABLONA REPORTU
+# POMOCNÁ FUNKCE: FLEXIBILNÍ HTML ŠABLONA REPORTU
 # ==========================================
 def sestav_html_stranku(datum_str, data_json):
-    """Vytvoří kompletní HTML report obohacený o Fér kurz, Minimální kurz (Sázej od) a Vklad."""
+    """Vytvoří flexibilní HTML report, který se přizpůsobí počtu sázek (0 až N)."""
+    
+    # Zpracování hlavních tipů
     radky_hlavni = ""
-    for t in data_json.get("hlavni", []):
-        zapas = t.get("zapas", "Neznámý zápas")
-        tip = t.get("tip", "-")
-        kurz = t.get("kurz", "-")
-        sazej_od = t.get("sazej_od", kurz)
-        vklad = t.get("vklad", "1.5/10")
-        duvera = t.get("duvera", "-")
-        uspesnost = t.get("uspesnost", "-")
-        stav = t.get("vysledek", "⏳ Čeká na výsledek")
-        barva = "#28a745" if "✅" in stav else ("#dc3545" if "❌" in stav else "#6c757d")
-        radky_hlavni += (
-            f"<tr>"
-            f"<td><span class='tip'>{zapas}:</span> {tip}</td>"
-            f"<td class='odds'>{kurz}</td>"
-            f"<td style='font-weight:bold; color:#0056b3;'>{sazej_od}+</td>"
-            f"<td><strong>{vklad}</strong> ({duvera}/10)</td>"
-            f"<td>{uspesnost}</td>"
-            f"<td style='font-weight: bold; color: {barva};'>{stav}</td>"
-            f"</tr>\n"
-        )
+    hlavni_seznam = data_json.get("hlavni", [])
+    if hlavni_seznam:
+        for t in hlavní_seznam:
+            zapas = t.get("zapas", "Neznámý zápas")
+            tip = t.get("tip", "-")
+            kurz = t.get("kurz", "-")
+            sazej_od = t.get("sazej_od", kurz)
+            vklad = t.get("vklad", "1.5/10")
+            duvera = t.get("duvera", "-")
+            uspesnost = t.get("uspesnost", "-")
+            stav = t.get("vysledek", "⏳ Čeká na výsledek")
+            barva = "#28a745" if "✅" in stav else ("#dc3545" if "❌" in stav else "#6c757d")
+            radky_hlavni += (
+                f"<tr>"
+                f"<td><span class='tip'>{zapas}:</span> {tip}</td>"
+                f"<td class='odds'>{kurz}</td>"
+                f"<td style='font-weight:bold; color:#0056b3;'>{sazej_od}+</td>"
+                f"<td><strong>{vklad}</strong> ({duvera}/10)</td>"
+                f"<td>{uspesnost}</td>"
+                f"<td style='font-weight: bold; color: {barva};'>{stav}</td>"
+                f"</tr>\n"
+            )
+    else:
+        radky_hlavni = "<tr><td colspan='6' style='text-align: center; padding: 20px; color: #666;'>Dnes nebyla v nabídce nalezena žádná sázka splňující přísná kritéria value a VETO filtr. Trpělivost je součástí strategie.</td></tr>"
 
-    if not radky_hlavni:
-        radky_hlavni = "<tr><td colspan='6' style='text-align: center; padding: 15px; color: #666;'>Dnes nebyla nalezena žádná sázka splňující přísná kritéria value.</td></tr>"
-
+    # Zpracování alternativních tipů
     radky_alt = ""
-    for t in data_json.get("alternativni", []):
-        zapas = t.get("zapas", "Neznámý zápas")
-        tip = t.get("tip", "-")
-        kurz = t.get("kurz", "-")
-        sazej_od = t.get("sazej_od", kurz)
-        vklad = t.get("vklad", "1.0/10")
-        duvera = t.get("duvera", "-")
-        uspesnost = t.get("uspesnost", "-")
-        stav = t.get("vysledek", "⏳ Čeká na výsledek")
-        barva = "#28a745" if "✅" in stav else ("#dc3545" if "❌" in stav else "#6c757d")
-        radky_alt += (
-            f"<tr>"
-            f"<td><span class='tip'>{zapas}:</span> {tip}</td>"
-            f"<td class='odds'>{kurz}</td>"
-            f"<td style='font-weight:bold; color:#0056b3;'>{sazej_od}+</td>"
-            f"<td><strong>{vklad}</strong> ({duvera}/10)</td>"
-            f"<td>{uspesnost}</td>"
-            f"<td style='font-weight: bold; color: {barva};'>{stav}</td>"
-            f"</tr>\n"
-        )
+    alt_seznam = data_json.get("alternativni", [])
+    if alt_seznam:
+        for t in alt_seznam:
+            zapas = t.get("zapas", "Neznámý zápas")
+            tip = t.get("tip", "-")
+            kurz = t.get("kurz", "-")
+            sazej_od = t.get("sazej_od", kurz)
+            vklad = t.get("vklad", "1.0/10")
+            duvera = t.get("duvera", "-")
+            uspesnost = t.get("uspesnost", "-")
+            stav = t.get("vysledek", "⏳ Čeká na výsledek")
+            barva = "#28a745" if "✅" in stav else ("#dc3545" if "❌" in stav else "#6c757d")
+            radky_alt += (
+                f"<tr>"
+                f"<td><span class='tip'>{zapas}:</span> {tip}</td>"
+                f"<td class='odds'>{kurz}</td>"
+                f"<td style='font-weight:bold; color:#0056b3;'>{sazej_od}+</td>"
+                f"<td><strong>{vklad}</strong> ({duvera}/10)</td>"
+                f"<td>{uspesnost}</td>"
+                f"<td style='font-weight: bold; color: {barva};'>{stav}</td>"
+                f"</tr>\n"
+            )
+    else:
+        radky_alt = "<tr><td colspan='6' style='text-align: center; padding: 20px; color: #666;'>Žádné alternativní sázky pro tento den.</td></tr>"
 
-    if not radky_alt:
-        radky_alt = "<tr><td colspan='6' style='text-align: center; padding: 15px; color: #666;'>Dnes žádné alternativní sázky.</td></tr>"
-
+    # Zpracování detailních analýz
     analyzy_html = ""
     for a in data_json.get("analyzy", []):
         nadpis = a.get("nadpis", "Analýza zápasu")
@@ -85,8 +91,9 @@ def sestav_html_stranku(datum_str, data_json):
         analyzy_html += f"<h3>{nadpis}</h3>\n<p>{text}</p>\n"
 
     if not analyzy_html:
-        analyzy_html = "<p>Žádné doplňující analýzy pro dnešní den (filtr VETO nebo nedostatek hodnoty).</p>"
+        analyzy_html = "<p>Žádné doplňující analýzy, protože systém dnes nevypsal žádné sázky.</p>"
 
+    # Box zpětného vyhodnocení
     box_vyhodnoceni = ""
     if data_json.get("vyhodnoceno", False):
         bilance = data_json.get("bilance_souhrn", "Vyhodnoceno")
@@ -136,7 +143,7 @@ def sestav_html_stranku(datum_str, data_json):
         <h1>Ranní Sportovní Report pro Investory ({datum_str})</h1>
         {box_vyhodnoceni}
         <p>Vážení investoři ze skupiny <strong>TIPOVACI_BOT</strong>,</p>
-        <p>přinášíme vám náš ranní report. Matematická hrana pochází z kurzů, přičemž Gemini funguje jako kontextový VETO filtr proti skrytým rizikům (zranění, absence, rotace). Pokud některá sekce zůstala prázdná, trh nenabídl dostatečnou hodnotu a systém disciplinovaně vyčkal.</p>
+        <p>přinášíme vám náš ranní report. Matematická hrana vychází z kurzů, přičemž Gemini funguje jako kontextový VETO filtr proti skrytým rizikům (zranění, absence, rotace). Pokud některá sekce zůstala prázdná, trh nenabídl dostatečnou hodnotu a systém disciplinovaně vyčkal.</p>
 
         <h2>Hlavní Value Tipy (kurz >= 1.80)</h2>
         <table>
@@ -374,7 +381,7 @@ def stahni_nabidku():
 
 
 # ==========================================
-# KROK 2: PŘESTAVĚNÁ ROLE GEMINI (MATEMATIKA Z KURZŮ + VETO FILTR + 0 až N TIPŮ)
+# KROK 2: PŘESTAVĚNÁ ROLE GEMINI (VETO FILTR + 0 až N TIPŮ)
 # ==========================================
 def analyzuj_a_vytvor_data(surovy_text):
     print("🧠 KROK 2: Gemini provádí kontextové VETO kontroly a ověřuje matematickou hodnotu (0 až N tipů)...")
@@ -406,7 +413,7 @@ HISTORICKÉ LEKCE Z VLASTNÍCH CHYB (Těmto chybám se dnes striktně vyhni!):
 DŮLEŽITÁ INSTRUKCE K VÝBĚRU (Pružný počet 0 až N tipů):
 - **Žádné povinné počty tipů!** Nevybírej sázky za každou cenu, pokud nesplňují přísná kritéria.
 - Procházej nabídku a vybírej POUZE ty příležitosti, kde kurz překonává fér hodnotu a zároveň **prošly kontextovou kontrolou bez VETO**.
-- Rozděl je případně do sekcí "hlavni" (kurz >= 1.80) a "alternativni" (kurz 1.40 - 1.79), ale pokud trh nic bezpečného nenabídne, vrať prázdné seznamy `[]`.
+- Rozděl je do sekcí "hlavni" (kurz >= 1.80) a "alternativni" (kurz 1.40 - 1.79). Pokud trh nic bezpečného nenabídne, vrať prázdné seznamy `[]`.
 - Vždy spočítej minimální hratelný kurz ("sazej_od") a doporučený vklad ("vklad").
 - V analýzách vysvětli herní scénář, konkrétní jména z Google Search a výslovně potvrď, že zápas prošel VETO kontrolou!
 
@@ -417,7 +424,7 @@ Odpovědět musíš POUZE v tomto čistém JSON formátu (ZÁKAZ používat Mark
   ],
   "alternativni": [],
   "analyzy": [
-    {{"nadpis": "ZÁPAS: Tým A vs Tým B (Sport)", "text": "Hutný analytický text (4-5 vět) potvrzující VETO kontrolu a kontext..."}}
+    {{"nadpis": "ZÁPAS: Tým A vs Tým B (Sport)", "text": "Hutný analytický text potvrzující VETO kontrolu a kontext..."}}
   ]
 }}
 
