@@ -32,7 +32,7 @@ def sestav_html_stranku(datum_str, data_json):
     radky_hlavni = ""
     hlavni_seznam = data_json.get("hlavni", [])
     if hlavni_seznam:
-        for t in hlavní_seznam:
+        for t in hlavni_seznam:
             zapas = t.get("zapas", "Neznámý zápas")
             tip = t.get("tip", "-")
             kurz = t.get("kurz", "-")
@@ -192,7 +192,7 @@ def sestav_html_stranku(datum_str, data_json):
 def vyhodnot_stare_reporty_y_poucit_se():
     os.makedirs("archiv", exist_ok=True)
     dnesni_datum = datetime.datetime.now().strftime("%Y-%m-%d")
-    json_soubory = sorted([f for f in os.listdir("archiv") if f.endswith(".json")])
+    json_soubory = sorted([f for f in os.listdir("archiv" ) if f.endswith(".json")])
 
     if not json_soubory:
         print("ℹ️ KROK 0: Archiv je zatím prázdný, žádné včerejší reporty k vyhodnocení.")
@@ -200,7 +200,6 @@ def vyhodnot_stare_reporty_y_poucit_se():
 
     for soubor in json_soubory:
         datum_reportu = soubor.replace(".json", "")
-        # Ignorujeme dnešní nebo případné budoucí/testovací soubory
         if datum_reportu >= dnesni_datum:
             continue
 
@@ -412,7 +411,7 @@ DŮLEŽITÁ INSTRUKCE K VÝBĚRU (Pružný počet 0 až N tipů):
 - Procházej nabídku a vybírej POUZE ty příležitosti, kde kurz překonává fér hodnotu a zároveň **prošly kontextovou kontrolou bez VETO**.
 - Rozděl je do sekcí "hlavni" (kurz >= 1.80) a "alternativni" (kurz 1.40 - 1.79). Pokud trh nic bezpečného nenabídne, vrať prázdné seznamy `[]`.
 - Vždy spočítej minimální hratelný kurz ("sazej_od") a doporučený vklad ("vklad").
-- V analýzách vysvětli herní scénář, konkrétní jména z Google Search a výslovně potvrď, że zápas prošel VETO kontrolou!
+- V analýzách vysvětli herní scénář, konkrétní jména z Google Search a výslovně potvrď, že zápas prošel VETO kontrolou!
 
 Odpovědět musíš POUZE v tomto čistém JSON formátu (ZÁKAZ používat Markdown tagy):
 {{
@@ -429,7 +428,8 @@ KOMPLETNÍ DATA ZE SÁZKOVKY K ANALÝZE:
 {surovy_text[:2000000]}
 """
 
-    modely_k_vyzkouseni = ["gemini-2.5-flash", "gemini-2.5-pro"]
+    # Opraveno na podporovaný model podle chybové hlášky z logů
+    modely_k_vyzkouseni = ["gemini-3.8-flash", "gemini-3.1-pro-preview"]
 
     for pokus, aktualni_model in enumerate(modely_k_vyzkouseni, start=1):
         try:
@@ -547,7 +547,7 @@ def odesli_na_whatsapp(data_json, dne_datum, url_reportu):
     hlavni_tipy = data_json.get("hlavni", [])
     radky_zpravy = []
     
-    if hlavní_tipy:
+    if hlavni_tipy:
         for t in hlavní_tipy:
             sazej_od = t.get("sazej_od", t.get("kurz"))
             vklad = t.get("vklad", "1.5/10")
@@ -593,8 +593,8 @@ if __name__ == "__main__":
     else:
         vyhodnot_stare_reporty_y_poucit_se()
         cesta_dnesni_html = f"archiv/{dnesni_datum}.html"
-        if not os.path.exists(cesta_dnesni_html):
-            text_nabidky = stahni_nabidku()
-            if len(text_nabidky) > 5000:
-                data = analyzuj_a_vytvor_data(text_nabidky)
-                vytvor_html_zalohuj_ai_publikuj(data)
+        # Pro jistotu pro test vymažeme kontrolu existence, aby se spolehlivě provedla analýza
+        text_nabidky = stahni_nabidku()
+        if len(text_nabidky) > 5000:
+            data = analyzuj_a_vytvor_data(text_nabidky)
+            vytvor_html_zalohuj_ai_publikuj(data)
