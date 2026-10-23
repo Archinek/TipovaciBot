@@ -29,7 +29,6 @@ client = genai.Client(api_key=api_key)
 def sestav_html_stranku(datum_str, data_json):
     """Vytvoří flexibilní HTML report, který se přizpůsobí počtu sázek (0 až N)."""
     
-    # Zpracování hlavních tipů
     radky_hlavni = ""
     hlavni_seznam = data_json.get("hlavni", [])
     if hlavni_seznam:
@@ -56,7 +55,6 @@ def sestav_html_stranku(datum_str, data_json):
     else:
         radky_hlavni = "<tr><td colspan='6' style='text-align: center; padding: 20px; color: #666;'>Dnes nebyla v nabídce nalezena žádná sázka splňující přísná kritéria value a VETO filtr. Trpělivost je součástí strategie.</td></tr>"
 
-    # Zpracování alternativních tipů
     radky_alt = ""
     alt_seznam = data_json.get("alternativni", [])
     if alt_seznam:
@@ -83,7 +81,6 @@ def sestav_html_stranku(datum_str, data_json):
     else:
         radky_alt = "<tr><td colspan='6' style='text-align: center; padding: 20px; color: #666;'>Žádné alternativní sázky pro tento den.</td></tr>"
 
-    # Zpracování detailních analýz
     analyzy_html = ""
     for a in data_json.get("analyzy", []):
         nadpis = a.get("nadpis", "Analýza zápasu")
@@ -93,7 +90,6 @@ def sestav_html_stranku(datum_str, data_json):
     if not analyzy_html:
         analyzy_html = "<p>Žádné doplňující analýzy, protože systém dnes nevypsal žádné sázky.</p>"
 
-    # Box zpětného vyhodnocení
     box_vyhodnoceni = ""
     if data_json.get("vyhodnoceno", False):
         bilance = data_json.get("bilance_souhrn", "Vyhodnoceno")
@@ -143,7 +139,7 @@ def sestav_html_stranku(datum_str, data_json):
         <h1>Ranní Sportovní Report pro Investory ({datum_str})</h1>
         {box_vyhodnoceni}
         <p>Vážení investoři ze skupiny <strong>TIPOVACI_BOT</strong>,</p>
-        <p>přinášíme vám náš ranní report. Matematická hrana vychází z kurzů, přičemž Gemini funguje jako kontextový VETO filtr proti skrytým rizikům (zranění, absence, rotace). Pokud některá sekce zůstala prázdná, trh nenabídl dostatečnou hodnotu a systém disciplinovaně vyčkal.</p>
+        <p>přinášíme vám náš ranní report. Matematická hrana pochází z kurzů, přičemž Gemini funguje jako kontextový VETO filtr proti skrytým rizikům (zranění, absence, rotace). Pokud některá sekce zůstala prázdná, trh nenabídl dostatečnou hodnotu a systém disciplinovaně vyčkal.</p>
 
         <h2>Hlavní Value Tipy (kurz >= 1.80)</h2>
         <table>
@@ -191,7 +187,7 @@ def sestav_html_stranku(datum_str, data_json):
 
 
 # ==========================================
-# KROK 0: ZPĚTNÉ VYHODNOCENÍ ARCHIVU A UČENÍ Z CHYB
+# KROK 0: BEZPEČNÉ ZPĚTNÉ VYHODNOCENÍ ARCHIVU
 # ==========================================
 def vyhodnot_stare_reporty_y_poucit_se():
     os.makedirs("archiv", exist_ok=True)
@@ -204,6 +200,7 @@ def vyhodnot_stare_reporty_y_poucit_se():
 
     for soubor in json_soubory:
         datum_reportu = soubor.replace(".json", "")
+        # Ignorujeme dnešní nebo případné budoucí/testovací soubory
         if datum_reportu >= dnesni_datum:
             continue
 
@@ -212,7 +209,7 @@ def vyhodnot_stare_reporty_y_poucit_se():
             with open(cesta_json, "r", encoding="utf-8") as f:
                 data_reportu = json.load(f)
         except Exception as e:
-            print(f"⚠️ Chyba při čtení {cesta_json}: {e}")
+            print(f"⚠️ Upozornění: Přeskakuji poškozený soubor {cesta_json}: {e}")
             continue
 
         if data_reportu.get("vyhodnoceno", False):
@@ -381,7 +378,7 @@ def stahni_nabidku():
 
 
 # ==========================================
-# KROK 2: PŘESTAVĚNÁ ROLE GEMINI (VETO FILTR + 0 až N TIPŮ)
+# KROK 2: ROLE GEMINI (VETO FILTR + 0 až N TIPŮ)
 # ==========================================
 def analyzuj_a_vytvor_data(surovy_text):
     print("🧠 KROK 2: Gemini provádí kontextové VETO kontroly a ověřuje matematickou hodnotu (0 až N tipů)...")
@@ -415,7 +412,7 @@ DŮLEŽITÁ INSTRUKCE K VÝBĚRU (Pružný počet 0 až N tipů):
 - Procházej nabídku a vybírej POUZE ty příležitosti, kde kurz překonává fér hodnotu a zároveň **prošly kontextovou kontrolou bez VETO**.
 - Rozděl je do sekcí "hlavni" (kurz >= 1.80) a "alternativni" (kurz 1.40 - 1.79). Pokud trh nic bezpečného nenabídne, vrať prázdné seznamy `[]`.
 - Vždy spočítej minimální hratelný kurz ("sazej_od") a doporučený vklad ("vklad").
-- V analýzách vysvětli herní scénář, konkrétní jména z Google Search a výslovně potvrď, že zápas prošel VETO kontrolou!
+- V analýzách vysvětli herní scénář, konkrétní jména z Google Search a výslovně potvrď, że zápas prošel VETO kontrolou!
 
 Odpovědět musíš POUZE v tomto čistém JSON formátu (ZÁKAZ používat Markdown tagy):
 {{
