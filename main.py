@@ -50,6 +50,9 @@ def sestav_html_stranku(datum_str, data_json):
             f"</tr>\n"
         )
 
+    if not radky_hlavni:
+        radky_hlavni = "<tr><td colspan='6' style='text-align: center; padding: 15px; color: #666;'>Dnes nebyla nalezena žádná sázka splňující přísná kritéria value.</td></tr>"
+
     radky_alt = ""
     for t in data_json.get("alternativni", []):
         zapas = t.get("zapas", "Neznámý zápas")
@@ -72,11 +75,17 @@ def sestav_html_stranku(datum_str, data_json):
             f"</tr>\n"
         )
 
+    if not radky_alt:
+        radky_alt = "<tr><td colspan='6' style='text-align: center; padding: 15px; color: #666;'>Dnes žádné alternativní sázky.</td></tr>"
+
     analyzy_html = ""
     for a in data_json.get("analyzy", []):
         nadpis = a.get("nadpis", "Analýza zápasu")
         text = a.get("text", "")
         analyzy_html += f"<h3>{nadpis}</h3>\n<p>{text}</p>\n"
+
+    if not analyzy_html:
+        analyzy_html = "<p>Žádné doplňující analýzy pro dnešní den (filtr VETO nebo nedostatek hodnoty).</p>"
 
     box_vyhodnoceni = ""
     if data_json.get("vyhodnoceno", False):
@@ -127,7 +136,7 @@ def sestav_html_stranku(datum_str, data_json):
         <h1>Ranní Sportovní Report pro Investory ({datum_str})</h1>
         {box_vyhodnoceni}
         <p>Vážení investoři ze skupiny <strong>TIPOVACI_BOT</strong>,</p>
-        <p>přinášíme vám náš ranní report s dnešními klíčovými sázkovými příležitostmi (včetně rozšířených trhů, hráčských statistik a BetBuilderů), podloženými hloubkovou analýzou, YAML pravidly pro jednotlivé sporty a napojenými na paměť předchozích chyb. Sloupec <strong>Sázej od</strong> udává minimální kurz, při kterém má sázka u vaší sázkové kanceláře stále matematickou hodnotu (Value).</p>
+        <p>přinášíme vám náš ranní report. Matematická hrana pochází z kurzů, přičemž Gemini funguje jako kontextový VETO filtr proti skrytým rizikům (zranění, absence, rotace). Pokud některá sekce zůstala prázdná, trh nenabídl dostatečnou hodnotu a systém disciplinovaně vyčkal.</p>
 
         <h2>Hlavní Value Tipy (kurz >= 1.80)</h2>
         <table>
@@ -177,7 +186,7 @@ def sestav_html_stranku(datum_str, data_json):
 # ==========================================
 # KROK 0: ZPĚTNÉ VYHODNOCENÍ ARCHIVU A UČENÍ Z CHYB
 # ==========================================
-def vyhodnot_stare_reporty_a_poucit_se():
+def vyhodnot_stare_reporty_y_poucit_se():
     os.makedirs("archiv", exist_ok=True)
     dnesni_datum = datetime.datetime.now().strftime("%Y-%m-%d")
     json_soubory = sorted([f for f in os.listdir("archiv") if f.endswith(".json")])
@@ -202,7 +211,7 @@ def vyhodnot_stare_reporty_a_poucit_se():
         if data_reportu.get("vyhodnoceno", False):
             continue
 
-        print(f"🔍 KROK 0: Zpětně vyhodnocuji archivovaný report z {datum_reportu} a hledám chyby...")
+        print(f"🔍 KROK 0: Zpětně vyhodnocuji archivovaný report z {datum_reportu}...")
 
         prompt_vyhodnoceni = f"""
         Jsi nekompromisní auditor sázkařského bota. Zde jsou tipy, které bot vygeneroval dne {datum_reportu}:
@@ -210,18 +219,18 @@ def vyhodnot_stare_reporty_a_poucit_se():
 
         TVŮJ ÚKOL PŘES GOOGLE SEARCH:
         1. Dohledej přesné konečné výsledky všech zápasů v sekcích "hlavni" a "alternativni".
-        2. Ke každému tipu v poli "hlavni" i "alternativni" ponech VŠECHNY původní klíče ("zapas", "tip", "kurz", "sazej_od", "vklad", "duvera", "uspesnost") a přidej klíč "vysledek":
-           - Pokud tip vyšel, nastav hodnotu: "✅ VÝHRA (konečné skóre)"
-           - Pokud tip nevyšel, nastav hodnotu: "❌ PROHRA (konečné skóre)"
-           - Pokud se zápas ještě neodehrál, nastav hodnotu: "⏳ Nehráno"
-        3. U každé "❌ PROHRA" zjisti z pozápasových statistik, PROČ sázka nevyšla, a zformuluj z toho konkrétní pravidlo do pole "nove_lekce".
+        2. Ke každému tipu ponech VŠECHNY původní klíče a přidej klíč "vysledek":
+           - Pokud tip vyšel: "✅ VÝHRA (konečné skóre)"
+           - Pokud nevyšel: "❌ PROHRA (konečné skóre)"
+           - Pokud se nehrálo: "⏳ Nehráno"
+        3. U každé prohry zformuluj pravidlo do pole "nove_lekce".
 
         Odpověz POUZE jako čistý JSON objekt.
         """
 
         try:
             response = client.models.generate_content(
-                model="gemini-3.1-pro-preview",
+                model="gemini-2.5-flash",
                 contents=prompt_vyhodnoceni,
                 config=types.GenerateContentConfig(tools=[{"google_search": {}}])
             )
@@ -250,16 +259,16 @@ def vyhodnot_stare_reporty_a_poucit_se():
                         for lekce in data_reportu["nove_lekce"]:
                             f.write(lekce.strip() + "\n")
 
-                print(f"✅ Report {datum_reportu} vyhodnocen ({data_reportu['bilance_souhrn']})!")
+                print(f"✅ Report {datum_reportu} vyhodnocen!")
         except Exception as e:
-            print(f"⚠️ Nepodařilo se automaticky vyhodnotit report z {datum_reportu}: {e}")
+            print(f"⚠️ Nepodařilo se vyhodnotit report z {datum_reportu}: {e}")
 
 
 # ==========================================
-# KROK 1: KOMPLETNÍ SCRAPER VČETNĚ BETBUILDERŮ A HRÁČSKÝCH PROPS
+# KROK 1: SCRAPER PRO 30 SPORTŮ
 # ==========================================
 def stahni_nabidku():
-    print("⏳ KROK 1: Robot startuje a stahuje KOMPLETNÍ nabídku + BetBuildery/Props z Fortuny...")
+    print("⏳ KROK 1: Robot startuje a stahuje KOMPLETNÍ nabídku z Fortuny...")
     celkovy_text = ""
 
     vsechny_sporty = [
@@ -324,7 +333,6 @@ def stahni_nabidku():
                 pass
 
         for poradi, (nazev, url) in enumerate(vsechny_sporty, start=1):
-            print(f"👉 [{poradi}/{len(vsechny_sporty)}] Stahuji kurzy pro: {nazev}...")
             try:
                 page.goto(url, timeout=25000)
             except Exception:
@@ -366,10 +374,10 @@ def stahni_nabidku():
 
 
 # ==========================================
-# KROK 2: AI ANALÝZA PODLE SPORTY.YAML + VÝPOČET MIN_KURZU A KELLYHO
+# KROK 2: PŘESTAVĚNÁ ROLE GEMINI (MATEMATIKA Z KURZŮ + VETO FILTR + 0 až N TIPŮ)
 # ==========================================
 def analyzuj_a_vytvor_data(surovy_text):
-    print("🧠 KROK 2: AI načítá sporty.yaml, historické chyby a počítá Value + Veto kontroly...")
+    print("🧠 KROK 2: Gemini provádí kontextové VETO kontroly a ověřuje matematickou hodnotu (0 až N tipů)...")
 
     historicke_lekce = "Zatím žádné zaznamenané chyby z minulých dnů."
     if os.path.exists("lekce_z_chyb.txt"):
@@ -378,52 +386,46 @@ def analyzuj_a_vytvor_data(surovy_text):
             if obsah_lekci:
                 historicke_lekce = obsah_lekci
 
-    yaml_konfigurace = "Soubor sporty.yaml nebyl nalezen, použij standardní sázkařskou logiku."
+    yaml_konfigurace = "Soubor sporty.yaml nebyl nalezen."
     if os.path.exists("sporty.yaml"):
         with open("sporty.yaml", "r", encoding="utf-8") as yf:
             yaml_konfigurace = yf.read()
 
     prompt = f"""
-    Jsi elitní kvantitativní sázkařský analytik a VETO kontrolor skupiny TIPOVACI_BOT.
-    Projdi kompletní nabídku ze sázkové kanceláře Fortuna a vyber 10 NEJLEPŠÍCH UNIKÁTNÍCH TIPŮ:
-    - 5x Hlavní tipy s kurzem >= 1.80 (tvrdá Bet Value, včetně handicapů, Over/Under, hráčských Props nebo dvoupoložkových BetBuilderů)
-    - 5x Alternativní tipy s kurzem v rozmezí 1.40 až 1.79
+Jsi špičkový sázkařský kvantitativní analytik a VETO kontrolor skupiny TIPOVACI_BOT.
+Matematická hrana (Edge) a fér kurzy jsou dány kurzovou hladinou. 
+TVOU HLAVNÍ ROLÍ JE FUNGOVAT JAKO KONTEXTOVÝ VETO FILTR. Odpovídáš na úzkou otázku: 
+„Je u zvažovaného zápasu známá informace, která není v kurzu zohledněná? Chybí brankář, klíčová hvězda, jde o B-tým/rezervu, nebo zápas naráží na VETO pravidlo ze sporty.yaml?“
 
-    ZÁVAZNÁ KONFIGURACE A VETO PRAVIDLA PRO JEDNOTLIVÉ SPORTY (sporty.yaml):
-    {yaml_konfigurace}
+ZÁVAZNÁ KONFIGURACE A PLAYBOOK PRO JEDNOTLIVÉ SPORTY (sporty.yaml):
+{yaml_konfigurace}
 
-    HISTORICKÉ LEKCE Z VLASTNÍCH CHYB (Těmto chybám se dnes striktně vyhni!):
-    {historicke_lekce}
+HISTORICKÉ LEKCE Z VLASTNÍCH CHYB (Těmto chybám se dnes striktně vyhni!):
+{historicke_lekce}
 
-    MATEMATICKÝ VÝPOČET PRO INVESTORY (POVINNÉ PRO KAŽDÝ TIP):
-    Protože členové skupiny sází u různých sázkových kanceláří, musíš pro každý tip spočítat:
-    1. Odhadovanou reálnou pravděpodobnost v % (pole "uspesnost", např. "62 %") na základě statistik a Google Search.
-    2. Minimální hratelný kurz (pole "sazej_od"): Vypočítej fér kurz (100 / tvoje_pravděpodobnost) a přičti k němu požadovanou hranu (min_edge_procenta z YAML pro daný sport). Příklad: Pokud má tip u Fortuny kurz 1.95, tvoje odhadovaná pravděpodobnost je 56 % (fér kurz 1.79) a práh hrany je 3 %, nastav "sazej_od": "1.84".
-    3. Doporučený vklad podle opatrného Kellyho kritéria (pole "vklad", v rozmezí "1.0/10" až "3.0/10").
+DŮLEŽITÁ INSTRUKCE K VÝBĚRU (Pružný počet 0 až N tipů):
+- **Žádné povinné počty tipů!** Nevybírej sázky za každou cenu, pokud nesplňují přísná kritéria.
+- Procházej nabídku a vybírej POUZE ty příležitosti, kde kurz překonává fér hodnotu a zároveň **prošly kontextovou kontrolou bez VETO**.
+- Rozděl je případně do sekcí "hlavni" (kurz >= 1.80) a "alternativni" (kurz 1.40 - 1.79), ale pokud trh nic bezpečného nenabídne, vrať prázdné seznamy `[]`.
+- Vždy spočítej minimální hratelný kurz ("sazej_od") a doporučený vklad ("vklad").
+- V analýzách vysvětli herní scénář, konkrétní jména z Google Search a výslovně potvrď, že zápas prošel VETO kontrolou!
 
-    STRIKTNÍ PRAVIDLA PRO VÝBĚR A STYL ANALÝZ:
-    - ZÁKAZ LIVE ZÁPASŮ (pouze zápasy před výkopem Dnes/Zítra).
-    - DIVERZITA SPORTŮ (max 2-3 zápasy ze stejného sportu, 10 unikátních zápasů).
-    - V analýze uveď konkrétní jména (brankáři, nadhazovači, zranění z Google Search), vysvětli herní scénář (Game Script) a výslovně potvrď, že zápas prošel VETO kontrolou z YAML!
+Odpovědět musíš POUZE v tomto čistém JSON formátu (ZÁKAZ používat Markdown tagy):
+{{
+  "hlavni": [
+    {{"zapas": "Tým A vs Tým B (Sport)", "tip": "Konkrétní tip", "kurz": "1.95", "sazej_od": "1.85", "vklad": "2.0/10", "duvera": "9", "uspesnost": "58 %"}}
+  ],
+  "alternativni": [],
+  "analyzy": [
+    {{"nadpis": "ZÁPAS: Tým A vs Tým B (Sport)", "text": "Hutný analytický text (4-5 vět) potvrzující VETO kontrolu a kontext..."}}
+  ]
+}}
 
-    Odpověz POUZE v tomto čistém JSON formátu (ZÁKAZ používat Markdown tagy):
-    {{
-      "hlavni": [
-        {{"zapas": "Tým A vs Tým B (Sport)", "tip": "Konkrétní tip / BetBuilder / Props", "kurz": "1.95", "sazej_od": "1.85", "vklad": "2.0/10", "duvera": "9", "uspesnost": "58 %"}}
-      ],
-      "alternativni": [
-        {{"zapas": "Tým C vs Tým D (Sport)", "tip": "Více než 2.5 gólu", "kurz": "1.65", "sazej_od": "1.58", "vklad": "1.5/10", "duvera": "8", "uspesnost": "66 %"}}
-      ],
-      "analyzy": [
-        {{"nadpis": "ZÁPAS: Tým A vs Tým B (Sport)", "text": "Hutný analytický text (4-5 vět) plný konkrétních jmen, statistik, potvrzení VETO kontroly a zdůvodnění matematické hodnoty..."}}
-      ]
-    }}
+KOMPLETNÍ DATA ZE SÁZKOVKY K ANALÝZE:
+{surovy_text[:2000000]}
+"""
 
-    KOMPLETNÍ DATA ZE SÁZKOVKY K ANALÝZE:
-    {surovy_text[:2000000]}
-    """
-
-    modely_k_vyzkouseni = ["gemini-3.1-pro-preview", "gemini-3-flash"]
+    modely_k_vyzkouseni = ["gemini-2.5-flash", "gemini-2.5-pro"]
 
     for pokus, aktualni_model in enumerate(modely_k_vyzkouseni, start=1):
         try:
@@ -444,15 +446,15 @@ def analyzuj_a_vytvor_data(surovy_text):
             print(f"⏳ Chyba modelu ({e}). Čekám 10 vteřin...")
             time.sleep(10)
 
-    return None
+    return {"hlavni": [], "alternativni": [], "analyzy": []}
 
 
 # ==========================================
 # KROK 3: TVORBA HTML, ZÁLOHY A ODESLÁNÍ NA WHATSAPP
 # ==========================================
-def vytvor_html_zalohuj_a_publikuj(data_json):
+def vytvor_html_zalohuj_ai_publikuj(data_json):
     if not data_json:
-        return
+        data_json = {"hlavni": [], "alternativni": [], "analyzy": []}
 
     dnesni_datum = datetime.datetime.now().strftime("%Y-%m-%d")
     data_json["vyhodnoceno"] = False
@@ -467,7 +469,6 @@ def vytvor_html_zalohuj_a_publikuj(data_json):
     with open("dnesni_report.html", "w", encoding="utf-8") as f:
         f.write(html_obsah)
 
-    # Aktualizace rozcestníku index.html zůstává stejná jako ve tvém původním skriptu
     aktualizuj_rozcestnik_archivu(dnesni_datum)
 
     odkaz_na_report = f"{github_pages_url}/archiv/{dnesni_datum}.html"
@@ -539,22 +540,27 @@ def odesli_na_whatsapp(data_json, dne_datum, url_reportu):
         print("ℹ️ WhatsApp údaje nejsou nastaveny – odkaz je uložen na GitHubu.")
         return
 
+    hlavni_tipy = data_json.get("hlavni", [])
     radky_zpravy = []
-    for t in data_json.get("hlavni", []):
-        sazej_od = t.get("sazej_od", t.get("kurz"))
-        vklad = t.get("vklad", "1.5/10")
-        radky_zpravy.append(
-            f"🔹 *{t.get('zapas')}*\n"
-            f"   👉 {t.get('tip')}\n"
-            f"   📊 Kurz Fortuna: *{t.get('kurz')}* | Sázej od: *{sazej_od}+* | Vklad: *{vklad}*"
-        )
-    prehled_hlavni = "\n".join(radky_zpravy)
+    
+    if hlavní_tipy:
+        for t in hlavní_tipy:
+            sazej_od = t.get("sazej_od", t.get("kurz"))
+            vklad = t.get("vklad", "1.5/10")
+            radky_zpravy.append(
+                f"🔹 *{t.get('zapas')}*\n"
+                f"   👉 {t.get('tip')}\n"
+                f"   📊 Kurz: *{t.get('kurz')}* | Sázej od: *{sazej_od}+* | Vklad: *{vklad}*"
+            )
+        prehled_hlavni = "\n".join(radky_zpravy)
+        sekce_zpravy = f"🔥 *SCHVÁLENÉ VALUE TIPY ({len(hlavni_tipy)}):*\n{prehled_hlavni}"
+    else:
+        sekce_zpravy = "⚠️ *Dnes nebyla nalezena žádná sázka bez VETO rizika.* Trpělivost je součástí strategie."
 
     zprava = (
         f"🤖 *TIPOVACI_BOT | Ranní Report ({dne_datum})*\n\n"
-        f"🔥 *TOP 5 VALUE TIPŮ (Kurz >= 1.80):*\n"
-        f"{prehled_hlavni}\n\n"
-        f"📊 *Kompletní HTML report (vč. alternativních tipů a VETO analýz):*\n"
+        f"{sekce_zpravy}\n\n"
+        f"📊 *Kompletní HTML report (vč. VETO analýz):*\n"
         f"🔗 {url_reportu}\n\n"
         f"🗂 *Archiv všech HTML záloh a vyhodnocení chyb:*\n"
         f"🔗 {github_pages_url}/"
@@ -581,10 +587,10 @@ if __name__ == "__main__":
                 data = json.load(f)
             odesli_na_whatsapp(data, dnesni_datum, f"{github_pages_url}/archiv/{dnesni_datum}.html")
     else:
-        vyhodnot_stare_reporty_a_poucit_se()
+        vyhodnot_stare_reporty_y_poucit_se()
         cesta_dnesni_html = f"archiv/{dnesni_datum}.html"
         if not os.path.exists(cesta_dnesni_html):
             text_nabidky = stahni_nabidku()
             if len(text_nabidky) > 5000:
                 data = analyzuj_a_vytvor_data(text_nabidky)
-                vytvor_html_zalohuj_a_publikuj(data)
+                vytvor_html_zalohuj_ai_publikuj(data)
