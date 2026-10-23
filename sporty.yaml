@@ -1,0 +1,381 @@
+# ==============================================================================
+# MASTER KONFIGURACE A METODICKÝ ZÁKONÍK PRO TIPOVACI_BOT (sporty.yaml)
+# ==============================================================================
+
+globalni_nastaveni:
+  bankroll_management:
+    metoda: "Fractional Kelly (0.25)"
+    rozpeti_vkladu: "1.0/10 až 3.0/10 podle míry hrany (edge) a stability trhu"
+    vypocet_sazej_od: "Fér kurz (100 / odhadovaná_pravděpodobnost_v_%) navýšený o min_edge_procenta daného sportu"
+  obecne_zakazy:
+    - "ZÁKAZ vybírat probíhající LIVE zápasy."
+    - "ZÁKAZ vybírat čistě náhodné trhy (Sudý/Lichý počet, Kdo zahájí zápas)."
+    - "ZÁKAZ argumentovat výhodou domácího prostředí u turnajů hraných na neutrální půdě."
+    - "ZÁKAZ přeceňovat absenci jednoho hráče bez analýzy šířky lavičky a systémové zastupitelnosti."
+  pravidla_pro_betbuildery:
+    max_polozek: 3
+    princip: "Všechny položky v BetBuilderu musí vycházet ze stejného herního scénáře (Game Scriptu) – tzv. pozitivní korelace."
+
+# ==============================================================================
+# DETAILNÍ PRAVIDLA PODLE JEDNOTLIVÝCH SPORTŮ NA FORTUNĚ
+# ==============================================================================
+
+sporty:
+
+  # ----------------------------------------------------------------------------
+  # TIER A: HLAVNÍ TRHY S VYSOKOU LIKVIDITOU A BOHATÝMI DATY
+  # ----------------------------------------------------------------------------
+
+  FOTBAL:
+    tier: A
+    min_edge_procenta: 3.0
+    prostredi: "VENKOVNÍ (Outdoor)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Zjisti předpověď počasí v místě konání zápasu v čase výkopu."
+      - "Silný déšť / podmáčený terén / sněžení: Zpomaluje kombinaci po zemi -> VETO na vysoké Overy gólů technických týmů, hledej Under gólů nebo sázky na fauly/karty (uklouznutí)."
+      - "Silný nárazový vítr (nad 35 km/h): Ničí dlouhé nákopy a centry -> VETO na vysoké počty rohů."
+      - "Extrémní vedro (nad 30 °C) nebo vysoká nadmořská výška (Jižní Amerika): Výrazný pokles tempa ve 2. poločase."
+    povinne_kontroly:
+      - "Sestavy a marodka: Absence klíčového defenzivního štítu (CDM), brankáře nebo elitního stopera."
+      - "Kalendář a rotace: Hraje favorit po těžkém venkovním zápase v Lize mistrů / Evropské lize? Hrozí šetření opor?"
+      - "Rozhodčí: Při sázce na Karty/Penaltu vždy dohledej jméno hlavního sudího a jeho sezónní průměr žlutých karet na zápas."
+      - "xG (Expected Goals): Porovnej reálné skóre z posledních 5 zápasů s metrikou xG (odhalení falešné formy)."
+    korelace_a_props:
+      - "Hluboký obranný blok outsidera + favorit potřebující vyhrát = Favorit Over rohů + Méně než 3.5 gólu v zápase."
+      - "Vysoká obranná linie favorita (např. Barcelona, Bayern) proti rychlým křídlům = Over ofsajdů soupeře / Oba týmy dají gól."
+    veto_pravidla:
+      - "VETO na čistou výhru favorita v kurzu pod 1.60, pokud má v posledních 5 zápasech formu jako na sinusoidě (výhra-prohra-výhra)."
+      - "VETO na čistou výhru v pohárové odvetě, pokud týmu k postupu bohatě stačí remíza nebo prohra o gól."
+      - "VETO na sázky závislé na udržení čistého konta u týmů s vysokou nedisciplinovaností (časté červené karty a penalty v závěru)."
+
+  AMERICKÝ FOTBAL:
+    tier: A
+    min_edge_procenta: 3.0
+    prostredi: "VENKOVNÍ / HALA (Nutno rozlišit Open-Air stadion vs. Dome/Retractable Roof)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Zjisti, zda se hraje v uzavřené hale (Dome) nebo pod širým nebem."
+      - "Vítr nad 15-20 mph (25-32 km/h) na otevřeném stadionu: KRITICKÉ VETO na Over passových yardů (Passing Yards), Over celkových bodů a dlouhé Field Goaly. Preferuj Under bodů a Over běhových yardů (Rushing Attempts/Yards)."
+      - "Silný déšť nebo mráz/sníh: Zvyšuje riziko ztrát míče (Fumbles/Drops), nahrává běhové ofenzivě a silné obraně."
+    povinne_kontroly:
+      - "Oficiální Injury Report (Pátek/Neděle): Stav startujícího Quarterbacka (QB) a zejména Ofenzivní lajny (Left Tackle, Center)."
+      - "Zranění 2+ startujících hráčů v O-Line = dramatický pokles času na odhoz (Pass Protection) -> hledej Sacky obrany soupeře nebo Under passových yardů."
+      - "Matchup v zákopech: Porovnej Run Defense soupeře (Yards Per Carry allowed) proti kvalitě Running Backů (RB)."
+    korelace_a_props:
+      - "BetBuilder (Dominance favorita): Výhra favorita o 7+ bodů + Hlavní Running Back favorita Over běhových yardů (ve 4. čtvrtině favorit tahá čas po zemi)."
+      - "BetBuilder (Dotahující outsider): Outsider v zápase prohrává -> jeho QB musí neustále házet -> QB outsidera Over Passing Attempts / Passing Yards."
+    veto_pravidla:
+      - "VETO na automatické odepisování ofenzivy týmu při zranění RB1 (náhradní running back často přebírá kompletní workload a překoná vypsané hranice – viz lekce South Alabama)."
+
+  HOKEJ:
+    tier: A
+    min_edge_procenta: 3.0
+    prostredi: "HALA (Specifikum: Rozměry kluziště NHL vs. Evropa)"
+    kontrola_pocasi_a_podminek:
+      - "Počasí nemá vliv, ale zkoumej nadmořskou výšku u specifických hal (např. Utah / Colorado – rychlejší nástup únavy hostů)."
+      - "Rozlišuj úzké kluziště (NHL – více střel z každého úhlu, rychlejší přechod) a široké kluziště (Evropa – více kombinace, nižší kadence střel)."
+    povinne_kontroly:
+      - "KRITICKÁ KONTROLA BRANKÁŘŮ: Přes Google (DailyFaceoff / klubové weby) ověř potvrzeného startujícího gólmana (Confirmed Starter)."
+      - "Kalendář a B2B (Back-to-Back): Hraje tým druhý zápas ve 24 hodinách nebo 3. zápas ve 4 dnech s přeletem?"
+      - "Speciální týmy: Úspěšnost přesilových her (Power Play %) vs. oslabení (Penalty Kill %) v posledních 10 zápasech."
+    korelace_a_props:
+      - "Potvrzený slabý náhradní brankář (nebo 3. gólman kvůli marodce) + elitní ofenziva soupeře = Over 5.5 gólu / Over gólů favorita."
+      - "Hráčské Props (Kanadské body / Střely na branku): Vybírej výhradně hráče, kteří hrají v 1. přesilovkové formaci (PP1) a mají průměrný Ice-Time nad 19 minut."
+    veto_pravidla:
+      - "VETO na čistou výhru v základní hrací době (1/2) u týmů se špatnými vstupy do 1. třetiny nebo u nízkých kurzů v defenzivních evropských ligách (SHL, Liiga) – vždy v těchto případech přepni na 'Vítěz do rozhodnutí'."
+      - "VETO na Under 5.5 gólu čistě na základě dobrého brankáře outsidera, pokud čelí drtivému ofenzivnímu tlaku elitního týmu a má děravou obranu (viz lekce Philadelphia)."
+
+  BASKETBAL:
+    tier: A
+    min_edge_procenta: 3.5
+    prostredi: "HALA"
+    povinne_kontroly:
+      - "Load Management a GTD (Game-Time Decisions): Zkontroluj čerstvé zprávy o šetření hvězd (zejména v NBA u Back-to-Back zápasů)."
+      - "Tempo hry (Pace) a Offensive/Defensive Rating obou celků."
+      - "Doskoky (Rebounding): Porovnej schopnost obranného doskoku proti týmu s vysokým počtem útočných doskoků (Second-chance points)."
+      - "Střelba z perimetru (3PT%): Jak brání favorit trojkový oblouk proti týmu s horkou rukou z dálky?"
+    korelace_a_props:
+      - "Absence hlavního skórujícího rozehrávače (PG) = nárůst Usage Rate a asistencí/bodů pro sekundárního tvůrce hry (hledej Over bodů/asistencí náhradníka, nikoliv slepou prohru týmu)."
+    veto_pravidla:
+      - "VETO na sázku proti týmu jen proto, že mu chybí jeden klíčový hráč – týmy často sepnou k vyšší kolektivní střelbě (viz lekce Opava)."
+      - "VETO na vysoké mínusové handicapy u favoritů, kteří mají tendenci ke kolapsům ve 4. čtvrtině nebo labilní úspěšnost trestných hodů v koncovkách (viz lekce Barcelona, Paris)."
+      - "VETO na sázky na 'pevnou defenzivu', pokud daný tým tragicky propadá na obranném doskoku (viz lekce Žalgiris)."
+
+  TENIS:
+    tier: A
+    min_edge_procenta: 3.5
+    prostredi: "VENKOVNÍ / HALA (Extrémní vliv povrchu a počasí)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Ověř přesný povrch turnaje (Antuka, Tvrdý povrch venku, Tvrdý povrch v hale, Tráva) a aktuální počasí."
+      - "Vysoká teplota a sucho / nadmořská výška (např. Madrid): Míče létají rychleji a vysoko skáčou -> výhoda pro agresivní ranaře se silným servisem."
+      - "Chladno, vlhko, zataženo nebo po dešti: Těžké, pomalé míče -> obrovská výhoda pro defenzivní baselinery a antukáře."
+      - "Silný vítr: Ničí hráče s vysokým nadhozem míčku při podání (vysoký počet dvojchyb)."
+    povinne_kontroly:
+      - "Fyzická nálož: Kolik hodin strávil hráč na kurtu v předchozích 3 dnech? (Třísetové maratony, ošetřování během zápasu – Medical Timeout)."
+      - "Statistiky servisu: % bodů vyhraných po 1. a 2. podání a % odvrácených brejkbolů na daném povrchu v sezóně."
+    korelace_a_props:
+      - "Dva hráči s elitním servisem na rychlém povrchu (hala/tráva) a slabým returnem = Over 22.5 gemu / Tiebreak v zápase."
+    veto_pravidla:
+      - "VETO na sázku na favorita, který minulý týden vyhrál titul na jiném kontinentu/povrchu a nyní hraje 1. kolo menšího turnaje (extrémní riziko únavy a vypuštění zápasu)."
+
+  BASEBALL:
+    tier: A
+    min_edge_procenta: 3.5
+    prostredi: "VENKOVNÍ / RETRACTABLE ROOF (Zásadní vliv větru a vlhkosti)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Zjisti směr a rychlost větru na konkrétním stadionu (Ballpark Weather)."
+      - "Vítr foukající silně ven ze stadionu (Blowing Out to Center/Left/Right) + horko: Míče létají mnohem dál -> masivní podpora pro Over bodů (Runs) a Homeruny."
+      - "Vítr foukající dovnitř proti pálkařům (Blowing In) + chladno: Zabíjí dlouhé odpaly -> VETO na Over, hledej Under bodů."
+    povinne_kontroly:
+      - "Startující nadhazovači (Starting Pitchers): Porovnej sezónní i aktuální ERA, WHIP, FIP a bilanci Strikeout/Walk."
+      - "Stav Bullpenu: Nebyli elitní střídající nadhazovači (Relievers/Closers) přetíženi v předchozích dvou dnech série?"
+      - "Motivace na konci sezóny: Přesná postupová matematika do play-off (Magic Number)."
+    korelace_a_props:
+      - "Elitní strikeout nadhazovač proti týmu s vysokým % strikeoutů = Over Strikeouts nadhazovače + Under bodů soupeře v prvních 5 směnách (F5)."
+    veto_pravidla:
+      - "VETO na čistou výhru (1X2) v asijských ligách (KBO, NPB), kde zápasy mohou skončit remízou – vždy vol trh 'Vítěz do rozhodnutí' nebo 'Bez remízy' (viz lekce KT Wiz)."
+      - "VETO na odhadování motivace týmu bez ověření aktuální tabulky a bojů o nasazení do play-off přes Google (viz lekce Seibu Lions)."
+
+  # ----------------------------------------------------------------------------
+  # TIER B: SPECIFICKÉ A MENŠÍ SPORTY (VYŠŠÍ PRÁH HRANY, PŘÍSNĚJŠÍ FILTR)
+  # ----------------------------------------------------------------------------
+
+  ŠIPKY:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "HALA"
+    povinne_kontroly:
+      - "Délka formátu zápasu: Zjisti přesný počet vítězných legů/setů (např. Best of 7 legů vs. Best of 19 legů)."
+      - "Statistiky z posledních 10 zápasů: Průměr na 3 šipky (3-dart average) a především procento zavírání (Checkout %)."
+    veto_pravidla:
+      - "KRITICKÉ VETO: V ultrakrátkých formátech (např. Modus Super Series – Best of 7 legů / na 4 vítězné) ZÁKAZ sázet na čistou výhru favoritů v nízkých kurzech a ZÁKAZ sázet na čistou výhru outsiderů bez handicapu (viz lekce Tuik, Soutar)."
+      - "V krátkých formátech na sety nespoléhej pouze na průměr na 3 šipky, rozhoduje načasování na doublech (viz lekce Noppert)."
+
+  ESPORT CS:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "ONLINE / LAN TURNAJ (Nutno rozlišit!)"
+    kontrola_pocasi_a_podminek:
+      - "Rozlišuj ONLINE zápas (riziko vysokého pingu, nižší motivace top týmů) vs. LAN turnaj v aréně (tlak publika na nezkušené nováčky)."
+    povinne_kontroly:
+      - "HLTV.org data přes Google: Aktuální sestava (zda nehraje zaskakující trenér nebo stand-in), winrate na jednotlivých mapách za poslední 3 měsíce (Map Pool)."
+      - "Stylový střet (Taktická meta): Jak si tým radí s pomalým, pasivním stylem (tzv. 'Jame time' / šetření zbraní) vs. ultra-agresivním individuálním aimem?"
+    veto_pravidla:
+      - "VETO na slepou důvěru v 'map control' a vysoký winrate favorita, pokud čelí týmu s extrémně agresivním aimem nebo naopak uspávacím defenzivním stylem, na který se neumí adaptovat (viz lekce G2, NaVi)."
+      - "VETO na týmy s čerstvě hlášenými interními spory nebo změnou IGL (In-Game Leadera)."
+      - "VETO na sázku 'Over 2.5 mapy' jen na základě rozdílného map poolu – v CS2 často momentum z 1. mapy vede k rychlému 2:0 (viz lekce MOUZ)."
+
+  ESPORT VALORANT:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "ONLINE / LAN"
+    povinne_kontroly:
+      - "VLR.gg data přes Google: Kompozice agentů (Agent Draft) na očekávaných mapách a aktuální forma hlavního Duelisty."
+    veto_pravidla:
+      - "VETO na přeceňování oblíbené mapy favorita (např. Abyss), pokud má soupeř připravený asymetrický agresivní draft s dvojicí duelistů (viz lekce G2 vs Vitality)."
+
+  ESPORT DOTA2:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "ONLINE / LAN"
+    povinne_kontroly:
+      - "Aktuální herní patch, stabilita v 'lane phase' (prvních 10 minut hry) a forma Carry hráče (Position 1)."
+    veto_pravidla:
+      - "VETO na historicky slavné týmy (např. Team Spirit), pokud v aktuálním turnaji vykazují těžkou nekonzistenci v draftu."
+
+  ESPORT LOL:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "ONLINE / LAN"
+    povinne_kontroly:
+      - "Kontrola neutrálních objektivů (Draci, Baron, Grubs), souhra Mid-Jungle dua a síla regionu (LCK/LPL vs. LEC/LCS)."
+    veto_pravidla:
+      - "VETO na BO1 (Best of 1) zápasy s nízkým kurzem kvůli vysoké náchylnosti na jeden pokažený teamfight."
+
+  ESPORT RAINBOW SIX:
+    tier: B
+    min_edge_procenta: 6.0
+    prostredi: "ONLINE / LAN"
+    povinne_kontroly:
+      - "Poměr úspěšnosti na Attack vs. Defense stranách na vybraných mapách a nedávné změny v rosteru."
+
+  EFOTBAL:
+    tier: B
+    min_edge_procenta: 6.5
+    prostredi: "VIRTUÁLNÍ (Hráči s ovladačem)"
+    povinne_kontroly:
+      - "ZÁKAZ hodnotit reálné fotbalové týmy! Zkoumej výhradně přezdívku (nickname) konkrétního gamera v závorce, jeho aktuální denní bilanci a vzájemné zápasy (H2H) s daným protihráčem."
+
+  EBASKETBAL:
+    tier: B
+    min_edge_procenta: 6.5
+    prostredi: "VIRTUÁLNÍ (Hráči s ovladačem)"
+    povinne_kontroly:
+      - "Stejně jako u eFotbalu – ignoruj reálnou NBA, zkoumej výhradně statistiky a denní formu obou e-sport hráčů u konzole."
+
+  BOJOVÉ SPORTY:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "HALA (Specifikum: Velikost klece UFC Apex vs. standardní oktagon, nadmořská výška)"
+    kontrola_pocasi_a_podminek:
+      - "Zjisti nadmořskou výšku (např. Salt Lake City, Mexico City – obrovský dopad na kardio od 2. kola) a velikost oktagonu (menší klec nahrává wrestlerům a knokautérům)."
+    povinne_kontroly:
+      - "Stylový matchup: Striker vs. Grappler/Wrestler, dosah paží (Reach), věkový rozdíl a průběh shazování váhy (Weight Cut)."
+      - "Obrana proti takedownům (Takedown Defense %) a obrana proti submisím ze zad."
+    veto_pravidla:
+      - "KRITICKÉ VETO: Nikdy nepředpokládej, že elitní grappler/wrestler opustil svou nejsilnější zbraň a bude jen boxovat (viz lekce Brendan Allen)."
+      - "VETO na wresltery s bezhlavými takedowny, pokud čelí elitnímu BJJ specialistovi hrozícímu submisí (triangl/gilotina) přímo ze zad (viz lekce Chavez)."
+      - "VETO na slepé spoléhání na výškovou převahu, pokud soupeř přechází z nižší váhovky a má drtivou rychlostní převahu v postoji (viz lekce Vettori)."
+
+  BOX:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "HALA / OTEVŘENÝ STADION"
+    povinne_kontroly:
+      - "Rozpětí paží, postoj (Orthodox vs. Southpaw), kardio na 10–12 kol a faktor domácích bodových rozhodčích (proti domácí hvězdě je na body téměř nemožné vyhrát v těsném zápase)."
+
+  STOLNÍ TENIS:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "HALA"
+    povinne_kontroly:
+      - "Bilance vzájemných zápasů (H2H) – ve stolním tenise extrémně rozhoduje to, jak hráči sedí herní styl soupeře (obranář/čopř vs. topspinový útočník, levák vs. pravák)."
+      - "Bilance z dnešního turnajového dne (hráči hrají více zápasů během pár hodin)."
+
+  VOLEJBAL:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "HALA"
+    povinne_kontroly:
+      - "Úspěšnost přihrávky (Reception %) a efektivita útoku (Hitting %) univerzála a smečařů."
+      - "Cestovní únava z evropských pohárů (CEV Champions League)."
+    veto_pravidla:
+      - "KRITICKÉ VETO: V ženském a univerzitním (NCAA) volejbalu ZÁKAZ sázet na vítěze 1. setu a nízké kurzy na hostující favoritky kvůli extrémní psychické volatilitě a výpadkům na příjmu (viz lekce Bydgoszcz, Rider Broncs)."
+
+  PLÁŽOVÝ VOLEJBAL:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "VENKOVNÍ (Extrémní vliv větru, slunce a deště)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Zkontroluj sílu větru na pláži/kurtu. Silný vítr maže rozdíl ve výšce blokařů a zvýhodňuje technicky vyspělé páry s výbornou kontrolou míče v poli."
+
+  HÁZENÁ:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "HALA"
+    povinne_kontroly:
+      - "Úspěšnost zákroků brankářů, rychlost přechodu do druhé vlny (rychlé brejky) a šířka kádru při souběhu domácí ligy a Ligy mistrů."
+    veto_pravidla:
+      - "VETO na podceňování týmu v krátkodobé výsledkové krizi, pokud má dlouhodobě elitní a sehraný obranný systém (viz lekce Dijon)."
+
+  FLORBAL:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "HALA (Specifikum: Povrch palubovky vs. Taraflex)"
+    povinne_kontroly:
+      - "Efektivita přesilových her, produkce elitní první formace a vzájemná bilance."
+    veto_pravidla:
+      - "KRITICKÉ VETO: V pohárových odvetách a specifických turnajích nikdy nesázej na čistou výhru favorita, pokud mu k postupu matematicky stačí remíza (viz lekce Tatran Střešovice)."
+
+  FUTSAL:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "HALA"
+    povinne_kontroly:
+      - "Faktor domácího prostředí, disciplína (akumulované fauly – po 5. faulu následuje desetimetrový kop) a hra brankáře v poli (Power-Play)."
+    veto_pravidla:
+      - "VETO na odepisování domácích outsiderů po předchozím debaklu – v domácí hale dokážou zformovat obranný val a z brejků favorita zničit (viz lekce Square Dubrovnik, Śląsk, Red Dragons)."
+
+  SNOOKER:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "HALA"
+    povinne_kontroly:
+      - "Délka zápasu (Best of 7 framů vs. Best of 19 framů), statistika náběhů nad 50/100 bodů (Century Breaks) a úspěšnost jistot (Safety Success)."
+    veto_pravidla:
+      - "VETO na sázky 'Over framů' proti elitnímu ofenzivnímu hráči ve vrcholné formě (např. Judd Trump) – hrozí rychlý debakl (whitewash) bez ohledu na defenzivní kvality soupeře (viz lekce Trump)."
+
+  RUGBY:
+    tier: B
+    min_edge_procenta: 5.0
+    prostredi: "VENKOVNÍ (Zásadní vliv deště a větru)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Déšť, mokrý míč a bláto drasticky zvyšují počet předhozů (Knock-ons) a mlýnů (Scrums) -> VETO na vysoký počet bodů a pětky rychlých křídel, preferuj Under bodů a týmy s těžkým rojem (Forwards)."
+      - "Silný vítr komplikuje trestné kopy a konverze na háčko."
+    povinne_kontroly:
+      - "Rozlišuj Rugby Union (15 hráčů – taktický boj o území) a Rugby League (13 hráčů – rychlejší, běhavější hra). Zkontroluj disciplínu (žlutá karta = 10 minut v oslabení)."
+
+  AUSTRALSKÝ FOTBAL:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "VENKOVNÍ (Velké oválné hřiště)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Déšť a silný vítr zcela mění dynamiku kopů na branku (mnoho 1bodových Behinds místo 6bodových Goals) -> silný signál pro Under celkových bodů."
+    povinne_kontroly:
+      - "Cestovní faktor napříč Austrálií (Perth/Západní Austrálie vs. Melbourne/Východní pobřeží) a statistiky vyhraných míčů ve středu pole (Clearances, Inside 50s)."
+
+  KRIKET:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "VENKOVNÍ (Extrémní vliv počasí, vlhkosti a stavu Pitch)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Zkontroluj formát (T20, ODI, Test), stav povrchu (Pitch Report – zda nahrává spinnerům nebo rychlým nadhazovačům) a večerní rosu (Dew Factor – mokrý míč večer klouže nadhazovačům v ruce, což masivně zvýhodňuje tým pálkující jako druhý)."
+
+  BADMINTON:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "HALA (Specifikum: Klimatizace a proudění vzduchu v hale)"
+    povinne_kontroly:
+      - "H2H bilance, fyzická kondice z předchozích kol a rychlost míčků v dané destinaci (v Asii u moře vs. ve vyšší nadmořské výšce)."
+
+  VODNÍ PÓLO:
+    tier: B
+    min_edge_procenta: 6.0
+    prostredi: "BAZÉN"
+    povinne_kontroly:
+      - "Úspěšnost využívání přesilových her (Extra-man situations) a fyzická dominance na pozici centra."
+
+  DOSTIHY:
+    tier: B
+    min_edge_procenta: 6.5
+    prostredi: "VENKOVNÍ (Zásadní vliv stavu dráhy)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Zjisti stav dráhy (Going: Firm, Good, Soft, Heavy). Někteří koně se v hlubokém bahně (Heavy) propadají, jiní v něm dominují."
+    povinne_kontroly:
+      - "Forma koně na dané distanci, nesená váha (Handicap Weight) a úspěšnost dua trenér + žokej."
+
+  GOLF:
+    tier: B
+    min_edge_procenta: 6.0
+    prostredi: "VENKOVNÍ (Extrémní vliv větru podle času startu)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Porovnej předpověď větru pro ranní vs. odpolední flighty (Tee Times). Hráči startující v bezvětří mají obrovskou statistickou výhodu oproti odpolední větrné smršti."
+    povinne_kontroly:
+      - "Metriky Strokes Gained (Approach, Off-the-Tee, Putting) na daném typu trávy (Bermuda, Bentgrass, Poa Annua)."
+
+  PLOCHÁ DRÁHA:
+    tier: B
+    min_edge_procenta: 6.0
+    prostredi: "VENKOVNÍ OVÁL"
+    kontrola_pocasi_a_podminek:
+      - "Déšť mění geometrii a přilnavost dráhy – zvýhodňuje technické jezdce a domácí závodníky, kteří dráhu dokonale znají."
+    povinne_kontroly:
+      - "Výkonnost motorů v posledních týdnech, startovní čísla (výhodnost vnitřních vs. vnějších drah v úvodních jízdách) a bodový průměr jezdců."
+
+  FORMULE 1:
+    tier: B
+    min_edge_procenta: 5.5
+    prostredi: "VENKOVNÍ OKRUH (Extrémní vliv deště a teploty asfaltu)"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Pravděpodobnost deště během kvalifikace/závodu a teplota trati (ovlivňuje degradaci pneumatik)."
+    povinne_kontroly:
+      - "Výsledky volných tréninků (FP1–FP3), závodní tempo (Long Runs), nasazení nových aerodynamických dílů a případné penalizace na startovním roštu (Grid Penalties)."
+      - "Preferuj H2H duely jezdců (Kdo skončí lépe) místo sázek na celkového vítěze s nízkým kurzem."
+
+  MOTOSPORT:
+    tier: B
+    min_edge_procenta: 6.0
+    prostredi: "VENKOVNÍ OKRUH / TERÉN"
+    kontrola_pocasi_a_podminek:
+      - "POVINNÉ PŘES GOOGLE: Déšť a teplota asfaltu (kritické pro volbu směsi pneumatik v MotoGP a WSBK)."
+    povinne_kontroly:
+      - "Kvalifikační časy, rytmus v trénincích na ojetých pneumatikách a historie jezdce na konkrétním okruhu."
