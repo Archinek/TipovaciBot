@@ -5,35 +5,40 @@
       "tip": "Výhra Green Bay (včetně prodloužení)",
       "kurz": "1.99",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (31:7)"
     },
     {
       "zapas": "Milwaukee Brewers vs LA Dodgers (Baseball)",
       "tip": "Výhra LA Dodgers (včetně extra inningů)",
       "kurz": "1.93",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (2:1 pro Brewers)"
     },
     {
       "zapas": "Humphries L. vs Ratajski K. (Šipky)",
       "tip": "Handicap legů Humphries L. -2.5",
       "kurz": "1.90",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (6:0)"
     },
     {
       "zapas": "Washington Capitals vs Seattle Kraken (Hokej)",
       "tip": "Výhra Washington Capitals",
       "kurz": "1.81",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (3:5)"
     },
     {
       "zapas": "G2 vs T1 (Esport Valorant)",
       "tip": "Výhra T1",
       "kurz": "2.17",
       "duvera": "7",
-      "uspesnost": "65 %"
+      "uspesnost": "65 %",
+      "vysledek": "❌ PROHRA (2:1 pro G2)"
     }
   ],
   "alternativni": [
@@ -42,35 +47,40 @@
       "tip": "Více než 5.5 gólu",
       "kurz": "1.72",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (6:2)"
     },
     {
       "zapas": "Real Sociedad vs A Coruňa (Fotbal)",
       "tip": "Výhra Real Sociedad",
       "kurz": "1.59",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (3:2)"
     },
     {
       "zapas": "Sparta Praha vs Vítkovice (Florbal)",
       "tip": "Výhra Sparta Praha",
       "kurz": "1.55",
       "duvera": "8",
-      "uspesnost": "75 %"
+      "uspesnost": "75 %",
+      "vysledek": "❌ PROHRA (5:6 po prodloužení)"
     },
     {
       "zapas": "Betis vs Osasuna (Fotbal)",
       "tip": "Výhra Betis",
       "kurz": "1.52",
       "duvera": "8",
-      "uspesnost": "80 %"
+      "uspesnost": "80 %",
+      "vysledek": "✅ VÝHRA (5:2)"
     },
     {
       "zapas": "Team Spirit vs Parivision (Esport DOTA2)",
       "tip": "Vítěz 1. mapy Parivision",
       "kurz": "1.43",
       "duvera": "9",
-      "uspesnost": "85 %"
+      "uspesnost": "85 %",
+      "vysledek": "✅ VÝHRA (1. mapa pro Parivision)"
     }
   ],
   "analyzy": [
@@ -115,5 +125,12 @@
       "text": "Parivision se momentálně nachází v absolutní výkonnostní špičce, za poslední měsíc drží 83% úspěšnost výher. Tým nekompromisně trestá chyby soupeřů a dominuje v 'lane phase' díky formě Satanica. Team Spirit naproti tomu vykazuje těžkou nekonzistenci, což potvrdila prohra 0:2 proti týmu Yandex. Hrubá taktická převaha a přesný herní plán Parivision generuje extrémní tlak ihned od první minuty utkání a ústí v zisk úvodní mapy."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "MLB Play-off: V úvodních zápasech vyřazovacích sérií baseballu nepodceňovat domácí tým disponující špičkovým mladým esem na nadhozu (Misiorowski) a kvalitním bullpenem; ani favorizovaná rotace a hvězdná pálka hostů negarantují vítězství v nízko-skórových bitvách.",
+    "NHL: Nesázet na čistou výhru favorita v základní hrací době pouze na základě výborného výkonu brankáře z jednoho předchozího utkání; pokud má soupeř produktivní a rozjetý útok napříč všemi formacemi, hrozí defenzivní kolaps i na domácím ledě.",
+    "Valorant: V playoff na mezinárodním šampionátu nesázet na outsidera (T1) proti sehranému špičkovému týmu (G2) jen na základě asymetrické taktiky; sehranost a kvalita map poolu favorita v rozhodujících momentech (Decider mapa) převáží.",
+    "Florbal (Livesport Superliga): V prestižních duelech české špičky (Sparta vs. Vítkovice) nesázet na čistou výhru domácích v základní hrací době při nízkém kurzu (1.55); vzájemné zápasy předních celků bývají extrémně vyrovnané a často dospějí do prodloužení."
+  ]
 }

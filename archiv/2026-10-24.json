@@ -1,0 +1,35 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Cobolli F. vs Musetti L. (Tenis)",
+      "tip": "Cobolli F. vyhraje",
+      "kurz": "1.80",
+      "sazej_od": "1.70",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "61 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Pico, Aaron vs Keita, Losene (Bojové sporty)",
+      "tip": "Pico, Aaron vyhraje",
+      "kurz": "1.73",
+      "sazej_od": "1.67",
+      "vklad": "1.5/10",
+      "duvera": "8",
+      "uspesnost": "63 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Cobolli F. vs Musetti L. (Tenis - ATP Lyon)",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Zápas prošel kompletní prověrkou metodiky sporty.yaml pro tenis. Povinná kontrola fyzické zátěže odhalila zásadní asymetrii: Lorenzo Musetti včera večer odehrál vyčerpávající čtvrtfinálový maraton proti Lucovi Van Asschemu v délce 3 hodin a 32 minut (212 minut na kurtu), což při halovém přechodu ze základní čáry znamená enormní laktátové zatížení a deficit regenerace. Naproti tomu Flavio Cobolli zvládl svůj duel proti Brandonu Nakashimovi ve standardním herním tempu a je v plné fyzické kondici. Hraje se v kryté hale v Lyonu na rychlém tvrdém povrchu, kde počasí nehraje roli a klíčová je startovní výbušnost na prvních dvou krocích. Cobolli navíc bojuje o klíčové body v žebříčku ATP Race pro premiérovou účast na Turnaji mistrů. VETO KONTROLA: Žádné veto nebylo uplatněno (hráč nevyhrál titul minulý týden na jiném kontinentu, neproběhl MTO u favorita). Fér kurz kalkulujeme na 1.64, s připočtením 3.5 % požadovaného edge je sazej_od 1.70. Kurz 1.80 nabízí jasnou matematickou i kontextovou hodnotu."
+    },
+    {
+      "nadpis": "ZÁPAS: Pico, Aaron vs Keita, Losene (Bojové sporty - UFC 333)",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Duel pérové váhy na číslovaném turnaji UFC 333 v Etihad Areně v Abu Dhabi. Stylový matchup: elitní americký wrestler s prověřenou kontrolou na pletivu Aaron Pico proti bývalému šampionovi Oktagonu Losenu Keitovi. Ověření přes Google potvrdilo, že Keita vzal duel jako pozdní náhrada za zraněného Arnolda Allena (Short-Notice) a neměl k dispozici plnohodnotný tréninkový kemp zaměřený na eliminaci špičkového freestyle wrestlingu. Oba borci bez komplikací splnili váhový limit (Pico 145.5 lbs, Keita 146 lbs). Pico v datech zaznamenává průměr přes 6 doručených takedownů a po zkušenostech z Bellatoru takticky výrazně dospěl. ZÁPAS PROŠEL VETO KONTROLOU: Byla provedena prověrka pravidel ze sporty.yaml – Keita není submisivní specialista hrozící smrtící gilotinou či trianglem ze zad (vyloučeno riziko z lekce Chavez), ale striktní postojář. Dle lekce Allen se u Pica očekává návrat k primárnímu wrestlingu, kterým neutralizuje Keitovu rychlost v postoji. Fér kurz je 1.59, sazej_od 1.67, kurz 1.73 je hodnotný. DOPLŇUJÍCÍ VETO FILTR NA NABÍDKU: Z prověřovaných trhů byl udělen VETO ban na Chelsea proti Tottenhamu (absence brankářské jedničky E. Martineze po operaci čelisti, chytá nezkušený 21letý debutant M. Penders), VETO na Slavii proti Mladé Boleslavi (únava po venkovním duelu LM s Fenerbahce a absence kanonýra T. Chorého při nehratelném kurzu 1.26) a VETO na NaVi v CS2 proti agresivnímu pojetí G2."
+    }
+  ],
+  "vyhodnoceno": false
+}
