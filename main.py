@@ -192,7 +192,7 @@ def sestav_html_stranku(datum_str, data_json):
 def vyhodnot_stare_reporty_y_poucit_se():
     os.makedirs("archiv", exist_ok=True)
     dnesni_datum = datetime.datetime.now().strftime("%Y-%m-%d")
-    json_soubory = sorted([f for f in os.listdir("archiv" ) if f.endswith(".json")])
+    json_soubory = sorted([f for f in os.listdir("archiv") if f.endswith(".json")])
 
     if not json_soubory:
         print("ℹ️ KROK 0: Archiv je zatím prázdný, žádné včerejší reporty k vyhodnocení.")
@@ -233,7 +233,7 @@ def vyhodnot_stare_reporty_y_poucit_se():
 
         try:
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-3.8-flash",
                 contents=prompt_vyhodnoceni,
                 config=types.GenerateContentConfig(tools=[{"google_search": {}}])
             )
@@ -428,7 +428,6 @@ KOMPLETNÍ DATA ZE SÁZKOVKY K ANALÝZE:
 {surovy_text[:2000000]}
 """
 
-    # Opraveno na podporovaný model podle chybové hlášky z logů
     modely_k_vyzkouseni = ["gemini-3.8-flash", "gemini-3.1-pro-preview"]
 
     for pokus, aktualni_model in enumerate(modely_k_vyzkouseni, start=1):
@@ -548,7 +547,7 @@ def odesli_na_whatsapp(data_json, dne_datum, url_reportu):
     radky_zpravy = []
     
     if hlavni_tipy:
-        for t in hlavní_tipy:
+        for t in hlavni_tipy:
             sazej_od = t.get("sazej_od", t.get("kurz"))
             vklad = t.get("vklad", "1.5/10")
             radky_zpravy.append(
@@ -592,8 +591,8 @@ if __name__ == "__main__":
             odesli_na_whatsapp(data, dnesni_datum, f"{github_pages_url}/archiv/{dnesni_datum}.html")
     else:
         vyhodnot_stare_reporty_y_poucit_se()
-        cesta_dnesni_html = f"archiv/{dnesni_datum}.html"
-        # Pro jistotu pro test vymažeme kontrolu existence, aby se spolehlivě provedla analýza
+        
+        # Stáhne a analyzuje obsah napřímo
         text_nabidky = stahni_nabidku()
         if len(text_nabidky) > 5000:
             data = analyzuj_a_vytvor_data(text_nabidky)
