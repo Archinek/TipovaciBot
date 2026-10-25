@@ -7,7 +7,8 @@
       "sazej_od": "1.70",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "61 %"
+      "uspesnost": "61 %",
+      "vysledek": "❌ PROHRA (6:4, 2:6, 5:7)"
     }
   ],
   "alternativni": [
@@ -18,7 +19,8 @@
       "sazej_od": "1.67",
       "vklad": "1.5/10",
       "duvera": "8",
-      "uspesnost": "63 %"
+      "uspesnost": "63 %",
+      "vysledek": "✅ VÝHRA (TKO 1. kolo, 1:14)"
     }
   ],
   "analyzy": [
@@ -31,5 +33,9 @@
       "text": "KONTEXTOVÁ A VETO KONTROLA: Duel pérové váhy na číslovaném turnaji UFC 333 v Etihad Areně v Abu Dhabi. Stylový matchup: elitní americký wrestler s prověřenou kontrolou na pletivu Aaron Pico proti bývalému šampionovi Oktagonu Losenu Keitovi. Ověření přes Google potvrdilo, že Keita vzal duel jako pozdní náhrada za zraněného Arnolda Allena (Short-Notice) a neměl k dispozici plnohodnotný tréninkový kemp zaměřený na eliminaci špičkového freestyle wrestlingu. Oba borci bez komplikací splnili váhový limit (Pico 145.5 lbs, Keita 146 lbs). Pico v datech zaznamenává průměr přes 6 doručených takedownů a po zkušenostech z Bellatoru takticky výrazně dospěl. ZÁPAS PROŠEL VETO KONTROLOU: Byla provedena prověrka pravidel ze sporty.yaml – Keita není submisivní specialista hrozící smrtící gilotinou či trianglem ze zad (vyloučeno riziko z lekce Chavez), ale striktní postojář. Dle lekce Allen se u Pica očekává návrat k primárnímu wrestlingu, kterým neutralizuje Keitovu rychlost v postoji. Fér kurz je 1.59, sazej_od 1.67, kurz 1.73 je hodnotný. DOPLŇUJÍCÍ VETO FILTR NA NABÍDKU: Z prověřovaných trhů byl udělen VETO ban na Chelsea proti Tottenhamu (absence brankářské jedničky E. Martineze po operaci čelisti, chytá nezkušený 21letý debutant M. Penders), VETO na Slavii proti Mladé Boleslavi (únava po venkovním duelu LM s Fenerbahce a absence kanonýra T. Chorého při nehratelném kurzu 1.26) a VETO na NaVi v CS2 proti agresivnímu pojetí G2."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "Tenis – Přeceňování vlivu fyzické únavy u elitních hráčů bez prokázaného zranění: Samotná kumulace odehraných minut v předchozím kole (byť přes 3,5 hodiny a pozdní dohrávka) nesmí být jediným nosným pilířem sázky na soupeře, pokud nebyl hlášen MTO ani akutní limitace. V národních derby a pokročilých fázích turnajů (semifinále) dokáže vyšší technická třída a mentální odolnost hráče únavový deficit kompenzovat (např. odvrácení 4 mečbolů Musettim)."
+  ]
 }

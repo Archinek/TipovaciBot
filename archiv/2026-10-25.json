@@ -1,0 +1,48 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Hradec Králové vs Jablonec (Fotbal - Chance Liga)",
+      "tip": "Méně než 2.5 gólu",
+      "kurz": "1.81",
+      "sazej_od": "1.78",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "58 %"
+    },
+    {
+      "zapas": "Price G. vs Bunting S. (Šipky - European Championship)",
+      "tip": "Handicap legů v zápasu: Price G. -2.5",
+      "kurz": "1.83",
+      "sazej_od": "1.78",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "59 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Liverpool vs Brighton (Fotbal - Premier League)",
+      "tip": "Méně než 3.5 gólu",
+      "kurz": "1.59",
+      "sazej_od": "1.51",
+      "vklad": "2.5/10",
+      "duvera": "9",
+      "uspesnost": "68 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Liverpool vs Brighton (Fotbal - Premier League)",
+      "text": "Kritická kontextová kontrola odhalila zásadní meteorologický faktor, který trh podcenil: nad Liverpoolem a regionem Merseyside se pohybuje hluboká tlaková níže provázená bouří Storm Boelo. Britský Met Office vydal výstrahu s předpovědí nárazů větru dosahujících 55 až 80 mph (88–130 km/h) a hustého deště přímo v čase výkopu na stadionu Anfield. Dle metodiky sporty.yaml pro fotbal platí striktní pokyn při větru nad 35 km/h a promáčeném terénu: podmínky dramaticky brzdí kombinační hru po zemi a likvidují přesnost centrů i nákopů, což vede k defenzivnímu přetahování a výraznému poklesu gólových šancí obou celků. Přestože Liverpool trenéra Andoniho Iraoly i Brighton Fabiana Hürzelera mají kvalitní ofenzivy, v těchto extrémních poryvech počasí bude prioritou kontrola balonu na vlastní polovině a minimalizace fatálních chyb. Kurz 1.59 na hranici Méně než 3.5 gólu má fér hodnotu kolem 1.47 (68 % pravděpodobnost). VETO kontrola: Zápas prošel kontextovým sítem, žádné VETO pravidlo nebylo porušeno a volba Underu je v absolutním souladu s meteorologickým protokolem."
+    },
+    {
+      "nadpis": "ZÁPAS: Hradec Králové vs Jablonec (Fotbal - Chance Liga)",
+      "text": "Souboj v Malšovické aréně nabízí střet dvou takticky vyspělých týmů s důrazem na organizovanou defenzivu. Počasí v Hradci Králové přináší chladno (kolem 8 °C) a zataženou oblohu s dešťovými přeháňkami, což nahrává těžšímu terénu. Hradec Králové pod Davidem Horejšem tradičně sází na kompaktní hluboký blok s rychlým zavíráním mezer ve středu hřiště. Luboš Kozel na lavičce Jablonce po předchozích divokých přestřelkách naordinoval týmu výrazně disciplinovanější hru směrem dozadu a zajištěný střed pole. Statistika vzájemných duelů v Malšovicích vykazuje dlouhodobý trend nízko-skórových taktických bitev. Fér kurz na Under 2.5 gólu stanovujeme na 1.72 (pravděpodobnost 58 %), vypsaný kurz 1.81 tak nabízí čistý matematický edge přes 5 %. VETO kontrola: Zápas byl prověřen na marodku klíčových stoperů i brankářů, žádné systémové oslabení se nekoná a zápas bezpečně prošel VETO filtrem."
+    },
+    {
+      "nadpis": "ZÁPAS: Price G. vs Bunting S. (Šipky - European Championship)",
+      "text": "Ve čtvrtfinále prestižního televizního turnaje v Dortmundu (Westfalenhalle) se hraje na dlouhý formát Best of 19 legů (do 10 vítězných legů). Dle sporty.yaml se kritické VETO vztahuje výhradně na ultrakrátké formáty typu Modus Super Series (Best of 7), kde panuje vysoká variance. V dlouhém majorovém formátu naopak vyniká dlouhodobá kvalita a stabilita na terči. Gerwyn Price předvádí v Dortmundu fenomenální fazónu – po demolici Roba Crosse (6:2, průměr 99.3) si v osmifinále suverénně poradil s Cameronem Menziesem 10:4, kde zaznamenal hattrick 100+ zavření a úspěšnost na doublech přesáhla 45 %. Stephen Bunting se naopak trápil na vnějším okruhu terče a proti Noppertovi i Huybrechtsovi musel otáčet z těžkých deficitů. Price navíc dominuje vzájemné bilanci na televizních pódiích (9:4). Na pokrytí handicapu -2.5 stačí Priceovi výsledek 10:7 nebo lepší. Fér kurz na Price -2.5 legů odhadujeme na 1.70 (59 % šance), kurz 1.83 překonává 5% vyžadovanou hranu pro šipky. VETO kontrola: Formát prověřen, data z Dortmundu ověřena, tip prošel bez výhrad."
+    }
+  ],
+  "vyhodnoceno": false
+}
