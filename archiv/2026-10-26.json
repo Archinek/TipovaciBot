@@ -1,0 +1,21 @@
+{
+  "hlavni": [
+    {
+      "zapas": "FC Sevilla vs Osasuna (Fotbal)",
+      "tip": "Výsledek zápasu: FC Sevilla",
+      "kurz": "1.90",
+      "sazej_od": "1.82",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "56 %"
+    }
+  ],
+  "alternativni": [],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: FC Sevilla vs Osasuna (Fotbal – La Liga)",
+      "text": "KONTEXTOVÁ VETO KONTROLA A IDENTIFIKACE SKRYTÉ HODNOTY: Tento duel představuje učebnicový příklad situace, kdy trh plně nezohlednil asymetrii zdravotních stavů a personální devastaci hostujícího kádru. \n\n1. Sestavy a marodka (Klíčový edge): Osasuna Pamplona čelí extrémní marodce, kdy je mimo hru minimálně 7 stabilních hráčů základní rotace – křídla Kike Barja a Raúl Moro, tvůrci hry Moi Gómez a Aimar Oroz, obránci Jorge Herrando a Valentín Rosier a Rubén Del Castillo. Útok Osasuny tak přišel prakticky o veškerou kreativitu a zásobování hrotového Anteho Budimira. Na straně Sevilly trenér Luis García Plaza sice postrádá stopera Marcãa a záložníka Guridiho, avšak po zranění lýtka se do záložní řady vrací Giorgi Kochorashvili a do ofenzívy klíčový útočník Isaac Romero.\n\n2. Meteorologická prověrka (sporty.yaml): Zápas se hraje na Estadio Ramón Sánchez-Pizjuán od 21:00. Předpověď počasí pro Sevillu hlásí 20 °C, jasno, bezvětří (vánek do 5 km/h) a suchý trávník. Žádný déšť ani nárazový vítr nekazí technickou kombinaci.\n\n3. Prověrka VETO filtrů: \n- Forma favorita: Sevilla nemá sinusoidní bilanci pod kurzem 1.60 (kurz je lákavých 1.90). \n- Kalendář: Ani jeden tým nehrál vyčerpávající evropský pohár v týdnu. \n- Srovnání s ostatními trhy na tiketu: U zápasu PSG vs Lyon (1.36) platí okamžité VETO kvůli marodce na obou stranách (Kvaratskhelia, Dembélé, Marquinhos u PSG; Šulc a Openda u Lyonu) a přesunu termínu kvůli protestům v Paříži. V tenise bylo uplatněno VETO na Kateřinu Siniakovou (1.40), která v neděli vyhrála turnaj v Ósace a čelí syndromu okamžité únavy a přeletu. V NFL (Philadelphia vs Dallas) platí VETO z lekce divizních přestřelek a zranění JDB Hurts, a v šipkách blokuje sázky pravidlo pro krátké formáty Modus Super Series. \n\nZÁVĚR: Sevilla má na domácím stadionu proti zdecimované Osasuně reálnou pravděpodobnost výhry okolo 56–57 % (fér kurz 1.76). Nabízený kurz 1.90 překonává sazej_od hranici (1.82) a představuje čistou matematickou i kontextovou hodnotu."
+    }
+  ],
+  "vyhodnoceno": false
+}
