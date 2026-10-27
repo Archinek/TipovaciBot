@@ -7,7 +7,8 @@
       "sazej_od": "1.94",
       "vklad": "2.5/10",
       "duvera": "8",
-      "uspesnost": "53 %"
+      "uspesnost": "53 %",
+      "vysledek": "❌ PROHRA (3:4 sn / 3:3 v ZHD)"
     }
   ],
   "alternativni": [
@@ -18,7 +19,8 @@
       "sazej_od": "1.69",
       "vklad": "2.5/10",
       "duvera": "8",
-      "uspesnost": "61 %"
+      "uspesnost": "61 %",
+      "vysledek": "✅ VÝHRA (3:6)"
     }
   ],
   "analyzy": [
@@ -31,5 +33,9 @@
       "text": "VETO KONTROLA A KONTEXT: Zápas plně splňuje specifické pravidlo sporty.yaml: 'Potvrzený slabý náhradní brankář (nebo 3. gólman kvůli marodce) + elitní ofenziva soupeře = Over 5.5 gólu'. NY Rangers zasáhla kritická zpráva – elitní gólman Igor Šesťorkin je po vážném zranění vyřazen do konce sezóny. Rangers museli narychlo podepsat osmatřicetiletého veterána Jamese Reimera a v rotaci spoléhat na nezkušeného Dylana Garanda. Defenzivní systém New Yorku bez své opory okamžitě zkolaboval – v posledních dvou utkáních inkasovali 7 gólů v Ottawě (4:7) a 5 gólů v Torontu (4:5), přičemž hranice 5.5 gólu byla překonána v 7 z jejich posledních 10 duelů. Proti nim nastupuje ofenzíva Los Angeles Kings posílená o bývalou megastar Rangers Artemije Panarina, pro kterého jde o mimořádně emotivní návrat do Madison Square Garden. LA si v průměru drží stabilní palebnou sílu a proti oslabenému brankovišti domácích si vypracuje řadu šancí. Při pravděpodobnosti 61 % je fér kurz 1.64, sazej_od s 3% hranou 1.69. Tržní kurz 1.79 na Over 5.5 gólů je velmi hodnotnou alternativní volbou."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "Při sázení na vysokou hranici Over 6.5 v základní hrací době v NHL nespoléhat na neověřené předpoklady o startujícím brankáři soupeře – Detroit nasadil do svého prvního startu v NHL Michala Postavu, což vedlo k defenzivně zodpovědnější hře týmu. Hranice 6.5 vyžaduje extrémní střeleckou efektivitu, kterou při remíze 3:3 zastavil konec základní hrací doby."
+  ]
 }
