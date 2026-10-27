@@ -1,34 +1,47 @@
 {
   "hlavni": [
     {
-      "zapas": "1.FC Köln vs Union Berlin (Fotbal)",
-      "tip": "Výsledek zápasu - 1.FC Köln",
-      "kurz": "1.83",
-      "sazej_od": "1.77",
+      "zapas": "Bradford City vs Peterborough (Fotbal)",
+      "tip": "Počet gólů v zápasu: Méně než 2.5",
+      "kurz": "2.23",
+      "sazej_od": "2.06",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "58 %"
+      "uspesnost": "51 %"
+    },
+    {
+      "zapas": "New York Knicks vs Detroit Pistons (Basketbal)",
+      "tip": "Handicap v zápasu (včetně prodloužení): Detroit Pistons (+3.5)",
+      "kurz": "1.95",
+      "sazej_od": "1.85",
+      "vklad": "2.5/10",
+      "duvera": "8",
+      "uspesnost": "56 %"
     }
   ],
   "alternativni": [
     {
-      "zapas": "Hamburger SV vs Eintracht Frankfurt (Fotbal)",
-      "tip": "Kdo postoupí - Eintracht Frankfurt",
-      "kurz": "1.61",
-      "sazej_od": "1.54",
+      "zapas": "Cobolli F. vs Dimitrov G. (Tenis)",
+      "tip": "Vítěz zápasu: Cobolli F.",
+      "kurz": "1.46",
+      "sazej_od": "1.40",
       "vklad": "2.5/10",
       "duvera": "9",
-      "uspesnost": "67 %"
+      "uspesnost": "74 %"
     }
   ],
   "analyzy": [
     {
-      "nadpis": "ZÁPAS: 1.FC Köln vs Union Berlin (Fotbal - DFB-Pokal)",
-      "text": "KONTEXTOVÁ A VETO ANALÝZA: Utkání 2. kola Německého poháru v zaplněném RheinEnergieStadionu (očekáváno 50 000 diváků). Kontextový průzkum odhalil zásadní nesoulad v prioritách obou týmů, který není v kurzu plně doceněn. Union Berlin se pod trenérem Maurem Lustrinellim potácí na 17. sestupové příčce Bundesligy a o víkendu absolvoval extrémně fyzicky náročný zápas v Augsburgu (1:1), kde hrál přes hodinu v deseti. Klíčový stoper Felix Uduokhai navíc utrpěl zranění a viděl červenou kartu. Trenér Lustrinelli pro média otevřeně přiznal, že absolutní prioritou klubu je boj o záchranu v Bundeslize a pohár poslouží k rotaci a šetření klíčových opor. Naproti tomu 1.FC Köln nasazuje svou elitní ofenzivní vozbu (Thijs Dallinga, Linton Maina, Said El Mala) a před bouřlivou domácí kulisou bere pohár jako klíčovou prestižní záležitost. KONTROLA POČASÍ: V Kolíně nad Rýnem se v čase výkopu (20:45) očekává teplota kolem 13 °C, bez deště a mírný vítr do 15 km/h, což nahrává technické kombinační hře domácích. VETO KONTROLA: Kurz na výhru domácích je 1.83 (není pod 1.60, neporušuje pravidlo sinusoidy), nejde o pohárovou odvetu na remízu, nechybí klíčový defenzivní štít ani brankář na straně domácích. ZÁPAS PROŠEL KOMPLETNÍM VETO FILTREM BEZ VÝHRAD. Fér kurz odhadujeme na 1.72 (58 %), hodnota 1.83 nabízí solidní matematickou hranu."
+      "nadpis": "ZÁPAS: Bradford City vs Peterborough (Fotbal - EFL Cup)",
+      "text": "VETO KONTROLA A KONTEXT: Zápas byl detailně prověřen a prošel všemi VETO filtry sporty.yaml bez nálezu překážky. Jedná se o osmifinále Carabao Cupu mezi dvěma celky z League One na stadionu Valley Parade. Zjištěné povětrnostní podmínky pro Bradford hlásí dešťové přeháňky, těžký mokrý trávník a nárazový vítr kolem 30 km/h, což dle playbooku zásadně nahrává Underu gólů a eliminuje technické kombinační akce. Zprávy z kabin navíc potvrzují klíčové absence v útočných řadách: Bradford postrádá nejlepšího střelce Stephena Humphryse i ofenzivní křídla Joshe Neufvilla a Tyreika Wrighta; Peterborough přijíždí bez Sama Hughese a Ria Adebisiho. V pohárových vyřazovacích duelech volí oba manažeři (Michael Duff i Robbie Savage) opatrnou taktiku založenou na zajištěné defenzivě. Kurz 2.23 na méně než 2.5 gólu je trhem výrazně přestřelený, fér hodnota se nachází kolem 2.00."
     },
     {
-      "nadpis": "ZÁPAS: Hamburger SV vs Eintracht Frankfurt (Fotbal - DFB-Pokal)",
-      "text": "KONTEXTOVÁ A VETO ANALÝZA: Pohárový duel na Volksparkstadionu. Kontextové ověření potvrdilo těžkou ofenzivní marodku Hamburgeru SV, kterou trenér Merlin Polzin potvrdil na tiskové konferenci: mimo hru je klíčový útočník Yussuf Poulsen (problémy s kyčlí) a středopolař Fabio Vieira (svalové zranění stehna). HSV má dlouhodobý problém s produktivitou (vstřelil pouhých 6 gólů v 7 ligových zápasech) a po bezkrevném víkendovém výkonu s Paderbornem (0:1) čelí herní krizi. Eintracht Frankfurt pod vedením Adiho Hüttera předvedl v Dortmundu takticky vyspělý výkon a opírá se o fungující obrannou osu vedenou kapitánem Robinem Kochem. Frankfurt disponuje výrazně širším a kvalitnějším kádrem pro rotaci. Volba trhu 'Kdo postoupí' za 1.61 je metodicky perfektní, neboť eliminuje riziko remízy po 90 minutách a pokrývá prodloužení i penalty, kde se hloubka kádru projeví naplno. KONTROLA POČASÍ: Hamburk v 18:00 hlásí cca 11 °C, polojasno, vítr kolem 16 km/h – terén i podmínky regulérní. VETO KONTROLA: Zápas nenaráží na žádné veto pravidlo pro pohárová utkání, nejde o odvetu a disciplinární bilance Eintrachtu je stabilní. ZÁPAS PROŠEL VŠEMI FILTRY SPORTY.YAML. Fér kurz na postup Frankfurtu je 1.49 (67 %), hodnota 1.61 poskytuje výbornou edge."
+      "nadpis": "ZÁPAS: New York Knicks vs Detroit Pistons (Basketbal - NBA)",
+      "text": "VETO KONTROLA A KONTEXT: Prověřeno přes oficiální reporty, zápas plně vyhovuje pravidlům pro NBA a prošel VETO filtrem. New York Knicks vstoupili do sezóny v těžké krizi (bilance 0-3), kdy se trápí při střelbě z perimetru a jejich ofenzivní rating dramaticky zaostává za očekáváním po prohře s Orlandem (102:111). Naproti tomu Detroit Pistons zažívají snový start (bilance 3-0) po dominantní venkovní výhře ve Filadelfii (106:93). Cade Cunningham hraje v životní fazóně (26 bodů, 8 doskoků, 8 asistencí), skvěle ho doplňují Duncan Robinson, John Collins a Daniss Jenkins. Detroit dominuje v doskakování pod oběma koši a Knicks momentálně nemají potřebný herní rytmus na pokrytí vypsaného handicapu. Kladný handicap +3.5 bodu na rozjetý Detroit v kurzu 1.95 přináší stabilní hodnotu s dostatečnou rezervou na koncovku utkání."
+    },
+    {
+      "nadpis": "ZÁPAS: Cobolli F. vs Dimitrov G. (Tenis - ATP Vídeň)",
+      "text": "VETO KONTROLA A KONTEXT: Zápas 1. kola prestižního turnaje ATP 500 ve Vídni prošel kompletní VETO kontrolou. Nenastává VETO pravidlo o únavě z jiného kontinentu – Cobolli minulý týden hrál semifinále v Lyonu na totožném povrchu (halový tvrdý povrch) a do Vídně přijíždí maximálně motivován v boji o premiérovou účast na Turnaji mistrů v Turíně jako aktuální světová šestka. Naproti tomu veterán Grigor Dimitrov (aktuálně až 124. na žebříčku ATP) prochází dlouhodobou herní i fyzickou krizí způsobenou vleklými svalovými potížemi prsního svalu; v letošní sezóně má negativní bilanci (13-19) a naposledy vypadl v 1. kole na challengeru. Cobolliho konzistence ze základní čáry, fyzická odolnost a současná fazóna jasně převyšují limitovaného Dimitrova. Kurz 1.46 má proti fér kurzu 1.35 dostatečnou hranu a představuje vysoce spolehlivou volbu."
     }
   ],
   "vyhodnoceno": false
