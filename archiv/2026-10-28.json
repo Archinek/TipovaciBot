@@ -1,10 +1,10 @@
 {
   "hlavni": [
     {
-      "zapas": "Paris SG vs Aalborg (Házená)",
-      "tip": "Paris SG -0.5",
-      "kurz": "1.88",
-      "sazej_od": "1.79",
+      "zapas": "Middle Tennessee Blue Raiders vs Kennesaw State Owls (Americký fotbal - NCAA)",
+      "tip": "Výsledek 1. poločasu: Middle Tennessee Blue Raiders",
+      "kurz": "1.87",
+      "sazej_od": "1.78",
       "vklad": "2.0/10",
       "duvera": "8",
       "uspesnost": "58 %"
@@ -12,23 +12,36 @@
   ],
   "alternativni": [
     {
-      "zapas": "Middle Tennessee Blue Raiders vs Kennesaw State Owls (Americký fotbal)",
-      "tip": "Middle Tennessee Blue Raiders (Vítěz zápasu včetně prodloužení)",
-      "kurz": "1.66",
-      "sazej_od": "1.54",
+      "zapas": "Tiafoe F. vs Musetti L. (Tenis - ATP Vídeň)",
+      "tip": "Vítěz zápasu: Tiafoe F.",
+      "kurz": "1.78",
+      "sazej_od": "1.68",
       "vklad": "2.5/10",
       "duvera": "8",
-      "uspesnost": "67 %"
+      "uspesnost": "62 %"
+    },
+    {
+      "zapas": "Washington Capitals vs Philadelphia Flyers (Hokej - NHL)",
+      "tip": "Výsledek zápasu: Washington Capitals",
+      "kurz": "1.74",
+      "sazej_od": "1.65",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "63 %"
     }
   ],
   "analyzy": [
     {
-      "nadpis": "ZÁPAS: Paris SG vs Aalborg (Házená - Liga mistrů)",
-      "text": "Analýza 6. kola EHF Champions League: V prvním střetnutí na dánské půdě skončil duel remízou 33:33, ve které zářil Ferran Solé (10 branek). Na domácí palubovce ve Stade Pierre de Coubertin v Paříži je PSG tradičně podstatně efektivnější a diktuje vysoké tempo hry. O víkendu si Pařížané v domácí Starligue s chutí zastříleli při demolici Saint-Raphaël 42:28 a drží se v čele ligy. Klíčová osa týmu v čele s kanonýrem Elohimem Prandim (29 gólů v LM) a spolehlivou brankářskou dvojicí je v plném zápasovém rytmu. Aalborg sice spoléhá na produktivního Juriho Knorra (30 branek), avšak při venkovním výjezdu pravidelně ztrácí jistotu na postavenou obranu a v přechodu do rychlé druhé vlny zaostává za pařížským kádrem. VETO KONTROLA: Ověřena hala (Coubertin), vytížení kádru i absence opor. Sázka na minimální handicap Paris SG -0.5 v kurzu 1.88 představuje de facto čistou výhru domácích bez remízy v základním čase a překonává požadovanou 5,0% hranu (Tier B). VETO: PROŠLO."
+      "nadpis": "ZÁPAS: Middle Tennessee Blue Raiders vs Kennesaw State Owls (Americký fotbal - NCAA)",
+      "text": "Kontextová prověrka a meteorologická analýza proběhly bez nálezu VETO překážek. Zápas se hraje na otevřeném stadionu Johnny 'Red' Floyd Stadium v Murfreesboro v Tennessee. Předpověď počasí pro večerní výkop hlásí stabilní podmínky: polojasno, teploty kolem 20 °C a mírný vítr o rychlosti pouhých 5 až 9 km/h (3–6 mph), což je hluboko pod kritickým limitem 25 km/h ze sporty.yaml. Middle Tennessee (bilance 4-3, v konferenci 2-1) profituje ze stabilní rozehrávky QB Romana Gagliana (12 TD, pouhé 2 INT) a enormní disciplíny – s pouhými 4 ztrátami míče za celou sezónu patří k nejopatrnějším týmům soutěže. Naproti tomu Kennesaw State (1-6) prochází hlubokou krizí po šesti prohrách v řadě. V konferenčních zápasech generují Owls pouze 5.33 yardu na akci, na třetích downech jsou druzí nejhorší v zemi a quarterback Rickie Collins má více zachycených přihrávek (5 INT) než touchdownů (4 TD). Sázka na vedení domácích v 1. poločase eliminuje případné polevení v koncovce a využívá okamžitého tlaku Blue Raiders proti pasivní obraně soupeře. Zápas plně vyhovuje všem kritériím Tier A."
     },
     {
-      "nadpis": "ZÁPAS: Middle Tennessee Blue Raiders vs Kennesaw State Owls (Americký fotbal - C-USA)",
-      "text": "Středeční souboj Conference USA na otevřeném stadionu Johnny 'Red' Floyd Stadium v Murfreesboro. Domácí Middle Tennessee (4-3 celkově, 2-1 v konferenci) pod hlavním trenérem Derekem Masonem našli pevnou herní identitu a drží dvouzápasovou vítěznou šňůru. Útok vedený quarterbackem Romanem Gaglianem a running backy Antoniem Martinem a Terrencem Brownem se opírá o precizní disciplínu – Blue Raiders ztratili za celou sezónu pouze 4 míče (turnovers). Naproti tomu Kennesaw State Owls (1-6) prožívají těžkou krizi, prohráli šest utkání v řadě a dosud neporazili jediného soupeře z divize FBS. Hostující QB Rickie Collins je pod neustálým tlakem, má více interceptionů (5) než touchdownů (4) a útok Owls generuje v konferenci slabých 5.33 yardů na akci. VETO KONTROLA: Podmínky v Murfreesboro prověřeny – polojasno, teplota kolem 16 °C a naprosto klidný vítr o rychlosti pouhých 2–5 mph (hluboko pod kritickým VETO limitem 15–20 mph ze sporty.yaml). Klíčoví rozehrávači i opory ofenzivní lajny jsou fit. Trh 'včetně prodloužení' eliminuje jakékoliv riziko remízy. Kurz 1.66 nabízí bezpečnou hodnotu překonávající fér kurz 1.49 s rezervou nad 3,0% minimální hranou pro americký fotbal. VETO: PROŠLO."
+      "nadpis": "ZÁPAS: Tiafoe F. vs Musetti L. (Tenis - ATP Vídeň)",
+      "text": "Utkání prošlo VETO filtrem se silným kontextovým zvýhodněním pro amerického tenistu. Lorenzo Musetti sice v neděli triumfoval v Lyonu, avšak do Vídně přijíždí po extrémním fyzickém vyčerpání – v semifinále odvracel čtyři mečboly v maratonském třísetovém duelu a kumulace odehraných minut v hale bez dne regenerace představuje masivní únavový deficit. Tento faktor je v souladu s metodikou ze sporty.yaml, která varuje před přeceňováním vítězů z předchozího týdne při rychlém přeletu na další turnaj. Frances Tiafoe je naproti tomu dokonale odpočatý (15 dní bez soutěžního zápasu od Šanghaje) a disponuje maximální motivací, neboť bojuje o poslední postupová místa na Turnaj mistrů (Nitto ATP Finals v Turíně). Rychlý halový tvrdý povrch ve Wiener Stadthalle navíc nahrává Tiafoovu agresivnímu pojetí servisu a forhendu. Vzájemná bilance na okruhu ATP hovoří pro Američana poměrem 5-4, přičemž ovládl i poslední měření sil v srpnu na betonu v Cincinnati (7-6, 7-5). Kurz 1.78 má značnou hodnotu proti unavenému soupeři."
+    },
+    {
+      "nadpis": "ZÁPAS: Washington Capitals vs Philadelphia Flyers (Hokej - NHL)",
+      "text": "Střetnutí splňuje povinnou prověrku kalendáře i stavu brankoviště bez uvalení VETO. Philadelphia Flyers se nachází v extrémně nevýhodném zápasovém harmonogramu (B2B): hrají třetí zápas během pouhých čtyř nocí po úterní vyčerpávající prohře v prodloužení s Columbusem (3:4 po OT) a následném nočním přeletu do Washingtonu. Flyers navíc dlouhodobě trápí koncovka – s průměrem pouhých 1.93 vstřeleného gólu na zápas jsou nejhorším týmem celé NHL a jejich elitní forvard Travis Konecny je vyřazen na listině zraněných (IR). V brance hostů nastoupí unavený Daniel Vladař nebo Joseph Woll (1-4-2, úspěšnost pod 90 %). Naopak Washington Capitals těžili ze tří dnů odpočinku v domácím prostředí, do tréninku se v plné síle vrátil startující brankář Logan Thompson (4-3-0, průměr 2.90) a ofenziva tažená Dylanem Stromem a Alexem Tuchem vykazuje stabilní produkci 3.40 gólu na zápas. V Capital One Arena drží Capitals bilanci 5-2-0, což proti zdecimovanému diviznímu rivalovi představuje jednoznačnou převahu."
     }
   ],
   "vyhodnoceno": false
