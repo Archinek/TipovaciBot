@@ -7,7 +7,8 @@
       "sazej_od": "2.06",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "51 %"
+      "uspesnost": "51 %",
+      "vysledek": "✅ VÝHRA (2:0)"
     },
     {
       "zapas": "New York Knicks vs Detroit Pistons (Basketbal)",
@@ -16,7 +17,8 @@
       "sazej_od": "1.85",
       "vklad": "2.5/10",
       "duvera": "8",
-      "uspesnost": "56 %"
+      "uspesnost": "56 %",
+      "vysledek": "❌ PROHRA (111:97)"
     }
   ],
   "alternativni": [
@@ -27,7 +29,8 @@
       "sazej_od": "1.40",
       "vklad": "2.5/10",
       "duvera": "9",
-      "uspesnost": "74 %"
+      "uspesnost": "74 %",
+      "vysledek": "✅ VÝHRA (6:4, 3:6, 6:3)"
     }
   ],
   "analyzy": [
@@ -44,5 +47,9 @@
       "text": "VETO KONTROLA A KONTEXT: Zápas 1. kola prestižního turnaje ATP 500 ve Vídni prošel kompletní VETO kontrolou. Nenastává VETO pravidlo o únavě z jiného kontinentu – Cobolli minulý týden hrál semifinále v Lyonu na totožném povrchu (halový tvrdý povrch) a do Vídně přijíždí maximálně motivován v boji o premiérovou účast na Turnaji mistrů v Turíně jako aktuální světová šestka. Naproti tomu veterán Grigor Dimitrov (aktuálně až 124. na žebříčku ATP) prochází dlouhodobou herní i fyzickou krizí způsobenou vleklými svalovými potížemi prsního svalu; v letošní sezóně má negativní bilanci (13-19) a naposledy vypadl v 1. kole na challengeru. Cobolliho konzistence ze základní čáry, fyzická odolnost a současná fazóna jasně převyšují limitovaného Dimitrova. Kurz 1.46 má proti fér kurzu 1.35 dostatečnou hranu a představuje vysoce spolehlivou volbu."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "NBA: Nepřeceňovat malý vzorek výsledků ze samého začátku sezóny (např. 0-3 vs. 3-0) při sázení handicapu proti elitnímu týmu. Silný favorit v krizi hrající doma vstupuje do zápasu s maximální naléhavostí a motivací odvrátit ostudný start (učebnicový bounce-back spot), což v kombinaci s nízkým handicapem (+3.5) vytváří obrovské riziko rychlé regrese k průměru."
+  ]
 }
