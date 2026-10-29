@@ -1,0 +1,36 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Green Bay Packers vs Carolina Panthers (Americký fotbal - NFL)",
+      "tip": "Méně než 47.5 bodu",
+      "kurz": "1.80",
+      "sazej_od": "1.72",
+      "vklad": "1.5/10",
+      "duvera": "8",
+      "uspesnost": "59 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Frosinone vs Lecce (Fotbal - Serie A)",
+      "tip": "Výhra Frosinone",
+      "kurz": "1.71",
+      "sazej_od": "1.61",
+      "vklad": "2.0/10",
+      "duvera": "8.5",
+      "uspesnost": "63 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Green Bay Packers vs Carolina Panthers (Americký fotbal - NFL)",
+      "text": "KONTEXTOVÁ A VETO ANALÝZA: Utkání 8. týdne NFL na otevřeném stadionu Lambeau Field v Green Bay prošlo kompletní kontrolou podle sporty.yaml. Meteorologická kontrola potvrzuje fotbalové podzimní podmínky: teplota kolem 9 až 11 °C, slabý vítr v rozmezí 8–14 km/h (5–9 mph), což nepřekračuje kritické veto pro nárazový vítr (15+ mph). Zásadní informační hranou (edge), která není v celkovém totalu 47.5 plně doceněna, je těžce zdecimovaná ofenzivní lajna na obou stranách. Oficiální injury report potvrdil absenci klíčových mužů v zákopech: Green Bay má mimo hru startujícího centra Seana Rhyana i pravého guarda Travise Glovera. Carolina na tom není o nic lépe – mimo hru jsou startující levý guard Damien Lewis i univerzál Torricelli Simpkins III. Quarterback Panthers Bryce Young čelí obrovskému tlaku (v minulé hře schytal 5 sacků a byl pod tlakem na 51,5 % dropbacků). Defenzíva Packers pod vedením Jonathana Gannona generuje tlak na 38,5 % akcí i bez blitzování (4. nejlepší v lize) a za poslední 4 duely povolila průměrně jen 13,5 bodu na zápas. Jordan Love se po ztrátě opor v O-Line bude muset vyrovnat s kratším časem na odhoz. Výsledkem bude herní scénář s častými punty, dlouhými náročnými drivy a nízkou efektivitou v red zone. Sázka prošla VETO kontrolou (nejde o automatické odepsání útoku kvůli RB1 ani o extrémně nízkou divizní hranici pod 40 bodů)."
+    },
+    {
+      "nadpis": "ZÁPAS: Frosinone vs Lecce (Fotbal - Serie A)",
+      "tip": "Výhra Frosinone",
+      "text": "KONTEXTOVÁ A VETO ANALÝZA: Předehrávka 9. kola italské Serie A na Stadio Benito Stirpe nabízí výraznou hodnotu na domácí celek. Kontrola počasí přes družicové modely hlásí ideální podmínky: jasno, příjemných 19 °C a mírný vítr do 6 km/h. Frosinone prožívá výtečný vstup do sezóny – nachází se na 6. místě tabulky se 14 body a na domácím stadionu drží sérii tří ligových výher v řadě při impozantní ofenzivní produktivitě (17 vstřelených branek v 8 kolech). Naopak hostující Lecce (12. místo, 9 bodů) prohrálo 5 z posledních 7 soutěžních zápasů a trenér Eusebio Di Francesco řeší kritický kolaps v obraně. Ze zdravotních důvodů jsou zcela mimo hru oba startující stopeři – Thiago Gabriel i klíčový pilíř Kialonda Gaspar, což nutí Lecce nasadit nesehranou provizorní stoperskou dvojici. Frosinone pod trenérem Alvinim postrádá pouze náhradníka Floriana Grillitsche a nastupuje v plné ofenzivní síle s triem Ghedjemis-Schmid-Kvernadze za hrotovým Raimondem. Zápas prošel VETO kontrolou: kurz 1.71 je bezpečně nad limitem 1.60, Frosinone nemá sinusoidní formu (pouze 1 prohra z posledních 7 kol), nejedná se o pohárovou odvetu ani o sázku závislou na čistém kontu."
+    }
+  ],
+  "vyhodnoceno": false
+}

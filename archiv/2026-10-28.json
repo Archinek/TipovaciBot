@@ -7,7 +7,8 @@
       "sazej_od": "1.78",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "58 %"
+      "uspesnost": "58 %",
+      "vysledek": "❌ PROHRA (poločas 17:19, konečné skóre 28:44)"
     }
   ],
   "alternativni": [
@@ -18,7 +19,8 @@
       "sazej_od": "1.68",
       "vklad": "2.5/10",
       "duvera": "8",
-      "uspesnost": "62 %"
+      "uspesnost": "62 %",
+      "vysledek": "❌ PROHRA (6:7, 5:7)"
     },
     {
       "zapas": "Washington Capitals vs Philadelphia Flyers (Hokej - NHL)",
@@ -27,7 +29,8 @@
       "sazej_od": "1.65",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "63 %"
+      "uspesnost": "63 %",
+      "vysledek": "✅ VÝHRA (5:2)"
     }
   ],
   "analyzy": [
@@ -44,5 +47,10 @@
       "text": "Střetnutí splňuje povinnou prověrku kalendáře i stavu brankoviště bez uvalení VETO. Philadelphia Flyers se nachází v extrémně nevýhodném zápasovém harmonogramu (B2B): hrají třetí zápas během pouhých čtyř nocí po úterní vyčerpávající prohře v prodloužení s Columbusem (3:4 po OT) a následném nočním přeletu do Washingtonu. Flyers navíc dlouhodobě trápí koncovka – s průměrem pouhých 1.93 vstřeleného gólu na zápas jsou nejhorším týmem celé NHL a jejich elitní forvard Travis Konecny je vyřazen na listině zraněných (IR). V brance hostů nastoupí unavený Daniel Vladař nebo Joseph Woll (1-4-2, úspěšnost pod 90 %). Naopak Washington Capitals těžili ze tří dnů odpočinku v domácím prostředí, do tréninku se v plné síle vrátil startující brankář Logan Thompson (4-3-0, průměr 2.90) a ofenziva tažená Dylanem Stromem a Alexem Tuchem vykazuje stabilní produkci 3.40 gólu na zápas. V Capital One Arena drží Capitals bilanci 5-2-0, což proti zdecimovanému diviznímu rivalovi představuje jednoznačnou převahu."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "NCAA Football: Nesázet na poločasové vedení favorita pouze na základě papírové disciplíny a série porážek outsidera. Týmy s dlouhou šňůrou nezdarů v konferenčních zápasech často vstupují do prvního poločasu s vysokou agresivitou a riskantním play-callingem, zatímco favorit může postrádat úvodní tempo; sázkám na 1. poločas u velkých papírových disparit se vyhnout nebo preferovat zápasový handicap.",
+    "ATP Tenis: Přeceňování faktoru únavy u vítězů turnajů z předešlého týdne na úkor herního rytmu a vítězné mentality (momentum). Dlouhá pauza bez ostrého zápasu (15+ dní u Tiafoea) často znamená ztrátu jistoty v klíčových momentech (např. tiebreaky, odvracení brejkbolů), zatímco hráč na vítězné vlně s vysokou sebedůvěrou na podání dokáže únavový deficit kompenzovat psychickou převahou."
+  ]
 }
