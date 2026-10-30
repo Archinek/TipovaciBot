@@ -7,7 +7,8 @@
       "sazej_od": "2.15",
       "vklad": "1.5/10",
       "duvera": "8",
-      "uspesnost": "48 %"
+      "uspesnost": "48 %",
+      "vysledek": "❌ PROHRA (2:2)"
     }
   ],
   "alternativni": [
@@ -18,7 +19,8 @@
       "sazej_od": "1.64",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "63 %"
+      "uspesnost": "63 %",
+      "vysledek": "✅ VÝHRA (5:1)"
     },
     {
       "zapas": "Fiorentina vs Atalanta (Fotbal)",
@@ -27,7 +29,8 @@
       "sazej_od": "1.39",
       "vklad": "2.5/10",
       "duvera": "9",
-      "uspesnost": "74 %"
+      "uspesnost": "74 %",
+      "vysledek": "✅ VÝHRA (2:2)"
     }
   ],
   "analyzy": [
@@ -40,5 +43,9 @@
       "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: Zápas splňuje veškerá kritéria sporty.yaml a neporušuje žádné VETO pravidlo. Frosinone je v úvodu sezóny Serie A velkým zjevením – pod trenérem Massimilianem Alvinim se drží na 6. místě tabulky díky organizovanému vysokému presinku a produktivní ofenzivě (o víkendu nastřílelo 4 góly v Bergamu). Doma na Stadio Benito Stirpe prohrálo pouze s absolutní špičkou (Neapol a Juventus). Soupeř z Lecce pod Eusebiem Di Francescem naopak prochází hlubokou krizí, trápí se v zóně sestupu a po domácí prohře 0:2 s Juventusem vykazuje těžkou impotenci v předfinální fázi. Kontrola podmínek: v místě zápasu panuje jasno, teplota 15 °C a mírný vítr do 5 km/h, což plně vyhovuje kombinační hře domácích po zemi. Frosinone má kompletní útočnou vozbu v čele s Terzičem. Reálná pravděpodobnost výhry Frosinone je kalkulována na 63 % (fér kurz 1.59, sazej_od 1.64 při 3% edge). Kurz 1.69 nabízí jasnou matematickou i kontextovou výhodu."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "Nepřeceňovat čistou výhru týmu z dolní části tabulky pouze na základě marodky favorita; u týmů s dlouhodobě zranitelnou defenzivou a nízkou schopností dovést zápas do vítězného konce volit jako hlavní tip bezpečnější asijský handicap nebo neprohru (1X)."
+  ]
 }
