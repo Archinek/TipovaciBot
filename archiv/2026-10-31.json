@@ -1,0 +1,40 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Artis Brno vs Zlín (Fotbal)",
+      "tip": "Výsledek zápasu - Artis Brno",
+      "kurz": "1.89",
+      "sazej_od": "1.78",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "58 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Moicano, Renato vs Nolan, Tom (Bojové sporty)",
+      "tip": "Vítěz zápasu - Moicano, Renato",
+      "kurz": "1.70",
+      "sazej_od": "1.62",
+      "vklad": "1.5/10",
+      "duvera": "8",
+      "uspesnost": "65 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Artis Brno vs Zlín (Fotbal)",
+      "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: V Chance Lize dochází k záchranářskému souboji, kde domácí SK Artis Brno hostí absolutně se trápící FC Zlín. Hostující 'Ševci' prožívají katastrofální podzim – v 12 odehraných kolech získali pouhé 2 body za bilanci 0 výher, 2 remízy a 10 porážek, mají nejhorší obranu v soutěži a druhý nejhorší útok. Impuls nepřinesla ani výměna hlavního trenéra Červenky za Pavla Hoftycha. Naopak Artis Brno se po vynucené pauze způsobené virózou v týmu herně i výsledkově zvedl: zvítězil v Hradci Králové 4:2 a následně remizoval 0:0, přičemž do své ShipEx Arény se vrací v kompletní sestavě a s vysokým sebevědomím. POVINNÁ KONTROLA POČASÍ: V Brně je v čase výkopu hlášeno 9 °C, zataženo až polojasno, bez srážek (0.0 mm) a mírný vítr 8 km/h. Trávník je v optimálním stavu, nehrozí podmáčení ani vliv větru. VETO KONTROLA: Zápas nenaráží na žádné VETO pravidlo z konfiguračního souboru sporty.yaml – kurz na favorita 1.89 je bezpečně nad prahem 1.60, forma Artisu nevykazuje sinusoidu, nejedná se o pohárovou odvetu a v týmu nechybí brankář ani klíčový defenzivní štít. Fér kurz odhadujeme na 1.72 (pravděpodobnost 58 %), s povinnou 3% hranou pro Tier A je sazej_od 1.78. Kurz 1.89 nabízí významnou matematickou hodnotu."
+    },
+    {
+      "nadpis": "ZÁPAS: Moicano, Renato vs Nolan, Tom (Bojové sporty)",
+      "tip": "Vítěz zápasu - Moicano, Renato",
+      "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: Hlavní zápas galavečera UFC Vegas 123 / UFC Fight Night v Las Vegas. ZÁPASOVÉ PROSTŘEDÍ A ROZMĚRY: Zápas probíhá v Meta APEX, což znamená zmenšený oktagon (průměr 25 stop oproti standardním 30 stopám). Dle playbooku sporty.yaml zmenšený prostor APEXu drasticky eliminuje manévrovací schopnosti postojářů a masivně nahrává elitním grapplerům na zkracování vzdálenosti a strhy. VÁHA A STAV: Oficiální páteční vážení potvrdilo, že jak Renato Moicano (155.5 lbs), tak Tom Nolan (155.5 lbs) bez potíží navážili a prošli bez dehydratace či zranění. STYLOVÝ MATCHUP: Renato Moicano je špičkový BJJ černý pás z American Top Teamu se zkušenostmi z pětikolových bitev a drtivou kontrolou na zemi, což předvedl při škrcení Chrise Duncana či demolici Benoîta Saint Denise. Mladý Australan Tom Nolan je čistokrevný postojář s děravou obranou proti takedownům a nulovým prověřením v šampionských kolech. VETO KONTROLA: Prověřeno kritické pravidlo ze sporty.yaml 'Nikdy nepředpokládej, že elitní grappler opustil svou zbraň' – Moicano v APEXu vždy volí taktické strhy na pletivu. Žádné zranění ani VETO pravidlo nebylo aktivováno. Fér kurz je 1.54 (65 % pravděpodobnost), s minimální hranou 5.0 % pro Tier B je kurz 1.70 vysoce hratelný."
+    },
+    {
+      "nadpis": "REPORT VETO FILTRU (Zápasy s uděleným VETO)",
+      "text": "1. Växjö vs Färjestad (Hokej - SHL): Uděleno VETO na čistou výhru Färjestadu (1.91) v základní hrací době dle pravidla sporty.yaml zakazujícího čisté sázky v defenzivních evropských ligách (SHL/Liiga) kvůli častým remízám a hlubokému defenzivnímu bloku outsidera (viz poučení Skelleftea); sázka je přípustná pouze na 'Vítěz do rozhodnutí', který Fortuna v hlavní nabídce neoddělila.\n2. Chelsea vs Manchester United (Fotbal - Premier League): Uděleno VETO na čistou výhru Chelsea (2.03) na základě povinné kontroly absencí ze sporty.yaml. Chelsea postrádá zraněnou brankářskou jedničku Emiliana Martíneze (nastupuje mladý náhradník Mike Penders) a svého nejlepšího ligového střelce Joaa Pedra (zranění stehenního svalu), navíc minulé kolo nezvládla domácí zápas s Tottenhamem."
+    }
+  ],
+  "vyhodnoceno": false
+}

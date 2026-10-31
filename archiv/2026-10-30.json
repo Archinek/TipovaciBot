@@ -7,7 +7,8 @@
       "sazej_od": "1.85",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "56 %"
+      "uspesnost": "56 %",
+      "vysledek": "✅ VÝHRA (6:2, 2:0 skreč)"
     }
   ],
   "alternativni": [
@@ -18,7 +19,8 @@
       "sazej_od": "1.49",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "69 %"
+      "uspesnost": "69 %",
+      "vysledek": "❌ PROHRA (5:2)"
     }
   ],
   "analyzy": [
@@ -31,5 +33,9 @@
       "text": "Předehrávka 9. kola francouzské Ligue 1 mezi desátým OGC Nice a druhým týmem tabulky Stade Rennais nabízí výraznou asymetrii způsobenou personální krizí domácích. Povinná kontrola počasí: V Nice (Allianz Riviera) je hlášena teplota 16 °C, mírný vítr do 10 km/h a pouze lokální přeháňka bez rizika podmáčení trávníku – ideální podmínky pro kombinační fotbal. Zásadní kontext marodky: Domácí Nice čelí rozsáhlému rozpadu defenzivní řady. Mimo hru jsou klíčový stoper Moïse Bombito (po operaci holeně), obránce Alidu Seidu, Antoine Mendy i defenzivní záložník Laurent Abergel (oba přetržené vazy), navíc krajní beci Jonathan Clauss a Ali Abdi hlásí zdravotní limity. Trenér Pantaloni musí nasadit improvizovanou obranu v čele s nezkušeným Koutounem a Mandzou. Proti nim stojí Rennes vedené trenérem Franckem Haisem (bývalý kouč Nice, který dokonale zná prostředí soupeře), které po demolici Štrasburku 3:0 vládne ofenzivní pohodě díky Boulaye Diovi a Sebastianu Szymanskimu. VETO KONTROLA: Sázka na dvojtip 'Neprohra Rennes' (X2) v kurzu 1.52 plně prošla VETO filtrem. Nenaráží na pravidlo sinusoidy ani pohárovou matematiku, absence soupeře jsou objektivně systémového charakteru a kurz 1.52 převyšuje fér hladinu 1.45 s bezpečnou marží 4,8 % (min_edge 3.0 % splněno)."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "Nepřeceňovat marodku domácího týmu na úkor dlouhodobého negativního trendu venkovní výkonnosti favorita: Rennes mělo vleklé potíže a sérii proher na hřištích soupeřů s extrémně propustnou defenzivou, což v kombinaci s dlouhou domácí neporazitelností Nice převážilo nad absencemi v obraně domácích."
+  ]
 }
