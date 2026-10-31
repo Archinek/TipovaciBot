@@ -1,39 +1,34 @@
 {
   "hlavni": [
     {
-      "zapas": "Artis Brno vs Zlín (Fotbal)",
-      "tip": "Výsledek zápasu - Artis Brno",
-      "kurz": "1.89",
-      "sazej_od": "1.78",
+      "zapas": "FK Jablonec vs SK Slavia Praha (Fotbal)",
+      "tip": "Méně než 2.5 gólu v zápasu",
+      "kurz": "2.15",
+      "sazej_od": "1.95",
       "vklad": "2.0/10",
-      "duvera": "8",
-      "uspesnost": "58 %"
+      "duvera": "8.0",
+      "uspesnost": "54 %"
     }
   ],
   "alternativni": [
     {
-      "zapas": "Moicano, Renato vs Nolan, Tom (Bojové sporty)",
-      "tip": "Vítěz zápasu - Moicano, Renato",
+      "zapas": "Renato Moicano vs Tom Nolan (Bojové sporty)",
+      "tip": "Vítěz zápasu: Renato Moicano",
       "kurz": "1.70",
-      "sazej_od": "1.62",
-      "vklad": "1.5/10",
-      "duvera": "8",
-      "uspesnost": "65 %"
+      "sazej_od": "1.60",
+      "vklad": "2.5/10",
+      "duvera": "8.5",
+      "uspesnost": "64 %"
     }
   ],
   "analyzy": [
     {
-      "nadpis": "ZÁPAS: Artis Brno vs Zlín (Fotbal)",
-      "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: V Chance Lize dochází k záchranářskému souboji, kde domácí SK Artis Brno hostí absolutně se trápící FC Zlín. Hostující 'Ševci' prožívají katastrofální podzim – v 12 odehraných kolech získali pouhé 2 body za bilanci 0 výher, 2 remízy a 10 porážek, mají nejhorší obranu v soutěži a druhý nejhorší útok. Impuls nepřinesla ani výměna hlavního trenéra Červenky za Pavla Hoftycha. Naopak Artis Brno se po vynucené pauze způsobené virózou v týmu herně i výsledkově zvedl: zvítězil v Hradci Králové 4:2 a následně remizoval 0:0, přičemž do své ShipEx Arény se vrací v kompletní sestavě a s vysokým sebevědomím. POVINNÁ KONTROLA POČASÍ: V Brně je v čase výkopu hlášeno 9 °C, zataženo až polojasno, bez srážek (0.0 mm) a mírný vítr 8 km/h. Trávník je v optimálním stavu, nehrozí podmáčení ani vliv větru. VETO KONTROLA: Zápas nenaráží na žádné VETO pravidlo z konfiguračního souboru sporty.yaml – kurz na favorita 1.89 je bezpečně nad prahem 1.60, forma Artisu nevykazuje sinusoidu, nejedná se o pohárovou odvetu a v týmu nechybí brankář ani klíčový defenzivní štít. Fér kurz odhadujeme na 1.72 (pravděpodobnost 58 %), s povinnou 3% hranou pro Tier A je sazej_od 1.78. Kurz 1.89 nabízí významnou matematickou hodnotu."
+      "nadpis": "ZÁPAS: FK Jablonec vs SK Slavia Praha (Fotbal)",
+      "text": "KONTEXTOVÁ ANALÝZA A VETO PROVĚRKA: Sázková příležitost na Under 2.5 gólu v Chance Lize. Slavia Praha disponuje nejlepší defenzivou v soutěži (pouze 7 inkasovaných branek ve 12 ligových kolech), zatímco Jablonec pod vedením trenéra Luboše Kozla doma proti elitním soupeřům staví kompaktní defenzivní blok (např. v pohárové Evropě udržel čisté konto 0:0 proti anglickému Brightonu). Kalendářní faktor hraje do karet nižšímu počtu gólů – Slavia odehrála v týdnu náročný pohárový zápas v Brně a rotuje sestavu, zatímco Jablonec měl celý týden na taktickou přípravu. Počasí v Jablonci nad Nisou v čase výkopu (15:00): teplota kolem 8 °C, zataženo, vysoká vlhkost a typicky sychravé podzimní podmínky na těžším terénu stadionu Střelnice, což zpomaluje kombinaci technických ofenzivních hráčů Slavie. Trh vypsal hranici Under 2.5 v lákavém kurzu 2.15 díky renomé sešívaných, reálná pravděpodobnost defenzivního scénáře je však minimálně 54 % (fér kurz 1.85). VETO kontrola: Zápas nenaráží na žádné VETO pravidlo ze sporty.yaml (nejde o čistou výhru favorita pod 1.60 ani pohárovou odvetu). Sázka PROŠLA VETO filtrem s vysokou hodnotou."
     },
     {
-      "nadpis": "ZÁPAS: Moicano, Renato vs Nolan, Tom (Bojové sporty)",
-      "tip": "Vítěz zápasu - Moicano, Renato",
-      "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: Hlavní zápas galavečera UFC Vegas 123 / UFC Fight Night v Las Vegas. ZÁPASOVÉ PROSTŘEDÍ A ROZMĚRY: Zápas probíhá v Meta APEX, což znamená zmenšený oktagon (průměr 25 stop oproti standardním 30 stopám). Dle playbooku sporty.yaml zmenšený prostor APEXu drasticky eliminuje manévrovací schopnosti postojářů a masivně nahrává elitním grapplerům na zkracování vzdálenosti a strhy. VÁHA A STAV: Oficiální páteční vážení potvrdilo, že jak Renato Moicano (155.5 lbs), tak Tom Nolan (155.5 lbs) bez potíží navážili a prošli bez dehydratace či zranění. STYLOVÝ MATCHUP: Renato Moicano je špičkový BJJ černý pás z American Top Teamu se zkušenostmi z pětikolových bitev a drtivou kontrolou na zemi, což předvedl při škrcení Chrise Duncana či demolici Benoîta Saint Denise. Mladý Australan Tom Nolan je čistokrevný postojář s děravou obranou proti takedownům a nulovým prověřením v šampionských kolech. VETO KONTROLA: Prověřeno kritické pravidlo ze sporty.yaml 'Nikdy nepředpokládej, že elitní grappler opustil svou zbraň' – Moicano v APEXu vždy volí taktické strhy na pletivu. Žádné zranění ani VETO pravidlo nebylo aktivováno. Fér kurz je 1.54 (65 % pravděpodobnost), s minimální hranou 5.0 % pro Tier B je kurz 1.70 vysoce hratelný."
-    },
-    {
-      "nadpis": "REPORT VETO FILTRU (Zápasy s uděleným VETO)",
-      "text": "1. Växjö vs Färjestad (Hokej - SHL): Uděleno VETO na čistou výhru Färjestadu (1.91) v základní hrací době dle pravidla sporty.yaml zakazujícího čisté sázky v defenzivních evropských ligách (SHL/Liiga) kvůli častým remízám a hlubokému defenzivnímu bloku outsidera (viz poučení Skelleftea); sázka je přípustná pouze na 'Vítěz do rozhodnutí', který Fortuna v hlavní nabídce neoddělila.\n2. Chelsea vs Manchester United (Fotbal - Premier League): Uděleno VETO na čistou výhru Chelsea (2.03) na základě povinné kontroly absencí ze sporty.yaml. Chelsea postrádá zraněnou brankářskou jedničku Emiliana Martíneze (nastupuje mladý náhradník Mike Penders) a svého nejlepšího ligového střelce Joaa Pedra (zranění stehenního svalu), navíc minulé kolo nezvládla domácí zápas s Tottenhamem."
+      "nadpis": "ZÁPAS: Renato Moicano vs Tom Nolan (Bojové sporty)",
+      "text": "KONTEXTOVÁ ANALÝZA A VETO PROVĚRKA: Hlavní zápas turnaje UFC Fight Night v Las Vegas. Kritickým faktorem je prostředí haly UFC Meta APEX, kde se zápasí v menším oktagonu o průměru 25 stop. Dle metodiky sporty.yaml menší klec výrazně nahrává elitním zemařům a omezuje prostor pro únik strikera na distanc. Renato Moicano je zkušený černý pás v BJJ s absolutně elitním wrestlingem, kontrolou zad a submission hrozbou. Tom Nolan je neprověřený postojář, který dosud nečelil grapplingovému tlaku světové špičky lehké váhy. Zápasový script předpokládá zkracování vzdálenosti od Moicana, klinčování na pletivu malého APEX oktagonu a přenos boje na zem. VETO kontrola: Neporušuje pravidlo o slepém přeceňování postoje (Moicano se drží své nejsilnější zbraně na zemi, viz poučení Allen vs Duncan), ani pravidlo o bezhlavých takedownech proti zádařům (Moicano je sám elitní grappler). Sázka na výhru Moicana v kurzu 1.70 představuje solidní matematickou hranu přes 9 % a PROŠLA VETO filtrem."
     }
   ],
   "vyhodnoceno": false
