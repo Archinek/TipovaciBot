@@ -1,0 +1,35 @@
+{
+  "hlavni": [
+    {
+      "zapas": "FK Mladá Boleslav vs FC Hradec Králové (Fotbal)",
+      "tip": "Výhra Mladá Boleslav",
+      "kurz": "2.28",
+      "sazej_od": "2.10",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "49 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Thiago Agustin Tirante vs Mattia Bellucci (Tenis)",
+      "tip": "Výhra Mattia Bellucci",
+      "kurz": "1.49",
+      "sazej_od": "1.44",
+      "vklad": "2.5/10",
+      "duvera": "9",
+      "uspesnost": "72 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: FK Mladá Boleslav vs FC Hradec Králové (Fotbal)",
+      "text": "VETO & KONTEXTOVÁ KONTROLA: Zápas prošel kompletní VETO prověrkou bez jediné námitky. Podmínky v místě konání: předpověď počasí pro Mladou Boleslav na čas výkopu (13:00) hlásí oblačno, 9 °C, nulové srážky (0 mm) a slabý vítr kolem 10 km/h, což vylučuje vliv podmáčeného terénu i větru. Absence a zdravotní stav: Hradec Králové se potýká se zraněním klíčového tvůrce hry a špílmachra Vladimíra Daridy, což se okamžitě projevilo na herním projevu – Votroci z posledních 4 ligových kol vydolovali jediný bod, spadli do záchranářské skupiny a v týdnu museli podstoupit vyčerpávající 120minutové pohárové prodloužení v Prostějově. Naopak domácí Mladá Boleslav pod trenérem Alešem Majerem drží na svém stadionu stoprocentní bilanci (5 zápasů, 5 výher s jediným inkasovaným gólem), v lize vede 51 % celkového herního času a v útoku má rozjetého nejlepšího ligového střelce Martina Šuberta. Historická bilance na mladoboleslavském stadionu je pro hosty tristní (Hradec zde vyhrál pouze 1 z posledních 11 ligových střetnutí, 1-3-7). Kurz 2.28 na domácí celek představuje výraznou hodnotu proti fér hladině ~2.04 a splňuje předepsaný edge pro fotbal."
+    },
+    {
+      "nadpis": "ZÁPAS: Thiago Agustin Tirante vs Mattia Bellucci (Tenis)",
+      "text": "VETO & KONTEXTOVÁ KONTROLA: Zápas finále kvalifikace na prestižním turnaji Rolex Paris Masters plně splňuje kritéria pro Tier A tenis. Prostředí a povrch: Hraje se v hale na velmi rychlém tvrdém povrchu (Indoor Hard), což vytváří zásadní stylový rozpor. Mattia Bellucci je levoruký útočný specialista s nízkým těžištěm, skvělým prvním servisem a agresivními náběhy, zatímco Argentinec Thiago Agustín Tirante je typický antukář, jehož topspinová hra s dlouhým nápřahem na rychlém halovém podkladu trpí. Fyzická nálož a momentum z 1. kola: Bellucci v úvodním kole deklasoval zkušeného Pabla Carreña-Bustu 6:1, 7:6 za hodinu a půl bez ztráty podání, zatímco Tirante musel jít do třísetové bitvy (téměř dvě hodiny na kurtu se Svajdou). Vzájemná bilance na tvrdém povrchu vyznívá pro Itala (výhra 2:0 na sety v Manamě). VETO filtr: U Bellucciho nebyl hlášen žádný Medical Timeout, nejedná se o start bezprostředně po vyčerpávajícím turnajovém titulu a motivace postoupit do hlavní soutěže podniku Masters 1000 je stoprocentní. Kurz 1.49 nabízí solidní hodnotu s hranou nad 3.5 %."
+    }
+  ],
+  "vyhodnoceno": false
+}

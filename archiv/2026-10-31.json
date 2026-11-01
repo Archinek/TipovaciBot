@@ -7,7 +7,8 @@
       "sazej_od": "1.95",
       "vklad": "2.0/10",
       "duvera": "8.0",
-      "uspesnost": "54 %"
+      "uspesnost": "54 %",
+      "vysledek": "❌ PROHRA (0:5)"
     }
   ],
   "alternativni": [
@@ -18,7 +19,8 @@
       "sazej_od": "1.60",
       "vklad": "2.5/10",
       "duvera": "8.5",
-      "uspesnost": "64 %"
+      "uspesnost": "64 %",
+      "vysledek": "❌ PROHRA (TKO 3. kolo pro Nolana)"
     }
   ],
   "analyzy": [
@@ -31,5 +33,10 @@
       "text": "KONTEXTOVÁ ANALÝZA A VETO PROVĚRKA: Hlavní zápas turnaje UFC Fight Night v Las Vegas. Kritickým faktorem je prostředí haly UFC Meta APEX, kde se zápasí v menším oktagonu o průměru 25 stop. Dle metodiky sporty.yaml menší klec výrazně nahrává elitním zemařům a omezuje prostor pro únik strikera na distanc. Renato Moicano je zkušený černý pás v BJJ s absolutně elitním wrestlingem, kontrolou zad a submission hrozbou. Tom Nolan je neprověřený postojář, který dosud nečelil grapplingovému tlaku světové špičky lehké váhy. Zápasový script předpokládá zkracování vzdálenosti od Moicana, klinčování na pletivu malého APEX oktagonu a přenos boje na zem. VETO kontrola: Neporušuje pravidlo o slepém přeceňování postoje (Moicano se drží své nejsilnější zbraně na zemi, viz poučení Allen vs Duncan), ani pravidlo o bezhlavých takedownech proti zádařům (Moicano je sám elitní grappler). Sázka na výhru Moicana v kurzu 1.70 představuje solidní matematickou hranu přes 9 % a PROŠLA VETO filtrem."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "Pravidlo FK Jablonec vs SK Slavia Praha: Nesázet Under 2.5 u ligového suveréna venku pouze na základě podzimního počasí a těžkého terénu, pokud v defenzivě outsidera chybí klíčový pilíř/kapitán (absence Tekijaškiho) a favorit disponuje brutální ofenzivní hloubkou kádru.",
+    "Pravidlo Renato Moicano vs Tom Nolan: Nepřeceňovat grapplerskou výhodu v menším APEX oktagonu u stárnoucích veteránů s opotřebovanou bradou proti mladým explozivním knokautérům s velkým dosahem, kteří dokážou přečkat tlak na zemi a zápas rozhodnout v postoji."
+  ]
 }
