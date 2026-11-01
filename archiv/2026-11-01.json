@@ -1,34 +1,47 @@
 {
   "hlavni": [
     {
-      "zapas": "FK Mladá Boleslav vs FC Hradec Králové (Fotbal)",
-      "tip": "Výhra Mladá Boleslav",
-      "kurz": "2.28",
-      "sazej_od": "2.10",
+      "zapas": "Golden State Warriors vs LA Clippers (Basketbal - NBA)",
+      "tip": "Vítěz zápasu (včetně prodloužení): LA Clippers",
+      "kurz": "2.11",
+      "sazej_od": "1.80",
+      "vklad": "2.5/10",
+      "duvera": "9",
+      "uspesnost": "58 %"
+    },
+    {
+      "zapas": "Bohemians vs Sparta Praha (Fotbal - 1. Česko)",
+      "tip": "Neprohra Bohemians",
+      "kurz": "2.02",
+      "sazej_od": "1.85",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "49 %"
+      "uspesnost": "55 %"
     }
   ],
   "alternativni": [
     {
-      "zapas": "Thiago Agustin Tirante vs Mattia Bellucci (Tenis)",
-      "tip": "Výhra Mattia Bellucci",
-      "kurz": "1.49",
-      "sazej_od": "1.44",
-      "vklad": "2.5/10",
-      "duvera": "9",
+      "zapas": "Union Berlin vs 1.FC Köln (Fotbal - 1. Německo)",
+      "tip": "Neprohra 1.FC Köln",
+      "kurz": "1.50",
+      "sazej_od": "1.42",
+      "vklad": "2.0/10",
+      "duvera": "8",
       "uspesnost": "72 %"
     }
   ],
   "analyzy": [
     {
-      "nadpis": "ZÁPAS: FK Mladá Boleslav vs FC Hradec Králové (Fotbal)",
-      "text": "VETO & KONTEXTOVÁ KONTROLA: Zápas prošel kompletní VETO prověrkou bez jediné námitky. Podmínky v místě konání: předpověď počasí pro Mladou Boleslav na čas výkopu (13:00) hlásí oblačno, 9 °C, nulové srážky (0 mm) a slabý vítr kolem 10 km/h, což vylučuje vliv podmáčeného terénu i větru. Absence a zdravotní stav: Hradec Králové se potýká se zraněním klíčového tvůrce hry a špílmachra Vladimíra Daridy, což se okamžitě projevilo na herním projevu – Votroci z posledních 4 ligových kol vydolovali jediný bod, spadli do záchranářské skupiny a v týdnu museli podstoupit vyčerpávající 120minutové pohárové prodloužení v Prostějově. Naopak domácí Mladá Boleslav pod trenérem Alešem Majerem drží na svém stadionu stoprocentní bilanci (5 zápasů, 5 výher s jediným inkasovaným gólem), v lize vede 51 % celkového herního času a v útoku má rozjetého nejlepšího ligového střelce Martina Šuberta. Historická bilance na mladoboleslavském stadionu je pro hosty tristní (Hradec zde vyhrál pouze 1 z posledních 11 ligových střetnutí, 1-3-7). Kurz 2.28 na domácí celek představuje výraznou hodnotu proti fér hladině ~2.04 a splňuje předepsaný edge pro fotbal."
+      "nadpis": "ZÁPAS: Golden State Warriors vs LA Clippers (Basketbal - NBA)",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Zápas prošel podrobnou prověrkou a splňuje kritéria pro zásah proti chybnému ocenění trhu bez narážky na VETO pravidlo. Z analýzy oficiálního NBA Injury Reportu k 1. listopadu 2026 plyne klíčová zpráva o masivním load managementu domácích v rámci Back-to-Back zátěže (včerejší výhra nad Lakers): Stephen Curry je oficiálně OUT (šetření/koleno) a Draymond Green je OUT (odpočinek), navíc dlouhodobě chybí Jimmy Butler (koleno) i Kristaps Porzingis (nemoc). Warriors tak nastoupí bez své kompletní kostry, která tvoří přes 60 % jejich útočné produkce i defenzivního ukotvení. Nejde o absenci pouze jediného hráče (čímž vylučujeme historické riziko lekce Opava), nýbrž o strukturální rozpad elitní sestavy. Clippers vedení rozehrávačem Dariusem Garlandem mají jedinečnou šanci proti rezervnímu kádru GSW. Kurz 2.11 na vítěze včetně prodloužení představuje obrovskou hodnotu, jelikož fér kurz po absenci Curryho a Greena leží pod 1.75."
     },
     {
-      "nadpis": "ZÁPAS: Thiago Agustin Tirante vs Mattia Bellucci (Tenis)",
-      "text": "VETO & KONTEXTOVÁ KONTROLA: Zápas finále kvalifikace na prestižním turnaji Rolex Paris Masters plně splňuje kritéria pro Tier A tenis. Prostředí a povrch: Hraje se v hale na velmi rychlém tvrdém povrchu (Indoor Hard), což vytváří zásadní stylový rozpor. Mattia Bellucci je levoruký útočný specialista s nízkým těžištěm, skvělým prvním servisem a agresivními náběhy, zatímco Argentinec Thiago Agustín Tirante je typický antukář, jehož topspinová hra s dlouhým nápřahem na rychlém halovém podkladu trpí. Fyzická nálož a momentum z 1. kola: Bellucci v úvodním kole deklasoval zkušeného Pabla Carreña-Bustu 6:1, 7:6 za hodinu a půl bez ztráty podání, zatímco Tirante musel jít do třísetové bitvy (téměř dvě hodiny na kurtu se Svajdou). Vzájemná bilance na tvrdém povrchu vyznívá pro Itala (výhra 2:0 na sety v Manamě). VETO filtr: U Bellucciho nebyl hlášen žádný Medical Timeout, nejedná se o start bezprostředně po vyčerpávajícím turnajovém titulu a motivace postoupit do hlavní soutěže podniku Masters 1000 je stoprocentní. Kurz 1.49 nabízí solidní hodnotu s hranou nad 3.5 %."
+      "nadpis": "ZÁPAS: Bohemians vs Sparta Praha (Fotbal - 1. Česko)",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Zápas prošel VETO filtrem. V souladu s historickými lekcemi nesázíme na čistou výhru outsidera, ale volíme robustní dvojtip na neprohru domácích (1X). Sparta Praha se nachází ve vleklé výsledkové i personální krizi. Má kolísavou formu (L-W-L-W-D), což podtrhla nedávná domácí porážka 0:2 s Baníkem Ostrava. Z oficiálního zápasového reportu vyplývá bezprecedentní marodka čítající 10 hráčů: chybí Matěj Ryneš, John Mercado, Adam Karabec, Dominik Pleštil, Emmanuel Uchenna, Ondřej Penxa, Magnus Andersen, Mohammed Jásir, Adam Ševinský a potrestaný Peter Kareem. V Ďolíčku navíc panuje typické chladné podzimní počasí (kolem 9 °C, těžký trávník), které vyhovuje fyzickému, soubojovému pojetí Bohemians. V dubnu 2026 zde Klokani Spartu porazili 2:0. Kurz 2.02 na neprohru domácích je vůči zdecimované letenské sestavě výrazně nadhodnocený."
+    },
+    {
+      "nadpis": "ZÁPAS: Union Berlin vs 1.FC Köln (Fotbal - 1. Německo)",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Utkání prošlo VETO prověrkou bez nálezu překážek. Obě mužstva se utkala v Berlíně na Stadion An der Alten Försterei před pouhými čtyřmi dny (27. října 2026) v rámci DFB-Pokalu a Kolín nad Rýnem domácí Union deklasoval poměrem 5:0. Union Berlin prochází vleklou ofenzivní krizí, když v posledních 5 soutěžních zápasech vstřelil pouhé 2 branky a inkasoval 7 gólů. Kolínská defenziva dokáže sterilní kombinaci Unionu spolehlivě eliminovat a z rychlých brejků opakovaně trestat. Kurz 1.50 na neprohru hostů (X2) nabízí stabilní hodnotu a pokrývá jak případnou dělbu bodů, tak potvrzení pohárové dominance Kolína."
     }
   ],
   "vyhodnoceno": false
