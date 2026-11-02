@@ -7,7 +7,8 @@
       "sazej_od": "1.80",
       "vklad": "2.5/10",
       "duvera": "9",
-      "uspesnost": "58 %"
+      "uspesnost": "58 %",
+      "vysledek": "❌ PROHRA (124:112)"
     },
     {
       "zapas": "Bohemians vs Sparta Praha (Fotbal - 1. Česko)",
@@ -16,7 +17,8 @@
       "sazej_od": "1.85",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "55 %"
+      "uspesnost": "55 %",
+      "vysledek": "✅ VÝHRA (0:0)"
     }
   ],
   "alternativni": [
@@ -27,7 +29,8 @@
       "sazej_od": "1.42",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "72 %"
+      "uspesnost": "72 %",
+      "vysledek": "✅ VÝHRA (1:1)"
     }
   ],
   "analyzy": [
@@ -44,5 +47,9 @@
       "text": "KONTEXTOVÁ A VETO KONTROLA: Utkání prošlo VETO prověrkou bez nálezu překážek. Obě mužstva se utkala v Berlíně na Stadion An der Alten Försterei před pouhými čtyřmi dny (27. října 2026) v rámci DFB-Pokalu a Kolín nad Rýnem domácí Union deklasoval poměrem 5:0. Union Berlin prochází vleklou ofenzivní krizí, když v posledních 5 soutěžních zápasech vstřelil pouhé 2 branky a inkasoval 7 gólů. Kolínská defenziva dokáže sterilní kombinaci Unionu spolehlivě eliminovat a z rychlých brejků opakovaně trestat. Kurz 1.50 na neprohru hostů (X2) nabízí stabilní hodnotu a pokrývá jak případnou dělbu bodů, tak potvrzení pohárové dominance Kolína."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "NBA - Past plošného load managementu: Nesázet na tým výhradně z důvodu, že soupeř šetří kompletní základní pětku, pokud se sázený tým sám nachází v hluboké krizi či sérii porážek (Clippers 4 prohry v řadě před zápasem). V NBA mladí náhradníci oslabeného týmu při absenci hvězd dostávají volnou ruku, vysokou minutáž a hrají s maximálním nasazením, což trápící se soupeř často mentálně i takticky nezvládne."
+  ]
 }

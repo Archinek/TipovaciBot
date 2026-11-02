@@ -1,0 +1,48 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Florida Panthers vs Detroit Red Wings (Hokej - NHL)",
+      "tip": "Florida Panthers (Výsledek zápasu)",
+      "kurz": "1.97",
+      "sazej_od": "1.82",
+      "vklad": "2.5/10",
+      "duvera": "8",
+      "uspesnost": "56 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Newcastle vs Everton (Fotbal - Premier League)",
+      "tip": "Počet gólů v zápasu: Více než 2.5",
+      "kurz": "1.72",
+      "sazej_od": "1.61",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "63 %"
+    },
+    {
+      "zapas": "A Coruňa vs Osasuna (Fotbal - La Liga)",
+      "tip": "Počet gólů v zápasu: Méně než 2.5",
+      "kurz": "1.68",
+      "sazej_od": "1.61",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "64 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Florida Panthers vs Detroit Red Wings (Hokej - NHL)",
+      "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: Zápas prošel kompletní VETO kontrolou dle pravidel pro hokej (Tier A). Florida nemá B2B zápas (naposledy hrála v pátek, plné 3 dny odpočinku) a veze se na sérii tří výher v řadě s domácí bilancí 3-1-0. Hlavní fundamentální edge pramení ze zásadních absencí a brankářské krize na straně Detroitu: Red Wings mají suspendovaného elitního prvního centra a kapitána Dylana Larkina a na marodce je i Marco Kasper. Startující gólman Detroitu John Gibson prochází těžkým útlumem (úspěšnost zákroků pouhých 86,0 %, průměr 3.37 obdrženého gólu na zápas), přičemž Detroit o víkendu zkolaboval proti St. Louis, když v rozmezí 5 minut inkasoval 3 góly a prohrál 4:5. Kritickým faktorem jsou speciální týmy: Florida disponuje 9. nejlepší přesilovkou v lize (24,2 %), zatímco oslabení Detroitu je až 27. v NHL s katastrofální úspěšností 68,9 %. Florida navíc v brance s Akirou Schmidem (5-2-1, 2.86 GAA) povoluje soupeřům pouze 24,1 střely na zápas (3. nejlepší v NHL). Při kurzu 1.97 na Floridu v základní hrací době hodnota výrazně převyšuje fér hladinu."
+    },
+    {
+      "nadpis": "ZÁPAS: Newcastle vs Everton (Fotbal - Premier League)",
+      "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: Zápas prošel VETO filtrem pro venkovní fotbal. Počasí v Newcastle upon Tyne je pro ofenzivní fotbal ideální (jasno/polojasno, 12 °C, bez deště a s minimálním větrem pod 10 km/h), což vylučuje VETO na overy vlivem podmáčeného terénu. Newcastle pod Matthiasem Jaisslem čelil v dosavadních 8 kolech suverénně nejvyššímu počtu střel v celé Premier League (138 střel) a má třetí nejhorší defenzivní metriku xG (13,7 xGA). V obraně navíc domácím chybí Tino Livramento a záložník Lewis Miley. Oba celky se střetly před pouhými 4 dny v EFL Cupu, kde Everton vyhrál přestřelku 3:1 (skórovali Garner, Hackney a Thierno Barry). Z posledních 5 vzájemných zápasů skončily hned 4 výsledky s vysokým skóre (3:1, 1:3, 2:3, 1:4). Kurz 1.72 na více než 2.5 gólu představuje pozitivní hodnotu s férovou pravděpodobností přesahující 63 %."
+    },
+    {
+      "nadpis": "ZÁPAS: A Coruňa vs Osasuna (Fotbal - La Liga)",
+      "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: Zápas prošel VETO kontrolou. Na stadionu Riazor se střetnou dva týmy stižené absencemi klíčových ofenzivních tvůrců: domácímu Deportivu chybí nejlepší střelec Pierre-Emerick Aubameyang (po operaci menisku) a záložník Marc Casadó, zatímco Osasuna postrádá svého hlavního kreativního záložníka Aimara Oroze a křídlo Romaina Del Castilla. Deportivo pod trenérem Antoniem Hidalgem doma praktikuje vysoce pragmatický, opatrný fotbal s nízkým rizikem (poslední domácí duely 1:1 s Betisem a 1:1 s Levante), přičemž v lize nevyhrálo už 6 kol. Osasuna je na hřištích soupeřů ofenzivně sterilní (v minulém venkovním kole podlehla Seville 0:2 a téměř neohrozila branku). Hluboký blok domácích a absence hlavních zakončovatelů na obou stranách predikují nízko-skórovou bitvu s minimem šancí. Kurz 1.68 na Méně než 2.5 gólu bezpečně překonává hranici sazej_od 1.61."
+    }
+  ],
+  "vyhodnoceno": false
+}
