@@ -1,0 +1,35 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Nashville Predators vs Carolina Hurricanes (Hokej - NHL)",
+      "tip": "Carolina Hurricanes",
+      "kurz": "1.87",
+      "sazej_od": "1.79",
+      "vklad": "2.0/10",
+      "duvera": "9",
+      "uspesnost": "58 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Villarreal vs PSG (Fotbal - Liga mistrů)",
+      "tip": "PSG",
+      "kurz": "1.73",
+      "sazej_od": "1.62",
+      "vklad": "2.5/10",
+      "duvera": "9",
+      "uspesnost": "64 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Nashville Predators vs Carolina Hurricanes (Hokej - NHL)",
+      "text": "Carolina Hurricanes (bilance 12-2-2, 1. místo v Metropolitní divizi) přijíždí do Bridgestone Areny v naprosto dominantním rozpoložení. V posledním duelu smetla Winnipeg 7:0 a s 63 vstřelenými brankami spoluvévodí celé NHL v ofenzivní produktivitě, tažená skvěle hrajícím Loganem Stankovenem (10 gólů) a elitním středem pole. Klíčový VETO filtr pro hokej (ověření brankáře přes DailyFaceoff a klubové zdroje) hlásí naprosto jednoznačný zelený signál: v brance nastupuje Pyotr Kochetkov, který drží klubový rekord s 10 výhrami v řadě při svých startech (bilance 10-0-0, průměr 1.49 obdrženého gólu na zápas a úspěšnost zákroků 92.9 %). Nashville Predators (5-4-5) se dlouhodobě trápí v defenzivním přechodu a nevykazují dostatečnou palebnou sílu, aby dokázali ustát drtivý presink Canes. Kalendářně nejde o Back-to-Back zátěž (Carolina měla 2 dny volna), speciální týmy jasně favorizují hosty a tým netrpí výpadky v úvodech duelů. Zápas úspěšně prošel kompletní VETO kontrolou ze sporty.yaml."
+    },
+    {
+      "nadpis": "ZÁPAS: Villarreal vs PSG (Fotbal - Liga mistrů)",
+      "text": "Úřadující šampioni z Paříže se představí na Estadio de la Cerámica v rámci 4. kola ligové fáze Ligy mistrů. PSG se nachází na čele tabulky s perfektní bilancí 3 výher a 14 vstřelenými góly (výhry nad Barcelonou 4:2, Man. City i Slovanem) a táhne sérii 9 soutěžních vítězství v řadě. Přestože na marodce figurují Dembélé a Kvaratskhelia, hloubka kádru Luise Enriqueho je enormní – Achraf Hakimi přichází posilněn hattrickem z víkendového triumfu 5:1 nad Le Havre a záložní řada s Vitinhou a Joãem Nevesem disponuje absolutní kontrolou nad tempem hry. Naproti tomu Villarreal zažívá krizi: v La Lize se propadl až na předposlední příčku, v pátek doma podlehl Espanyolu 0-1 a v defenzivě v Lize mistrů inkasoval již 8 branek (prohra 3:4 na Anfieldu). Navíc má na marodce klíčového střelce Gerarda Morena. Povinná kontrola počasí v místě konání: ve Villarrealu je hlášeno příjemných 17 °C, bez deště a vítr do 15 km/h, což plně vyhovuje kombinačnímu stylu hostů. Zápas úspěšně prošel VETO kontrolou (forma favorita není sinusoidní, žádná pohárová odveta se šetřením sil, žádné extrémní počasí)."
+    }
+  ],
+  "vyhodnoceno": false
+}
