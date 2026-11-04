@@ -7,7 +7,8 @@
       "sazej_od": "1.87",
       "vklad": "2.5/10",
       "duvera": "8",
-      "uspesnost": "54 %"
+      "uspesnost": "54 %",
+      "vysledek": "✅ VÝHRA (2:0)"
     },
     {
       "zapas": "Nashville Predators vs Carolina Hurricanes (Hokej)",
@@ -16,7 +17,8 @@
       "sazej_od": "1.72",
       "vklad": "2.5/10",
       "duvera": "8",
-      "uspesnost": "59 %"
+      "uspesnost": "59 %",
+      "vysledek": "❌ PROHRA (4:1)"
     }
   ],
   "alternativni": [
@@ -27,7 +29,8 @@
       "sazej_od": "1.60",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "65 %"
+      "uspesnost": "65 %",
+      "vysledek": "✅ VÝHRA (0:0)"
     },
     {
       "zapas": "Tampa Bay Lightning vs Detroit Red Wings (Hokej)",
@@ -36,7 +39,8 @@
       "sazej_od": "1.58",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "64 %"
+      "uspesnost": "64 %",
+      "vysledek": "✅ VÝHRA (4:2)"
     }
   ],
   "analyzy": [
@@ -57,5 +61,9 @@
       "text": "KONTEXTOVÁ KONTROLA A VETO FILTR: Splněna kritéria pro hokejový Tier A trh. KALENDÁŘ A B2B FAKTOR: Detroit odehrál náročné utkání na Floridě pouhých 24 hodin před tímto duelem (výhra 5:3 nad Panthers v pondělí večer), přičemž musel cestovat do Tampy. B2B únava klíčových formací je v NHL zásadním handicapem. KONTROLA BRANKÁŘŮ: V brance Tampy nastupuje opora Andrei Vasilevskiy, který má proti Detroitu dlouhodobě excelentní bilanci (19-5-2, úspěšnost 92.9 %). Tampa Bay drží sérii šesti domácích výher v řadě a disponuje 5. nejlepším útokem v lize (3.69 gólu/zápas) taženým Nikitou Kučerovem a Jakem Guentzelem. Oproti tomu Detroit má podprůměrné oslabení (PK jen 70.2 %, 25. v lize), což je proti přesilovkám Bolts smrtící kombinace. Fér kurz na výhru domácích je 1.53, aktuálních 1.69 představuje stabilní hodnotu v alternativním pásmu."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "NHL: Pozor na sázky na venkovní favority s objemovou střelbou proti elitním brankářům soupeře (Juuse Saros). Pokud je dominantní metrikou pouze celková střelecká převaha (volume shots) bez zohlednění náchylnosti na efektivitu z nebezpečných prostor a první venkovní zápas týmu po sérii doma, hrozí selhání modelu proti disciplinované obraně a 'hot goalie'."
+  ]
 }
