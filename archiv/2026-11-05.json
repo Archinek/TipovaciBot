@@ -1,0 +1,48 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Fils A. vs Fritz T. (Tenis)",
+      "tip": "Fritz T.",
+      "kurz": "2.03",
+      "sazej_od": "1.91",
+      "vklad": "1.5/10",
+      "duvera": "8",
+      "uspesnost": "54 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Sparta Praha vs Bournemouth (Fotbal)",
+      "tip": "Bournemouth",
+      "kurz": "1.51",
+      "sazej_od": "1.47",
+      "vklad": "2.0/10",
+      "duvera": "9",
+      "uspesnost": "70 %"
+    },
+    {
+      "zapas": "AZ Alkmaar vs Juventus (Fotbal)",
+      "tip": "Neprohra AZ Alkmaar",
+      "kurz": "1.76",
+      "sazej_od": "1.66",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "62 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Fils A. vs Fritz T. (Tenis - ATP Paříž)",
+      "text": "KONTEXTOVÁ ANALÝZA A VÝSLEDNÉ PROVĚŘENÍ VETO: Trh vypisuje Arthura Filse jako mírného favorita (1.79) primárně pod vlivem domácího pařížského publika a jeho letošního vzestupu v žebříčku. Důkladný kontextový screening však odhaluje dvě zásadní skutečnosti, které kurz nezohledňuje: 1) Fils před pouhými 6 dny na turnaji v Basileji skrečoval právě proti Tayloru Fritzovi za stavu 2:6, 0:2 kvůli svalovému zranění levé nohy. Přestože v Paříži nastoupil, jeho fyzická stoprocentnost v náročných výměnách je pod otazníkem. 2) Fils si již včera matematicky zajistil premiérovou účast na Turnaji mistrů v Turíně díky vyřazení Novaka Djokoviče a Alexe de Minaura, čímž z něj spadla klíčová sezónní motivace. Naopak Taylor Fritz je stále v přímém boji o postupové body do Turína, v minulém kole předvedl fenomenální servis (nasázel 37 es proti Molčanovi) a rychlý halový tvrdý povrch v Paříži jeho stylu servírujícího ranaře perfektně svědčí. VETO KONTROLA: Zápas prošel všemi filtry ze sporty.yaml. Nejedná se o únavu z cestování mezi kontinenty, Fritz je zdravý a kurz 2.03 představuje hodnotný matematický i taktický edge (fér kurz 1.85, sazej od 1.91)."
+    },
+    {
+      "nadpis": "ZÁPAS: Sparta Praha vs Bournemouth (Fotbal - Evropská liga)",
+      "text": "KONTEXTOVÁ ANALÝZA A VÝSLEDNÉ PROVĚŘENÍ VETO: Bournemouth pod vedením trenéra Marca Roseho prožívá excelentní období – drží sérii 6 soutěžních výher v řadě se skóre 16:0 (v Evropské lize bez zaváhání zničil AC Milán 3:0 i Sturm Graz 3:0 a vyhrál 2:1 na půdě Realu Sociedad). Tým je kompletní, v plné síle nastupují opory Evanilson, Justin Kluivert, Tyler Adams i Marcus Tavernier. Proti nim stojí Sparta Praha v herní křeči: z posledních dvou duelů nevstřelila ani gól (0:0 s Bohemians 1905, v domácím poháru vypadla po prohře 0:2 s Baníkem Ostrava), navíc jí schází stabilní levý bek Matěj Ryneš (zranění kotníku) a v UEL má po 3 kolech jen 4 body. Počasí v Praze na Letné (cca 7 °C, bez deště a větru) nijak nezvýhodňuje hluboký obranný blok ani nesnižuje technickou převahu anglického celku. VETO KONTROLA: Bournemouth neprokazuje sinusoidní formu (vyhrál 6 duelů v řadě s čistým kontem), nejedná se o pohárovou odvetu s postupovým polštářem, nýbrž o ligovou fázi, kde se bojuje o přímý postup do osmifinále. VETO pravidlo pro favority pod 1.60 bylo řádně zkontrolováno a tip na výhru hostů v kurzu 1.51 prošel bez výhrad."
+    },
+    {
+      "nadpis": "ZÁPAS: AZ Alkmaar vs Juventus (Fotbal - Evropská liga)",
+      "text": "KONTEXTOVÁ ANALÝZA A VÝSLEDNÉ PROVĚŘENÍ VETO: U tohoto zápasu nastala přesně situace, na kterou je náš analytický filtr nastaven – drtivá informační asymetrie v neprospěch favorita. Juventus do Nizozemska odcestoval bez neuvěřitelných 11 hráčů prvního týmu. Trenér Luciano Spalletti na tiskové konferenci potvrdil enormní marodku: zranění jsou Kenan Yildiz, Manuel Locatelli, Khephren Thuram, Francisco Conceição, Nico González, Zeki Çelik i brankář Kamil Grabara. Navíc Weston McKennie dostal volno na regeneraci a trojice Milik, Rugani a Zhegrova vůbec není na soupisce pro UEFA soutěže. V záloze zůstali Spallettimu k dispozici pouze čtyři zdraví hráči, přičemž v základní sestavě musí improvizovat s mladíky z NextGen a náhradníky (potvrzen start Kellyho a Sarra). AZ Alkmaar na AFAS Stadionu tradičně v evropských pohárech neprohrává a proti takto zdecimované a nesehrané sestavě italského giganta je kurz 1.76 na neprohru domácích (1X) obrovskou chybou bookmakerů, kteří stále vycházejí ze síly značky Juventus. VETO KONTROLA: Zápas prošel kontrolou počasí i disciplíny. Prověřena šířka kádru i systémové absence – 11 chybějících hráčů u Juventusu představuje masivní systémový kolaps rotace. Sázka na Neprohru AZ Alkmaar má fér hodnotu 1.61 a prošla bez VETO."
+    }
+  ],
+  "vyhodnoceno": false
+}

@@ -7,7 +7,8 @@
       "sazej_od": "2.05",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "52 %"
+      "uspesnost": "52 %",
+      "vysledek": "❌ PROHRA (1:2)"
     },
     {
       "zapas": "Eastern Michigan Eagles vs Central Michigan Chippewas (Americký fotbal - NCAA)",
@@ -16,7 +17,8 @@
       "sazej_od": "1.78",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "58 %"
+      "uspesnost": "58 %",
+      "vysledek": "✅ VÝHRA (7:35)"
     }
   ],
   "alternativni": [],
@@ -30,5 +32,9 @@
       "text": "KONTEXTOVÁ VETO KONTROLA: PROŠLO BEZ VĚTA. Povinná kontrola prostředí dle sporty.yaml: Zápas v rámci 'Motor City MACtion' se nehraje na otevřeném stadionu v Ypsilanti, nýbrž v uzavřené hale Ford Field v Detroitu (DOME), což eliminuje povětrnostní anomálie. Herní scénář (Game Script): Střetnutí dvou z nejhůře hodnocených útoků v konferenci MAC i v celém FBS. Central Michigan se dlouhodobě trápí s neexistující vertikální hrou vzduchem, v zápasech průměrně generuje pod 300 celkových yardů a na 3. downu dosahuje podprůměrné úspěšnosti. Eastern Michigan se po solidním vstupu do sezóny rovněž propadl do ofenzivního útlumu (v posledních dvou duelech skóroval pouze 14 a 20 bodů, proti Ohiu konvertoval pouhé 2 z 15 třetích downů). Obě mužstva se budou snažit kontrolovat čas držení míče zdlouhavým během po zemi, což povede k minimálnímu počtu držení míče na obou stranách. Trh nadhodnocuje hranici 44.5 bodů, která má v souboji těchto limitovaných útočných formací fér hodnotu okolo 41.5 bodu."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "NHL: Nelze sázet Over 6.5 výhradně na základě přítomnosti náhradního brankáře a předchozích slabých statistik. První zápas po návratu z dlouhého tripu (tzv. road trip hangover – Buffalo po návratu z Kalifornie) často provází pomalejší tempo, unavenější útoky a defenzivní styl, což výrazně sráží celkový gólový součet."
+  ]
 }
