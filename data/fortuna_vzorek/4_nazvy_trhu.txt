@@ -1,0 +1,1522 @@
+fotbal  |  1. rohový kop v zápasu  |  1. rohový kop v zápasu
+fotbal  |  1.poločas: Atlante počet gólů 0.5  |  1. poločas: Atlante počet gólů
+fotbal  |  1.poločas: Atlante počet gólů 1.5  |  1. poločas: Atlante počet gólů
+fotbal  |  1.poločas: Auckland FC počet gólů 0.5  |  1. poločas: Auckland FC počet gólů
+fotbal  |  1.poločas: Auckland FC počet gólů 1.5  |  1. poločas: Auckland FC počet gólů
+fotbal  |  1.poločas: Boca Juniors de Cali počet gólů 0.5  |  1. poločas: Boca Juniors de Cali počet gólů
+fotbal  |  1.poločas: CA Independiente počet gólů 0.5  |  1. poločas: CA Independiente počet gólů
+fotbal  |  1.poločas: CA Independiente počet gólů 1.5  |  1. poločas: CA Independiente počet gólů
+fotbal  |  1.poločas: CD Suchitepequez počet gólů 0.5  |  1. poločas: CD Suchitepequez počet gólů
+fotbal  |  1.poločas: Club Santos Laguna počet gólů 0.5  |  1. poločas: Club Santos Laguna počet gólů
+fotbal  |  1.poločas: Club Santos Laguna počet gólů 1.5  |  1. poločas: Club Santos Laguna počet gólů
+fotbal  |  1.poločas: Deportivo Riestra počet gólů 0.5  |  1. poločas: Deportivo Riestra počet gólů
+fotbal  |  1.poločas: Envigado FC počet gólů 0.5  |  1. poločas: Envigado FC počet gólů
+fotbal  |  1.poločas: Guastatoya počet gólů 0.5  |  1. poločas: Guastatoya počet gólů
+fotbal  |  1.poločas: Wellington Phoenix počet gólů 0.5  |  1. poločas: Wellington Phoenix počet gólů
+fotbal  |  1.poločas: Wellington Phoenix počet gólů 1.5  |  1. poločas: Wellington Phoenix počet gólů
+fotbal  |  1.poločas: červená karta (Červené karty pro trenéry a členy realizačního týmu se nezapočítávají.)  |  1. poločas: červená karta (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Abaldo, Matias - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Abaldo, Matias - počet střel  |  Hráč - počet střel 
+fotbal  |  Abaldo, Matias - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Abaldo, Matias dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Abaldo, Matias nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Abaldo, Matias počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Abaldo, Matias počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Abaldo, Matias vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Abaldo, Matias vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Abaldo, Matias vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Abaldo, Matias zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Abella, Jose - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Abella, Jose dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Abella, Jose počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Abella, Jose počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Abella, Jose počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Abella, Jose zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Adame, Gilberto - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Adame, Gilberto dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Adame, Gilberto počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Adame, Gilberto počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Adame, Gilberto počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Adame, Gilberto zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Aguirre, Eduardo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Aguirre, Eduardo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Aguirre, Eduardo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Aguirre, Eduardo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Aguirre, Eduardo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Aguirre, Eduardo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Aldo Lopez Vargas - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Aldo Lopez Vargas dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Aldo Lopez Vargas počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Aldo Lopez Vargas počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Aldo Lopez Vargas počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Aldo Lopez Vargas zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Alex Rufer bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Alonso Espinoza, Antony Daniel - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Alonso Espinoza, Antony Daniel - počet střel  |  Hráč - počet střel 
+fotbal  |  Alonso Espinoza, Antony Daniel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Alonso Espinoza, Antony Daniel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Alonso Espinoza, Antony Daniel nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Alonso Espinoza, Antony Daniel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Alonso Espinoza, Antony Daniel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Alonso Espinoza, Antony Daniel vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Alonso Espinoza, Antony Daniel vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Alonso Espinoza, Antony Daniel vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Alonso Espinoza, Antony Daniel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Arias, Santiago - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Arias, Santiago - počet střel  |  Hráč - počet střel 
+fotbal  |  Arias, Santiago - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Arias, Santiago dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Arias, Santiago nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Arias, Santiago počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Arias, Santiago počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Arias, Santiago vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Arias, Santiago vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Arias, Santiago vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Arias, Santiago zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Armando Escobar Díaz - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Armando Escobar Díaz dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Armando Escobar Díaz počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Armando Escobar Díaz počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Armando Escobar Díaz počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Armando Escobar Díaz zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Atlante dá gól v obou poločasech  |  Atlante dá gól v obou poločasech
+fotbal  |  Atlante počet gólů 0.5  |  Atlante počet gólů v zápasu
+fotbal  |  Atlante počet gólů 1.5  |  Atlante počet gólů v zápasu
+fotbal  |  Atlante počet gólů 2.5  |  Atlante počet gólů v zápasu
+fotbal  |  Atlante počet rohových kopů v zápasu  |  Atlante počet rohových kopů v zápasu
+fotbal  |  Atlante počet červených karet  |  Atlante počet červených karet (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Atlante vyhraje , Eugenio Pizzuto Puga 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Eugenio Pizzuto Puga dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Atlante vyhraje , Jhojan Julio 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Jhojan Julio 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Jhojan Julio dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Atlante vyhraje , Joaquin Moxica 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Joaquin Moxica 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Luis Ángel Calzadilla Santillán 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Luis Ángel Calzadilla Santillán dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Atlante vyhraje , Martin Sarrafiore 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Martin Sarrafiore 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Atlante vyhraje , Martin Sarrafiore dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Atlante vyhraje , Martín Fernández dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Atlante vyhraje , Walter Portales dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Atlante vyhraje alespoň jeden poločas  |  Atlante  vyhraje alespoň jeden poločas
+fotbal  |  Atlante vyhraje oba poločasy  |  Atlante  vyhraje oba poločasy
+fotbal  |  Atlante vyhraje s čistým kontem  |  Atlante vyhraje s čistým kontem
+fotbal  |  Atlante vyhraje, Více než 3.5 gólů , Jhojan Julio dá gól  |  Další zápasové kombinace
+fotbal  |  Atlante vyhraje, Více než 3.5 gólů , Martin Sarrafiore dá gól  |  Další zápasové kombinace
+fotbal  |  Atlante vyhraje, Více než 3.5 gólů , Více než 10.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Atlante vyhraje, Více než 3.5 gólů , Více než 5.5 Atlante rohové kopy  |  Další zápasové kombinace
+fotbal  |  Atlante vyhraje, oba týmy dají gól , každý z týmů více než 5.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Auckland FC dá gól v obou poločasech  |  Auckland FC dá gól v obou poločasech
+fotbal  |  Auckland FC počet gólů 0.5  |  Auckland FC počet gólů v zápasu
+fotbal  |  Auckland FC počet gólů 1.5  |  Auckland FC počet gólů v zápasu
+fotbal  |  Auckland FC počet gólů 2.5  |  Auckland FC počet gólů v zápasu
+fotbal  |  Auckland FC počet rohových kopů v zápasu  |  Auckland FC počet rohových kopů v zápasu
+fotbal  |  Auckland FC počet červených karet  |  Auckland FC počet červených karet (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Auckland FC vyhraje , Jake Brimmer 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Jake Brimmer dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Auckland FC vyhraje , Jonty Bidois 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Jonty Bidois 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Jonty Bidois dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Auckland FC vyhraje , Lachlan Bayliss 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Lachlan Bayliss dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Auckland FC vyhraje , Lachlan Brook 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Lachlan Brook 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Lachlan Brook dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Auckland FC vyhraje , Logan Rogerson 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Logan Rogerson 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Auckland FC vyhraje , Logan Rogerson dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Auckland FC vyhraje , Luis Felipe Gallegos Leiva dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Auckland FC vyhraje alespoň jeden poločas  |  Auckland FC  vyhraje alespoň jeden poločas
+fotbal  |  Auckland FC vyhraje, Více než 2.5 gólů , Jonty Bidois dá gól  |  Další zápasové kombinace
+fotbal  |  Auckland FC vyhraje, Více než 2.5 gólů , Lachlan Bayliss dá gól  |  Další zápasové kombinace
+fotbal  |  Auckland FC vyhraje, Více než 2.5 gólů , Více než 10.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Auckland FC vyhraje, Více než 2.5 gólů , Více než 5.5 Auckland FC rohové kopy  |  Další zápasové kombinace
+fotbal  |  Auckland FC vyhraje, oba týmy dají gól , každý z týmů více než 5.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Avila, Chimy - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Avila, Chimy - počet střel  |  Hráč - počet střel 
+fotbal  |  Avila, Chimy - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Avila, Chimy dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Avila, Chimy nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Avila, Chimy počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Avila, Chimy počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Avila, Chimy vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Avila, Chimy vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Avila, Chimy vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Avila, Chimy zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Bagui, Diogo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Bagui, Diogo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Bagui, Diogo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Bagui, Diogo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Bagui, Diogo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Bagui, Diogo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Benegas, Nicolas - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Benegas, Nicolas - počet střel  |  Hráč - počet střel 
+fotbal  |  Benegas, Nicolas - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Benegas, Nicolas dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Benegas, Nicolas nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Benegas, Nicolas počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Benegas, Nicolas počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Benegas, Nicolas vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Benegas, Nicolas vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Benegas, Nicolas vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Benegas, Nicolas zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Benjamín Tiziano Pérez - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Benjamín Tiziano Pérez - počet střel  |  Hráč - počet střel 
+fotbal  |  Benjamín Tiziano Pérez - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Benjamín Tiziano Pérez dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Benjamín Tiziano Pérez nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Benjamín Tiziano Pérez počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Benjamín Tiziano Pérez počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Benjamín Tiziano Pérez vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Benjamín Tiziano Pérez vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Benjamín Tiziano Pérez vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Benjamín Tiziano Pérez zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Bill Tuiloma bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Boca Juniors de Cali počet gólů 0.5  |  Boca Juniors de Cali počet gólů v zápasu
+fotbal  |  Boca Juniors de Cali počet gólů 1.5  |  Boca Juniors de Cali počet gólů v zápasu
+fotbal  |  Boca Juniors de Cali počet gólů 2.5  |  Boca Juniors de Cali počet gólů v zápasu
+fotbal  |  Boca Juniors de Cali vyhraje alespoň jeden poločas  |  Boca Juniors de Cali  vyhraje alespoň jeden poločas
+fotbal  |  Bracamonte, Mariano - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Bracamonte, Mariano - počet střel  |  Hráč - počet střel 
+fotbal  |  Bracamonte, Mariano - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Bracamonte, Mariano dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Bracamonte, Mariano nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Bracamonte, Mariano počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Bracamonte, Mariano počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Bracamonte, Mariano vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Bracamonte, Mariano vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Bracamonte, Mariano vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Bracamonte, Mariano zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Bryce Duke 1+ asistence  |  Hráči - asistence
+fotbal  |  Bryce Duke 1+ střely  |  Hráči - střely
+fotbal  |  Bryce Duke 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Bryce Duke 2+ střely  |  Hráči - střely
+fotbal  |  Bryce Duke 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Bryce Duke 3+ střely  |  Hráči - střely
+fotbal  |  Bryce Duke bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Bullaude, Ezequiel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Bullaude, Ezequiel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Bullaude, Ezequiel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Bullaude, Ezequiel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Bullaude, Ezequiel počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Bullaude, Ezequiel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  CA Independiente dá gól v obou poločasech  |  CA Independiente dá gól v obou poločasech
+fotbal  |  CA Independiente počet gólů 0.5  |  CA Independiente počet gólů v zápasu
+fotbal  |  CA Independiente počet gólů 1.5  |  CA Independiente počet gólů v zápasu
+fotbal  |  CA Independiente počet gólů 2.5  |  CA Independiente počet gólů v zápasu
+fotbal  |  CA Independiente počet rohových kopů v zápasu  |  CA Independiente počet rohových kopů v zápasu
+fotbal  |  CA Independiente počet střel na branku v zápasu  |  CA Independiente počet střel na branku v zápasu
+fotbal  |  CA Independiente počet červených karet  |  CA Independiente počet červených karet (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  CA Independiente vyhraje alespoň jeden poločas  |  CA Independiente  vyhraje alespoň jeden poločas
+fotbal  |  CD Suchitepequez počet gólů 0.5  |  CD Suchitepequez počet gólů v zápasu
+fotbal  |  CD Suchitepequez počet gólů 1.5  |  CD Suchitepequez počet gólů v zápasu
+fotbal  |  CD Suchitepequez počet gólů 2.5  |  CD Suchitepequez počet gólů v zápasu
+fotbal  |  CD Suchitepequez vyhraje alespoň jeden poločas  |  CD Suchitepequez vyhraje alespoň jeden poločas
+fotbal  |  Cabral, Luciano - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Cabral, Luciano - počet střel  |  Hráč - počet střel 
+fotbal  |  Cabral, Luciano - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Cabral, Luciano dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Cabral, Luciano nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Cabral, Luciano počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Cabral, Luciano počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Cabral, Luciano vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Cabral, Luciano vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Cabral, Luciano vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Cabral, Luciano zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Calderon, Franco - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Calderon, Franco - počet střel  |  Hráč - počet střel 
+fotbal  |  Calderon, Franco - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Calderon, Franco dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Calderon, Franco nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Calderon, Franco počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Calderon, Franco počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Calderon, Franco vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Calderon, Franco vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Calderon, Franco vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Calderon, Franco zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Carrera, Nico - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Carrera, Nico dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Carrera, Nico počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Carrera, Nico počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Carrera, Nico počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Carrera, Nico zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Caseres, Facundo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Caseres, Facundo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Caseres, Facundo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Caseres, Facundo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Caseres, Facundo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Caseres, Facundo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Celiz, Milton Aaron - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Celiz, Milton Aaron - počet střel  |  Hráč - počet střel 
+fotbal  |  Celiz, Milton Aaron - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Celiz, Milton Aaron dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Celiz, Milton Aaron nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Celiz, Milton Aaron počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Celiz, Milton Aaron počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Celiz, Milton Aaron vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Celiz, Milton Aaron vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Celiz, Milton Aaron vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Celiz, Milton Aaron zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Charcopa, Jairon - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Charcopa, Jairon dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Charcopa, Jairon počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Charcopa, Jairon počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Charcopa, Jairon počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Charcopa, Jairon zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Christian de Jesús Bermúdez Gutiérrez - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Christian de Jesús Bermúdez Gutiérrez dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Christian de Jesús Bermúdez Gutiérrez počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Christian de Jesús Bermúdez Gutiérrez počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Christian de Jesús Bermúdez Gutiérrez počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Christian de Jesús Bermúdez Gutiérrez zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Clar, Walter - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Clar, Walter dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Clar, Walter počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Clar, Walter počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Clar, Walter počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Clar, Walter zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Club Santos Laguna dá gól v obou poločasech  |  Club Santos Laguna dá gól v obou poločasech
+fotbal  |  Club Santos Laguna počet gólů 0.5  |  Club Santos Laguna počet gólů v zápasu
+fotbal  |  Club Santos Laguna počet gólů 1.5  |  Club Santos Laguna počet gólů v zápasu
+fotbal  |  Club Santos Laguna počet gólů 2.5  |  Club Santos Laguna počet gólů v zápasu
+fotbal  |  Club Santos Laguna počet rohových kopů v zápasu  |  Club Santos Laguna počet rohových kopů v zápasu
+fotbal  |  Club Santos Laguna počet červených karet  |  Club Santos Laguna počet červených karet (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Club Santos Laguna vyhraje alespoň jeden poločas  |  Club Santos Laguna vyhraje alespoň jeden poločas
+fotbal  |  Club Santos Laguna vyhraje oba poločasy  |  Club Santos Laguna vyhraje oba poločasy
+fotbal  |  Club Santos Laguna vyhraje s čistým kontem  |  Club Santos Laguna vyhraje s čistým kontem
+fotbal  |  Corban Piper 1+ střely  |  Hráči - střely
+fotbal  |  Corban Piper 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Corban Piper 2+ střely  |  Hráči - střely
+fotbal  |  Corban Piper 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Corban Piper 3+ střely  |  Hráči - střely
+fotbal  |  Corban Piper bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Corban Piper dá gól, Bryce Duke 1+ asistence , Více než 4.5 Phoenix rohové kopy  |  Další zápasové kombinace
+fotbal  |  Corban Piper dá gól, Kazuki Nagasawa 1+ asistence , Více než 4.5 Phoenix rohové kopy  |  Další zápasové kombinace
+fotbal  |  Cristóbal Saúl Alfaro Avilés - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Cristóbal Saúl Alfaro Avilés dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Cristóbal Saúl Alfaro Avilés počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Cristóbal Saúl Alfaro Avilés počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Cristóbal Saúl Alfaro Avilés počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Cristóbal Saúl Alfaro Avilés zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Cuevas, Mauricio - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Cuevas, Mauricio dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Cuevas, Mauricio počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Cuevas, Mauricio počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Cuevas, Mauricio počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Cuevas, Mauricio zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  De Irastorza, Jonathan - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  De Irastorza, Jonathan - počet střel  |  Hráč - počet střel 
+fotbal  |  De Irastorza, Jonathan - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  De Irastorza, Jonathan dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  De Irastorza, Jonathan nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  De Irastorza, Jonathan počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  De Irastorza, Jonathan počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  De Irastorza, Jonathan vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  De Irastorza, Jonathan vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  De Irastorza, Jonathan vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  De Irastorza, Jonathan zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Deportivo Riestr vyhraje , Alexander Díaz dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Deportivo Riestr vyhraje , Antony Alonso dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Deportivo Riestr vyhraje , Gabriel Obredor dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Deportivo Riestr vyhraje , Mauro Smarra dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Deportivo Riestr vyhraje , Miguel Agustin Graneros dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Deportivo Riestr vyhraje , Nicolas Benegas dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Deportivo Riestr vyhraje, Více než 2.5 gólů , Miguel Agustin Graneros dá gól  |  Další zápasové kombinace
+fotbal  |  Deportivo Riestr vyhraje, Více než 2.5 gólů , Nicolas Benegas dá gól  |  Další zápasové kombinace
+fotbal  |  Deportivo Riestr vyhraje, Více než 2.5 gólů , Více než 3.5 Deportivo Riestr rohové kopy  |  Další zápasové kombinace
+fotbal  |  Deportivo Riestr vyhraje, Více než 2.5 gólů , Více než 9.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Deportivo Riestr vyhraje, oba týmy dají gól , každý z týmů více než 4.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Deportivo Riestra dá gól v obou poločasech  |  Deportivo Riestra dá gól v obou poločasech
+fotbal  |  Deportivo Riestra počet gólů 0.5  |  Deportivo Riestra počet gólů v zápasu
+fotbal  |  Deportivo Riestra počet gólů 1.5  |  Deportivo Riestra počet gólů v zápasu
+fotbal  |  Deportivo Riestra počet gólů 2.5  |  Deportivo Riestra počet gólů v zápasu
+fotbal  |  Deportivo Riestra počet rohových kopů v zápasu  |  Deportivo Riestra počet rohových kopů v zápasu
+fotbal  |  Deportivo Riestra počet střel na branku v zápasu  |  Deportivo Riestra počet střel na branku v zápasu
+fotbal  |  Deportivo Riestra počet červených karet  |  Deportivo Riestra počet červených karet (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Deportivo Riestra vyhraje alespoň jeden poločas  |  Deportivo Riestra vyhraje alespoň jeden poločas
+fotbal  |  Diaz, Alexander - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Diaz, Alexander - počet střel  |  Hráč - počet střel 
+fotbal  |  Diaz, Alexander - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Diaz, Alexander dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Diaz, Alexander nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Diaz, Alexander počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Diaz, Alexander počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Diaz, Alexander vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Diaz, Alexander vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Diaz, Alexander vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Diaz, Alexander zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Dvojitá šance  |  Dvojitá šance
+fotbal  |  Echeverria, Emanuel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Echeverria, Emanuel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Echeverria, Emanuel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Echeverria, Emanuel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Echeverria, Emanuel počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Echeverria, Emanuel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Edgar Saúl Jiménez Sánchez - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Edgar Saúl Jiménez Sánchez dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Edgar Saúl Jiménez Sánchez počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Edgar Saúl Jiménez Sánchez počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Edgar Saúl Jiménez Sánchez počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Edgar Saúl Jiménez Sánchez zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Eduardo Aguirre 1+ střely  |  Hráči - střely
+fotbal  |  Eduardo Aguirre 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Eduardo Aguirre 2+ střely  |  Hráči - střely
+fotbal  |  Eduardo Aguirre 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Eduardo Aguirre 3+ střely  |  Hráči - střely
+fotbal  |  Eduardo Aguirre bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Eduardo Aguirre dá gól, Ezequiel Bullaude 1+ asistence , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
+fotbal  |  Eduardo Aguirre dá gól, Mauricio Cuevas 1+ asistence , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
+fotbal  |  Eduardo Santiago Tercero Mendez bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Envigado FC počet gólů 0.5  |  Envigado FC počet gólů v zápasu
+fotbal  |  Envigado FC počet gólů 1.5  |  Envigado FC počet gólů v zápasu
+fotbal  |  Envigado FC počet gólů 2.5  |  Envigado FC počet gólů v zápasu
+fotbal  |  Envigado FC vyhraje alespoň jeden poločas  |  Envigado FC vyhraje alespoň jeden poločas
+fotbal  |  Eugenio Pizzuto Puga 1+ střely  |  Hráči - střely
+fotbal  |  Eugenio Pizzuto Puga 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Eugenio Pizzuto Puga bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Ezequiel Bullaude 1+ asistence  |  Hráči - asistence
+fotbal  |  Ezequiel Bullaude 1+ střely  |  Hráči - střely
+fotbal  |  Ezequiel Bullaude 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Ezequiel Bullaude 1+ střely na bránu, Více než 1.5 Santos Laguna gólů , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
+fotbal  |  Ezequiel Bullaude 2+ asistence  |  Hráči - asistence
+fotbal  |  Ezequiel Bullaude 2+ střely  |  Hráči - střely
+fotbal  |  Ezequiel Bullaude 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Ezequiel Bullaude 3+ střely  |  Hráči - střely
+fotbal  |  Ezequiel Bullaude bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Ezequiel Bullaude dá gól, Ezequiel Bullaude 1+ asistence , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
+fotbal  |  Ezequiel Bullaude dá gól, Mauricio Cuevas 1+ asistence , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
+fotbal  |  Facundo Cáseres 1+ střely  |  Hráči - střely
+fotbal  |  Facundo Cáseres 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Facundo Lionel Cruz - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Facundo Lionel Cruz - počet střel  |  Hráč - počet střel 
+fotbal  |  Facundo Lionel Cruz - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Facundo Lionel Cruz dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Facundo Lionel Cruz nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Facundo Lionel Cruz počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Facundo Lionel Cruz počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Facundo Lionel Cruz vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Facundo Lionel Cruz vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Facundo Lionel Cruz vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Facundo Lionel Cruz zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Facundo Mino bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Facundo Zabala bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Fedorco, Juan Manuel - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Fedorco, Juan Manuel - počet střel  |  Hráč - počet střel 
+fotbal  |  Fedorco, Juan Manuel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Fedorco, Juan Manuel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Fedorco, Juan Manuel nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Fedorco, Juan Manuel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Fedorco, Juan Manuel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Fedorco, Juan Manuel vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Fedorco, Juan Manuel vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Fedorco, Juan Manuel vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Fedorco, Juan Manuel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Felipe Sanchez bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Felipe Sánchez - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Felipe Sánchez dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Felipe Sánchez počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Felipe Sánchez počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Felipe Sánchez počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Felipe Sánchez zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Felipe Tempone - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Felipe Tempone - počet střel  |  Hráč - počet střel 
+fotbal  |  Felipe Tempone - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Felipe Tempone dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Felipe Tempone nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Felipe Tempone počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Felipe Tempone počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Felipe Tempone vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Felipe Tempone vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Felipe Tempone vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Felipe Tempone zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Fernandez, Martin - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Fernandez, Martin dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Fernandez, Martin počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Fernandez, Martin počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Fernandez, Martin počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Fernandez, Martin zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Fort Lauderdale United FC počet gólů 0.5  |  Fort Lauderdale United FC počet gólů v zápasu
+fotbal  |  Fort Lauderdale United FC počet gólů 1.5  |  Fort Lauderdale United FC počet gólů v zápasu
+fotbal  |  Fort Lauderdale United FC počet gólů 2.5  |  Fort Lauderdale United FC počet gólů v zápasu
+fotbal  |  Fran Villalba 1+ asistence  |  Hráči - asistence
+fotbal  |  Fran Villalba 1+ střely  |  Hráči - střely
+fotbal  |  Fran Villalba 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Fran Villalba 2+ střely  |  Hráči - střely
+fotbal  |  Fran Villalba 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Fran Villalba 3+ střely  |  Hráči - střely
+fotbal  |  Fran Villalba bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Francis de Vries 1+ asistence  |  Hráči - asistence
+fotbal  |  Francis de Vries 2+ asistence  |  Hráči - asistence
+fotbal  |  Franco Calderón bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Franco Pardo bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Gabriel Obredor bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Gallo, Rodrigo - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Gallo, Rodrigo - počet střel  |  Hráč - počet střel 
+fotbal  |  Gallo, Rodrigo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Gallo, Rodrigo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Gallo, Rodrigo nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Gallo, Rodrigo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Gallo, Rodrigo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Gallo, Rodrigo vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Gallo, Rodrigo vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Gallo, Rodrigo vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Gallo, Rodrigo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Gariglio, Ignacio - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Gariglio, Ignacio - počet střel  |  Hráč - počet střel 
+fotbal  |  Gariglio, Ignacio - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Gariglio, Ignacio dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Gariglio, Ignacio nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Gariglio, Ignacio počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Gariglio, Ignacio počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Gariglio, Ignacio vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Gariglio, Ignacio vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Gariglio, Ignacio vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Gariglio, Ignacio zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Godoy, Leonardo - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Godoy, Leonardo - počet střel  |  Hráč - počet střel 
+fotbal  |  Godoy, Leonardo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Godoy, Leonardo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Godoy, Leonardo nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Godoy, Leonardo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Godoy, Leonardo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Godoy, Leonardo vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Godoy, Leonardo vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Godoy, Leonardo vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Godoy, Leonardo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Goitia, Jonathan Esteban - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Goitia, Jonathan Esteban - počet střel  |  Hráč - počet střel 
+fotbal  |  Goitia, Jonathan Esteban - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Goitia, Jonathan Esteban dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Goitia, Jonathan Esteban nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Goitia, Jonathan Esteban počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Goitia, Jonathan Esteban počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Goitia, Jonathan Esteban vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Goitia, Jonathan Esteban vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Goitia, Jonathan Esteban vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Goitia, Jonathan Esteban zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Gonzalez, Diego - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Gonzalez, Diego dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Gonzalez, Diego počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Gonzalez, Diego počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Gonzalez, Diego počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Gonzalez, Diego zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Graneros, Miguel Agustin - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Graneros, Miguel Agustin - počet střel  |  Hráč - počet střel 
+fotbal  |  Graneros, Miguel Agustin - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Graneros, Miguel Agustin dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Graneros, Miguel Agustin nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Graneros, Miguel Agustin počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Graneros, Miguel Agustin počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Graneros, Miguel Agustin vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Graneros, Miguel Agustin vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Graneros, Miguel Agustin vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Graneros, Miguel Agustin zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Grulla Morioka počet gólů 0.5  |  Grulla Morioka počet gólů v zápasu
+fotbal  |  Grulla Morioka počet gólů 1.5  |  Grulla Morioka počet gólů v zápasu
+fotbal  |  Grulla Morioka počet gólů 2.5  |  Grulla Morioka počet gólů v zápasu
+fotbal  |  Grulla Morioka vyhraje alespoň jeden poločas  |  Grulla Morioka  vyhraje alespoň jeden poločas
+fotbal  |  Grulla Morioka vyhraje oba poločasy  |  Grulla Morioka  vyhraje oba poločasy
+fotbal  |  Guastatoya počet gólů 0.5  |  Guastatoya počet gólů v zápasu
+fotbal  |  Guastatoya počet gólů 1.5  |  Guastatoya počet gólů v zápasu
+fotbal  |  Guastatoya počet gólů 2.5  |  Guastatoya počet gólů v zápasu
+fotbal  |  Guastatoya vyhraje alespoň jeden poločas  |  Guastatoya  vyhraje alespoň jeden poločas
+fotbal  |  Guemez, Javier - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Guemez, Javier dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Guemez, Javier počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Guemez, Javier počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Guemez, Javier počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Guemez, Javier zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Handicap v zápasu +0  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu +0.5  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu +1  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu +1.5  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu -0.5  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu -1  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu -1.5  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu 1:0  |  Handicap v zápasu 1:0
+fotbal  |  Henry Gray bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Hiroki Sakai bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Hráč dá gól v zápasu  |  Hráč dá gól v zápasu
+fotbal  |  Imanol Machuca bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Independiente vyhraje , Imanol Machuca dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Independiente vyhraje , Ivan Morales dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Independiente vyhraje , Lautaro Millan dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Independiente vyhraje , Maximiliano Meza dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Independiente vyhraje , Santiago Montiel dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Independiente vyhraje , Victor Malcorra dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Independiente vyhraje, Více než 2.5 gólů , Imanol Machuca dá gól  |  Další zápasové kombinace
+fotbal  |  Independiente vyhraje, Více než 2.5 gólů , Ivan Morales dá gól  |  Další zápasové kombinace
+fotbal  |  Independiente vyhraje, Více než 2.5 gólů , Více než 6.5 Independiente rohové kopy  |  Další zápasové kombinace
+fotbal  |  Independiente vyhraje, Více než 2.5 gólů , Více než 9.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Independiente vyhraje, oba týmy dají gól , každý z týmů více než 4.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Ivan Morales bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Jake Brimmer 1+ střely  |  Hráči - střely
+fotbal  |  Jake Brimmer 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Jake Brimmer bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  James Robert McGarry 1+ střely  |  Hráči - střely
+fotbal  |  James Robert McGarry 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  James Robert McGarry bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Javier Eduardo Ibarra de la Rosa - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Javier Eduardo Ibarra de la Rosa dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Javier Eduardo Ibarra de la Rosa počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Javier Eduardo Ibarra de la Rosa počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Javier Eduardo Ibarra de la Rosa počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Javier Eduardo Ibarra de la Rosa zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Jhojan Julio 1+ asistence  |  Hráči - asistence
+fotbal  |  Jhojan Julio 1+ střely  |  Hráči - střely
+fotbal  |  Jhojan Julio 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Jhojan Julio 2+ asistence  |  Hráči - asistence
+fotbal  |  Jhojan Julio 2+ střely  |  Hráči - střely
+fotbal  |  Jhojan Julio 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Jhojan Julio 3+ střely  |  Hráči - střely
+fotbal  |  Jhojan Julio bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Jhojan Julio dá gól, Jhojan Julio 1+ asistence , Více než 5.5 Atlante rohové kopy  |  Další zápasové kombinace
+fotbal  |  Jhojan Julio dá gól, Walter Portales 1+ asistence , Více než 5.5 Atlante rohové kopy  |  Další zápasové kombinace
+fotbal  |  Jimnez, Tahiel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Jimnez, Tahiel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Jimnez, Tahiel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Jimnez, Tahiel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Jimnez, Tahiel počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Jimnez, Tahiel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Joaquin Moxica 1+ střely  |  Hráči - střely
+fotbal  |  Joaquin Moxica 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Joaquin Moxica 1+ střely na bránu, Více než 1.5 Atlante gólů , Více než 5.5 Atlante rohové kopy  |  Další zápasové kombinace
+fotbal  |  Joaquin Moxica 2+ střely  |  Hráči - střely
+fotbal  |  Joaquin Moxica 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Joaquin Moxica 3+ střely  |  Hráči - střely
+fotbal  |  Jonatan Esteban Goitia bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Jonathan Perez 1+ střely  |  Hráči - střely
+fotbal  |  Jonathan Perez 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Jonathan Perez bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Jonty Bidois 1+ asistence  |  Hráči - asistence
+fotbal  |  Jonty Bidois 1+ střely  |  Hráči - střely
+fotbal  |  Jonty Bidois 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Jonty Bidois 1+ střely na bránu, Více než 1.5 Auckland FC gólů , Více než 5.5 Auckland FC rohové kopy  |  Další zápasové kombinace
+fotbal  |  Jonty Bidois 2+ střely  |  Hráči - střely
+fotbal  |  Jonty Bidois 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Jonty Bidois 3+ střely  |  Hráči - střely
+fotbal  |  Jonty Bidois bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Jonty Bidois dá gól, Francis de Vries 1+ asistence , Více než 5.5 Auckland FC rohové kopy  |  Další zápasové kombinace
+fotbal  |  Jonty Bidois dá gól, Jonty Bidois 1+ asistence , Více než 5.5 Auckland FC rohové kopy  |  Další zápasové kombinace
+fotbal  |  Joshua Dalai Mancha García - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Joshua Dalai Mancha García dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Joshua Dalai Mancha García počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Joshua Dalai Mancha García počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Joshua Dalai Mancha García počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Joshua Dalai Mancha García zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Josias Emanuel Palais - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Josias Emanuel Palais - počet střel  |  Hráč - počet střel 
+fotbal  |  Josias Emanuel Palais - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Josias Emanuel Palais dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Josias Emanuel Palais nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Josias Emanuel Palais počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Josias Emanuel Palais počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Josias Emanuel Palais vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Josias Emanuel Palais vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Josias Emanuel Palais vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Josias Emanuel Palais zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  José Daniel González Pichardo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  José Daniel González Pichardo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  José Daniel González Pichardo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  José Daniel González Pichardo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  José Daniel González Pichardo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  José Daniel González Pichardo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Juan Carlos Echilvestre Medina - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Juan Carlos Echilvestre Medina dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Juan Carlos Echilvestre Medina počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Juan Carlos Echilvestre Medina počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Juan Carlos Echilvestre Medina počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Juan Carlos Echilvestre Medina zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Juan Manuel Fedorco bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Juan Migue Arrayago - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Juan Migue Arrayago - počet střel  |  Hráč - počet střel 
+fotbal  |  Juan Migue Arrayago - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Juan Migue Arrayago dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Juan Migue Arrayago nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Juan Migue Arrayago počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Juan Migue Arrayago počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Juan Migue Arrayago vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Juan Migue Arrayago vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Juan Migue Arrayago vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Juan Migue Arrayago zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Juan Nicolas Carrera Zarzar bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Julio, Jhojan - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Julio, Jhojan dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Julio, Jhojan počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Julio, Jhojan počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Julio, Jhojan počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Julio, Jhojan zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Kazuki Nagasawa 1+ asistence  |  Hráči - asistence
+fotbal  |  Kazuki Nagasawa 1+ střely  |  Hráči - střely
+fotbal  |  Kazuki Nagasawa 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Kazuki Nagasawa 2+ asistence  |  Hráči - asistence
+fotbal  |  Kazuki Nagasawa bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Každý z týmů dá gól v 1. poločasu  |  Každý z týmů dá gól v 1. poločasu
+fotbal  |  Každý z týmů dá gól v zápasu  |  Každý z týmů dá gól v zápasu
+fotbal  |  Každý z týmů dá gól/počet gólů v zápasu 2.5   |  Každý z týmů dá gól/počet gólů v zápasu
+fotbal  |  Kevin Oswaldo Picón Álvarez - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Kevin Oswaldo Picón Álvarez dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Kevin Oswaldo Picón Álvarez počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Kevin Oswaldo Picón Álvarez počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Kevin Oswaldo Picón Álvarez počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Kevin Oswaldo Picón Álvarez zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Který tým dá 1. gól v zápasu  |  Který tým dá 1. gól v zápasu
+fotbal  |  Který tým dá gól  |  Který tým dá gól
+fotbal  |  Lachlan Bayliss 1+ střely  |  Hráči - střely
+fotbal  |  Lachlan Bayliss 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Lachlan Bayliss 2+ střely  |  Hráči - střely
+fotbal  |  Lachlan Bayliss 3+ střely  |  Hráči - střely
+fotbal  |  Lachlan Bayliss bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Lachlan Bayliss dá gól, Francis de Vries 1+ asistence , Více než 5.5 Auckland FC rohové kopy  |  Další zápasové kombinace
+fotbal  |  Lachlan Bayliss dá gól, Jonty Bidois 1+ asistence , Více než 5.5 Auckland FC rohové kopy  |  Další zápasové kombinace
+fotbal  |  Lachlan Brook 1+ asistence  |  Hráči - asistence
+fotbal  |  Lachlan Brook 1+ střely  |  Hráči - střely
+fotbal  |  Lachlan Brook 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Lachlan Brook 2+ střely  |  Hráči - střely
+fotbal  |  Lachlan Brook 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Lachlan Brook 3+ střely  |  Hráči - střely
+fotbal  |  Lachlan Brook bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Lauro, Thiago - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Lauro, Thiago - počet střel  |  Hráč - počet střel 
+fotbal  |  Lauro, Thiago - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Lauro, Thiago dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Lauro, Thiago nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Lauro, Thiago počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Lauro, Thiago počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Lauro, Thiago vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Lauro, Thiago vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Lauro, Thiago vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Lauro, Thiago zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Lautaro Alejo Duarte - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Lautaro Alejo Duarte - počet střel  |  Hráč - počet střel 
+fotbal  |  Lautaro Alejo Duarte - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Lautaro Alejo Duarte dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Lautaro Alejo Duarte nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Lautaro Alejo Duarte počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Lautaro Alejo Duarte počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Lautaro Alejo Duarte vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Lautaro Alejo Duarte vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Lautaro Alejo Duarte vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Lautaro Alejo Duarte zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Lautaro Millan bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Leonardo Mejía Soto - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Leonardo Mejía Soto dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Leonardo Mejía Soto počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Leonardo Mejía Soto počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Leonardo Mejía Soto počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Leonardo Mejía Soto zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Logan Rogerson 1+ střely  |  Hráči - střely
+fotbal  |  Logan Rogerson 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Logan Rogerson 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Lozano, Esteban - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Lozano, Esteban dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Lozano, Esteban počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Lozano, Esteban počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Lozano, Esteban počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Lozano, Esteban zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Lucca Joel Vuoso Ramos - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Lucca Joel Vuoso Ramos dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Lucca Joel Vuoso Ramos počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Lucca Joel Vuoso Ramos počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Lucca Joel Vuoso Ramos počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Lucca Joel Vuoso Ramos zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Luis Felipe Gallegos Leiva bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Luis Ángel Calzadilla Santillán 1+ střely  |  Hráči - střely
+fotbal  |  Luis Ángel Calzadilla Santillán 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Luis Ángel Calzadilla Santillán bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Luis Ángel Calzadilla Santillán - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Luis Ángel Calzadilla Santillán dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Luis Ángel Calzadilla Santillán počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Luis Ángel Calzadilla Santillán počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Luis Ángel Calzadilla Santillán počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Luis Ángel Calzadilla Santillán zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Luis Ángel Gómez Bernal - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Luis Ángel Gómez Bernal dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Luis Ángel Gómez Bernal počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Luis Ángel Gómez Bernal počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Luis Ángel Gómez Bernal počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Luis Ángel Gómez Bernal zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Machuca, Imanol - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Machuca, Imanol - počet střel  |  Hráč - počet střel 
+fotbal  |  Machuca, Imanol - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Machuca, Imanol dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Machuca, Imanol nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Machuca, Imanol počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Machuca, Imanol počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Machuca, Imanol vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Machuca, Imanol vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Machuca, Imanol vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Machuca, Imanol zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Manuel Aiello - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Manuel Aiello - počet střel  |  Hráč - počet střel 
+fotbal  |  Manuel Aiello - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Manuel Aiello dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Manuel Aiello nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Manuel Aiello počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Manuel Aiello počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Manuel Aiello vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Manuel Aiello vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Manuel Aiello vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Manuel Aiello zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Marcone, Ivan - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Marcone, Ivan - počet střel  |  Hráč - počet střel 
+fotbal  |  Marcone, Ivan - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Marcone, Ivan dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Marcone, Ivan nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Marcone, Ivan počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Marcone, Ivan počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Marcone, Ivan vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Marcone, Ivan vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Marcone, Ivan vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Marcone, Ivan zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Mariano Bracamonte bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Mariscal, Salvador - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Mariscal, Salvador dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Mariscal, Salvador počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Mariscal, Salvador počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Mariscal, Salvador počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Mariscal, Salvador zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Martin Sarrafiore 1+ asistence  |  Hráči - asistence
+fotbal  |  Martin Sarrafiore 1+ střely  |  Hráči - střely
+fotbal  |  Martin Sarrafiore 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Martin Sarrafiore 2+ střely  |  Hráči - střely
+fotbal  |  Martin Sarrafiore 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Martin Sarrafiore 3+ střely  |  Hráči - střely
+fotbal  |  Martin Sarrafiore bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Martin Sarrafiore dá gól, Jhojan Julio 1+ asistence , Více než 5.5 Atlante rohové kopy  |  Další zápasové kombinace
+fotbal  |  Martin Sarrafiore dá gól, Walter Portales 1+ asistence , Více než 5.5 Atlante rohové kopy  |  Další zápasové kombinace
+fotbal  |  Martinez, Ruben - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Martinez, Ruben - počet střel  |  Hráč - počet střel 
+fotbal  |  Martinez, Ruben - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Martinez, Ruben dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Martinez, Ruben nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Martinez, Ruben počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Martinez, Ruben počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Martinez, Ruben vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Martinez, Ruben vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Martinez, Ruben vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Martinez, Ruben zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Martín Fernández bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Mateo Pérez Curci - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Mateo Pérez Curci - počet střel  |  Hráč - počet střel 
+fotbal  |  Mateo Pérez Curci - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Mateo Pérez Curci dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Mateo Pérez Curci nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Mateo Pérez Curci počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Mateo Pérez Curci počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Mateo Pérez Curci vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Mateo Pérez Curci vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Mateo Pérez Curci vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Mateo Pérez Curci zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Mauricio Cuevas 1+ asistence  |  Hráči - asistence
+fotbal  |  Mauricio Cuevas bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Max Anderson bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Maximiliano García Pardo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Maximiliano García Pardo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Maximiliano García Pardo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Maximiliano García Pardo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Maximiliano García Pardo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Maximiliano García Pardo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Maximiliano Meza bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Medina, Diego - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Medina, Diego dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Medina, Diego počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Medina, Diego počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Medina, Diego počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Medina, Diego zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Medina, Joel - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Medina, Joel - počet střel  |  Hráč - počet střel 
+fotbal  |  Medina, Joel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Medina, Joel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Medina, Joel nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Medina, Joel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Medina, Joel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Medina, Joel vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Medina, Joel vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Medina, Joel vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Medina, Joel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Meza, Maximiliano - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Meza, Maximiliano - počet střel  |  Hráč - počet střel 
+fotbal  |  Meza, Maximiliano - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Meza, Maximiliano dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Meza, Maximiliano nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Meza, Maximiliano počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Meza, Maximiliano počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Meza, Maximiliano vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Meza, Maximiliano vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Meza, Maximiliano vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Meza, Maximiliano zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Millan, Lautaro - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Millan, Lautaro - počet střel  |  Hráč - počet střel 
+fotbal  |  Millan, Lautaro - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Millan, Lautaro dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Millan, Lautaro nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Millan, Lautaro počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Millan, Lautaro počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Millan, Lautaro vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Millan, Lautaro vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Millan, Lautaro vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Millan, Lautaro zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Milton Celiz bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Miño, Facundo - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Miño, Facundo - počet střel  |  Hráč - počet střel 
+fotbal  |  Miño, Facundo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Miño, Facundo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Miño, Facundo nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Miño, Facundo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Miño, Facundo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Miño, Facundo vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Miño, Facundo vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Miño, Facundo vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Miño, Facundo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Monje, Pablo - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Monje, Pablo - počet střel  |  Hráč - počet střel 
+fotbal  |  Monje, Pablo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Monje, Pablo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Monje, Pablo nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Monje, Pablo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Monje, Pablo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Monje, Pablo vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Monje, Pablo vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Monje, Pablo vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Monje, Pablo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Montiel, Santiago - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Montiel, Santiago - počet střel  |  Hráč - počet střel 
+fotbal  |  Montiel, Santiago - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Montiel, Santiago dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Montiel, Santiago nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Montiel, Santiago počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Montiel, Santiago počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Montiel, Santiago vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Montiel, Santiago vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Montiel, Santiago vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Montiel, Santiago zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Moxica, Joaquin - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Moxica, Joaquin dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Moxica, Joaquin počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Moxica, Joaquin počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Moxica, Joaquin počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Moxica, Joaquin zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Multigóly  |  Multigóly
+fotbal  |  Murillo Mena, Yaison - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Murillo Mena, Yaison - počet střel  |  Hráč - počet střel 
+fotbal  |  Murillo Mena, Yaison - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Murillo Mena, Yaison dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Murillo Mena, Yaison nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Murillo Mena, Yaison počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Murillo Mena, Yaison počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Murillo Mena, Yaison vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Murillo Mena, Yaison vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Murillo Mena, Yaison vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Murillo Mena, Yaison zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Nando Pijnaker bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Nelson Sahiel Cedillo Velázquez - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Nelson Sahiel Cedillo Velázquez dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Nelson Sahiel Cedillo Velázquez počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Nelson Sahiel Cedillo Velázquez počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Nelson Sahiel Cedillo Velázquez počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Nelson Sahiel Cedillo Velázquez zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Nicolas Benegas bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Nicolas Ezequiel Watson bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Oba týmy dají gól , Alex Rufer dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Alexander Díaz dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Antony Alonso dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Bryce Duke dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Corban Piper dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Eduardo Aguirre dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Eugenio Pizzuto Puga dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Ezequiel Bullaude dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Fran Villalba dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Franco Pardo dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Gabriel Obredor dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Imanol Machuca dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Ivan Morales dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Jake Brimmer dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Jhojan Julio dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Jonathan Perez dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Jonty Bidois dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Kazuki Nagasawa dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Lachlan Bayliss dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Lachlan Brook dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Lautaro Millan dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Logan Rogerson dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Luis Felipe Gallegos Leiva dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Luis Ángel Calzadilla Santillán dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Martin Sarrafiore dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Martín Fernández dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Mauricio Cuevas dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Mauro Smarra dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Max Anderson dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Maximiliano Meza dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Miguel Agustin Graneros dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Nicolas Benegas dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Rafael Durán dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Santiago Montiel dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Victor Malcorra dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Walter Portales dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól: 1.poločas/2.poločas   |  Oba týmy dají gól: 1. poločas/2. poločas
+fotbal  |  Obredor, Gabriel - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Obredor, Gabriel - počet střel  |  Hráč - počet střel 
+fotbal  |  Obredor, Gabriel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Obredor, Gabriel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Obredor, Gabriel nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Obredor, Gabriel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Obredor, Gabriel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Obredor, Gabriel vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Obredor, Gabriel vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Obredor, Gabriel vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Obredor, Gabriel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Octavio Martín Vásquez González - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Octavio Martín Vásquez González dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Octavio Martín Vásquez González počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Octavio Martín Vásquez González počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Octavio Martín Vásquez González počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Octavio Martín Vásquez González zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Okinawa SV počet gólů 0.5  |  Okinawa SV počet gólů v zápasu
+fotbal  |  Okinawa SV počet gólů 1.5  |  Okinawa SV počet gólů v zápasu
+fotbal  |  Okinawa SV počet gólů 2.5  |  Okinawa SV počet gólů v zápasu
+fotbal  |  Okinawa SV vyhraje alespoň jeden poločas  |  Okinawa SV vyhraje alespoň jeden poločas
+fotbal  |  Okinawa SV vyhraje oba poločasy  |  Okinawa SV vyhraje oba poločasy
+fotbal  |  Orona, Efrain - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Orona, Efrain dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Orona, Efrain počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Orona, Efrain počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Orona, Efrain počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Orona, Efrain zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Palacios, Kevin - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Palacios, Kevin dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Palacios, Kevin počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Palacios, Kevin počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Palacios, Kevin počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Palacios, Kevin zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Pardo, Franco - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Pardo, Franco dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Pardo, Franco počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Pardo, Franco počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Pardo, Franco počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Pardo, Franco zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Paz, Cristian Ignacio - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Paz, Cristian Ignacio - počet střel  |  Hráč - počet střel 
+fotbal  |  Paz, Cristian Ignacio - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Paz, Cristian Ignacio dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Paz, Cristian Ignacio nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Paz, Cristian Ignacio počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Paz, Cristian Ignacio počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Paz, Cristian Ignacio vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Paz, Cristian Ignacio vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Paz, Cristian Ignacio vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Paz, Cristian Ignacio zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Perez, Jonathan - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Perez, Jonathan dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Perez, Jonathan počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Perez, Jonathan počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Perez, Jonathan počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Perez, Jonathan zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Phoenix vyhraje , Alex Rufer dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Phoenix vyhraje , Bryce Duke 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Bryce Duke 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Bryce Duke dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Phoenix vyhraje , Corban Piper 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Corban Piper 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Corban Piper dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Phoenix vyhraje , James Robert McGarry 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Kazuki Nagasawa 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Kazuki Nagasawa dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Phoenix vyhraje , Max Anderson dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Phoenix vyhraje , Rafael Durán 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Rafael Durán 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Phoenix vyhraje , Rafael Durán dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Phoenix vyhraje, Více než 2.5 gólů , Corban Piper dá gól  |  Další zápasové kombinace
+fotbal  |  Phoenix vyhraje, Více než 2.5 gólů , Rafael Durán dá gól  |  Další zápasové kombinace
+fotbal  |  Phoenix vyhraje, Více než 2.5 gólů , Více než 10.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Phoenix vyhraje, Více než 2.5 gólů , Více než 4.5 Phoenix rohové kopy  |  Další zápasové kombinace
+fotbal  |  Phoenix vyhraje, oba týmy dají gól , každý z týmů více než 5.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Pizzuto, Eugenio - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Pizzuto, Eugenio dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Pizzuto, Eugenio počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Pizzuto, Eugenio počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Pizzuto, Eugenio počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Pizzuto, Eugenio zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Poločas s nejvyšším počtem gólů  |  Poločas s nejvyšším počtem gólů
+fotbal  |  Portales, Walter - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Portales, Walter dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Portales, Walter počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Portales, Walter počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Portales, Walter počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Portales, Walter zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Poslední rohový kop v zápasu  |  Poslední rohový kop v zápasu
+fotbal  |  Počet faulů v zápasu 23.5  |  Počet faulů v zápasu
+fotbal  |  Počet faulů v zápasu 26.5  |  Počet faulů v zápasu
+fotbal  |  Počet faulů v zápasu 29.5  |  Počet faulů v zápasu
+fotbal  |  Počet gólů v 1. poločasu 0.5  |  Počet gólů v 1. poločasu
+fotbal  |  Počet gólů v 1. poločasu 1  |  Počet gólů v 1. poločasu
+fotbal  |  Počet gólů v 1. poločasu 1.5  |  Počet gólů v 1. poločasu
+fotbal  |  Počet gólů v 1. poločasu 2  |  Počet gólů v 1. poločasu
+fotbal  |  Počet gólů v 1. poločasu 2.5  |  Počet gólů v 1. poločasu
+fotbal  |  Počet gólů v 2. poločasu 0.5  |  Počet gólů v 2. poločasu
+fotbal  |  Počet gólů v 2. poločasu 1  |  Počet gólů v 2. poločasu
+fotbal  |  Počet gólů v 2. poločasu 1.5  |  Počet gólů v 2. poločasu
+fotbal  |  Počet gólů v 2. poločasu 2  |  Počet gólů v 2. poločasu
+fotbal  |  Počet gólů v 2. poločasu 2.5  |  Počet gólů v 2. poločasu
+fotbal  |  Počet gólů v zápasu 0.5  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 1  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 1.5  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 2  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 2.5  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 3  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 3.5  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 4  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 4.5  |  Počet gólů v zápasu
+fotbal  |  Počet gólů v zápasu 5  |  Počet gólů v zápasu
+fotbal  |  Počet ofsajdů v zápasu 2.5  |  Počet ofsajdů v zápasu
+fotbal  |  Počet ofsajdů v zápasu 3.5  |  Počet ofsajdů v zápasu
+fotbal  |  Počet ofsajdů v zápasu 4.5  |  Počet ofsajdů v zápasu
+fotbal  |  Počet rohových kopů v zápasu 10.5  |  Počet rohových kopů v zápasu
+fotbal  |  Počet rohových kopů v zápasu 11.5  |  Počet rohových kopů v zápasu
+fotbal  |  Počet rohových kopů v zápasu 12.5  |  Počet rohových kopů v zápasu
+fotbal  |  Počet rohových kopů v zápasu 7.5  |  Počet rohových kopů v zápasu
+fotbal  |  Počet rohových kopů v zápasu 8.5  |  Počet rohových kopů v zápasu
+fotbal  |  Počet rohových kopů v zápasu 9.5  |  Počet rohových kopů v zápasu
+fotbal  |  Počet střel na branku v zápasu  |  Počet střel na branku v zápasu
+fotbal  |  Počet střel v zápasu  |  Počet střel v zápasu
+fotbal  |  Počet žlutých karet v zápasu
+
+(Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým)   |  Počet žlutých karet v zápasu
+
+(Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým) 
+fotbal  |  Puente, Luis - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Puente, Luis dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Puente, Luis počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Puente, Luis počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Puente, Luis počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Puente, Luis zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Přesný výsledek  |  Přesný výsledek zápasu
+fotbal  |  Přesný výsledek 1. poločasu  |  Přesný výsledek 1. poločasu
+fotbal  |  Quintana, Carlos - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Quintana, Carlos - počet střel  |  Hráč - počet střel 
+fotbal  |  Quintana, Carlos - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Quintana, Carlos dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Quintana, Carlos nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Quintana, Carlos počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Quintana, Carlos počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Quintana, Carlos vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Quintana, Carlos vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Quintana, Carlos vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Quintana, Carlos zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Quiros, Aaron - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Quiros, Aaron dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Quiros, Aaron počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Quiros, Aaron počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Quiros, Aaron počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Quiros, Aaron zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Rafael Durán 1+ asistence  |  Hráči - asistence
+fotbal  |  Rafael Durán 1+ střely  |  Hráči - střely
+fotbal  |  Rafael Durán 1+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Rafael Durán 1+ střely na bránu, Více než 1.5 Phoenix gólů , Více než 4.5 Phoenix rohové kopy  |  Další zápasové kombinace
+fotbal  |  Rafael Durán 2+ střely  |  Hráči - střely
+fotbal  |  Rafael Durán 2+ střely na bránu  |  Hráči - střely na bránu
+fotbal  |  Rafael Durán 3+ střely  |  Hráči - střely
+fotbal  |  Rafael Durán dá gól, Bryce Duke 1+ asistence , Více než 4.5 Phoenix rohové kopy  |  Další zápasové kombinace
+fotbal  |  Rafael Durán dá gól, Kazuki Nagasawa 1+ asistence , Více než 4.5 Phoenix rohové kopy  |  Další zápasové kombinace
+fotbal  |  Ramirez, Pedro David - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Ramirez, Pedro David - počet střel  |  Hráč - počet střel 
+fotbal  |  Ramirez, Pedro David - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Ramirez, Pedro David dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Ramirez, Pedro David nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Ramirez, Pedro David počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Ramirez, Pedro David počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Ramirez, Pedro David vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Ramirez, Pedro David vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Ramirez, Pedro David vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Ramirez, Pedro David zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Ramiro Martino - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Ramiro Martino - počet střel  |  Hráč - počet střel 
+fotbal  |  Ramiro Martino - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Ramiro Martino dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Ramiro Martino nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Ramiro Martino počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Ramiro Martino počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Ramiro Martino vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Ramiro Martino vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Ramiro Martino vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Ramiro Martino zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Randazzo, Juan Cruz - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Randazzo, Juan Cruz - počet střel  |  Hráč - počet střel 
+fotbal  |  Randazzo, Juan Cruz - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Randazzo, Juan Cruz dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Randazzo, Juan Cruz nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Randazzo, Juan Cruz počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Randazzo, Juan Cruz počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Randazzo, Juan Cruz vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Randazzo, Juan Cruz vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Randazzo, Juan Cruz vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Randazzo, Juan Cruz zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Remíza  , Corban Piper dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Eduardo Aguirre dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Ezequiel Bullaude dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Imanol Machuca dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Ivan Morales dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Jhojan Julio dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Jonty Bidois dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Lachlan Bayliss dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Martin Sarrafiore dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Miguel Agustin Graneros dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Nicolas Benegas dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza  , Rafael Durán dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , Imanol Machuca dá gól , Nicolas Benegas dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , Jonty Bidois dá gól , Corban Piper dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , Martin Sarrafiore dá gól , Eduardo Aguirre dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Corban Piper dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Eduardo Aguirre dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Imanol Machuca dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Jonty Bidois dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Martin Sarrafiore dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Nicolas Benegas dá gól  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Více než 10.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , Více než 9.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , méně než 10.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Remíza , oba týmy dají gól , méně než 9.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Ronan Wynne bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Rubén Alejandro Coubert Pelayo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Rubén Alejandro Coubert Pelayo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Rubén Alejandro Coubert Pelayo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Rubén Alejandro Coubert Pelayo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Rubén Alejandro Coubert Pelayo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Rubén Alejandro Coubert Pelayo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Rubén David Martinez bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Sanchez, Braian - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Sanchez, Braian - počet střel  |  Hráč - počet střel 
+fotbal  |  Sanchez, Braian - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Sanchez, Braian dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Sanchez, Braian nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Sanchez, Braian počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Sanchez, Braian počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Sanchez, Braian vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Sanchez, Braian vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Sanchez, Braian vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Sanchez, Braian zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Sanchez, Luis - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Sanchez, Luis dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Sanchez, Luis počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Sanchez, Luis počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Sanchez, Luis počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Sanchez, Luis zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Sansotre, Nicolas - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Sansotre, Nicolas - počet střel  |  Hráč - počet střel 
+fotbal  |  Sansotre, Nicolas - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Sansotre, Nicolas dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Sansotre, Nicolas nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Sansotre, Nicolas počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Sansotre, Nicolas počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Sansotre, Nicolas vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Sansotre, Nicolas vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Sansotre, Nicolas vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Sansotre, Nicolas zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Santiago Naelson Garcia Altamirano - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Santiago Naelson Garcia Altamirano dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Santiago Naelson Garcia Altamirano počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Santiago Naelson Garcia Altamirano počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Santiago Naelson Garcia Altamirano počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Santiago Naelson Garcia Altamirano zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Santos Laguna vyhraje , Eduardo Aguirre 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Eduardo Aguirre 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Eduardo Aguirre dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Santos Laguna vyhraje , Ezequiel Bullaude 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Ezequiel Bullaude 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Ezequiel Bullaude dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Santos Laguna vyhraje , Facundo Cáseres 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Fran Villalba 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Fran Villalba 2+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Fran Villalba dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Santos Laguna vyhraje , Franco Pardo dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Santos Laguna vyhraje , Jonathan Perez 1+ střely na bránu  |  Zápas + počet střel na bránu hráče v zápasu
+fotbal  |  Santos Laguna vyhraje , Jonathan Perez dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Santos Laguna vyhraje , Mauricio Cuevas dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Santos Laguna vyhraje, Více než 3.5 gólů , Eduardo Aguirre dá gól  |  Další zápasové kombinace
+fotbal  |  Santos Laguna vyhraje, Více než 3.5 gólů , Ezequiel Bullaude dá gól  |  Další zápasové kombinace
+fotbal  |  Santos Laguna vyhraje, Více než 3.5 gólů , Více než 10.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Santos Laguna vyhraje, Více než 3.5 gólů , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
+fotbal  |  Santos Laguna vyhraje, oba týmy dají gól , každý z týmů více než 5.5 rohové kopy  |  Další zápasové kombinace
+fotbal  |  Sarrafiore, Martin - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Sarrafiore, Martin dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Sarrafiore, Martin počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Sarrafiore, Martin počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Sarrafiore, Martin počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Sarrafiore, Martin zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Smarra Vargas, Mauro - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Smarra Vargas, Mauro - počet střel  |  Hráč - počet střel 
+fotbal  |  Smarra Vargas, Mauro - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Smarra Vargas, Mauro dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Smarra Vargas, Mauro nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Smarra Vargas, Mauro počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Smarra Vargas, Mauro počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Smarra Vargas, Mauro vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Smarra Vargas, Mauro vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Smarra Vargas, Mauro vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Smarra Vargas, Mauro zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Sordo, Ramiro - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Sordo, Ramiro dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Sordo, Ramiro počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Sordo, Ramiro počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Sordo, Ramiro počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Sordo, Ramiro zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Stringa, Angel Mario - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Stringa, Angel Mario - počet střel  |  Hráč - počet střel 
+fotbal  |  Stringa, Angel Mario - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Stringa, Angel Mario dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Stringa, Angel Mario nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Stringa, Angel Mario počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Stringa, Angel Mario počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Stringa, Angel Mario vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Stringa, Angel Mario vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Stringa, Angel Mario vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Stringa, Angel Mario zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Tampa Bay Sun FC počet gólů 0.5  |  Tampa Bay Sun FC počet gólů v zápasu
+fotbal  |  Tampa Bay Sun FC počet gólů 1.5  |  Tampa Bay Sun FC počet gólů v zápasu
+fotbal  |  Tampa Bay Sun FC počet gólů 2.5  |  Tampa Bay Sun FC počet gólů v zápasu
+fotbal  |  Tercero, Eduardo - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Tercero, Eduardo dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Tercero, Eduardo počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Tercero, Eduardo počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Tercero, Eduardo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Tercero, Eduardo zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Thiago Lauro bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Tomás Leonel González - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Tomás Leonel González - počet střel  |  Hráč - počet střel 
+fotbal  |  Tomás Leonel González - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Tomás Leonel González dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Tomás Leonel González nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Tomás Leonel González počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Tomás Leonel González počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Tomás Leonel González vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Tomás Leonel González vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Tomás Leonel González vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Tomás Leonel González zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Tovo, Eric Joel - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Tovo, Eric Joel - počet střel  |  Hráč - počet střel 
+fotbal  |  Tovo, Eric Joel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Tovo, Eric Joel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Tovo, Eric Joel nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Tovo, Eric Joel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Tovo, Eric Joel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Tovo, Eric Joel vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Tovo, Eric Joel vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Tovo, Eric Joel vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Tovo, Eric Joel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Valdez, Sebastian - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Valdez, Sebastian - počet střel  |  Hráč - počet střel 
+fotbal  |  Valdez, Sebastian - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Valdez, Sebastian dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Valdez, Sebastian nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Valdez, Sebastian počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Valdez, Sebastian počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Valdez, Sebastian vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Valdez, Sebastian vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Valdez, Sebastian vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Valdez, Sebastian zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Villalba, Fran - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Villalba, Fran dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Villalba, Fran počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Villalba, Fran počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Villalba, Fran počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
+fotbal  |  Villalba, Fran zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Více faulů v zápasu  |  Více faulů v zápasu
+fotbal  |  Více ofsajdů v zápasu  |  Více ofsajdů v zápasu
+fotbal  |  Více střel v zápasu  |  Více střel v zápasu
+fotbal  |  Více žlutých karet v zápasu
+
+(Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým)   |  Více žlutých karet v zápasu (Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým) 
+fotbal  |  Výsledek 1. poločasu  |  Výsledek 1. poločasu
+fotbal  |  Výsledek 1. poločasu - dvojtip  |  Výsledek 1. poločasu - dvojtip
+fotbal  |  Výsledek 1. poločasu/výsledek zápasu  |  Výsledek 1. poločasu/výsledek zápasu
+fotbal  |  Výsledek 1.poločasu/každý z týmů dá gól  |  Výsledek 1. poločasu/každý z týmů dá gól v 1. poločasu
+fotbal  |  Výsledek 2. poločasu  |  Výsledek 2. poločasu
+fotbal  |  Výsledek zápasu  |  Výsledek zápasu
+fotbal  |  Výsledek zápasu - dvojtip  |  Výsledek zápasu - dvojtip
+fotbal  |  Výsledek zápasu bez remízy  |  Výsledek zápasu bez remízy
+fotbal  |  Výsledek zápasu/každý z týmů dá gól  |  Výsledek zápasu/každý z týmů dá gól
+fotbal  |  Výsledek zápasu/počet gólů v zápasu 1.5   |  Výsledek zápasu/počet gólů v zápasu
+fotbal  |  Výsledek zápasu/počet gólů v zápasu 2.5   |  Výsledek zápasu/počet gólů v zápasu
+fotbal  |  Výsledek zápasu/počet gólů v zápasu 3.5   |  Výsledek zápasu/počet gólů v zápasu
+fotbal  |  Výsledek zápasu/počet gólů v zápasu 4.5   |  Výsledek zápasu/počet gólů v zápasu
+fotbal  |  Walter Portales 1+ asistence  |  Hráči - asistence
+fotbal  |  Walter Portales bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Watson, Nicolas - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Watson, Nicolas - počet střel  |  Hráč - počet střel 
+fotbal  |  Watson, Nicolas - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Watson, Nicolas dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Watson, Nicolas nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Watson, Nicolas počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Watson, Nicolas počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Watson, Nicolas vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Watson, Nicolas vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Watson, Nicolas vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Watson, Nicolas zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Wellington Phoenix dá gól v obou poločasech  |  Wellington Phoenix dá gól v obou poločasech
+fotbal  |  Wellington Phoenix počet gólů 0.5  |  Wellington Phoenix počet gólů v zápasu
+fotbal  |  Wellington Phoenix počet gólů 1.5  |  Wellington Phoenix počet gólů v zápasu
+fotbal  |  Wellington Phoenix počet gólů 2.5  |  Wellington Phoenix počet gólů v zápasu
+fotbal  |  Wellington Phoenix počet rohových kopů v zápasu  |  Wellington Phoenix počet rohových kopů v zápasu
+fotbal  |  Wellington Phoenix počet červených karet  |  Wellington Phoenix počet červených karet (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  Wellington Phoenix vyhraje alespoň jeden poločas  |  Wellington Phoenix vyhraje alespoň jeden poločas
+fotbal  |  Zabala, Facundo Gabriel - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Zabala, Facundo Gabriel - počet střel  |  Hráč - počet střel 
+fotbal  |  Zabala, Facundo Gabriel - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Zabala, Facundo Gabriel dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Zabala, Facundo Gabriel nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Zabala, Facundo Gabriel počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Zabala, Facundo Gabriel počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Zabala, Facundo Gabriel vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Zabala, Facundo Gabriel vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Zabala, Facundo Gabriel vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Zabala, Facundo Gabriel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Zápas: CA Independiente Počet faulů   |  CA Independiente počet faulů
+fotbal  |  Zápas: CA Independiente počet ofsajdů   |  CA Independiente počet ofsajdů
+fotbal  |  Zápas: CA Independiente počet střel  |  CA Independiente počet střel
+fotbal  |  Zápas: Deportivo Riestra Počet faulů   |  Deportivo Riestra počet faulů
+fotbal  |  Zápas: Deportivo Riestra počet ofsajdů   |  Deportivo Riestra počet ofsajdů
+fotbal  |  Zápas: Deportivo Riestra počet střel   |  Deportivo Riestra počet střel
+fotbal  |  Zápas: více rohových kopů  |  Více rohových kopů v zápasu
+fotbal  |  zápas: Atlante počet žlutých karet
+
+(Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým)   |  Atlante počet žlutých karet v zápasu (Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým) 
+fotbal  |  zápas: Auckland FC počet žlutých karet
+
+(Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým)   |  Auckland FC počet žlutých karet v zápasu (Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým) 
+fotbal  |  zápas: Club Santos Laguna počet žlutých karet
+
+(Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým)   |  Club Santos Laguna počet žlutých karet v zápasu (Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým) 
+fotbal  |  zápas: Wellington Phoenix počet žlutých karet
+
+(Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým)   |  Wellington Phoenix počet žlutých karet v zápasu (Nepočítá se - druhá ŽK pro hráče, po zápase, pro hráče na lavičce a realizační tým) 
+fotbal  |  Ángel Azul Almada - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
+fotbal  |  Ángel Azul Almada - počet střel  |  Hráč - počet střel 
+fotbal  |  Ángel Azul Almada - počet střel na branku  |  Hráč - počet střel na branku
+fotbal  |  Ángel Azul Almada dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
+fotbal  |  Ángel Azul Almada nebo jeho náhradník zaznamená asistenci  |  Žolík - hráč (nebo jeho náhradník) zaznamená asistenci (90 min)
+fotbal  |  Ángel Azul Almada počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
+fotbal  |  Ángel Azul Almada počet gólů v zápasu  |  Hráč - počet gólů v zápasu
+fotbal  |  Ángel Azul Almada vstřelí gól (poslední)  |  Hráč vstřelí gól (poslední)
+fotbal  |  Ángel Azul Almada vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
+fotbal  |  Ángel Azul Almada vstřelí gól (první)  |  Hráč vstřelí gól (první)
+fotbal  |  Ángel Azul Almada zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Červená karta (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)  |  Červená karta (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+tenis  |  1.set/zápas  |  1. set/zápas
+tenis  |  Anazagasty-Pursoo A.: vyhraje alespoň set  |  Anazagasty-Pursoo A.: vyhraje alespoň set
+tenis  |  Boeckli R.: vyhraje alespoň set  |  Boeckli R.: vyhraje alespoň set
+tenis  |  Borges N.: počet gamů 10.5   |  Borges N.: počet gamů
+tenis  |  Borges N.: počet gamů 11.5   |  Borges N.: počet gamů
+tenis  |  Borges N.: počet gamů 12.5   |  Borges N.: počet gamů
+tenis  |  Borges N.: vyhraje alespoň set  |  Borges N.: vyhraje alespoň set
+tenis  |  Borges N.: vyhraje přesně 1 set  |  Borges N.: vyhraje přesně 1 set
+tenis  |  Borges vítěz  setu  1 , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu , Borges vítěz  setu  1  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu , Ruud vítěz  setu  1  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu , nad 2.5 setů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu , nad 23.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu , nad 25.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu, Borges vítěz  setu  1 , nad 2.5 setů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu, Borges vítěz  setu  1 , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu, Ruud vítěz  setu  1 , nad 2.5 setů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Borges vítěz zápasu, Ruud vítěz  setu  1 , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Crowther C.: vyhraje alespoň set  |  Crowther C.: vyhraje alespoň set
+tenis  |  Delgado S.: vyhraje alespoň set  |  Delgado S.: vyhraje alespoň set
+tenis  |  Handicap gamů v 1. setu -1.5  |  Handicap gamů v 1. setu
+tenis  |  Handicap gamů v 1. setu -2.5  |  Handicap gamů v 1. setu
+tenis  |  Handicap gamů v 1. setu -3.5  |  Handicap gamů v 1. setu
+tenis  |  Handicap gamů v 1. setu 1.5  |  Handicap gamů v 1. setu
+tenis  |  Handicap gamů v zápasu -0.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu -1.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu -2.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu -3.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu -4.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu -5.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu -6.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu -7.5  |  Handicap gamů v zápasu
+tenis  |  Handicap gamů v zápasu 3.5  |  Handicap gamů v zápasu
+tenis  |  Handicap setů v zápasu -1.5  |  Handicap setů v zápasu
+tenis  |  Handicap setů v zápasu 1.5  |  Handicap setů v zápasu
+tenis  |  Hashimoto H.: vyhraje alespoň set  |  Hashimoto H.: vyhraje alespoň set
+tenis  |  Kanár v zápasu  |  Kanár v zápasu
+tenis  |  Kolar Z. / Rodriguez Taverna S.: vyhraje alespoň set  |  Kolar Z. / Rodriguez Taverna S.: vyhraje alespoň set
+tenis  |  Kolar Z. / Rodriguez Taverna S.: vyhraje přesně 1 set  |  Kolar Z. / Rodriguez Taverna S.: vyhraje přesně 1 set
+tenis  |  Leong S.L.X.: vyhraje alespoň set  |  Leong S.L.X.: vyhraje alespoň set
+tenis  |  Počet gamů v 1.setu 10.5  |  Počet gamů v 1. setu
+tenis  |  Počet gamů v 1.setu 12.5  |  Počet gamů v 1. setu
+tenis  |  Počet gamů v 1.setu 6.5  |  Počet gamů v 1. setu
+tenis  |  Počet gamů v 1.setu 7.5  |  Počet gamů v 1. setu
+tenis  |  Počet gamů v 1.setu 8.5  |  Počet gamů v 1. setu
+tenis  |  Počet gamů v 1.setu 9.5  |  Počet gamů v 1. setu
+tenis  |  Počet gamů v zápasu 17.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 18.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 19.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 20.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 21.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 22.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 23.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 24.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 25.5   |  Počet gamů v zápasu
+tenis  |  Počet gamů v zápasu 26.5   |  Počet gamů v zápasu
+tenis  |  Počet setů v zápasu 2.5   |  Počet setů v zápasu
+tenis  |  Přesný počet setů   |  Přesný počet setů 
+tenis  |  Přesný výsledek  |  Přesný výsledek
+tenis  |  Přesný výsledek 1.setu  |  Přesný výsledek 1. setu
+tenis  |  Reis Da Silva J.L.: počet gamů 10.5   |  Reis Da Silva J.L.: počet gamů
+tenis  |  Reis Da Silva J.L.: počet gamů 8.5   |  Reis Da Silva J.L.: počet gamů
+tenis  |  Reis Da Silva J.L.: počet gamů 9.5   |  Reis Da Silva J.L.: počet gamů
+tenis  |  Reis Da Silva J.L.: vyhraje alespoň set  |  Reis Da Silva J.L.: vyhraje alespoň set
+tenis  |  Reis Da Silva J.L.: vyhraje přesně 1 set  |  Reis Da Silva J.L.: vyhraje přesně 1 set
+tenis  |  Ribeiro E. / Rodrigues N.: vyhraje alespoň set  |  Ribeiro E. / Rodrigues N.: vyhraje alespoň set
+tenis  |  Ribeiro E. / Rodrigues N.: vyhraje přesně 1 set  |  Ribeiro E. / Rodrigues N.: vyhraje přesně 1 set
+tenis  |  Ruud C.: počet gamů 11.5   |  Ruud C.: počet gamů
+tenis  |  Ruud C.: počet gamů 12.5   |  Ruud C.: počet gamů
+tenis  |  Ruud C.: počet gamů 13.5   |  Ruud C.: počet gamů
+tenis  |  Ruud C.: vyhraje alespoň set  |  Ruud C.: vyhraje alespoň set
+tenis  |  Ruud C.: vyhraje přesně 1 set  |  Ruud C.: vyhraje přesně 1 set
+tenis  |  Ruud C. vyhraje svůj první servis game  |  Ruud C. vyhraje svůj první servis game
+tenis  |  Ruud vítěz  setu  1 , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu , Borges vítěz  setu  1  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu , Ruud vítěz  setu  1  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu , nad 2.5 setů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu , nad 23.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu , nad 25.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu, Borges vítěz  setu  1 , nad 2.5 setů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu, Borges vítěz  setu  1 , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu, Ruud vítěz  setu  1 , nad 2.5 setů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Ruud vítěz zápasu, Ruud vítěz  setu  1 , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
+tenis  |  Schnack H.: vyhraje alespoň set  |  Schnack H.: vyhraje alespoň set
+tenis  |  Seyboth Wild T.: počet gamů 11.5   |  Seyboth Wild T.: počet gamů
+tenis  |  Seyboth Wild T.: počet gamů 12.5   |  Seyboth Wild T.: počet gamů
+tenis  |  Seyboth Wild T.: počet gamů 13.5   |  Seyboth Wild T.: počet gamů
+tenis  |  Seyboth Wild T.: vyhraje alespoň set  |  Seyboth Wild T.: vyhraje alespoň set
+tenis  |  Seyboth Wild T.: vyhraje přesně 1 set  |  Seyboth Wild T.: vyhraje přesně 1 set
+tenis  |  Součet gamů v zápasu  |  Součet gamů v zápasu
+tenis  |  Tiebreak v zápasu  |  Tiebreak v zápasu
+tenis  |  Vítěz 1. setu  |  Vítěz 1. setu
+tenis  |  Vítěz 1.setu  |  Vítěz 1. setu
+tenis  |  Vítěz a počet gamů v 1. setu 9.5  |  Vítěz a počet gamů v 1. setu
+tenis  |  Vítěz zápasu  |  Vítěz zápasu
+tenis  |  Vítěz zápasu (sázka se vrací při prohře 1:2)  |  Vítěz zápasu (sázka se vrací při prohře 1:2)
+tenis  |  Wilson H.: vyhraje alespoň set  |  Wilson H.: vyhraje alespoň set
+tenis  |  Zápas: Borges N. počet dvojchyb 1.5  |  Borges N. počet dvojchyb
+tenis  |  Zápas: Borges N. počet es 5.5  |  Zápas: Borges N. počet es
+tenis  |  Zápas: Borges N. počet es 6.5  |  Zápas: Borges N. počet es
+tenis  |  Zápas: Borges N. počet es 7.5  |  Zápas: Borges N. počet es
+tenis  |  Zápas: Ruud C. počet dvojchyb 1.5  |  Ruud C.: počet dvojchyb
+tenis  |  Zápas: Ruud C. počet es 7.5  |  Zápas: Ruud C. počet es
+tenis  |  Zápas: Ruud C. počet es 8.5  |  Zápas: Ruud C. počet es
+tenis  |  Zápas: Ruud C. počet es 9.5  |  Zápas: Ruud C. počet es
+tenis  |  Zápas: počet dvojchyb 
+2.5  |  Zápas: počet dvojchyb
+tenis  |  Zápas: počet dvojchyb 
+3.5  |  Zápas: počet dvojchyb
+tenis  |  Zápas: počet es 14.5  |  Zápas: počet es
+tenis  |  Zápas: počet es 15.5  |  Zápas: počet es
+tenis  |  Zápas: počet es 16.5  |  Zápas: počet es
+tenis  |  Zápas: počet získaných breaků 3.5  |  Zápas: počet získaných breaků
+tenis  |  Zápas: více dvojchyb  |  Zápas: více dvojchyb
+tenis  |  Zápas: více es  |  Zápas: více es
+tenis  |   Borges N. vyhraje svůj první servis game  |  Borges N. vyhraje svůj první servis game

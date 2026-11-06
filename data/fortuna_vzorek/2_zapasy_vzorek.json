@@ -1,0 +1,148 @@
+[
+ {
+  "turnaj": "Japonsko - Football League",
+  "fixture": {
+   "id": "ufo:mtch:1xi-1yi",
+   "sportId": "ufo:sprt:00",
+   "categoryId": "ufo:ctgr:00-2o",
+   "tournamentId": "ufo:tour:00-0pn",
+   "sportradarIds": [
+    "72665054"
+   ],
+   "kind": "PREMATCH",
+   "name": "Grulla Morioka - Okinawa SV",
+   "sportSeoName": "fotbal",
+   "categorySeoName": "japonsko",
+   "tournamentSeoName": "japonsko-football-league",
+   "seoName": "grulla-morioka-okinawa-sv",
+   "sportOrder": 3,
+   "categoryOrder": 1000000,
+   "tournamentOrder": 12500,
+   "order": 1000000,
+   "participants": [
+    {
+     "id": "ufo:team:00-05nl",
+     "name": "Okinawa SV",
+     "type": "AWAY",
+     "icon": "default_football_away.png"
+    },
+    {
+     "id": "ufo:team:00-04fr",
+     "name": "Grulla Morioka",
+     "type": "HOME",
+     "icon": "default_football_home.png"
+    }
+   ],
+   "startDatetime": 1794024000000,
+   "totalMarketCount": 1,
+   "features": [
+    "STATISTICS",
+    "OPTA"
+   ],
+   "marketTypeIds": [
+    "ufo:mtyp:00-00",
+    "ufo:mtyp:00-01",
+    "ufo:mtyp:00-0u"
+   ],
+   "hasMarkets": true,
+   "status": "ACTIVE"
+  }
+ },
+ {
+  "turnaj": "3. Mexiko",
+  "fixture": {
+   "id": "ufo:mtch:1xi-1sq",
+   "sportId": "ufo:sprt:00",
+   "categoryId": "ufo:ctgr:00-05",
+   "tournamentId": "ufo:tour:00-10y",
+   "sportradarIds": [
+    "74063578"
+   ],
+   "kind": "PREMATCH",
+   "name": "Santiago FC - Halcones Negros F.C.",
+   "sportSeoName": "fotbal",
+   "categorySeoName": "mexiko",
+   "tournamentSeoName": "3-mexiko",
+   "seoName": "santiago-fc-halcones-negros-f-c",
+   "sportOrder": 3,
+   "categoryOrder": 1000000,
+   "tournamentOrder": 4970,
+   "order": 1000000,
+   "participants": [
+    {
+     "id": "ufo:team:00-0lgk",
+     "name": "Halcones Negros F.C.",
+     "type": "AWAY",
+     "icon": "default_football_away.png"
+    },
+    {
+     "id": "ufo:team:00-0d28",
+     "name": "Santiago FC",
+     "type": "HOME",
+     "icon": "default_football_home.png"
+    }
+   ],
+   "startDatetime": 1794009600000,
+   "totalMarketCount": 1,
+   "features": [
+    "STATISTICS"
+   ],
+   "marketTypeIds": [
+    "ufo:mtyp:00-00",
+    "ufo:mtyp:00-01",
+    "ufo:mtyp:00-0u"
+   ],
+   "hasMarkets": true,
+   "status": "ACTIVE"
+  }
+ },
+ {
+  "turnaj": "2. Kolumbie",
+  "fixture": {
+   "id": "ufo:mtch:1xh-2h8",
+   "sportId": "ufo:sprt:00",
+   "categoryId": "ufo:ctgr:00-11",
+   "tournamentId": "ufo:tour:00-018",
+   "sportradarIds": [
+    "76174022"
+   ],
+   "kind": "PREMATCH",
+   "name": "Boca Juniors de Cali - Envigado FC",
+   "sportSeoName": "fotbal",
+   "categorySeoName": "kolumbie-1",
+   "tournamentSeoName": "2-kolumbie",
+   "seoName": "boca-juniors-de-cali-envigado-fc",
+   "sportOrder": 3,
+   "categoryOrder": 1000000,
+   "tournamentOrder": 3980,
+   "order": 1000000,
+   "participants": [
+    {
+     "id": "ufo:team:00-05vu",
+     "name": "Envigado FC",
+     "type": "AWAY",
+     "icon": "default_football_away.png"
+    },
+    {
+     "id": "ufo:team:00-07nw",
+     "name": "Boca Juniors de Cali",
+     "type": "HOME",
+     "icon": "default_football_home.png"
+    }
+   ],
+   "startDatetime": 1793998800000,
+   "totalMarketCount": 1,
+   "features": [
+    "STATISTICS",
+    "OPTA"
+   ],
+   "marketTypeIds": [
+    "ufo:mtyp:00-00",
+    "ufo:mtyp:00-01",
+    "ufo:mtyp:00-0u"
+   ],
+   "hasMarkets": true,
+   "status": "ACTIVE"
+  }
+ }
+]

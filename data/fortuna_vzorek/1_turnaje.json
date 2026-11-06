@@ -1,0 +1,107 @@
+[
+ {
+  "id": "ufo:tour:00-0pn",
+  "sportId": "ufo:sprt:00",
+  "categoryId": "ufo:ctgr:00-2o",
+  "name": "Japonsko - Football League",
+  "sportSeoName": "fotbal",
+  "categorySeoName": "japonsko",
+  "seoName": "japonsko-football-league",
+  "icon": "default.png",
+  "sportOrder": 3,
+  "categoryOrder": 1000000,
+  "order": 12500,
+  "fixturesCount": 4,
+  "listUnderSport": false,
+  "filters": [
+   "today",
+   "all",
+   "tomorrow"
+  ],
+  "sportradarIds": [
+   "1824"
+  ],
+  "features": [
+   "STATISTICS",
+   "MATCHES"
+  ]
+ },
+ {
+  "id": "ufo:tour:00-10y",
+  "sportId": "ufo:sprt:00",
+  "categoryId": "ufo:ctgr:00-05",
+  "name": "3. Mexiko",
+  "sportSeoName": "fotbal",
+  "categorySeoName": "mexiko",
+  "seoName": "3-mexiko",
+  "icon": "default.png",
+  "sportOrder": 3,
+  "categoryOrder": 1000000,
+  "order": 4970,
+  "fixturesCount": 4,
+  "listUnderSport": false,
+  "filters": [
+   "today",
+   "all",
+   "tomorrow"
+  ],
+  "sportradarIds": [
+   "40535"
+  ],
+  "features": [
+   "STATISTICS",
+   "MATCHES"
+  ]
+ },
+ {
+  "id": "ufo:tour:0x-0l1",
+  "sportId": "ufo:sprt:0x",
+  "categoryId": "ufo:ctgr:0x-02",
+  "name": "Ž - ITF Incheon, dvouhra",
+  "sportSeoName": "tenis",
+  "categorySeoName": "itf-zeny",
+  "seoName": "z-itf-incheon-dvouhra",
+  "description": "J.Korea, tvrdý povrch",
+  "icon": "default.png",
+  "sportOrder": 5,
+  "categoryOrder": 6,
+  "order": 70,
+  "fixturesCount": 2,
+  "listUnderSport": false,
+  "filters": [
+   "today",
+   "all",
+   "tomorrow"
+  ],
+  "features": [
+   "MATCHES"
+  ]
+ },
+ {
+  "id": "ufo:tour:0x-6uz",
+  "sportId": "ufo:sprt:0x",
+  "categoryId": "ufo:ctgr:0x-0c",
+  "name": "Ž - WTA Luanda, dvouhra",
+  "sportSeoName": "tenis",
+  "categorySeoName": "wta-125-x",
+  "seoName": "w-wta-luanda-dvouhra",
+  "description": "Angola, tvrdý povrch",
+  "icon": "default.png",
+  "sportOrder": 5,
+  "categoryOrder": 4,
+  "order": 40,
+  "fixturesCount": 2,
+  "listUnderSport": false,
+  "filters": [
+   "today",
+   "3h",
+   "all",
+   "tomorrow",
+   "1h",
+   "live"
+  ],
+  "features": [
+   "MATCHES"
+  ]
+ }
+]
