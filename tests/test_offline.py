@@ -10,7 +10,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from bot import config, engine, histdata, main as bm, report, store  # noqa: E402
 histdata.nacti_ligu = lambda *a, **k: []     # testy nesmí na síť
 from bot import fortuna  # noqa: E402
-fortuna.nabidka = lambda *a, **k: []          # ranní běh v testu nesmí stahovat skutečnou nabídku Fortuny (na GitHubu by to visělo)
+import pytest  # noqa: E402
+
+
+@pytest.fixture(autouse=True)
+def _bez_fortuny(monkeypatch):
+    """Ranní běh v testu nesmí stahovat skutečnou nabídku Fortuny (na GitHubu by to visělo). Jen pro tento soubor."""
+    monkeypatch.setattr(fortuna, "nabidka", lambda *a, **k: [])
 
 UTC = datetime.timezone.utc
 TED = datetime.datetime(2026, 11, 4, 7, 0, tzinfo=UTC)      # 08:00 v Praze (zimní čas)
@@ -160,6 +166,7 @@ def test_doplnkove_integrace():
 
 
 if __name__ == "__main__":
+    fortuna.nabidka = lambda *a, **k: []
     for n, f in list(globals().items()):
         if n.startswith("test_"):
             f()

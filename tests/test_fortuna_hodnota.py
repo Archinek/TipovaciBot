@@ -20,7 +20,7 @@ def _cfg():
     return c
 
 
-def _zapas(nazev, h, a, nohy, turnaj="Anglie"):
+def _zapas(nazev, h, a, nohy, turnaj="1. Anglie"):
     return {"id": nazev, "nazev": nazev, "home": h, "away": a, "start": "2026-01-02T15:00:00+00:00",
             "sport": "fotbal", "turnaj": turnaj, "kategorie": "anglie", "nohy": nohy}
 

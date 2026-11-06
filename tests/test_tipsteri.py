@@ -111,7 +111,7 @@ def test_parser_es_a_strel():
     n = fortuna.parsuj_trh(dvojice("Počet es v zápasu", "", 11.5, 1.9, 1.85))
     assert {x["trh"] for x in n} == {"esa"} and {x["strana"] for x in n} == {"over", "under"}
     n = fortuna.parsuj_trh(dvojice("Počet es Linette v zápasu", "", 3.5, 1.85, 1.9))
-    assert {x["trh"] for x in n} == {"esa_hrac"} and n[0]["hrac"] == "linette"
+    assert {x["trh"] for x in n} == {"esa_hrac"} and n[0]["hrac"].lower() == "linette"
     n = fortuna.parsuj_trh(dvojice("Počet es v zápasu", "1. hráče", 5.5, 1.8, 1.95))
     assert n[0]["trh"] == "esa_hrac" and n[0]["pozice"] == "1"
     assert fortuna.parsuj_trh(dvojice("Počet es v 1. setu", "", 3.5, 1.8, 1.9)) == []                   # sety neřešíme
@@ -277,8 +277,103 @@ def test_log_tenis_vyhodnoceni():
     assert r["df_kdo"]["vysledek"] == "1"       # Van Assche víc dvojchyb (4:2)
 
 
+def test_casove_limity():
+    import time
+    assert config.s_limitem(lambda: 42, 2) == 42
+    t0 = time.time()
+    try:
+        config.s_limitem(lambda: time.sleep(5), 0.3)
+        assert False, "měl vypršet"
+    except TimeoutError:
+        assert time.time() - t0 < 2
+    try:
+        config.s_limitem(lambda: 1 / 0, 2)
+        assert False
+    except ZeroDivisionError:
+        pass
+    # nabídka Fortuny s vyčerpaným rozpočtem vrátí zápasy bez trhů, ne chybu ani nekonečné čekání
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import test_fortuna as tf
+    zpravy = []
+    z = fortuna.nabidka(tf.Fake(), filtry=("today",), log=zpravy.append, max_sekund=0)
+    assert all(x["nohy"] == [] for x in z)
+
+
+def test_modely_a_priorita():
+    import os
+    os.environ.pop("GEMINI_MODEL", None)
+    assert config.gemini_modely() == ["gemini-3.1-pro-preview", "gemini-3.8-flash"]
+    os.environ["GEMINI_MODEL"] = "muj-model"
+    assert config.gemini_modely()[0] == "muj-model" and len(config.gemini_modely()) == 3
+    os.environ.pop("GEMINI_MODEL")
+    pr = fortuna._prio_turnaj
+    assert pr({"name": "Francie - Ligue 1", "sportSeoName": "fotbal"}) == 0
+    assert pr({"name": "ATP Challenger Brisbane", "sportSeoName": "tenis"}) == 1
+    assert pr({"name": "Rusko - 2. liga", "sportSeoName": "fotbal"}) == 2
+    assert pr({"name": "Esport CS2", "sportSeoName": "fotbal"}) == 9
+    assert pr({"name": "Anglie - Premier League U21", "sportSeoName": "fotbal"}) == 2          # mládež není TOP
+
+
+def test_aliasy_tymu_a_nesparovane():
+    import json
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import test_fortuna_hodnota as tfh
+    from bot import doplnkove as dp
+    config.DATA = Path(tempfile.mkdtemp()) / "data"
+    config.DATA.mkdir()
+    cfg = tfh._cfg()
+    m = dp.fit(tfh.ROWS, tfh.TED, cfg["doplnkove"])
+    pm = fh.p_nohy(m, "T3", "T7", {"trh": "goly", "linie": 2.5, "strana": "over"})
+    zap = [tfh._zapas("Tým Jedna - Tým Dva", "Tým Jedna", "Tým Dva", tfh._dvojice(2.5, pm - 0.10), turnaj="Anglie - Premier League"),
+           tfh._zapas("Neznámý A - Neznámý B", "Neznámý A", "Neznámý B", tfh._dvojice(2.5, 0.5), turnaj="Anglie - Premier League")]
+    nm = lambda kod: tfh.ROWS if kod == "E0" else []
+    assert fh.vyhodnot(zap, cfg, tfh.TED, log=lambda *a: None, nacti_model=nm) == []                # bez aliasů se nespáruje
+    (config.DATA / "aliasy_tymu.json").write_text(json.dumps({"Tým Jedna": "T3", "Tým Dva": "T7"}, ensure_ascii=False), encoding="utf-8")
+    out = fh.vyhodnot(zap, cfg, tfh.TED, log=lambda *a: None, nacti_model=nm)
+    assert out and out[0]["zapas"] == "Tým Jedna - Tým Dva" and out[0]["home_fd"] == "T3"
+    nes = json.loads((config.DATA / "fortuna_nesparovane.json").read_text(encoding="utf-8"))
+    assert nes == [{"turnaj": "Anglie - Premier League", "home": "Neznámý A", "away": "Neznámý B"}]
+
+
 if __name__ == "__main__":
     for f in (test_csv_a_jmena, test_model_es, test_parser_es_a_strel, test_vyhodnot_tenis_a_tip_dne, test_log_clv_brier,
-              test_report_tip_dne, test_jistejsi_a_vklad, test_dvojchyby_a_under_nula, test_log_tenis_vyhodnoceni):
+              test_report_tip_dne, test_jistejsi_a_vklad, test_dvojchyby_a_under_nula, test_log_tenis_vyhodnoceni, test_casove_limity, test_modely_a_priorita, test_aliasy_tymu_a_nesparovane):
         f()
         print("✅", f.__name__)
+
+
+def _real(nazev, typ, vysl):
+    """Tvar skutečného trhu Fortuny (z 6.11.2026): linie je v názvu za NBSP, názvy jsou 'Zápas: ...'."""
+    return {"name": nazev, "marketTypeName": typ, "marketTypeDesc": None, "syntheticGroupKey": "",
+            "outcomes": [{"name": n, "longName": n, "odds": k} for n, k in vysl]}
+
+
+def test_skutecne_nazvy_fortuny():
+    n = fortuna.parsuj_trh(_real("Zápas: počet es\u00a014.5", "Zápas: počet es", [("Více než 14.5", 1.85), ("Méně než 14.5", 1.9)]), "tenis")
+    assert {(x["trh"], x["linie"], x["strana"]) for x in n} == {("esa", 14.5, "over"), ("esa", 14.5, "under")}
+    n = fortuna.parsuj_trh(_real("Zápas: Ruud C. počet es 7.5", "Zápas: Ruud C. počet es", [("Více", 1.8), ("Méně", 1.95)]), "tenis")
+    assert {(x["trh"], x["hrac"], x["linie"], x["strana"]) for x in n} == {("esa_hrac", "Ruud C.", 7.5, "over"), ("esa_hrac", "Ruud C.", 7.5, "under")}
+    n = fortuna.parsuj_trh(_real("Zápas: Borges N. počet dvojchyb 1.5", "Borges N. počet dvojchyb", [("Více než 1.5", 1.7), ("Méně než 1.5", 2.1)]), "tenis")
+    assert {x["trh"] for x in n} == {"df_hrac"} and n[0]["hrac"] == "Borges N."
+    n = fortuna.parsuj_trh(_real("Zápas: počet dvojchyb \n2.5", "Zápas: počet dvojchyb", [("Více než 2.5", 1.7), ("Méně než 2.5", 2.1)]), "tenis")
+    assert {x["trh"] for x in n} == {"df"} and n[0]["linie"] == 2.5
+    n = fortuna.parsuj_trh(_real("Zápas: více dvojchyb", "Zápas: více dvojchyb", [("Ruud C.", 1.9), ("Stejně", 9.0), ("Borges N.", 1.9)]), "tenis")
+    assert [x["hrac"] for x in n] == ["Ruud C.", "Borges N."]
+    # hokej: střely jsou jednostranné "+ X" (jen Over) a nesmí se splést s fotbalovými střelami na bránu
+    n = fortuna.parsuj_trh(_real("Počet střel na branku v zápasu 52.5", "Počet střel na branku v zápasu", [("+ 52.5", 1.6)]), "hokej")
+    assert [(x["trh"], x["linie"], x["strana"]) for x in n] == [("hsot", 52.5, "over")]
+    n = fortuna.parsuj_trh(_real("Buffalo Sabres: Počet střel na branku v zápasu 28.5", "Buffalo Sabres: Počet střel na branku v zápasu", [("+ 28.5", 1.6)]), "hokej")
+    assert n and n[0]["trh"] == "hsot_tym" and n[0]["hrac"] == "Buffalo Sabres"
+    assert fortuna.parsuj_trh(_real("Tage Thompson zaznamená 4+ střel na branku v Zápasu", "Hráči - počet střel", [("Tage Thompson zaznamená 4+ střel na branku v Zápasu", 1.83)]), "hokej") == []
+
+
+def test_ligy_fortuny():
+    assert fortuna.kod_ligy("1. Francie") == "F1" and fortuna.kod_ligy("1. Anglie") == "E0" and fortuna.kod_ligy("2. Německo") == "D2"
+    assert fortuna.kod_ligy("1. Francie - ženy") is None and fortuna.kod_ligy("4. Polsko - sk.II") is None
+    assert fortuna.kod_ligy("1. Mexiko") is None and fortuna.kod_ligy("Itálie - Primavera 2 (U19)") is None
+    assert fortuna.jetop({"name": "1. Španělsko"}) and fortuna.jetop({"name": "Liga mistrů"}) and not fortuna.jetop({"name": "1. Anglie - ženy"})
+    assert fortuna._prio_turnaj({"name": "1. Francie", "sportSeoName": "fotbal"}) == 0
+    from bot import histdata
+    assert histdata._norm("RC Strasbourg") == "strasbourg" and histdata._norm("Olympique Lyon") == "lyon"
+    p = fh._par("Olympique Lyon", {"Lyon": "lyon", "Lille": "lille"}, True)
+    assert p == "Lyon"
