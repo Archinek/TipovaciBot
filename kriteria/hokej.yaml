@@ -1,10 +1,23 @@
 sport: hokej
-poznamka: "Zaměřit se na korelace v BetBuilderech (tresty + góly) a individuální hráčské statistiky (střely na branku, kanadské body)."
+poznamka: "Hlavní trhy mají minimální value. Zaměřit se na góly, střely, tresty, vyloučení a BetBuildery. Velikost kluziště a rozhodčí patří do ANALÝZY."
 kriteria:
-  - {id: korelace_tresty_goly, w: 3, typ: kontext, trhy: [builder], co: "Hledej korelaci v BetBuilderu: Týmy s vysokým počtem trestů a zároveň vysokou úspěšností přesilovek generují obrovskou value na Over góly + Over tresty."}
-  - {id: ignoruj_vysoky_kurz_builder, w: 3, typ: veto, trhy: [builder], co: "NEZAMÍTEJ BetBuilder sázky kvůli vyššímu kurzu. Pokud Gaussova kopule v doplnkove.py ukazuje matematickou hranu (edge), kurz je správný a bereme ho."}
-  - {id: startujici_brankar, w: 3, typ: veto, co: "Potvrzený startující brankář (jednička vs. záloha), brankář po zranění."}
-  - {id: b2b_unava, w: 3, typ: veto, co: "Back-to-back (dva zápasy ve dvou dnech) a třetí zápas ve čtyřech dnech."}
+  - {id: korelace_tresty_goly, w: 3, typ: kontext, trhy: [builder], co: "Hledej korelaci v BetBuilderu: týmy s vysokým počtem trestů a zároveň silnou přesilovkou."}
+  - {id: ignoruj_vysoky_kurz_builder, w: 3, typ: veto, trhy: [builder], co: "NEZAMÍTEJ BetBuilder sázky kvůli vyššímu kurzu, pokud Gaussova kopule ukazuje value."}
+  - {id: startujici_brankar, w: 3, typ: veto, co: "Potvrzený startující brankář (jednička vs. záloha), brankář po zranění, jeho úspěšnost zákroků."}
+  - {id: b2b_unava, w: 3, typ: veto, co: "Back-to-back (dva zápasy ve dvou dnech), třetí zápas ve čtyřech dnech, délka cestování a časová pásma."}
   - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence top centra, obránců první dvojice, kapitána; stav v kádru."}
   - {id: sestava_lajny, w: 2, typ: veto, co: "Potvrzená sestava a lajny, rozcvičení, změny z tréninku."}
-  - {id: presilovky_pp_pk, w: 2, typ: kontext, co: "Úspěšnost přesilovek a oslabení obou týmů."}
+  - {id: presilovky_pp_pk, w: 2, typ: kontext, co: "Úspěšnost přesilovek a oslabení obou týmů; počet vyloučení na zápas."}
+  - {id: rozmer_kluziste, w: 3, typ: kontext, trhy: [goly, strely, tresty], co: "Rozměry kluziště: NHL 200x85 stop (cca 61x26 m) je užší a kratší než evropské/IIHF (60x30 m). Menší led = více soubojů, kontaktu a vyloučení; větší = rychlejší bruslení a otevřenější hra. Ověř konkrétní halu a ligu."}
+  - {id: rozhodci_hokej, w: 3, typ: kontext, trhy: [tresty, goly], co: "Hlavní rozhodčí a jejich průměr trestných minut a vyloučení na zápas; jak přísně pískají hák, držení a zákroky na brankáře."}
+  - {id: forma_tymu, w: 2, typ: kontext, co: "Posledních 5-10 zápasů: góly dané/obdržené, střely pro/proti, xG, využití přesilovek."}
+  - {id: domaci_vyhoda, w: 2, typ: kontext, co: "Poslední střídání domácích (line matching), domácí bilance, atmosféra."}
+  - {id: styl_hry, w: 2, typ: kontext, trhy: [goly, strely], co: "Defenzivní systém vs. útočný; tempo hry, forechecking, střelba z dálky."}
+  - {id: rivalita_derby, w: 2, typ: kontext, trhy: [tresty], co: "Rivalita, předchozí konflikty, rvačky; tendence k trestům."}
+  - {id: motivace_tabulka, w: 2, typ: kontext, co: "Boj o play-off, pozice v tabulce, důležitost zápasu, konec základní části."}
+  - {id: vzajemne_zapasy, w: 1, typ: kontext, co: "Posledních 5 vzájemných zápasů: góly, tresty, střely."}
+  - {id: led_a_hala, w: 1, typ: kontext, co: "Kvalita ledu, teplota v hale, výška mantinelů, specifika arény."}
+  - {id: reprezentacni_pauza, w: 1, typ: veto, co: "Hráči na reprezentaci, návraty po přestávce, únava po turnaji."}
+  - {id: zmena_trenera, w: 1, typ: kontext, co: "Nový trenér nebo změna systému hry, trade deadline změny v kádru."}
+  - {id: statistiky_brankare_proti_soupere, w: 2, typ: kontext, co: "Historie nominovaného brankáře proti tomuto soupeři a v této hale."}
+  - {id: tempo_ligy, w: 1, typ: kontext, co: "Průměr gólů, střel a vyloučení v dané lize; srovnání NHL, KHL, extraliga."}

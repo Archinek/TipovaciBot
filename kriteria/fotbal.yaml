@@ -1,9 +1,28 @@
 sport: fotbal
-poznamka: "Hlavní trhy (1X2) mají minimální value. Zaměřit se výhradně na fauly, karty, střely a BetBuildery."
+poznamka: "Hlavní trhy (1X2) mají minimální value. Zaměřit se na góly, fauly, karty, rohy, střely a BetBuildery. Rozhodčí, hřiště a počasí patří do ANALÝZY (vysvětlují očekávaný počet karet/faulů), nejsou to samostatné tipy."
 kriteria:
-  - {id: rozhodci_vliv, w: 3, typ: kontext, trhy: [karty, fauly], co: "Historická statistika rozhodčího (počet karet/faulů). Je přísný nebo pouští hru?"}
-  - {id: formace_a_styl, w: 2, typ: kontext, trhy: [strely, rohy], co: "Změna formace ovlivňující produkci střel a křídelních útoků."}
+  - {id: rozhodci_vliv, w: 3, typ: kontext, trhy: [karty, fauly], co: "Kdo zápas řídí a jeho historie: průměr žlutých/červených karet a faulů na zápas, penalty na zápas, přísnost v derby a ve velkých zápasech. Srovnej s průměrem ligy."}
+  - {id: velikost_hriste, w: 3, typ: kontext, trhy: [fauly, rohy, strely, goly], co: "Rozměry hřiště (délka x šířka v metrech) a typ povrchu. Úzké/malé hřiště = více soubojů a faulů, široké = více křídelních akcí a rohů; umělá tráva mění tempo."}
+  - {id: pocasi, w: 3, typ: kontext, trhy: [goly, rohy, fauly, strely], co: "Předpověď na čas výkopu: déšť, vítr (rychlost, směr), teplota, mráz. Silný vítr a mokro snižují přesnost přihrávek a kvalitu šancí; déšť zvyšuje fauly a skluzy."}
+  - {id: program_a_unava, w: 3, typ: veto, co: "Počet dní od posledního zápasu, evropské/pohárové zápasy v týdnu, cestování; je pohár (nebo reprezentační přestávka) těsně před/po? Rotace sestavy."}
+  - {id: motivace_tabulka, w: 2, typ: kontext, co: "Důležitost zápasu: boj o titul/evropské poháry/záchranu, nebo už se o nic nehraje; odveta v poháru, postupový klíč."}
+  - {id: derby_rivalita, w: 3, typ: kontext, trhy: [karty, fauly], co: "Derby nebo historická rivalita: obvykle více karet a faulů, méně kreativity. Počty karet v posledních vzájemných zápasech."}
+  - {id: vzajemne_zapasy, w: 2, typ: kontext, co: "Posledních 5 vzájemných zápasů: góly, karty, rohy, fauly, styl hry."}
+  - {id: styl_a_taktika, w: 2, typ: kontext, trhy: [rohy, strely, fauly], co: "Styl obou týmů: držení míče, pressing, dlouhé míče, křídelní hra, standardní situace; střet stylů."}
+  - {id: formace_a_styl, w: 2, typ: kontext, trhy: [strely, rohy], co: "Změna formace nebo trenéra, která mění produkci střel a rohů."}
+  - {id: forma_poslednich_zapasu, w: 2, typ: kontext, trhy: [goly], co: "Forma za posledních 5-6 zápasů: góly dané/obdržené, xG pokud je k dispozici, série bez výhry nebo gólu."}
+  - {id: domaci_vs_venku, w: 2, typ: kontext, co: "Rozdíl výkonů doma a venku; domácí prostředí, délka cesty, atmosféra."}
+  - {id: standardky, w: 2, typ: kontext, trhy: [rohy, goly], co: "Ofenzivní a defenzivní standardní situace, nejlepší exekutoři rohů, výška hráčů."}
+  - {id: disciplina_tymu, w: 2, typ: kontext, trhy: [karty, fauly], co: "Kolik karet a faulů týmy dostávají, hráči na hraně suspendace (4. žlutá apod.), agresivní defenzivní záložníci."}
+  - {id: potvrzena_sestava, w: 3, typ: veto, co: "Oficiální sestavy (60-75 min před výkopem): chybí klíčoví hráči oproti běžné jedenáctce?"}
+  - {id: zraneni_a_suspendace, w: 3, typ: veto, co: "Absence nejlepšího střelce, stoperů, defenzivního záložníka, brankáře; hráči v trestu po kartách."}
+  - {id: zmena_rozhodciho, w: 2, typ: veto, trhy: [karty, fauly], co: "Náhlá změna rozhodčího nebo VAR týmu oproti oficiálnímu určení."}
+  - {id: rotace_pohar, w: 2, typ: veto, co: "Rotace před/po důležitém poháru nebo derby; trenér avizoval šetření hráčů."}
+  - {id: trenerske_zmeny, w: 1, typ: kontext, co: "Čerstvě odvolaný nebo nový trenér (efekt nové koštěte), vnitřní problémy v klubu."}
+  - {id: povrch_a_stav_travniku, w: 1, typ: kontext, trhy: [fauly, goly], co: "Stav trávníku, vyhřívání, umělka; po dešti nebo mrazu se hraje hůř."}
+  - {id: tempo_ligy, w: 1, typ: kontext, co: "Srovnání s průměrem ligy: góly, rohy, karty, fauly na zápas; nízká/vysoká liga."}
+  - {id: tlak_a_psychologie, w: 1, typ: kontext, co: "Tlak výsledku, série porážek, kapitán/vůdce chybí, domácí publikum."}
   - {id: ignoruj_vysoky_kurz, w: 3, typ: veto, trhy: [vse], co: "NEZAMÍTEJ sázku kvůli vysokému kurzu (např. nad 3.00), pokud matematický model ukazuje value. Hledáme okrajové asymetrie."}
   - {id: korelace_builder, w: 2, typ: kontext, trhy: [builder], co: "Silná korelace mezi střelami, držením míče a rohy u dominantních týmů."}
-  - {id: potvrzena_sestava, w: 3, typ: veto, co: "Oficiální sestavy (60-75 min před výkopem): chybí klíčoví hráči oproti běžné jedenáctce?"}
-  - {id: zraneni_a_suspendace, w: 3, typ: veto, co: "Absence nejlepšího střelce, stoperů, defenzivního záložníka; hráči v trestu po kartách."}
+  - {id: stav_tymu_cizinci_reprezentanti, w: 1, typ: veto, co: "Hráči na reprezentaci, Africký pohár/Asijský pohár, únava po cestování."}
+  - {id: sazkovy_trh_pohyb, w: 1, typ: kontext, co: "Pohyb kurzů od otevření: velký pohyb proti modelu může znamenat informaci, kterou model nemá."}
