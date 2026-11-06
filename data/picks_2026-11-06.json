@@ -1,6 +1,391 @@
 {
   "datum": "2026-11-06",
-  "picks": [],
+  "picks": [
+    {
+      "id": "d9f354f2d3dae7bf4880a0e48df41c4a|Bromley FC",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_fa_cup",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "d9f354f2d3dae7bf4880a0e48df41c4a",
+      "zapas": "Bromley FC vs Rotherham United",
+      "vyber": "Bromley FC",
+      "start": "2026-11-07T15:00:00+00:00",
+      "fair_p": 0.4826,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 2.07,
+      "min_kurz": 2.13,
+      "best_kurz": 2.18,
+      "best_kniha": "unibet_se",
+      "n_soft": 13,
+      "moje_kurz": "",
+      "edge": 0.0521,
+      "riziko": "",
+      "stake_pct": 1.1,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Bromley FC: férová pravděpodobnost podle Pinnacle 48 %, sázej od 2.13."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "1a2b66dec637d06c15d3902ac9068c1f|Draw",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_germany_bundesliga2",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "1a2b66dec637d06c15d3902ac9068c1f",
+      "zapas": "Holstein Kiel vs Arminia Bielefeld",
+      "vyber": "Draw",
+      "start": "2026-11-07T12:00:00+00:00",
+      "fair_p": 0.2958,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 3.38,
+      "min_kurz": 3.48,
+      "best_kurz": 3.55,
+      "best_kniha": "unibet_nl",
+      "n_soft": 19,
+      "moje_kurz": "",
+      "edge": 0.0499,
+      "riziko": "",
+      "stake_pct": 0.49,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Draw: férová pravděpodobnost podle Pinnacle 30 %, sázej od 3.48."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "007be011bad515e2265b209266be4de5|Clube de Regatas Brasil",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_brazil_serie_b",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "007be011bad515e2265b209266be4de5",
+      "zapas": "Nautico PE vs Clube de Regatas Brasil",
+      "vyber": "Clube de Regatas Brasil",
+      "start": "2026-11-08T00:30:00+00:00",
+      "fair_p": 0.8399,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 1.19,
+      "min_kurz": 1.23,
+      "best_kurz": 1.25,
+      "best_kniha": "unibet_nl",
+      "n_soft": 13,
+      "moje_kurz": "",
+      "edge": 0.0498,
+      "riziko": "",
+      "stake_pct": 3.0,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Clube de Regatas Brasil: férová pravděpodobnost podle Pinnacle 84 %, sázej od 1.23."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "5b386dfdf6f76705116fbb4120ee8493|Real Madrid",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_spain_la_liga",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "5b386dfdf6f76705116fbb4120ee8493",
+      "zapas": "Valencia vs Real Madrid",
+      "vyber": "Real Madrid",
+      "start": "2026-11-07T20:00:00+00:00",
+      "fair_p": 0.789,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 1.27,
+      "min_kurz": 1.31,
+      "best_kurz": 1.33,
+      "best_kniha": "onexbet",
+      "n_soft": 19,
+      "moje_kurz": "",
+      "edge": 0.0494,
+      "riziko": "",
+      "stake_pct": 3.0,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Real Madrid: férová pravděpodobnost podle Pinnacle 79 %, sázej od 1.31."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "ad3b84c613ba9e6536347a743b9e91e2|FC Halifax Town",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_fa_cup",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "ad3b84c613ba9e6536347a743b9e91e2",
+      "zapas": "Cheltenham Town vs FC Halifax Town",
+      "vyber": "FC Halifax Town",
+      "start": "2026-11-07T15:00:00+00:00",
+      "fair_p": 0.2796,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 3.58,
+      "min_kurz": 3.68,
+      "best_kurz": 3.75,
+      "best_kniha": "matchbook",
+      "n_soft": 12,
+      "moje_kurz": "",
+      "edge": 0.0485,
+      "riziko": "",
+      "stake_pct": 0.44,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek FC Halifax Town: férová pravděpodobnost podle Pinnacle 28 %, sázej od 3.68."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "a88341ac02c8103eedc594a2ceb3a400|Wolverhampton Wanderers",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_efl_champ",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "a88341ac02c8103eedc594a2ceb3a400",
+      "zapas": "Wrexham AFC vs Wolverhampton Wanderers",
+      "vyber": "Wolverhampton Wanderers",
+      "start": "2026-11-07T12:30:00+00:00",
+      "fair_p": 0.4467,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 2.24,
+      "min_kurz": 2.31,
+      "best_kurz": 2.33,
+      "best_kniha": "leovegas_se",
+      "n_soft": 20,
+      "moje_kurz": "",
+      "edge": 0.0408,
+      "riziko": "",
+      "stake_pct": 0.77,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Wolverhampton Wanderers: férová pravděpodobnost podle Pinnacle 45 %, sázej od 2.31."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "e6cd4f60d455d26b22be262f1b0ef661|Juventude",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_brazil_serie_b",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "e6cd4f60d455d26b22be262f1b0ef661",
+      "zapas": "Cuiabá vs Juventude",
+      "vyber": "Juventude",
+      "start": "2026-11-07T23:00:00+00:00",
+      "fair_p": 0.4943,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 2.02,
+      "min_kurz": 2.08,
+      "best_kurz": 2.1,
+      "best_kniha": "matchbook",
+      "n_soft": 13,
+      "moje_kurz": "",
+      "edge": 0.0381,
+      "riziko": "",
+      "stake_pct": 0.87,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Juventude: férová pravděpodobnost podle Pinnacle 49 %, sázej od 2.08."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "db1f232841ce21397c2723f954389bd6|Draw",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_russia_premier_league",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "db1f232841ce21397c2723f954389bd6",
+      "zapas": "FC Krasnodar vs CSKA Moscow",
+      "vyber": "Draw",
+      "start": "2026-11-07T16:30:00+00:00",
+      "fair_p": 0.2721,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 3.67,
+      "min_kurz": 3.78,
+      "best_kurz": 3.81,
+      "best_kniha": "onexbet",
+      "n_soft": 3,
+      "moje_kurz": "",
+      "edge": 0.0368,
+      "riziko": "",
+      "stake_pct": 0.33,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Draw: férová pravděpodobnost podle Pinnacle 27 %, sázej od 3.78."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "d24eb5492983d6e28be3b96df396fa12|Sacramento Kings",
+      "datum": "2026-11-06",
+      "sport": "basketbal",
+      "sport_key": "basketball_nba",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "d24eb5492983d6e28be3b96df396fa12",
+      "zapas": "Sacramento Kings vs San Antonio Spurs",
+      "vyber": "Sacramento Kings",
+      "start": "2026-11-07T03:10:00+00:00",
+      "fair_p": 0.0903,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 11.07,
+      "min_kurz": 11.4,
+      "best_kurz": 12.5,
+      "best_kniha": "marathonbet",
+      "n_soft": 21,
+      "moje_kurz": 9.2,
+      "edge": -0.1692,
+      "riziko": "osamocený nejvyšší kurz",
+      "stake_pct": 0.28,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "moje_info": "Fortuna (orientačně) 9.2: edge -16.9 % ❌ pod hranou (potřeba 11.4)",
+      "veto_kontext": ""
+    }
+  ],
   "vyrazene": [],
   "vcera": "",
   "doplnkove": [
@@ -9,13 +394,15 @@
         "goly": 4.39,
         "rohy": 9.73,
         "karty": 3.89,
-        "fauly": 20.98
+        "fauly": 20.98,
+        "sot": 12.34
       },
       "liga_prumer": {
         "goly": 3.38,
         "rohy": 10.4,
         "karty": 3.98,
-        "fauly": 21.96
+        "fauly": 21.96,
+        "sot": 10.32
       },
       "linie": [
         {
@@ -313,98 +700,162 @@
           "p": 0.8042,
           "fair": 1.24,
           "min_kurz": 1.29
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.8617,
+          "fair": 1.16,
+          "min_kurz": 1.21
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.1383,
+          "fair": 7.23,
+          "min_kurz": 7.52
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.7816,
+          "fair": 1.28,
+          "min_kurz": 1.33
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.2184,
+          "fair": 4.58,
+          "min_kurz": 4.76
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.6836,
+          "fair": 1.46,
+          "min_kurz": 1.52
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.3164,
+          "fair": 3.16,
+          "min_kurz": 3.29
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.5744,
+          "fair": 1.74,
+          "min_kurz": 1.81
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.4256,
+          "fair": 2.35,
+          "min_kurz": 2.44
         }
       ],
       "builder": [
         {
           "nohy": [
             [
-              "karty",
-              5.5,
-              "over"
-            ],
-            [
-              "fauly",
-              24.5,
-              "over"
-            ]
-          ],
-          "p": 0.0787,
-          "fair": 12.71,
-          "min_kurz": 13.21,
-          "korelace": 1.542
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              5.5,
-              "over"
-            ],
-            [
-              "fauly",
-              22.5,
-              "over"
-            ]
-          ],
-          "p": 0.1158,
-          "fair": 8.64,
-          "min_kurz": 8.98,
-          "korelace": 1.432
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              4.5,
-              "over"
-            ],
-            [
-              "fauly",
-              24.5,
-              "over"
-            ]
-          ],
-          "p": 0.1165,
-          "fair": 8.58,
-          "min_kurz": 8.93,
-          "korelace": 1.41
-        },
-        {
-          "nohy": [
-            [
-              "karty",
+              "goly",
               2.5,
               "under"
             ],
             [
-              "fauly",
-              18.5,
+              "sot",
+              9.5,
               "under"
             ]
           ],
-          "p": 0.1265,
-          "fair": 7.91,
-          "min_kurz": 8.22,
-          "korelace": 1.386
+          "p": 0.094,
+          "fair": 10.64,
+          "min_kurz": 11.06,
+          "korelace": 2.32
         },
         {
           "nohy": [
             [
-              "karty",
-              4.5,
-              "over"
+              "goly",
+              2.5,
+              "under"
             ],
             [
-              "fauly",
-              22.5,
-              "over"
+              "sot",
+              10.5,
+              "under"
             ]
           ],
-          "p": 0.1732,
-          "fair": 5.77,
-          "min_kurz": 6.0,
-          "korelace": 1.323
+          "p": 0.1202,
+          "fair": 8.32,
+          "min_kurz": 8.65,
+          "korelace": 2.029
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "under"
+            ],
+            [
+              "sot",
+              9.5,
+              "under"
+            ]
+          ],
+          "p": 0.1426,
+          "fair": 7.01,
+          "min_kurz": 7.29,
+          "korelace": 1.852
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              2.5,
+              "under"
+            ],
+            [
+              "sot",
+              11.5,
+              "under"
+            ]
+          ],
+          "p": 0.1441,
+          "fair": 6.94,
+          "min_kurz": 7.22,
+          "korelace": 1.806
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "under"
+            ],
+            [
+              "sot",
+              10.5,
+              "under"
+            ]
+          ],
+          "p": 0.1916,
+          "fair": 5.22,
+          "min_kurz": 5.43,
+          "korelace": 1.702
         }
       ],
       "signal": 0.297,
@@ -421,13 +872,15 @@
         "goly": 2.16,
         "rohy": 9.13,
         "karty": 4.32,
-        "fauly": 28.12
+        "fauly": 28.12,
+        "sot": 8.3
       },
       "liga_prumer": {
         "goly": 2.99,
         "rohy": 9.48,
         "karty": 4.43,
-        "fauly": 26.45
+        "fauly": 26.45,
+        "sot": 9.46
       },
       "linie": [
         {
@@ -709,12 +1162,180 @@
           "p": 0.8524,
           "fair": 1.17,
           "min_kurz": 1.22
+        },
+        {
+          "var": "sot",
+          "linie": 6.5,
+          "strana": "over",
+          "p": 0.7067,
+          "fair": 1.41,
+          "min_kurz": 1.47
+        },
+        {
+          "var": "sot",
+          "linie": 6.5,
+          "strana": "under",
+          "p": 0.2933,
+          "fair": 3.41,
+          "min_kurz": 3.55
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "over",
+          "p": 0.578,
+          "fair": 1.73,
+          "min_kurz": 1.8
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "under",
+          "p": 0.422,
+          "fair": 2.37,
+          "min_kurz": 2.46
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.4468,
+          "fair": 2.24,
+          "min_kurz": 2.33
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.5532,
+          "fair": 1.81,
+          "min_kurz": 1.88
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.3262,
+          "fair": 3.07,
+          "min_kurz": 3.19
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.6738,
+          "fair": 1.48,
+          "min_kurz": 1.54
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.2252,
+          "fair": 4.44,
+          "min_kurz": 4.62
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.7748,
+          "fair": 1.29,
+          "min_kurz": 1.34
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.1473,
+          "fair": 6.79,
+          "min_kurz": 7.06
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.8527,
+          "fair": 1.17,
+          "min_kurz": 1.22
         }
       ],
       "builder": [
         {
           "nohy": [
             [
+              "goly",
+              3.5,
+              "over"
+            ],
+            [
+              "sot",
+              10.5,
+              "over"
+            ]
+          ],
+          "p": 0.0918,
+          "fair": 10.89,
+          "min_kurz": 11.33,
+          "korelace": 2.33
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "over"
+            ],
+            [
+              "sot",
+              9.5,
+              "over"
+            ]
+          ],
+          "p": 0.1167,
+          "fair": 8.57,
+          "min_kurz": 8.91,
+          "korelace": 2.032
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              2.5,
+              "over"
+            ],
+            [
+              "sot",
+              10.5,
+              "over"
+            ]
+          ],
+          "p": 0.1543,
+          "fair": 6.48,
+          "min_kurz": 6.74,
+          "korelace": 1.868
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "over"
+            ],
+            [
+              "sot",
+              8.5,
+              "over"
+            ]
+          ],
+          "p": 0.1384,
+          "fair": 7.23,
+          "min_kurz": 7.51,
+          "korelace": 1.742
+        },
+        {
+          "nohy": [
+            [
               "karty",
               2.5,
               "under"
@@ -725,82 +1346,10 @@
               "under"
             ]
           ],
-          "p": 0.075,
-          "fair": 13.33,
-          "min_kurz": 13.87,
-          "korelace": 1.759
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              2.5,
-              "under"
-            ],
-            [
-              "fauly",
-              24.5,
-              "under"
-            ]
-          ],
-          "p": 0.1138,
-          "fair": 8.79,
-          "min_kurz": 9.14,
-          "korelace": 1.578
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              3.5,
-              "under"
-            ],
-            [
-              "fauly",
-              22.5,
-              "under"
-            ]
-          ],
-          "p": 0.0991,
-          "fair": 10.09,
-          "min_kurz": 10.49,
-          "korelace": 1.505
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              2.5,
-              "under"
-            ],
-            [
-              "fauly",
-              26.5,
-              "under"
-            ]
-          ],
-          "p": 0.1609,
-          "fair": 6.22,
-          "min_kurz": 6.46,
-          "korelace": 1.441
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              3.5,
-              "under"
-            ],
-            [
-              "fauly",
-              24.5,
-              "under"
-            ]
-          ],
-          "p": 0.1593,
-          "fair": 6.28,
-          "min_kurz": 6.53,
-          "korelace": 1.43
+          "p": 0.0761,
+          "fair": 13.14,
+          "min_kurz": 13.67,
+          "korelace": 1.741
         }
       ],
       "signal": 0.279,
@@ -814,420 +1363,18 @@
     },
     {
       "mu": {
-        "goly": 2.48,
-        "rohy": 9.51,
-        "karty": 3.16,
-        "fauly": 20.23
-      },
-      "liga_prumer": {
-        "goly": 3.11,
-        "rohy": 9.49,
-        "karty": 3.54,
-        "fauly": 22.18
-      },
-      "linie": [
-        {
-          "var": "fauly",
-          "linie": 18.5,
-          "strana": "over",
-          "p": 0.5933,
-          "fair": 1.69,
-          "min_kurz": 1.75
-        },
-        {
-          "var": "fauly",
-          "linie": 18.5,
-          "strana": "under",
-          "p": 0.4067,
-          "fair": 2.46,
-          "min_kurz": 2.56
-        },
-        {
-          "var": "fauly",
-          "linie": 20.5,
-          "strana": "over",
-          "p": 0.455,
-          "fair": 2.2,
-          "min_kurz": 2.29
-        },
-        {
-          "var": "fauly",
-          "linie": 20.5,
-          "strana": "under",
-          "p": 0.545,
-          "fair": 1.83,
-          "min_kurz": 1.91
-        },
-        {
-          "var": "fauly",
-          "linie": 22.5,
-          "strana": "over",
-          "p": 0.3276,
-          "fair": 3.05,
-          "min_kurz": 3.17
-        },
-        {
-          "var": "fauly",
-          "linie": 22.5,
-          "strana": "under",
-          "p": 0.6724,
-          "fair": 1.49,
-          "min_kurz": 1.55
-        },
-        {
-          "var": "fauly",
-          "linie": 24.5,
-          "strana": "over",
-          "p": 0.2217,
-          "fair": 4.51,
-          "min_kurz": 4.69
-        },
-        {
-          "var": "fauly",
-          "linie": 24.5,
-          "strana": "under",
-          "p": 0.7783,
-          "fair": 1.28,
-          "min_kurz": 1.34
-        },
-        {
-          "var": "fauly",
-          "linie": 26.5,
-          "strana": "over",
-          "p": 0.1414,
-          "fair": 7.07,
-          "min_kurz": 7.35
-        },
-        {
-          "var": "fauly",
-          "linie": 26.5,
-          "strana": "under",
-          "p": 0.8586,
-          "fair": 1.16,
-          "min_kurz": 1.21
-        },
-        {
-          "var": "goly",
-          "linie": 1.5,
-          "strana": "over",
-          "p": 0.7078,
-          "fair": 1.41,
-          "min_kurz": 1.47
-        },
-        {
-          "var": "goly",
-          "linie": 1.5,
-          "strana": "under",
-          "p": 0.2922,
-          "fair": 3.42,
-          "min_kurz": 3.56
-        },
-        {
-          "var": "goly",
-          "linie": 2.5,
-          "strana": "over",
-          "p": 0.4501,
-          "fair": 2.22,
-          "min_kurz": 2.31
-        },
-        {
-          "var": "goly",
-          "linie": 2.5,
-          "strana": "under",
-          "p": 0.5499,
-          "fair": 1.82,
-          "min_kurz": 1.89
-        },
-        {
-          "var": "goly",
-          "linie": 3.5,
-          "strana": "over",
-          "p": 0.2374,
-          "fair": 4.21,
-          "min_kurz": 4.38
-        },
-        {
-          "var": "goly",
-          "linie": 3.5,
-          "strana": "under",
-          "p": 0.7626,
-          "fair": 1.31,
-          "min_kurz": 1.36
-        },
-        {
-          "var": "goly",
-          "linie": 4.5,
-          "strana": "over",
-          "p": 0.1057,
-          "fair": 9.46,
-          "min_kurz": 9.84
-        },
-        {
-          "var": "karty",
-          "linie": 2.5,
-          "strana": "over",
-          "p": 0.5836,
-          "fair": 1.71,
-          "min_kurz": 1.78
-        },
-        {
-          "var": "karty",
-          "linie": 2.5,
-          "strana": "under",
-          "p": 0.4164,
-          "fair": 2.4,
-          "min_kurz": 2.5
-        },
-        {
-          "var": "karty",
-          "linie": 3.5,
-          "strana": "over",
-          "p": 0.3839,
-          "fair": 2.6,
-          "min_kurz": 2.71
-        },
-        {
-          "var": "karty",
-          "linie": 3.5,
-          "strana": "under",
-          "p": 0.6161,
-          "fair": 1.62,
-          "min_kurz": 1.69
-        },
-        {
-          "var": "karty",
-          "linie": 4.5,
-          "strana": "over",
-          "p": 0.2278,
-          "fair": 4.39,
-          "min_kurz": 4.57
-        },
-        {
-          "var": "karty",
-          "linie": 4.5,
-          "strana": "under",
-          "p": 0.7722,
-          "fair": 1.29,
-          "min_kurz": 1.35
-        },
-        {
-          "var": "karty",
-          "linie": 5.5,
-          "strana": "over",
-          "p": 0.1237,
-          "fair": 8.09,
-          "min_kurz": 8.41
-        },
-        {
-          "var": "rohy",
-          "linie": 7.5,
-          "strana": "over",
-          "p": 0.7167,
-          "fair": 1.4,
-          "min_kurz": 1.45
-        },
-        {
-          "var": "rohy",
-          "linie": 7.5,
-          "strana": "under",
-          "p": 0.2833,
-          "fair": 3.53,
-          "min_kurz": 3.67
-        },
-        {
-          "var": "rohy",
-          "linie": 8.5,
-          "strana": "over",
-          "p": 0.5981,
-          "fair": 1.67,
-          "min_kurz": 1.74
-        },
-        {
-          "var": "rohy",
-          "linie": 8.5,
-          "strana": "under",
-          "p": 0.4019,
-          "fair": 2.49,
-          "min_kurz": 2.59
-        },
-        {
-          "var": "rohy",
-          "linie": 9.5,
-          "strana": "over",
-          "p": 0.4751,
-          "fair": 2.1,
-          "min_kurz": 2.19
-        },
-        {
-          "var": "rohy",
-          "linie": 9.5,
-          "strana": "under",
-          "p": 0.5249,
-          "fair": 1.91,
-          "min_kurz": 1.98
-        },
-        {
-          "var": "rohy",
-          "linie": 10.5,
-          "strana": "over",
-          "p": 0.3588,
-          "fair": 2.79,
-          "min_kurz": 2.9
-        },
-        {
-          "var": "rohy",
-          "linie": 10.5,
-          "strana": "under",
-          "p": 0.6412,
-          "fair": 1.56,
-          "min_kurz": 1.62
-        },
-        {
-          "var": "rohy",
-          "linie": 11.5,
-          "strana": "over",
-          "p": 0.2578,
-          "fair": 3.88,
-          "min_kurz": 4.03
-        },
-        {
-          "var": "rohy",
-          "linie": 11.5,
-          "strana": "under",
-          "p": 0.7422,
-          "fair": 1.35,
-          "min_kurz": 1.4
-        },
-        {
-          "var": "rohy",
-          "linie": 12.5,
-          "strana": "over",
-          "p": 0.1763,
-          "fair": 5.67,
-          "min_kurz": 5.9
-        },
-        {
-          "var": "rohy",
-          "linie": 12.5,
-          "strana": "under",
-          "p": 0.8237,
-          "fair": 1.21,
-          "min_kurz": 1.26
-        }
-      ],
-      "builder": [
-        {
-          "nohy": [
-            [
-              "karty",
-              4.5,
-              "over"
-            ],
-            [
-              "fauly",
-              24.5,
-              "over"
-            ]
-          ],
-          "p": 0.0839,
-          "fair": 11.92,
-          "min_kurz": 12.4,
-          "korelace": 1.605
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              4.5,
-              "over"
-            ],
-            [
-              "fauly",
-              22.5,
-              "over"
-            ]
-          ],
-          "p": 0.1146,
-          "fair": 8.73,
-          "min_kurz": 9.08,
-          "korelace": 1.487
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              3.5,
-              "over"
-            ],
-            [
-              "fauly",
-              24.5,
-              "over"
-            ]
-          ],
-          "p": 0.1252,
-          "fair": 7.99,
-          "min_kurz": 8.31,
-          "korelace": 1.432
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              4.5,
-              "over"
-            ],
-            [
-              "fauly",
-              20.5,
-              "over"
-            ]
-          ],
-          "p": 0.1478,
-          "fair": 6.77,
-          "min_kurz": 7.04,
-          "korelace": 1.376
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              3.5,
-              "over"
-            ],
-            [
-              "fauly",
-              22.5,
-              "over"
-            ]
-          ],
-          "p": 0.1744,
-          "fair": 5.73,
-          "min_kurz": 5.96,
-          "korelace": 1.353
-        }
-      ],
-      "signal": 0.203,
-      "rozhodci": "",
-      "zapas": "Venezia vs Udinese",
-      "home_fd": "Venezia",
-      "away_fd": "Udinese",
-      "kod": "I1",
-      "liga_klic": "soccer_italy_serie_a",
-      "start": "2026-11-06T19:45:00+00:00"
-    },
-    {
-      "mu": {
         "goly": 2.72,
         "rohy": 10.45,
         "karty": 3.8,
-        "fauly": 21.93
+        "fauly": 21.93,
+        "sot": 10.01
       },
       "liga_prumer": {
         "goly": 3.38,
         "rohy": 10.4,
         "karty": 3.98,
-        "fauly": 21.96
+        "fauly": 21.96,
+        "sot": 10.32
       },
       "linie": [
         {
@@ -1541,98 +1688,194 @@
           "p": 0.7367,
           "fair": 1.36,
           "min_kurz": 1.41
+        },
+        {
+          "var": "sot",
+          "linie": 6.5,
+          "strana": "over",
+          "p": 0.8669,
+          "fair": 1.15,
+          "min_kurz": 1.2
+        },
+        {
+          "var": "sot",
+          "linie": 6.5,
+          "strana": "under",
+          "p": 0.1331,
+          "fair": 7.51,
+          "min_kurz": 7.82
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "over",
+          "p": 0.7769,
+          "fair": 1.29,
+          "min_kurz": 1.34
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "under",
+          "p": 0.2231,
+          "fair": 4.48,
+          "min_kurz": 4.66
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.6652,
+          "fair": 1.5,
+          "min_kurz": 1.56
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.3348,
+          "fair": 2.99,
+          "min_kurz": 3.11
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.5417,
+          "fair": 1.85,
+          "min_kurz": 1.92
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.4583,
+          "fair": 2.18,
+          "min_kurz": 2.27
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.4183,
+          "fair": 2.39,
+          "min_kurz": 2.49
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.5817,
+          "fair": 1.72,
+          "min_kurz": 1.79
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.3061,
+          "fair": 3.27,
+          "min_kurz": 3.4
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.6939,
+          "fair": 1.44,
+          "min_kurz": 1.5
         }
       ],
       "builder": [
         {
           "nohy": [
             [
-              "karty",
-              5.5,
-              "over"
-            ],
-            [
-              "fauly",
-              24.5,
-              "over"
-            ]
-          ],
-          "p": 0.0905,
-          "fair": 11.05,
-          "min_kurz": 11.49,
-          "korelace": 1.466
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              4.5,
-              "over"
-            ],
-            [
-              "fauly",
-              26.5,
-              "over"
-            ]
-          ],
-          "p": 0.0917,
-          "fair": 10.91,
-          "min_kurz": 11.34,
-          "korelace": 1.464
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              2.5,
+              "goly",
+              1.5,
               "under"
             ],
             [
-              "fauly",
-              18.5,
+              "sot",
+              7.5,
               "under"
             ]
           ],
-          "p": 0.1088,
-          "fair": 9.19,
-          "min_kurz": 9.56,
-          "korelace": 1.455
+          "p": 0.1156,
+          "fair": 8.65,
+          "min_kurz": 9.0,
+          "korelace": 2.151
         },
         {
           "nohy": [
             [
-              "karty",
-              4.5,
+              "goly",
+              3.5,
               "over"
             ],
             [
-              "fauly",
-              24.5,
+              "sot",
+              11.5,
               "over"
             ]
           ],
-          "p": 0.139,
-          "fair": 7.19,
-          "min_kurz": 7.48,
-          "korelace": 1.37
+          "p": 0.1655,
+          "fair": 6.04,
+          "min_kurz": 6.28,
+          "korelace": 1.883
         },
         {
           "nohy": [
             [
-              "karty",
-              5.5,
+              "goly",
+              1.5,
+              "under"
+            ],
+            [
+              "sot",
+              8.5,
+              "under"
+            ]
+          ],
+          "p": 0.1526,
+          "fair": 6.55,
+          "min_kurz": 6.82,
+          "korelace": 1.882
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              1.5,
+              "under"
+            ],
+            [
+              "sot",
+              9.5,
+              "under"
+            ]
+          ],
+          "p": 0.1861,
+          "fair": 5.37,
+          "min_kurz": 5.59,
+          "korelace": 1.672
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
               "over"
             ],
             [
-              "fauly",
-              22.5,
+              "sot",
+              10.5,
               "over"
             ]
           ],
-          "p": 0.1253,
-          "fair": 7.98,
-          "min_kurz": 8.3,
-          "korelace": 1.36
+          "p": 0.2034,
+          "fair": 4.92,
+          "min_kurz": 5.11,
+          "korelace": 1.654
         }
       ],
       "signal": 0.196,
@@ -1649,13 +1892,15 @@
         "goly": 4.04,
         "rohy": 10.78,
         "karty": 3.72,
-        "fauly": 22.0
+        "fauly": 22.0,
+        "sot": 12.08
       },
       "liga_prumer": {
         "goly": 3.38,
         "rohy": 10.4,
         "karty": 3.98,
-        "fauly": 21.96
+        "fauly": 21.96,
+        "sot": 10.32
       },
       "linie": [
         {
@@ -1953,98 +2198,162 @@
           "p": 0.7039,
           "fair": 1.42,
           "min_kurz": 1.48
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.8456,
+          "fair": 1.18,
+          "min_kurz": 1.23
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.1544,
+          "fair": 6.48,
+          "min_kurz": 6.74
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.76,
+          "fair": 1.32,
+          "min_kurz": 1.37
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.24,
+          "fair": 4.17,
+          "min_kurz": 4.33
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.6574,
+          "fair": 1.52,
+          "min_kurz": 1.58
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.3426,
+          "fair": 2.92,
+          "min_kurz": 3.04
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.5454,
+          "fair": 1.83,
+          "min_kurz": 1.91
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.4546,
+          "fair": 2.2,
+          "min_kurz": 2.29
         }
       ],
       "builder": [
         {
           "nohy": [
             [
-              "karty",
-              5.5,
-              "over"
-            ],
-            [
-              "fauly",
-              24.5,
-              "over"
-            ]
-          ],
-          "p": 0.0885,
-          "fair": 11.3,
-          "min_kurz": 11.75,
-          "korelace": 1.485
-        },
-        {
-          "nohy": [
-            [
-              "karty",
-              4.5,
-              "over"
-            ],
-            [
-              "fauly",
-              26.5,
-              "over"
-            ]
-          ],
-          "p": 0.0903,
-          "fair": 11.07,
-          "min_kurz": 11.52,
-          "korelace": 1.48
-        },
-        {
-          "nohy": [
-            [
-              "karty",
+              "goly",
               2.5,
               "under"
             ],
             [
-              "fauly",
-              18.5,
+              "sot",
+              8.5,
               "under"
             ]
           ],
-          "p": 0.1097,
-          "fair": 9.12,
-          "min_kurz": 9.48,
-          "korelace": 1.439
+          "p": 0.0857,
+          "fair": 11.67,
+          "min_kurz": 12.14,
+          "korelace": 2.414
         },
         {
           "nohy": [
             [
-              "karty",
-              4.5,
-              "over"
+              "goly",
+              2.5,
+              "under"
             ],
             [
-              "fauly",
-              24.5,
-              "over"
+              "sot",
+              9.5,
+              "under"
             ]
           ],
-          "p": 0.1364,
-          "fair": 7.33,
-          "min_kurz": 7.62,
-          "korelace": 1.386
+          "p": 0.1174,
+          "fair": 8.52,
+          "min_kurz": 8.86,
+          "korelace": 2.132
         },
         {
           "nohy": [
             [
-              "karty",
-              5.5,
-              "over"
+              "goly",
+              2.5,
+              "under"
             ],
             [
-              "fauly",
-              22.5,
-              "over"
+              "sot",
+              10.5,
+              "under"
             ]
           ],
-          "p": 0.1211,
-          "fair": 8.26,
-          "min_kurz": 8.59,
-          "korelace": 1.365
+          "p": 0.1503,
+          "fair": 6.65,
+          "min_kurz": 6.92,
+          "korelace": 1.904
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "under"
+            ],
+            [
+              "sot",
+              8.5,
+              "under"
+            ]
+          ],
+          "p": 0.1175,
+          "fair": 8.51,
+          "min_kurz": 8.85,
+          "korelace": 1.833
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "under"
+            ],
+            [
+              "sot",
+              9.5,
+              "under"
+            ]
+          ],
+          "p": 0.1701,
+          "fair": 5.88,
+          "min_kurz": 6.11,
+          "korelace": 1.711
         }
       ],
       "signal": 0.195,
@@ -2055,6 +2364,509 @@
       "kod": "D1",
       "liga_klic": "soccer_germany_bundesliga",
       "start": "2026-11-07T14:30:00+00:00"
+    },
+    {
+      "mu": {
+        "goly": 3.13,
+        "rohy": 8.38,
+        "karty": 4.84,
+        "fauly": 26.07,
+        "sot": 8.76
+      },
+      "liga_prumer": {
+        "goly": 2.64,
+        "rohy": 8.99,
+        "karty": 4.92,
+        "fauly": 26.16,
+        "sot": 8.1
+      },
+      "linie": [
+        {
+          "var": "fauly",
+          "linie": 20.5,
+          "strana": "over",
+          "p": 0.8361,
+          "fair": 1.2,
+          "min_kurz": 1.24
+        },
+        {
+          "var": "fauly",
+          "linie": 20.5,
+          "strana": "under",
+          "p": 0.1639,
+          "fair": 6.1,
+          "min_kurz": 6.34
+        },
+        {
+          "var": "fauly",
+          "linie": 22.5,
+          "strana": "over",
+          "p": 0.7258,
+          "fair": 1.38,
+          "min_kurz": 1.43
+        },
+        {
+          "var": "fauly",
+          "linie": 22.5,
+          "strana": "under",
+          "p": 0.2742,
+          "fair": 3.65,
+          "min_kurz": 3.79
+        },
+        {
+          "var": "fauly",
+          "linie": 24.5,
+          "strana": "over",
+          "p": 0.5929,
+          "fair": 1.69,
+          "min_kurz": 1.75
+        },
+        {
+          "var": "fauly",
+          "linie": 24.5,
+          "strana": "under",
+          "p": 0.4071,
+          "fair": 2.46,
+          "min_kurz": 2.55
+        },
+        {
+          "var": "fauly",
+          "linie": 26.5,
+          "strana": "over",
+          "p": 0.4527,
+          "fair": 2.21,
+          "min_kurz": 2.3
+        },
+        {
+          "var": "fauly",
+          "linie": 26.5,
+          "strana": "under",
+          "p": 0.5473,
+          "fair": 1.83,
+          "min_kurz": 1.9
+        },
+        {
+          "var": "goly",
+          "linie": 1.5,
+          "strana": "over",
+          "p": 0.82,
+          "fair": 1.22,
+          "min_kurz": 1.27
+        },
+        {
+          "var": "goly",
+          "linie": 1.5,
+          "strana": "under",
+          "p": 0.18,
+          "fair": 5.56,
+          "min_kurz": 5.78
+        },
+        {
+          "var": "goly",
+          "linie": 2.5,
+          "strana": "over",
+          "p": 0.6062,
+          "fair": 1.65,
+          "min_kurz": 1.72
+        },
+        {
+          "var": "goly",
+          "linie": 2.5,
+          "strana": "under",
+          "p": 0.3938,
+          "fair": 2.54,
+          "min_kurz": 2.64
+        },
+        {
+          "var": "goly",
+          "linie": 3.5,
+          "strana": "over",
+          "p": 0.3828,
+          "fair": 2.61,
+          "min_kurz": 2.72
+        },
+        {
+          "var": "goly",
+          "linie": 3.5,
+          "strana": "under",
+          "p": 0.6172,
+          "fair": 1.62,
+          "min_kurz": 1.69
+        },
+        {
+          "var": "goly",
+          "linie": 4.5,
+          "strana": "over",
+          "p": 0.2078,
+          "fair": 4.81,
+          "min_kurz": 5.01
+        },
+        {
+          "var": "goly",
+          "linie": 4.5,
+          "strana": "under",
+          "p": 0.7922,
+          "fair": 1.26,
+          "min_kurz": 1.31
+        },
+        {
+          "var": "karty",
+          "linie": 2.5,
+          "strana": "over",
+          "p": 0.7865,
+          "fair": 1.27,
+          "min_kurz": 1.32
+        },
+        {
+          "var": "karty",
+          "linie": 2.5,
+          "strana": "under",
+          "p": 0.2135,
+          "fair": 4.68,
+          "min_kurz": 4.87
+        },
+        {
+          "var": "karty",
+          "linie": 3.5,
+          "strana": "over",
+          "p": 0.6413,
+          "fair": 1.56,
+          "min_kurz": 1.62
+        },
+        {
+          "var": "karty",
+          "linie": 3.5,
+          "strana": "under",
+          "p": 0.3587,
+          "fair": 2.79,
+          "min_kurz": 2.9
+        },
+        {
+          "var": "karty",
+          "linie": 4.5,
+          "strana": "over",
+          "p": 0.4924,
+          "fair": 2.03,
+          "min_kurz": 2.11
+        },
+        {
+          "var": "karty",
+          "linie": 4.5,
+          "strana": "under",
+          "p": 0.5076,
+          "fair": 1.97,
+          "min_kurz": 2.05
+        },
+        {
+          "var": "karty",
+          "linie": 5.5,
+          "strana": "over",
+          "p": 0.3582,
+          "fair": 2.79,
+          "min_kurz": 2.9
+        },
+        {
+          "var": "karty",
+          "linie": 5.5,
+          "strana": "under",
+          "p": 0.6418,
+          "fair": 1.56,
+          "min_kurz": 1.62
+        },
+        {
+          "var": "karty",
+          "linie": 6.5,
+          "strana": "over",
+          "p": 0.2486,
+          "fair": 4.02,
+          "min_kurz": 4.18
+        },
+        {
+          "var": "karty",
+          "linie": 6.5,
+          "strana": "under",
+          "p": 0.7514,
+          "fair": 1.33,
+          "min_kurz": 1.38
+        },
+        {
+          "var": "rohy",
+          "linie": 7.5,
+          "strana": "over",
+          "p": 0.5857,
+          "fair": 1.71,
+          "min_kurz": 1.78
+        },
+        {
+          "var": "rohy",
+          "linie": 7.5,
+          "strana": "under",
+          "p": 0.4143,
+          "fair": 2.41,
+          "min_kurz": 2.51
+        },
+        {
+          "var": "rohy",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.4569,
+          "fair": 2.19,
+          "min_kurz": 2.28
+        },
+        {
+          "var": "rohy",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.5431,
+          "fair": 1.84,
+          "min_kurz": 1.91
+        },
+        {
+          "var": "rohy",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.3376,
+          "fair": 2.96,
+          "min_kurz": 3.08
+        },
+        {
+          "var": "rohy",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.6624,
+          "fair": 1.51,
+          "min_kurz": 1.57
+        },
+        {
+          "var": "rohy",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.2366,
+          "fair": 4.23,
+          "min_kurz": 4.4
+        },
+        {
+          "var": "rohy",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.7634,
+          "fair": 1.31,
+          "min_kurz": 1.36
+        },
+        {
+          "var": "rohy",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.1575,
+          "fair": 6.35,
+          "min_kurz": 6.6
+        },
+        {
+          "var": "rohy",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.8425,
+          "fair": 1.19,
+          "min_kurz": 1.23
+        },
+        {
+          "var": "sot",
+          "linie": 6.5,
+          "strana": "over",
+          "p": 0.7706,
+          "fair": 1.3,
+          "min_kurz": 1.35
+        },
+        {
+          "var": "sot",
+          "linie": 6.5,
+          "strana": "under",
+          "p": 0.2294,
+          "fair": 4.36,
+          "min_kurz": 4.53
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "over",
+          "p": 0.6475,
+          "fair": 1.54,
+          "min_kurz": 1.61
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "under",
+          "p": 0.3525,
+          "fair": 2.84,
+          "min_kurz": 2.95
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.5126,
+          "fair": 1.95,
+          "min_kurz": 2.03
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.4874,
+          "fair": 2.05,
+          "min_kurz": 2.13
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.3812,
+          "fair": 2.62,
+          "min_kurz": 2.73
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.6188,
+          "fair": 1.62,
+          "min_kurz": 1.68
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.2662,
+          "fair": 3.76,
+          "min_kurz": 3.91
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.7338,
+          "fair": 1.36,
+          "min_kurz": 1.42
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.1745,
+          "fair": 5.73,
+          "min_kurz": 5.96
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.8255,
+          "fair": 1.21,
+          "min_kurz": 1.26
+        }
+      ],
+      "builder": [
+        {
+          "nohy": [
+            [
+              "goly",
+              4.5,
+              "over"
+            ],
+            [
+              "sot",
+              11.5,
+              "over"
+            ]
+          ],
+          "p": 0.0707,
+          "fair": 14.14,
+          "min_kurz": 14.71,
+          "korelace": 1.979
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              1.5,
+              "under"
+            ],
+            [
+              "sot",
+              6.5,
+              "under"
+            ]
+          ],
+          "p": 0.0786,
+          "fair": 12.72,
+          "min_kurz": 13.23,
+          "korelace": 1.905
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              4.5,
+              "over"
+            ],
+            [
+              "sot",
+              10.5,
+              "over"
+            ]
+          ],
+          "p": 0.101,
+          "fair": 9.9,
+          "min_kurz": 10.3,
+          "korelace": 1.83
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              1.5,
+              "under"
+            ],
+            [
+              "sot",
+              7.5,
+              "under"
+            ]
+          ],
+          "p": 0.1073,
+          "fair": 9.32,
+          "min_kurz": 9.69,
+          "korelace": 1.703
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "over"
+            ],
+            [
+              "sot",
+              11.5,
+              "over"
+            ]
+          ],
+          "p": 0.1093,
+          "fair": 9.15,
+          "min_kurz": 9.52,
+          "korelace": 1.649
+        }
+      ],
+      "signal": 0.189,
+      "rozhodci": "",
+      "zapas": "Sporting Lisbon vs Moreirense FC",
+      "home_fd": "Sp Lisbon",
+      "away_fd": "Moreirense",
+      "kod": "P1",
+      "liga_klic": "soccer_portugal_primeira_liga",
+      "start": "2026-11-07T20:30:00+00:00"
     }
-  ]
+  ],
+  "fortuna": []
 }
