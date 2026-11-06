@@ -23,7 +23,7 @@ class OddsApi:
     def __init__(self, klic):
         if not klic:
             raise OddsApiChyba("Chybí ODDS_API_KEY (GitHub Secret).")
-        self.klic = klic
+        self.klic = klic.strip().strip("'\"")      # mezera/zalomení/uvozovky při vkládání secretu
         self.zbyva = None
         self.utraceno = 0
 
@@ -36,7 +36,11 @@ class OddsApi:
                 data = json.load(r)
                 h = r.headers
         except urllib.error.HTTPError as e:   # klíč v chybě nikdy nevypisujeme
-            raise OddsApiChyba(f"HTTP {e.code} u {cesta}") from None
+            napoveda = ""
+            if e.code == 401:
+                napoveda = (" Klíč je neplatný, nepotvrzený e-mailem nebo má vyčerpanou kvótu. "
+                            "Zkontroluj secret ODDS_API_KEY (bez mezer a uvozovek).")
+            raise OddsApiChyba(f"HTTP {e.code} u {cesta}.{napoveda}") from None
         except urllib.error.URLError as e:
             raise OddsApiChyba(f"Síťová chyba u {cesta}: {e.reason}") from None
         self.zbyva = h.get("x-requests-remaining", self.zbyva)

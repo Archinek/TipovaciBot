@@ -31,7 +31,7 @@ LIGY = {
 URL = "https://www.football-data.co.uk/mmz4281/{sezona}/{kod}.csv"
 
 ALIASY = {
-    "man united": "manchester united", "man city": "manchester city",
+    "man united": "manchester united", "man utd": "manchester united", "man u": "manchester united", "man city": "manchester city",
     "nott m forest": "nottingham forest", "ath madrid": "atletico madrid",
     "ath bilbao": "athletic bilbao", "m gladbach": "borussia monchengladbach",
     "sp lisbon": "sporting lisbon", "sociedad": "real sociedad", "betis": "real betis",
@@ -93,7 +93,7 @@ def parsuj(text, cervena=1):
             y = {"goly": (_int(r["FTHG"]), _int(r["FTAG"]))}
         except (KeyError, ValueError, TypeError, AttributeError):
             continue
-        for v, (c1, c2) in {"rohy": ("HC", "AC"), "fauly": ("HF", "AF")}.items():
+        for v, (c1, c2) in {"rohy": ("HC", "AC"), "fauly": ("HF", "AF"), "sot": ("HST", "AST")}.items():
             try:
                 y[v] = (_int(r[c1]), _int(r[c2]))
             except (KeyError, ValueError, TypeError):

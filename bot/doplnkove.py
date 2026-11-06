@@ -19,9 +19,9 @@ import numpy as np
 
 from . import config
 
-PROMENNE = ("goly", "rohy", "karty", "fauly")
+PROMENNE = ("goly", "rohy", "karty", "fauly", "sot")
 S_ROZHODCIM = {"karty", "fauly"}
-NAZVY = {"goly": "Góly", "rohy": "Rohy", "karty": "Karty", "fauly": "Fauly"}
+NAZVY = {"goly": "Góly", "rohy": "Rohy", "karty": "Karty", "fauly": "Fauly", "sot": "Střely na bránu"}
 _erf = np.vectorize(math.erf)
 
 
@@ -86,6 +86,13 @@ def predikuj(m, h, a, ref, v):
     if v in S_ROZHODCIM and ref and ref in m["ref"]:
         mu *= m["ref"][ref]
     return mu
+
+
+def mu_tymu(m, h, a, v):
+    """Očekávané hodnoty zvlášť pro domácí a hosty, nebo None (stejné podmínky jako predikuj)."""
+    if predikuj(m, h, a, None, v) is None:
+        return None
+    return (m["mh"] * m["att"][h] * m["def"][a], m["ma"] * m["att"][a] * m["def"][h])
 
 
 def _psd(R):

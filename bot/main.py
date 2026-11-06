@@ -13,7 +13,7 @@ import sys
 from collections import defaultdict
 from zoneinfo import ZoneInfo
 
-from . import config, engine, histdata, report, store, veto
+from . import config, engine, histdata, mojekurzy, report, store, veto
 from .oddsapi import OddsApi, OddsApiChyba
 
 UTC = datetime.timezone.utc
@@ -325,6 +325,20 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
     radky = [_radek(k, datum, k["rezim"], vysl.get(k["id"], veto.NEOVERENO)) for k in top]
     picks = [r for r in radky if r["veto"] != "VETO"][:nast["max_tipu_denne"]]
     vyrazene = [r for r in radky if r["veto"] == "VETO"]
+    # anonymní nabídka Fortuny (orientační ceník, sázíš jinde); chyba ani blok nikdy nesmí shodit ranní report
+    zap_fortuna = []
+    try:
+        from . import fortuna
+        if (cfg.get("fortuna") or {}).get("zapnuto", True):
+            zap_fortuna = fortuna.nabidka(filtry=("today", "tomorrow"),
+                                          max_zapasu=(cfg.get("fortuna") or {}).get("max_zapasu", 600), log=_log)
+            fortuna.uloz_nabidku(zap_fortuna, datum)
+    except Exception as e:
+        _log(f"⚠️ Fortuna selhala: {type(e).__name__}: {e}")
+    from . import fortuna as _f
+    spar = mojekurzy.aplikuj(picks, [], cfg, extra=_f.radky_pro_mojekurzy(zap_fortuna))     # + ruční data/moje_kurzy.csv
+    if spar:
+        _log(f"💱 Spárováno {spar} tvých kurzů z moje_kurzy.csv (h2h).")
     ulozit = [{**r} for r in picks + vyrazene]
     for r in ulozit:
         r.pop("_kontext", None)
@@ -337,27 +351,67 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         from . import doplnkove as dp
         dp.vyhodnot_log(_hist_fn(cfg.get("doplnkove") or {}, ted), ted)
         dopl = doplnkove_krok(api, cfg, ted, aktivni)
+        spar2 = mojekurzy.aplikuj([], dopl, cfg)
+        if spar2:
+            _log(f"💱 Spárováno {spar2} tvých kurzů u doplňkových trhů.")
         dp.zaloguj_predikce(dopl, datum)
         kalib = dp.kalibrace(dp.nacti_log())
     except Exception as e:
         _log(f"⚠️ Doplňkové trhy selhaly: {type(e).__name__}: {e}")
+
+    # 4c) Fortuna vs. model (fotbal, vedlejší trhy) + obsáhlá analýza s kritérii z YAML pro všechny sporty
+    fort = []
+    try:
+        from . import analyza, fortuna_hodnota, tipsteri
+        an = cfg.get("analyza") or {}
+        if zap_fortuna:
+            fort = fortuna_hodnota.vyhodnot(zap_fortuna, cfg, ted, log=_log)
+            try:                                                      # tenis (esa): chyba dat nesmí shodit fotbal
+                fort += fortuna_hodnota.vyhodnot_tenis(zap_fortuna, cfg, ted, log=_log)
+            except Exception as e:
+                _log(f"⚠️ Tenis (esa) selhal: {type(e).__name__}: {e}")
+        tipsteri.tip_dne(fort, cfg)                                   # spočítá skóre; nejlepší půjdou do analýzy první
+        fort.sort(key=lambda x: -x["skore"])
+        if an.get("zapnuto", True):
+            fort, fort_veto = analyza.rozsir(fort, cfg, max_zapasu=an.get("max_zapasu_fotbal", 6))
+            if fort_veto:
+                _log(f"⛔ Analýza vyřadila {len(fort_veto)} kandidátů z Fortuny (VETO).")
+            picks, h2h_veto = analyza.rozsir(picks, cfg, max_zapasu=an.get("max_zapasu_h2h", 8))
+            if h2h_veto:
+                _log(f"⛔ Analýza vyřadila {len(h2h_veto)} h2h tipů (VETO).")
+                for p in h2h_veto:
+                    p["veto"], p["veto_duvod"] = "VETO", (p.get("analyza") or {}).get("duvod", "")
+                vyrazene += h2h_veto
+        tip = tipsteri.tip_dne(fort, cfg)                             # znovu po VETO: tip dne jen z kandidátů, které prošly
+        _log(f"⭐ Tip dne: {len(tip)} z {len(fort)} kandidátů.")
+    except Exception as e:
+        _log(f"⚠️ Analýza/Fortuna selhala: {type(e).__name__}: {e}")
+    log_text = ""
+    try:                                                              # fáze 1: log hran, výsledky, CLV, Brier modelu vs. trhu
+        from . import fortuna_log, tenis
+        fortuna_log.vyhodnot(_hist_fn(cfg.get("doplnkove") or {}, ted), ted, nacti_tenis=tenis.nacti)
+        pridano = fortuna_log.zaloguj(fort, datum)
+        log_text = fortuna_log.souhrn_text(fortuna_log.souhrn())
+        _log(f"🗂️ Log Fortuny: +{pridano} linií. {log_text}")
+    except Exception as e:
+        _log(f"⚠️ Log Fortuny selhal: {type(e).__name__}: {e}")
 
     # 5) výstupy
     for p in picks:
         p["veto_kontext"] = p.pop("_kontext", "")
     rows = store.nacti()
     celkem = store.metriky(rows)
-    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib)
+    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort)
     cesta_picks.write_text(json.dumps(
-        {"datum": datum, "picks": picks, "vyrazene": vyrazene, "vcera": vcera, "doplnkove": dopl},
+        {"datum": datum, "picks": picks, "vyrazene": vyrazene, "vcera": vcera, "doplnkove": dopl, "fortuna": fort},
         ensure_ascii=False, indent=2), encoding="utf-8")
 
-    text = report.wa_ranni(datum, picks, vcera, config.pages_url(), nast["zona"], dopl=dopl)
+    text = report.wa_ranni(datum, picks, vcera, config.pages_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text)
     wa_fn(text)
     return {"picks": picks, "vyrazene": vyrazene, "celkem": celkem}
 
 
-def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None):
+def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None, fort=None):
     config.DOCS.mkdir(parents=True, exist_ok=True)
     (config.DOCS / "reports").mkdir(exist_ok=True)
     (config.DOCS / ".nojekyll").touch()
@@ -366,7 +420,7 @@ def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, ka
     podle_sportu = store.metriky_podle(rows, "sport")
     (config.DOCS / "reports" / f"{datum}.html").write_text(
         report.sestav_report(datum, picks, vyrazene, vcera, {"vše": celkem, **podle_tieru}, nast["zona"],
-                             dopl=dopl, kalib=kalib),
+                             dopl=dopl, kalib=kalib, fort=fort),
         encoding="utf-8")
 
     doporuceni = {}
@@ -419,7 +473,16 @@ def main(argv):
     if cmd == "morning":
         morning(force=force)
     elif cmd == "closing":
-        uzaviraci(OddsApi(config.env("ODDS_API_KEY")), config.nacti_cfg(), _nyni())
+        try:
+            uzaviraci(OddsApi(config.env("ODDS_API_KEY")), config.nacti_cfg(), _nyni())
+        except Exception as e:                              # bez Odds API klíče stále chceme snímek kurzů Fortuny
+            _log(f"⚠️ Closing (Odds API): {type(e).__name__}: {e}")
+        try:                                                # pohyb kurzu zalogovaných linií Fortuny (CLV); jen pár požadavků
+            from . import fortuna, fortuna_log
+            if (config.nacti_cfg().get("fortuna") or {}).get("zapnuto", True):
+                _log(f"📉 Snímek kurzů Fortuny: {fortuna_log.snimek(fortuna.Klient(pauza=0.4), _nyni(), log=_log)} linií aktualizováno.")
+        except Exception as e:
+            _log(f"⚠️ Snímek Fortuny selhal: {type(e).__name__}: {e}")
     elif cmd == "settle":
         api, cfg = OddsApi(config.env("ODDS_API_KEY")), config.nacti_cfg()
         nove = vyhodnot(api, cfg, _nyni())
@@ -428,6 +491,14 @@ def main(argv):
         resend()
     elif cmd == "sports":
         sports()
+    elif cmd == "fortuna_probe":
+        from . import fortuna
+        fortuna.probe()
+    elif cmd == "fortuna":
+        from . import fortuna
+        zona = ZoneInfo(config.nacti_cfg()["nastaveni"]["zona"])
+        datum = _nyni().astimezone(zona).strftime("%Y-%m-%d")
+        _log(f"Uloženo: {fortuna.uloz_nabidku(fortuna.nabidka(), datum)}")
     elif cmd == "backtest":
         backtest_cmd(argv[2] if len(argv) > 2 else "all")
     elif cmd == "builder":

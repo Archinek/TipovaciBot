@@ -36,8 +36,11 @@ def _tab_picks(picks, zona):
     for p in picks:
         rez = "<span class='live'>SÁZET</span>" if p["rezim"] == "live" else "<span class='paper'>sledovat</span>"
         riz = f"<br><span class='nej'>⚠️ {_e(p['riziko'])}</span>" if p["riziko"] else ""
-        r.append(f"<tr><td>{_e(p['zapas'])}<br><span class='mut'>{_e(p['sport'])} · {_cas(p['start'], zona)}</span></td><td><b>{_e(_vyber(p))}</b></td><td>{p['fair_kurz']}</td><td><b>{p['min_kurz']}</b></td><td>{p['best_kurz']}<br><span class='mut'>{_e(p['best_kniha'])}</span></td><td>{float(p['edge']) * 100:.1f} %{riz}</td><td>{p['stake_pct']} %</td><td>{rez}</td><td>{_veto_html(p)}</td></tr>")
+        r.append(f"<tr><td>{_e(p['zapas'])}<br><span class='mut'>{_e(p['sport'])} · {_cas(p['start'], zona)}</span></td><td><b>{_e(_vyber(p))}</b></td><td>{p['fair_kurz']}</td><td><b>{p['min_kurz']}</b></td><td>{p['best_kurz']}<br><span class='mut'>{_e(p['best_kniha'])}</span></td><td>{float(p['edge']) * 100:.1f} %{riz}{('<br><b>' + _e(p['moje_info']) + '</b>') if p.get('moje_info') else ''}</td><td>{p['stake_pct']} %</td><td>{rez}</td><td>{_veto_html(p)}</td></tr>")
     r.append("</table></div><p class='mut'>*Stake = ¼ Kelly, strop 2 % bankrollu.</p>")
+    for p in picks:
+        if p.get("analyza"):
+            r.append(f"<h3>Analýza: {_e(p['zapas'])} <span class='mut'>({_e(p['sport'])}, {_e(_vyber(p))})</span></h3>{_analyza_html(p['analyza'])}")
     return "".join(r)
 
 def _tab_metriky(rows_metr):
@@ -51,7 +54,7 @@ def _tab_metriky(rows_metr):
     r.append("</table></div><p class='mut'><b>Sázek do jistoty:</b> Kolik tiketů je matematicky potřeba k potvrzení, že ROI není jen náhoda (pokud ukazuje 0, edge je prokázána). CI = Confidence Interval.</p>")
     return "".join(r)
 
-NAZVY = {"goly": "Góly", "rohy": "Rohy", "karty": "Karty", "fauly": "Fauly"}
+NAZVY = {"goly": "Góly", "rohy": "Rohy", "karty": "Karty", "fauly": "Fauly", "sot": "Střely na bránu"}
 def _noha(v, L, s): return f"{NAZVY.get(v, v)} {'Over' if s == 'over' else 'Under'} {L}"
 
 def _tab_doplnkove(zapasy, kalib, zona):
@@ -71,9 +74,72 @@ def _tab_doplnkove(zapasy, kalib, zona):
             o.append("</table></div>")
     return "".join(o)
 
-def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=None):
+IK = {"OK": "✅ OK", "VETO": "⛔ VETO", "NEJISTE": "❔ NEJISTÉ", "NEOVERENO": "❔ NEOVĚŘENO"}
+
+def _blok(nazev, d):
+    if not d: return ""
+    if isinstance(d, str): return f"<li><b>{_e(nazev)}:</b> {_e(d)}</li>"
+    cast = [str(v) for k, v in d.items() if k != "stav" and v]
+    stav = f" <span class='mut'>({_e(d['stav'])})</span>" if d.get("stav") else ""
+    return f"<li><b>{_e(nazev)}:</b> {_e(' – '.join(cast))}{stav}</li>" if cast else ""
+
+def _analyza_html(an):
+    if not an: return ""
+    o = [f"<p><b>{IK.get(an.get('verdikt'), '❔')}</b> {_e(an.get('duvod', ''))}</p>"]
+    if an.get("souhrn"): o.append(f"<p>{_e(an['souhrn'])}</p>")
+    fak = "".join([_blok("Rozhodčí", an.get("rozhodci")), _blok("Hřiště", an.get("hriste")), _blok("Počasí", an.get("pocasi")),
+                   _blok("Sestavy a zranění", an.get("sestavy_zraneni")), _blok("Program a únava", an.get("program"))])
+    for f in an.get("faktory") or []:
+        if not isinstance(f, dict): continue
+        stav = f" <span class='mut'>({_e(f.get('stav', ''))})</span>" if f.get("stav") else ""
+        dop = f" <b>{_e(f['dopad'])}</b>" if f.get("dopad") else ""
+        fak += f"<li><b>{_e(str(f.get('kriterium', '')).replace('_', ' '))}:</b> {_e(f.get('zjisteni', ''))}{stav}{dop}</li>"
+    if fak: o.append(f"<ul>{fak}</ul>")
+    if an.get("pro"): o.append("<p><b>Pro:</b></p><ul>" + "".join(f"<li>{_e(x)}</li>" for x in an["pro"]) + "</ul>")
+    if an.get("proti"): o.append("<p><b>Proti / riziko:</b></p><ul>" + "".join(f"<li>{_e(x)}</li>" for x in an["proti"]) + "</ul>")
+    if an.get("riziko"): o.append(f"<p class='mut'>Hlavní riziko: {_e(an['riziko'])}</p>")
+    return "".join(o)
+
+def _tab_fortuna(fort, zona):
+    if not fort: return "<p class='mut'>Dnes v nabídce Fortuny žádná linie, kde by model a trh dávaly dostatečnou hranu.</p>"
+    z = {}
+    for f in fort: z.setdefault(f["zapas"], []).append(f)
+    r = []
+    for zapas, pl in z.items():
+        f0 = pl[0]
+        koment = {k.get("trh"): k.get("komentar", "") for k in (f0.get("analyza") or {}).get("komentare_k_trhum", [])}
+        r.append(f"<h3>{_e(zapas)} <span class='mut'>({_e(f0['liga'])}, {_cas(f0['start'], zona)})</span></h3>")
+        r.append("<div class='w'><table><tr><th>Trh</th><th>Kurz Fortuna</th><th>Sázej od</th><th>P model / trh / mix</th><th>Hrana</th></tr>")
+        for f in pl:
+            r.append(f"<tr><td>{_e(f['trh'])}</td><td>{f['kurz_fortuna']}</td><td><b>{f['sazej_od']}</b></td><td>{f['p_model'] * 100:.0f} / {f['p_trh'] * 100:.0f} / <b>{f['p'] * 100:.0f} %</b></td><td>{f['edge'] * 100:+.1f} %</td></tr>")
+            if koment.get(f["trh"]): r.append(f"<tr><td colspan='5' class='mut'>{_e(koment[f['trh']])}</td></tr>")
+        r.append("</table></div>")
+        r.append(_analyza_html(f0.get("analyza")))
+    r.append("<p class='mut'>Kurz Fortuny je jen orientační ceník (sázíš jinde): vyplatí se od hodnoty „Sázej od“. P mix = půl model, půl férový trh. Analýza vychází z dat bota a z vyhledávání Gemini; co nebylo dohledáno, je tak označeno.</p>")
+    return "".join(r)
+
+def _tab_tipdne(fort, zona):
+    tip = sorted((f for f in (fort or []) if f.get("tip_dne")), key=lambda f: f["tip_dne"])
+    if not tip: return "<p class='mut'>Dnes žádný kandidát nepřekročil práh. Je to normální: nutit sázku, když hrana není, je přesně chyba, kterou TOP tipéři nedělají.</p>"
+    r = ["<div class='w'><table><tr><th>#</th><th>Zápas</th><th>Trh</th><th>Kurz Fortuna</th><th>Sázej od</th><th>P mix</th><th>Hrana</th><th>Analýza</th></tr>"]
+    for f in tip:
+        an = f.get("analyza") or {}
+        r.append(f"<tr><td>{f['tip_dne']}</td><td>{_e(f['zapas'])}<br><span class='mut'>{_e(f['liga'])}, {_cas(f['start'], zona)}</span></td><td>{_e(f['trh'])}<br><span class='mut'>{_e(f.get('rodina', ''))}</span></td><td>{f['kurz_fortuna']}</td><td><b>{f['sazej_od']}</b></td><td>{f['p'] * 100:.0f} %</td><td>{f['edge'] * 100:+.1f} %</td><td>{IK.get(an.get('verdikt'), '')} {_e((an.get('duvod') or '')[:120])}</td></tr>")
+    r.append("</table></div><p class='mut'>Výběr: hrana × důvěra v model (klesá s rozchodem model vs. trh) × váha typu trhu odvozená z profilů TOP tipérů; max. 1 linie na zápas, max. 2 z jednoho typu trhu. Kurz Fortuny je jen orientační ceník.</p>")
+    return "".join(r)
+
+def _tab_jistejsi(fort, zona):
+    js = sorted((f for f in (fort or []) if f.get("jistejsi")), key=lambda f: f["jistejsi"])
+    if not js: return "<p class='mut'>Dnes žádný kandidát s vyšší pravděpodobností a dostatečnou hranou.</p>"
+    r = ["<div class='w'><table><tr><th>#</th><th>Zápas</th><th>Trh</th><th>Kurz Fortuna</th><th>Sázej od</th><th>P mix</th><th>Hrana</th><th>Vklad</th></tr>"]
+    for f in js:
+        r.append(f"<tr><td>{f['jistejsi']}</td><td>{_e(f['zapas'])}<br><span class='mut'>{_e(f['liga'])}, {_cas(f['start'], zona)}</span></td><td>{_e(f['trh'])}</td><td>{f['kurz_fortuna']}</td><td><b>{f['sazej_od']}</b></td><td>{f['p'] * 100:.0f} %</td><td>{f['edge'] * 100:+.1f} %</td><td>~{f.get('vklad_pct', 0)} % banku</td></tr>")
+    r.append("</table></div><p class='mut'>Nižší kurz, vyšší úspěšnost: pro stabilní růst banku. Vklad = 1/4 Kelly se stropem 2 % banku.</p>")
+    return "".join(r)
+
+def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=None, fort=None):
     vc = f"<div class='box'><b>Včera:</b> {_e(vcera)}</div>" if vcera else ""
-    return f"<!DOCTYPE html><html lang='cs'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>TIPOVACI_BOT</title><style>{CSS}</style></head><body><div class='c'><a href='../index.html'>⬅ Archiv</a><h1>Ranní report {datum}</h1>{vc}<h2>Příležitosti</h2>{_tab_picks(picks, zona)}<h2>Doplňkové trhy (model)</h2>{_tab_doplnkove(dopl, kalib, zona)}<h2>Dosavadní bilance</h2>{_tab_metriky(celkem)}</div></body></html>"
+    return f"<!DOCTYPE html><html lang='cs'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>TIPOVACI_BOT</title><style>{CSS}</style></head><body><div class='c'><a href='../index.html'>⬅ Archiv</a><h1>Ranní report {datum}</h1>{vc}<h2>⭐ Tip dne</h2>{_tab_tipdne(fort, zona)}<h2>🛡️ Jistější tipy</h2>{_tab_jistejsi(fort, zona)}<h2>Příležitosti</h2>{_tab_picks(picks, zona)}<h2>Doplňkové trhy (model)</h2>{_tab_doplnkove(dopl, kalib, zona)}<h2>Nabídka Fortuny vs. model</h2>{_tab_fortuna(fort, zona)}<h2>Dosavadní bilance</h2>{_tab_metriky(celkem)}</div></body></html>"
 
 def sestav_index(reporty, celkem, podle_tieru, podle_sportu, doporuceni):
     arch = "".join(f"<li><a href='reports/{_e(r)}.html'>{_e(r)}</a></li>" for r in reporty) or "<li>zatím nic</li>"
@@ -84,15 +150,42 @@ def _wa_doplnkove(zapasy, zona, max_zapasu=3):
     r = ["", "🧩 *MODEL & BUILDERY*:"]
     for z in (zapasy or [])[:max_zapasu]:
         r.append(f"• *{z['zapas']}*")
-        for l in sorted(z["linie"], key=lambda x: -x["p"])[:2]: r.append(f"   {_noha(l['var'], l['linie'], l['strana'])} → od *{l['min_kurz']}*")
+        for l in sorted(z["linie"], key=lambda x: -x["p"])[:2]: r.append(f"   {_noha(l['var'], l['linie'], l['strana'])} → od *{l['min_kurz']}*" + (f" | 💱 {l['moje_info']}" if l.get("moje_info") else ""))
         if z["builder"]:
             b = z["builder"][0]
             r.append("   BB: " + " + ".join(_noha(*n) for n in b["nohy"]) + f" → od *{b['min_kurz']}* (korelace ×{b['korelace']})")
     return r if len(r) > 2 else []
 
-def wa_ranni(datum, picks, vcera, url, zona, max_radku=6, dopl=None):
+def _wa_fortuna(fort, max_zapasu=4):
+    if not fort: return []
+    z = {}
+    for f in fort: z.setdefault(f["zapas"], []).append(f)
+    r = []
+    tip = sorted((f for f in fort if f.get("tip_dne")), key=lambda f: f["tip_dne"])
+    if tip:
+        r += ["", "⭐ *TIP DNE* (nejlepší z celé nabídky):"]
+        for f in tip:
+            an = f.get("analyza") or {}
+            r.append(f"{f['tip_dne']}. *{f['zapas']}* {IK.get(an.get('verdikt'), '')}\n   {f['trh']} → od *{f['sazej_od']}* (Fortuna {f['kurz_fortuna']}, p {f['p'] * 100:.0f} %, hrana {f['edge'] * 100:+.1f} %, vklad ~{f.get('vklad_pct', 0)} % banku)")
+    js = sorted((f for f in fort if f.get("jistejsi")), key=lambda f: f["jistejsi"])
+    if js:
+        r += ["", "🛡️ *JISTĚJŠÍ* (vyšší úspěšnost, nižší kurz):"]
+        for f in js:
+            an = f.get("analyza") or {}
+            r.append(f"• *{f['zapas']}* {IK.get(an.get('verdikt'), '')}\n   {f['trh']} → od *{f['sazej_od']}* (Fortuna {f['kurz_fortuna']}, p {f['p'] * 100:.0f} %, vklad ~{f.get('vklad_pct', 0)} % banku)")
+    r += ["", "🎯 *NABÍDKA vs. MODEL* (sázej od):"]
+    for zapas, pl in list(z.items())[:max_zapasu]:
+        an = pl[0].get("analyza") or {}
+        r.append(f"• *{zapas}* {IK.get(an.get('verdikt'), '')}")
+        for f in pl[:3]:
+            r.append(f"   {f['trh']} → od *{f['sazej_od']}* (Fortuna {f['kurz_fortuna']}, hrana {f['edge'] * 100:+.1f} %)")
+        if an.get("souhrn"): r.append(f"   _{an['souhrn'][:230]}_")
+        if an.get("riziko"): r.append(f"   ⚠️ {an['riziko'][:140]}")
+    return r
+
+def wa_ranni(datum, picks, vcera, url, zona, max_radku=6, dopl=None, fort=None, log_text=""):
     ikona = {"OK": "✅", "VETO": "⛔"}
-    def radek(p): return f"• *{p['zapas']}* ({p['sport']})\n   👉 {_vyber(p)}: sázej od *{p['min_kurz']}* {ikona.get(p.get('veto'), '❔')}"
+    def radek(p): return f"• *{p['zapas']}* ({p['sport']})\n   👉 {_vyber(p)}: sázej od *{p['min_kurz']}* {ikona.get(p.get('veto'), '❔')}" + (f"\n   💱 {p['moje_info']}" if p.get("moje_info") else "") + (f"\n   📝 {p['analyza']['souhrn'][:220]}" if (p.get("analyza") or {}).get("souhrn") else "")
     live = [p for p in picks if p["rezim"] == "live"]
     paper = [p for p in picks if p["rezim"] != "live"]
     t = [f"🤖 *TIPOVACI_BOT | {datum}*"]
@@ -101,6 +194,8 @@ def wa_ranni(datum, picks, vcera, url, zona, max_radku=6, dopl=None):
     if paper: t += ["", "📝 *SLEDOVAT:*"] + [radek(p) for p in paper[:max_radku]]
     if not picks: t += ["", "Dnes žádná hrana v H2H."] 
     t += _wa_doplnkove(dopl, zona)
+    t += _wa_fortuna(fort)
+    if log_text: t += ["", log_text]
     if url: t += ["", f"📊 Detail: {url}/reports/{datum}.html"]
     return "\n".join(t)
 

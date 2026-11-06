@@ -83,8 +83,8 @@ def najdi_kandidaty(event, sport_nazev, scfg, cfg, ted):
     soft = {b: c for b, c in ceny.items() if b not in vyloucene}
     moje_cfg = cfg.get("moje_kancelare") or []
     moje = [b for b in moje_cfg if b in ceny]
-    if moje_cfg and not moje:
-        return []
+    # Kanceláře, které Odds API nezná (Tipsport, Fortuna...), se doplňují ručně přes data/moje_kurzy.csv
+    # (bot/mojekurzy.py). Dřív se tu zahodil každý zápas, proto vycházelo 0 tipů.
 
     ref = scfg.get("ref", "pinnacle")
     fair_ref, zdroj_ref = None, ""
