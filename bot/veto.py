@@ -1,36 +1,30 @@
-"""Gemini jako KONTROLOR RIZIK (veto), ne jako zdroj hrany.
-
-Dostane už vybrané kandidáty a ověří přes Google Search jen sport-specifické kontroly
-ze sporty.yaml. Odpověď: OK / VETO / NEJISTE + krátký důvod. Při jakékoli chybě
-vrací 'NEOVĚŘENO' (bot nespadne, jen to v reportu uvidíš).
-"""
+"""Gemini jako KONTROLOR RIZIK (veto 2.0), ne jako zdroj hrany."""
 import json
-
 from . import config, kriteria
 
 NEOVERENO = ("NEOVĚŘENO", "Kontrola Gemini neproběhla.", "")
 
-
 def _prompt(polozky):
     return (
-        "Jsi kontrolor rizik před sázkou. Matematický model už našel kurzovou hranu "
-        "(porovnáním s Pinnacle). TY NEODHADUJ pravděpodobnost a nehledej další hranu.\n"
-        "Pro každý zápas ověř přes Google Search POUZE kontroly v poli 'veto_kontroly' k dnešnímu dni "
-        "(pole 'kontext_navic' použij jen pro krátká ověřená fakta do pole kontext, nikdy pro verdikt).\n"
+        "Jsi striktní faktický auditor rizik před sportovní sázkou. Matematický model a kopule už nezávisle "
+        "spočítaly kurzovou hranu a korelaci na okrajových trzích (střely, fauly, rohy, BetBuildery). "
+        "TVŮJ ÚKOL: NEODHADUJ pravděpodobnost, nekomentuj výši kurzu a nezamítej sázku proto, že se ti zdá "
+        "riskantní nebo že jde o 'Méně než' či vysoký kurz. "
+        "Pro každý zápas ověř přes Google Search POUZE tvrdá fyzická fakta k dnešnímu dni:\n"
+        "- Hraje daný hráč, na kterého je vypsaná statistika? Není čerstvě zraněný?\n"
+        "- Nastupuje očekávaný brankář/nadhazovač?\n"
+        "- Nedošlo k náhlé změně rozhodčího?\n\n"
         "Verdikt:\n"
-        "- VETO = nalezeno konkrétní zjištění, kvůli kterému je fér kurz zastaralý "
-        "(chybí klíčový hráč/brankář/nadhazovač, změna sestavy, odložení, odstoupení).\n"
-        "- OK = nic takového nenalezeno.\n"
-        "- NEJISTE = nelze ověřit.\n"
+        "- VETO = Nalezeno potvrzené fyzické zranění klíčového hráče pro danou statistiku, zásadní změna sestavy nebo změna rozhodčího.\n"
+        "- OK = Hráč hraje, sestava odpovídá, žádné náhlé fyzické překážky.\n"
+        "- NEJISTE = Nelze dohledat informace o sestavě.\n\n"
         "Nevymýšlej fakta. Piš česky, konkrétní jména a čísla, žádné fráze.\n"
         'Odpověz POUZE čistým JSON bez Markdownu: {"vysledky":[{"id":"...","verdikt":"OK|VETO|NEJISTE",'
         '"duvod":"max 160 znaků","kontext":"max 240 znaků ověřených faktů, nebo prázdné"}]}\n\n'
         "ZÁPASY:\n" + json.dumps(polozky, ensure_ascii=False)
     )
 
-
 def zkontroluj(kandidati, cfg):
-    """-> {id: (verdikt, duvod, kontext)}"""
     vysl = {k["id"]: NEOVERENO for k in kandidati}
     klic = config.env("GEMINI_API_KEY")
     if not klic or not kandidati:
@@ -45,11 +39,11 @@ def zkontroluj(kandidati, cfg):
         from google import genai
         from google.genai import types
         client = genai.Client(api_key=klic)
-    except Exception as e:  # chybí balíček / špatný klíč
+    except Exception as e:
         print(f"⚠️ Gemini nelze inicializovat: {e}")
         return vysl
 
-    modely = [config.env("GEMINI_MODEL", "gemini-3.1-pro-preview"), "gemini-3-flash"]
+    modely = [config.env("GEMINI_MODEL", "gemini-2.5-pro"), "gemini-2.5-flash"]
     for model in modely:
         try:
             r = client.models.generate_content(
