@@ -1,0 +1,21 @@
+name: Testy
+on:
+  push:
+    paths: ["bot/**", "tests/**", "sporty.yaml", "kriteria/**"]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml numpy
+      - run: python tests/test_offline.py
+      - run: python tests/test_kriteria.py
+      - run: python tests/test_doplnkove.py
+      - run: python tests/test_mojekurzy.py
+      - run: python tests/test_fortuna.py
+      - run: python tests/test_fortuna_hodnota.py
+      - run: python tests/test_tipsteri.py
