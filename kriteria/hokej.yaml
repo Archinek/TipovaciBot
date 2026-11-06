@@ -1,28 +1,10 @@
 sport: hokej
-poznamka: "NHL a evropské ligy se liší (rozměry kluziště, pravidla prodloužení). h2h bývá včetně prodloužení a nájezdů."
+poznamka: "Zaměřit se na korelace v BetBuilderech (tresty + góly) a individuální hráčské statistiky (střely na branku, kanadské body)."
 kriteria:
+  - {id: korelace_tresty_goly, w: 3, typ: kontext, trhy: [builder], co: "Hledej korelaci v BetBuilderu: Týmy s vysokým počtem trestů a zároveň vysokou úspěšností přesilovek generují obrovskou value na Over góly + Over tresty."}
+  - {id: ignoruj_vysoky_kurz_builder, w: 3, typ: veto, trhy: [builder], co: "NEZAMÍTEJ BetBuilder sázky kvůli vyššímu kurzu. Pokud Gaussova kopule v doplnkove.py ukazuje matematickou hranu (edge), kurz je správný a bereme ho."}
   - {id: startujici_brankar, w: 3, typ: veto, co: "Potvrzený startující brankář (jednička vs. záloha), brankář po zranění."}
   - {id: b2b_unava, w: 3, typ: veto, co: "Back-to-back (dva zápasy ve dvou dnech) a třetí zápas ve čtyřech dnech."}
   - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence top centra, obránců první dvojice, kapitána; stav v kádru."}
   - {id: sestava_lajny, w: 2, typ: veto, co: "Potvrzená sestava a lajny, rozcvičení, změny z tréninku."}
-  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 %: najdi zprávu (brankář, zranění)."}
-  - {id: cestovani_casova_pasma, w: 2, typ: veto, co: "Dlouhá cesta mezi pobřežími, počet venkovních zápasů v řadě (road trip)."}
-  - {id: trenerska_zmena, w: 2, typ: veto, co: "Nový trenér nebo vyhazov; efekt nového trenéra bývá krátkodobý."}
   - {id: presilovky_pp_pk, w: 2, typ: kontext, co: "Úspěšnost přesilovek a oslabení obou týmů."}
-  - {id: kvalita_sanci_xg, w: 2, typ: kontext, co: "Expected goals, počet šancí z nebezpečných míst, střely na branku."}
-  - {id: pdo_regrese, w: 2, typ: kontext, co: "PDO a úspěšnost střelby/zákroků: extrémní hodnoty se vrací k průměru."}
-  - {id: brankar_gsax, w: 2, typ: kontext, co: "Zákroky nad očekávání (GSAx) a procento úspěšnosti brankáře."}
-  - {id: rozhodci_tresty, w: 2, typ: kontext, trhy: [totals], co: "Rozhodčí: průměr trestných minut na zápas a tendence k přesilovkám."}
-  - {id: rozmery_kluziste, w: 1, typ: kontext, co: "NHL 61 x 26 m, IHF 60 x 30 m; širší kluziště zvýhodňuje bruslící týmy."}
-  - {id: pravidla_prodlouzeni, w: 2, typ: kontext, trhy: [h2h], co: "Pravidla prodloužení a nájezdů v soutěži; h2h včetně OT nebo jen 60 minut."}
-  - {id: posledni_zmena_domaci, w: 1, typ: kontext, co: "Domácí tým volí poslední střídání (matchup lajn)."}
-  - {id: forma_posledni_10, w: 1, typ: kontext, co: "Posledních 10 zápasů a kvalita soupeřů."}
-  - {id: motivace_playoff, w: 2, typ: kontext, co: "Boj o play-off, jistý postup, tanking, bonusy za pořadí."}
-  - {id: kalendar_odpocinek, w: 2, typ: kontext, co: "Dny odpočinku, počet zápasů za posledních 7 dní."}
-  - {id: nadmorska_vyska_led, w: 1, typ: kontext, co: "Denver a podobné haly (nadmořská výška), kvalita ledu."}
-  - {id: disciplina_suspendace, w: 2, typ: kontext, co: "Disciplinární komise, tresty a pozastavení hráčů."}
-  - {id: h2h_a_derby, w: 1, typ: kontext, co: "Vzájemné zápasy a rivalita: více emocí a trestů."}
-  - {id: tempo_totals, w: 1, typ: kontext, trhy: [totals], co: "Tempo hry, střely za 60 minut, kolik gólů padá v zápasech obou týmů."}
-  - {id: zahranicni_a_olympijska_pauza, w: 1, typ: kontext, co: "Reprezentační přestávky, účast hráčů na turnajích a jejich únava."}
-  - {id: kapitan_a_lajna_chemie, w: 1, typ: kontext, co: "Nově složené lajny, nové posily, doba zapracování."}
-  - {id: dohrani_serie, w: 1, typ: kontext, co: "Stav série play-off, domácí/hostující vítězství, tlak na tým v zápase."}
