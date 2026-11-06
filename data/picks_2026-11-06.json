@@ -2,138 +2,6 @@
   "datum": "2026-11-06",
   "picks": [
     {
-      "id": "d9f354f2d3dae7bf4880a0e48df41c4a|Bromley FC",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_fa_cup",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "d9f354f2d3dae7bf4880a0e48df41c4a",
-      "zapas": "Bromley FC vs Rotherham United",
-      "vyber": "Bromley FC",
-      "start": "2026-11-07T15:00:00+00:00",
-      "fair_p": 0.4826,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 2.07,
-      "min_kurz": 2.13,
-      "best_kurz": 2.18,
-      "best_kniha": "unibet_se",
-      "n_soft": 13,
-      "moje_kurz": "",
-      "edge": 0.0521,
-      "riziko": "",
-      "stake_pct": 1.1,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Bromley FC: férová pravděpodobnost podle Pinnacle 48 %, sázej od 2.13."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "1a2b66dec637d06c15d3902ac9068c1f|Draw",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_germany_bundesliga2",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "1a2b66dec637d06c15d3902ac9068c1f",
-      "zapas": "Holstein Kiel vs Arminia Bielefeld",
-      "vyber": "Draw",
-      "start": "2026-11-07T12:00:00+00:00",
-      "fair_p": 0.2958,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 3.38,
-      "min_kurz": 3.48,
-      "best_kurz": 3.55,
-      "best_kniha": "unibet_nl",
-      "n_soft": 19,
-      "moje_kurz": "",
-      "edge": 0.0499,
-      "riziko": "",
-      "stake_pct": 0.49,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Draw: férová pravděpodobnost podle Pinnacle 30 %, sázej od 3.48."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "007be011bad515e2265b209266be4de5|Clube de Regatas Brasil",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_brazil_serie_b",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "007be011bad515e2265b209266be4de5",
-      "zapas": "Nautico PE vs Clube de Regatas Brasil",
-      "vyber": "Clube de Regatas Brasil",
-      "start": "2026-11-08T00:30:00+00:00",
-      "fair_p": 0.8399,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 1.19,
-      "min_kurz": 1.23,
-      "best_kurz": 1.25,
-      "best_kniha": "unibet_nl",
-      "n_soft": 13,
-      "moje_kurz": "",
-      "edge": 0.0498,
-      "riziko": "",
-      "stake_pct": 3.0,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Clube de Regatas Brasil: férová pravděpodobnost podle Pinnacle 84 %, sázej od 1.23."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
       "id": "5b386dfdf6f76705116fbb4120ee8493|Real Madrid",
       "datum": "2026-11-06",
       "sport": "fotbal",
@@ -144,15 +12,15 @@
       "zapas": "Valencia vs Real Madrid",
       "vyber": "Real Madrid",
       "start": "2026-11-07T20:00:00+00:00",
-      "fair_p": 0.789,
+      "fair_p": 0.7885,
       "fair_zdroj": "pinnacle",
       "fair_kurz": 1.27,
       "min_kurz": 1.31,
       "best_kurz": 1.33,
       "best_kniha": "onexbet",
       "n_soft": 19,
-      "moje_kurz": "",
-      "edge": 0.0494,
+      "moje_kurz": 1.26,
+      "edge": -0.0065,
       "riziko": "",
       "stake_pct": 3.0,
       "veto": "NEOVĚŘENO",
@@ -162,6 +30,7 @@
       "vysledek": "",
       "zisk_paper": "",
       "zisk_real": "",
+      "moje_info": "Fortuna (orientačně) 1.26: edge -0.6 % ❌ pod hranou (potřeba 1.31)",
       "analyza": {
         "verdikt": "NEOVERENO",
         "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
@@ -222,6 +91,95 @@
       "veto_kontext": ""
     },
     {
+      "id": "1a2b66dec637d06c15d3902ac9068c1f|Draw",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_germany_bundesliga2",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "1a2b66dec637d06c15d3902ac9068c1f",
+      "zapas": "Holstein Kiel vs Arminia Bielefeld",
+      "vyber": "Draw",
+      "start": "2026-11-07T12:00:00+00:00",
+      "fair_p": 0.2949,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 3.39,
+      "min_kurz": 3.49,
+      "best_kurz": 3.55,
+      "best_kniha": "unibet_nl",
+      "n_soft": 19,
+      "moje_kurz": "",
+      "edge": 0.0467,
+      "riziko": "",
+      "stake_pct": 0.46,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Draw: férová pravděpodobnost podle Pinnacle 29 %, sázej od 3.49."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "6dd9bd70df940845fd51c7af37ea1510|Degerfors IF",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_sweden_allsvenskan",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "6dd9bd70df940845fd51c7af37ea1510",
+      "zapas": "Degerfors IF vs GAIS",
+      "vyber": "Degerfors IF",
+      "start": "2026-11-07T16:30:00+00:00",
+      "fair_p": 0.3315,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 3.02,
+      "min_kurz": 3.11,
+      "best_kurz": 3.15,
+      "best_kniha": "unibet_se",
+      "n_soft": 19,
+      "moje_kurz": "",
+      "edge": 0.0442,
+      "riziko": "",
+      "stake_pct": 0.51,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Degerfors IF: férová pravděpodobnost podle Pinnacle 33 %, sázej od 3.11.",
+          "Výsledek GAIS: férová pravděpodobnost podle Pinnacle 42 %, sázej od 2.48."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
       "id": "a88341ac02c8103eedc594a2ceb3a400|Wolverhampton Wanderers",
       "datum": "2026-11-06",
       "sport": "fotbal",
@@ -239,8 +197,8 @@
       "best_kurz": 2.33,
       "best_kniha": "leovegas_se",
       "n_soft": 20,
-      "moje_kurz": "",
-      "edge": 0.0408,
+      "moje_kurz": 2.22,
+      "edge": -0.0083,
       "riziko": "",
       "stake_pct": 0.77,
       "veto": "NEOVĚŘENO",
@@ -250,6 +208,7 @@
       "vysledek": "",
       "zisk_paper": "",
       "zisk_real": "",
+      "moje_info": "Fortuna (orientačně) 2.22: edge -0.8 % ❌ pod hranou (potřeba 2.31)",
       "analyza": {
         "verdikt": "NEOVERENO",
         "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
@@ -266,27 +225,27 @@
       "veto_kontext": ""
     },
     {
-      "id": "e6cd4f60d455d26b22be262f1b0ef661|Juventude",
+      "id": "7c28f1e4077d04fa3583bda3be441ec1|Varbergs BoIS",
       "datum": "2026-11-06",
       "sport": "fotbal",
-      "sport_key": "soccer_brazil_serie_b",
+      "sport_key": "soccer_sweden_superettan",
       "tier": "A",
       "rezim": "paper",
-      "event_id": "e6cd4f60d455d26b22be262f1b0ef661",
-      "zapas": "Cuiabá vs Juventude",
-      "vyber": "Juventude",
-      "start": "2026-11-07T23:00:00+00:00",
-      "fair_p": 0.4943,
+      "event_id": "7c28f1e4077d04fa3583bda3be441ec1",
+      "zapas": "GIF Sundsvall vs Varbergs BoIS",
+      "vyber": "Varbergs BoIS",
+      "start": "2026-11-07T14:00:00+00:00",
+      "fair_p": 0.8004,
       "fair_zdroj": "pinnacle",
-      "fair_kurz": 2.02,
-      "min_kurz": 2.08,
-      "best_kurz": 2.1,
-      "best_kniha": "matchbook",
+      "fair_kurz": 1.25,
+      "min_kurz": 1.29,
+      "best_kurz": 1.3,
+      "best_kniha": "unibet_se",
       "n_soft": 13,
       "moje_kurz": "",
-      "edge": 0.0381,
+      "edge": 0.0406,
       "riziko": "",
-      "stake_pct": 0.87,
+      "stake_pct": 3.0,
       "veto": "NEOVĚŘENO",
       "veto_duvod": "Kontrola Gemini neproběhla.",
       "kurz_vzat": "",
@@ -299,7 +258,52 @@
         "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
         "souhrn": "",
         "pro": [
-          "Výsledek Juventude: férová pravděpodobnost podle Pinnacle 49 %, sázej od 2.08."
+          "Výsledek Varbergs BoIS: férová pravděpodobnost podle Pinnacle 80 %, sázej od 1.29."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "6dd9bd70df940845fd51c7af37ea1510|GAIS",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_sweden_allsvenskan",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "6dd9bd70df940845fd51c7af37ea1510",
+      "zapas": "Degerfors IF vs GAIS",
+      "vyber": "GAIS",
+      "start": "2026-11-07T16:30:00+00:00",
+      "fair_p": 0.4154,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 2.41,
+      "min_kurz": 2.48,
+      "best_kurz": 2.5,
+      "best_kniha": "unibet_se",
+      "n_soft": 19,
+      "moje_kurz": "",
+      "edge": 0.0386,
+      "riziko": "",
+      "stake_pct": 0.64,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Degerfors IF: férová pravděpodobnost podle Pinnacle 33 %, sázej od 3.11.",
+          "Výsledek GAIS: férová pravděpodobnost podle Pinnacle 42 %, sázej od 2.48."
         ],
         "proti": [
           "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
@@ -364,17 +368,17 @@
       "zapas": "Sacramento Kings vs San Antonio Spurs",
       "vyber": "Sacramento Kings",
       "start": "2026-11-07T03:10:00+00:00",
-      "fair_p": 0.0903,
+      "fair_p": 0.0904,
       "fair_zdroj": "pinnacle",
-      "fair_kurz": 11.07,
-      "min_kurz": 11.4,
-      "best_kurz": 12.5,
+      "fair_kurz": 11.06,
+      "min_kurz": 11.39,
+      "best_kurz": 12.75,
       "best_kniha": "marathonbet",
       "n_soft": 21,
-      "moje_kurz": 9.2,
-      "edge": -0.1692,
+      "moje_kurz": "",
+      "edge": 0.153,
       "riziko": "osamocený nejvyšší kurz",
-      "stake_pct": 0.28,
+      "stake_pct": 0.33,
       "veto": "NEOVĚŘENO",
       "veto_duvod": "Kontrola Gemini neproběhla.",
       "kurz_vzat": "",
@@ -382,13 +386,519 @@
       "vysledek": "",
       "zisk_paper": "",
       "zisk_real": "",
-      "moje_info": "Fortuna (orientačně) 9.2: edge -16.9 % ❌ pod hranou (potřeba 11.4)",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Sacramento Kings: férová pravděpodobnost podle Pinnacle 9 %, sázej od 11.39."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
       "veto_kontext": ""
     }
   ],
   "vyrazene": [],
   "vcera": "",
   "doplnkove": [
+    {
+      "mu": {
+        "goly": 4.17,
+        "rohy": 9.52,
+        "karty": 3.75,
+        "fauly": 21.71,
+        "sot": 10.75
+      },
+      "liga_prumer": {
+        "goly": 3.11,
+        "rohy": 9.49,
+        "karty": 3.54,
+        "fauly": 22.18,
+        "sot": 9.48
+      },
+      "linie": [
+        {
+          "var": "fauly",
+          "linie": 18.5,
+          "strana": "over",
+          "p": 0.6832,
+          "fair": 1.46,
+          "min_kurz": 1.52
+        },
+        {
+          "var": "fauly",
+          "linie": 18.5,
+          "strana": "under",
+          "p": 0.3168,
+          "fair": 3.16,
+          "min_kurz": 3.28
+        },
+        {
+          "var": "fauly",
+          "linie": 20.5,
+          "strana": "over",
+          "p": 0.553,
+          "fair": 1.81,
+          "min_kurz": 1.88
+        },
+        {
+          "var": "fauly",
+          "linie": 20.5,
+          "strana": "under",
+          "p": 0.447,
+          "fair": 2.24,
+          "min_kurz": 2.33
+        },
+        {
+          "var": "fauly",
+          "linie": 22.5,
+          "strana": "over",
+          "p": 0.4228,
+          "fair": 2.37,
+          "min_kurz": 2.46
+        },
+        {
+          "var": "fauly",
+          "linie": 22.5,
+          "strana": "under",
+          "p": 0.5772,
+          "fair": 1.73,
+          "min_kurz": 1.8
+        },
+        {
+          "var": "fauly",
+          "linie": 24.5,
+          "strana": "over",
+          "p": 0.3053,
+          "fair": 3.28,
+          "min_kurz": 3.41
+        },
+        {
+          "var": "fauly",
+          "linie": 24.5,
+          "strana": "under",
+          "p": 0.6947,
+          "fair": 1.44,
+          "min_kurz": 1.5
+        },
+        {
+          "var": "fauly",
+          "linie": 26.5,
+          "strana": "over",
+          "p": 0.2085,
+          "fair": 4.8,
+          "min_kurz": 4.99
+        },
+        {
+          "var": "fauly",
+          "linie": 26.5,
+          "strana": "under",
+          "p": 0.7915,
+          "fair": 1.26,
+          "min_kurz": 1.31
+        },
+        {
+          "var": "goly",
+          "linie": 2.5,
+          "strana": "over",
+          "p": 0.7859,
+          "fair": 1.27,
+          "min_kurz": 1.32
+        },
+        {
+          "var": "goly",
+          "linie": 2.5,
+          "strana": "under",
+          "p": 0.2141,
+          "fair": 4.67,
+          "min_kurz": 4.86
+        },
+        {
+          "var": "goly",
+          "linie": 3.5,
+          "strana": "over",
+          "p": 0.5992,
+          "fair": 1.67,
+          "min_kurz": 1.74
+        },
+        {
+          "var": "goly",
+          "linie": 3.5,
+          "strana": "under",
+          "p": 0.4008,
+          "fair": 2.5,
+          "min_kurz": 2.59
+        },
+        {
+          "var": "goly",
+          "linie": 4.5,
+          "strana": "over",
+          "p": 0.4045,
+          "fair": 2.47,
+          "min_kurz": 2.57
+        },
+        {
+          "var": "goly",
+          "linie": 4.5,
+          "strana": "under",
+          "p": 0.5955,
+          "fair": 1.68,
+          "min_kurz": 1.75
+        },
+        {
+          "var": "karty",
+          "linie": 2.5,
+          "strana": "over",
+          "p": 0.6831,
+          "fair": 1.46,
+          "min_kurz": 1.52
+        },
+        {
+          "var": "karty",
+          "linie": 2.5,
+          "strana": "under",
+          "p": 0.3169,
+          "fair": 3.16,
+          "min_kurz": 3.28
+        },
+        {
+          "var": "karty",
+          "linie": 3.5,
+          "strana": "over",
+          "p": 0.4948,
+          "fair": 2.02,
+          "min_kurz": 2.1
+        },
+        {
+          "var": "karty",
+          "linie": 3.5,
+          "strana": "under",
+          "p": 0.5052,
+          "fair": 1.98,
+          "min_kurz": 2.06
+        },
+        {
+          "var": "karty",
+          "linie": 4.5,
+          "strana": "over",
+          "p": 0.3267,
+          "fair": 3.06,
+          "min_kurz": 3.18
+        },
+        {
+          "var": "karty",
+          "linie": 4.5,
+          "strana": "under",
+          "p": 0.6733,
+          "fair": 1.49,
+          "min_kurz": 1.54
+        },
+        {
+          "var": "karty",
+          "linie": 5.5,
+          "strana": "over",
+          "p": 0.1988,
+          "fair": 5.03,
+          "min_kurz": 5.23
+        },
+        {
+          "var": "karty",
+          "linie": 5.5,
+          "strana": "under",
+          "p": 0.8012,
+          "fair": 1.25,
+          "min_kurz": 1.3
+        },
+        {
+          "var": "karty",
+          "linie": 6.5,
+          "strana": "over",
+          "p": 0.1126,
+          "fair": 8.88,
+          "min_kurz": 9.24
+        },
+        {
+          "var": "rohy",
+          "linie": 7.5,
+          "strana": "over",
+          "p": 0.7175,
+          "fair": 1.39,
+          "min_kurz": 1.45
+        },
+        {
+          "var": "rohy",
+          "linie": 7.5,
+          "strana": "under",
+          "p": 0.2825,
+          "fair": 3.54,
+          "min_kurz": 3.68
+        },
+        {
+          "var": "rohy",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.5991,
+          "fair": 1.67,
+          "min_kurz": 1.74
+        },
+        {
+          "var": "rohy",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.4009,
+          "fair": 2.49,
+          "min_kurz": 2.59
+        },
+        {
+          "var": "rohy",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.4761,
+          "fair": 2.1,
+          "min_kurz": 2.18
+        },
+        {
+          "var": "rohy",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.5239,
+          "fair": 1.91,
+          "min_kurz": 1.99
+        },
+        {
+          "var": "rohy",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.3598,
+          "fair": 2.78,
+          "min_kurz": 2.89
+        },
+        {
+          "var": "rohy",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.6402,
+          "fair": 1.56,
+          "min_kurz": 1.62
+        },
+        {
+          "var": "rohy",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.2587,
+          "fair": 3.87,
+          "min_kurz": 4.02
+        },
+        {
+          "var": "rohy",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.7413,
+          "fair": 1.35,
+          "min_kurz": 1.4
+        },
+        {
+          "var": "rohy",
+          "linie": 12.5,
+          "strana": "over",
+          "p": 0.177,
+          "fair": 5.65,
+          "min_kurz": 5.87
+        },
+        {
+          "var": "rohy",
+          "linie": 12.5,
+          "strana": "under",
+          "p": 0.823,
+          "fair": 1.22,
+          "min_kurz": 1.26
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "over",
+          "p": 0.8398,
+          "fair": 1.19,
+          "min_kurz": 1.24
+        },
+        {
+          "var": "sot",
+          "linie": 7.5,
+          "strana": "under",
+          "p": 0.1602,
+          "fair": 6.24,
+          "min_kurz": 6.49
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "over",
+          "p": 0.7449,
+          "fair": 1.34,
+          "min_kurz": 1.4
+        },
+        {
+          "var": "sot",
+          "linie": 8.5,
+          "strana": "under",
+          "p": 0.2551,
+          "fair": 3.92,
+          "min_kurz": 4.08
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "over",
+          "p": 0.6315,
+          "fair": 1.58,
+          "min_kurz": 1.65
+        },
+        {
+          "var": "sot",
+          "linie": 9.5,
+          "strana": "under",
+          "p": 0.3685,
+          "fair": 2.71,
+          "min_kurz": 2.82
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "over",
+          "p": 0.5097,
+          "fair": 1.96,
+          "min_kurz": 2.04
+        },
+        {
+          "var": "sot",
+          "linie": 10.5,
+          "strana": "under",
+          "p": 0.4903,
+          "fair": 2.04,
+          "min_kurz": 2.12
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "over",
+          "p": 0.3907,
+          "fair": 2.56,
+          "min_kurz": 2.66
+        },
+        {
+          "var": "sot",
+          "linie": 11.5,
+          "strana": "under",
+          "p": 0.6093,
+          "fair": 1.64,
+          "min_kurz": 1.71
+        }
+      ],
+      "builder": [
+        {
+          "nohy": [
+            [
+              "goly",
+              2.5,
+              "under"
+            ],
+            [
+              "sot",
+              7.5,
+              "under"
+            ]
+          ],
+          "p": 0.0782,
+          "fair": 12.79,
+          "min_kurz": 13.3,
+          "korelace": 2.305
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              2.5,
+              "under"
+            ],
+            [
+              "sot",
+              8.5,
+              "under"
+            ]
+          ],
+          "p": 0.11,
+          "fair": 9.09,
+          "min_kurz": 9.45,
+          "korelace": 2.029
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              2.5,
+              "under"
+            ],
+            [
+              "sot",
+              9.5,
+              "under"
+            ]
+          ],
+          "p": 0.1401,
+          "fair": 7.14,
+          "min_kurz": 7.42,
+          "korelace": 1.809
+        },
+        {
+          "nohy": [
+            [
+              "karty",
+              5.5,
+              "over"
+            ],
+            [
+              "fauly",
+              26.5,
+              "over"
+            ]
+          ],
+          "p": 0.0735,
+          "fair": 13.61,
+          "min_kurz": 14.15,
+          "korelace": 1.797
+        },
+        {
+          "nohy": [
+            [
+              "goly",
+              3.5,
+              "under"
+            ],
+            [
+              "sot",
+              7.5,
+              "under"
+            ]
+          ],
+          "p": 0.1127,
+          "fair": 8.87,
+          "min_kurz": 9.23,
+          "korelace": 1.794
+        }
+      ],
+      "signal": 0.343,
+      "rozhodci": "",
+      "zapas": "AS Roma vs Sassuolo",
+      "home_fd": "Roma",
+      "away_fd": "Sassuolo",
+      "kod": "I1",
+      "liga_klic": "soccer_italy_serie_a",
+      "start": "2026-11-07T19:45:00+00:00"
+    },
     {
       "mu": {
         "goly": 4.39,
@@ -2364,509 +2874,1080 @@
       "kod": "D1",
       "liga_klic": "soccer_germany_bundesliga",
       "start": "2026-11-07T14:30:00+00:00"
-    },
-    {
-      "mu": {
-        "goly": 3.13,
-        "rohy": 8.38,
-        "karty": 4.84,
-        "fauly": 26.07,
-        "sot": 8.76
-      },
-      "liga_prumer": {
-        "goly": 2.64,
-        "rohy": 8.99,
-        "karty": 4.92,
-        "fauly": 26.16,
-        "sot": 8.1
-      },
-      "linie": [
-        {
-          "var": "fauly",
-          "linie": 20.5,
-          "strana": "over",
-          "p": 0.8361,
-          "fair": 1.2,
-          "min_kurz": 1.24
-        },
-        {
-          "var": "fauly",
-          "linie": 20.5,
-          "strana": "under",
-          "p": 0.1639,
-          "fair": 6.1,
-          "min_kurz": 6.34
-        },
-        {
-          "var": "fauly",
-          "linie": 22.5,
-          "strana": "over",
-          "p": 0.7258,
-          "fair": 1.38,
-          "min_kurz": 1.43
-        },
-        {
-          "var": "fauly",
-          "linie": 22.5,
-          "strana": "under",
-          "p": 0.2742,
-          "fair": 3.65,
-          "min_kurz": 3.79
-        },
-        {
-          "var": "fauly",
-          "linie": 24.5,
-          "strana": "over",
-          "p": 0.5929,
-          "fair": 1.69,
-          "min_kurz": 1.75
-        },
-        {
-          "var": "fauly",
-          "linie": 24.5,
-          "strana": "under",
-          "p": 0.4071,
-          "fair": 2.46,
-          "min_kurz": 2.55
-        },
-        {
-          "var": "fauly",
-          "linie": 26.5,
-          "strana": "over",
-          "p": 0.4527,
-          "fair": 2.21,
-          "min_kurz": 2.3
-        },
-        {
-          "var": "fauly",
-          "linie": 26.5,
-          "strana": "under",
-          "p": 0.5473,
-          "fair": 1.83,
-          "min_kurz": 1.9
-        },
-        {
-          "var": "goly",
-          "linie": 1.5,
-          "strana": "over",
-          "p": 0.82,
-          "fair": 1.22,
-          "min_kurz": 1.27
-        },
-        {
-          "var": "goly",
-          "linie": 1.5,
-          "strana": "under",
-          "p": 0.18,
-          "fair": 5.56,
-          "min_kurz": 5.78
-        },
-        {
-          "var": "goly",
-          "linie": 2.5,
-          "strana": "over",
-          "p": 0.6062,
-          "fair": 1.65,
-          "min_kurz": 1.72
-        },
-        {
-          "var": "goly",
-          "linie": 2.5,
-          "strana": "under",
-          "p": 0.3938,
-          "fair": 2.54,
-          "min_kurz": 2.64
-        },
-        {
-          "var": "goly",
-          "linie": 3.5,
-          "strana": "over",
-          "p": 0.3828,
-          "fair": 2.61,
-          "min_kurz": 2.72
-        },
-        {
-          "var": "goly",
-          "linie": 3.5,
-          "strana": "under",
-          "p": 0.6172,
-          "fair": 1.62,
-          "min_kurz": 1.69
-        },
-        {
-          "var": "goly",
-          "linie": 4.5,
-          "strana": "over",
-          "p": 0.2078,
-          "fair": 4.81,
-          "min_kurz": 5.01
-        },
-        {
-          "var": "goly",
-          "linie": 4.5,
-          "strana": "under",
-          "p": 0.7922,
-          "fair": 1.26,
-          "min_kurz": 1.31
-        },
-        {
-          "var": "karty",
-          "linie": 2.5,
-          "strana": "over",
-          "p": 0.7865,
-          "fair": 1.27,
-          "min_kurz": 1.32
-        },
-        {
-          "var": "karty",
-          "linie": 2.5,
-          "strana": "under",
-          "p": 0.2135,
-          "fair": 4.68,
-          "min_kurz": 4.87
-        },
-        {
-          "var": "karty",
-          "linie": 3.5,
-          "strana": "over",
-          "p": 0.6413,
-          "fair": 1.56,
-          "min_kurz": 1.62
-        },
-        {
-          "var": "karty",
-          "linie": 3.5,
-          "strana": "under",
-          "p": 0.3587,
-          "fair": 2.79,
-          "min_kurz": 2.9
-        },
-        {
-          "var": "karty",
-          "linie": 4.5,
-          "strana": "over",
-          "p": 0.4924,
-          "fair": 2.03,
-          "min_kurz": 2.11
-        },
-        {
-          "var": "karty",
-          "linie": 4.5,
-          "strana": "under",
-          "p": 0.5076,
-          "fair": 1.97,
-          "min_kurz": 2.05
-        },
-        {
-          "var": "karty",
-          "linie": 5.5,
-          "strana": "over",
-          "p": 0.3582,
-          "fair": 2.79,
-          "min_kurz": 2.9
-        },
-        {
-          "var": "karty",
-          "linie": 5.5,
-          "strana": "under",
-          "p": 0.6418,
-          "fair": 1.56,
-          "min_kurz": 1.62
-        },
-        {
-          "var": "karty",
-          "linie": 6.5,
-          "strana": "over",
-          "p": 0.2486,
-          "fair": 4.02,
-          "min_kurz": 4.18
-        },
-        {
-          "var": "karty",
-          "linie": 6.5,
-          "strana": "under",
-          "p": 0.7514,
-          "fair": 1.33,
-          "min_kurz": 1.38
-        },
-        {
-          "var": "rohy",
-          "linie": 7.5,
-          "strana": "over",
-          "p": 0.5857,
-          "fair": 1.71,
-          "min_kurz": 1.78
-        },
-        {
-          "var": "rohy",
-          "linie": 7.5,
-          "strana": "under",
-          "p": 0.4143,
-          "fair": 2.41,
-          "min_kurz": 2.51
-        },
-        {
-          "var": "rohy",
-          "linie": 8.5,
-          "strana": "over",
-          "p": 0.4569,
-          "fair": 2.19,
-          "min_kurz": 2.28
-        },
-        {
-          "var": "rohy",
-          "linie": 8.5,
-          "strana": "under",
-          "p": 0.5431,
-          "fair": 1.84,
-          "min_kurz": 1.91
-        },
-        {
-          "var": "rohy",
-          "linie": 9.5,
-          "strana": "over",
-          "p": 0.3376,
-          "fair": 2.96,
-          "min_kurz": 3.08
-        },
-        {
-          "var": "rohy",
-          "linie": 9.5,
-          "strana": "under",
-          "p": 0.6624,
-          "fair": 1.51,
-          "min_kurz": 1.57
-        },
-        {
-          "var": "rohy",
-          "linie": 10.5,
-          "strana": "over",
-          "p": 0.2366,
-          "fair": 4.23,
-          "min_kurz": 4.4
-        },
-        {
-          "var": "rohy",
-          "linie": 10.5,
-          "strana": "under",
-          "p": 0.7634,
-          "fair": 1.31,
-          "min_kurz": 1.36
-        },
-        {
-          "var": "rohy",
-          "linie": 11.5,
-          "strana": "over",
-          "p": 0.1575,
-          "fair": 6.35,
-          "min_kurz": 6.6
-        },
-        {
-          "var": "rohy",
-          "linie": 11.5,
-          "strana": "under",
-          "p": 0.8425,
-          "fair": 1.19,
-          "min_kurz": 1.23
-        },
-        {
-          "var": "sot",
-          "linie": 6.5,
-          "strana": "over",
-          "p": 0.7706,
-          "fair": 1.3,
-          "min_kurz": 1.35
-        },
-        {
-          "var": "sot",
-          "linie": 6.5,
-          "strana": "under",
-          "p": 0.2294,
-          "fair": 4.36,
-          "min_kurz": 4.53
-        },
-        {
-          "var": "sot",
-          "linie": 7.5,
-          "strana": "over",
-          "p": 0.6475,
-          "fair": 1.54,
-          "min_kurz": 1.61
-        },
-        {
-          "var": "sot",
-          "linie": 7.5,
-          "strana": "under",
-          "p": 0.3525,
-          "fair": 2.84,
-          "min_kurz": 2.95
-        },
-        {
-          "var": "sot",
-          "linie": 8.5,
-          "strana": "over",
-          "p": 0.5126,
-          "fair": 1.95,
-          "min_kurz": 2.03
-        },
-        {
-          "var": "sot",
-          "linie": 8.5,
-          "strana": "under",
-          "p": 0.4874,
-          "fair": 2.05,
-          "min_kurz": 2.13
-        },
-        {
-          "var": "sot",
-          "linie": 9.5,
-          "strana": "over",
-          "p": 0.3812,
-          "fair": 2.62,
-          "min_kurz": 2.73
-        },
-        {
-          "var": "sot",
-          "linie": 9.5,
-          "strana": "under",
-          "p": 0.6188,
-          "fair": 1.62,
-          "min_kurz": 1.68
-        },
-        {
-          "var": "sot",
-          "linie": 10.5,
-          "strana": "over",
-          "p": 0.2662,
-          "fair": 3.76,
-          "min_kurz": 3.91
-        },
-        {
-          "var": "sot",
-          "linie": 10.5,
-          "strana": "under",
-          "p": 0.7338,
-          "fair": 1.36,
-          "min_kurz": 1.42
-        },
-        {
-          "var": "sot",
-          "linie": 11.5,
-          "strana": "over",
-          "p": 0.1745,
-          "fair": 5.73,
-          "min_kurz": 5.96
-        },
-        {
-          "var": "sot",
-          "linie": 11.5,
-          "strana": "under",
-          "p": 0.8255,
-          "fair": 1.21,
-          "min_kurz": 1.26
-        }
-      ],
-      "builder": [
-        {
-          "nohy": [
-            [
-              "goly",
-              4.5,
-              "over"
-            ],
-            [
-              "sot",
-              11.5,
-              "over"
-            ]
-          ],
-          "p": 0.0707,
-          "fair": 14.14,
-          "min_kurz": 14.71,
-          "korelace": 1.979
-        },
-        {
-          "nohy": [
-            [
-              "goly",
-              1.5,
-              "under"
-            ],
-            [
-              "sot",
-              6.5,
-              "under"
-            ]
-          ],
-          "p": 0.0786,
-          "fair": 12.72,
-          "min_kurz": 13.23,
-          "korelace": 1.905
-        },
-        {
-          "nohy": [
-            [
-              "goly",
-              4.5,
-              "over"
-            ],
-            [
-              "sot",
-              10.5,
-              "over"
-            ]
-          ],
-          "p": 0.101,
-          "fair": 9.9,
-          "min_kurz": 10.3,
-          "korelace": 1.83
-        },
-        {
-          "nohy": [
-            [
-              "goly",
-              1.5,
-              "under"
-            ],
-            [
-              "sot",
-              7.5,
-              "under"
-            ]
-          ],
-          "p": 0.1073,
-          "fair": 9.32,
-          "min_kurz": 9.69,
-          "korelace": 1.703
-        },
-        {
-          "nohy": [
-            [
-              "goly",
-              3.5,
-              "over"
-            ],
-            [
-              "sot",
-              11.5,
-              "over"
-            ]
-          ],
-          "p": 0.1093,
-          "fair": 9.15,
-          "min_kurz": 9.52,
-          "korelace": 1.649
-        }
-      ],
-      "signal": 0.189,
-      "rozhodci": "",
-      "zapas": "Sporting Lisbon vs Moreirense FC",
-      "home_fd": "Sp Lisbon",
-      "away_fd": "Moreirense",
-      "kod": "P1",
-      "liga_klic": "soccer_portugal_primeira_liga",
-      "start": "2026-11-07T20:30:00+00:00"
     }
   ],
-  "fortuna": []
+  "fortuna": [
+    {
+      "zapas": "Valencia - Real Madrid",
+      "zapas_id": "ufo:mtch:1xj-01q",
+      "sport": "fotbal",
+      "home_fd": "Valencia",
+      "away_fd": "Real Madrid",
+      "noha_klic": "goly|2.5|under|",
+      "home": "Valencia",
+      "away": "Real Madrid",
+      "start": "2026-11-07T20:00:00+00:00",
+      "liga": "1. Španělsko",
+      "kod": "SP1",
+      "trh": "Góly v zápase: méně než 2.5",
+      "typ": "goly",
+      "linie": 2.5,
+      "strana": "under",
+      "kurz_fortuna": 2.75,
+      "p_model": 0.4474,
+      "p_trh": 0.3354,
+      "p": 0.3914,
+      "edge": 0.0763,
+      "sazej_od": 2.64,
+      "fair": 2.55,
+      "mu": [
+        1.17,
+        1.73
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.76,
+          "rohy": 9.66,
+          "fauly": 25.02,
+          "karty": 4.4
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "20.09. D Sociedad 2:3",
+            "11.10. V Santander 2:2",
+            "17.10. D Ath Bilbao 0:0",
+            "24.10. D Villarreal 1:2",
+            "01.11. V Elche 1:0"
+          ],
+          "goly_pro": 0.8,
+          "goly_proti": 1.7,
+          "rohy_pro": 4.3,
+          "rohy_proti": 5.3,
+          "fauly_pro": 11.4,
+          "fauly_proti": 10.4,
+          "zlute_pro": 2.5,
+          "zlute_proti": 2.1
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "20.09. V Ath Madrid 1:2",
+            "10.10. D Villarreal 1:0",
+            "18.10. D Sevilla 4:1",
+            "25.10. V Barcelona 2:1",
+            "01.11. V Santander 3:0"
+          ],
+          "goly_pro": 2.6,
+          "goly_proti": 0.9,
+          "rohy_pro": 6.2,
+          "rohy_proti": 4.4,
+          "fauly_pro": 8.9,
+          "fauly_proti": 13.3,
+          "zlute_pro": 2.2,
+          "zlute_proti": 2.4
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "01.11.2025 Real Madrid 4:0, žluté 2, fauly 21, rohy 8",
+          "08.02.2026 Valencia 0:2, žluté 2, fauly 23, rohy 13"
+        ]
+      },
+      "skore": 0.0366,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.09,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 0.8:1.7, rohy 4.3, fauly 11.4, žluté 2.5. Hosté: góly 2.6:0.9, rohy 6.2, fauly 8.9, žluté 2.2. Průměr ligy na zápas: {'goly': 2.76, 'rohy': 9.66, 'fauly': 25.02, 'karty': 4.4}.",
+        "pro": [
+          "Góly v zápase: méně než 2.5: model 45 % vs. trh 34 %, hrana +7.6 %.",
+          "Góly v zápase: méně než 3.5: model 67 % vs. trh 56 %, hrana +5.3 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "tip_dne": 1
+    },
+    {
+      "zapas": "AS Roma - Sassuolo",
+      "zapas_id": "ufo:mtch:1xi-01f",
+      "sport": "fotbal",
+      "home_fd": "Roma",
+      "away_fd": "Sassuolo",
+      "noha_klic": "goly|4.5|over|",
+      "home": "AS Roma",
+      "away": "Sassuolo",
+      "start": "2026-11-07T19:45:00+00:00",
+      "liga": "1. Itálie",
+      "kod": "I1",
+      "trh": "Góly v zápase: více než 4.5",
+      "typ": "goly",
+      "linie": 4.5,
+      "strana": "over",
+      "kurz_fortuna": 2.95,
+      "p_model": 0.4045,
+      "p_trh": 0.3104,
+      "p": 0.3575,
+      "edge": 0.0545,
+      "sazej_od": 2.89,
+      "fair": 2.8,
+      "mu": [
+        2.86,
+        1.31
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.58,
+          "rohy": 8.99,
+          "fauly": 24.61,
+          "karty": 3.6
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. V Como 0:0",
+            "17.10. D Genoa 2:0",
+            "24.10. V Napoli 3:3",
+            "27.10. D Cagliari 4:2",
+            "31.10. V Udinese 5:2"
+          ],
+          "goly_pro": 2.8,
+          "goly_proti": 1.0,
+          "rohy_pro": 5.8,
+          "rohy_proti": 3.5,
+          "fauly_pro": 11.2,
+          "fauly_proti": 8.5,
+          "zlute_pro": 1.9,
+          "zlute_proti": 1.5
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. D Milan 1:1",
+            "16.10. V Frosinone 2:4",
+            "24.10. V Como 0:2",
+            "27.10. D Lazio 2:6",
+            "02.11. D Fiorentina 2:4"
+          ],
+          "goly_pro": 1.6,
+          "goly_proti": 2.6,
+          "rohy_pro": 4.1,
+          "rohy_proti": 5.4,
+          "fauly_pro": 9.7,
+          "fauly_proti": 12.4,
+          "zlute_pro": 1.4,
+          "zlute_proti": 2.0
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "26.10.2025 Sassuolo 0:1, žluté 5, fauly 34, rohy 12",
+          "10.01.2026 Roma 2:0, žluté 4, fauly 31, rohy 7"
+        ]
+      },
+      "skore": 0.0298,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.7,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 2.8:1.0, rohy 5.8, fauly 11.2, žluté 1.9. Hosté: góly 1.6:2.6, rohy 4.1, fauly 9.7, žluté 1.4. Průměr ligy na zápas: {'goly': 2.58, 'rohy': 8.99, 'fauly': 24.61, 'karty': 3.6}.",
+        "pro": [
+          "Góly v zápase: více než 4.5: model 40 % vs. trh 31 %, hrana +5.5 %.",
+          "Góly v zápase: více než 3.5: model 60 % vs. trh 51 %, hrana +4.0 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "tip_dne": 2
+    },
+    {
+      "zapas": "Valencia - Real Madrid",
+      "zapas_id": "ufo:mtch:1xj-01q",
+      "sport": "fotbal",
+      "home_fd": "Valencia",
+      "away_fd": "Real Madrid",
+      "noha_klic": "goly|3.5|under|",
+      "home": "Valencia",
+      "away": "Real Madrid",
+      "start": "2026-11-07T20:00:00+00:00",
+      "liga": "1. Španělsko",
+      "kod": "SP1",
+      "trh": "Góly v zápase: méně než 3.5",
+      "typ": "goly",
+      "linie": 3.5,
+      "strana": "under",
+      "kurz_fortuna": 1.71,
+      "p_model": 0.671,
+      "p_trh": 0.5603,
+      "p": 0.6156,
+      "edge": 0.0527,
+      "sazej_od": 1.68,
+      "fair": 1.62,
+      "mu": [
+        1.17,
+        1.73
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.76,
+          "rohy": 9.66,
+          "fauly": 25.02,
+          "karty": 4.4
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "20.09. D Sociedad 2:3",
+            "11.10. V Santander 2:2",
+            "17.10. D Ath Bilbao 0:0",
+            "24.10. D Villarreal 1:2",
+            "01.11. V Elche 1:0"
+          ],
+          "goly_pro": 0.8,
+          "goly_proti": 1.7,
+          "rohy_pro": 4.3,
+          "rohy_proti": 5.3,
+          "fauly_pro": 11.4,
+          "fauly_proti": 10.4,
+          "zlute_pro": 2.5,
+          "zlute_proti": 2.1
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "20.09. V Ath Madrid 1:2",
+            "10.10. D Villarreal 1:0",
+            "18.10. D Sevilla 4:1",
+            "25.10. V Barcelona 2:1",
+            "01.11. V Santander 3:0"
+          ],
+          "goly_pro": 2.6,
+          "goly_proti": 0.9,
+          "rohy_pro": 6.2,
+          "rohy_proti": 4.4,
+          "fauly_pro": 8.9,
+          "fauly_proti": 13.3,
+          "zlute_pro": 2.2,
+          "zlute_proti": 2.4
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "01.11.2025 Real Madrid 4:0, žluté 2, fauly 21, rohy 8",
+          "08.02.2026 Valencia 0:2, žluté 2, fauly 23, rohy 13"
+        ]
+      },
+      "skore": 0.0256,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.86,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 0.8:1.7, rohy 4.3, fauly 11.4, žluté 2.5. Hosté: góly 2.6:0.9, rohy 6.2, fauly 8.9, žluté 2.2. Průměr ligy na zápas: {'goly': 2.76, 'rohy': 9.66, 'fauly': 25.02, 'karty': 4.4}.",
+        "pro": [
+          "Góly v zápase: méně než 2.5: model 45 % vs. trh 34 %, hrana +7.6 %.",
+          "Góly v zápase: méně než 3.5: model 67 % vs. trh 56 %, hrana +5.3 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
+      "zapas": "Fulham - Newcastle",
+      "zapas_id": "ufo:mtch:1xi-0a0",
+      "sport": "fotbal",
+      "home_fd": "Fulham",
+      "away_fd": "Newcastle",
+      "noha_klic": "goly|2.5|under|",
+      "home": "Fulham",
+      "away": "Newcastle",
+      "start": "2026-11-07T15:00:00+00:00",
+      "liga": "1. Anglie",
+      "kod": "E0",
+      "trh": "Góly v zápase: méně než 2.5",
+      "typ": "goly",
+      "linie": 2.5,
+      "strana": "under",
+      "kurz_fortuna": 2.17,
+      "p_model": 0.529,
+      "p_trh": 0.4348,
+      "p": 0.4819,
+      "edge": 0.0457,
+      "sazej_od": 2.14,
+      "fair": 2.08,
+      "mu": [
+        1.45,
+        1.11
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.74,
+          "rohy": 9.92,
+          "fauly": 21.96,
+          "karty": 3.81
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "20.09. D Man United 1:1",
+            "10.10. V Ipswich 1:2",
+            "17.10. D Hull 1:0",
+            "24.10. V Coventry 1:0",
+            "31.10. V Aston Villa 1:1"
+          ],
+          "goly_pro": 1.1,
+          "goly_proti": 1.1,
+          "rohy_pro": 6.2,
+          "rohy_proti": 4.7,
+          "fauly_pro": 10.9,
+          "fauly_proti": 8.1,
+          "zlute_pro": 2.1,
+          "zlute_proti": 1.0
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. D Hull 2:1",
+            "12.10. V Coventry 1:4",
+            "17.10. D Aston Villa 0:1",
+            "25.10. V Crystal Palace 2:0",
+            "02.11. D Everton 0:1"
+          ],
+          "goly_pro": 1.2,
+          "goly_proti": 1.7,
+          "rohy_pro": 4.6,
+          "rohy_proti": 5.5,
+          "fauly_pro": 11.4,
+          "fauly_proti": 11.3,
+          "zlute_pro": 2.8,
+          "zlute_proti": 2.2
+        },
+        "rozhodci_v_lize": [
+          {
+            "jmeno": "M Oliver",
+            "zapasu": 36,
+            "zlute": 3.06,
+            "fauly": 22.61,
+            "rohy": 10.89
+          },
+          {
+            "jmeno": "C Kavanagh",
+            "zapasu": 36,
+            "zlute": 4.19,
+            "fauly": 23.19,
+            "rohy": 10.64
+          },
+          {
+            "jmeno": "A Taylor",
+            "zapasu": 31,
+            "zlute": 3.94,
+            "fauly": 20.48,
+            "rohy": 9.81
+          },
+          {
+            "jmeno": "S Barrott",
+            "zapasu": 30,
+            "zlute": 3.6,
+            "fauly": 19.5,
+            "rohy": 9.63
+          },
+          {
+            "jmeno": "S Attwell",
+            "zapasu": 30,
+            "zlute": 4.73,
+            "fauly": 22.47,
+            "rohy": 9.97
+          },
+          {
+            "jmeno": "D England",
+            "zapasu": 29,
+            "zlute": 4.17,
+            "fauly": 21.9,
+            "rohy": 8.93
+          },
+          {
+            "jmeno": "J Gillett",
+            "zapasu": 28,
+            "zlute": 3.82,
+            "fauly": 20.71,
+            "rohy": 9.71
+          },
+          {
+            "jmeno": "P Bankes",
+            "zapasu": 28,
+            "zlute": 4.07,
+            "fauly": 22.93,
+            "rohy": 10.5
+          },
+          {
+            "jmeno": "T Bramall",
+            "zapasu": 27,
+            "zlute": 3.7,
+            "fauly": 21.59,
+            "rohy": 9.7
+          },
+          {
+            "jmeno": "C Pawson",
+            "zapasu": 26,
+            "zlute": 3.04,
+            "fauly": 22.58,
+            "rohy": 9.35
+          },
+          {
+            "jmeno": "A Madley",
+            "zapasu": 26,
+            "zlute": 3.54,
+            "fauly": 23.08,
+            "rohy": 10.54
+          },
+          {
+            "jmeno": "R Jones",
+            "zapasu": 23,
+            "zlute": 3.83,
+            "fauly": 22.39,
+            "rohy": 8.91
+          },
+          {
+            "jmeno": "M Salisbury",
+            "zapasu": 18,
+            "zlute": 4.0,
+            "fauly": 22.17,
+            "rohy": 10.78
+          },
+          {
+            "jmeno": "J Brooks",
+            "zapasu": 18,
+            "zlute": 4.33,
+            "fauly": 20.67,
+            "rohy": 9.33
+          },
+          {
+            "jmeno": "P Tierney",
+            "zapasu": 17,
+            "zlute": 3.65,
+            "fauly": 21.35,
+            "rohy": 8.59
+          },
+          {
+            "jmeno": "S Hooper",
+            "zapasu": 16,
+            "zlute": 4.0,
+            "fauly": 23.44,
+            "rohy": 10.06
+          },
+          {
+            "jmeno": "T Harrington",
+            "zapasu": 15,
+            "zlute": 3.07,
+            "fauly": 20.0,
+            "rohy": 11.27
+          },
+          {
+            "jmeno": "T Robinson",
+            "zapasu": 9,
+            "zlute": 4.0,
+            "fauly": 22.89,
+            "rohy": 10.44
+          },
+          {
+            "jmeno": "F Hallam",
+            "zapasu": 8,
+            "zlute": 3.12,
+            "fauly": 22.25,
+            "rohy": 8.75
+          },
+          {
+            "jmeno": "T Kirk",
+            "zapasu": 7,
+            "zlute": 3.14,
+            "fauly": 24.14,
+            "rohy": 8.86
+          }
+        ],
+        "vzajemne": [
+          "25.10.2025 Newcastle 2:1, žluté 2, fauly 29, rohy 7",
+          "24.05.2026 Fulham 2:0, žluté 4, fauly 19, rohy 12"
+        ]
+      },
+      "skore": 0.025,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.98,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 1.1:1.1, rohy 6.2, fauly 10.9, žluté 2.1. Hosté: góly 1.2:1.7, rohy 4.6, fauly 11.4, žluté 2.8. Průměr ligy na zápas: {'goly': 2.74, 'rohy': 9.92, 'fauly': 21.96, 'karty': 3.81}.",
+        "pro": [
+          "Góly v zápase: méně než 2.5: model 53 % vs. trh 43 %, hrana +4.6 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
+      "zapas": "Hertha - Wolfsburg",
+      "zapas_id": "ufo:mtch:1xi-01j",
+      "sport": "fotbal",
+      "home_fd": "Hertha",
+      "away_fd": "Wolfsburg",
+      "noha_klic": "goly|3.5|under|",
+      "home": "Hertha",
+      "away": "Wolfsburg",
+      "start": "2026-11-07T19:30:00+00:00",
+      "liga": "2. Německo",
+      "kod": "D2",
+      "trh": "Góly v zápase: méně než 3.5",
+      "typ": "goly",
+      "linie": 3.5,
+      "strana": "under",
+      "kurz_fortuna": 1.85,
+      "p_model": 0.6249,
+      "p_trh": 0.5115,
+      "p": 0.5682,
+      "edge": 0.0512,
+      "sazej_od": 1.82,
+      "fair": 1.76,
+      "mu": [
+        1.91,
+        1.2
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.95,
+          "rohy": 10.27,
+          "fauly": 24.25,
+          "karty": 4.52
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Dresden 2:1",
+            "11.10. D Greuther Furth 2:1",
+            "16.10. V Holstein Kiel 0:0",
+            "24.10. D Bielefeld 1:0",
+            "31.10. V Kaiserslautern 3:0"
+          ],
+          "goly_pro": 2.3,
+          "goly_proti": 0.8,
+          "rohy_pro": 5.3,
+          "rohy_proti": 4.8,
+          "fauly_pro": 12.5,
+          "fauly_proti": 12.7,
+          "zlute_pro": 2.4,
+          "zlute_proti": 1.8
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "18.09. D Darmstadt 5:1",
+            "10.10. V Nurnberg 4:4",
+            "17.10. D Heidenheim 3:1",
+            "23.10. V Bochum 1:1",
+            "31.10. D Osnabruck 2:0"
+          ],
+          "goly_pro": 2.5,
+          "goly_proti": 1.4,
+          "rohy_pro": 6.8,
+          "rohy_proti": 6.5,
+          "fauly_pro": 13.5,
+          "fauly_proti": 11.3,
+          "zlute_pro": 2.1,
+          "zlute_proti": 1.5
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.0243,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.51,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 2.3:0.8, rohy 5.3, fauly 12.5, žluté 2.4. Hosté: góly 2.5:1.4, rohy 6.8, fauly 13.5, žluté 2.1. Průměr ligy na zápas: {'goly': 2.95, 'rohy': 10.27, 'fauly': 24.25, 'karty': 4.52}.",
+        "pro": [
+          "Góly v zápase: méně než 3.5: model 62 % vs. trh 51 %, hrana +5.1 %.",
+          "Oba dají gól: NE: model 41 % vs. trh 29 %, hrana +4.7 %.",
+          "Góly v zápase: méně než 2.5: model 41 % vs. trh 30 %, hrana +4.2 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
+      "zapas": "Den Haag - Sparta Rotterdam",
+      "zapas_id": "ufo:mtch:1xi-02v",
+      "sport": "fotbal",
+      "home_fd": "Den Haag",
+      "away_fd": "Sparta Rotterdam",
+      "noha_klic": "goly|3.5|over|",
+      "home": "Den Haag",
+      "away": "Sparta Rotterdam",
+      "start": "2026-11-07T17:45:00+00:00",
+      "liga": "1. Nizozemsko",
+      "kod": "N1",
+      "trh": "Góly v zápase: více než 3.5",
+      "typ": "goly",
+      "linie": 3.5,
+      "strana": "over",
+      "kurz_fortuna": 2.33,
+      "p_model": 0.5021,
+      "p_trh": 0.3972,
+      "p": 0.4496,
+      "edge": 0.0476,
+      "sazej_od": 2.3,
+      "fair": 2.22,
+      "mu": [
+        1.78,
+        1.9
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 3.33,
+          "rohy": 10.41,
+          "fauly": 21.7,
+          "karty": 3.14
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. D Cambuur 1:1",
+            "11.10. V Telstar 2:2",
+            "17.10. D PSV Eindhoven 2:1",
+            "24.10. D Heerenveen 2:3",
+            "01.11. V Zwolle 0:1"
+          ],
+          "goly_pro": 1.3,
+          "goly_proti": 2.2,
+          "rohy_pro": 3.4,
+          "rohy_proti": 5.3,
+          "fauly_pro": 14.1,
+          "fauly_proti": 10.5,
+          "zlute_pro": 1.9,
+          "zlute_proti": 1.6
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. D Heerenveen 0:4",
+            "10.10. V Go Ahead Eagles 3:3",
+            "17.10. D Willem II 3:2",
+            "25.10. D Ajax 1:2",
+            "01.11. V Groningen 3:2"
+          ],
+          "goly_pro": 2.0,
+          "goly_proti": 2.5,
+          "rohy_pro": 5.8,
+          "rohy_proti": 5.7,
+          "fauly_pro": 10.9,
+          "fauly_proti": 9.6,
+          "zlute_pro": 1.6,
+          "zlute_proti": 1.3
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.0241,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.89,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 1.3:2.2, rohy 3.4, fauly 14.1, žluté 1.9. Hosté: góly 2.0:2.5, rohy 5.8, fauly 10.9, žluté 1.6. Průměr ligy na zápas: {'goly': 3.33, 'rohy': 10.41, 'fauly': 21.7, 'karty': 3.14}.",
+        "pro": [
+          "Góly v zápase: více než 3.5: model 50 % vs. trh 40 %, hrana +4.8 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
+      "zapas": "AS Roma - Sassuolo",
+      "zapas_id": "ufo:mtch:1xi-01f",
+      "sport": "fotbal",
+      "home_fd": "Roma",
+      "away_fd": "Sassuolo",
+      "noha_klic": "goly|3.5|over|",
+      "home": "AS Roma",
+      "away": "Sassuolo",
+      "start": "2026-11-07T19:45:00+00:00",
+      "liga": "1. Itálie",
+      "kod": "I1",
+      "trh": "Góly v zápase: více než 3.5",
+      "typ": "goly",
+      "linie": 3.5,
+      "strana": "over",
+      "kurz_fortuna": 1.88,
+      "p_model": 0.5992,
+      "p_trh": 0.5071,
+      "p": 0.5531,
+      "edge": 0.0399,
+      "sazej_od": 1.87,
+      "fair": 1.81,
+      "mu": [
+        2.86,
+        1.31
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.58,
+          "rohy": 8.99,
+          "fauly": 24.61,
+          "karty": 3.6
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. V Como 0:0",
+            "17.10. D Genoa 2:0",
+            "24.10. V Napoli 3:3",
+            "27.10. D Cagliari 4:2",
+            "31.10. V Udinese 5:2"
+          ],
+          "goly_pro": 2.8,
+          "goly_proti": 1.0,
+          "rohy_pro": 5.8,
+          "rohy_proti": 3.5,
+          "fauly_pro": 11.2,
+          "fauly_proti": 8.5,
+          "zlute_pro": 1.9,
+          "zlute_proti": 1.5
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. D Milan 1:1",
+            "16.10. V Frosinone 2:4",
+            "24.10. V Como 0:2",
+            "27.10. D Lazio 2:6",
+            "02.11. D Fiorentina 2:4"
+          ],
+          "goly_pro": 1.6,
+          "goly_proti": 2.6,
+          "rohy_pro": 4.1,
+          "rohy_proti": 5.4,
+          "fauly_pro": 9.7,
+          "fauly_proti": 12.4,
+          "zlute_pro": 1.4,
+          "zlute_proti": 2.0
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "26.10.2025 Sassuolo 0:1, žluté 5, fauly 34, rohy 12",
+          "10.01.2026 Roma 2:0, žluté 4, fauly 31, rohy 7"
+        ]
+      },
+      "skore": 0.0221,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.13,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 2.8:1.0, rohy 5.8, fauly 11.2, žluté 1.9. Hosté: góly 1.6:2.6, rohy 4.1, fauly 9.7, žluté 1.4. Průměr ligy na zápas: {'goly': 2.58, 'rohy': 8.99, 'fauly': 24.61, 'karty': 3.6}.",
+        "pro": [
+          "Góly v zápase: více než 4.5: model 40 % vs. trh 31 %, hrana +5.5 %.",
+          "Góly v zápase: více než 3.5: model 60 % vs. trh 51 %, hrana +4.0 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
+      "zapas": "Hertha - Wolfsburg",
+      "zapas_id": "ufo:mtch:1xi-01j",
+      "sport": "fotbal",
+      "home_fd": "Hertha",
+      "away_fd": "Wolfsburg",
+      "noha_klic": "btts|None|ne|",
+      "home": "Hertha",
+      "away": "Wolfsburg",
+      "start": "2026-11-07T19:30:00+00:00",
+      "liga": "2. Německo",
+      "kod": "D2",
+      "trh": "Oba dají gól: NE",
+      "typ": "btts",
+      "linie": null,
+      "strana": "ne",
+      "kurz_fortuna": 3.0,
+      "p_model": 0.4062,
+      "p_trh": 0.2917,
+      "p": 0.3489,
+      "edge": 0.0467,
+      "sazej_od": 2.96,
+      "fair": 2.87,
+      "mu": [
+        1.91,
+        1.2
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.95,
+          "rohy": 10.27,
+          "fauly": 24.25,
+          "karty": 4.52
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Dresden 2:1",
+            "11.10. D Greuther Furth 2:1",
+            "16.10. V Holstein Kiel 0:0",
+            "24.10. D Bielefeld 1:0",
+            "31.10. V Kaiserslautern 3:0"
+          ],
+          "goly_pro": 2.3,
+          "goly_proti": 0.8,
+          "rohy_pro": 5.3,
+          "rohy_proti": 4.8,
+          "fauly_pro": 12.5,
+          "fauly_proti": 12.7,
+          "zlute_pro": 2.4,
+          "zlute_proti": 1.8
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "18.09. D Darmstadt 5:1",
+            "10.10. V Nurnberg 4:4",
+            "17.10. D Heidenheim 3:1",
+            "23.10. V Bochum 1:1",
+            "31.10. D Osnabruck 2:0"
+          ],
+          "goly_pro": 2.5,
+          "goly_proti": 1.4,
+          "rohy_pro": 6.8,
+          "rohy_proti": 6.5,
+          "fauly_pro": 13.5,
+          "fauly_proti": 11.3,
+          "zlute_pro": 2.1,
+          "zlute_proti": 1.5
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.022,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.58,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 2.3:0.8, rohy 5.3, fauly 12.5, žluté 2.4. Hosté: góly 2.5:1.4, rohy 6.8, fauly 13.5, žluté 2.1. Průměr ligy na zápas: {'goly': 2.95, 'rohy': 10.27, 'fauly': 24.25, 'karty': 4.52}.",
+        "pro": [
+          "Góly v zápase: méně než 3.5: model 62 % vs. trh 51 %, hrana +5.1 %.",
+          "Oba dají gól: NE: model 41 % vs. trh 29 %, hrana +4.7 %.",
+          "Góly v zápase: méně než 2.5: model 41 % vs. trh 30 %, hrana +4.2 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
+      "zapas": "Hertha - Wolfsburg",
+      "zapas_id": "ufo:mtch:1xi-01j",
+      "sport": "fotbal",
+      "home_fd": "Hertha",
+      "away_fd": "Wolfsburg",
+      "noha_klic": "goly|2.5|under|",
+      "home": "Hertha",
+      "away": "Wolfsburg",
+      "start": "2026-11-07T19:30:00+00:00",
+      "liga": "2. Německo",
+      "kod": "D2",
+      "trh": "Góly v zápase: méně než 2.5",
+      "typ": "goly",
+      "linie": 2.5,
+      "strana": "under",
+      "kurz_fortuna": 2.95,
+      "p_model": 0.4058,
+      "p_trh": 0.3007,
+      "p": 0.3533,
+      "edge": 0.0422,
+      "sazej_od": 2.92,
+      "fair": 2.83,
+      "mu": [
+        1.91,
+        1.2
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.95,
+          "rohy": 10.27,
+          "fauly": 24.25,
+          "karty": 4.52
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Dresden 2:1",
+            "11.10. D Greuther Furth 2:1",
+            "16.10. V Holstein Kiel 0:0",
+            "24.10. D Bielefeld 1:0",
+            "31.10. V Kaiserslautern 3:0"
+          ],
+          "goly_pro": 2.3,
+          "goly_proti": 0.8,
+          "rohy_pro": 5.3,
+          "rohy_proti": 4.8,
+          "fauly_pro": 12.5,
+          "fauly_proti": 12.7,
+          "zlute_pro": 2.4,
+          "zlute_proti": 1.8
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "18.09. D Darmstadt 5:1",
+            "10.10. V Nurnberg 4:4",
+            "17.10. D Heidenheim 3:1",
+            "23.10. V Bochum 1:1",
+            "31.10. D Osnabruck 2:0"
+          ],
+          "goly_pro": 2.5,
+          "goly_proti": 1.4,
+          "rohy_pro": 6.8,
+          "rohy_proti": 6.5,
+          "fauly_pro": 13.5,
+          "fauly_proti": 11.3,
+          "zlute_pro": 2.1,
+          "zlute_proti": 1.5
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.0213,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.54,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 2.3:0.8, rohy 5.3, fauly 12.5, žluté 2.4. Hosté: góly 2.5:1.4, rohy 6.8, fauly 13.5, žluté 2.1. Průměr ligy na zápas: {'goly': 2.95, 'rohy': 10.27, 'fauly': 24.25, 'karty': 4.52}.",
+        "pro": [
+          "Góly v zápase: méně než 3.5: model 62 % vs. trh 51 %, hrana +5.1 %.",
+          "Oba dají gól: NE: model 41 % vs. trh 29 %, hrana +4.7 %.",
+          "Góly v zápase: méně než 2.5: model 41 % vs. trh 30 %, hrana +4.2 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
+      "zapas": "Cordoba CF - Ceuta",
+      "zapas_id": "ufo:mtch:1xj-01e",
+      "sport": "fotbal",
+      "home_fd": "Cordoba",
+      "away_fd": "Ceuta",
+      "noha_klic": "goly_dom|2.5|under|",
+      "home": "Cordoba CF",
+      "away": "Ceuta",
+      "start": "2026-11-07T17:30:00+00:00",
+      "liga": "2. Španělsko",
+      "kod": "SP2",
+      "trh": "Góly domácích: méně než 2.5",
+      "typ": "goly_dom",
+      "linie": 2.5,
+      "strana": "under",
+      "kurz_fortuna": 1.57,
+      "p_model": 0.7197,
+      "p_trh": 0.6013,
+      "p": 0.6605,
+      "edge": 0.037,
+      "sazej_od": 1.56,
+      "fair": 1.51,
+      "mu": [
+        1.84,
+        1.14
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.65,
+          "rohy": 9.4,
+          "fauly": 26.88,
+          "karty": 5.22
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "05.10. D Tenerife 3:2",
+            "10.10. V Eldense 1:2",
+            "16.10. V Leganes 1:0",
+            "24.10. D Eibar 2:0",
+            "31.10. V Celta B 2:2"
+          ],
+          "goly_pro": 1.5,
+          "goly_proti": 1.8,
+          "rohy_pro": 6.5,
+          "rohy_proti": 3.6,
+          "fauly_pro": 15.4,
+          "fauly_proti": 14.2,
+          "zlute_pro": 3.5,
+          "zlute_proti": 3.0
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "04.10. V Castellon 1:1",
+            "10.10. D Sabadell 1:2",
+            "18.10. D Oviedo 1:2",
+            "25.10. V Cadiz 1:3",
+            "01.11. D Sp Gijon 0:2"
+          ],
+          "goly_pro": 0.9,
+          "goly_proti": 2.0,
+          "rohy_pro": 6.9,
+          "rohy_proti": 2.7,
+          "fauly_pro": 13.7,
+          "fauly_proti": 18.0,
+          "zlute_pro": 2.9,
+          "zlute_proti": 2.9
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "02.11.2025 Cordoba 2:0, žluté 6, fauly 35, rohy 9",
+          "25.02.2026 Ceuta 3:2, žluté 6, fauly 36, rohy 9"
+        ]
+      },
+      "skore": 0.0169,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.62,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 1.5:1.8, rohy 6.5, fauly 15.4, žluté 3.5. Hosté: góly 0.9:2.0, rohy 6.9, fauly 13.7, žluté 2.9. Průměr ligy na zápas: {'goly': 2.65, 'rohy': 9.4, 'fauly': 26.88, 'karty': 5.22}.",
+        "pro": [
+          "Góly domácích: méně než 2.5: model 72 % vs. trh 60 %, hrana +3.7 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "jistejsi": 1
+    }
+  ]
 }
