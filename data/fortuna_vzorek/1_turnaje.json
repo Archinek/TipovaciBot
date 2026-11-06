@@ -31,33 +31,28 @@
   ]
  },
  {
-  "id": "ufo:tour:00-03m",
+  "id": "ufo:tour:00-0pn",
   "sportId": "ufo:sprt:00",
-  "categoryId": "ufo:ctgr:00-00",
-  "name": "1. Anglie",
+  "categoryId": "ufo:ctgr:00-2o",
+  "name": "Japonsko - Football League",
   "sportSeoName": "fotbal",
-  "categorySeoName": "anglie-4",
-  "seoName": "1-anglie",
+  "categorySeoName": "japonsko",
+  "seoName": "japonsko-football-league",
   "icon": "default.png",
   "sportOrder": 3,
-  "categoryOrder": 5,
-  "order": 5,
-  "fixturesCount": 21,
-  "listUnderSport": true,
+  "categoryOrder": 1000000,
+  "order": 12500,
+  "fixturesCount": 4,
+  "listUnderSport": false,
   "filters": [
    "today",
-   "3h",
    "all",
-   "tomorrow",
-   "1h",
-   "tomorrow_1",
-   "live"
+   "tomorrow"
   ],
   "sportradarIds": [
-   "17"
+   "1824"
   ],
   "features": [
-   "OUTRIGHTS",
    "STATISTICS",
    "MATCHES"
   ]

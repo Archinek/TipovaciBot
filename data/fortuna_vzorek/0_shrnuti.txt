@@ -1,7 +1,7 @@
-turnajů dnes (se zápasy): 114
-z toho fotbalových: 28
+turnajů dnes (se zápasy): 104
+z toho fotbalových: 22
 zápasů ve vzorku: 18
-tenis se esy uložen (7_tenis_esa.json): ano
-různých názvů trhů: 1505
+tenis se esy uložen (7_tenis_esa.json): ne
+různých názvů trhů: 1446
 top-ligových zápasů uloženo (5_top_liga_*.json): 0
-požadavků: 54
+požadavků: 55
