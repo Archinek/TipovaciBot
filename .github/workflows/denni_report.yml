@@ -46,13 +46,14 @@ jobs:
           WA_GROUP_ID: ${{ secrets.WA_GROUP_ID }}
           GITHUB_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           RESEND_WA_ONLY: ${{ inputs.resend_wa_only }}
-        run: python -m bot.main morning
+        run: FORCE_RUN=1 python -m bot.main morning
 
       - name: 5. Ulozeni HTML reportu, zalohy a chyb na GitHub
         run: |
           git config user.name "TipovaciBot"
           git config user.email "bot@tipovacibot.local"
           touch lekce_z_chyb.txt
-          git add index.html dnesni_report.html archiv/ lekce_z_chyb.txt data/
+          mkdir -p data archiv docs
+          git add -A
           git diff --staged --quiet || git commit -m "📊 Novy report a vyhodnoceni $(date +'%Y-%m-%d')"
           git push
