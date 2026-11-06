@@ -1,0 +1,18 @@
+sport: plazovy_volejbal
+poznamka: "Venkovní sport: počasí rozhoduje. Dvojice se mění častěji než u jiných sportů."
+kriteria:
+  - {id: pocasi_vitr_slunce, w: 3, typ: veto, co: "Vítr, slunce, teplota, déšť; kdo má výhodu strany a podání."}
+  - {id: zmena_dvojice, w: 3, typ: veto, co: "Nová dvojice nebo nový partner, doba zapracování."}
+  - {id: zdravotni_stav, w: 3, typ: veto, co: "Zranění a odstoupení."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více."}
+  - {id: unava_dlouhe_zapasy, w: 2, typ: veto, co: "Dlouhé předchozí zápasy a počet zápasů za den."}
+  - {id: servis_vitr_strana, w: 2, typ: kontext, co: "Podání proti větru a střídání stran."}
+  - {id: blok_obrana_nasazeni, w: 2, typ: kontext, co: "Rozdělení rolí (blokař/obránce) a efektivita."}
+  - {id: forma_poslednich_5, w: 1, typ: kontext, co: "Posledních 5 turnajů a kvalita soupeřů."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemná bilance."}
+  - {id: cestovani_jetlag, w: 2, typ: kontext, co: "Cestování mezi kontinenty a aklimatizace."}
+  - {id: uroven_turnaje, w: 1, typ: kontext, co: "Úroveň turnaje a motivace."}
+  - {id: motivace_olympiada, w: 1, typ: kontext, co: "Olympijská kvalifikace a ranking."}
+  - {id: domaci_publikum, w: 1, typ: kontext, co: "Domácí pár a publikum."}
+  - {id: pisek_dvorec, w: 1, typ: kontext, co: "Písek, hloubka a teplota podkladu."}
+  - {id: cas_zapasu_slunce, w: 2, typ: kontext, co: "Čas zápasu a poloha slunce."}

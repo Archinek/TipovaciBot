@@ -1,0 +1,25 @@
+sport: esport_lol
+poznamka: "League of Legends. Patch a draft rozhodují; rozdíl mezi regiony (LCK/LPL/LEC/LCS) je při mezinárodních turnajích zásadní."
+kriteria:
+  - {id: patch_meta, w: 3, typ: veto, co: "Aktuální patch a změny v meta; který tým se přizpůsobuje."}
+  - {id: roster_substituce, w: 3, typ: veto, co: "Změna sestavy, náhradník, nemoc, vízový problém."}
+  - {id: bo_format, w: 3, typ: kontext, co: "BO1, BO3 nebo BO5 a výkon týmu v daném formátu."}
+  - {id: integrita_manipulace, w: 3, typ: veto, co: "Podezřelé kurzy a integrity zprávy, nižší liga."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více od otevření."}
+  - {id: draft_tendence, w: 3, typ: kontext, co: "Preferované picky a bany, tvrdé pickové priority."}
+  - {id: forma_synergie, w: 2, typ: kontext, co: "Forma posledních 10 zápasů a týmová synergie."}
+  - {id: lane_matchupy, w: 2, typ: kontext, co: "Souboje lajn: top, jungle, mid, bot, support."}
+  - {id: objektivy_draci_baron, w: 2, typ: kontext, co: "Kontrola dračích a Baron objektivů, gold diff v 15. minutě."}
+  - {id: early_vs_scaling, w: 2, typ: kontext, co: "Rychlý začátek vs. pozdní fáze hry."}
+  - {id: strana_blue_red, w: 2, typ: kontext, co: "Bilance za modrou a červenou stranu a výhoda draftu."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemné zápasy a poslední setkání."}
+  - {id: region_sila, w: 2, typ: kontext, co: "Rozdíl úrovně regionů při mezinárodních turnajích."}
+  - {id: mezinarodni_turnaje, w: 2, typ: kontext, co: "Výkon na mezinárodních turnajích (MSI, Worlds)."}
+  - {id: coaching_staff, w: 1, typ: kontext, co: "Trenér, analytik a změny ve štábu."}
+  - {id: jungle_pathing, w: 1, typ: kontext, co: "Dráhy jungler a prioritní objektivy."}
+  - {id: solo_queue_scrimy, w: 1, typ: kontext, co: "Zprávy ze scrimů, forma ve vysokém ELO."}
+  - {id: online_lag_cas, w: 1, typ: kontext, co: "Online hra, latence, časová pásma."}
+  - {id: tilt_a_psychika, w: 1, typ: kontext, co: "Psychika po prohrách a tlak."}
+  - {id: first_blood_teamfight, w: 1, typ: kontext, co: "First blood, týmové bitvy a rozhodovací momenty."}
+  - {id: kontrakt_a_transfery, w: 2, typ: kontext, co: "Kontrakty, přestupy a vnitrotýmové problémy."}
+  - {id: burnout, w: 1, typ: kontext, co: "Vyčerpání a turnajová únava."}

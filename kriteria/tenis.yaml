@@ -1,0 +1,33 @@
+sport: tenis
+poznamka: "Největší riziko: odstoupení a zdravotní stav. Ověř pravidla kanceláře pro odstoupení před ukončením zápasu."
+kriteria:
+  - {id: zdravotni_stav, w: 3, typ: veto, co: "Zranění, léčení na kurtu, bandáže v posledním zápase, vyjádření hráče."}
+  - {id: odstoupeni_historie, w: 3, typ: veto, co: "Odstoupení nebo skreč v posledních 6 měsících; riziko nedohrání zápasu."}
+  - {id: pravidla_odstoupeni_kancelare, w: 3, typ: veto, co: "Jak kancelář vyhodnotí skreč nebo odstoupení před zápasem (sázka propadá, nebo se vrací)."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 % od otevření: hledej důvod (zranění, rozcvičení, zprávy)."}
+  - {id: unava_predchozi_zapasy, w: 3, typ: veto, co: "Hodiny na kurtu v posledních 3 zápasech a dnech; maratonské zápasy, 5 setů."}
+  - {id: povrch_preference, w: 3, typ: kontext, co: "Bilance na povrchu (antuka, tráva, hard, indoor) za 12 měsíců a kariéru."}
+  - {id: forma_poslednich_10, w: 2, typ: kontext, co: "Posledních 10 zápasů a kvalita soupeřů, ne jen výhry."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemná bilance, především na stejném povrchu a v posledních 2 letech."}
+  - {id: servis_a_hold, w: 2, typ: kontext, co: "Procento prvního podání, body z prvního podání, hold %, esa a dvojchyby."}
+  - {id: return_game, w: 2, typ: kontext, co: "Break %, body z returnu proti druhému podání."}
+  - {id: podminky_pocasi, w: 2, typ: kontext, co: "Vítr, vedro, vlhkost, večerní vs. denní zápas, zavřená střecha."}
+  - {id: rychlost_kurtu, w: 2, typ: kontext, co: "Rychlost kurtu (CPI), odskok, výška nad mořem; sedí hráči styl?"}
+  - {id: indoor_outdoor, w: 1, typ: kontext, co: "Hala vs. venku a bilance hráčů."}
+  - {id: nadmorska_vyska, w: 1, typ: kontext, co: "Vysoko položené kurty (Madrid, Bogota, Gstaad) ovlivňují rychlost míčů."}
+  - {id: micky, w: 1, typ: kontext, co: "Značka a rychlost míčů v turnaji."}
+  - {id: cestovani_zmena_povrchu, w: 2, typ: kontext, co: "Čerstvý přesun mezi kontinenty či povrchy, jet lag, aklimatizace."}
+  - {id: motivace_ranking_body, w: 2, typ: kontext, co: "Obhajoba bodů, boj o kvalifikaci na Finals, vzdálenost k hranici top 10."}
+  - {id: format_best_of_3_5, w: 2, typ: kontext, co: "Best of 3 nebo 5 setů: preferuje to favorita; kondice hráčů."}
+  - {id: tiebreak_a_deciding_set, w: 1, typ: kontext, co: "Bilance v tiebreacích a rozhodujících setech."}
+  - {id: tlak_a_publikum, w: 1, typ: kontext, co: "Domácí hráč, atmosféra, tlak očekávání, finále Grand Slamu."}
+  - {id: styl_matchup, w: 2, typ: kontext, co: "Střet stylů: útočník vs. protihráč, kopaný forhend, bekhend, praváci vs. leváci."}
+  - {id: leva_vs_prava, w: 1, typ: kontext, co: "Levák proti pravákovi a bilance obou hráčů."}
+  - {id: cas_a_poradi_zapasu, w: 1, typ: kontext, co: "Zápas po deštivém zpoždění, pozdní večerní start, přeložené zápasy."}
+  - {id: kvalifikant_unava, w: 2, typ: kontext, co: "Kvalifikant s 2-3 zápasy v nohách vs. odpočatý nasazený."}
+  - {id: trenerska_zmena, w: 1, typ: kontext, co: "Nový trenér, rozchod s koučem, rodinné důvody."}
+  - {id: osobni_duvody, w: 2, typ: kontext, co: "Zdravotní nebo osobní zprávy (narození dítěte, úmrtí v rodině)."}
+  - {id: kondice_5_setu, w: 2, typ: kontext, co: "Kondice a výkon ve čtvrtém a pátém setu."}
+  - {id: davis_cup_formaty, w: 1, typ: kontext, co: "Týmové soutěže: motivace jinde než na turnajích, kapitán, pořadí zápasů."}
+  - {id: medical_timeout_historie, w: 1, typ: kontext, co: "Počet lékařských oddechových časů v posledních zápasech."}
+  - {id: varovani_manipulace, w: 3, typ: veto, co: "Podezřelé kurzové pohyby nebo výskyt zápasu na integrity zprávách (nižší kategorie)."}

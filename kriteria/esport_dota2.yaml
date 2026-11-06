@@ -1,0 +1,25 @@
+sport: esport_dota2
+poznamka: "Dota 2. Patch (hero meta), draft a formát BO3/BO5 jsou rozhodující. Pozor na kvalifikace s nízkým tierem."
+kriteria:
+  - {id: patch_meta, w: 3, typ: veto, co: "Nový patch, změny hrdinů a vliv na meta."}
+  - {id: roster_standin, w: 3, typ: veto, co: "Změna sestavy, náhradník, nemoc, vízové potíže."}
+  - {id: bo_format, w: 3, typ: kontext, co: "BO1, BO3, BO5 a bilance týmu v daném formátu."}
+  - {id: integrita_manipulace, w: 3, typ: veto, co: "Podezřelé kurzy a integrity zprávy."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více."}
+  - {id: draft_hero_pool, w: 3, typ: kontext, co: "Hero pool, signature hrdinové, bany, přizpůsobení."}
+  - {id: forma_poslednich_10, w: 2, typ: kontext, co: "Posledních 10 zápasů a kvalita soupeřů."}
+  - {id: regionalni_sila, w: 2, typ: kontext, co: "Síla regionu při mezinárodních turnajích (EU, CIS, SEA, CN, SA, NA)."}
+  - {id: lane_matchupy, w: 2, typ: kontext, co: "Souboje lajn a laning fáze."}
+  - {id: pick_priority, w: 2, typ: kontext, co: "Priorita pickování a první pick."}
+  - {id: teamfight_synergie, w: 2, typ: kontext, co: "Synergie hrdinů a kvalita teamfightů."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemné zápasy a poslední setkání."}
+  - {id: lan_vs_online, w: 2, typ: kontext, co: "LAN vs. online a výkonnost týmu."}
+  - {id: tlak_ti_kvalifikace, w: 2, typ: kontext, co: "Motivace na kvalifikace a přímé pozvánky (TI)."}
+  - {id: roshan_kontrola, w: 1, typ: kontext, co: "Kontrola Roshana a objektivů."}
+  - {id: carry_offlane_pozice, w: 1, typ: kontext, co: "Hráči na pozici carry/offlane a jejich forma."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Trenér a změna taktiky."}
+  - {id: delka_hry, w: 1, typ: kontext, co: "Průměrná délka hry a styl (rychlý vs. pozdní)."}
+  - {id: ping_servery, w: 1, typ: kontext, co: "Latence, server a region."}
+  - {id: unava_turnajova, w: 2, typ: kontext, co: "Turnajová únava a nepřetržité zápasy."}
+  - {id: scrimy_priprava, w: 1, typ: kontext, co: "Scrimy, bootcamp a příprava."}
+  - {id: kontrakt_a_zmeny, w: 1, typ: kontext, co: "Kontrakty, přestupy a změny v organizaci."}

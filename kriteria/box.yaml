@@ -1,0 +1,23 @@
+sport: box
+poznamka: "Pozor na domácí rozhodčí a rozhodnutí na body. Kurzy bývají dlouho před zápasem, hodně se mění."
+kriteria:
+  - {id: vaha_weigh_in, w: 3, typ: veto, co: "Weigh-in: překročení limitu, dehydratace, nemoc."}
+  - {id: zmena_souperu, w: 3, typ: veto, co: "Náhrada soupeře, změna kategorie, odložení."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 % od otevření."}
+  - {id: zraneni_kut_rez, w: 3, typ: veto, co: "Zranění v přípravě, rozseknutí obočí, ruce, zrušené sparingy."}
+  - {id: rozhodci_domaci_misto, w: 3, typ: kontext, co: "Domácí rozhodčí a bodovací soudci: historie sporných verdiktů u promotéra."}
+  - {id: styl_a_matchup, w: 3, typ: kontext, co: "Boxer vs. puncher, tlak, levák proti pravákovi."}
+  - {id: reach_a_vyska, w: 2, typ: kontext, co: "Rozpětí paží, výška, dosah jabu."}
+  - {id: sila_uderu_ko, w: 2, typ: kontext, co: "Procento KO a tvrdost úderů soupeře."}
+  - {id: brada_a_ko_historie, w: 2, typ: kontext, co: "Dřívější KO prohry, věk, opakované otřesy."}
+  - {id: vek_a_pokles, w: 2, typ: kontext, co: "Věk, počet kol v kariéře, trend výkonů."}
+  - {id: ring_rust, w: 2, typ: kontext, co: "Dlouhá pauza od zápasu, aktivita za rok."}
+  - {id: kardio_pozdni_kola, w: 2, typ: kontext, co: "Výkon v 8. až 12. kole."}
+  - {id: format_kola, w: 1, typ: kontext, co: "10 nebo 12 kol; kratší zápas pomáhá puncherům."}
+  - {id: trener_zmena, w: 2, typ: kontext, co: "Nový trenér, rozchod s týmem."}
+  - {id: kvalita_soupere, w: 2, typ: kontext, co: "Kvalita předchozích soupeřů: tvrdý nebo budovaný rekord."}
+  - {id: revans_a_psychika, w: 1, typ: kontext, co: "Odveta, motivace po porážce."}
+  - {id: velikost_ringu, w: 1, typ: kontext, co: "Rozměry ringu: menší ring zvýhodňuje puncher."}
+  - {id: titul_a_politika, w: 2, typ: kontext, co: "Titulový zápas, povinná obhajoba, politika organizací."}
+  - {id: lekarska_zastaveni, w: 1, typ: kontext, co: "Doktorská zastavení u rozseknutí a historie řezných zranění."}
+  - {id: rukavice_a_zmeny_pravidel, w: 1, typ: kontext, co: "Rukavice a smlouvou stanovená pravidla (hmotnost, rehydratace)."}

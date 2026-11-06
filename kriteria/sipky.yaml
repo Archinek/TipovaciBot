@@ -1,0 +1,21 @@
+sport: sipky
+poznamka: "PDC i WDF. Formát (legs vs. sets) a doublový průměr rozhodují o ceně."
+kriteria:
+  - {id: prumer_3_sipky, w: 3, typ: kontext, co: "Průměr na tři šipky (3-dart average) za posledních 6 měsíců a v aktuálním turnaji."}
+  - {id: checkout_pct, w: 3, typ: kontext, co: "Úspěšnost zavírání (checkout %) a procento double hit."}
+  - {id: format_legs_sets, w: 3, typ: kontext, co: "Formát zápasu: best of legs nebo sets; delší formát zvýhodňuje favorita."}
+  - {id: odstoupeni_nemoc, w: 3, typ: veto, co: "Nemoc, zranění zápěstí/ramene, odstoupení z turnaje."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více od otevření."}
+  - {id: forma_poslednich_turnaju, w: 2, typ: kontext, co: "Výsledky v posledních 3 turnajích a Players Championship."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemná bilance a styl hry."}
+  - {id: unava_turnaj, w: 2, typ: veto, co: "Počet zápasů za den a dlouhé turnajové dny."}
+  - {id: tlak_finale, w: 1, typ: kontext, co: "Hráč pod tlakem velkého finále, nervozita publika."}
+  - {id: prvni_hod, w: 1, typ: kontext, co: "Kdo hází první v rozhodujícím legu (throw first)."}
+  - {id: pocet_180, w: 1, typ: kontext, trhy: [180], co: "Průměr osmdesátek (180) na zápas."}
+  - {id: publikum_a_misto, w: 1, typ: kontext, co: "Alexandra Palace, atmosféra, domácí hráč."}
+  - {id: terc_osvetleni, w: 1, typ: kontext, co: "Terč, osvětlení, výška podia."}
+  - {id: cestovani_jetlag, w: 1, typ: kontext, co: "Cestování a časová pásma."}
+  - {id: tour_card_status, w: 1, typ: kontext, co: "Tour card, kvalifikace a motivace."}
+  - {id: pdc_vs_wdf, w: 1, typ: kontext, co: "Organizace a úroveň (PDC vs. WDF)."}
+  - {id: rozlosovani_stromu, w: 1, typ: kontext, co: "Pozice ve stromu a kvalita soupeřů."}
+  - {id: vek_a_kondice, w: 1, typ: kontext, co: "Věk, kondice a nervová zátěž."}

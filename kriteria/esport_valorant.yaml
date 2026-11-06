@@ -1,0 +1,27 @@
+sport: esport_valorant
+poznamka: "Valorant. Mapy, agenti a formát BO3/BO5 určují pravděpodobnost. LAN vs. online často mění sílu týmů."
+kriteria:
+  - {id: roster_standin, w: 3, typ: veto, co: "Změna sestavy, náhradník, nemoc, vízové potíže."}
+  - {id: patch_agenti_meta, w: 3, typ: veto, co: "Nový patch, změny agentů a map; nové meta."}
+  - {id: map_pool_veto, w: 3, typ: kontext, co: "Mapový pool a veto: silné mapy a výběr stran."}
+  - {id: bo_format, w: 3, typ: kontext, co: "BO1, BO3, BO5 a bilance týmu."}
+  - {id: integrita_manipulace, w: 3, typ: veto, co: "Podezřelé kurzy a integrity zprávy."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více."}
+  - {id: forma_poslednich_10, w: 2, typ: kontext, co: "Posledních 10 zápasů a soupeři."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemné zápasy za posledních 6 měsíců."}
+  - {id: lan_vs_online, w: 2, typ: kontext, co: "LAN vs. online a výkon týmu."}
+  - {id: attack_defense_split, w: 2, typ: kontext, co: "Bilance útok vs. obrana na jednotlivých mapách."}
+  - {id: agent_kompozice, w: 2, typ: kontext, co: "Kompozice agentů a styl hry."}
+  - {id: igl_trener, w: 2, typ: kontext, co: "Změna IGL a trenéra."}
+  - {id: region_sila, w: 2, typ: kontext, co: "Síla regionu při mezinárodních turnajích (VCT)."}
+  - {id: unava_turnaj, w: 2, typ: kontext, co: "Turnajová únava a cestování."}
+  - {id: motivace_vct, w: 2, typ: kontext, co: "Motivace: kvalifikace, VCT, rank pozice."}
+  - {id: first_kill_rate, w: 2, typ: kontext, co: "Úspěšnost prvního zabití v kole."}
+  - {id: acs_rating, w: 2, typ: kontext, co: "ACS a hodnocení hráčů."}
+  - {id: pistol_round, w: 1, typ: kontext, co: "Pistol round a ekonomika."}
+  - {id: clutch_rate, w: 1, typ: kontext, co: "Clutch situace a úspěšnost."}
+  - {id: eco_kola, w: 1, typ: kontext, co: "Eco kola a force buy."}
+  - {id: ping_servery, w: 1, typ: kontext, co: "Latence a servery."}
+  - {id: mastery_agentu, w: 1, typ: kontext, co: "Mastery agentů a signature picky."}
+  - {id: prvni_vyber_mapy, w: 1, typ: kontext, co: "Výhoda prvního výběru mapy."}
+  - {id: publikum_atmosfera, w: 1, typ: kontext, co: "Publikum a atmosféra na LAN."}

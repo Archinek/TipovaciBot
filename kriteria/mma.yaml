@@ -1,0 +1,26 @@
+sport: mma
+poznamka: "Vysoká variance, zápasy se mění den před galavečerem. Zkontroluj oficiální weigh-in."
+kriteria:
+  - {id: vaha_weigh_in, w: 3, typ: veto, co: "Výsledek weigh-in: nesplněný limit, extrémní shazování, nemoc před zápasem."}
+  - {id: zmena_souperu, w: 3, typ: veto, co: "Náhradník na poslední chvíli; kvalita nového soupeře a čas na přípravu."}
+  - {id: zraneni_pripravy, w: 3, typ: veto, co: "Zranění v přípravě, zrušené sparingy, zdravotní problémy zmíněné v rozhovorech."}
+  - {id: zruseni_a_zmena_karty, w: 3, typ: veto, co: "Posunutí zápasu, změna pravidel, zrušení karty."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Prudký pohyb kurzu u Pinnacle: zranění, příprava, informace z tábora."}
+  - {id: styl_striker_vs_grappler, w: 3, typ: kontext, co: "Střet stylů: stand-up vs. zápasení, kde se zápas odehraje."}
+  - {id: reach_a_vyska, w: 2, typ: kontext, co: "Rozpětí paží a výška, dosah kopů a jab."}
+  - {id: kardio_pozdni_kola, w: 2, typ: kontext, co: "Výkon ve 3. a 5. kole, tempo, historie únavy."}
+  - {id: odolnost_brada, w: 2, typ: kontext, co: "Knockdowny, KO prohry, věk a opakované otřesy."}
+  - {id: takedown_obrana, w: 2, typ: kontext, co: "Úspěšnost obrany a držení v zápasení."}
+  - {id: submission_hrozba, w: 2, typ: kontext, co: "Submission threat, obrana proti škrcení a pákám."}
+  - {id: vek_a_pokles, w: 2, typ: kontext, co: "Věk, počet zápasů, trend výkonů."}
+  - {id: ring_rust, w: 2, typ: kontext, co: "Dlouhá pauza od posledního zápasu a zdravotní zázemí."}
+  - {id: zmena_vahove_kategorie, w: 2, typ: kontext, co: "Posun mezi váhovými kategoriemi: síla, rychlost, kardio."}
+  - {id: format_3_vs_5_kol, w: 2, typ: kontext, co: "Tří vs. pětikolový zápas a výdrž."}
+  - {id: rozhodci_scoring, w: 1, typ: kontext, co: "Rozhodčí a bodovací komise: tendence ke stylu."}
+  - {id: misto_a_klec, w: 1, typ: kontext, co: "Klec vs. ring, rozměr klece, výška nad mořem."}
+  - {id: south_paw, w: 1, typ: kontext, co: "Levák vs. pravák a statistiky."}
+  - {id: tym_a_trener, w: 2, typ: kontext, co: "Změna trenéra nebo týmu, přestup do jiného gymu."}
+  - {id: predchozi_porazka, w: 1, typ: kontext, co: "Reakce po prohře nebo KO, psychika."}
+  - {id: antidoping, w: 2, typ: kontext, co: "Doping, USADA, pozastavení nebo kontroly."}
+  - {id: pravidla_laktu, w: 1, typ: kontext, co: "Pravidla promotéra: kolena na zemi, lokty, 12-6 loket."}
+  - {id: jetlag_a_cestovani, w: 1, typ: kontext, co: "Dlouhá cesta na zápas (Abu Dhabi, Austrálie), čas na aklimatizaci."}

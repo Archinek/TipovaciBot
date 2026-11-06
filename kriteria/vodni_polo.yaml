@@ -1,0 +1,18 @@
+sport: vodni_polo
+poznamka: "Přesilovky a brankář rozhodují. Data jsou méně dostupná než u hlavních sportů."
+kriteria:
+  - {id: brankar, w: 3, typ: veto, co: "Start jedničky a forma brankáře."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence střelců a obránců (centr, 2m)."}
+  - {id: sestava_potvrzena, w: 2, typ: veto, co: "Potvrzená sestava a rotace."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více."}
+  - {id: presilovky_oslabeni, w: 3, typ: kontext, co: "Úspěšnost přesilovek a oslabení (20s vyloučení)."}
+  - {id: vylouceni_20s, w: 2, typ: kontext, co: "Počet vyloučení na zápas a disciplína."}
+  - {id: rozhodci, w: 2, typ: kontext, co: "Rozhodčí a tendence k vyloučením."}
+  - {id: sestimetrove_hody, w: 1, typ: kontext, co: "Penalty a jejich exekutor."}
+  - {id: forma_poslednich_5, w: 1, typ: kontext, co: "Posledních 5 zápasů."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemná bilance."}
+  - {id: kalendar_unava, w: 2, typ: kontext, co: "Kalendář a únava z turnaje."}
+  - {id: motivace_tabulka, w: 2, typ: kontext, co: "Boj o postup a pozici."}
+  - {id: domaci_bazen, w: 1, typ: kontext, co: "Domácí bazén a publikum."}
+  - {id: teplota_vody, w: 1, typ: kontext, co: "Teplota vody a podmínky v bazénu."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér a taktika."}

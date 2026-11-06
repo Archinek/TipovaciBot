@@ -1,0 +1,21 @@
+sport: australsky_fotbal
+poznamka: "AFL: sestavy se potvrzují krátce před zápasem a počasí/velikost hřiště hodně ovlivňují skóre."
+kriteria:
+  - {id: sestava_late_changes, w: 3, typ: veto, co: "Potvrzená sestava a pozdní změny (late changes) cca 1 h před zápasem."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence klíčových záložníků (midfield), ruckmanů a forwardů."}
+  - {id: suspendace_tribunal, w: 3, typ: veto, co: "Rozhodnutí tribunálu a pozastavení hráčů."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 % a související zprávy."}
+  - {id: pocasi_vitr, w: 3, typ: veto, trhy: [totals], co: "Vítr a déšť mění skóre i styl hry."}
+  - {id: stadion_rozmer, w: 2, typ: kontext, trhy: [totals], co: "Rozměry hřiště (MCG, Adelaide Oval, Optus) a styl týmu."}
+  - {id: cestovani_mezi_staty, w: 2, typ: kontext, co: "Let mezi státy, časová pásma (Perth) a regenerace."}
+  - {id: kratky_odpocinek, w: 2, typ: kontext, co: "Krátký týden (5-6 dní) a regenerace."}
+  - {id: ruck_dominance, w: 2, typ: kontext, co: "Dominance ruckmana a clearances z centra."}
+  - {id: midfield_clearances, w: 2, typ: kontext, co: "Clearances, kontakt, soupeřovy zisky míče."}
+  - {id: presnost_kopu, w: 1, typ: kontext, trhy: [totals], co: "Přesnost kopů na bránu a efektivita skórování."}
+  - {id: forma_posledni_5, w: 1, typ: kontext, co: "Posledních 5 zápasů a kvalita soupeřů."}
+  - {id: domaci_venue_specialist, w: 2, typ: kontext, co: "Domácí stadion a bilance týmu na dané venue."}
+  - {id: rozhodci, w: 1, typ: kontext, co: "Rozhodčí a tendence k frikům (free kicks)."}
+  - {id: motivace_tabulka, w: 2, typ: kontext, co: "Boj o top 8 a finále; týmy, které nemají co ztratit."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér a taktika."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemné zápasy na stejném stadionu."}
+  - {id: tempo_hry, w: 1, typ: kontext, trhy: [totals], co: "Tempo hry a počet držení míče."}

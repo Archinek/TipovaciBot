@@ -1,0 +1,19 @@
+sport: snooker
+poznamka: "Dlouhé formáty (až 35 framů) zvýhodňují favority. Pozor na únavu a délku předchozích zápasů."
+kriteria:
+  - {id: zdravotni_stav_odstoupeni, w: 3, typ: veto, co: "Zdravotní problémy, odstoupení, zraněná záda, oči, zápěstí."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více od otevření."}
+  - {id: unava_predchozi_zapasy, w: 3, typ: veto, co: "Délka předchozích zápasů a dnů odpočinku."}
+  - {id: delka_zapasu_frames, w: 3, typ: kontext, co: "Best of 9, 17, 25 nebo 35 framů: delší zvýhodňuje favorita."}
+  - {id: forma_a_century, w: 2, typ: kontext, co: "Počet century breaků a vysoké breaky v posledních turnajích."}
+  - {id: safety_vs_potting, w: 2, typ: kontext, co: "Styl: safety game vs. otevřená hra a long potting."}
+  - {id: long_potting_pct, w: 2, typ: kontext, co: "Úspěšnost long pot a pozičních míčů."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemná bilance a poslední zápas."}
+  - {id: stoly_a_podminky, w: 2, typ: kontext, co: "Stoly, sukno, rychlost a hala."}
+  - {id: tlak_deciding_frame, w: 2, typ: kontext, co: "Výkon v rozhodujícím framu."}
+  - {id: motivace_turnaj, w: 2, typ: kontext, co: "Prestiž turnaje, ranking, kvalifikace na Crucible."}
+  - {id: domaci_publikum, w: 1, typ: kontext, co: "Crucible, domácí hráč a atmosféra."}
+  - {id: session_start, w: 1, typ: kontext, co: "Denní nebo večerní session a zvyky hráče."}
+  - {id: vek_zkusenost, w: 1, typ: kontext, co: "Věk, zkušenost a trend."}
+  - {id: rozlosovani_stromu, w: 1, typ: kontext, co: "Pozice ve stromu a soupeři."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér, změna tága, vybavení."}

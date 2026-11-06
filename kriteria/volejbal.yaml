@@ -1,0 +1,20 @@
+sport: volejbal
+poznamka: "Kluby i reprezentace. Rozehrávač (setter) a libero jsou klíčové posty."
+kriteria:
+  - {id: sestava_a_rozehravac, w: 3, typ: veto, co: "Potvrzená sestava, rozehrávač (setter), libero, univerzál."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence smečařů, blokařů a opory."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více od otevření."}
+  - {id: rotace_a_unava, w: 2, typ: veto, co: "Rotace sestavy před důležitějším zápasem, únava z turnaje."}
+  - {id: servis_ace_chyby, w: 2, typ: kontext, co: "Esa a chyby na podání."}
+  - {id: blok_a_utok, w: 2, typ: kontext, co: "Úspěšnost bloku a útoku, procento z útoku."}
+  - {id: prijem_a_obrana, w: 2, typ: kontext, co: "Příjem podání a obrana v poli."}
+  - {id: forma_poslednich_5, w: 1, typ: kontext, co: "Posledních 5 zápasů a soupeři."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemné zápasy."}
+  - {id: domaci_vyhoda, w: 2, typ: kontext, co: "Domácí hala a publikum."}
+  - {id: cestovani, w: 1, typ: kontext, co: "Cesta a časová pásma."}
+  - {id: format_setu, w: 1, typ: kontext, co: "Best of 5, formát turnaje a bodování (3-0, 3-1)."}
+  - {id: kalendar_nations_league, w: 2, typ: kontext, co: "Kalendář: Nations League, turnajové dny, únava."}
+  - {id: motivace_kvalifikace, w: 2, typ: kontext, co: "Boj o postup, kvalifikaci, olympijskou kvalifikaci."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér a změna systému hry."}
+  - {id: hala_a_micek, w: 1, typ: kontext, co: "Hala, strop, míč a teplota."}
+  - {id: zkusenost_mladi, w: 1, typ: kontext, co: "Zkušenost a mládí; tlak v tie-breaku."}

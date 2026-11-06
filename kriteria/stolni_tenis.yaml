@@ -1,0 +1,20 @@
+sport: stolni_tenis
+poznamka: "Trh s velkým rizikem manipulace (nižší ligy, hodně zápasů denně). Bez integrity kontroly nesázet."
+kriteria:
+  - {id: integrita_manipulace, w: 3, typ: veto, co: "Podezřelé kurzové pohyby, nízká kategorie turnaje, integrity zprávy ITTF."}
+  - {id: overeni_hrace_a_ligy, w: 3, typ: veto, co: "Potvrzená identita hráče a liga (jména se opakují, podobné hráče)."}
+  - {id: zmena_hrace_posledni_chvile, w: 3, typ: veto, co: "Náhrada hráče na poslední chvíli, odstoupení, zpoždění zápasu."}
+  - {id: unava_vice_zapasu, w: 3, typ: veto, co: "Počet zápasů během dne a na turnaji, pauzy mezi nimi."}
+  - {id: zdravotni_stav, w: 2, typ: veto, co: "Zranění ramene, zápěstí, zad."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu nad 5 % od otevření."}
+  - {id: styl_hry, w: 3, typ: kontext, co: "Útočník, obranář (chopper), penholder vs. shakehand, speciální pryže."}
+  - {id: forma_poslednich_10, w: 2, typ: kontext, co: "Posledních 10 zápasů a úroveň soupeřů."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemná bilance a styl hry."}
+  - {id: rating_ittf_elo, w: 2, typ: kontext, co: "Světový žebříček/ELO a trend."}
+  - {id: format_best_of, w: 2, typ: kontext, co: "Best of 5 vs. 7; kratší formát zvýhodňuje outsidera."}
+  - {id: servis_a_prvni_micek, w: 2, typ: kontext, co: "Kvalita podání a třetí míček."}
+  - {id: levak_vs_pravak, w: 1, typ: kontext, co: "Levák/pravák a bilance proti nim."}
+  - {id: hala_podminky, w: 1, typ: kontext, co: "Osvětlení, stoly, míčky, hala."}
+  - {id: tlak_domaci, w: 1, typ: kontext, co: "Domácí publikum a národní tým."}
+  - {id: neaktivita, w: 1, typ: kontext, co: "Dlouhá pauza od posledního zápasu."}
+  - {id: motivace_exhibice, w: 2, typ: kontext, co: "Exhibice a bezvýznamné turnaje: nižší motivace."}

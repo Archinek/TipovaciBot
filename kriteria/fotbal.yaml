@@ -1,0 +1,33 @@
+sport: fotbal
+poznamka: "veto = zprávy z posledních 48 h; kontext = strukturální faktory. Trhy: h2h, totals (góly), karty, rohy."
+kriteria:
+  - {id: potvrzena_sestava, w: 3, typ: veto, co: "Oficiální sestavy (60-75 min před výkopem): chybí klíčoví hráči oproti běžné jedenáctce?"}
+  - {id: zraneni_a_suspendace, w: 3, typ: veto, co: "Absence nejlepšího střelce, stoperů, defenzivního záložníka; hráči v trestu po kartách."}
+  - {id: brankar, w: 3, typ: veto, co: "Nastoupí jednička, nebo náhradník? Zranění/forma brankáře."}
+  - {id: odlozeni_zapasu, w: 3, typ: veto, co: "Hrozí odklad či zrušení (počasí, nepokoje, stav hřiště, soud)?"}
+  - {id: rotace_po_poharu, w: 3, typ: veto, co: "Zápasy v posledních 3-4 dnech (LM/EL/pohár) a očekávaná rotace sestavy."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohnul se kurz u Pinnacle o víc než 5 % od otevření? Hledej zprávu, která to vysvětluje."}
+  - {id: trenerska_zmena, w: 2, typ: veto, co: "Nový nebo prozatímní trenér (prvních 5 zápasů), vyhazov, rozhovory před zápasem."}
+  - {id: navrat_po_zraneni, w: 2, typ: veto, co: "Hráč po dlouhé pauze: omezené minuty, ztráta formy, riziko recidivy."}
+  - {id: mezinarodni_pauza, w: 2, typ: veto, co: "Reprezentační pauza: zranění v reprezentaci, dlouhé cesty (Jižní Amerika), pozdní návrat."}
+  - {id: motivace_tabulka, w: 2, typ: veto, co: "Má tým co hrát (titul, Evropa, záchrana), nebo je už jistý/odepsaný?"}
+  - {id: rozhodci_jmeno, w: 2, typ: kontext, trhy: [totals, karty], co: "Kdo píská: průměr žlutých/červených karet na zápas, penalt na zápas, ochota pískat souboje."}
+  - {id: rozhodci_domaci_tendence, w: 1, typ: kontext, co: "Poměr domácích vs. hostujících vítězství pod tímto rozhodčím a jeho historie s oběma týmy."}
+  - {id: povrch_a_pocasi, w: 2, typ: kontext, trhy: [totals], co: "Déšť, vítr nad 8 m/s, mráz/horko, stav trávníku."}
+  - {id: umela_trava_hybrid, w: 1, typ: kontext, co: "Umělá tráva nebo hybridní povrch a jak na něj týmy zvyklé hrát."}
+  - {id: rozmery_hriste, w: 1, typ: kontext, trhy: [totals, rohy], co: "Délka a šířka hřiště v metrech; úzké/krátké hřiště vs. styl obou týmů."}
+  - {id: xg_forma, w: 2, typ: kontext, trhy: [h2h, totals], co: "xG a xGA z posledních 6-10 zápasů; rozdíl oproti skutečným gólům (regrese k průměru)."}
+  - {id: forma_domaci_venku, w: 2, typ: kontext, co: "Bilance doma a venku odděleně, ne celková tabulka."}
+  - {id: h2h_a_styl, w: 1, typ: kontext, co: "Vzájemné zápasy za poslední 3 roky a styl (pressing vs. nízký blok)."}
+  - {id: standardky, w: 1, typ: kontext, trhy: [totals, rohy], co: "Góly ze standardních situací a obrana proti nim; výška hráčů; exekutoři penalt."}
+  - {id: tempo_a_pressing, w: 1, typ: kontext, trhy: [totals], co: "PPDA, držení míče, počet střel na zápas."}
+  - {id: disciplina_tymu, w: 1, typ: kontext, trhy: [karty], co: "Průměr karet a faulů obou týmů."}
+  - {id: derby_rivalita, w: 1, typ: kontext, trhy: [karty, totals], co: "Derby nebo vyhrocená rivalita: více karet, méně gólů."}
+  - {id: kalendar_odpocinek, w: 2, typ: kontext, co: "Dny odpočinku od posledního zápasu u obou týmů."}
+  - {id: cestovani_a_vyska, w: 1, typ: kontext, co: "Vzdálenost cesty, časová pásma, nadmořská výška stadionu."}
+  - {id: publikum_a_atmosfera, w: 1, typ: kontext, co: "Zavřený stadion, trest, počet hostujících fanoušků, ultras bojkot."}
+  - {id: zmeny_v_kadru, w: 1, typ: kontext, co: "Noví hráči z přestupového okna, odchody opor, doba zapracování."}
+  - {id: finance_a_zazemi, w: 1, typ: kontext, co: "Neplacení platů, stávka hráčů, konflikty v klubu."}
+  - {id: pohar_dvojzapas, w: 2, typ: kontext, trhy: [h2h], co: "Pohárový formát: 1. nebo 2. zápas, agregát, pravidlo prodloužení; sázka h2h platí jen za 90 min."}
+  - {id: hrozba_distancu, w: 1, typ: kontext, trhy: [karty], co: "Hráči těsně před trestem za žluté: šetření nebo opatrnost."}
+  - {id: penalty_a_var, w: 1, typ: kontext, trhy: [totals], co: "Využití VAR v lize a podíl penalt na zápas."}

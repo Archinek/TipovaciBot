@@ -1,0 +1,28 @@
+sport: moto
+poznamka: "MotoGP, Moto2, Moto3, WorldSBK. Trhy: vítěz, pódium, souboj dvou jezdců. Rozhoduje počasí a výsledek kvalifikace."
+kriteria:
+  - {id: pocasi_mokro_sucho, w: 3, typ: veto, co: "Předpověď, mokrá dráha, flag-to-flag; kdo je v dešti silný."}
+  - {id: kvalifikace_q2_pozice, w: 3, typ: veto, co: "Pozice na startu (Q2), průchod Q1, penalizace."}
+  - {id: zraneni_po_padu, w: 3, typ: veto, co: "Zranění po pádu, klíční jezdci s omezenou pohyblivostí, fit to ride."}
+  - {id: nahradni_jezdec, w: 3, typ: veto, co: "Náhradník za zraněného jezdce a jeho zkušenost."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle o 5 % a více po kvalifikaci."}
+  - {id: long_run_pace_fp, w: 3, typ: veto, co: "Tempo na dlouhých stintech v trénincích a degradace gum."}
+  - {id: penalizace_long_lap, w: 3, typ: veto, co: "Long lap penalty, trest za tlak v pneu nebo za jízdu mimo trať."}
+  - {id: pneumatiky_volba, w: 3, typ: kontext, co: "Volba přední/zadní směsi, degradace a tlak v pneu (minimální limity)."}
+  - {id: upgrady_motorky, w: 2, typ: veto, co: "Nové díly, aerodynamika, motor a jejich ověření."}
+  - {id: sprint_format, w: 2, typ: kontext, co: "Sprint závod v sobotu a jeho vliv na neděli."}
+  - {id: charakter_trate, w: 2, typ: kontext, co: "Brzdění, přilnavost, typ zatáček, začátek závodu (holeshot)."}
+  - {id: historie_na_trati, w: 2, typ: kontext, co: "Výsledky jezdce a značky na této trati."}
+  - {id: tovarni_vs_satelitni, w: 2, typ: kontext, co: "Tovární vs. satelitní tým: přístup k dílům a elektronice."}
+  - {id: limit_motoru, w: 2, typ: kontext, co: "Počet použitých motorů a hrozba penalizace."}
+  - {id: pravdepodobnost_cervene, w: 2, typ: kontext, co: "Červená vlajka, pády v prvních kolech, nehody v pelotonu."}
+  - {id: start_holeshot, w: 2, typ: kontext, co: "Úspěšnost startů a riziko hromadných pádů."}
+  - {id: tlak_titul_motivace, w: 2, typ: kontext, co: "Boj o titul, riskantní jízda."}
+  - {id: elektronika_ride_height, w: 1, typ: kontext, co: "Elektronika, zařízení pro snížení motorky (ride height)."}
+  - {id: teplota_trati, w: 2, typ: kontext, co: "Teplota asfaltu: ovlivňuje volbu pneu a přilnavost."}
+  - {id: asfalt_zmena_gripu, w: 2, typ: kontext, co: "Nový asfalt nebo změna gripu a gumy na trati."}
+  - {id: psychika_po_nehode, w: 1, typ: kontext, co: "Psychika po těžkém pádu, návrat po zranění."}
+  - {id: zmena_tymu_sefmechanik, w: 1, typ: kontext, co: "Nový šéfmechanik, změna týmu, přestup jezdce."}
+  - {id: kategorie_rozdily, w: 1, typ: kontext, co: "Moto2 a Moto3: odlišné rozložení sil, slipstream."}
+  - {id: sbk_pravidla, w: 1, typ: kontext, co: "WorldSBK: pravidla pro superpole a počet závodů za víkend."}
+  - {id: kvalita_soupere_h2h, w: 2, typ: kontext, trhy: [h2h_jezdec], co: "Souboj jezdců: tempo, spolehlivost, forma a historie."}

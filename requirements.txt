@@ -1,4 +1,3 @@
-google-genai
-playwright
-python-dotenv
-pyyaml
+pyyaml>=6.0
+numpy>=1.26
+google-genai>=1.0

@@ -1,0 +1,24 @@
+sport: esport_cs
+poznamka: "Counter-Strike 2. Formát (BO1/BO3/BO5), mapy a online/LAN dělají velký rozdíl. Nižší tier má riziko manipulace."
+kriteria:
+  - {id: zmena_rosteru_standin, w: 3, typ: veto, co: "Změna sestavy, stand-in, nový hráč, zranění nebo vízový problém."}
+  - {id: map_pool_veto, w: 3, typ: kontext, co: "Mapový pool a veto: kdo má silné mapy, kdo je zakáže."}
+  - {id: bo_format, w: 3, typ: kontext, co: "BO1, BO3 nebo BO5: BO1 má větší variance."}
+  - {id: integrita_manipulace, w: 3, typ: veto, co: "Podezřelé pohyby kurzů, nižší tier, integrity zprávy."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více od otevření."}
+  - {id: forma_poslednich_zapasu, w: 2, typ: kontext, co: "Posledních 10 zápasů a kvalita soupeřů."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemné zápasy za posledních 6 měsíců."}
+  - {id: lan_vs_online, w: 2, typ: kontext, co: "LAN vs. online: některé týmy jsou na LAN výrazně horší."}
+  - {id: ct_t_strana_bilance, w: 2, typ: kontext, co: "Bilance CT/T strany na mapách a pistol rounds."}
+  - {id: awper_forma, w: 2, typ: kontext, co: "Forma AWPera a klíčových hvězd, rating HLTV."}
+  - {id: igl_trener_zmeny, w: 2, typ: kontext, co: "Změna IGL a trenéra."}
+  - {id: patch_zmena_mapy, w: 2, typ: kontext, co: "Patch, nová mapa, změna ekonomiky."}
+  - {id: cestovani_unava, w: 2, typ: kontext, co: "Cestování, jetlag, jízdní řád turnaje."}
+  - {id: motivace_turnaj, w: 2, typ: kontext, co: "Prestiž turnaje, kvalifikace, tlak."}
+  - {id: ping_server, w: 1, typ: kontext, co: "Latence a region serveru."}
+  - {id: economy_clutch, w: 1, typ: kontext, co: "Ekonomika, forced buy, clutch rate."}
+  - {id: pistol_round, w: 1, typ: kontext, co: "Úspěšnost v pistol round."}
+  - {id: burnout_sezona, w: 1, typ: kontext, co: "Vyhoření a nepřetržitá sezóna."}
+  - {id: bootcamp_priprava, w: 1, typ: kontext, co: "Bootcamp a příprava týmu."}
+  - {id: nizsi_tier_riziko, w: 2, typ: kontext, co: "Turnaje nižšího tieru: méně dat a vyšší variance."}
+  - {id: dezinformace_scrimy, w: 1, typ: kontext, co: "Zprávy ze scrimů a informace od analytiků."}

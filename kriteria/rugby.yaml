@@ -1,0 +1,23 @@
+sport: rugby
+poznamka: "Union i league. Počasí a kicker mají u totals i handicapu velkou váhu."
+kriteria:
+  - {id: sestava_potvrzena, w: 3, typ: veto, co: "Potvrzená sestava 24-48 h před zápasem; změny v prvním dnu."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence rozehrávače (fly-half/scrum-half), kapitána, front row."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 % a související zprávy."}
+  - {id: pocasi_vitr_dest, w: 3, typ: veto, trhy: [totals], co: "Déšť, vítr, mokré hřiště: méně pokusů, více kopů."}
+  - {id: rotace_internacionalu, w: 2, typ: veto, co: "Reprezentanti po mezinárodním okně: odpočinek, zranění, rotace."}
+  - {id: place_kicker, w: 2, typ: kontext, co: "Úspěšnost kopů na bránu a kvalita kickera za různých podmínek."}
+  - {id: disciplina_tresty, w: 2, typ: kontext, co: "Počet trestných kopů a žlutých karet na zápas."}
+  - {id: rozhodci, w: 2, typ: kontext, co: "Rozhodčí: tendence k trestům v rucku a skrumu."}
+  - {id: skrum_a_touchline, w: 2, typ: kontext, co: "Úspěšnost skrumu a touchline."}
+  - {id: forma_posledni_5, w: 1, typ: kontext, co: "Posledních 5 zápasů a kvalita soupeřů."}
+  - {id: domaci_vyhoda, w: 2, typ: kontext, co: "Domácí bilance, hřiště, nadmořská výška (Johannesburg)."}
+  - {id: cestovani_polokoule, w: 2, typ: kontext, co: "Cesta mezi polokoulemi, jetlag a aklimatizace."}
+  - {id: motivace_tabulka, w: 2, typ: kontext, co: "Boj o postup, bonusový bod, bonus za 4 pokusy."}
+  - {id: styl_hry, w: 1, typ: kontext, co: "Střet stylů: kopací hra vs. držení míče, tempo."}
+  - {id: kalendar_odpocinek, w: 2, typ: kontext, co: "Dny odpočinku, počet zápasů v turnaji."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér a taktické změny."}
+  - {id: tmo_a_karty, w: 1, typ: kontext, co: "TMO a historické zásahy, červené karty."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemná bilance a rivalita."}
+  - {id: povrch_hriste, w: 1, typ: kontext, co: "Umělá vs. přírodní tráva a rozměr hřiště."}
+  - {id: liga_union_vs_league, w: 1, typ: kontext, co: "Union vs. league: rozdíly v pravidlech a bodování."}

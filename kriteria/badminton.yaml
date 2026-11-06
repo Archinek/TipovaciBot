@@ -1,0 +1,20 @@
+sport: badminton
+poznamka: "Kontext haly (proudění vzduchu) a zdravotní stav hráčů se mění od zápasu k zápasu."
+kriteria:
+  - {id: zdravotni_stav, w: 3, typ: veto, co: "Zranění, bandáže v posledním zápase, vyjádření hráče."}
+  - {id: odstoupeni_historie, w: 3, typ: veto, co: "Odstoupení a skreč v posledních měsících."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více od otevření."}
+  - {id: unava_z_predchozich_zapasu, w: 3, typ: veto, co: "Délka předchozích zápasů a počet zápasů ve dni."}
+  - {id: proudeni_vzduchu_hala, w: 3, typ: kontext, co: "Drift košíčku: proudění vzduchu v hale (klimatizace), strana kurtu."}
+  - {id: styl_matchup, w: 2, typ: kontext, co: "Střet stylů: útočný vs. obranný, rychlá hra."}
+  - {id: h2h, w: 2, typ: kontext, co: "Vzájemná bilance, poslední zápas."}
+  - {id: forma_poslednich_10, w: 2, typ: kontext, co: "Posledních 10 zápasů a kvalita soupeřů."}
+  - {id: uroven_turnaje, w: 2, typ: kontext, co: "Super 1000/750/500 a motivace hráčů."}
+  - {id: jetlag_cestovani, w: 2, typ: kontext, co: "Přesun mezi kontinenty a jet lag."}
+  - {id: dvojice_zmena, w: 2, typ: kontext, co: "Změna partnera ve čtyřhře a doba zapracování."}
+  - {id: levak, w: 1, typ: kontext, co: "Levák vs. pravák."}
+  - {id: motivace_olympijska_kvalifikace, w: 2, typ: kontext, co: "Olympijská kvalifikace, ranking."}
+  - {id: domaci_publikum, w: 2, typ: kontext, co: "Čína, Indonésie, Malajsie: silné publikum."}
+  - {id: tiebreak_21_20, w: 1, typ: kontext, co: "Výkon v koncovkách setů 21:20."}
+  - {id: rychlost_kosicku, w: 1, typ: kontext, co: "Typ a rychlost košíčku."}
+  - {id: vek_zkusenost, w: 1, typ: kontext, co: "Věk a zkušenosti."}

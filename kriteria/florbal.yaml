@@ -1,0 +1,18 @@
+sport: florbal
+poznamka: "Domácí soutěže mají málo veřejných dat. Statistiky brankáře a přesilovek jsou nejlepší dostupné signály."
+kriteria:
+  - {id: brankar, w: 3, typ: veto, co: "Start jedničky, zranění brankáře, nasazení zálohy."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence nejlepších střelců a obránců."}
+  - {id: sestava_lajny, w: 2, typ: veto, co: "Sestava a lajny, rozcvičení."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více."}
+  - {id: presilovky_oslabeni, w: 2, typ: kontext, co: "Úspěšnost přesilovek a oslabení."}
+  - {id: rozhodci_tresty, w: 2, typ: kontext, co: "Rozhodčí a počet dvouminutových trestů."}
+  - {id: domaci_vyhoda, w: 2, typ: kontext, co: "Domácí hala a publikum."}
+  - {id: forma_poslednich_5, w: 1, typ: kontext, co: "Posledních 5 zápasů a soupeři."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemná bilance."}
+  - {id: kalendar_unava, w: 2, typ: kontext, co: "Dny odpočinku a zápasy za týden."}
+  - {id: motivace_playoff, w: 2, typ: kontext, co: "Boj o play-off a pozice v tabulce."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér a systém."}
+  - {id: zahranicni_posily, w: 1, typ: kontext, co: "Zahraniční posily a doba zapracování."}
+  - {id: prodlouzeni_format, w: 1, typ: kontext, co: "Pravidla prodloužení a nájezdů v soutěži."}
+  - {id: hriste_mantinely, w: 1, typ: kontext, co: "Hřiště, mantinely, podlaha."}

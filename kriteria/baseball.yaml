@@ -1,0 +1,28 @@
+sport: baseball
+poznamka: "Nejdůležitější je startující nadhazovač. Bez jeho potvrzení se nesází."
+kriteria:
+  - {id: startujici_nadhazovac, w: 3, typ: veto, co: "Potvrzený startující nadhazovač (probable pitcher), změna v den zápasu."}
+  - {id: zmena_nadhazovace_scratch, w: 3, typ: veto, co: "Vyškrtnutí nadhazovače, zranění, náhrada z bullpenu; kurzy bývají vázané na jméno."}
+  - {id: lineup_potvrzen, w: 3, typ: veto, co: "Potvrzená sestava útoku, odpočívající hvězdy, DH, catcher."}
+  - {id: bullpen_unava, w: 3, typ: veto, co: "Vytížení bullpenu za poslední 3 dny, dostupnost closera a setup mužů."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Injured list, nové návraty, hráči day-to-day."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 %: hledej změnu nadhazovače nebo sestavy."}
+  - {id: pitch_count_limity, w: 2, typ: veto, co: "Limit nadhozů nadhazovače po zranění nebo z farmy."}
+  - {id: doubleheader, w: 2, typ: veto, co: "Double-header: 7 inningů, rozšířený soupis, únava bullpenu."}
+  - {id: era_fip_xfip, w: 2, typ: kontext, co: "ERA vs. FIP/xFIP nadhazovače (štěstí vs. dovednost)."}
+  - {id: split_ruka, w: 2, typ: kontext, co: "Splity vs. levá/pravá pálka a platoon výhoda."}
+  - {id: park_factor, w: 2, typ: kontext, trhy: [totals], co: "Park factor stadionu (homeruny, dostřely); Coors Field extrém."}
+  - {id: pocasi_vitr_teplota, w: 2, typ: kontext, trhy: [totals], co: "Vítr směrem ven/dovnitř, teplota, vlhkost; střecha otevřená/zavřená."}
+  - {id: rozhodci_zona, w: 2, typ: kontext, trhy: [totals], co: "Umpire strike zone: velká zóna = méně běhů; tendence k oběma stranám."}
+  - {id: whip_k9_bb9, w: 1, typ: kontext, co: "WHIP, strikeouty a walky na 9 inningů."}
+  - {id: forma_posledni_10, w: 1, typ: kontext, co: "Posledních 10 zápasů a BABIP regrese."}
+  - {id: odpocinek_a_cestovani, w: 2, typ: kontext, co: "Den po nočním zápase, road trip, časová pásma."}
+  - {id: obrana_a_catcher, w: 1, typ: kontext, co: "Defenzivní metriky, catcher framing, stolen base kontrola."}
+  - {id: batter_vs_pitcher, w: 1, typ: kontext, co: "Historie pálky proti nadhazovači (malý vzorek, opatrně)."}
+  - {id: motivace_playoff, w: 2, typ: kontext, co: "Boj o play-off nebo jistý postup, rozšířené rotace a odpočinek."}
+  - {id: call_up_farma, w: 1, typ: kontext, co: "Nový hráč z farmy, výkon v minors."}
+  - {id: stadion_hala, w: 1, typ: kontext, co: "Stadion se střechou nebo bez, trávník nebo umělý povrch."}
+  - {id: nadmorska_vyska, w: 1, typ: kontext, trhy: [totals], co: "Vyšší nadmořská výška (Denver) a vzdušný odpor."}
+  - {id: h2h_a_divize, w: 1, typ: kontext, co: "Vzájemná bilance a divizní zápasy."}
+  - {id: rotace_pet_nadhazovacu, w: 1, typ: kontext, co: "Pořadí v rotaci a odpočinek nadhazovače (4 vs. 5 dní)."}
+  - {id: trenerska_strategie, w: 1, typ: kontext, co: "Styl manažera: opener, rychlé střídání nadhazovačů."}

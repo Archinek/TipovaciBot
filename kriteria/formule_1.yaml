@@ -1,0 +1,33 @@
+sport: formule_1
+poznamka: "Trhy: vítěz závodu, pódium, souboj dvou jezdců (h2h), nejrychlejší kolo, body. Sledovat po kvalifikaci."
+kriteria:
+  - {id: kvalifikace_poradi_startu, w: 3, typ: veto, co: "Pozice na startu a výjimky: pole position vs. druhá řada a historie startů."}
+  - {id: penalizace_grid, w: 3, typ: veto, co: "Penalizace za výměnu součástí, zpoždění na startu, diskvalifikace."}
+  - {id: long_run_pace_fp2, w: 3, typ: veto, co: "Tempo na dlouhých stintech v FP2/FP3 a degradace gum."}
+  - {id: nahradnik_jezdce, w: 3, typ: veto, co: "Zranění nebo nemoc jezdce, náhradník a zkušenost na trati."}
+  - {id: pocasi_dest_teplota, w: 3, typ: veto, co: "Déšť, teplota trati a vzduchu, vítr; mokrý závod mění pořadí."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle o 5 % a více po kvalifikaci."}
+  - {id: spolehlivost_pu, w: 2, typ: veto, co: "Spolehlivost pohonné jednotky, použité komponenty a penalizace."}
+  - {id: upgrady_vozu, w: 2, typ: veto, co: "Nové díly a aerodynamické aktualizace, jejich výkon."}
+  - {id: charakter_trate, w: 2, typ: kontext, co: "Typ trati: uliční, rychlá, technická, brzdění, přilnavost."}
+  - {id: moznost_predjizdeni, w: 2, typ: kontext, co: "Obtížnost předjíždění a vliv pozice na startu (Monaco vs. Monza)."}
+  - {id: strategie_pneumatik, w: 2, typ: kontext, co: "Dostupné sady, počet zastávek, undercut/overcut."}
+  - {id: pravdepodobnost_safety_caru, w: 2, typ: kontext, co: "Historie safety car a červených vlajek na trati."}
+  - {id: tymove_pokyny, w: 2, typ: kontext, co: "Týmové pokyny, pořadí jezdců, boj o titul."}
+  - {id: historie_na_trati, w: 2, typ: kontext, co: "Výsledky jezdce a týmu na tomto okruhu."}
+  - {id: sprint_vikend, w: 2, typ: kontext, co: "Sprint formát: méně tréninku, výsledek sprintu a nastavení vozu."}
+  - {id: nadmorska_vyska, w: 2, typ: kontext, co: "Mexiko a nižší hustota vzduchu: chlazení a aerodynamika."}
+  - {id: vedro_chlazeni, w: 2, typ: kontext, co: "Vedro, chlazení motoru, riziko přehřátí a ztráty výkonu."}
+  - {id: pit_stop_vykon, w: 1, typ: kontext, co: "Průměrný čas boxové zastávky a chyby týmu."}
+  - {id: forma_jezdce, w: 2, typ: kontext, co: "Forma posledních 5 závodů a souboj se spolujezdcem."}
+  - {id: start_a_prvni_zatacka, w: 1, typ: kontext, co: "Úspěšnost startů a riziko kolizí."}
+  - {id: teplota_pneu_kvali, w: 1, typ: kontext, co: "Zahřátí pneumatik v kvalifikaci a okno provozu."}
+  - {id: drs_zony, w: 1, typ: kontext, co: "Počet a délka DRS zón."}
+  - {id: zmeny_pravidel, w: 1, typ: kontext, co: "Technické direktivy, změny pravidel a jejich dopad."}
+  - {id: motivace_titul, w: 1, typ: kontext, co: "Boj o titul, tlak na tým, riskantní strategie."}
+  - {id: nova_asfalt_grip, w: 2, typ: kontext, co: "Nový asfalt, zlepšování přilnavosti během víkendu (track evolution)."}
+  - {id: vsc_a_incident_fp, w: 2, typ: kontext, co: "Nehody v tréninku, poškození vozu a opravy před závodem."}
+  - {id: dopravni_logistika, w: 1, typ: kontext, co: "Doprava dílů a zpoždění materiálu na dalekých tratích."}
+  - {id: konflikt_uvnitr_tymu, w: 1, typ: kontext, co: "Konflikty a rozdělení stratégií uvnitř týmu."}
+  - {id: bilance_teamu_se_start, w: 1, typ: kontext, co: "Bilance týmu při výměně nastavení po kvalifikaci."}
+  - {id: kvalita_soupere_h2h, w: 2, typ: kontext, trhy: [h2h_jezdec], co: "Souboj jezdců: kvalifikace, tempo, spolehlivost a historie."}

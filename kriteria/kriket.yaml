@@ -1,0 +1,24 @@
+sport: kriket
+poznamka: "Formát (T20, ODI, Test) mění všechno. Los (toss) a dew večer ovlivní cenu."
+kriteria:
+  - {id: losovani_toss, w: 3, typ: veto, co: "Výsledek losování a volba (bat/field); dopad na dew a stav hřiště."}
+  - {id: podminky_hriste_pitch, w: 3, typ: veto, co: "Pitch report: tvrdost, trávník, rotace míče, očekávané skóre."}
+  - {id: pocasi_dest_dls, w: 3, typ: veto, co: "Déšť, předpověď, Duckworth-Lewis-Stern; riziko zkráceného zápasu."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Zranění a absence batsmanů, bowlerů, wicketkeepera."}
+  - {id: sestava_xi, w: 3, typ: veto, co: "Potvrzená jedenáctka, změna kapitána nebo bowlerů."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 %: nové zprávy."}
+  - {id: format_zapasu, w: 2, typ: kontext, co: "T20, ODI nebo Test a výkonnost týmu v daném formátu."}
+  - {id: dew_vecer, w: 2, typ: kontext, co: "Večerní rosa (dew) ztěžuje bowling druhé směny."}
+  - {id: spin_vs_pace, w: 2, typ: kontext, co: "Spin nebo rychlí bowleři a jejich výhoda na tomto hřišti."}
+  - {id: velikost_hriste, w: 2, typ: kontext, trhy: [totals], co: "Délka hranic (boundaries): menší hřiště = více čtyřek a šestek."}
+  - {id: forma_poslednich_5, w: 2, typ: kontext, co: "Posledních 5 zápasů a kvalita soupeřů."}
+  - {id: domaci_podminky, w: 2, typ: kontext, co: "Domácí vs. zahraniční podmínky (Indie, Austrálie, Anglie)."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemné zápasy na tomto stadionu a formátu."}
+  - {id: batting_order, w: 1, typ: kontext, co: "Pořadí odpalujících a změny před zápasem."}
+  - {id: death_overs_a_powerplay, w: 1, typ: kontext, co: "Výkon v posledních 4 over a ve powerplay."}
+  - {id: workload_bowleru, w: 2, typ: kontext, co: "Zátěž rychlých bowlerů, rotace v sérii."}
+  - {id: zahranicni_hraci_ipl, w: 1, typ: kontext, co: "Zahraniční hráči v ligách (IPL), jejich dostupnost."}
+  - {id: kapitan_a_taktika, w: 1, typ: kontext, co: "Nový kapitán a změna taktiky."}
+  - {id: motivace_serie, w: 2, typ: kontext, co: "Stav série, jistý postup, rotace hráčů."}
+  - {id: den_noc_zapas, w: 1, typ: kontext, co: "Denní vs. noční zápas a světlo."}
+  - {id: umpire_drs, w: 1, typ: kontext, co: "Rozhodčí a tendence DRS."}

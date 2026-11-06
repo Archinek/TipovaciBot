@@ -1,0 +1,28 @@
+sport: basketbal
+poznamka: "NBA vs. Euroliga/FIBA (40 vs. 48 minut, rozměry, pravidla)."
+kriteria:
+  - {id: load_management, w: 3, typ: veto, co: "Hvězdy odpočívající (load management), injury report a poslední aktualizace před výkopem."}
+  - {id: zraneni_zakladni_petky, w: 3, typ: veto, co: "Absence z pětky nebo z top 3 hráčů; status Q (questionable), D (doubtful), O (out)."}
+  - {id: sestava_starting_five, w: 3, typ: veto, co: "Potvrzená základní pětka; zástupce za chybějícího hráče a změna rotace."}
+  - {id: back_to_back, w: 3, typ: veto, co: "Back-to-back, třetí zápas ve čtyřech dnech, čtyři zápasy v šesti dnech."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu u Pinnacle nad 5 %: hledej zprávu o hvězdě nebo zranění."}
+  - {id: motivace_tanking, w: 3, typ: veto, co: "Tanking týmy, jistá play-off pozice, odpočívající starters v závěru základní části."}
+  - {id: trade_a_kader, w: 2, typ: veto, co: "Nedávné výměny, nový hráč bez zapracování, deadline změny."}
+  - {id: navrat_po_zraneni_limity, w: 2, typ: veto, co: "Hráč po zranění s minutovým limitem a omezenou rolí."}
+  - {id: osobni_duvody_hvezdy, w: 2, typ: veto, co: "Osobní důvody, nemoc, rodinné události u klíčových hráčů."}
+  - {id: cestovani_a_kalendar, w: 2, typ: kontext, co: "Dlouhý road trip, přelet přes časová pásma, počet zápasů za týden."}
+  - {id: tempo_pace, w: 2, typ: kontext, trhy: [totals], co: "Pace (držení míče na 48 minut) a ofenzivní/defenzivní rating."}
+  - {id: tri_body_variance, w: 2, typ: kontext, co: "Závislost na trojkách: hodně variance, v zápase vyšší riziko 'horké ruky'."}
+  - {id: rozhodci_crew, w: 2, typ: kontext, trhy: [totals], co: "Trojice rozhodčích: průměr faulů a trestných hodů na zápas."}
+  - {id: doskoky_a_ztraty, w: 1, typ: kontext, co: "Doskoky, ztráty, body po ztrátách, druhé šance."}
+  - {id: matchup_pozice, w: 2, typ: kontext, co: "Střet postů: velcí vs. rychlí, obrana proti pick-and-rollu, zóna."}
+  - {id: forma_posledni_10, w: 1, typ: kontext, co: "Posledních 10 zápasů, rating soupeřů."}
+  - {id: domaci_venku, w: 1, typ: kontext, co: "Domácí/venkovní bilance, publikum, nadmořská výška (Denver, Utah)."}
+  - {id: foul_trouble_hloubka, w: 1, typ: kontext, co: "Hloubka lavičky a náhrada při faulech klíčových hráčů."}
+  - {id: trenerska_rotace, w: 1, typ: kontext, co: "Styl trenéra, krátká vs. dlouhá rotace, nasazení v závěru."}
+  - {id: pravidla_liga_fiba_nba, w: 2, typ: kontext, co: "Rozdíly pravidel: 40 vs. 48 minut, 3 sekundy, rozměry, faulů na hráče."}
+  - {id: clutch_vykon, w: 1, typ: kontext, co: "Výkon v závěru těsných zápasů (clutch)."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemné zápasy v sezóně a matchupy."}
+  - {id: stav_serie_playoff, w: 2, typ: kontext, co: "Stav série play-off, úpravy mezi zápasy, tlak a zkušenosti."}
+  - {id: hriste_a_hala, w: 1, typ: kontext, co: "Halová specifika: osvětlení, kvalita palubovky, hluk."}
+  - {id: derby_rivalita, w: 1, typ: kontext, co: "Rivalita a emoce."}

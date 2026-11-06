@@ -1,0 +1,28 @@
+sport: americky_fotbal
+poznamka: "NFL/NCAA. Injury report (středa-pátek) a inactives (90 minut před výkopem) mění cenu rychle."
+kriteria:
+  - {id: qb_status, w: 3, typ: veto, co: "Status quarterbacka: start, omezený rozsah, záloha, náhlé změny."}
+  - {id: injury_report, w: 3, typ: veto, co: "Oficiální injury report: Q/D/O u klíčových hráčů, inactives 90 minut před zápasem."}
+  - {id: zraneni_ofenzivni_lajny, w: 3, typ: veto, co: "Absence tackles/guards/center: výrazně ovlivní pass protection a run game."}
+  - {id: odpocinek_starteru, w: 3, typ: veto, co: "Týmy s jistou pozicí odpočívají starters v posledním týdnu základní části."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb spreadu nebo moneyline o 1+ bod/5 %: hledej zprávu o QB a zraněních."}
+  - {id: pocasi_vitr_srazky, w: 3, typ: veto, trhy: [totals], co: "Vítr nad 25 km/h, déšť, sníh, mráz: omezuje passing a kicking."}
+  - {id: zraneni_defenzivy, w: 2, typ: veto, co: "Absence pass rusherů, cornerbacků a safety."}
+  - {id: kratky_tyden, w: 2, typ: kontext, co: "Čtvrtek po neděli: kratší regenerace, horší game plan."}
+  - {id: bye_week, w: 2, typ: kontext, co: "Tým po bye week: lepší příprava, zdraví opor, bilance po bye."}
+  - {id: cestovani_casova_pasma, w: 2, typ: kontext, co: "Let přes časová pásma, brzký start po cestě, zápasy v Evropě."}
+  - {id: rozhodci_crew, w: 2, typ: kontext, trhy: [totals, spread], co: "Crew rozhodčích: průměr flagů, trestů za holding a pass interference."}
+  - {id: matchup_wr_vs_cb, w: 2, typ: kontext, co: "Střet přijímačů a cornerbacků, mismatche proti slotu."}
+  - {id: tlak_pass_rush_vs_ol, w: 2, typ: kontext, co: "Pass rush win rate vs. pass block win rate."}
+  - {id: turnover_regrese, w: 2, typ: kontext, co: "Turnover rozdíl a regrese k průměru (štěstí vs. dovednost)."}
+  - {id: epa_a_play_calling, w: 2, typ: kontext, co: "EPA/play, success rate, tempo, trendy v play callingu."}
+  - {id: red_zone_efektivita, w: 1, typ: kontext, co: "Efektivita ve vápně soupeře a v obraně vlastního."}
+  - {id: kicker_a_special_teams, w: 1, typ: kontext, co: "Kicker (úspěšnost podle vzdálenosti, vítr), return teams, trestné body."}
+  - {id: dome_vs_open, w: 1, typ: kontext, co: "Hala vs. otevřený stadion a bilance týmů."}
+  - {id: umela_vs_prirodni_trava, w: 1, typ: kontext, co: "Povrch a riziko zranění, stav trávníku."}
+  - {id: vyska_stadionu, w: 1, typ: kontext, co: "Denver (vysoko) a kondice hostujícího týmu."}
+  - {id: divizni_rivalita, w: 1, typ: kontext, co: "Divizní zápasy bývají těsnější a více spreadů v rozdílu."}
+  - {id: motivace_playoff_bublina, w: 2, typ: kontext, co: "Tým na hraně play-off, odpad ze hry, kuriózní kombinace výsledků."}
+  - {id: trenerske_zmeny_koordinatori, w: 1, typ: kontext, co: "Nový offensive/defensive coordinator, změna play callera."}
+  - {id: garbage_time_a_totals, w: 1, typ: kontext, trhy: [totals], co: "Kolik skóre padá v závěru a tendence k předčasným koncům."}
+  - {id: domaci_vyhoda_hluk, w: 1, typ: kontext, co: "Hluk a false start penalizace hostů na domácím hřišti."}

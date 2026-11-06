@@ -1,0 +1,18 @@
+sport: futsal
+poznamka: "Málo veřejných dat; důležitý je brankář a hra s pátým hráčem v poli."
+kriteria:
+  - {id: brankar, w: 3, typ: veto, co: "Start brankáře a jeho forma; hra brankáře v poli."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence nejlepších střelců a pivota."}
+  - {id: sestava_potvrzena, w: 2, typ: veto, co: "Potvrzená sestava a lajny."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více."}
+  - {id: power_play_pata, w: 2, typ: kontext, co: "Hra s pátým hráčem (flying goalkeeper) a úspěšnost."}
+  - {id: kumulovane_fauly, w: 2, typ: kontext, co: "Po 5 faulech v poločase: přímé kopy bez zdi."}
+  - {id: rozhodci, w: 1, typ: kontext, co: "Rozhodčí a tendence k faulům."}
+  - {id: forma_poslednich_5, w: 1, typ: kontext, co: "Posledních 5 zápasů."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemná bilance."}
+  - {id: kalendar_unava, w: 2, typ: kontext, co: "Kalendář a únava hráčů."}
+  - {id: motivace_tabulka, w: 2, typ: kontext, co: "Boj o play-off a pozice v tabulce."}
+  - {id: domaci_vyhoda, w: 1, typ: kontext, co: "Domácí hala a publikum."}
+  - {id: hala_podlozka, w: 1, typ: kontext, co: "Podložka a velikost hřiště."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér a taktika."}
+  - {id: rotace_pohar, w: 1, typ: kontext, co: "Rotace sestavy v poháru."}

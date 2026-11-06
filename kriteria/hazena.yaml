@@ -1,0 +1,21 @@
+sport: hazena
+poznamka: "Domácí prostředí má v házené velký efekt, brankář často rozhoduje."
+kriteria:
+  - {id: brankar_kvalita, w: 3, typ: veto, co: "Start jedničky, procento úspěšnosti zákroků, zranění brankáře."}
+  - {id: zraneni_klicovych, w: 3, typ: veto, co: "Absence střelců z dálky, pivota, rozehrávače."}
+  - {id: sestava_potvrzena, w: 2, typ: veto, co: "Potvrzený kádr a hráči, kteří se vracejí."}
+  - {id: kurzovy_pohyb, w: 3, typ: veto, co: "Pohyb kurzu o 5 % a více."}
+  - {id: rotace_unava, w: 2, typ: veto, co: "Rotace po zápase v poháru nebo reprezentaci."}
+  - {id: sedmimetrovy_exekutor, w: 1, typ: kontext, co: "Penalty a jejich exekutor."}
+  - {id: obrana_systemy, w: 2, typ: kontext, co: "Obrana 6-0 vs. 5-1 vs. 3-2-1 a styl útoku."}
+  - {id: tempo_totals, w: 2, typ: kontext, trhy: [totals], co: "Tempo hry, počet útoků a gólů na zápas."}
+  - {id: rozhodci_dvojice, w: 2, typ: kontext, co: "Dvojice rozhodčích a tendence k dvouminutovým trestům."}
+  - {id: domaci_vyhoda_publikum, w: 2, typ: kontext, co: "Domácí hala, publikum, atmosféra."}
+  - {id: forma_poslednich_5, w: 1, typ: kontext, co: "Posledních 5 zápasů a soupeři."}
+  - {id: h2h, w: 1, typ: kontext, co: "Vzájemná bilance."}
+  - {id: kalendar_pohary, w: 2, typ: kontext, co: "Gradace kalendáře, EHF pohár, únava."}
+  - {id: motivace_tabulka, w: 2, typ: kontext, co: "Boj o postup, medailové pozice."}
+  - {id: trener_zmena, w: 1, typ: kontext, co: "Nový trenér a změna systému."}
+  - {id: rychly_protiutok, w: 1, typ: kontext, co: "Rychlé protiútoky a gól z druhé vlny."}
+  - {id: podlozka_pryskyrice, w: 1, typ: kontext, co: "Hala, podložka a pravidla o pryskyřici (lepení míče)."}
+  - {id: cervene_a_vylouceni, w: 1, typ: kontext, co: "Červené karty a tresty."}
