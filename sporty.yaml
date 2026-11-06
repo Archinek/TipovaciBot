@@ -1,148 +1,154 @@
-# =====================================================================
-# sporty.yaml - JEDINÉ místo, kde nastavuješ chování bota.
-# =====================================================================
-
 nastaveni:
-  zona: Europe/Prague
-  hodina_ranni_report: 8        # report se pošle mezi 8:00 a 10:59 pražského času
-  max_hodin_dopredu: 36         # jen zápasy začínající do 36 h
-  regiony: [eu]                 # regiony Odds API (každý region = +1 kredit na volání)
-  kredity_max_na_beh: 60        # pojistka proti vyčerpání kvóty Odds API
-  vychozi_rezim: paper          # paper = jen sledovat | live = sázet | off = vypnuto
+  zona: "Europe/Prague"
+  hodina_ranni_report: 7
+  max_hodin_dopredu: 36
+  vychozi_rezim: "paper"
+  min_edge: 0.03
+  min_fair_kurz: 1.15
+  max_fair_kurz: 12.00
+  max_edge: 0.40
+  min_soft_kancelare: 2
+  min_kancelare_konsenzus: 3
+  kelly_frakce: 0.25
+  stake_cap: 0.03
+  max_tipu_denne: 20
+  max_na_sport: 8
+  kredity_max_na_beh: 40
+  regiony: ["eu"]
 
-  min_edge: 0.03                # minimální hrana (3 %)
-  max_edge: 0.15                # nad tím = podezřelé (chyba / zastaralý kurz) -> ⚠️
-  min_fair_kurz: 1.30           # ignoruj extrémní favority
-  max_fair_kurz: 4.50           # ignoruj extrémní outsidery
-  min_soft_kancelare: 3         # kolik "soft" kanceláří musí mít cenu (jinak neznámý kurz je málo důvěryhodný)
-  min_kancelare_konsenzus: 5    # pro sporty bez Pinnacle: kolik kanceláří dohromady
-  max_tipu_denne: 10
-  max_na_sport: 3               # diverzita: max tipů z jednoho sportu
-  veto_max_kriterii: 12         # kolik veto kritérií (podle váhy) jde do dotazu na Gemini
-  kontext_max_kriterii: 6       # kolik kontextových kritérií se přidá do analýzy
-  kelly_frakce: 0.25            # ¼ Kelly
-  stake_cap: 0.02               # strop 2 % bankrollu na sázku
-
-# Co je "sharp" (referenční, férová cena) a co se NEPOČÍTÁ jako soft kancelář
-sharp_kancelare: [pinnacle, betfair_ex_eu, matchbook]
-vyloucene_kancelare: [betfair_ex_eu, betfair_ex_uk, matchbook, betfair_ex_au, smarkets]
-
-# Pokud tvoje kancelář je v Odds API (klíč viz https://the-odds-api.com/sports-odds-data/bookmaker-apis.html),
-# doplň ji sem. Bot pak vybírá podle TVÉHO kurzu. Prázdné = bot dává "sázej od kurzu X" a ty ověříš ručně.
-moje_kancelare: []
-
-# Automatické povyšování/vypínání sportů podle dat z bety.csv
-auto_rizeni:
-  automaticky: false            # false = jen doporučí v reportu; true = přepíše režim sám (data/rezimy.json)
-  min_bets_hodnoceni: 150
-  povys_live_pokud_avg_clv_nad: 0.01
-  vypni_pokud_avg_clv_pod: -0.01
-
-# ---------------------------------------------------------------------
-# SPORTY. 'groups' = název skupiny v Odds API (zjistíš příkazem: python -m bot.main sports)
-# tier A: likvidní trh, Pinnacle jako reference
-# tier B: užší trh, reference = konsenzus kanceláří, vyšší práh hrany
-# kritéria: kriteria/<sport>.yaml (veto = zprávy těsně před zápasem, kontext = strukturální faktory)
-# ---------------------------------------------------------------------
-sporty:
-  fotbal:
-    groups: [Soccer]
-    tier: A
-    ref: pinnacle
-  hokej:
-    groups: [Ice Hockey]
-    tier: A
-    ref: pinnacle
-  basketbal:
-    groups: [Basketball]
-    tier: A
-    ref: pinnacle
-  americky_fotbal:
-    groups: [American Football]
-    tier: A
-    ref: pinnacle
-  baseball:
-    groups: [Baseball]
-    tier: A
-    ref: pinnacle
-  tenis:
-    groups: [Tennis]
-    tier: A
-    ref: pinnacle
-  mma:
-    groups: [Mixed Martial Arts]
-    tier: B
-    ref: pinnacle
-    min_edge: 0.05
-  box:
-    groups: [Boxing]
-    tier: B
-    ref: pinnacle
-    min_edge: 0.05
-  rugby:
-    groups: [Rugby League, Rugby Union]
-    tier: B
-    ref: consensus
-    min_edge: 0.05
-  kriket:
-    groups: [Cricket]
-    tier: B
-    ref: consensus
-    min_edge: 0.05
-  australsky_fotbal:
-    groups: [Aussie Rules]
-    tier: B
-    ref: consensus
-    min_edge: 0.05
-
-# ---------------------------------------------------------------------
-# Sporty, které Odds API (podle mých informací) nepokrývá: mají připravená kritéria v kriteria/,
-# ale groups je prázdné, takže se zatím nestahují a nic nesázejí.
-# Až najdeš zdroj kurzů, doplň 'groups' a změň ref/rezim.
-# ---------------------------------------------------------------------
-  stolni_tenis:    {groups: [], tier: C, ref: none, rezim: off}
-  volejbal:        {groups: [], tier: C, ref: none, rezim: off}
-  hazena:          {groups: [], tier: C, ref: none, rezim: off}
-  florbal:         {groups: [], tier: C, ref: none, rezim: off}
-  sipky:           {groups: [], tier: C, ref: none, rezim: off}
-  snooker:         {groups: [], tier: C, ref: none, rezim: off}
-  badminton:       {groups: [], tier: C, ref: none, rezim: off}
-  futsal:          {groups: [], tier: C, ref: none, rezim: off}
-  vodni_polo:      {groups: [], tier: C, ref: none, rezim: off}
-  plazovy_volejbal: {groups: [], tier: C, ref: none, rezim: off}
-  formule_1:       {groups: [], tier: C, ref: none, rezim: off}
-  moto:            {groups: [], tier: C, ref: none, rezim: off}
-  esport_cs:       {groups: [], tier: C, ref: none, rezim: off}
-  esport_lol:      {groups: [], tier: C, ref: none, rezim: off}
-  esport_dota2:    {groups: [], tier: C, ref: none, rezim: off}
-  esport_valorant: {groups: [], tier: C, ref: none, rezim: off}
-
-# =====================================================================
-# DOPLŇKOVÉ TRHY (fotbal): góly, rohy, karty, fauly + bet buildery. Model počítá pravděpodobnost sám,
-# protože u těchto trhů není ostrá referenční cena. Bot vydává "fér kurz" a "sázej od"; porovnáš je
-# s nabídkou své kanceláře (včetně builderu).
-# =====================================================================
 doplnkove:
   zapnuto: true
-  max_zapasu: 6                # kolik zápasů s nejvýraznějším signálem se ukáže
-  min_edge: 0.08               # vyšší práh než u h2h: vlastní model chybuje víc než Pinnacle
-  min_kurz: 1.40               # "sázej od" musí ležet v tomto pásmu (≈ pravděpodobnost 57-77 %)
-  max_kurz: 1.90
-  cervena_karta_jako: 1        # kolik "karet" se počítá za červenou (kanceláře se liší)
-  shrinkage_min: 3             # smrštění se učí z dat (empirický Bayes); tady jen dolní a horní mez
-  shrinkage_max: 400           # horní mez = 'týmové statistiky téměř nic neříkají'
-  pulcas_dny: 180              # stáří dat: po 180 dnech má zápas poloviční váhu
-  min_zapasu_historie: 60      # min. zápasů v lize pro naučení modelu
-  min_zapasu_tym: 6            # tým s méně zápasy se nehodnotí
-  simulace: 20000
+  min_zapasu_historie: 30
+  min_zapasu_tym: 5
+  shrinkage_min: 5.0
+  shrinkage_max: 30.0
+  pulcas_dny: 60
+  cervena_karta_jako: 2
+  simulace: 10000
+  min_edge: 0.04
+  min_kurz: 1.20
+  max_kurz: 10.00
   linie:
-    goly: [1.5, 2.5, 3.5]
-    rohy: [8.5, 9.5, 10.5, 11.5]
-    karty: [3.5, 4.5, 5.5]
-    fauly: [21.5, 23.5, 25.5, 27.5]
-  builder_leg_min_p: 0.55      # každá "noha" builderu musí být aspoň tak pravděpodobná
+    goly: [0.5, 1.5, 2.5, 3.5, 4.5]
+    rohy: [7.5, 8.5, 9.5, 10.5, 11.5, 12.5]
+    karty: [2.5, 3.5, 4.5, 5.5, 6.5]
+    fauly: [18.5, 20.5, 22.5, 24.5, 26.5]
+  builder_min_p: 0.05
+  builder_leg_min_p: 0.15
   builder_leg_max_p: 0.85
-  builder_min_p: 0.30
-  builder_min_kurz: 1.80
-  builder_max_kurz: 3.50
-  builder_max_kandidatu: 3
+  builder_min_kurz: 1.60
+  builder_max_kurz: 15.00
+  builder_max_kandidatu: 5
+  max_zapasu: 5
+
+sharp_kancelare: ["pinnacle", "betcris"]
+vyloucene_kancelare: ["betfair_ex_eu"]
+moje_kancelare: ["fortuna", "tipsport", "betano"]
+
+auto_rizeni:
+  automaticky: true
+  min_bets_hodnoceni: 50
+  povys_live_pokud_avg_clv_nad: 0.01
+  vypni_pokud_avg_clv_pod: -0.02
+
+sporty:
+  fotbal:
+    groups: ["Soccer"]
+    ref: "pinnacle"
+    tier: "A"
+  hokej:
+    groups: ["Ice Hockey"]
+    ref: "pinnacle"
+    tier: "A"
+  tenis:
+    groups: ["Tennis"]
+    ref: "pinnacle"
+    tier: "A"
+  basketbal:
+    groups: ["Basketball"]
+    ref: "pinnacle"
+    tier: "A"
+  americky_fotbal:
+    groups: ["American Football"]
+    ref: "pinnacle"
+    tier: "B"
+  baseball:
+    groups: ["Baseball"]
+    ref: "pinnacle"
+    tier: "B"
+  esport_cs:
+    groups: ["Esports"]
+    ref: "pinnacle"
+    tier: "B"
+  esport_dota2:
+    groups: ["Esports"]
+    ref: "pinnacle"
+    tier: "B"
+  esport_lol:
+    groups: ["Esports"]
+    ref: "pinnacle"
+    tier: "B"
+  mma:
+    groups: ["Mixed Martial Arts"]
+    ref: "pinnacle"
+    tier: "B"
+  box:
+    groups: ["Boxing"]
+    ref: "pinnacle"
+    tier: "B"
+  sipky:
+    groups: ["Darts"]
+    ref: "pinnacle"
+    tier: "B"
+  rugby:
+    groups: ["Rugby Union", "Rugby League"]
+    ref: "pinnacle"
+    tier: "C"
+  australsky_fotbal:
+    groups: ["Aussie Rules"]
+    ref: "pinnacle"
+    tier: "C"
+  snooker:
+    groups: ["Snooker"]
+    ref: "pinnacle"
+    tier: "C"
+  kriket:
+    groups: ["Cricket"]
+    ref: "pinnacle"
+    tier: "C"
+  moto:
+    groups: ["Motorsport"]
+    ref: "pinnacle"
+    tier: "C"
+  volejbal:
+    groups: ["Volleyball"]
+    ref: "pinnacle"
+    tier: "C"
+  florbal:
+    groups: ["Floorball"]
+    ref: "pinnacle"
+    tier: "C"
+  hazena:
+    groups: ["Handball"]
+    ref: "pinnacle"
+    tier: "C"
+  futsal:
+    groups: ["Futsal"]
+    ref: "pinnacle"
+    tier: "D"
+  vodni_polo:
+    groups: ["Water Polo"]
+    ref: "pinnacle"
+    tier: "D"
+  stolni_tenis:
+    groups: ["Table Tennis"]
+    ref: "pinnacle"
+    tier: "D"
+  badminton:
+    groups: ["Badminton"]
+    ref: "pinnacle"
+    tier: "D"
+  plazovy_volejbal:
+    groups: ["Beach Volleyball"]
+    ref: "pinnacle"
+    tier: "D"
