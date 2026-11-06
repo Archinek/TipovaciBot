@@ -1,25 +1,29 @@
 [
  {
-  "id": "ufo:tour:00-0pn",
+  "id": "ufo:tour:00-07a",
   "sportId": "ufo:sprt:00",
-  "categoryId": "ufo:ctgr:00-2o",
-  "name": "Japonsko - Football League",
+  "categoryId": "ufo:ctgr:00-2c",
+  "name": "1. Portugalsko",
   "sportSeoName": "fotbal",
-  "categorySeoName": "japonsko",
-  "seoName": "japonsko-football-league",
+  "categorySeoName": "portugalsko-4",
+  "seoName": "1-portugalsko-1",
   "icon": "default.png",
   "sportOrder": 3,
   "categoryOrder": 1000000,
-  "order": 12500,
-  "fixturesCount": 4,
-  "listUnderSport": false,
+  "order": 5,
+  "fixturesCount": 9,
+  "listUnderSport": true,
   "filters": [
-   "tomorrow",
    "today",
-   "all"
+   "3h",
+   "all",
+   "tomorrow",
+   "1h",
+   "tomorrow_1",
+   "live"
   ],
   "sportradarIds": [
-   "1824"
+   "238"
   ],
   "features": [
    "STATISTICS",
@@ -27,29 +31,33 @@
   ]
  },
  {
-  "id": "ufo:tour:00-10y",
+  "id": "ufo:tour:00-03m",
   "sportId": "ufo:sprt:00",
-  "categoryId": "ufo:ctgr:00-05",
-  "name": "3. Mexiko",
+  "categoryId": "ufo:ctgr:00-00",
+  "name": "1. Anglie",
   "sportSeoName": "fotbal",
-  "categorySeoName": "mexiko",
-  "seoName": "3-mexiko",
+  "categorySeoName": "anglie-4",
+  "seoName": "1-anglie",
   "icon": "default.png",
   "sportOrder": 3,
-  "categoryOrder": 1000000,
-  "order": 4970,
-  "fixturesCount": 5,
-  "listUnderSport": false,
+  "categoryOrder": 5,
+  "order": 5,
+  "fixturesCount": 21,
+  "listUnderSport": true,
   "filters": [
-   "tomorrow",
-   "3h",
    "today",
-   "all"
+   "3h",
+   "all",
+   "tomorrow",
+   "1h",
+   "tomorrow_1",
+   "live"
   ],
   "sportradarIds": [
-   "40535"
+   "17"
   ],
   "features": [
+   "OUTRIGHTS",
    "STATISTICS",
    "MATCHES"
   ]
@@ -69,9 +77,9 @@
   "fixturesCount": 1,
   "listUnderSport": false,
   "filters": [
-   "tomorrow",
    "today",
-   "all"
+   "all",
+   "tomorrow"
   ],
   "features": [
    "MATCHES"
@@ -90,12 +98,12 @@
   "sportOrder": 5,
   "categoryOrder": 6,
   "order": 70,
-  "fixturesCount": 1,
+  "fixturesCount": 2,
   "listUnderSport": false,
   "filters": [
-   "tomorrow",
    "today",
-   "all"
+   "all",
+   "tomorrow"
   ],
   "features": [
    "MATCHES"
