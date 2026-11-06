@@ -33,7 +33,9 @@ jobs:
 
       - name: 3. Instalace knihoven a prohlizece Playwright
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install playwright
           playwright install chromium --with-deps
 
       - name: 4. Spusteni TipovaciBot
@@ -44,13 +46,13 @@ jobs:
           WA_GROUP_ID: ${{ secrets.WA_GROUP_ID }}
           GITHUB_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           RESEND_WA_ONLY: ${{ inputs.resend_wa_only }}
-        run: python main.py
+        run: python -m bot.main morning
 
       - name: 5. Ulozeni HTML reportu, zalohy a chyb na GitHub
         run: |
           git config user.name "TipovaciBot"
           git config user.email "bot@tipovacibot.local"
           touch lekce_z_chyb.txt
-          git add index.html dnesni_report.html archiv/ lekce_z_chyb.txt
+          git add index.html dnesni_report.html archiv/ lekce_z_chyb.txt data/
           git diff --staged --quiet || git commit -m "📊 Novy report a vyhodnoceni $(date +'%Y-%m-%d')"
           git push
