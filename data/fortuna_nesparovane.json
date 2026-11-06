@@ -83,5 +83,25 @@
   "turnaj": "1. Turecko",
   "home": "Göztepe",
   "away": "Istanbul Basaksehir"
+ },
+ {
+  "turnaj": "1. Portugalsko",
+  "home": "Rio Ave",
+  "away": "SC Braga"
+ },
+ {
+  "turnaj": "1. Řecko",
+  "home": "OFI Kreta",
+  "away": "Atromitos"
+ },
+ {
+  "turnaj": "1. Belgie",
+  "home": "Truidense",
+  "away": "Waregem"
+ },
+ {
+  "turnaj": "2. Španělsko",
+  "home": "Sporting Gijón",
+  "away": "Valladolid"
  }
 ]
