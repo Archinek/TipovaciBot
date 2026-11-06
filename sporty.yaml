@@ -33,6 +33,7 @@ doplnkove:
     rohy: [7.5, 8.5, 9.5, 10.5, 11.5, 12.5]
     karty: [2.5, 3.5, 4.5, 5.5, 6.5]
     fauly: [18.5, 20.5, 22.5, 24.5, 26.5]
+    sot: [6.5, 7.5, 8.5, 9.5, 10.5, 11.5]
   builder_min_p: 0.05
   builder_leg_min_p: 0.15
   builder_leg_max_p: 0.85
@@ -152,3 +153,49 @@ sporty:
     groups: ["Beach Volleyball"]
     ref: "pinnacle"
     tier: "D"
+
+# Anonymní nabídka Fortuny (bot/fortuna.py). Pauza mezi požadavky je záměrně pomalá, ať nic neblokují.
+fortuna:
+  zapnuto: true
+  pauza_s: 0.4
+  max_zapasu: 600
+  vaha_modelu: 0.5       # p = vaha*model + (1-vaha)*férový trh; víc než 0.5 nedoporučuji bez důkazu z backtestu
+  min_edge: 0.03
+  min_kurz: 1.50         # TOP tipéři hrají hlavně 1.6-2.9 (hráčské trhy i 4-7); dřívější strop 2.20 je vyřazoval
+  max_kurz: 4.50
+  pasma:                 # kurzové pásmo podle typu trhu (přepíše min/max výše)
+    esa: [1.40, 3.20]
+    df: [1.40, 3.20]
+    sot: [1.60, 3.00]
+    sot_dom: [1.60, 3.00]
+    sot_hos: [1.60, 3.00]
+    fauly: [1.60, 3.00]
+    karty: [1.60, 3.20]
+    rohy: [1.60, 3.00]
+  max_rozchod: 0.12      # když se model s trhem rozchází víc, linii zahodíme (model něco neví)
+  max_tipu: 10
+  cervena_karta_jako: 0   # Fortuna u karet počítá jen žluté (2. žlutá a červená se nepočítají)
+
+# Vzorec TOP tipérů Tipsportu (bot/tipsteri.py): výběr "tipu dne" z kandidátů. Váhy rodin jsou odhad z profilů, ne důkaz.
+tipsteri:
+  tipu_dne: 3
+  max_na_rodinu: 2
+  jistejsich: 2           # druhý žebříček: vyšší úspěšnost za nižší kurz
+  jistejsi_min_p: 0.58
+  jistejsi_min_edge: 0.02
+  kelly_frakce: 0.25      # doporučený vklad = 1/4 Kelly
+  max_vklad_pct: 2.0      # strop vkladu v % banku
+  vahy_rodin:
+    "Tenis: esa": 1.15
+    "Tenis: dvojchyby": 1.10
+    "Fotbal: střely na bránu": 1.10
+    "Fotbal: fauly": 1.10
+    "Fotbal: karty": 1.10
+    "Fotbal: rohy": 1.0
+    "Fotbal: góly": 0.90
+
+# Obsáhlá analýza (bot/analyza.py): kritéria z kriteria/<sport>.yaml, fakta dohledává Gemini, čísla počítá bot.
+analyza:
+  zapnuto: true
+  max_zapasu_h2h: 8       # u kolika h2h zápasů (všechny sporty) se dělá plný rozbor
+  max_zapasu_fotbal: 6    # u kolika fotbalových zápasů z nabídky Fortuny

@@ -91,6 +91,26 @@ Každý den se navíc loguje předpověď do `data/doplnkove.csv`, po zápase se
 na tyto trhy bot nemá, takže **CLV a ROI na doplňkových trzích se zatím neměří**. Měří se jen kalibrace pravděpodobností.
 Střídání a americký fotbal (yardy hráčů) tu zatím nejsou.
 
+## Kurzy tvé kanceláře (Tipsport, Fortuna, Betano)
+
+Odds API tyto kanceláře nezná a bot je **nestahuje z jejich webů** (ochrana proti botům + podmínky používání).
+Zdroje kurzů jsou proto dva:
+
+| Co | Odkud | Jak |
+|---|---|---|
+| Férová cena (Pinnacle, konsenzus), kurzy ostatních kanceláří | Odds API | automaticky |
+| Kurz **tvé** kanceláře | ty, ručně | `data/moje_kurzy.csv` (stačí upravit přímo na GitHubu) |
+
+Formát `data/moje_kurzy.csv` (desetinná **tečka**!):
+```
+home,away,trh,vyber,linie,strana,kurz,kancelar
+Arsenal,Chelsea,h2h,Arsenal,,,2.25,tipsport
+Arsenal,Chelsea,fauly,,22.5,over,1.85,tipsport
+```
+Bot pak u tipu ukáže `💱 tipsport 2.25: edge +4.1 % ✅ vyplatí se` nebo `❌ pod hranou`. Jména týmů nemusí být přesná.
+Kurz zadej před spuštěním ranního běhu, nebo spusť `Ranní report → resend`.
+`moje_kancelare` v `sporty.yaml` teď slouží jen pro kanceláře, které Odds API opravdu má; ostatní bot přeskočí.
+
 ## Co musíš vědět
 
 - **Pinnacle v Odds API je z veřejného webu a může mít zpoždění**, takže „fér kurz" je odhad.
@@ -113,3 +133,20 @@ python tests/test_kriteria.py       # kontrola YAML kritérií
 python tests/test_doplnkove.py      # model doplňkových trhů (syntetická data)
 ODDS_API_KEY=... python -m bot.main sports
 ```
+
+## Vzorec TOP tipérů, tenisová esa a tip dne (v9)
+Z profilů nejúspěšnějších tipérů Tipsportu (borunja, pafi, bouchal1, JirAdam, sarka3004) plyne: hrají SÓLO sázky na statistické trhy
+(tenisová esa, střely na bránu, fauly, karty, v NHL střely a hráčské trhy) kolem kurzu 2.0 a kurz se během dne sráží.
+- `bot/tenis.py`: model počtu es (celkem i hráč) ze Sackmannových dat (GitHub), povrch, smrštění, negativně binomické rozdělení.
+- Fotbal: přibyl model střel na bránu (celkem i týmové) z football-data (HST/AST).
+- `bot/tipsteri.py`: skóre kandidátů (hrana × důvěra × váha typu trhu) a **tip dne** (max. 1 linie na zápas, max. 2 z jednoho typu trhu). Váhy jsou odhad, ne důkaz: `sporty.yaml → tipsteri`.
+- `bot/fortuna_log.py`: každá hrana se loguje (`data/fortuna_log.csv`), `closing` workflow co 30 min čte aktuální kurz téže linie (pohyb kurzu, CLV) a po zápase se doplní výsledek. Souhrn (CLV, Brier modelu vs. trhu, ROI plochého vkladu) jde do reportu a WhatsAppu.
+- Kurzové pásmo se rozšířilo na 1.50–4.50, podle typu trhu `fortuna.pasma`.
+- **Neověřeno:** skutečné názvy trhů Fortuny pro esa a střely (`fortuna_probe` uloží `6_tenis_trhy.json` a `6_hokej_trhy.json`), a že Fortuna vůbec tyto trhy nabízí. Bez toho se tenis nebo střely nevyhodnotí.
+- **Chybí:** NHL (střely, hráči) a basket. Je potřeba ověřit NHL API a názvy trhů.
+
+### Doplněno (v10)
+- Dvojchyby: `Počet dvojchyb [hráče]` a `Kdo zahraje více dvojchyb (bez remízy)` (Marty37), stejný model jako esa, data `w_df/l_df`. Under 0.5 es hráče model zvládne (P nulových es).
+- Druhý žebříček **Jistější tipy**: p ≥ 58 %, hrana ≥ 2 %, řazeno podle náskoku pravděpodobnosti před hranicí vyplacení. Pro stabilní růst banku za cenu nižšího kurzu.
+- **Doporučený vklad** u každého kandidáta: 1/4 Kelly se stropem 2 % banku (`sporty.yaml → tipsteri`).
+- Názvy trhů pro dvojchyby jsou stejně jako u es NEOVĚŘENÉ.
