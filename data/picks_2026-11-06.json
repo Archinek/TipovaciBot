@@ -2,72 +2,27 @@
   "datum": "2026-11-06",
   "picks": [
     {
-      "id": "5b386dfdf6f76705116fbb4120ee8493|Real Madrid",
+      "id": "33d6e4e2139e525fed9d8118861a5d8a|Shenzhen Peng City FC",
       "datum": "2026-11-06",
       "sport": "fotbal",
-      "sport_key": "soccer_spain_la_liga",
+      "sport_key": "soccer_china_superleague",
       "tier": "A",
       "rezim": "paper",
-      "event_id": "5b386dfdf6f76705116fbb4120ee8493",
-      "zapas": "Valencia vs Real Madrid",
-      "vyber": "Real Madrid",
-      "start": "2026-11-07T20:00:00+00:00",
-      "fair_p": 0.7885,
+      "event_id": "33d6e4e2139e525fed9d8118861a5d8a",
+      "zapas": "Qingdao Hainiu FC vs Shenzhen Peng City FC",
+      "vyber": "Shenzhen Peng City FC",
+      "start": "2026-11-08T07:30:00+00:00",
+      "fair_p": 0.6026,
       "fair_zdroj": "pinnacle",
-      "fair_kurz": 1.27,
-      "min_kurz": 1.31,
-      "best_kurz": 1.33,
-      "best_kniha": "onexbet",
-      "n_soft": 19,
-      "moje_kurz": 1.26,
-      "edge": -0.0065,
-      "riziko": "",
-      "stake_pct": 3.0,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "moje_info": "Fortuna (orientačně) 1.26: edge -0.6 % ❌ pod hranou (potřeba 1.31)",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Real Madrid: férová pravděpodobnost podle Pinnacle 79 %, sázej od 1.31."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "ad3b84c613ba9e6536347a743b9e91e2|FC Halifax Town",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_fa_cup",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "ad3b84c613ba9e6536347a743b9e91e2",
-      "zapas": "Cheltenham Town vs FC Halifax Town",
-      "vyber": "FC Halifax Town",
-      "start": "2026-11-07T15:00:00+00:00",
-      "fair_p": 0.2796,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 3.58,
-      "min_kurz": 3.68,
-      "best_kurz": 3.75,
+      "fair_kurz": 1.66,
+      "min_kurz": 1.71,
+      "best_kurz": 1.71,
       "best_kniha": "matchbook",
-      "n_soft": 12,
+      "n_soft": 17,
       "moje_kurz": "",
-      "edge": 0.0485,
+      "edge": 0.0304,
       "riziko": "",
-      "stake_pct": 0.44,
+      "stake_pct": 1.07,
       "veto": "NEOVĚŘENO",
       "veto_duvod": "Kontrola Gemini neproběhla.",
       "kurz_vzat": "",
@@ -80,274 +35,8 @@
         "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
         "souhrn": "",
         "pro": [
-          "Výsledek FC Halifax Town: férová pravděpodobnost podle Pinnacle 28 %, sázej od 3.68."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "1a2b66dec637d06c15d3902ac9068c1f|Draw",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_germany_bundesliga2",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "1a2b66dec637d06c15d3902ac9068c1f",
-      "zapas": "Holstein Kiel vs Arminia Bielefeld",
-      "vyber": "Draw",
-      "start": "2026-11-07T12:00:00+00:00",
-      "fair_p": 0.2949,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 3.39,
-      "min_kurz": 3.49,
-      "best_kurz": 3.55,
-      "best_kniha": "unibet_nl",
-      "n_soft": 19,
-      "moje_kurz": "",
-      "edge": 0.0467,
-      "riziko": "",
-      "stake_pct": 0.46,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Draw: férová pravděpodobnost podle Pinnacle 29 %, sázej od 3.49."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "6dd9bd70df940845fd51c7af37ea1510|Degerfors IF",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_sweden_allsvenskan",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "6dd9bd70df940845fd51c7af37ea1510",
-      "zapas": "Degerfors IF vs GAIS",
-      "vyber": "Degerfors IF",
-      "start": "2026-11-07T16:30:00+00:00",
-      "fair_p": 0.3315,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 3.02,
-      "min_kurz": 3.11,
-      "best_kurz": 3.15,
-      "best_kniha": "unibet_se",
-      "n_soft": 19,
-      "moje_kurz": "",
-      "edge": 0.0442,
-      "riziko": "",
-      "stake_pct": 0.51,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Degerfors IF: férová pravděpodobnost podle Pinnacle 33 %, sázej od 3.11.",
-          "Výsledek GAIS: férová pravděpodobnost podle Pinnacle 42 %, sázej od 2.48."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "a88341ac02c8103eedc594a2ceb3a400|Wolverhampton Wanderers",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_efl_champ",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "a88341ac02c8103eedc594a2ceb3a400",
-      "zapas": "Wrexham AFC vs Wolverhampton Wanderers",
-      "vyber": "Wolverhampton Wanderers",
-      "start": "2026-11-07T12:30:00+00:00",
-      "fair_p": 0.4467,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 2.24,
-      "min_kurz": 2.31,
-      "best_kurz": 2.33,
-      "best_kniha": "leovegas_se",
-      "n_soft": 20,
-      "moje_kurz": 2.22,
-      "edge": -0.0083,
-      "riziko": "",
-      "stake_pct": 0.77,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "moje_info": "Fortuna (orientačně) 2.22: edge -0.8 % ❌ pod hranou (potřeba 2.31)",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Wolverhampton Wanderers: férová pravděpodobnost podle Pinnacle 45 %, sázej od 2.31."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "7c28f1e4077d04fa3583bda3be441ec1|Varbergs BoIS",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_sweden_superettan",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "7c28f1e4077d04fa3583bda3be441ec1",
-      "zapas": "GIF Sundsvall vs Varbergs BoIS",
-      "vyber": "Varbergs BoIS",
-      "start": "2026-11-07T14:00:00+00:00",
-      "fair_p": 0.8004,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 1.25,
-      "min_kurz": 1.29,
-      "best_kurz": 1.3,
-      "best_kniha": "unibet_se",
-      "n_soft": 13,
-      "moje_kurz": "",
-      "edge": 0.0406,
-      "riziko": "",
-      "stake_pct": 3.0,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Varbergs BoIS: férová pravděpodobnost podle Pinnacle 80 %, sázej od 1.29."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "6dd9bd70df940845fd51c7af37ea1510|GAIS",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_sweden_allsvenskan",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "6dd9bd70df940845fd51c7af37ea1510",
-      "zapas": "Degerfors IF vs GAIS",
-      "vyber": "GAIS",
-      "start": "2026-11-07T16:30:00+00:00",
-      "fair_p": 0.4154,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 2.41,
-      "min_kurz": 2.48,
-      "best_kurz": 2.5,
-      "best_kniha": "unibet_se",
-      "n_soft": 19,
-      "moje_kurz": "",
-      "edge": 0.0386,
-      "riziko": "",
-      "stake_pct": 0.64,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Degerfors IF: férová pravděpodobnost podle Pinnacle 33 %, sázej od 3.11.",
-          "Výsledek GAIS: férová pravděpodobnost podle Pinnacle 42 %, sázej od 2.48."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      },
-      "veto_kontext": ""
-    },
-    {
-      "id": "db1f232841ce21397c2723f954389bd6|Draw",
-      "datum": "2026-11-06",
-      "sport": "fotbal",
-      "sport_key": "soccer_russia_premier_league",
-      "tier": "A",
-      "rezim": "paper",
-      "event_id": "db1f232841ce21397c2723f954389bd6",
-      "zapas": "FC Krasnodar vs CSKA Moscow",
-      "vyber": "Draw",
-      "start": "2026-11-07T16:30:00+00:00",
-      "fair_p": 0.2721,
-      "fair_zdroj": "pinnacle",
-      "fair_kurz": 3.67,
-      "min_kurz": 3.78,
-      "best_kurz": 3.81,
-      "best_kniha": "onexbet",
-      "n_soft": 3,
-      "moje_kurz": "",
-      "edge": 0.0368,
-      "riziko": "",
-      "stake_pct": 0.33,
-      "veto": "NEOVĚŘENO",
-      "veto_duvod": "Kontrola Gemini neproběhla.",
-      "kurz_vzat": "",
-      "closing_fair_p": "",
-      "vysledek": "",
-      "zisk_paper": "",
-      "zisk_real": "",
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "",
-        "pro": [
-          "Výsledek Draw: férová pravděpodobnost podle Pinnacle 27 %, sázej od 3.78."
+          "Výsledek Shenzhen Peng City FC: férová pravděpodobnost podle Pinnacle 60 %, sázej od 1.71.",
+          "Výsledek Qingdao Hainiu FC: férová pravděpodobnost podle Pinnacle 20 %, sázej od 5.25."
         ],
         "proti": [
           "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
@@ -375,10 +64,100 @@
       "best_kurz": 12.75,
       "best_kniha": "marathonbet",
       "n_soft": 21,
-      "moje_kurz": "",
-      "edge": 0.153,
+      "moje_kurz": 8.6,
+      "edge": -0.2226,
       "riziko": "osamocený nejvyšší kurz",
       "stake_pct": 0.33,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "moje_info": "Fortuna (orientačně) 8.6: edge -22.3 % ❌ pod hranou (potřeba 11.39)",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Sacramento Kings: férová pravděpodobnost podle Pinnacle 9 %, sázej od 11.39."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "9246c91f746732472c13e94bd8e7be85|Washington Wizards",
+      "datum": "2026-11-06",
+      "sport": "basketbal",
+      "sport_key": "basketball_nba",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "9246c91f746732472c13e94bd8e7be85",
+      "zapas": "Atlanta Hawks vs Washington Wizards",
+      "vyber": "Washington Wizards",
+      "start": "2026-11-07T00:10:00+00:00",
+      "fair_p": 0.2816,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 3.55,
+      "min_kurz": 3.66,
+      "best_kurz": 3.8,
+      "best_kniha": "unibet_nl",
+      "n_soft": 20,
+      "moje_kurz": 3.9,
+      "edge": 0.0982,
+      "riziko": "osamocený nejvyšší kurz",
+      "stake_pct": 0.63,
+      "veto": "NEOVĚŘENO",
+      "veto_duvod": "Kontrola Gemini neproběhla.",
+      "kurz_vzat": "",
+      "closing_fair_p": "",
+      "vysledek": "",
+      "zisk_paper": "",
+      "zisk_real": "",
+      "moje_info": "Fortuna (orientačně) 3.9: edge +9.8 % ✅ vyplatí se",
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "",
+        "pro": [
+          "Výsledek Washington Wizards: férová pravděpodobnost podle Pinnacle 28 %, sázej od 3.66."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      },
+      "veto_kontext": ""
+    },
+    {
+      "id": "33d6e4e2139e525fed9d8118861a5d8a|Qingdao Hainiu FC",
+      "datum": "2026-11-06",
+      "sport": "fotbal",
+      "sport_key": "soccer_china_superleague",
+      "tier": "A",
+      "rezim": "paper",
+      "event_id": "33d6e4e2139e525fed9d8118861a5d8a",
+      "zapas": "Qingdao Hainiu FC vs Shenzhen Peng City FC",
+      "vyber": "Qingdao Hainiu FC",
+      "start": "2026-11-08T07:30:00+00:00",
+      "fair_p": 0.1963,
+      "fair_zdroj": "pinnacle",
+      "fair_kurz": 5.09,
+      "min_kurz": 5.25,
+      "best_kurz": 5.3,
+      "best_kniha": "unibet_nl",
+      "n_soft": 17,
+      "moje_kurz": "",
+      "edge": 0.0405,
+      "riziko": "osamocený nejvyšší kurz",
+      "stake_pct": 0.24,
       "veto": "NEOVĚŘENO",
       "veto_duvod": "Kontrola Gemini neproběhla.",
       "kurz_vzat": "",
@@ -391,7 +170,8 @@
         "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
         "souhrn": "",
         "pro": [
-          "Výsledek Sacramento Kings: férová pravděpodobnost podle Pinnacle 9 %, sázej od 11.39."
+          "Výsledek Shenzhen Peng City FC: férová pravděpodobnost podle Pinnacle 60 %, sázej od 1.71.",
+          "Výsledek Qingdao Hainiu FC: férová pravděpodobnost podle Pinnacle 20 %, sázej od 5.25."
         ],
         "proti": [
           "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
@@ -2988,13 +2768,13 @@
       "typ": "goly",
       "linie": 4.5,
       "strana": "over",
-      "kurz_fortuna": 2.95,
+      "kurz_fortuna": 3.0,
       "p_model": 0.4045,
-      "p_trh": 0.3104,
-      "p": 0.3575,
-      "edge": 0.0545,
-      "sazej_od": 2.89,
-      "fair": 2.8,
+      "p_trh": 0.3049,
+      "p": 0.3547,
+      "edge": 0.0642,
+      "sazej_od": 2.91,
+      "fair": 2.82,
       "mu": [
         2.86,
         1.31
@@ -3048,16 +2828,16 @@
           "10.01.2026 Roma 2:0, žluté 4, fauly 31, rohy 7"
         ]
       },
-      "skore": 0.0298,
+      "skore": 0.0338,
       "rodina": "Fotbal: góly",
-      "vklad_pct": 0.7,
+      "vklad_pct": 0.8,
       "analyza": {
         "verdikt": "NEOVERENO",
         "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
         "souhrn": "Domácí v posledních 10 zápasech: góly 2.8:1.0, rohy 5.8, fauly 11.2, žluté 1.9. Hosté: góly 1.6:2.6, rohy 4.1, fauly 9.7, žluté 1.4. Průměr ligy na zápas: {'goly': 2.58, 'rohy': 8.99, 'fauly': 24.61, 'karty': 3.6}.",
         "pro": [
-          "Góly v zápase: více než 4.5: model 40 % vs. trh 31 %, hrana +5.5 %.",
-          "Góly v zápase: více než 3.5: model 60 % vs. trh 51 %, hrana +4.0 %."
+          "Góly v zápase: více než 4.5: model 40 % vs. trh 30 %, hrana +6.4 %.",
+          "Góly v zápase: více než 3.5: model 60 % vs. trh 50 %, hrana +4.6 %."
         ],
         "proti": [
           "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
@@ -3488,6 +3268,100 @@
       }
     },
     {
+      "zapas": "AS Roma - Sassuolo",
+      "zapas_id": "ufo:mtch:1xi-01f",
+      "sport": "fotbal",
+      "home_fd": "Roma",
+      "away_fd": "Sassuolo",
+      "noha_klic": "goly|3.5|over|",
+      "home": "AS Roma",
+      "away": "Sassuolo",
+      "start": "2026-11-07T19:45:00+00:00",
+      "liga": "1. Itálie",
+      "kod": "I1",
+      "trh": "Góly v zápase: více než 3.5",
+      "typ": "goly",
+      "linie": 3.5,
+      "strana": "over",
+      "kurz_fortuna": 1.9,
+      "p_model": 0.5992,
+      "p_trh": 0.5014,
+      "p": 0.5503,
+      "edge": 0.0456,
+      "sazej_od": 1.88,
+      "fair": 1.82,
+      "mu": [
+        2.86,
+        1.31
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.58,
+          "rohy": 8.99,
+          "fauly": 24.61,
+          "karty": 3.6
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. V Como 0:0",
+            "17.10. D Genoa 2:0",
+            "24.10. V Napoli 3:3",
+            "27.10. D Cagliari 4:2",
+            "31.10. V Udinese 5:2"
+          ],
+          "goly_pro": 2.8,
+          "goly_proti": 1.0,
+          "rohy_pro": 5.8,
+          "rohy_proti": 3.5,
+          "fauly_pro": 11.2,
+          "fauly_proti": 8.5,
+          "zlute_pro": 1.9,
+          "zlute_proti": 1.5
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. D Milan 1:1",
+            "16.10. V Frosinone 2:4",
+            "24.10. V Como 0:2",
+            "27.10. D Lazio 2:6",
+            "02.11. D Fiorentina 2:4"
+          ],
+          "goly_pro": 1.6,
+          "goly_proti": 2.6,
+          "rohy_pro": 4.1,
+          "rohy_proti": 5.4,
+          "fauly_pro": 9.7,
+          "fauly_proti": 12.4,
+          "zlute_pro": 1.4,
+          "zlute_proti": 2.0
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "26.10.2025 Sassuolo 0:1, žluté 5, fauly 34, rohy 12",
+          "10.01.2026 Roma 2:0, žluté 4, fauly 31, rohy 7"
+        ]
+      },
+      "skore": 0.0243,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.27,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
+        "souhrn": "Domácí v posledních 10 zápasech: góly 2.8:1.0, rohy 5.8, fauly 11.2, žluté 1.9. Hosté: góly 1.6:2.6, rohy 4.1, fauly 9.7, žluté 1.4. Průměr ligy na zápas: {'goly': 2.58, 'rohy': 8.99, 'fauly': 24.61, 'karty': 3.6}.",
+        "pro": [
+          "Góly v zápase: více než 4.5: model 40 % vs. trh 30 %, hrana +6.4 %.",
+          "Góly v zápase: více než 3.5: model 60 % vs. trh 50 %, hrana +4.6 %."
+        ],
+        "proti": [
+          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
+        ],
+        "riziko": "Nezjištěna sestava a zranění.",
+        "komentare_k_trhum": []
+      }
+    },
+    {
       "zapas": "Den Haag - Sparta Rotterdam",
       "zapas_id": "ufo:mtch:1xi-02v",
       "sport": "fotbal",
@@ -3569,100 +3443,6 @@
         "souhrn": "Domácí v posledních 10 zápasech: góly 1.3:2.2, rohy 3.4, fauly 14.1, žluté 1.9. Hosté: góly 2.0:2.5, rohy 5.8, fauly 10.9, žluté 1.6. Průměr ligy na zápas: {'goly': 3.33, 'rohy': 10.41, 'fauly': 21.7, 'karty': 3.14}.",
         "pro": [
           "Góly v zápase: více než 3.5: model 50 % vs. trh 40 %, hrana +4.8 %."
-        ],
-        "proti": [
-          "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
-        ],
-        "riziko": "Nezjištěna sestava a zranění.",
-        "komentare_k_trhum": []
-      }
-    },
-    {
-      "zapas": "AS Roma - Sassuolo",
-      "zapas_id": "ufo:mtch:1xi-01f",
-      "sport": "fotbal",
-      "home_fd": "Roma",
-      "away_fd": "Sassuolo",
-      "noha_klic": "goly|3.5|over|",
-      "home": "AS Roma",
-      "away": "Sassuolo",
-      "start": "2026-11-07T19:45:00+00:00",
-      "liga": "1. Itálie",
-      "kod": "I1",
-      "trh": "Góly v zápase: více než 3.5",
-      "typ": "goly",
-      "linie": 3.5,
-      "strana": "over",
-      "kurz_fortuna": 1.88,
-      "p_model": 0.5992,
-      "p_trh": 0.5071,
-      "p": 0.5531,
-      "edge": 0.0399,
-      "sazej_od": 1.87,
-      "fair": 1.81,
-      "mu": [
-        2.86,
-        1.31
-      ],
-      "data": {
-        "liga_prumer_na_zapas": {
-          "goly": 2.58,
-          "rohy": 8.99,
-          "fauly": 24.61,
-          "karty": 3.6
-        },
-        "domaci": {
-          "zapasu": 10,
-          "posledni": [
-            "11.10. V Como 0:0",
-            "17.10. D Genoa 2:0",
-            "24.10. V Napoli 3:3",
-            "27.10. D Cagliari 4:2",
-            "31.10. V Udinese 5:2"
-          ],
-          "goly_pro": 2.8,
-          "goly_proti": 1.0,
-          "rohy_pro": 5.8,
-          "rohy_proti": 3.5,
-          "fauly_pro": 11.2,
-          "fauly_proti": 8.5,
-          "zlute_pro": 1.9,
-          "zlute_proti": 1.5
-        },
-        "hoste": {
-          "zapasu": 10,
-          "posledni": [
-            "11.10. D Milan 1:1",
-            "16.10. V Frosinone 2:4",
-            "24.10. V Como 0:2",
-            "27.10. D Lazio 2:6",
-            "02.11. D Fiorentina 2:4"
-          ],
-          "goly_pro": 1.6,
-          "goly_proti": 2.6,
-          "rohy_pro": 4.1,
-          "rohy_proti": 5.4,
-          "fauly_pro": 9.7,
-          "fauly_proti": 12.4,
-          "zlute_pro": 1.4,
-          "zlute_proti": 2.0
-        },
-        "rozhodci_v_lize": [],
-        "vzajemne": [
-          "26.10.2025 Sassuolo 0:1, žluté 5, fauly 34, rohy 12",
-          "10.01.2026 Roma 2:0, žluté 4, fauly 31, rohy 7"
-        ]
-      },
-      "skore": 0.0221,
-      "rodina": "Fotbal: góly",
-      "vklad_pct": 1.13,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.",
-        "souhrn": "Domácí v posledních 10 zápasech: góly 2.8:1.0, rohy 5.8, fauly 11.2, žluté 1.9. Hosté: góly 1.6:2.6, rohy 4.1, fauly 9.7, žluté 1.4. Průměr ligy na zápas: {'goly': 2.58, 'rohy': 8.99, 'fauly': 24.61, 'karty': 3.6}.",
-        "pro": [
-          "Góly v zápase: více než 4.5: model 40 % vs. trh 31 %, hrana +5.5 %.",
-          "Góly v zápase: více než 3.5: model 60 % vs. trh 51 %, hrana +4.0 %."
         ],
         "proti": [
           "Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."
