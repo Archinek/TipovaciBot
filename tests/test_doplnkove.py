@@ -22,7 +22,7 @@ def synteticka_liga(ucinek_tymu=0.25, ucinek_rozhodciho=0.25, zapasu=760, seed=7
     att = {v: {t: float(np.exp(rng.normal(0, ucinek_tymu))) for t in tymy} for v in dp.PROMENNE}
     de = {v: {t: float(np.exp(rng.normal(0, ucinek_tymu))) for t in tymy} for v in dp.PROMENNE}
     rozh = {f"R{i}": float(np.exp(rng.normal(0, ucinek_rozhodciho))) for i in range(12)}
-    zaklad = {"goly": (1.5, 1.2), "rohy": (5.4, 4.5), "karty": (2.0, 2.3), "fauly": (11.5, 11.5)}
+    zaklad = {"goly": (1.5, 1.2), "rohy": (5.4, 4.5), "karty": (2.0, 2.3), "fauly": (11.5, 11.5), "sot": (4.8, 4.0)}
     start = datetime.datetime(2024, 8, 1, tzinfo=UTC)
     rows = []
     for i in range(zapasu):

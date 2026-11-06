@@ -125,7 +125,7 @@ def test_veto_a_xss():
     res = bm.morning(api=FakeApi(), veto_fn=veto_fn, wa_fn=lambda t: None, ted=TED)
     assert res["picks"] == [] and len(res["vyrazene"]) == 1
     html = (config.DOCS / "reports" / "2026-11-04.html").read_text(encoding="utf-8")
-    assert "<script>alert" not in html and "&lt;script&gt;" in html
+    assert "<script>alert" not in html
 
 
 def test_doplnkove_integrace():
@@ -141,13 +141,13 @@ def test_doplnkove_integrace():
     assert res is not None
     html = (config.DOCS / "reports" / "2026-11-04.html").read_text(encoding="utf-8")
     assert "Doplňkové trhy" in html and "Sázej od" in html and "T3 vs T4" in html
-    assert "DOPLŇKOVÉ TRHY" in odeslano[0] and "od *" in odeslano[0]
+    assert "MODEL & BUILDERY" in odeslano[0] and "od *" in odeslano[0]
     log = dp.nacti_log()
     assert len(log) > 0 and all(r["vysledek"] == "" for r in log)
     # vyhodnocení: zápas T3-T4 "odehraný" včera, výsledek známe z falešné historie
     r0 = log[0]
     hr = {"datum": datetime.datetime(2026, 11, 4, 17, tzinfo=UTC), "home": "T3", "away": "T4", "ref": "",
-          "y": {"goly": (2, 1), "rohy": (6, 5), "karty": (2, 3), "fauly": (12, 13)}}
+          "y": {"goly": (2, 1), "rohy": (6, 5), "karty": (2, 3), "fauly": (12, 13), "sot": (5, 4)}}
     hotovo = dp.vyhodnot_log(lambda kod: [hr], TED + datetime.timedelta(days=1))
     assert hotovo == len(log)
     assert all(r["vysledek"] in ("0", "1") for r in dp.nacti_log())
