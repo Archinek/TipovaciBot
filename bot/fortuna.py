@@ -23,7 +23,36 @@ UA = "tipovaci-bot/1.0"
 TOP_LIGY = ["anglie - premier league", "německo - bundesliga", "španělsko - la liga", "španělsko - primera", "itálie - serie a", "francie - ligue 1", "nizozemsko - eredivisie", "portugalsko - primeira", "polsko - ekstraklasa", "česko - fortuna", "liga mistrů", "evropská liga", "konferenční liga", "anglie - championship"]
 KATEGORIE = ["výsledek", "vítěz", "počet gólů", "počet bodů", "hráč dá", "kanadský bod", "touchdown",
              "yard", "střel na branku", "vyloučení", "roh", "kart", "žlut", "faul", "střídán", "asistence",
-             "kombinace", "builder"]      # kmeny slov: roh/rohy/rohů, karty/karet, faul/faulů ...
+             "kombinace", "builder", "počet es", "více es", "dvojchyb", "dvouminut", "střel"]      # kmeny slov: roh/rohy/rohů, karty/karet, faul/faulů ...
+
+
+# Fortuna pojmenovává ligy "1. Francie", "2. Anglie" (ne "Francie - Ligue 1"). Mapování na kód football-data.
+_STATY = {"anglie": ("E0", "E1"), "nemecko": ("D1", "D2"), "spanelsko": ("SP1", "SP2"), "italie": ("I1", "I2"),
+          "francie": ("F1", "F2"), "nizozemsko": ("N1", None), "belgie": ("B1", None), "portugalsko": ("P1", None),
+          "turecko": ("T1", None), "recko": ("G1", None), "skotsko": ("SC0", None)}
+_POHARY = ("liga mistru", "evropska liga", "konferencni liga", "liga mistryn")
+_NE = ("zeny", "(u", "amat", "esport", "sk.", "primavera", "rezerv", "ii", "b tym")
+
+
+def _bez_diakritiky(t):
+    import unicodedata
+    return unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode().lower().strip()
+
+
+def kod_ligy(nazev):
+    """'1. Francie' -> 'F1'. None = liga bez dat ve football-data (nebo ženy/mládež/amatéři)."""
+    n = _bez_diakritiky(nazev)
+    if any(x in n for x in _NE):
+        return None
+    m = re.match(r"^([12])\.\s*(\w+)\s*$", n)
+    if m and m.group(2) in _STATY:
+        return _STATY[m.group(2)][int(m.group(1)) - 1]
+    return None
+
+
+def je_pohar(nazev):
+    n = _bez_diakritiky(nazev)
+    return any(x in n for x in _POHARY) and not any(x in n for x in _NE)
 
 
 class FortunaChyba(RuntimeError):
@@ -115,6 +144,7 @@ def normalizuj_trhy(markets):
 # Ověřeno na skutečném vzorku (zápasy nižších lig): výsledek, góly celkem / týmu / 1. poločas, oba dají gól,
 # dvojtip, bez remízy. Rohy/karty/fauly: názvy zatím NEOVĚŘENÉ (ve vzorku nebyly) -> hledá se podle klíčových slov.
 _LINIE = re.compile(r"(Více|Méně)\s+než\s+(\d+(?:[.,]\d+)?)", re.I)
+_LINIE_NAZEV = re.compile(r"(\d+(?:[.,]\d+)?)\s*$")
 _CELKEM = {"rohy": "rohov", "karty": "žlutých karet", "fauly": "faul"}   # názvy ověřeny na top zápase: "Počet rohových kopů v zápasu 9.5", "Počet faulů v zápasu 26.5", "Počet žlutých karet v zápasu"
 
 
@@ -131,15 +161,16 @@ def je_virtualni(z):
     return any(x in t for x in ("esport", "efotbal", "e-fotbal", "cyber", "2x4 min", "2x5 min", "virtual"))
 
 
-def parsuj_trh(m):
+def parsuj_trh(m, sport=None):
     """Jeden trh Fortuny -> seznam nohou {trh, linie, strana, kurz}. Neznámé trhy vrací []."""
     typ = (m.get("marketTypeName") or "").strip()
     tl = typ.lower()
     klic = m.get("syntheticGroupKey") or ""
+    nazev = re.sub(r"\s+", " ", m.get("name") or m.get("marketTypeName") or "").strip()      # v názvu je za NBSP/odřádkováním linie: "Zápas: počet es 14.5"
     popis = (m.get("marketTypeDesc") or "").lower()
     vysl = [(o, _kurz(o)) for o in m.get("outcomes") or []]
     vysl = [(o, k) for o, k in vysl if k]
-    if len(vysl) < 2:
+    if len(vysl) < (1 if sport == "hokej" else 2):      # hokejové střely/vyloučení jsou jednostranné "+ X"
         return []
     out = []
 
@@ -152,6 +183,32 @@ def parsuj_trh(m):
             if abs(L - math.floor(L) - 0.5) > 1e-9:
                 continue                      # celočíselné/čtvrtkové linie mají vrácení vkladu -> neřešíme
             out.append({"trh": trh, "linie": L, "strana": "over" if r.group(1).lower().startswith("v") else "under", "kurz": k})
+
+    def ou_name(trh, hrac=None):
+        """Linie je v názvu trhu; výstupy jsou 'Více/Méně (než) X', 'Over/Under' nebo jediný '+ X' (jen Over)."""
+        r = _LINIE_NAZEV.search(nazev)
+        if not r:                                      # starší tvar: linie je až ve výstupech ('Více než 4.5')
+            n0 = len(out)
+            ou(trh)
+            if hrac:
+                for x in out[n0:]:
+                    x["hrac"] = hrac
+            return
+        L = float(r.group(1).replace(",", "."))
+        if abs(L - math.floor(L) - 0.5) > 1e-9:
+            return
+        for o, k in vysl:
+            t = (o.get("longName") or o.get("name") or "").strip().lower()
+            if t.startswith(("více", "vice", "over", "nad", "+")):
+                st = "over"
+            elif t.startswith(("méně", "mene", "under", "pod", "-")):
+                st = "under"
+            else:
+                continue
+            x = {"trh": trh, "linie": L, "strana": st, "kurz": k}
+            if hrac:
+                x["hrac"] = hrac
+            out.append(x)
 
     def mapa(trh, povolene):
         for o, k in vysl:
@@ -178,41 +235,14 @@ def parsuj_trh(m):
             ou("goly_dom")
         elif "2. týmu" in popis:
             ou("goly_hos")
-    elif "počet es" in tl and not re.search(r"\bset", tl):
-        # tenis; NÁZVY NEOVĚŘENÉ (podle Tipsportu: "Počet es v zápasu", "Počet es <hráč> v zápasu"). fortuna_probe uloží skutečné.
-        ostatek = re.sub(r"\s+", " ", tl.replace("počet es", "").replace("v zápasu", "")).strip(" :-")
-        n0 = len(out)
-        hrac = bool(ostatek) or "hráče" in popis or "týmu" in popis
-        ou("esa_hrac" if hrac else "esa")
-        for x in out[n0:]:
-            if hrac:
-                if "1." in popis:
-                    x["pozice"] = "1"
-                elif "2." in popis:
-                    x["pozice"] = "2"
-                if ostatek:
-                    x["hrac"] = ostatek
-    elif "dvojchyb" in tl and not re.search(r"\bset", tl):
-        # tenis (Marty37); NÁZVY NEOVĚŘENÉ. "Počet dvojchyb [hráč] v zápasu" a "Kdo zahraje více dvojchyb v zápasu (bez remízy)"
-        if tl.startswith("kdo") and "více" in tl:
-            for o, k in vysl:
-                nm = (o.get("longName") or o.get("name") or "").strip()
-                if nm and nm.lower() not in ("remíza", "remiza", "x", "0"):
-                    out.append({"trh": "df_kdo", "linie": None, "strana": nm.lower(), "hrac": nm, "kurz": k})
-        else:
-            ostatek = re.sub(r"\s+", " ", tl.replace("počet dvojchyb", "").replace("v zápasu", "")).strip(" :-")
-            n0 = len(out)
-            hrac = bool(ostatek) or "hráče" in popis or "týmu" in popis
-            ou("df_hrac" if hrac else "df")
-            for x in out[n0:]:
-                if hrac:
-                    if "1." in popis:
-                        x["pozice"] = "1"
-                    elif "2." in popis:
-                        x["pozice"] = "2"
-                    if ostatek:
-                        x["hrac"] = ostatek
-    elif tl.startswith("počet střel") and ("bránu" in tl or "branku" in tl) and "hráč" not in tl and "poločas" not in tl:
+    elif sport in (None, "tenis") and ("počet es" in tl or "počet dvojchyb" in tl or "více es" in tl or "více dvojchyb" in tl):
+        _tenis_statistika(out, vysl, nazev, tl, ou_name, popis)
+    elif sport == "hokej" and ("střel na branku v zápasu" in tl or "dvouminutových vyloučení v zápasu" in tl) and not tl.startswith(("který", "hráč")) and "zaznamená" not in tl:
+        # NHL/AHL: celkem "Počet střel na branku v zápasu 52.5" (jen '+ 52.5' = Over), týmově "Buffalo Sabres: Počet ... 28.5"
+        druh = "hsot" if "střel" in tl else "hpim"
+        m_ = re.match(r"^(.*?):\s*počet", nazev, re.I)
+        ou_name(druh + ("_tym" if m_ else ""), m_.group(1).strip() if m_ else None)
+    elif sport in (None, "fotbal") and tl.startswith("počet střel") and ("bránu" in tl or "branku" in tl) and "hráč" not in tl and "poločas" not in tl:
         # fotbal; NÁZVY NEOVĚŘENÉ. Celkem jen když mezi "počet střel" a "na bránu" nic není, jinak týmová podle popisu.
         if "1. týmu" in popis:
             ou("sot_dom")
@@ -228,16 +258,44 @@ def parsuj_trh(m):
     return out
 
 
+def _tenis_statistika(out, vysl, nazev, tl, ou_name, popis=""):
+    """Tenis, skutečné názvy Fortuny: 'Zápas: počet es 14.5', 'Zápas: Ruud C. počet es 7.5', 'Zápas: Borges N. počet dvojchyb 1.5',
+    'Zápas: počet dvojchyb 2.5', 'Zápas: více dvojchyb' (kdo zahraje víc). Esa/dvojchyby po setech se přeskakují."""
+    if re.search(r"\bset|gam", tl):
+        return
+    stat = "df" if "dvojchyb" in tl else "esa"
+    if tl.startswith(("zápas: více", "více", "kdo")) and "počet" not in tl:
+        if stat == "df":                                  # kdo zahraje víc dvojchyb; remíza = vrácení -> neřešíme jako noha
+            for o, k in vysl:
+                nm = (o.get("longName") or o.get("name") or "").strip()
+                if nm and nm.lower() not in ("remíza", "remiza", "stejně", "x", "0"):
+                    out.append({"trh": "df_kdo", "linie": None, "strana": nm.lower(), "hrac": nm, "kurz": k})
+        return
+    m = re.match(r"^(?:zápas:\s*)?(.*?)\s*:?\s*počet (?:es|dvojchyb)\b", nazev, re.I)
+    hrac = (m.group(1).strip(" :") if m else "") or None
+    if not hrac:                                       # starší tvar: "Počet es Sasnovich v zápasu"
+        m2 = re.match(r"^počet (?:es|dvojchyb)\s+(.+?)(?:\s+v zápasu)?(?:\s+\d+(?:[.,]\d+)?)?$", nazev, re.I)
+        hrac = m2.group(1).strip() if m2 and not m2.group(1).lower().startswith("v ") else None
+    if hrac and hrac.lower() == "zápas":
+        hrac = None
+    poz = "1" if "1." in popis else "2" if "2." in popis else None       # starší tvar: hráč jen v popisu ("1. hráče")
+    n0 = len(out)
+    ou_name(stat + ("_hrac" if (hrac or poz) else ""), hrac)
+    if poz and not hrac:
+        for x in out[n0:]:
+            x["pozice"] = poz
+
+
 def klic_nohy(n):
     """Stabilní klíč nohy, podle kterého ji najdeme v pozdějším snímku nabídky (pohyb kurzu, CLV)."""
     return f"{n['trh']}|{n.get('linie')}|{n['strana']}|{n.get('hrac') or n.get('pozice') or ''}"
 
 
-def nohy_zapasu(markets):
+def nohy_zapasu(markets, sport=None):
     out = []
     for m in markets:
         try:
-            out += parsuj_trh(m)
+            out += parsuj_trh(m, sport)
         except (TypeError, ValueError, AttributeError):
             continue
     return out
@@ -269,13 +327,35 @@ def normalizuj_zapas(fx, turnaj):
             "turnaj_id": turnaj.get("id")}
 
 
-def nabidka(k=None, filtry=("today", "tomorrow"), max_zapasu=600, log=print):
-    """Stáhne dnešní/zítřejší zápasy včetně vybraných trhů. -> seznam normalizovaných zápasů."""
+def _prio_turnaj(t):
+    """0 = TOP fotbal, 1 = tenis/hokej (hrají TOP tipéři), 2 = ostatní fotbal, 3 = zbytek, 9 = virtuální/e-sport."""
+    n = (t.get("name") or "").lower()
+    sp = t.get("sportSeoName")
+    if je_virtualni({"turnaj": t.get("name"), "kategorie": t.get("categorySeoName")}):
+        return 9
+    if sp == "fotbal" and jetop(t):
+        return 0
+    if sp in ("tenis", "hokej"):
+        return 1
+    return 2 if sp == "fotbal" else 3
+
+
+def nabidka(k=None, filtry=("today", "tomorrow"), max_zapasu=600, log=print, max_sekund=None):
+    """Stáhne dnešní/zítřejší zápasy včetně vybraných trhů. -> seznam normalizovaných zápasů.
+    max_sekund: časový rozpočet (výchozí fortuna.max_sekund = 480); po jeho vyčerpání se vrátí, co je hotové."""
     nast = (config.nacti_cfg().get("fortuna") or {})
     k = k or Klient(pauza=nast.get("pauza_s", 0.4))
+    rozpocet = float(max_sekund if max_sekund is not None else nast.get("max_sekund", 480))
+    t0 = time.time()
     videno, zap = set(), []
     for f in filtry:
-        for t in turnaje(k, f):
+        tur = sorted(turnaje(k, f), key=_prio_turnaj)                # nejdůležitější nejdřív (rozpočet je omezený)
+        tur = [t for t in tur if _prio_turnaj(t) < 9]
+        log(f"Fortuna: {len(tur)} turnajů ({f}), čtu zápasy...")
+        for i, t in enumerate(tur, 1):
+            if time.time() - t0 > rozpocet * 0.5:
+                log(f"⏱️ Fortuna: seznam zápasů přerušen po {int(time.time() - t0)} s (turnaj {i}/{len(tur)}).")
+                break
             for fx in zapasy(k, t.get("id"), f):
                 if fx.get("id") and fx["id"] not in videno:
                     videno.add(fx["id"])
@@ -283,20 +363,29 @@ def nabidka(k=None, filtry=("today", "tomorrow"), max_zapasu=600, log=print):
                     if z["live"] or not z["aktivni"] or not z["ma_trhy"]:
                         continue                      # živé a neaktivní zápasy bot nepotřebuje
                     zap.append(z)
-    log(f"Fortuna: {len(zap)} zápasů v nabídce ({', '.join(filtry)}).")
+            if i % 50 == 0:
+                log(f"   turnaje {i}/{len(tur)}, zápasů zatím {len(zap)}")
+    log(f"Fortuna: {len(zap)} zápasů v nabídce ({', '.join(filtry)}), {int(time.time() - t0)} s.")
+    # nejdřív zápasy z TOP lig (tam jsou karty/rohy/fauly), ať je rozpočet nejdřív vyčerpá nejdůležitější
+    zap.sort(key=lambda z: _prio_turnaj({"name": z.get("turnaj"), "sportSeoName": z.get("sport"), "categorySeoName": z.get("kategorie")}))
     zap = zap[:max_zapasu]
     for i, z in enumerate(zap, 1):
+        if time.time() - t0 > rozpocet:
+            log(f"⏱️ Fortuna: časový rozpočet {int(rozpocet)} s vyčerpán, trhy stažené u {i - 1}/{len(zap)} zápasů, zbytek přeskakuji.")
+            for zz in zap[i - 1:]:
+                zz["trhy"], zz["nohy"] = [], []
+            break
         try:
             ms = trhy(k, z["id"])
             z["trhy"] = normalizuj_trhy(ms)
-            z["nohy"] = nohy_zapasu(ms)
+            z["nohy"] = nohy_zapasu(ms, z.get("sport"))
         except FortunaBlok:
             raise
         except FortunaChyba as e:
             log(f"⚠️ {e}")
             z["trhy"], z["nohy"] = [], []
         if i % 100 == 0:
-            log(f"   {i}/{len(zap)} ...")
+            log(f"   trhy {i}/{len(zap)} ({int(time.time() - t0)} s)")
     return zap
 
 
@@ -309,6 +398,8 @@ def uloz_nabidku(zap, datum):
 
 def jetop(t):
     n = (t.get("name") or "").lower()
+    if kod_ligy(n) or je_pohar(n):
+        return True
     return any(x in n for x in TOP_LIGY) and not any(x in n for x in ("u21", "u19", "u23", "amat", "ženy", "esport"))
 
 
@@ -355,6 +446,24 @@ def probe(k=None, log=print):
                 (d / f"6_{sp}_trhy.json").write_text(json.dumps({"zapas": fx.get("name"), "turnaj": t.get("name"), "trhy": ms}, ensure_ascii=False, indent=1), encoding="utf-8")
             for m in ms:
                 nazvy[(t.get("sportSeoName"), m.get("name", ""))] = m.get("marketTypeName", "")
+        # tenis: najdi zápas s esy/dvojchybami (jen velké turnaje, ne čtyřhra) a ulož CELÝ trh i s názvy výstupů
+        hotovo_es, pozadavku = False, 0
+        tenis_t = [t for t in tur if t.get("sportSeoName") == "tenis" and "čtyřhra" not in (t.get("name") or "").lower()]
+        tenis_t.sort(key=lambda t: 0 if any(x in (t.get("name") or "") for x in ("ATP", "WTA", "Challenger")) else 1)
+        for t in tenis_t[:8]:
+            for fx in zapasy(k, t.get("id"), "today")[:3]:
+                if hotovo_es or pozadavku >= 12:
+                    break
+                z_ = normalizuj_zapas(fx, t)
+                if not (z_["id"] and z_["aktivni"] and z_["ma_trhy"] and not z_["live"]):
+                    continue
+                pozadavku += 1
+                ms = trhy(k, z_["id"])
+                es = [m for m in ms if re.search(r"počet (es|dvojchyb)|více (es|dvojchyb)", (m.get("name") or "").lower())]
+                if es:
+                    (d / "7_tenis_esa.json").write_text(json.dumps({"zapas": fx.get("name"), "turnaj": t.get("name"), "trhy": es}, ensure_ascii=False, indent=1), encoding="utf-8")
+                    hotovo_es = True
+        shrnuti.append(f"tenis se esy uložen (7_tenis_esa.json): {'ano' if hotovo_es else 'ne'}")
         (d / "4_nazvy_trhu.txt").write_text(
             "\n".join(f"{sp}  |  {n}  |  {t}" for (sp, n), t in sorted(nazvy.items())), encoding="utf-8")
         shrnuti.append(f"různých názvů trhů: {len(nazvy)}")

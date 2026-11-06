@@ -13,24 +13,54 @@ from collections import defaultdict
 from difflib import SequenceMatcher
 
 from . import config, doplnkove as dp, engine, histdata
-from .fortuna import klic_nohy
+from .fortuna import klic_nohy, kod_ligy
 
+
+def je_zena_ml(t):
+    n = (t or "").lower()
+    return any(x in n for x in ("ženy", "(u", "amat"))
+
+_ALIASY = {}
 NAZEV = {"goly": "Góly v zápase", "goly_dom": "Góly domácích", "goly_hos": "Góly hostů", "btts": "Oba dají gól",
          "rohy": "Rohy", "karty": "Karty", "fauly": "Fauly", "sot": "Střely na bránu", "sot_dom": "Střely na bránu domácích", "sot_hos": "Střely na bránu hostů",
          "esa": "Esa v zápase", "esa_hrac": "Esa hráče", "df": "Dvojchyby v zápase", "df_hrac": "Dvojchyby hráče"}
 
 
-def _par(jmeno, tymy_norm):
-    """Přísnější párování než histdata.mapuj: shoda názvu, nebo podobnost >= 0.9 (žádné 'obsahuje')."""
+def nacti_aliasy():
+    """data/aliasy_tymu.json: {"jméno týmu na Fortuně": "jméno ve football-data"}, např. {"Bayern Mnichov": "Bayern Munich"}.
+    Fortuna píše česky, football-data anglicky; bez aliasu se tým nespáruje (raději nic než hádat)."""
+    import json
+    p = config.DATA / "aliasy_tymu.json"
+    if not p.exists():
+        return {}
+    try:
+        return {histdata._norm(k): v for k, v in json.loads(p.read_text(encoding="utf-8")).items() if isinstance(v, str)}
+    except (ValueError, OSError):
+        return {}
+
+
+def _par(jmeno, tymy_norm, volne=False):
+    """Přísnější párování než histdata.mapuj: shoda názvu, nebo podobnost >= 0.9 (žádné 'obsahuje').
+    volne=True (liga je známá z názvu turnaje): podobnost >= 0.8, nebo jednoznačná shoda slov ('olympique lyon' ~ 'lyon')."""
     n = histdata._norm(jmeno or "")
     if not n:
         return None
+    a = _ALIASY.get(n)
+    if a:
+        n = histdata._norm(a)
     best, sc = None, 0.0
     for orig, kn in tymy_norm.items():
         s = 1.0 if kn == n else SequenceMatcher(None, n, kn).ratio()
         if s > sc:
             best, sc = orig, s
-    return best if sc >= 0.9 else None
+    if sc >= (0.8 if volne else 0.9):
+        return best
+    if volne:
+        slova = set(n.split())
+        shody = [orig for orig, kn in tymy_norm.items() if kn and set(kn.split()) <= slova]
+        if len(shody) == 1:
+            return shody[0]
+    return None
 
 
 def _poisson_nad(mu, L):
@@ -75,6 +105,23 @@ def p_nohy(model, h, a, noha):
     return None
 
 
+def fortuna_top(z):
+    from .fortuna import jetop
+    return jetop({"name": z.get("turnaj")})
+
+
+def _uloz_nesparovane(seznam, log):
+    """TOP ligové zápasy, u kterých se nepodařilo spárovat týmy: data/fortuna_nesparovane.json (doplň aliasy do aliasy_tymu.json)."""
+    import json
+    try:
+        config.DATA.mkdir(parents=True, exist_ok=True)
+        (config.DATA / "fortuna_nesparovane.json").write_text(json.dumps(seznam, ensure_ascii=False, indent=1), encoding="utf-8")
+    except OSError:
+        return
+    if seznam:
+        log(f"ℹ️ Nespárováno {len(seznam)} TOP ligových zápasů (např. {seznam[0]['home']} - {seznam[0]['away']}). Seznam: data/fortuna_nesparovane.json, aliasy: data/aliasy_tymu.json.")
+
+
 def pasmo(fh, trh, kmin, kmax):
     """Kurzové pásmo pro daný typ trhu (sporty.yaml: fortuna.pasma), jinak obecné."""
     b = (fh.get("pasma") or {}).get(trh)
@@ -112,7 +159,10 @@ def vyhodnot(zapasy, cfg, ted, log=print, nacti_model=None):
         log("Fortuna: v nabídce není žádný fotbal s trhy.")
         return []
 
+    global _ALIASY
+    _ALIASY = nacti_aliasy()
     modely, radky = {}, {}
+    nesparovane = []
 
     def model_ligy(kod):
         if kod not in modely:
@@ -126,15 +176,20 @@ def vyhodnot(zapasy, cfg, ted, log=print, nacti_model=None):
     out, spar = [], 0
     for z in fotbal:
         nalezeno = None
-        for kod in sorted(set(histdata.LIGY.values())):
+        znama = kod_ligy(z.get("turnaj"))
+        if znama is None and (je_zena_ml(z.get("turnaj")) or not fortuna_top(z)):
+            continue                                       # ženy/mládež/nižší soutěže bez dat: nehádat v cizích ligách
+        for kod in ([znama] if znama else sorted(set(histdata.LIGY.values()))):   # liga z názvu turnaje; poháry zkusí všechny
             m, tymy = model_ligy(kod)
             if not m:
                 continue
-            h, a = _par(z["home"], tymy), _par(z["away"], tymy)
+            h, a = _par(z["home"], tymy, bool(znama)), _par(z["away"], tymy, bool(znama))
             if h and a and h != a:
                 nalezeno = (kod, m, h, a)
                 break
         if not nalezeno:
+            if fortuna_top(z):
+                nesparovane.append({"turnaj": z.get("turnaj"), "home": z["home"], "away": z["away"]})
             continue
         spar += 1
         kod, m, h, a = nalezeno
@@ -169,6 +224,7 @@ def vyhodnot(zapasy, cfg, ted, log=print, nacti_model=None):
                             "fair": round(1 / p, 2), "mu": _mu(m, h, a),
                             "data": kontext_dat(radky.get(kod) or [], h, a, ted)})
     log(f"Fortuna: spárováno {spar}/{len(fotbal)} fotbalových zápasů s historií, kandidátů s hranou: {len(out)}.")
+    _uloz_nesparovane(nesparovane, log)
     out.sort(key=lambda x: -x["edge"])
     return out[: int(fh.get("max_tipu", 10))]
 

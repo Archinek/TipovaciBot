@@ -42,7 +42,7 @@ ALIASY = {
     "newcastle": "newcastle united", "west ham": "west ham united",
     "brighton": "brighton and hove albion", "leeds": "leeds united",
 }
-_STOP = {"fc", "cf", "ac", "sc", "afc", "1", "04", "05", "bsc", "rcd", "ud", "sv", "fk"}
+_STOP = {"fc", "cf", "ac", "sc", "afc", "1", "04", "05", "bsc", "rcd", "ud", "sv", "fk", "rc", "ogc", "ssc", "rsc", "cd", "ca", "us", "olympique", "as", "os", "sporting club"}
 
 
 def sezona_kod(d):

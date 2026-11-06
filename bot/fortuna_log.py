@@ -78,9 +78,10 @@ def snimek(klient, ted, okno_h=20, trhy_fn=None, log=print):
     if not otevrene:
         return 0
     hotovo = 0
+    sport_z = {r["zapas_id"]: r.get("sport") or None for r in otevrene}
     for zid in sorted({r["zapas_id"] for r in otevrene}):
         try:
-            nohy = {klic_nohy(n): n["kurz"] for n in nohy_zapasu(trhy_fn(klient, zid))}
+            nohy = {klic_nohy(n): n["kurz"] for n in nohy_zapasu(trhy_fn(klient, zid), sport_z.get(zid))}
         except fortuna.FortunaBlok:
             raise
         except Exception as e:
