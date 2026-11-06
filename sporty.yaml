@@ -47,7 +47,7 @@ vyloucene_kancelare: ["betfair_ex_eu"]
 moje_kancelare: ["fortuna", "tipsport", "betano"]
 
 auto_rizeni:
-  automaticky: true
+  automaticky: false
   min_bets_hodnoceni: 50
   povys_live_pokud_avg_clv_nad: 0.01
   vypni_pokud_avg_clv_pod: -0.02
