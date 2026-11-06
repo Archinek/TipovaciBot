@@ -3,15 +3,15 @@ fotbal  |  1.poločas: Atlante počet gólů 0.5  |  1. poločas: Atlante počet
 fotbal  |  1.poločas: Atlante počet gólů 1.5  |  1. poločas: Atlante počet gólů
 fotbal  |  1.poločas: Auckland FC počet gólů 0.5  |  1. poločas: Auckland FC počet gólů
 fotbal  |  1.poločas: Auckland FC počet gólů 1.5  |  1. poločas: Auckland FC počet gólů
-fotbal  |  1.poločas: Boca Juniors de Cali počet gólů 0.5  |  1. poločas: Boca Juniors de Cali počet gólů
 fotbal  |  1.poločas: CA Independiente počet gólů 0.5  |  1. poločas: CA Independiente počet gólů
 fotbal  |  1.poločas: CA Independiente počet gólů 1.5  |  1. poločas: CA Independiente počet gólů
 fotbal  |  1.poločas: CD Suchitepequez počet gólů 0.5  |  1. poločas: CD Suchitepequez počet gólů
 fotbal  |  1.poločas: Club Santos Laguna počet gólů 0.5  |  1. poločas: Club Santos Laguna počet gólů
 fotbal  |  1.poločas: Club Santos Laguna počet gólů 1.5  |  1. poločas: Club Santos Laguna počet gólů
 fotbal  |  1.poločas: Deportivo Riestra počet gólů 0.5  |  1. poločas: Deportivo Riestra počet gólů
-fotbal  |  1.poločas: Envigado FC počet gólů 0.5  |  1. poločas: Envigado FC počet gólů
 fotbal  |  1.poločas: Guastatoya počet gólů 0.5  |  1. poločas: Guastatoya počet gólů
+fotbal  |  1.poločas: San Diego Wave počet gólů 0.5  |  1. poločas: San Diego Wave počet gólů
+fotbal  |  1.poločas: Utah Royals počet gólů 0.5  |  1. poločas: Utah Royals počet gólů
 fotbal  |  1.poločas: Wellington Phoenix počet gólů 0.5  |  1. poločas: Wellington Phoenix počet gólů
 fotbal  |  1.poločas: Wellington Phoenix počet gólů 1.5  |  1. poločas: Wellington Phoenix počet gólů
 fotbal  |  1.poločas: červená karta (Červené karty pro trenéry a členy realizačního týmu se nezapočítávají.)  |  1. poločas: červená karta (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
@@ -173,10 +173,6 @@ fotbal  |  Benjamín Tiziano Pérez vstřelí gól (první nebo poslední)  |  
 fotbal  |  Benjamín Tiziano Pérez vstřelí gól (první)  |  Hráč vstřelí gól (první)
 fotbal  |  Benjamín Tiziano Pérez zaznamená asistenci  |  Hráč zaznamená asistenci 
 fotbal  |  Bill Tuiloma bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
-fotbal  |  Boca Juniors de Cali počet gólů 0.5  |  Boca Juniors de Cali počet gólů v zápasu
-fotbal  |  Boca Juniors de Cali počet gólů 1.5  |  Boca Juniors de Cali počet gólů v zápasu
-fotbal  |  Boca Juniors de Cali počet gólů 2.5  |  Boca Juniors de Cali počet gólů v zápasu
-fotbal  |  Boca Juniors de Cali vyhraje alespoň jeden poločas  |  Boca Juniors de Cali  vyhraje alespoň jeden poločas
 fotbal  |  Bracamonte, Mariano - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
 fotbal  |  Bracamonte, Mariano - počet střel  |  Hráč - počet střel 
 fotbal  |  Bracamonte, Mariano - počet střel na branku  |  Hráč - počet střel na branku
@@ -319,7 +315,7 @@ fotbal  |  De Irastorza, Jonathan zaznamená asistenci  |  Hráč zaznamená as
 fotbal  |  Deportivo Riestr vyhraje , Alexander Díaz dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
 fotbal  |  Deportivo Riestr vyhraje , Antony Alonso dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
 fotbal  |  Deportivo Riestr vyhraje , Gabriel Obredor dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
-fotbal  |  Deportivo Riestr vyhraje , Mauro Smarra dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
+fotbal  |  Deportivo Riestr vyhraje , Gonzalo Flores dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
 fotbal  |  Deportivo Riestr vyhraje , Miguel Agustin Graneros dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
 fotbal  |  Deportivo Riestr vyhraje , Nicolas Benegas dá gól  |  Výsledek zápasu + hráč dá gól v zápasu
 fotbal  |  Deportivo Riestr vyhraje, Více než 2.5 gólů , Miguel Agustin Graneros dá gól  |  Další zápasové kombinace
@@ -368,10 +364,6 @@ fotbal  |  Eduardo Aguirre bude vyloučen   |  Červená karta hráče (Nepoč
 fotbal  |  Eduardo Aguirre dá gól, Ezequiel Bullaude 1+ asistence , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
 fotbal  |  Eduardo Aguirre dá gól, Mauricio Cuevas 1+ asistence , Více než 4.5 Santos Laguna rohové kopy  |  Další zápasové kombinace
 fotbal  |  Eduardo Santiago Tercero Mendez bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
-fotbal  |  Envigado FC počet gólů 0.5  |  Envigado FC počet gólů v zápasu
-fotbal  |  Envigado FC počet gólů 1.5  |  Envigado FC počet gólů v zápasu
-fotbal  |  Envigado FC počet gólů 2.5  |  Envigado FC počet gólů v zápasu
-fotbal  |  Envigado FC vyhraje alespoň jeden poločas  |  Envigado FC vyhraje alespoň jeden poločas
 fotbal  |  Eugenio Pizzuto Puga 1+ střely  |  Hráči - střely
 fotbal  |  Eugenio Pizzuto Puga 1+ střely na bránu  |  Hráči - střely na bránu
 fotbal  |  Eugenio Pizzuto Puga bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
@@ -534,6 +526,7 @@ fotbal  |  Handicap v zápasu +1.5  |  Handicap v zápasu
 fotbal  |  Handicap v zápasu -0.5  |  Handicap v zápasu
 fotbal  |  Handicap v zápasu -1  |  Handicap v zápasu
 fotbal  |  Handicap v zápasu -1.5  |  Handicap v zápasu
+fotbal  |  Handicap v zápasu 0:1  |  Handicap v zápasu 0:1
 fotbal  |  Handicap v zápasu 1:0  |  Handicap v zápasu 1:0
 fotbal  |  Henry Gray bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
 fotbal  |  Hiroki Sakai bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
@@ -655,6 +648,7 @@ fotbal  |  Kazuki Nagasawa bude vyloučen   |  Červená karta hráče (Nepoč
 fotbal  |  Každý z týmů dá gól v 1. poločasu  |  Každý z týmů dá gól v 1. poločasu
 fotbal  |  Každý z týmů dá gól v zápasu  |  Každý z týmů dá gól v zápasu
 fotbal  |  Každý z týmů dá gól/počet gólů v zápasu 2.5   |  Každý z týmů dá gól/počet gólů v zápasu
+fotbal  |  Kdo postoupí  |  Kdo postoupí
 fotbal  |  Kevin Oswaldo Picón Álvarez - počet střel na branku  |  Hráč - počet střel na branku
 fotbal  |  Kevin Oswaldo Picón Álvarez dá gól nebo zaznamená asistenci  |  Hráč dá gól nebo zaznamená asistenci
 fotbal  |  Kevin Oswaldo Picón Álvarez počet gólů v 1. poločase  |  Hráč - počet gólů v 1. poločase
@@ -930,6 +924,7 @@ fotbal  |  Oba týmy dají gól , Ezequiel Bullaude dá gól  |  Další zápaso
 fotbal  |  Oba týmy dají gól , Fran Villalba dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Franco Pardo dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Gabriel Obredor dá gól  |  Další zápasové kombinace
+fotbal  |  Oba týmy dají gól , Gonzalo Flores dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Imanol Machuca dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Ivan Morales dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Jake Brimmer dá gól  |  Další zápasové kombinace
@@ -946,7 +941,6 @@ fotbal  |  Oba týmy dají gól , Luis Ángel Calzadilla Santillán dá gól  | 
 fotbal  |  Oba týmy dají gól , Martin Sarrafiore dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Martín Fernández dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Mauricio Cuevas dá gól  |  Další zápasové kombinace
-fotbal  |  Oba týmy dají gól , Mauro Smarra dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Max Anderson dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Maximiliano Meza dá gól  |  Další zápasové kombinace
 fotbal  |  Oba týmy dají gól , Miguel Agustin Graneros dá gól  |  Další zápasové kombinace
@@ -1185,6 +1179,9 @@ fotbal  |  Rubén Alejandro Coubert Pelayo počet gólů v zápasu  |  Hráč -
 fotbal  |  Rubén Alejandro Coubert Pelayo počet ofsajdů v 1. poločasu  |  Hráč - počet ofsajdů v 1. poločasu
 fotbal  |  Rubén Alejandro Coubert Pelayo zaznamená asistenci  |  Hráč zaznamená asistenci 
 fotbal  |  Rubén David Martinez bude vyloučen   |  Červená karta hráče (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
+fotbal  |  San Diego Wave počet gólů 0.5  |  San Diego Wave počet gólů v zápasu
+fotbal  |  San Diego Wave počet gólů 1.5  |  San Diego Wave počet gólů v zápasu
+fotbal  |  San Diego Wave počet gólů 2.5  |  San Diego Wave počet gólů v zápasu
 fotbal  |  Sanchez, Braian - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
 fotbal  |  Sanchez, Braian - počet střel  |  Hráč - počet střel 
 fotbal  |  Sanchez, Braian - počet střel na branku  |  Hráč - počet střel na branku
@@ -1304,6 +1301,9 @@ fotbal  |  Tovo, Eric Joel vstřelí gól (poslední)  |  Hráč vstřelí gól
 fotbal  |  Tovo, Eric Joel vstřelí gól (první nebo poslední)  |  Hráč dá gól (první nebo poslední)
 fotbal  |  Tovo, Eric Joel vstřelí gól (první)  |  Hráč vstřelí gól (první)
 fotbal  |  Tovo, Eric Joel zaznamená asistenci  |  Hráč zaznamená asistenci 
+fotbal  |  Utah Royals počet gólů 0.5  |  Utah Royals počet gólů v zápasu
+fotbal  |  Utah Royals počet gólů 1.5  |  Utah Royals počet gólů v zápasu
+fotbal  |  Utah Royals počet gólů 2.5  |  Utah Royals počet gólů v zápasu
 fotbal  |  Valdez, Sebastian - Hráč nebo jeho náhradník dá gól (90 min)  |  Žolík - hráč (nebo jeho náhradník) dá gól (90 min)
 fotbal  |  Valdez, Sebastian - počet střel  |  Hráč - počet střel 
 fotbal  |  Valdez, Sebastian - počet střel na branku  |  Hráč - počet střel na branku
@@ -1332,6 +1332,7 @@ fotbal  |  Výsledek 1. poločasu - dvojtip  |  Výsledek 1. poločasu - dvojtip
 fotbal  |  Výsledek 1. poločasu/výsledek zápasu  |  Výsledek 1. poločasu/výsledek zápasu
 fotbal  |  Výsledek 1.poločasu/každý z týmů dá gól  |  Výsledek 1. poločasu/každý z týmů dá gól v 1. poločasu
 fotbal  |  Výsledek 2. poločasu  |  Výsledek 2. poločasu
+fotbal  |  Výsledek 2. poločasu - dvojtip  |  Výsledek 2. poločasu - dvojtip
 fotbal  |  Výsledek zápasu  |  Výsledek zápasu
 fotbal  |  Výsledek zápasu - dvojtip  |  Výsledek zápasu - dvojtip
 fotbal  |  Výsledek zápasu bez remízy  |  Výsledek zápasu bez remízy
@@ -1403,7 +1404,6 @@ fotbal  |  Ángel Azul Almada vstřelí gól (první)  |  Hráč vstřelí gól
 fotbal  |  Ángel Azul Almada zaznamená asistenci  |  Hráč zaznamená asistenci 
 fotbal  |  Červená karta (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)  |  Červená karta (Nepočítá se - ČK po zápase, pro hráče na lavičce a realizační tým)
 tenis  |  1.set/zápas  |  1. set/zápas
-tenis  |  Anazagasty-Pursoo A.: vyhraje alespoň set  |  Anazagasty-Pursoo A.: vyhraje alespoň set
 tenis  |  Boeckli R.: vyhraje alespoň set  |  Boeckli R.: vyhraje alespoň set
 tenis  |  Borges N.: počet gamů 10.5   |  Borges N.: počet gamů
 tenis  |  Borges N.: počet gamů 11.5   |  Borges N.: počet gamů
@@ -1422,7 +1422,6 @@ tenis  |  Borges vítěz zápasu, Borges vítěz  setu  1 , nad 24.5 gamů v zá
 tenis  |  Borges vítěz zápasu, Ruud vítěz  setu  1 , nad 2.5 setů v zápasu  |  Nejoblíbenější kombinace
 tenis  |  Borges vítěz zápasu, Ruud vítěz  setu  1 , nad 24.5 gamů v zápasu  |  Nejoblíbenější kombinace
 tenis  |  Crowther C.: vyhraje alespoň set  |  Crowther C.: vyhraje alespoň set
-tenis  |  Delgado S.: vyhraje alespoň set  |  Delgado S.: vyhraje alespoň set
 tenis  |  Handicap gamů v 1. setu -1.5  |  Handicap gamů v 1. setu
 tenis  |  Handicap gamů v 1. setu -2.5  |  Handicap gamů v 1. setu
 tenis  |  Handicap gamů v 1. setu -3.5  |  Handicap gamů v 1. setu
@@ -1439,9 +1438,11 @@ tenis  |  Handicap gamů v zápasu 3.5  |  Handicap gamů v zápasu
 tenis  |  Handicap setů v zápasu -1.5  |  Handicap setů v zápasu
 tenis  |  Handicap setů v zápasu 1.5  |  Handicap setů v zápasu
 tenis  |  Hashimoto H.: vyhraje alespoň set  |  Hashimoto H.: vyhraje alespoň set
+tenis  |  Hidalgo D. / Molteni A.: vyhraje alespoň set  |  Hidalgo D. / Molteni A.: vyhraje alespoň set
+tenis  |  Hidalgo D. / Molteni A.: vyhraje přesně 1 set  |  Hidalgo D. / Molteni A.: vyhraje přesně 1 set
+tenis  |  Justo G I / Midon L: vyhraje alespoň set  |  Justo G I / Midon L: vyhraje alespoň set
+tenis  |  Justo G I / Midon L: vyhraje přesně 1 set  |  Justo G I / Midon L: vyhraje přesně 1 set
 tenis  |  Kanár v zápasu  |  Kanár v zápasu
-tenis  |  Kolar Z. / Rodriguez Taverna S.: vyhraje alespoň set  |  Kolar Z. / Rodriguez Taverna S.: vyhraje alespoň set
-tenis  |  Kolar Z. / Rodriguez Taverna S.: vyhraje přesně 1 set  |  Kolar Z. / Rodriguez Taverna S.: vyhraje přesně 1 set
 tenis  |  Leong S.L.X.: vyhraje alespoň set  |  Leong S.L.X.: vyhraje alespoň set
 tenis  |  Počet gamů v 1.setu 10.5  |  Počet gamů v 1. setu
 tenis  |  Počet gamů v 1.setu 12.5  |  Počet gamů v 1. setu
@@ -1468,8 +1469,6 @@ tenis  |  Reis Da Silva J.L.: počet gamů 8.5   |  Reis Da Silva J.L.: počet g
 tenis  |  Reis Da Silva J.L.: počet gamů 9.5   |  Reis Da Silva J.L.: počet gamů
 tenis  |  Reis Da Silva J.L.: vyhraje alespoň set  |  Reis Da Silva J.L.: vyhraje alespoň set
 tenis  |  Reis Da Silva J.L.: vyhraje přesně 1 set  |  Reis Da Silva J.L.: vyhraje přesně 1 set
-tenis  |  Ribeiro E. / Rodrigues N.: vyhraje alespoň set  |  Ribeiro E. / Rodrigues N.: vyhraje alespoň set
-tenis  |  Ribeiro E. / Rodrigues N.: vyhraje přesně 1 set  |  Ribeiro E. / Rodrigues N.: vyhraje přesně 1 set
 tenis  |  Ruud C.: počet gamů 11.5   |  Ruud C.: počet gamů
 tenis  |  Ruud C.: počet gamů 12.5   |  Ruud C.: počet gamů
 tenis  |  Ruud C.: počet gamů 13.5   |  Ruud C.: počet gamů

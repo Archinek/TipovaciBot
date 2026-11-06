@@ -1,6 +1,6 @@
-turnajů dnes (se zápasy): 157
-z toho fotbalových: 48
+turnajů dnes (se zápasy): 128
+z toho fotbalových: 37
 zápasů ve vzorku: 18
-různých názvů trhů: 1506
+různých názvů trhů: 1505
 top-ligových zápasů uloženo (5_top_liga_*.json): 0
-požadavků: 55
+požadavků: 49

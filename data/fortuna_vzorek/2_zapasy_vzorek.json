@@ -97,44 +97,45 @@
   }
  },
  {
-  "turnaj": "2. Kolumbie",
+  "turnaj": "USA - USL Super League ženy",
   "fixture": {
-   "id": "ufo:mtch:1xh-2h8",
+   "id": "ufo:mtch:1xi-06e",
    "sportId": "ufo:sprt:00",
-   "categoryId": "ufo:ctgr:00-11",
-   "tournamentId": "ufo:tour:00-018",
+   "categoryId": "ufo:ctgr:00-0z",
+   "tournamentId": "ufo:tour:00-0x4",
    "sportradarIds": [
-    "76174022"
+    "72322460"
    ],
    "kind": "PREMATCH",
-   "name": "Boca Juniors de Cali - Envigado FC",
+   "name": "Fort Lauderdale United FC - Tampa Bay Sun FC",
    "sportSeoName": "fotbal",
-   "categorySeoName": "kolumbie-1",
-   "tournamentSeoName": "2-kolumbie",
-   "seoName": "boca-juniors-de-cali-envigado-fc",
+   "categorySeoName": "usa-6",
+   "tournamentSeoName": "usa-usl-super-league-zeny",
+   "seoName": "fort-lauderdale-united-fc-tampa-bay-sun-fc",
    "sportOrder": 3,
    "categoryOrder": 1000000,
-   "tournamentOrder": 3980,
+   "tournamentOrder": 18340,
    "order": 1000000,
    "participants": [
     {
-     "id": "ufo:team:00-05vu",
-     "name": "Envigado FC",
+     "id": "ufo:team:00-0bzz",
+     "name": "Tampa Bay Sun FC",
      "type": "AWAY",
      "icon": "default_football_away.png"
     },
     {
-     "id": "ufo:team:00-07nw",
-     "name": "Boca Juniors de Cali",
+     "id": "ufo:team:00-0c6o",
+     "name": "Fort Lauderdale United FC",
      "type": "HOME",
      "icon": "default_football_home.png"
     }
    ],
-   "startDatetime": 1793998800000,
+   "startDatetime": 1794011400000,
    "totalMarketCount": 1,
    "features": [
     "STATISTICS",
-    "OPTA"
+    "STREAM",
+    "LIVE_TRANSITION"
    ],
    "marketTypeIds": [
     "ufo:mtyp:00-00",
