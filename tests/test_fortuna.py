@@ -40,11 +40,9 @@ def test_nabidka():
 
 
 def test_blok_konci():
-    try:
-        fortuna.nabidka(Fake(blok_po=2), filtry=("today",), log=lambda *a: None)
-        assert False, "měl skončit"
-    except fortuna.FortunaBlok:
-        pass
+    logy = []
+    z = fortuna.nabidka(Fake(blok_po=2), filtry=("today",), log=logy.append)     # 403 uprostřed: končí, vrací co je hotové
+    assert len(z) == 1 and z[0]["trhy"] == [] and any("zastaveno" in x.lower() for x in logy)
 
 
 if __name__ == "__main__":

@@ -13,7 +13,7 @@ nastaveni:
   stake_cap: 0.03
   max_tipu_denne: 20
   max_na_sport: 8
-  kredity_max_na_beh: 40
+  kredity_max_na_beh: 15
   regiony: ["eu"]
 
 doplnkove:
@@ -157,8 +157,17 @@ sporty:
 # Anonymní nabídka Fortuny (bot/fortuna.py). Pauza mezi požadavky je záměrně pomalá, ať nic neblokují.
 fortuna:
   zapnuto: true
-  pauza_s: 0.4
-  max_zapasu: 600
+  pauza_s: 0.15          # společný rozestup požadavků (všechna vlákna dohromady)
+  vlaken: 4
+  max_sekund: 0          # 0 = bez limitu: stáhne se celá nabídka
+  max_zapasu: 0          # 0 = bez limitu
+  univerzalni:           # žebříček z celé nabídky bez modelu (jen p trhu; zisk nezaručuje)
+    tipu: 8
+    min_kurz: 1.30
+    max_kurz: 2.00
+    min_p: 0.60
+    max_marze: 0.10
+    max_na_sport: 3
   vaha_modelu: 0.5       # p = vaha*model + (1-vaha)*férový trh; víc než 0.5 nedoporučuji bez důkazu z backtestu
   min_edge: 0.03
   min_kurz: 1.50         # TOP tipéři hrají hlavně 1.6-2.9 (hráčské trhy i 4-7); dřívější strop 2.20 je vyřazoval

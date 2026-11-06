@@ -9,6 +9,7 @@ import datetime
 import math
 import re
 import json
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -66,11 +67,14 @@ class FortunaBlok(FortunaChyba):
 class Klient:
     def __init__(self, pauza=0.4, timeout=25):
         self.pauza, self.timeout, self._posledni, self.pocet = pauza, timeout, 0.0, 0
+        self._zamek = threading.Lock()
 
     def get(self, url):
-        cekat = self.pauza - (time.time() - self._posledni)
-        if cekat > 0:
-            time.sleep(cekat)
+        with self._zamek:                                  # společný rozestup požadavků i pro více vláken (slušnost k serveru)
+            cekat = self.pauza - (time.time() - self._posledni)
+            if cekat > 0:
+                time.sleep(cekat)
+            self._posledni = time.time()
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
         try:
             with urllib.request.urlopen(req, timeout=self.timeout) as r:
@@ -82,7 +86,6 @@ class Klient:
         except (urllib.error.URLError, ValueError, TimeoutError) as e:
             raise FortunaChyba(f"{type(e).__name__} u {url}") from None
         finally:
-            self._posledni = time.time()
             self.pocet += 1
         return data
 
@@ -340,56 +343,98 @@ def _prio_turnaj(t):
     return 2 if sp == "fotbal" else 3
 
 
-def nabidka(k=None, filtry=("today", "tomorrow"), max_zapasu=600, log=print, max_sekund=None):
-    """Stáhne dnešní/zítřejší zápasy včetně vybraných trhů. -> seznam normalizovaných zápasů.
-    max_sekund: časový rozpočet (výchozí fortuna.max_sekund = 480); po jeho vyčerpání se vrátí, co je hotové."""
+def vsechny_trhy(markets):
+    """Všechny dvou/třícestné trhy jakéhokoli sportu (pro žebříček bez modelu). Kombinace, přesné výsledky a builder se vynechají."""
+    out = []
+    for m in markets:
+        nm = re.sub(r"\s+", " ", m.get("name") or "").strip()
+        tl = f"{nm} {m.get('marketTypeName') or ''}".lower()
+        if m.get("kind") not in (None, "PREMATCH") or "," in nm or any(x in tl for x in ("kombinac", "builder", "přesn", "přesný")):
+            continue
+        vys = [(re.sub(r"\s+", " ", o.get("longName") or o.get("name") or "").strip(), _kurz(o)) for o in m.get("outcomes") or []]
+        vys = [(n, k) for n, k in vys if k and n]
+        if 2 <= len(vys) <= 3 and len(vys) == len(m.get("outcomes") or []):
+            out.append({"n": nm, "o": [[n, k] for n, k in vys]})
+    return out
+
+
+def nabidka(k=None, filtry=("today", "tomorrow"), max_zapasu=0, log=print, max_sekund=0, vlaken=None):
+    """Stáhne CELOU dnešní/zítřejší nabídku včetně trhů (bez limitu zápasů i času; 0 = bez limitu).
+    Požadavky běží ve více vláknech se společným rozestupem; při HTTP 403/429 se stahování zastaví a vrátí se, co je hotové."""
+    from concurrent.futures import ThreadPoolExecutor
     nast = (config.nacti_cfg().get("fortuna") or {})
-    k = k or Klient(pauza=nast.get("pauza_s", 0.4))
-    rozpocet = float(max_sekund if max_sekund is not None else nast.get("max_sekund", 480))
+    k = k or Klient(pauza=nast.get("pauza_s", 0.15))
+    rozpocet = float(max_sekund if max_sekund is not None else nast.get("max_sekund", 0))
+    max_zapasu = int(max_zapasu or nast.get("max_zapasu", 0) or 0)
+    vlaken = int(vlaken or nast.get("vlaken", 4))
     t0 = time.time()
-    videno, zap = set(), []
-    for f in filtry:
-        tur = sorted(turnaje(k, f), key=_prio_turnaj)                # nejdůležitější nejdřív (rozpočet je omezený)
-        tur = [t for t in tur if _prio_turnaj(t) < 9]
-        log(f"Fortuna: {len(tur)} turnajů ({f}), čtu zápasy...")
-        for i, t in enumerate(tur, 1):
-            if time.time() - t0 > rozpocet * 0.5:
-                log(f"⏱️ Fortuna: seznam zápasů přerušen po {int(time.time() - t0)} s (turnaj {i}/{len(tur)}).")
-                break
-            for fx in zapasy(k, t.get("id"), f):
-                if fx.get("id") and fx["id"] not in videno:
-                    videno.add(fx["id"])
-                    z = normalizuj_zapas(fx, t)
-                    if z["live"] or not z["aktivni"] or not z["ma_trhy"]:
-                        continue                      # živé a neaktivní zápasy bot nepotřebuje
-                    zap.append(z)
-            if i % 50 == 0:
-                log(f"   turnaje {i}/{len(tur)}, zápasů zatím {len(zap)}")
-    log(f"Fortuna: {len(zap)} zápasů v nabídce ({', '.join(filtry)}), {int(time.time() - t0)} s.")
-    # nejdřív zápasy z TOP lig (tam jsou karty/rohy/fauly), ať je rozpočet nejdřív vyčerpá nejdůležitější
-    zap.sort(key=lambda z: _prio_turnaj({"name": z.get("turnaj"), "sportSeoName": z.get("sport"), "categorySeoName": z.get("kategorie")}))
-    zap = zap[:max_zapasu]
-    for i, z in enumerate(zap, 1):
-        if time.time() - t0 > rozpocet:
-            log(f"⏱️ Fortuna: časový rozpočet {int(rozpocet)} s vyčerpán, trhy stažené u {i - 1}/{len(zap)} zápasů, zbytek přeskakuji.")
-            for zz in zap[i - 1:]:
-                zz["trhy"], zz["nohy"] = [], []
-            break
+    stav = {"blok": None}
+
+    def vyprsel():
+        return bool(rozpocet) and time.time() - t0 > rozpocet
+
+    def zapasy_turnaje(args):
+        t, f = args
+        if stav["blok"] or vyprsel():
+            return []
         try:
-            ms = trhy(k, z["id"])
-            z["trhy"] = normalizuj_trhy(ms)
-            z["nohy"] = nohy_zapasu(ms, z.get("sport"))
-        except FortunaBlok:
-            raise
+            return [(fx, t) for fx in zapasy(k, t.get("id"), f)]
+        except FortunaBlok as e:
+            stav["blok"] = e
         except FortunaChyba as e:
             log(f"⚠️ {e}")
-            z["trhy"], z["nohy"] = [], []
-        if i % 100 == 0:
-            log(f"   trhy {i}/{len(zap)} ({int(time.time() - t0)} s)")
+        return []
+
+    videno, zap = set(), []
+    for f in filtry:
+        tur = [t for t in sorted(turnaje(k, f), key=_prio_turnaj) if _prio_turnaj(t) < 9]
+        log(f"Fortuna: {len(tur)} turnajů ({f}), čtu zápasy ({vlaken} vlákna)...")
+        with ThreadPoolExecutor(vlaken) as ex:
+            for i, vysl in enumerate(ex.map(zapasy_turnaje, [(t, f) for t in tur]), 1):
+                for fx, t in vysl:
+                    if fx.get("id") and fx["id"] not in videno:
+                        videno.add(fx["id"])
+                        z = normalizuj_zapas(fx, t)
+                        if not (z["live"] or not z["aktivni"] or not z["ma_trhy"]):
+                            zap.append(z)
+                if i % 100 == 0:
+                    log(f"   turnaje {i}/{len(tur)}, zápasů zatím {len(zap)} ({int(time.time() - t0)} s)")
+    log(f"Fortuna: {len(zap)} zápasů v nabídce ({', '.join(filtry)}), {int(time.time() - t0)} s.")
+    zap.sort(key=lambda z: _prio_turnaj({"name": z.get("turnaj"), "sportSeoName": z.get("sport"), "categorySeoName": z.get("kategorie")}))
+    if max_zapasu:
+        zap = zap[:max_zapasu]
+
+    def stahni_trhy(args):
+        i, z = args
+        z.setdefault("trhy", []), z.setdefault("nohy", []), z.setdefault("dvou", [])
+        if stav["blok"] or vyprsel():
+            return 0
+        try:
+            ms = trhy(k, z["id"])
+            z["trhy"], z["nohy"], z["dvou"] = normalizuj_trhy(ms), nohy_zapasu(ms, z.get("sport")), vsechny_trhy(ms)
+            return 1
+        except FortunaBlok as e:
+            stav["blok"] = e
+        except FortunaChyba as e:
+            log(f"⚠️ {e}")
+        return 0
+
+    hotovo = 0
+    with ThreadPoolExecutor(vlaken) as ex:
+        for i, ok in enumerate(ex.map(stahni_trhy, list(enumerate(zap, 1))), 1):
+            hotovo += ok
+            if i % 200 == 0:
+                log(f"   trhy {i}/{len(zap)} ({int(time.time() - t0)} s)")
+    if stav["blok"]:
+        log(f"⛔ {stav['blok']} Stažení zastaveno, trhy má {hotovo}/{len(zap)} zápasů.")
+    elif vyprsel():
+        log(f"⏱️ Časový limit {int(rozpocet)} s vyčerpán, trhy má {hotovo}/{len(zap)} zápasů.")
+    log(f"Fortuna: hotovo, trhy u {hotovo}/{len(zap)} zápasů, {k.pocet} požadavků, {int(time.time() - t0)} s.")
     return zap
 
 
 def uloz_nabidku(zap, datum):
+    zap = [{kk: v for kk, v in z.items() if kk != "dvou"} for z in zap]      # obří seznam všech trhů do repozitáře neukládáme
     p = config.DATA / f"fortuna_nabidka_{datum}.json"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(zap, ensure_ascii=False, indent=1), encoding="utf-8")

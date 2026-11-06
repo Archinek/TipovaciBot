@@ -326,12 +326,19 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
     picks = [r for r in radky if r["veto"] != "VETO"][:nast["max_tipu_denne"]]
     vyrazene = [r for r in radky if r["veto"] == "VETO"]
     # anonymní nabídka Fortuny (orientační ceník, sázíš jinde); chyba ani blok nikdy nesmí shodit ranní report
-    zap_fortuna = []
+    zap_fortuna, univ = [], []
     try:
         from . import fortuna
         if (cfg.get("fortuna") or {}).get("zapnuto", True):
             zap_fortuna = fortuna.nabidka(filtry=("today", "tomorrow"),
-                                          max_zapasu=(cfg.get("fortuna") or {}).get("max_zapasu", 600), log=_log)
+                                          max_zapasu=(cfg.get("fortuna") or {}).get("max_zapasu", 0),
+                                          max_sekund=(cfg.get("fortuna") or {}).get("max_sekund", 0), log=_log)
+            try:
+                from . import fortuna_vse
+                univ = fortuna_vse.nejpravdepodobnejsi(zap_fortuna, cfg)
+                _log(f"📋 Nejpravděpodobnější z celé nabídky: {len(univ)}.")
+            except Exception as e:
+                _log(f"⚠️ Žebříček celé nabídky selhal: {type(e).__name__}: {e}")
             fortuna.uloz_nabidku(zap_fortuna, datum)
     except Exception as e:
         _log(f"⚠️ Fortuna selhala: {type(e).__name__}: {e}")
@@ -401,17 +408,17 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         p["veto_kontext"] = p.pop("_kontext", "")
     rows = store.nacti()
     celkem = store.metriky(rows)
-    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort)
+    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort, univ)
     cesta_picks.write_text(json.dumps(
         {"datum": datum, "picks": picks, "vyrazene": vyrazene, "vcera": vcera, "doplnkove": dopl, "fortuna": fort},
         ensure_ascii=False, indent=2), encoding="utf-8")
 
-    text = report.wa_ranni(datum, picks, vcera, config.pages_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text)
+    text = report.wa_ranni(datum, picks, vcera, config.pages_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ)
     wa_fn(text)
     return {"picks": picks, "vyrazene": vyrazene, "celkem": celkem}
 
 
-def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None, fort=None):
+def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None, fort=None, univ=None):
     config.DOCS.mkdir(parents=True, exist_ok=True)
     (config.DOCS / "reports").mkdir(exist_ok=True)
     (config.DOCS / ".nojekyll").touch()
@@ -420,7 +427,7 @@ def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, ka
     podle_sportu = store.metriky_podle(rows, "sport")
     (config.DOCS / "reports" / f"{datum}.html").write_text(
         report.sestav_report(datum, picks, vyrazene, vcera, {"vše": celkem, **podle_tieru}, nast["zona"],
-                             dopl=dopl, kalib=kalib, fort=fort),
+                             dopl=dopl, kalib=kalib, fort=fort, univ=univ),
         encoding="utf-8")
 
     doporuceni = {}

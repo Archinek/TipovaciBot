@@ -295,8 +295,10 @@ def test_casove_limity():
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import test_fortuna as tf
     zpravy = []
-    z = fortuna.nabidka(tf.Fake(), filtry=("today",), log=zpravy.append, max_sekund=0)
-    assert all(x["nohy"] == [] for x in z)
+    z = fortuna.nabidka(tf.Fake(), filtry=("today",), log=zpravy.append, max_sekund=1e-9)
+    assert all(x["trhy"] == [] for x in z)          # vyčerpaný rozpočet: zápasy bez trhů
+    z = fortuna.nabidka(tf.Fake(), filtry=("today",), log=zpravy.append)       # bez limitu: trhy se stáhnou
+    assert z and z[0]["trhy"]
 
 
 def test_modely_a_priorita():
@@ -377,3 +379,18 @@ def test_ligy_fortuny():
     assert histdata._norm("RC Strasbourg") == "strasbourg" and histdata._norm("Olympique Lyon") == "lyon"
     p = fh._par("Olympique Lyon", {"Lyon": "lyon", "Lille": "lille"}, True)
     assert p == "Lyon"
+
+
+def test_zebricek_cele_nabidky():
+    from bot import fortuna_vse
+    z = [{"sport": "vodni-polo", "nazev": "A - B", "start": "x", "turnaj": "L", "dvou": [
+            {"n": "Vítěz zápasu", "o": [["A", 1.50], ["B", 2.60]]},
+            {"n": "Divný", "o": [["Ano", 1.2], ["Ne", 1.2]]}]},                      # záporná marže -> zahodit
+         {"sport": "sipky", "nazev": "C - D", "start": "x", "turnaj": "L", "dvou": [
+            {"n": "Počet 180 v zápasu 5.5", "o": [["Více než 5.5", 1.9], ["Méně než 5.5", 1.9]]}]}]    # p = 0.5 < 0.6
+    out = fortuna_vse.nejpravdepodobnejsi(z, config.nacti_cfg())
+    assert [(c["sport"], c["vyber"]) for c in out] == [("vodni-polo", "A")] and out[0]["p"] > 0.6
+    assert fortuna_vse.text(out)[1].startswith("📋")
+    assert [x for x in fortuna.vsechny_trhy([{"name": "Vítěz", "marketTypeName": "Vítěz", "kind": "PREMATCH",
+            "outcomes": [{"name": "1", "odds": 1.8}, {"name": "2", "odds": 2.0}]},
+            {"name": "A vítěz, B dá gól", "outcomes": [{"name": "x", "odds": 3.0}, {"name": "y", "odds": 3.0}]}])] and True
