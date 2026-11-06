@@ -265,7 +265,7 @@ def _nb_pmf(mu, k, y):
 
 
 def p_kdo_vice(m, home, away, povrch="", bo=3):
-    """'Kdo zahraje více dvojchyb (bez remízy)': -> {'p_home', 'p_away', 'hraci'} nebo None. Remíza se vyloučí (trh ji vrací)."""
+    """'Kdo zahraje více dvojchyb (bez remízy)': -> {'p_home', 'p_away', 'hraci'} nebo None. p_home/p_away jsou podmíněné (bez remízy); p_*_abs a p_remiza jsou absolutní (Fortuna: remíza sázku prohrává)."""
     a, b = najdi_hrace(home, m["hraci"]), najdi_hrace(away, m["hraci"])
     if not a or not b or a == b:
         return None
@@ -279,4 +279,5 @@ def p_kdo_vice(m, home, away, povrch="", bo=3):
     b_vic = sum(pb[i] * sum(pa[:i]) for i in range(ymax + 1))
     if a_vic + b_vic <= 0:
         return None
-    return {"p_home": a_vic / (a_vic + b_vic), "p_away": b_vic / (a_vic + b_vic), "mu": (round(mu["a"], 2), round(mu["b"], 2)), "hraci": (a, b)}
+    return {"p_home_abs": a_vic, "p_away_abs": b_vic, "p_remiza": max(0.0, 1.0 - a_vic - b_vic),
+            "p_home": a_vic / (a_vic + b_vic), "p_away": b_vic / (a_vic + b_vic), "mu": (round(mu["a"], 2), round(mu["b"], 2)), "hraci": (a, b)}

@@ -268,11 +268,18 @@ def _tenis_statistika(out, vysl, nazev, tl, ou_name, popis=""):
         return
     stat = "df" if "dvojchyb" in tl else "esa"
     if tl.startswith(("zápas: více", "více", "kdo")) and "počet" not in tl:
-        if stat == "df":                                  # kdo zahraje víc dvojchyb; remíza = vrácení -> neřešíme jako noha
+        if stat == "df":                                  # kdo zahraje víc dvojchyb; u Fortuny remíza ("Stejně") sázku prohrává
+            remiza = None
+            for o, k in vysl:
+                if (o.get("longName") or o.get("name") or "").strip().lower() in ("remíza", "remiza", "stejně", "x", "0"):
+                    remiza = k
             for o, k in vysl:
                 nm = (o.get("longName") or o.get("name") or "").strip()
                 if nm and nm.lower() not in ("remíza", "remiza", "stejně", "x", "0"):
-                    out.append({"trh": "df_kdo", "linie": None, "strana": nm.lower(), "hrac": nm, "kurz": k})
+                    x = {"trh": "df_kdo", "linie": None, "strana": nm.lower(), "hrac": nm, "kurz": k}
+                    if remiza:
+                        x["remiza"] = remiza
+                    out.append(x)
         return
     m = re.match(r"^(?:zápas:\s*)?(.*?)\s*:?\s*počet (?:es|dvojchyb)\b", nazev, re.I)
     hrac = (m.group(1).strip(" :") if m else "") or None

@@ -155,8 +155,12 @@ def vyhodnot(nacti_historii, ted, nacti_tenis=None):
                         y = z[kw] + z[kl]
                     elif r["typ"] == "df_kdo":
                         a_, b_ = r["home_fd"], r["away_fd"]
-                        if hodn[a_] == hodn[b_] or r.get("hrac_fd") not in hodn:
-                            break                          # remíza = trh se vrací; bez jistého hráče nevyhodnocuji
+                        if r.get("hrac_fd") not in hodn:
+                            break                          # bez jistého hráče nevyhodnocuji
+                        if hodn[a_] == hodn[b_]:           # Fortuna: "Stejně" je samostatný výsledek, sázka na hráče remízou prohrává
+                            r["vysledek"] = "0"
+                            hotovo += 1
+                            break
                         r["vysledek"] = str(int(hodn[r["hrac_fd"]] > hodn[b_ if r["hrac_fd"] == a_ else a_]))
                         hotovo += 1
                         break

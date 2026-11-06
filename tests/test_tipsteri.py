@@ -394,3 +394,17 @@ def test_zebricek_cele_nabidky():
     assert [x for x in fortuna.vsechny_trhy([{"name": "Vítěz", "marketTypeName": "Vítěz", "kind": "PREMATCH",
             "outcomes": [{"name": "1", "odds": 1.8}, {"name": "2", "odds": 2.0}]},
             {"name": "A vítěz, B dá gól", "outcomes": [{"name": "x", "odds": 3.0}, {"name": "y", "odds": 3.0}]}])] and True
+
+
+def test_df_kdo_tri_cesty_a_plusminus():
+    n = fortuna.parsuj_trh(_real("Zápas: více dvojchyb", "Zápas: více dvojchyb", [("Borges N.", 2.3), ("Ruud C.", 2.25), ("Stejně", 4.25)]), "tenis")
+    assert [(x["hrac"], x["remiza"]) for x in n] == [("Borges N.", 4.25), ("Ruud C.", 4.25)]
+    n = fortuna.parsuj_trh(_real("Zápas: Ruud C. počet es 8.5", "Zápas: Ruud C. počet es", [("- 8.5", 1.96), ("+ 8.5", 1.7)]), "tenis")
+    assert {(x["strana"], x["hrac"], x["linie"]) for x in n} == {("under", "Ruud C.", 8.5), ("over", "Ruud C.", 8.5)}
+    rows, _, _ = _liga()
+    for r in rows:
+        r["df_w"], r["df_l"] = 2, 2
+    m = tenis.fit(rows, TED, stat="df")
+    a, b = sorted(m["s"])[:2]
+    r = tenis.p_kdo_vice(m, a, b, "hard", 3)
+    assert abs(r["p_home_abs"] + r["p_away_abs"] + r["p_remiza"] - 1) < 1e-9 and r["p_remiza"] > 0.05

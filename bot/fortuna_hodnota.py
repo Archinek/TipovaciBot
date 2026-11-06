@@ -342,15 +342,20 @@ def vyhodnot_tenis(zapasy, cfg, ted, log=print, nacti_data=None):
         if len(kdo) == 2 and modely["df"]:                     # kdo zahraje víc dvojchyb (dvoucestný, bez remízy)
             r = tenis.p_kdo_vice(modely["df"], z["home"], z["away"], povrch, bo)
             if r:
+                tie = kdo[0].get("remiza")
                 for n, o in ((kdo[0], kdo[1]), (kdo[1], kdo[0])):
                     jm = tenis.najdi_hrace(n["hrac"], ref["hraci"]) or tenis._podle_prijmeni(n["hrac"], r["hraci"])
                     if jm in r["hraci"]:
-                        dvojice.append((n, o, r["p_home"] if jm == r["hraci"][0] else r["p_away"], r["mu"], jm, modely["df"]))
+                        dom = jm == r["hraci"][0]
+                        if tie:                                # třícestný trh: remíza sázku prohrává -> absolutní p a férový trh ze 3 kurzů
+                            dvojice.append((n, {**o, "_tie": tie}, r["p_home_abs"] if dom else r["p_away_abs"], r["mu"], jm, modely["df"]))
+                        else:
+                            dvojice.append((n, o, r["p_home"] if dom else r["p_away"], r["mu"], jm, modely["df"]))
         for n, opak, pm, mu_, hrac_fd, m in dvojice:
             kmin, kmax = pasmo(fh, "esa" if n["trh"].startswith("esa") else "df", kmin0, kmax0)
             if not (kmin <= n["kurz"] <= kmax):
                 continue
-            ptrh = engine.no_vig_power([n["kurz"], opak["kurz"]])[0]
+            ptrh = engine.no_vig_power([n["kurz"], opak["kurz"]] + ([opak["_tie"]] if opak.get("_tie") else []))[0]
             if abs(pm - ptrh) > max_rozchod:
                 continue
             p = w * pm + (1 - w) * ptrh
