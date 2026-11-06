@@ -43,12 +43,13 @@ def zkontroluj(kandidati, cfg):
         print(f"⚠️ Gemini nelze inicializovat: {e}")
         return vysl
 
-    modely = [config.env("GEMINI_MODEL", "gemini-2.5-pro"), "gemini-2.5-flash"]
+    modely = config.gemini_modely()
     for model in modely:
         try:
-            r = client.models.generate_content(
+            print(f"🔎 Veto kontrola: {len(polozky)} kandidátů, model {model} (limit 240 s)...")
+            r = config.s_limitem(lambda: client.models.generate_content(
                 model=model, contents=_prompt(polozky),
-                config=types.GenerateContentConfig(tools=[{"google_search": {}}]))
+                config=types.GenerateContentConfig(tools=[{"google_search": {}}])), 240)
             t = r.text or ""
             data = json.loads(t[t.find("{"): t.rfind("}") + 1])
             for v in data.get("vysledky", []):

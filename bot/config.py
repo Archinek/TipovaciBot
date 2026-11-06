@@ -28,3 +28,32 @@ def pages_url():
         owner, name = repo.split("/", 1)
         return f"https://{owner}.github.io/{name}"
     return ""
+
+
+def s_limitem(fn, sekund):
+    """Zavolá fn() a po `sekund` vyhodí TimeoutError (volání na síť bez timeoutu by jinak zablokovalo celý běh).
+    Vlákno je daemon: po timeoutu dál dobíhá v pozadí, ale proces skončí normálně."""
+    import threading
+    vysl = {}
+
+    def _run():
+        try:
+            vysl["v"] = fn()
+        except BaseException as e:      # noqa: BLE001 - předáme volajícímu
+            vysl["e"] = e
+    t = threading.Thread(target=_run, daemon=True)
+    t.start()
+    t.join(sekund)
+    if t.is_alive():
+        raise TimeoutError(f"volání neodpovědělo do {sekund} s")
+    if "e" in vysl:
+        raise vysl["e"]
+    return vysl.get("v")
+
+
+def gemini_modely():
+    """Modely Gemini v pořadí pokusů. GEMINI_MODEL (proměnná repozitáře) má přednost; názvy se u Google mění,
+    starší 2.5 modely už pro nové účty vrací 404 (hláška doporučila 3.1-pro-preview a 3.8-flash)."""
+    vlastni = env("GEMINI_MODEL", "")
+    out = [m for m in (vlastni, "gemini-3.1-pro-preview", "gemini-3.8-flash") if m]
+    return list(dict.fromkeys(out))

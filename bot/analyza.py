@@ -125,11 +125,12 @@ def rozsir(picks, cfg, vola_gemini=None, max_zapasu=None):
                 from google import genai
                 from google.genai import types
                 client = genai.Client(api_key=klic)
-                for model in (config.env("GEMINI_MODEL", "gemini-2.5-pro"), "gemini-2.5-flash"):
+                for model in config.gemini_modely():
                     try:
-                        r = client.models.generate_content(
+                        print(f"🔎 Analýza: {len(polozky)} zápasů, model {model} (limit 300 s)...")
+                        r = config.s_limitem(lambda: client.models.generate_content(
                             model=model, contents=prompt,
-                            config=types.GenerateContentConfig(tools=[{"google_search": {}}]))
+                            config=types.GenerateContentConfig(tools=[{"google_search": {}}])), 300)
                         text = r.text or ""
                         break
                     except Exception as e:
