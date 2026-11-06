@@ -1,0 +1,54 @@
+{
+  "hlavni": [
+    {
+      "zapas": "Everton vs Coventry City (Fotbal)",
+      "tip": "Méně než 2.5 gólu",
+      "kurz": "2.11",
+      "sazej_od": "1.95",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "54 %"
+    },
+    {
+      "zapas": "Cleveland Cavaliers vs Philadelphia 76ers (Basketbal)",
+      "tip": "Philadelphia 76ers (-2.5)",
+      "kurz": "1.93",
+      "sazej_od": "1.82",
+      "vklad": "2.0/10",
+      "duvera": "8",
+      "uspesnost": "57 %"
+    }
+  ],
+  "alternativni": [
+    {
+      "zapas": "Shelton B. vs Paul T. (Tenis)",
+      "tip": "Vítěz zápasu - Paul T.",
+      "kurz": "1.73",
+      "sazej_od": "1.64",
+      "vklad": "1.5/10",
+      "duvera": "7",
+      "uspesnost": "63 %"
+    }
+  ],
+  "analyzy": [
+    {
+      "nadpis": "ZÁPAS: Everton vs Coventry City (Fotbal - Premier League)",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Zápas prošel kompletní prověrkou počasí a herních parametrů dle sporty.yaml bez aktivace VETO pravidla. Meteorologické zprávy pro Liverpool (Hill Dickinson Stadium) hlásí na páteční večer zataženo, teplotu okolo 8 °C a až 90% pravděpodobnost deště. Dle metodiky sporty.yaml podmáčený a těžký trávník zpomaluje kombinaci a přímo vybízí k sázce na Under gólů. Herní profil Evertonu pod Davidem Moyesem je ztělesněním pragmatismu – po 9 kolech mají skóre 9:9 (průměr přesně 2,0 branky na zápas) a Under 2.5 padl v 6 z jejich 9 ligových duelů. Do středu obrany se po otřesu mozku vrátil spolehlivý Jarrad Branthwaite po bok Jamese Tarkowského a v bráně stojí Jordan Pickford, kteří v pondělí vynulovali Newcastle (1:0). Navíc Jack Grealish zůstává mimo hru kvůli disciplinárnímu trestu. Coventry pod Frankem Lampardem přijíždí v pozici zataženého outsidera a na hřišti soupeře zvolí hluboký blok 4-2-3-1. Trh nadhodnocuje Over kvůli minulé výhře Coventry 3:1 nad Sunderlandem, ale v nepříznivých liverpoolských podmínkách proti pevnému bloku Toffees očekáváme taktickou bitvu s maximálně 1–2 góly. Fér kurz je 1.86, tržní nabídka 2.11 představuje hodnotnou hranu přes 12 %."
+    },
+    {
+      "nadpis": "ZÁPAS: Cleveland Cavaliers vs Philadelphia 76ers (Basketbal - NBA)",
+      "tip": "Philadelphia 76ers (-2.5)",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Analýza detailně prověřila oficiální NBA Injury Report pro páteční utkání NBA Cupu. Zápas netrpí plošným load managementem ani neopodstatněným přeceněním jedné absence. Philadelphia 76ers je v úvodu sezóny ve famózní formě s bilancí 8-1 a sérií výher. Oficiální lékařská zpráva potvrdila, že celá hvězdná základní sestava Sixers – Joel Embiid, Tyrese Maxey (28,0 PPG), Jaylen Brown i rozehrávající LeBron James – je 100% zdravotně připravena. Chybí pouze náhradní podkošoví dříči Dominick Barlow a Adem Bona, což proti Clevelandu nepředstavuje systémový problém. Naopak Cavaliers (bilance 4-4, 2 porážky v řadě) řeší vážné zranění svého elitního defenzivního pivota Jarretta Allena, který odstoupil ve středu s poraněným kolenem a jeho start je vysoce nepravděpodobný. Bez Allena ztrácí Cleveland kotvu v bedně proti Embiidovi a schopnost kontrolovat obranný doskok. Philadelphia povoluje soupeřům pouhých 105,2 bodu na zápas (3. nejlepší defenzivní rating v NBA). Nízký handicap -2.5 bodu nevyžaduje vysoký náskok a neporušuje pravidlo o kolapsech favoritů ve 4. čtvrtině. Fér kurz handicapu je 1.76, hodnota 1.93 má solidní matematickou hranu."
+    },
+    {
+      "nadpis": "ZÁPAS: Shelton B. vs Paul T. (Tenis - ATP Paříž Masters)",
+      "tip": "Vítěz zápasu - Paul T.",
+      "text": "KONTEXTOVÁ A VETO KONTROLA: Prověřena fyzická zátěž i povrch (rychlý halový hard v Paříži). Zápas neporušuje žádné VETO pravidlo o únavě z jiného kontinentu. Klíčový rozdíl leží ve fyzické náloži z posledních 24 hodin a turnajové motivaci. Ben Shelton strávil ve čtvrtek na kurtu obrovské množství energie ve vyčerpávající třísetové bitvě proti Arthuru Rinderknechovi, kterou urval až v tiebreaku třetího setu (3-6, 6-4, 7-6). Shelton navíc již má zajištěnou účast na Turnaji mistrů v Turíně. Naopak Tommy Paul prošel turnajem v Paříži suverénně bez ztráty jediného setu (vyřadil Runeho, Meridu i Halyse) a je v životní formě. Paul hraje o všechno – účast ve finále Paříže je jeho jedinou vstupenkou na ATP Finals v Turíně, což mu dodává maximální koncentraci. V halových podmínkách navíc Paul v jediném dosavadním vzájemném halovém střetnutí Sheltona deklasoval 6-2, 6-4 díky preciznímu returnu a eliminaci Sheltonova servisu. Fér kurz je 1.58, nabízený kurz 1.73 má čistou hodnotu."
+    },
+    {
+      "nadpis": "VETO REPORT: Vyřazené příležitosti z dnešní nabídky",
+      "text": "V souladu se sporty.yaml a historickými lekcemi byly uplatněny následující filtry: 1) BASKETBAL: Besiktas vs Žalgiris Kaunas – Uplatněno přísné VETO na sázky na pevnou defenzivu Žalgirisu (lekce Žalgiris a Besiktas z přelomu září/října; Besiktas doma disponuje smrtící perimetrovou střelbou a Žalgiris má chronické problémy na obranném doskoku). 2) ŠIPKY: Modus Super Series / ADC turnaje – Uplatněno KRITICKÉ VETO na čisté výhry velkých favoritů v nízkých kurzech (Self 1.11, Davies 1.18, Bastings 1.22) i čisté výhry outsiderů v ultrakrátkém formátu legů kvůli vysoké varianci a tlaku na zavírání. 3) VOLEJBAL: Ženská liga v Brazílii (Flamengo 1.21, Osasco 1.25) – Uplatněno KRITICKÉ VETO na nízké kurzy na hostující favoritky a sázky na 1. set v ženském volejbalu z důvodu volatility na příjmu servisu."
+    }
+  ],
+  "vyhodnoceno": false
+}

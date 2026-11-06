@@ -7,7 +7,8 @@
       "sazej_od": "1.75",
       "vklad": "2.0/10",
       "duvera": "8",
-      "uspesnost": "58 %"
+      "uspesnost": "58 %",
+      "vysledek": "❌ PROHRA (1:2)"
     }
   ],
   "alternativni": [
@@ -18,7 +19,8 @@
       "sazej_od": "1.59",
       "vklad": "1.5/10",
       "duvera": "8",
-      "uspesnost": "64 %"
+      "uspesnost": "64 %",
+      "vysledek": "✅ VÝHRA (2:3 po s.n.)"
     }
   ],
   "analyzy": [
@@ -31,5 +33,9 @@
       "text": "KONTEXTOVÁ ANALÝZA A VETO KONTROLA: Úvodní duel sezóny v rámci Euro Hockey Tour (Nocco Hockey Games / dříve Karjala Cup) hraný v pražské O2 areně nabízí klasický scénář taktické evropské bitvy na širokém kluzišti. Podle povinné brankářské kontroly z Deníku Sport a Hokej.cz má český tým potvrzeného startujícího gólmana Dominika Frodla, který v extralize prokazuje dlouhodobou spolehlivost. Pro českou reprezentaci jde o premiéru pod novým hlavním trenérem Zdeňkem Motákem, jenž staví hru na striktním defenzivním systému a organizovaném středním pásmu, přičemž týmu schází elitní tvůrce hry a kapitán Roman Červenka. Švédský výběr Tre Kronor nechal doma odpočívat většinu klíčových hvězd ze SHL i švýcarské NL a přivezl experimentální mladší sestavu s pouze dvěma brankáři a nezkušenými útočníky (Stjernborg, Sundsvik, Hedqvist). Vstupní zápasy turnaje na velkém kluzišti se vyznačují nesehraností útočných formací a opatrným tempem z obou stran. Zápas prošel kompletní VETO kontrolou dle sporty.yaml (ověřený gólman Frodl, široké evropské kluziště omezující střeleckou kadenci, absence ofenzivních es soupeře). Fér kurz na Under 5.5 gólu leží na hladině 1.54, nabízený kurz 1.70 tak přináší stabilní matematickou hranu."
     }
   ],
-  "vyhodnoceno": false
+  "vyhodnoceno": true,
+  "bilance_souhrn": "Vyhodnoceno",
+  "nove_lekce": [
+    "Nepřeceňovat vliv marodky evropských velkoklubů. Ani absence většího počtu hráčů základní sestavy u top týmů (jako je Juventus) automaticky neznamená hodnotu na neprohru outsidera, neboť individuální kvalita náhradníků a taktická vyspělost elitních klubů v evropských pohárech často dokáže personální ztráty plnohodnotně kompenzovat."
+  ]
 }
