@@ -406,7 +406,11 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
     try:                                                              # výsledky z internetu: vyhodnocení včerejších sázek ze všech sportů
         from . import vyhodnoceni
         vyhodnoceni.vyhodnot(ted, log=_log)
-        log_text = (log_text + "\n" if log_text else "") + vyhodnoceni.souhrn_text()
+        _log("🗂️ " + vyhodnoceni.souhrn_text())                         # jen do logu: do reportu se evidence výsledků nepíše
+        from . import ucici
+        _log(f"🧠 Papírové tipy (učení): vyhodnoceno {ucici.vyhodnot(ted, log=_log)}")
+        ucici.uloz_kalibraci(log=_log)
+        _log(f"🧠 Papírové tipy (učení): +{ucici.zaloguj(datum, zap_fortuna, ted, log=_log)} nových z nabídky Fortuny")
     except Exception as e:
         _log(f"⚠️ Vyhodnocení sázek ze všech sportů selhalo: {type(e).__name__}: {e}")
 

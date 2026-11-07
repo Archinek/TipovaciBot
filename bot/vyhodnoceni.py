@@ -124,9 +124,8 @@ def rozhodni(r, v):
     return None, "trh nerozpoznán"
 
 
-def vyhodnot(ted, log=print):
-    """Vyhodnotí sázky, jejichž zápas už skončil (start + 5 h < ted). Výsledky se stahují po dnech (data/vysledky/ cache)."""
-    rows = nacti()
+def vyhodnot_radky(rows, ted, log=print):
+    """Vyhodnotí (na místě) řádky, jejichž zápas už skončil (start + 5 h < ted). Vrací počet nově vyhodnocených."""
     cek = []
     for r in rows:
         if r["vysledek"] != "":
@@ -146,9 +145,11 @@ def vyhodnot(ted, log=print):
     vse = []
     for d in sorted(dny):
         vse += vysledky.ziskej(d, log=log)
+    fin = [x for x in vse if x.get("final")]
+    sporty = {x["sport"] for x in fin}
     hotovo = 0
     for r, s in cek:
-        v = vysledky.najdi([x for x in vse if x.get("final")], r["zapas"], sport=r["sport"] if r["sport"] in {x["sport"] for x in vse} else None)
+        v = vysledky.najdi(fin, r["zapas"], sport=r["sport"] if r["sport"] in sporty else None)
         if not v:
             r["duvod"] = "výsledek nenalezen"
             continue
@@ -157,9 +158,16 @@ def vyhodnot(ted, log=print):
         if y is not None:
             r["vysledek"] = str(y)
             hotovo += 1
-    uloz(rows)
     log(f"   vyhodnoceno {hotovo} z {len(cek)} čekajících sázek (ostatní: výsledek nenalezen / trh nerozpoznán)")
     return hotovo
+
+
+def vyhodnot(ted, log=print):
+    rows = nacti()
+    n = vyhodnot_radky(rows, ted, log)
+    if n or rows:
+        uloz(rows)
+    return n
 
 
 def souhrn(rows=None):

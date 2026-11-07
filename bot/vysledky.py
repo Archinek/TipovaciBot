@@ -14,7 +14,7 @@ from difflib import SequenceMatcher
 from . import config, histdata
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; TipovaciBot/1.0)", "Accept": "application/json,text/csv,*/*"}
-ESPN = [("americký fotbal", "NFL", "nfl"), ("basketbal", "NBA", "nba"), ("basketbal", "WNBA", "wnba"),
+ESPN = [("americky-fotbal", "NFL", "nfl"), ("basketbal", "NBA", "nba"), ("basketbal", "WNBA", "wnba"),
         ("baseball", "MLB", "mlb")]
 NFL_TYMY = {"ARI": "arizona cardinals", "ATL": "atlanta falcons", "BAL": "baltimore ravens", "BUF": "buffalo bills", "CAR": "carolina panthers",
             "CHI": "chicago bears", "CIN": "cincinnati bengals", "CLE": "cleveland browns", "DAL": "dallas cowboys", "DEN": "denver broncos",
@@ -51,16 +51,34 @@ def _cislo(x):
         return None
 
 
+def _espn_stahni(cesta, parametr, datum):
+    js = json.loads(_get(f"https://cdn.espn.com/core/{cesta}/scoreboard?xhr=1&{parametr}={datum.replace('-', '')}"))
+    ev = []
+    _najdi_events(js, ev)
+    return ev
+
+
+def _datum_ev(e):
+    return ((e.get("date") or (e.get("competitions") or [{}])[0].get("date") or "")[:10])
+
+
 def espn(datum, log=print):
+    """ESPN CDN scoreboard. Parametr data se u CDN verze nemusí brát v úvahu: zkusí se 'dates' a 'date'; zápasy se přesto ukládají
+    s vlastním datem začátku, takže i program 'dnes' (vrácený místo požadovaného dne) se vyhodnotí správně."""
     out = []
+    d0 = datetime.date.fromisoformat(datum)
+    okno = {(d0 + datetime.timedelta(days=k)).isoformat() for k in (-1, 0, 1)}
     for sport, liga, cesta in ESPN:
+        ev = []
         try:
-            js = json.loads(_get(f"https://cdn.espn.com/core/{cesta}/scoreboard?xhr=1&dates={datum.replace('-', '')}"))
+            for par in ("dates", "date"):
+                ev = _espn_stahni(cesta, par, datum)
+                if any(_datum_ev(e) in okno for e in ev):
+                    break
         except Exception as e:
             log(f"   ESPN {liga} {datum}: {type(e).__name__}: {e}")
             continue
-        ev = []
-        _najdi_events(js, ev)
+        n = 0
         for e in ev:
             try:
                 c = e["competitions"][0]
@@ -71,9 +89,12 @@ def espn(datum, log=print):
                             "away": kom["away"]["team"].get("displayName") or kom["away"]["team"].get("name"),
                             "h": h, "a": a, "final": fin and h is not None and a is not None,
                             "start": (e.get("date") or c.get("date") or "")[:16], "zdroj": "espn", "extra": {}})
+                n += 1
             except (KeyError, IndexError, TypeError):
                 continue
-        log(f"   ESPN {liga} {datum}: {sum(1 for x in out if x['liga'] == liga)} zápasů")
+        dat = sorted({_datum_ev(e) for e in ev if _datum_ev(e)})
+        log(f"   ESPN {liga} {datum}: {n} zápasů, z toho odehraných {sum(1 for x in out if x['liga'] == liga and x['final'])}"
+            + (f", data {dat[0]}..{dat[-1]}" if dat else ""))
     return out
 
 
@@ -124,7 +145,7 @@ def nfl_csv(datum, log=print):
             continue
         h, a = NFL_TYMY.get(r["home_team"]), NFL_TYMY.get(r["away_team"])
         if h and a:
-            out.append({"sport": "americký fotbal", "liga": "NFL", "home": h, "away": a, "h": int(r["home_score"]), "a": int(r["away_score"]),
+            out.append({"sport": "americky-fotbal", "liga": "NFL", "home": h, "away": a, "h": int(r["home_score"]), "a": int(r["away_score"]),
                         "final": True, "start": r["gameday"] + "T" + (r.get("gametime") or "00:00"), "zdroj": "nflverse",
                         "extra": {"prodlouzeni": r.get("overtime") == "1", "spread": r.get("spread_line"), "total_line": r.get("total_line")}})
     log(f"   nflverse {datum}: {len(out)} zápasů")
@@ -135,6 +156,8 @@ def ziskej(datum, log=print, cache=True):
     """Všechny dostupné výsledky pro datum (cache v data/vysledky/). Nehotové zápasy se do cache neukládají trvale: cache jen pokud něco je."""
     d = config.DATA / "vysledky"
     f = d / f"{datum}.json"
+    stary = datetime.date.fromisoformat(datum) < datetime.date.today() - datetime.timedelta(days=2)
+    cache = cache and stary
     if cache and f.exists():
         try:
             return json.loads(f.read_text(encoding="utf-8"))
@@ -146,6 +169,13 @@ def ziskej(datum, log=print, cache=True):
             vse += fn(datum, log=log)
         except Exception as e:
             log(f"   {fn.__name__}: {type(e).__name__}: {e}")
+    videno, uniq = set(), []
+    for x in vse:
+        k = (x["home"], x["away"], x["start"][:10], x["zdroj"])
+        if k not in videno:
+            videno.add(k)
+            uniq.append(x)
+    vse = uniq
     if vse and cache:
         d.mkdir(parents=True, exist_ok=True)
         f.write_text(json.dumps(vse, ensure_ascii=False), encoding="utf-8")
