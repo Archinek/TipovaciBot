@@ -101,3 +101,18 @@ def jistejsi(kandidati, cfg=None, vyloucit=(), n=None):
         zapasy.add(c["zapas"])
         c["jistejsi"] = len(vybrane)
     return vybrane
+
+
+def duvera_10(c, cfg=None, an=None):
+    """Důvěra 1-10 pro políčko v analýze na Tipsport. Z modelu: klesá s rozchodem model vs. trh (6-10), -1 při p pod 45 %;
+    podle kontroly Gemini: OK 0, NEOVĚŘENO -1.5, NEJISTÉ -2, VETO -5; když Gemini dá vlastní 'duvera_gemini' (1-10), zprůměruje se."""
+    max_roz = float(((cfg or {}).get("fortuna") or {}).get("max_rozchod", 0.12)) or 0.12
+    an = an if an is not None else (c.get("analyza") or {})
+    d = 10.0 - 4.0 * min(abs(c["p_model"] - c["p_trh"]) / max_roz, 1.0)
+    if c.get("p", 0) < 0.45:
+        d -= 1.0
+    d += {"OK": 0.0, "NEJISTE": -2.0, "VETO": -5.0}.get(an.get("verdikt"), -1.5)
+    dg = an.get("duvera_gemini")
+    if isinstance(dg, (int, float)) and 1 <= dg <= 10:
+        d = 0.5 * d + 0.5 * float(dg)
+    return int(round(min(10.0, max(1.0, d))))

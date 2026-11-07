@@ -403,22 +403,32 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
     except Exception as e:
         _log(f"⚠️ Log Fortuny selhal: {type(e).__name__}: {e}")
 
+    tik = None
+    try:                                                              # denní tiket na kurz ~2.00 a Pyramida (z nabídky všech sportů)
+        from . import tikety
+        tik = tikety.sestav(zap_fortuna, fort, cfg, ted) if zap_fortuna else None
+        if tik:
+            _log(f"🎟️ Tikety: zásoba {tik['pocet_noh']} sázek, denní tiket {'ano' if tik['denni'] else 'ne'}, "
+                 f"Pyramida kol {sum(1 for x in tik['pyramida'] if x['tiket'])}/10.")
+    except Exception as e:
+        _log(f"⚠️ Tikety selhaly: {type(e).__name__}: {e}")
+
     # 5) výstupy
     for p in picks:
         p["veto_kontext"] = p.pop("_kontext", "")
     rows = store.nacti()
     celkem = store.metriky(rows)
-    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort, univ)
+    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort, univ, tik)
     cesta_picks.write_text(json.dumps(
         {"datum": datum, "picks": picks, "vyrazene": vyrazene, "vcera": vcera, "doplnkove": dopl, "fortuna": fort},
         ensure_ascii=False, indent=2), encoding="utf-8")
 
-    text = report.wa_ranni(datum, picks, vcera, config.pages_reports_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ)
+    text = report.wa_ranni(datum, picks, vcera, config.pages_reports_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ, tik=tik)
     wa_fn(text)
     return {"picks": picks, "vyrazene": vyrazene, "celkem": celkem}
 
 
-def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None, fort=None, univ=None):
+def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None, fort=None, univ=None, tik=None):
     config.DOCS.mkdir(parents=True, exist_ok=True)
     (config.DOCS / "reports").mkdir(exist_ok=True)
     (config.DOCS / ".nojekyll").touch()
@@ -427,7 +437,7 @@ def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, ka
     podle_sportu = store.metriky_podle(rows, "sport")
     (config.DOCS / "reports" / f"{datum}.html").write_text(
         report.sestav_report(datum, picks, vyrazene, vcera, {"vše": celkem, **podle_tieru}, nast["zona"],
-                             dopl=dopl, kalib=kalib, fort=fort, univ=univ),
+                             dopl=dopl, kalib=kalib, fort=fort, univ=univ, tik=tik),
         encoding="utf-8")
 
     doporuceni = {}
@@ -498,6 +508,9 @@ def main(argv):
         resend()
     elif cmd == "sports":
         sports()
+    elif cmd == "vysledky_probe":
+        from . import vysledky_probe
+        vysledky_probe.probe(log=_log)
     elif cmd == "fortuna_probe":
         from . import fortuna
         fortuna.probe()

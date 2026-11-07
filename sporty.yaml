@@ -162,12 +162,12 @@ fortuna:
   max_sekund: 0          # 0 = bez limitu: stáhne se celá nabídka
   max_zapasu: 0          # 0 = bez limitu
   univerzalni:           # žebříček z celé nabídky bez modelu (jen p trhu; zisk nezaručuje)
-    tipu: 8
+    na_sport: 2
     min_kurz: 1.30
     max_kurz: 2.00
     min_p: 0.60
     max_marze: 0.10
-    max_na_sport: 3
+    min_p_slabsi: 0.54
   vaha_modelu: 0.5       # p = vaha*model + (1-vaha)*férový trh; víc než 0.5 nedoporučuji bez důkazu z backtestu
   min_edge: 0.03
   min_kurz: 1.50         # TOP tipéři hrají hlavně 1.6-2.9 (hráčské trhy i 4-7); dřívější strop 2.20 je vyřazoval
@@ -208,3 +208,12 @@ analyza:
   zapnuto: true
   max_zapasu_h2h: 8       # u kolika h2h zápasů (všechny sporty) se dělá plný rozbor
   max_zapasu_fotbal: 6    # u kolika fotbalových zápasů z nabídky Fortuny
+
+tikety:                  # denní tiket na kurz ~2.00 a Pyramida (skládání z nabídky všech sportů)
+  denni_cil: 2.0
+  rezerva: 0.03          # celkový kurz musí být aspoň cíl × 1.03 (rozdíl Fortuna vs. Tipsport)
+  okno_h: 20             # zápasy začínající do 20 h od ranního běhu (vyhodnotí se do dalšího dne)
+  min_do_startu_min: 20
+  max_marze: 0.10
+  min_kurz_noha: 1.05
+  max_kurz_noha: 4.0

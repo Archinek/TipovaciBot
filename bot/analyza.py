@@ -71,10 +71,17 @@ def _prompt(polozky):
         "rozhodčí podporují Over u faulů; zraněný brankář oslabuje favorita).\n"
         "- verdikt: VETO jen při potvrzeném tvrdém faktu proti sázce (klíčový hráč chybí, startující brankář/nadhazovač "
         "se změnil, extrémní počasí, odstoupení...), OK když fakta sedí, NEJISTE když chybí klíčové informace.\n"
-        "- 'pro' a 'proti': konkrétní věty (max 200 znaků), 3-6 položek každého, pokud existují.\n\n"
+        "- 'pro' a 'proti': konkrétní věty (max 200 znaků), 3-6 položek každého, pokud existují.\n"
+        "- 'text': SOUVISLÝ profesionální rozbor jako jeden plynulý odstavec (bez odrážek a nadpisů), 8-14 vět, jako by ho psal "
+        "zkušený analytik pro sázkaře: začni kontextem zápasu a formou, pak zranění/sestavy, rozhodčí, hřiště a počasí (jen co je "
+        "relevantní pro dané trhy), program a motivaci, a na konci shrň, proč model a fakta podporují (nebo nepodporují) právě "
+        "tyto trhy a co by sázku zhatilo. Používej konkrétní jména a čísla; co nejsi schopen dohledat, výslovně přiznej.\n"
+        "- 'duvera_gemini': celé číslo 1-10, jak moc fakta ze světa podporují kandidáta (1 = fakta mluví proti / nic neověřeno, "
+        "10 = vše ověřeno a sedí).\n\n"
         'Odpověz POUZE čistým JSON bez Markdownu:\n'
         '{"vysledky":[{"id":"<id zápasu>","verdikt":"OK|VETO|NEJISTE","duvod":"max 200 znaků",'
-        '"souhrn":"4-6 vět: celkový obraz zápasu a proč právě tyto trhy",'
+        '"souhrn":"2-3 věty: celkový obraz zápasu",'
+        '"text":"souvislý rozbor 8-14 vět","duvera_gemini":7,'
         '"faktory":[{"kriterium":"id kritéria","zjisteni":"konkrétně","stav":"nalezeno|odhad|nenalezeno","dopad":"+|-|0 a jednou větou proč"}],'
         '"pro":["..."],"proti":["..."],"riziko":"hlavní riziko v jedné větě",'
         '"komentare_k_trhum":[{"trh":"přesně text trhu z kandidáta","komentar":"1-2 věty"}]}]}\n\n'
@@ -100,7 +107,7 @@ def _zaklad(plist):
                   f"fauly {h.get('fauly_pro')}, žluté {h.get('zlute_pro')}. Hosté: góly {a.get('goly_pro')}:{a.get('goly_proti')}, "
                   f"rohy {a.get('rohy_pro')}, fauly {a.get('fauly_pro')}, žluté {a.get('zlute_pro')}. "
                   f"Průměr ligy na zápas: {liga}.")
-    return {"verdikt": "NEOVERENO", "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.", "souhrn": souhrn,
+    return {"verdikt": "NEOVERENO", "duvod": "Gemini kontrola neproběhla, analýza je jen z dat bota.", "souhrn": souhrn, "text": souhrn,
             "pro": pro, "proti": ["Kontextová fakta (rozhodčí, hřiště, počasí, sestavy, zranění) nebyla ověřena."],
             "riziko": "Nezjištěna sestava a zranění.", "komentare_k_trhum": []}
 

@@ -304,9 +304,9 @@ def test_casove_limity():
 def test_modely_a_priorita():
     import os
     os.environ.pop("GEMINI_MODEL", None)
-    assert config.gemini_modely() == ["gemini-3.1-pro-preview", "gemini-3.8-flash"]
+    assert config.gemini_modely() == ["gemini-3.8-flash"]
     os.environ["GEMINI_MODEL"] = "muj-model"
-    assert config.gemini_modely()[0] == "muj-model" and len(config.gemini_modely()) == 3
+    assert config.gemini_modely()[0] == "muj-model" and len(config.gemini_modely()) == 2
     os.environ.pop("GEMINI_MODEL")
     pr = fortuna._prio_turnaj
     assert pr({"name": "Francie - Ligue 1", "sportSeoName": "fotbal"}) == 0
@@ -334,7 +334,7 @@ def test_aliasy_tymu_a_nesparovane():
     out = fh.vyhodnot(zap, cfg, tfh.TED, log=lambda *a: None, nacti_model=nm)
     assert out and out[0]["zapas"] == "Tým Jedna - Tým Dva" and out[0]["home_fd"] == "T3"
     nes = json.loads((config.DATA / "fortuna_nesparovane.json").read_text(encoding="utf-8"))
-    assert nes == [{"turnaj": "Anglie - Premier League", "home": "Neznámý A", "away": "Neznámý B"}]
+    assert [(x["turnaj"], x["home"], x["away"]) for x in nes] == [("Anglie - Premier League", "Neznámý A", "Neznámý B")]
 
 
 if __name__ == "__main__":
@@ -408,3 +408,33 @@ def test_df_kdo_tri_cesty_a_plusminus():
     a, b = sorted(m["s"])[:2]
     r = tenis.p_kdo_vice(m, a, b, "hard", 3)
     assert abs(r["p_home_abs"] + r["p_away_abs"] + r["p_remiza"] - 1) < 1e-9 and r["p_remiza"] > 0.05
+
+
+def test_tikety_denni_a_pyramida():
+    import datetime
+    import random
+    from bot import tikety, report
+    random.seed(3)
+    ted = datetime.datetime(2026, 11, 7, 7, 0, tzinfo=datetime.timezone.utc)
+    zap = []
+    for i in range(80):
+        a = random.uniform(1.3, 3.2)
+        b = 1 / (1.06 - 1 / a)
+        zap.append({"sport": random.choice(["fotbal", "darts", "vodni-polo", "americky-fotbal"]), "nazev": f"A{i} - B{i}", "turnaj": "L",
+                    "start": (ted + datetime.timedelta(hours=random.uniform(1, 14))).isoformat(),
+                    "dvou": [{"n": "Vítěz", "o": [["A", round(a, 2)], ["B", round(b, 2)]]}]})
+    zap.append({"sport": "fotbal", "nazev": "Pozdě - Pozdě", "turnaj": "L", "start": (ted + datetime.timedelta(days=3)).isoformat(),
+                "dvou": [{"n": "Vítěz", "o": [["A", 1.2], ["B", 4.5]]}]})                       # mimo časové okno
+    out = tikety.sestav(zap, [], {}, ted)
+    assert out["denni"] and out["denni"]["kurz"] >= 2.0 * 1.03 and len(out["denni"]["noze"]) <= 3
+    assert all(c["zapas"] != "Pozdě - Pozdě" for k in out["pyramida"] if k["tiket"] for c in k["tiket"]["noze"])
+    assert len(out["pyramida"]) == 10 and all(k["tiket"] and k["tiket"]["kurz"] >= k["prah"] for k in out["pyramida"])
+    for k in out["pyramida"]:                                    # jedna sázka na zápas a "sázej od" drží celek nad cílem
+        t = k["tiket"]
+        assert len({c["zapas"] for c in t["noze"]}) == len(t["noze"])
+        for c in t["noze"]:
+            assert c["sazej_od"] <= c["kurz"] + 0.01
+    assert out["pyramida"][3]["tiket"]["p"] > out["pyramida"][9]["tiket"]["p"]
+    wa = "\n".join(report._wa_tikety(out, "Europe/Prague"))
+    assert "DENNÍ TIKET" in wa and "PYRAMIDA" in wa and "10. kolo" in wa
+    assert "Kolo 10" in report._tab_pyramida(out, "Europe/Prague")

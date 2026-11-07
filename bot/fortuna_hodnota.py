@@ -119,7 +119,9 @@ def _uloz_nesparovane(seznam, log):
     except OSError:
         return
     if seznam:
-        log(f"ℹ️ Nespárováno {len(seznam)} TOP ligových zápasů (např. {seznam[0]['home']} - {seznam[0]['away']}). Seznam: data/fortuna_nesparovane.json, aliasy: data/aliasy_tymu.json.")
+        log(f"ℹ️ Nespárováno {len(seznam)} TOP ligových zápasů. Seznam: data/fortuna_nesparovane.json, aliasy: data/aliasy_tymu.json.")
+        for x in seznam[:30]:
+            log(f"   ? [{x.get('turnaj')}] {x['home']} - {x['away']} (kód ligy {x.get('kod_ligy')}, nenalezeno: {', '.join(x.get('chybi') or [])})")
 
 
 def pasmo(fh, trh, kmin, kmax):
@@ -189,7 +191,13 @@ def vyhodnot(zapasy, cfg, ted, log=print, nacti_model=None):
                 break
         if not nalezeno:
             if fortuna_top(z):
-                nesparovane.append({"turnaj": z.get("turnaj"), "home": z["home"], "away": z["away"]})
+                chybi = []
+                if znama:
+                    _m, _t = model_ligy(znama)
+                    chybi = ([z["home"]] if not _par(z["home"], _t, True) else []) + ([z["away"]] if not _par(z["away"], _t, True) else [])
+                    if not _m:
+                        chybi = ["(bez dat ligy)"]
+                nesparovane.append({"turnaj": z.get("turnaj"), "home": z["home"], "away": z["away"], "kod_ligy": znama, "chybi": chybi})
             continue
         spar += 1
         kod, m, h, a = nalezeno
@@ -302,7 +310,9 @@ def vyhodnot_tenis(zapasy, cfg, ted, log=print, nacti_data=None):
     zap = [z for z in zapasy if z.get("sport") in ("tenis", "tennis") and z.get("nohy") and not je_virtualni(z)
            and any(n["trh"] in TENIS_TRHY for n in z["nohy"])]
     if not zap:
-        log("Fortuna/tenis: v nabídce není žádný zápas s trhem es/dvojchyb (názvy trhů zkontroluj v fortuna_probe).")
+        t_all = [z for z in zapasy if z.get("sport") in ("tenis", "tennis")]
+        log(f"Fortuna/tenis: tenisových zápasů {len(t_all)}, s nějakou čitelnou linií {sum(1 for z in t_all if z.get('nohy'))}, "
+            f"s esy/dvojchybami 0. Fortuna nabízí esa jen u vybraných zápasů a často až v den zápasu.")
         return []
     try:
         rows = (nacti_data or tenis.nacti)(ted)
