@@ -1,2 +1,41 @@
 https://teletext.ceskatelevize.cz/?p=760-2
-CHYBA error: bad character range \\-. at position 36
+HTTP 200 text/html; charset=UTF-8 délka 42853
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Teletext České televize" />
+    <meta property="og:site_name" content="Teletext České televize" />
+    <meta property="og:url" content="https://www.ceskatelevize.cz/teletext/" />
+    <meta property="og:description" content="Stručný výběr nejdůležitějších zpráv dne z domova, světa, počasí i sportu. Zajímavosti a zábava. V televizi i na internetu." />
+    <meta name="description" content="Stručný výběr nejdůležitějších zpráv dne z domova, světa, počasí i sportu. Zajímavosti a zábava. V televizi i na internetu." />
+    <meta name="twitter:site" content="@CzechTV" />
+    <meta name="robots" content="index, follow" />
+    <link href="https://imgct.ceskatelevize.cz/global/images/favicon.ico" rel="shortcut icon">
+    <link rel="apple-touch-icon" href="https://imgct.ceskatelevize.cz/global/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://imgct.ceskatelevize.cz/global/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://imgct.ceskatelevize.cz/global/images/apple-touch-icon-57x57.png">
+    <title>Teletext České televize</title>
+<link rel="stylesheet" href="https://ctfs.ceskatelevize.cz/static/v8.20/assets/common.css">
+<link rel="stylesheet" href="https://ctfs.ceskatelevize.cz/static/v8.20/assets/header.css">
+<link rel="stylesheet" href="https://ctfs.ceskatelevize.cz/static/v8.20/assets/footer.css">
+<link rel="stylesheet" href="https://ctfs.ceskatelevize.cz/static/scripts/cmp/v2.4/orestbida/brands/default-dark.css">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WR543Z2');</script>
+<!-- End Google Tag Manager -->
+<link href="e-2019.e4155f28f77c4018f1b5.css" rel="stylesheet"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR543Z2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header style="box-sizing: content-box" class="ctg ctg-header ctg-header-header ctg-header-hide-global-menu ctg-header-hide-profile-menu ctg-header-default ctg-header-header-dark" data-testid="ctg-header"><div aria-hidden="true" class="ctg-header-input-mobile visible"><form id="ctg-header-searchForm-mobile" class="ctg-header-input-wrapper" action="https://www.ceskatelevize.cz/hledani/" data-testid="ctg-header-searchForm-mobile"><div class="ctg-header-scrim ctg-header-scrim--transparent"></div><label for="ctg-header-searchInputMobile" class="ctg-sr-only">Hledání</label> <input type="search" placeholder="Hledat na webu ČT..." required="" minlength="3" maxlength="50" name="q" id="ctg-header-searchInputMobile" class="ctg-header-input" value="" data-testid="ctg-header-searchInput-mobile"/> <button form="ctg-header-searchForm-mobile" class="ctg-header-searchForm-mobile-button" type="submit" name="hledat"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="ctg-header-search-open-button-icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><text fill="#6F6F6F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14" letter-spacing=".2" transform="translate(-32 -8)"><tspan x="17.05" y="64.45">Search</tspan></text><path fill="#041E42" class="ctg-icon-fill" d="M9.5 2a7.5 7.5 0 0 1 5.83 12.22c.4-.07.83.03 1.17.3l.11.1 4.43 4.3a1.5 1.5 0 0 1-1.97 2.26l-.11-.1-4.43-4.3a1.5 1.5 0 0 1-.44-1.35A7.5 7.5 0 1 1 9.5 2zm0 1.8a5.7 5.7 0 1 0 0 11.4 5.7 5.7 0 0 0 0-11.4z"/></g></svg></button></form></div><a title="Úvodní stránka České televize" href="https://teletext.ceskatelevize.cz/" class="ctg-header-logo-link" data-testid="ctg-header-logo-link">    <img alt="Tv program - logo" aria-hidden="true" class="ctg-header-logo inverted" src="https://ctfs.ceskatelevize.cz/static/v8.20/assets/images/Teletext_onDark.7d43e3fd2460b74dbc51c6f6cd74f261.svg" height="24"/> <img alt="Tv program  - logo" aria-hidden="true" class="ctg-header-logo" src="https://ctfs.ceskatelevize.cz/static/v8.20/assets/images/Teletext.cd487f0df651713ce4fd293a864a65db.svg" height="24"/>  </a><nav aria-label="Globální menu" class="ctg-header-nav"><ul class="ctg-header-menu ctg-flex"><li><a data-menutype="shp" href="https://www.ceskatelevize.cz/ivysilani/">iVysílání</a></li><li><a data-menutype="shp" href="https://ct24.ceskatelevize.cz/">ČT24</a></li><li><a data-menutype="shp" href="https://sport.ceskatelevize.cz/">Sport</a></li><li><a data-menutype="shp" href="https://decko.ceskatelevize.cz/">Déčko</a></li><li><a data-menutype="shp" href="https://www.ceskatelevize.cz/tv-program/">TV program</a></li><li><a data-menutype="shp" href="https://www.ceskatelevize.cz/zive/">Živě</a></li><li><a data-menutype="shp" href="https://poplatky.ceskatelevize.cz/">TV poplatky</a></li></ul></nav><button aria-label="Zobrazit vyhledávací formulář" aria-expanded="false" class="ctg-header-search-button visible"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="ctg-header-search-button-icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><text fill="#6F6F6F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14" letter-spacing=".2" transform="translate(-32 -8)"><tspan x="17.05" y="64.45">Search</tspan></text><path fill="#041E42" class="ctg-icon-fill" d="M9.5 2a7.5 7.5 0 0 1 5.83 12.22c.4-.07.83.03 1.17.3l.11.1 4.43 4.3a1.5 1.5 0 0 1-1.97 2.26l-.11-.1-4.43-4.3a1.5 1.5 0 0 1-.44-1.35A7.5 7.5 0 1 1 9.5 2zm0 1.8a5.7 5.7 0 1 0 0 11.4 5.7 5.7 0 0 0 0-11.4z"/></g></svg></button> <button aria-label="Zavřít vyhledávací formulář" class="ctg-header-search-close-button visible ctg-header-hidden"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="ctg-header-search-close-button-icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><text fill="#6F6F6F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14" letter-spacing=".2" transform="translate(-32 -8)"><tspan x="21.16" y="64.45">Close</tspan></text><path fill="#041E42" class="ctg-icon-fill" d="M5.61 4.21l.1.08L12 10.6l6.3-6.3a1 1 0 0 1 1.49 1.32l-.08.1L13.4 12l6.3 6.3a1 1 0 0 1-1.32 1.49l-.1-.08L12 13.4l-6.3 6.3a1 1 0 0 1-1.49-1.32l.08-.1L10.6 12 4.3 5.7a1 1 0 0 1 1.32-1.49z"/></g></svg></button><div class="ctg-header-input-desktop visible"><form id="ctg-header-searchForm-desktop" class="ctg-header-input-wrapper" action="https://www.ceskatelevize.cz/hledani/" data-testid="ctg-header-searchForm"><label for="ctg-header-searchInput" class="ctg-sr-only">Hledání</label> <input type="search" placeholder="Hledat na webu ČT..." required="" minlength="3" maxlength="50" name="q" id="ctg-header-searchInput" class="ctg-header-input" value="" data-testid="ctg-header-searchInput"/> <button form="ctg-header-searchForm-desktop" type="submit" data-testid="ctg-header-search-submit">Hledat <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="ctg-header-input-icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><text fill="#6F6F6F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14" letter-spacing=".2" transform="translate(-32 -8)"><tspan x="17.05" y="64.45">Search</tspan></text><path fill="#041E42" class="ctg-icon-fill" d="M9.5 2a7.5 7.5 0 0 1 5.83 12.22c.4-.07.83.03 1.17.3l.11.1 4.43 4.3a1.5 1.5 0 0 1-1.97 2.26l-.11-.1-4.43-4.3a1.5 1.5 0 0 1-.44-1.35A7.5 7.5 0 1 1 9.5 2zm0 1.8a5.7
