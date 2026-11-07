@@ -12,7 +12,7 @@ on:
         description: "Co spustit"
         type: choice
         default: morning
-        options: [morning, resend, sports, settle, backtest, builder, fortuna_probe, vysledky_probe, fortuna]
+        options: [morning, resend, sports, settle, backtest, builder, fortuna_probe, vysledky_probe, vysledky_test, fortuna]
       args:
         description: "backtest: kód ligy (E0) nebo all. builder: soccer_epl|Arsenal|Chelsea|karty>4.5,rohy>9.5|3.4|Rozhodčí"
         type: string
