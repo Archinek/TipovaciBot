@@ -1,0 +1,2 @@
+https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=2026-11-06&s=American_Football
+CHYBA HTTPError: HTTP Error 403: Forbidden

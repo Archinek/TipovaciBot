@@ -1,0 +1,6 @@
+https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text [prohlizec] HTTPError: HTTP Error 403: Forbidden
+https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text [minimum] HTTPError: HTTP Error 403: Forbidden
+https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text [curl] HTTPError: HTTP Error 403: Forbidden
+https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages [prohlizec] HTTPError: HTTP Error 403: Forbidden
+https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages [minimum] HTTPError: HTTP Error 403: Forbidden
+https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages [curl] HTTPError: HTTP Error 403: Forbidden

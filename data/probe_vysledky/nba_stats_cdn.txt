@@ -1,0 +1,2 @@
+https://cdn.nba.com/static/json/staticData/scheduleLeagueV2_1.json
+CHYBA TimeoutError: The read operation timed out
