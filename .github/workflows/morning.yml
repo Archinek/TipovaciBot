@@ -12,7 +12,7 @@ on:
         description: "Co spustit"
         type: choice
         default: morning
-        options: [morning, resend, sports, settle, backtest, builder, fortuna_probe, fortuna]
+        options: [morning, resend, sports, settle, backtest, builder, fortuna_probe, vysledky_probe, fortuna]
       args:
         description: "backtest: kód ligy (E0) nebo all. builder: soccer_epl|Arsenal|Chelsea|karty>4.5,rohy>9.5|3.4|Rozhodčí"
         type: string
@@ -28,7 +28,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -51,6 +51,14 @@ jobs:
           ARGS: ${{ github.event.inputs.args }}
           FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: python -m bot.main "$AKCE" "$ARGS"
+      - name: Report ke stažení (záloha, kdyby nešly GitHub Pages)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ github.run_number }}
+          path: docs/reports/*.html
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Uložit data do repozitáře
         run: |
           git config user.name "tipovaci-bot"
