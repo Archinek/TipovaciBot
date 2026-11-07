@@ -16,6 +16,13 @@ from . import config
 ZDROJE = {
     "teletext_751-1": "https://teletext.ceskatelevize.cz/?p=751-1",
     "teletext_760-2": "https://teletext.ceskatelevize.cz/?p=760-2",
+    "ttapi_pages": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages",
+    "ttapi_text_a": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?page=751&subpage=1",
+    "ttapi_text_b": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?pageNumber=751&subPageNumber=1",
+    "ttapi_text_c": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?p=751-1",
+    "ttapi_pages_a": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages?page=751&subpage=1",
+    "ttapi_pages_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751",
+    "ttapi_pages_751_1": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751/1",
     "nhl_score_now": "https://api-web.nhle.com/v1/score/now",
     "nfl_games_csv": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
     "nba_scoreboard": "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json",
@@ -49,12 +56,16 @@ def probe(log=print):
         try:
             if nazev.startswith("teletext"):                       # stránka se nejspíš skládá skriptem: najdi adresy dat
                 nalezeno = set(_URL_RE.findall(body))
-                for src in re.findall(r"""<script[^>]+src=["']([^"']+)""", body)[:6]:
+                kontext = []
+                for src in re.findall(r"""<script[^>]+src=["']([^"']+)""", body)[:12]:
                     try:
                         _, _, js = _get(urllib.parse.urljoin(url, src))
                         nalezeno |= set(_URL_RE.findall(js))
+                        for m in re.finditer(r"teletext-api|api/v1/pages|subpage|subPage", js):
+                            kontext.append(f"[{src}] ..." + js[max(0, m.start() - 300): m.end() + 400].replace("\n", " "))
                     except Exception as e:
                         log(f"   skript {src}: {type(e).__name__}")
+                (d / f"{nazev}_kontext_api.txt").write_text("\n\n".join(kontext[:25]), encoding="utf-8")
                 (d / f"{nazev}_adresy.txt").write_text("\n".join(sorted(nalezeno)[:300]), encoding="utf-8")
                 log(f"   nalezeno {len(nalezeno)} adres ve skriptech")
             elif nazev == "nhl_score_now":                         # boxscore jednoho odehraného zápasu (střely, hráči, vyloučení)
