@@ -1,11 +1,14 @@
 """Sonda zdrojů VÝSLEDKŮ (pro učení bota): uloží ukázky odpovědí, ať vidíme skutečný tvar, než napíšeme čtečky.
 
-Zdroje: Teletext ČT (stránky Tipsport – aktuální výsledky, 751 a dál), veřejné JSON ESPN (NFL, NBA, NHL) a NHL api-web.
-Do data/probe_vysledky/ se uloží začátek každé odpovědi (a u teletextu i adresy nalezené ve skriptech stránky).
-Nic se tím neposílá a nic se nesází; jen se čte.
+Zdroje: Teletext ČT (Tipsport – aktuální výsledky), NHL api-web (skóre, střely, boxscore), NFL (nflverse games.csv z GitHubu:
+výsledky, spready, totaly, rozhodčí, počasí, odpočinek), NBA (oficiální CDN scoreboard). ESPN z GitHubu vrací 403, proto není.
+Do data/probe_vysledky/ se uloží začátek každé odpovědi (u teletextu i adresy nalezené ve skriptech stránky).
+Nic se neposílá ani nesází; jen se čte.
 """
+import json
 import re
 import urllib.error
+import urllib.parse
 import urllib.request
 
 from . import config
@@ -13,11 +16,11 @@ from . import config
 ZDROJE = {
     "teletext_751-1": "https://teletext.ceskatelevize.cz/?p=751-1",
     "teletext_760-2": "https://teletext.ceskatelevize.cz/?p=760-2",
-    "espn_nfl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-    "espn_nba": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard",
-    "espn_nhl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
     "nhl_score_now": "https://api-web.nhle.com/v1/score/now",
+    "nfl_games_csv": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+    "nba_scoreboard": "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json",
 }
+_URL_RE = re.compile(r"""["'](https?://[^"'\s]{8,}|/[A-Za-z0-9_./-]*(?:api|teletext|json)[^"'\s]*)["']""")
 
 
 def _get(url, timeout=25):
@@ -26,25 +29,43 @@ def _get(url, timeout=25):
         return r.status, r.headers.get("Content-Type", ""), r.read().decode("utf-8", "replace")
 
 
+def _uloz(d, nazev, url, st, ct, body, hlava=8000, konec=0):
+    cast = body[:hlava] + (f"\n\n[... konec souboru ...]\n{body[-konec:]}" if konec and len(body) > hlava + konec else "")
+    (d / f"{nazev}.txt").write_text(f"{url}\nHTTP {st} {ct} délka {len(body)}\n\n{cast}", encoding="utf-8")
+
+
 def probe(log=print):
     d = config.DATA / "probe_vysledky"
     d.mkdir(parents=True, exist_ok=True)
     for nazev, url in ZDROJE.items():
         try:
             st, ct, body = _get(url)
-            (d / f"{nazev}.txt").write_text(f"{url}\nHTTP {st} {ct} délka {len(body)}\n\n{body[:8000]}", encoding="utf-8")
-            log(f"{nazev}: HTTP {st}, {len(body)} znaků ({ct})")
-            if nazev.startswith("teletext"):                           # stránka se nejspíš skládá skriptem: najdi adresy dat
-                nalezeno = set(re.findall(r"""["'](https?://[^"'\\s]+|/[A-Za-z0-9_\\-./]*(?:api|teletext|json)[^"'\\s]*)["']""", body))
+        except Exception as e:
+            (d / f"{nazev}.txt").write_text(f"{url}\nCHYBA {type(e).__name__}: {e}", encoding="utf-8")
+            log(f"{nazev}: CHYBA {type(e).__name__}: {e}")
+            continue
+        _uloz(d, nazev, url, st, ct, body, konec=3000 if nazev == "nfl_games_csv" else 0)        # uloží se HNED, než se cokoli zpracuje
+        log(f"{nazev}: HTTP {st}, {len(body)} znaků ({ct})")
+        try:
+            if nazev.startswith("teletext"):                       # stránka se nejspíš skládá skriptem: najdi adresy dat
+                nalezeno = set(_URL_RE.findall(body))
                 for src in re.findall(r"""<script[^>]+src=["']([^"']+)""", body)[:6]:
                     try:
-                        u = src if src.startswith("http") else urllib.request.urljoin(url, src)
-                        _, _, js = _get(u)
-                        nalezeno |= set(re.findall(r"""["'](https?://[^"'\\s]{8,}|/[A-Za-z0-9_\\-./]*(?:api|teletext|json)[^"'\\s]*)["']""", js))
+                        _, _, js = _get(urllib.parse.urljoin(url, src))
+                        nalezeno |= set(_URL_RE.findall(js))
                     except Exception as e:
                         log(f"   skript {src}: {type(e).__name__}")
                 (d / f"{nazev}_adresy.txt").write_text("\n".join(sorted(nalezeno)[:300]), encoding="utf-8")
                 log(f"   nalezeno {len(nalezeno)} adres ve skriptech")
+            elif nazev == "nhl_score_now":                         # boxscore jednoho odehraného zápasu (střely, hráči, vyloučení)
+                js = json.loads(body)
+                st2, ct2, sc = _get(f"https://api-web.nhle.com/v1/score/{js.get('prevDate')}")
+                _uloz(d, "nhl_score_prevdate", f"https://api-web.nhle.com/v1/score/{js.get('prevDate')}", st2, ct2, sc, hlava=6000)
+                hry = [g for g in json.loads(sc).get("games", []) if g.get("gameState") in ("OFF", "FINAL")]
+                if hry:
+                    u = f"https://api-web.nhle.com/v1/gamecenter/{hry[0]['id']}/boxscore"
+                    st3, ct3, bx = _get(u)
+                    _uloz(d, "nhl_boxscore", u, st3, ct3, bx, hlava=9000)
+                    log(f"   boxscore {hry[0]['id']}: HTTP {st3}, {len(bx)} znaků")
         except Exception as e:
-            (d / f"{nazev}.txt").write_text(f"{url}\nCHYBA {type(e).__name__}: {e}", encoding="utf-8")
-            log(f"{nazev}: CHYBA {type(e).__name__}: {e}")
+            log(f"   {nazev}: zpracování selhalo: {type(e).__name__}: {e}")
