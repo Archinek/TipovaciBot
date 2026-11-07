@@ -101,7 +101,7 @@ def _analyza_html(an):
     return "".join(o)
 
 def _tab_fortuna(fort, zona):
-    if not fort: return "<p class='mut'>Dnes v nabídce Fortuny žádná linie, kde by model a trh dávaly dostatečnou hranu.</p>"
+    if not fort: return "<p class='mut'>Žádná linie s dostatečnou hranou.</p>"
     z = {}
     for f in fort: z.setdefault(f["zapas"], []).append(f)
     r = []
@@ -115,17 +115,16 @@ def _tab_fortuna(fort, zona):
             if koment.get(f["trh"]): r.append(f"<tr><td colspan='5' class='mut'>{_e(koment[f['trh']])}</td></tr>")
         r.append("</table></div>")
         r.append(_analyza_html(f0.get("analyza")))
-    r.append("<p class='mut'>Kurz Fortuny je jen orientační ceník (sázíš jinde): vyplatí se od hodnoty „Sázej od“. P mix = půl model, půl férový trh. Analýza vychází z dat bota a z vyhledávání Gemini; co nebylo dohledáno, je tak označeno.</p>")
     return "".join(r)
 
 def _tab_tipdne(fort, zona):
     tip = sorted((f for f in (fort or []) if f.get("tip_dne")), key=lambda f: f["tip_dne"])
-    if not tip: return "<p class='mut'>Dnes žádný kandidát nepřekročil práh. Je to normální: nutit sázku, když hrana není, je přesně chyba, kterou TOP tipéři nedělají.</p>"
+    if not tip: return "<p class='mut'>Dnes žádný kandidát nepřekročil práh.</p>"
     r = ["<div class='w'><table><tr><th>#</th><th>Zápas</th><th>Trh</th><th>Kurz Fortuna</th><th>Sázej od</th><th>P mix</th><th>Hrana</th><th>Analýza</th></tr>"]
     for f in tip:
         an = f.get("analyza") or {}
         r.append(f"<tr><td>{f['tip_dne']}</td><td>{_e(f['zapas'])}<br><span class='mut'>{_e(f['liga'])}, {_cas(f['start'], zona)}</span></td><td>{_e(f['trh'])}<br><span class='mut'>{_e(f.get('rodina', ''))}</span></td><td>{f['kurz_fortuna']}</td><td><b>{f['sazej_od']}</b></td><td>{f['p'] * 100:.0f} %</td><td>{f['edge'] * 100:+.1f} %</td><td>{IK.get(an.get('verdikt'), '')} {_e((an.get('duvod') or '')[:120])}</td></tr>")
-    r.append("</table></div><p class='mut'>Výběr: hrana × důvěra v model (klesá s rozchodem model vs. trh) × váha typu trhu odvozená z profilů TOP tipérů; max. 1 linie na zápas, max. 2 z jednoho typu trhu. Kurz Fortuny je jen orientační ceník.</p>")
+    r.append("</table></div>")
     return "".join(r)
 
 def _tab_jistejsi(fort, zona):
@@ -134,18 +133,18 @@ def _tab_jistejsi(fort, zona):
     r = ["<div class='w'><table><tr><th>#</th><th>Zápas</th><th>Trh</th><th>Kurz Fortuna</th><th>Sázej od</th><th>P mix</th><th>Hrana</th><th>Vklad</th></tr>"]
     for f in js:
         r.append(f"<tr><td>{f['jistejsi']}</td><td>{_e(f['zapas'])}<br><span class='mut'>{_e(f['liga'])}, {_cas(f['start'], zona)}</span></td><td>{_e(f['trh'])}</td><td>{f['kurz_fortuna']}</td><td><b>{f['sazej_od']}</b></td><td>{f['p'] * 100:.0f} %</td><td>{f['edge'] * 100:+.1f} %</td><td>~{f.get('vklad_pct', 0)} % banku</td></tr>")
-    r.append("</table></div><p class='mut'>Nižší kurz, vyšší úspěšnost: pro stabilní růst banku. Vklad = 1/4 Kelly se stropem 2 % banku.</p>")
+    r.append("</table></div>")
     return "".join(r)
 
 def _tab_univ(univ, zona):
     if not univ: return "<p class='mut'>Žádný kandidát.</p>"
     r = "".join(f"<tr><td>{html.escape(str(c['sport']))}</td><td>{html.escape(str(c['zapas']))}</td><td>{html.escape(str(c['trh']))}: <b>{html.escape(str(c['vyber']))}</b></td><td>{c['kurz']}</td><td>{c['p'] * 100:.0f} %</td></tr>" for c in univ)
-    return f"<p class='mut'>Bez modelu: p je férová pravděpodobnost trhu bez marže, zisk to nezaručuje (výnos ≈ minus marže).</p><table><tr><th>Sport</th><th>Zápas</th><th>Výběr</th><th>Kurz</th><th>p</th></tr>{r}</table>"
+    return f"<p class='mut'>Bez modelu, jen férová pravděpodobnost trhu.</p><table><tr><th>Sport</th><th>Zápas</th><th>Výběr</th><th>Kurz</th><th>p</th></tr>{r}</table>"
 
 
 def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=None, fort=None, univ=None):
     vc = f"<div class='box'><b>Včera:</b> {_e(vcera)}</div>" if vcera else ""
-    return f"<!DOCTYPE html><html lang='cs'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>TIPOVACI_BOT</title><style>{CSS}</style></head><body><div class='c'><a href='../index.html'>⬅ Archiv</a><h1>Ranní report {datum}</h1>{vc}<h2>⭐ Tip dne</h2>{_tab_tipdne(fort, zona)}<h2>🛡️ Jistější tipy</h2>{_tab_jistejsi(fort, zona)}<h2>Příležitosti</h2>{_tab_picks(picks, zona)}<h2>Doplňkové trhy (model)</h2>{_tab_doplnkove(dopl, kalib, zona)}<h2>Nabídka Fortuny vs. model</h2>{_tab_fortuna(fort, zona)}<h2>Nejpravděpodobnější z celé nabídky</h2>{_tab_univ(univ, zona)}<h2>Dosavadní bilance</h2>{_tab_metriky(celkem)}</div></body></html>"
+    return f"<!DOCTYPE html><html lang='cs'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>TIPOVACI_BOT</title><style>{CSS}</style></head><body><div class='c'><a href='../index.html'>⬅ Archiv</a><h1>Ranní report {datum}</h1>{vc}<h2>⭐ Tip dne</h2>{_tab_tipdne(fort, zona)}<h2>🛡️ Jistější tipy</h2>{_tab_jistejsi(fort, zona)}<h2>Analýzy zápasů</h2>{_tab_fortuna(fort, zona)}<h2>Příležitosti (H2H)</h2>{_tab_picks(picks, zona)}<h2>Doplňkové trhy (model)</h2>{_tab_doplnkove(dopl, kalib, zona)}<h2>Nejpravděpodobnější z celé nabídky</h2>{_tab_univ(univ, zona)}<h2>Dosavadní bilance</h2>{_tab_metriky(celkem)}</div></body></html>"
 
 def sestav_index(reporty, celkem, podle_tieru, podle_sportu, doporuceni):
     arch = "".join(f"<li><a href='reports/{_e(r)}.html'>{_e(r)}</a></li>" for r in reporty) or "<li>zatím nic</li>"

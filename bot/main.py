@@ -413,7 +413,7 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         {"datum": datum, "picks": picks, "vyrazene": vyrazene, "vcera": vcera, "doplnkove": dopl, "fortuna": fort},
         ensure_ascii=False, indent=2), encoding="utf-8")
 
-    text = report.wa_ranni(datum, picks, vcera, config.pages_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ)
+    text = report.wa_ranni(datum, picks, vcera, config.pages_reports_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ)
     wa_fn(text)
     return {"picks": picks, "vyrazene": vyrazene, "celkem": celkem}
 
@@ -456,7 +456,7 @@ def resend():
         return
     d = json.loads(p.read_text(encoding="utf-8"))
     report.posli_wa(report.wa_ranni(d["datum"], d["picks"], d.get("vcera", ""),
-                                    config.pages_url(), nast["zona"], dopl=d.get("doplnkove")))
+                                    config.pages_reports_url(), nast["zona"], dopl=d.get("doplnkove")))
 
 
 def sports():

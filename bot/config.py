@@ -18,6 +18,15 @@ def env(nazev, default=""):
     return os.environ.get(nazev) or default
 
 
+def pages_reports_url():
+    """Základ adresy reportů. Pages běží z kořene repozitáře, reporty jsou v docs/reports -> .../docs/reports/<datum>.html.
+    Když přepneš Pages na složku /docs, nastav proměnnou repozitáře PAGES_PREFIX na prázdnou hodnotu ("-" = prázdné)."""
+    pref = env("PAGES_PREFIX", "/docs")
+    pref = "" if pref in ("-", "") else pref.rstrip("/")
+    u = pages_url()
+    return f"{u}{pref}" if u else ""
+
+
 def pages_url():
     """URL GitHub Pages: z PAGES_URL, jinak odvozeno z GITHUB_REPOSITORY (owner/repo)."""
     u = env("PAGES_URL")
@@ -55,5 +64,5 @@ def gemini_modely():
     """Modely Gemini v pořadí pokusů. GEMINI_MODEL (proměnná repozitáře) má přednost; názvy se u Google mění,
     starší 2.5 modely už pro nové účty vrací 404 (hláška doporučila 3.1-pro-preview a 3.8-flash)."""
     vlastni = env("GEMINI_MODEL", "")
-    out = [m for m in (vlastni, "gemini-3.1-pro-preview", "gemini-3.8-flash") if m]
+    out = [m for m in (vlastni, "gemini-3.8-flash") if m]
     return list(dict.fromkeys(out))
