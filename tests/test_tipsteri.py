@@ -448,7 +448,7 @@ def test_vysledky_a_vyhodnoceni_sazek(tmp_path, monkeypatch):
     assert not vysledky.shoda_tymu("Los Angeles Rams", "Los Angeles Chargers")
     nhl = {"sport": "hokej", "liga": "NHL", "home": "Buffalo Sabres", "away": "Columbus Blue Jackets", "h": 5, "a": 2, "final": True,
            "extra": {"reg_h": 5, "reg_a": 2, "prodlouzeni": False, "sog_h": 36, "sog_a": 26}}
-    nfl = {"sport": "americký fotbal", "liga": "NFL", "home": "kansas city chiefs", "away": "las vegas raiders", "h": 27, "a": 20, "final": True, "extra": {}}
+    nfl = {"sport": "americky-fotbal", "liga": "NFL", "home": "kansas city chiefs", "away": "las vegas raiders", "h": 27, "a": 20, "final": True, "extra": {}}
     ot = {"sport": "hokej", "liga": "NHL", "home": "Florida Panthers", "away": "Washington Capitals", "h": 3, "a": 4, "final": True,
           "extra": {"reg_h": 3, "reg_a": 3, "prodlouzeni": True, "sog_h": 30, "sog_a": 29}}
     def r(zapas, trh, vyber, kurz=1.5):
@@ -466,7 +466,7 @@ def test_vysledky_a_vyhodnoceni_sazek(tmp_path, monkeypatch):
     # evidence + vyhodnocení end-to-end s podstrčenými výsledky
     start = "2026-11-06T22:00:00"
     univ = [{"sport": "hokej", "zapas": "Buffalo Sabres - Columbus Blue Jackets", "start": start, "liga": "NHL", "trh": "Zápas", "vyber": "Buffalo Sabres", "kurz": 1.5, "p": 0.62}]
-    tik = {"denni": {"noze": [dict(univ[0], vyber="Buffalo Sabres"), {"sport": "americký fotbal", "zapas": "Kansas City Chiefs - Las Vegas Raiders", "start": start, "trh": "Zápas", "vyber": "1", "kurz": 1.4, "p": 0.7}]},
+    tik = {"denni": {"noze": [dict(univ[0], vyber="Buffalo Sabres"), {"sport": "americky-fotbal", "zapas": "Kansas City Chiefs - Las Vegas Raiders", "start": start, "trh": "Zápas", "vyber": "1", "kurz": 1.4, "p": 0.7}]},
            "denni_alt": None, "pyramida": [{"kolo": 1, "tiket": {"noze": [dict(univ[0])]}, "alt": None}]}
     assert vyhodnoceni.zaloguj("2026-11-06", univ, tik) == 2                    # stejná sázka v tiketu a výběru se zapíše jednou
     monkeypatch.setattr(vysledky, "ziskej", lambda d, log=print, cache=True: [nhl, nfl])
@@ -474,3 +474,41 @@ def test_vysledky_a_vyhodnoceni_sazek(tmp_path, monkeypatch):
     s = vyhodnoceni.souhrn()
     assert s["vyhodnoceno"] == 2 and s["sporty"]["hokej"]["vyslo"] == 1
     assert "hokej 1/1" in vyhodnoceni.souhrn_text(s)
+
+
+def test_espn_ctecka_a_cache(monkeypatch, tmp_path):
+    import json
+    from bot import config, vysledky
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    ev = {"content": {"sbData": {"events": [
+        {"date": "2026-11-06T01:00Z", "status": {"type": {"completed": True}}, "competitions": [{"competitors": [
+            {"homeAway": "home", "score": "27", "team": {"displayName": "Kansas City Chiefs"}},
+            {"homeAway": "away", "score": "20", "team": {"displayName": "Las Vegas Raiders"}}]}]},
+        {"date": "2026-11-06T03:00Z", "status": {"type": {"completed": False}}, "competitions": [{"competitors": [
+            {"homeAway": "home", "score": "0", "team": {"displayName": "A"}}, {"homeAway": "away", "score": "0", "team": {"displayName": "B"}}]}]}]}}}
+    monkeypatch.setattr(vysledky, "_get", lambda url, timeout=30: json.dumps(ev))
+    monkeypatch.setattr(vysledky, "ESPN", [("americky-fotbal", "NFL", "nfl")])
+    v = vysledky.espn("2026-11-06", log=lambda *a: None)
+    assert len(v) == 2 and v[0]["final"] and v[0]["h"] == 27 and not v[1]["final"]
+    assert vysledky.najdi([x for x in v if x["final"]], "Kansas City Chiefs - Las Vegas Raiders", sport="americky-fotbal")["a"] == 20
+
+
+def test_ucici_papirove_tipy(tmp_path, monkeypatch):
+    import datetime
+    from bot import config, ucici, vysledky
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    ted = datetime.datetime(2026, 11, 7, 6, 0)
+    z = [{"sport": "hokej", "turnaj": "NHL", "nazev": "Buffalo Sabres - Columbus Blue Jackets", "start": "2026-11-07T20:00",
+          "dvou": [{"n": "Zápas", "o": [("Buffalo Sabres", 1.6), ("Columbus Blue Jackets", 2.4)]},
+                   {"n": "Počet gólů v zápase 5.5", "o": [("+ 5.5", 1.9), ("- 5.5", 1.9)]},
+                   {"n": "Hráč dá gól", "o": [("Ano", 2.0), ("Ne", 1.8)]}]},
+         {"sport": "hokej", "turnaj": "AHL", "nazev": "A - B", "start": "2026-11-07T20:00", "dvou": [{"n": "Zápas", "o": [("A", 1.5), ("B", 2.5)]}]}]
+    assert ucici.zaloguj("2026-11-07", z, ted) == 4            # jen NHL a jen vyhodnotitelné trhy (2x vítěz, 2x gólů)
+    assert ucici.zaloguj("2026-11-07", z, ted) == 0            # podruhé se nic nezduplikuje
+    assert "Hráč dá gól" in (tmp_path / "ucici_nerozpoznane.json").read_text(encoding="utf-8")
+    nhl = {"sport": "hokej", "liga": "NHL", "home": "Buffalo Sabres", "away": "Columbus Blue Jackets", "h": 5, "a": 2, "final": True,
+           "extra": {"reg_h": 5, "reg_a": 2, "prodlouzeni": False, "sog_h": 36, "sog_a": 26}}
+    monkeypatch.setattr(vysledky, "ziskej", lambda d, log=print, cache=True: [nhl])
+    assert ucici.vyhodnot(datetime.datetime(2026, 11, 8, 7, 0)) == 4
+    k = ucici.kalibrace()
+    assert k["hokej|vše"]["n"] == 4 and k["hokej|vše"]["uspesnost"] == 0.5
