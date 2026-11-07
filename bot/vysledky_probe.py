@@ -17,12 +17,12 @@ ZDROJE = {
     "teletext_751-1": "https://teletext.ceskatelevize.cz/?p=751-1",
     "teletext_760-2": "https://teletext.ceskatelevize.cz/?p=760-2",
     "ttapi_pages": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages",
-    "ttapi_text_a": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?page=751&subpage=1",
-    "ttapi_text_b": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?pageNumber=751&subPageNumber=1",
-    "ttapi_text_c": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?p=751-1",
-    "ttapi_pages_a": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages?page=751&subpage=1",
-    "ttapi_pages_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751",
-    "ttapi_pages_751_1": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751/1",
+    "ttapi_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751",
+    "ttapi_text_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text/751",
+    "ttapi_text_q": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?pages=751",
+    "ttapi_pages_q": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages?pages=751",
+    "ttapi_text_p": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?page=751",
+    "ttapi_image_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751/751-1.png",
     "nhl_score_now": "https://api-web.nhle.com/v1/score/now",
     "nfl_games_csv": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
     "nba_scoreboard": "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json",
@@ -30,8 +30,18 @@ ZDROJE = {
 _URL_RE = re.compile(r"""["'](https?://[^"'\s]{8,}|/[A-Za-z0-9_./-]*(?:api|teletext|json)[^"'\s]*)["']""")
 
 
+_BROWSER = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8",
+    "Referer": "https://teletext.ceskatelevize.cz/",
+    "Origin": "https://teletext.ceskatelevize.cz",
+}
+
+
 def _get(url, timeout=25):
-    req = urllib.request.Request(url, headers={"User-Agent": "TipovaciBot/1.0 (osobni projekt)", "Accept": "*/*"})
+    h = dict(_BROWSER) if "ceskatelevize.cz" in url else {"User-Agent": "TipovaciBot/1.0 (osobni projekt)", "Accept": "*/*"}
+    req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.status, r.headers.get("Content-Type", ""), r.read().decode("utf-8", "replace")
 
@@ -61,11 +71,13 @@ def probe(log=print):
                     try:
                         _, _, js = _get(urllib.parse.urljoin(url, src))
                         nalezeno |= set(_URL_RE.findall(js))
-                        for m in re.finditer(r"teletext-api|api/v1/pages|subpage|subPage", js):
+                        for m in re.finditer(r"TELETEXT_API_URL_TEXT|TELETEXT_API_URL\b|TELETEXT_IMAGE_BASE_URL|\.get\(|fetch\(", js):
+                            if 'TELETEXT_API_URL="' in js[m.start() - 5: m.end() + 40] or "TELETEXT_IMAGE_BASE_URL=" in js[m.start(): m.end() + 5]:
+                                continue
                             kontext.append(f"[{src}] ..." + js[max(0, m.start() - 300): m.end() + 400].replace("\n", " "))
                     except Exception as e:
                         log(f"   skript {src}: {type(e).__name__}")
-                (d / f"{nazev}_kontext_api.txt").write_text("\n\n".join(kontext[:25]), encoding="utf-8")
+                (d / f"{nazev}_kontext_api.txt").write_text("\n\n".join(kontext[:60]), encoding="utf-8")
                 (d / f"{nazev}_adresy.txt").write_text("\n".join(sorted(nalezeno)[:300]), encoding="utf-8")
                 log(f"   nalezeno {len(nalezeno)} adres ve skriptech")
             elif nazev == "nhl_score_now":                         # boxscore jednoho odehraného zápasu (střely, hráči, vyloučení)
