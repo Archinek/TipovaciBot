@@ -1,0 +1,2 @@
+https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard
+CHYBA HTTPError: HTTP Error 403: Forbidden
