@@ -438,3 +438,39 @@ def test_tikety_denni_a_pyramida():
     wa = "\n".join(report._wa_tikety(out, "Europe/Prague"))
     assert "DENNÍ TIKET" in wa and "PYRAMIDA" in wa and "10. kolo" in wa
     assert "Kolo 10" in report._tab_pyramida(out, "Europe/Prague")
+
+
+def test_vysledky_a_vyhodnoceni_sazek(tmp_path, monkeypatch):
+    from bot import config, vyhodnoceni, vysledky
+    import datetime
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    assert vysledky.shoda_tymu("Florida Panthers", "Panthers") and vysledky.shoda_tymu("LA Lakers", "Los Angeles Lakers")
+    assert not vysledky.shoda_tymu("Los Angeles Rams", "Los Angeles Chargers")
+    nhl = {"sport": "hokej", "liga": "NHL", "home": "Buffalo Sabres", "away": "Columbus Blue Jackets", "h": 5, "a": 2, "final": True,
+           "extra": {"reg_h": 5, "reg_a": 2, "prodlouzeni": False, "sog_h": 36, "sog_a": 26}}
+    nfl = {"sport": "americký fotbal", "liga": "NFL", "home": "kansas city chiefs", "away": "las vegas raiders", "h": 27, "a": 20, "final": True, "extra": {}}
+    ot = {"sport": "hokej", "liga": "NHL", "home": "Florida Panthers", "away": "Washington Capitals", "h": 3, "a": 4, "final": True,
+          "extra": {"reg_h": 3, "reg_a": 3, "prodlouzeni": True, "sog_h": 30, "sog_a": 29}}
+    def r(zapas, trh, vyber, kurz=1.5):
+        return {"zapas": zapas, "trh": trh, "vyber": vyber, "kurz": kurz, "p": 0.6}
+    assert vyhodnoceni.rozhodni(r("Buffalo Sabres - Columbus Blue Jackets", "Zápas", "Buffalo Sabres"), nhl)[0] == 1
+    assert vyhodnoceni.rozhodni(r("Buffalo Sabres - Columbus Blue Jackets", "Počet gólů v zápase 5.5", "+ 5.5"), nhl)[0] == 1
+    assert vyhodnoceni.rozhodni(r("Buffalo Sabres - Columbus Blue Jackets", "Počet gólů v zápase 7.5", "+ 7.5"), nhl)[0] == 0
+    assert vyhodnoceni.rozhodni(r("Buffalo Sabres - Columbus Blue Jackets", "Počet střel na branku v zápase 60.5", "+ 60.5"), nhl)[0] == 1
+    assert vyhodnoceni.rozhodni(r("Florida Panthers - Washington Capitals", "Zápas", "Washington Capitals"), ot)[0] == 0    # základní doba 3:3 = remíza
+    assert vyhodnoceni.rozhodni(r("Florida Panthers - Washington Capitals", "Zápas (včetně prodloužení)", "Washington Capitals"), ot)[0] == 1
+    assert vyhodnoceni.rozhodni(r("Florida Panthers - Washington Capitals", "Počet střel na branku v zápase 50.5", "+ 50.5"), ot)[0] is None
+    assert vyhodnoceni.rozhodni(r("Kansas City Chiefs - Las Vegas Raiders", "Zápas", "1"), nfl)[0] == 1
+    assert vyhodnoceni.rozhodni(r("Kansas City Chiefs - Las Vegas Raiders", "Počet bodů v zápase 45.5", "- 45.5"), nfl)[0] == 0
+    assert vyhodnoceni.rozhodni(r("Kansas City Chiefs - Las Vegas Raiders", "Hráč X yardy", "+ 80.5"), nfl)[0] is None
+    # evidence + vyhodnocení end-to-end s podstrčenými výsledky
+    start = "2026-11-06T22:00:00"
+    univ = [{"sport": "hokej", "zapas": "Buffalo Sabres - Columbus Blue Jackets", "start": start, "liga": "NHL", "trh": "Zápas", "vyber": "Buffalo Sabres", "kurz": 1.5, "p": 0.62}]
+    tik = {"denni": {"noze": [dict(univ[0], vyber="Buffalo Sabres"), {"sport": "americký fotbal", "zapas": "Kansas City Chiefs - Las Vegas Raiders", "start": start, "trh": "Zápas", "vyber": "1", "kurz": 1.4, "p": 0.7}]},
+           "denni_alt": None, "pyramida": [{"kolo": 1, "tiket": {"noze": [dict(univ[0])]}, "alt": None}]}
+    assert vyhodnoceni.zaloguj("2026-11-06", univ, tik) == 2                    # stejná sázka v tiketu a výběru se zapíše jednou
+    monkeypatch.setattr(vysledky, "ziskej", lambda d, log=print, cache=True: [nhl, nfl])
+    assert vyhodnoceni.vyhodnot(datetime.datetime(2026, 11, 7, 12, 0)) == 2
+    s = vyhodnoceni.souhrn()
+    assert s["vyhodnoceno"] == 2 and s["sporty"]["hokej"]["vyslo"] == 1
+    assert "hokej 1/1" in vyhodnoceni.souhrn_text(s)

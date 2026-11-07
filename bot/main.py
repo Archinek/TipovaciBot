@@ -403,6 +403,13 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
     except Exception as e:
         _log(f"⚠️ Log Fortuny selhal: {type(e).__name__}: {e}")
 
+    try:                                                              # výsledky z internetu: vyhodnocení včerejších sázek ze všech sportů
+        from . import vyhodnoceni
+        vyhodnoceni.vyhodnot(ted, log=_log)
+        log_text = (log_text + "\n" if log_text else "") + vyhodnoceni.souhrn_text()
+    except Exception as e:
+        _log(f"⚠️ Vyhodnocení sázek ze všech sportů selhalo: {type(e).__name__}: {e}")
+
     tik = None
     try:                                                              # denní tiket na kurz ~2.00 a Pyramida (z nabídky všech sportů)
         from . import tikety
@@ -412,6 +419,12 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
                  f"Pyramida kol {sum(1 for x in tik['pyramida'] if x['tiket'])}/10.")
     except Exception as e:
         _log(f"⚠️ Tikety selhaly: {type(e).__name__}: {e}")
+
+    try:
+        from . import vyhodnoceni
+        _log(f"🗂️ Sázky ze všech sportů: +{vyhodnoceni.zaloguj(datum, univ, tik)} nových do evidence.")
+    except Exception as e:
+        _log(f"⚠️ Evidence sázek selhala: {type(e).__name__}: {e}")
 
     # 5) výstupy
     for p in picks:
@@ -508,6 +521,13 @@ def main(argv):
         resend()
     elif cmd == "sports":
         sports()
+    elif cmd == "vysledky_test":
+        import datetime as _dt
+        from . import vysledky
+        for dd in (1, 2):
+            d = (_dt.date.today() - _dt.timedelta(days=dd)).isoformat()
+            v = vysledky.ziskej(d, log=_log, cache=False)
+            _log(f"📊 Výsledky {d}: {len(v)} zápasů; ukázka: " + "; ".join(f"{x['liga']} {x['home']} {x['h']}:{x['a']} {x['away']}" for x in v[:4]))
     elif cmd == "vysledky_probe":
         from . import vysledky_probe
         vysledky_probe.probe(log=_log)
