@@ -5,6 +5,7 @@ výsledky, spready, totaly, rozhodčí, počasí, odpočinek), NBA (oficiální 
 Do data/probe_vysledky/ se uloží začátek každé odpovědi (u teletextu i adresy nalezené ve skriptech stránky).
 Nic se neposílá ani nesází; jen se čte.
 """
+import datetime
 import json
 import re
 import urllib.error
@@ -14,19 +15,23 @@ import urllib.request
 from . import config
 
 ZDROJE = {
-    "teletext_751-1": "https://teletext.ceskatelevize.cz/?p=751-1",
-    "teletext_760-2": "https://teletext.ceskatelevize.cz/?p=760-2",
-    "ttapi_pages": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages",
-    "ttapi_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751",
-    "ttapi_text_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text/751",
-    "ttapi_text_q": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?pages=751",
-    "ttapi_pages_q": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages?pages=751",
-    "ttapi_text_p": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text?page=751",
-    "ttapi_image_751": "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/751/751-1.png",
     "nhl_score_now": "https://api-web.nhle.com/v1/score/now",
     "nfl_games_csv": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "nba_scoreboard": "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json",
+    "tsdb_soccer": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=Soccer",
+    "tsdb_basketball": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=Basketball",
+    "tsdb_icehockey": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=Ice_Hockey",
+    "tsdb_volleyball": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=Volleyball",
+    "tsdb_handball": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=Handball",
+    "tsdb_tennis": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=Tennis",
+    "tsdb_amfootball": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=American_Football",
+    "tsdb_darts": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={vcera}&s=Darts",
+    "espn_web_nfl": "https://site.web.api.espn.com/apis/v2/sports/football/nfl/scoreboard",
+    "espn_cdn_nfl": "https://cdn.espn.com/core/nfl/scoreboard?xhr=1",
+    "nba_stats_cdn": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2_1.json",
+    "balldontlie": "https://api.balldontlie.io/v1/games?dates[]={vcera}",
+    "wikipedia_ukazka": "https://en.wikipedia.org/api/rest_v1/page/summary/Association_football",
 }
+_TT = "https://api-teletext.ceskatelevize.cz/teletext-api/api/v1/pages/text"
 _URL_RE = re.compile(r"""["'](https?://[^"'\s]{8,}|/[A-Za-z0-9_./-]*(?:api|teletext|json)[^"'\s]*)["']""")
 
 
@@ -51,10 +56,36 @@ def _uloz(d, nazev, url, st, ct, body, hlava=8000, konec=0):
     (d / f"{nazev}.txt").write_text(f"{url}\nHTTP {st} {ct} délka {len(body)}\n\n{cast}", encoding="utf-8")
 
 
+def teletext_api(d, log=print):
+    """Teletext ČT data API (stránka volá jen fetch(adresa) bez parametrů). Zkusí tři sady hlaviček; uloží stavy i začátek odpovědi."""
+    sady = {
+        "prohlizec": dict(_BROWSER),
+        "minimum": {"User-Agent": _BROWSER["User-Agent"], "Accept": "*/*"},
+        "curl": {"User-Agent": "curl/8.5.0", "Accept": "*/*"},
+    }
+    radky = []
+    for url in (_TT, _TT.rsplit("/", 1)[0]):
+        for jm, h in sady.items():
+            try:
+                req = urllib.request.Request(url, headers=h)
+                with urllib.request.urlopen(req, timeout=25) as r:
+                    body = r.read().decode("utf-8", "replace")
+                    radky.append(f"{url} [{jm}] HTTP {r.status} délka {len(body)}")
+                    (d / f"ttapi_ok_{jm}.txt").write_text(f"{url}\n{body[:12000]}", encoding="utf-8")
+                    log(f"teletext API [{jm}]: HTTP {r.status}, {len(body)} znaků")
+            except Exception as e:
+                radky.append(f"{url} [{jm}] {type(e).__name__}: {e}")
+                log(f"teletext API [{jm}]: {type(e).__name__}: {e}")
+    (d / "ttapi_stavy.txt").write_text("\n".join(radky), encoding="utf-8")
+
+
 def probe(log=print):
     d = config.DATA / "probe_vysledky"
     d.mkdir(parents=True, exist_ok=True)
+    vcera = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+    teletext_api(d, log)
     for nazev, url in ZDROJE.items():
+        url = url.replace("{vcera}", vcera)
         try:
             st, ct, body = _get(url)
         except Exception as e:
