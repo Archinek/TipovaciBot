@@ -1,37 +1,38 @@
 [
  {
   "turnaj": "1. Portugalsko",
-  "home": "Sporting CP",
-  "away": "Moreirense FC"
- },
- {
-  "turnaj": "2. Francie",
-  "home": "St.Etienne",
-  "away": "Lavallois"
- },
- {
-  "turnaj": "1. Francie",
-  "home": "PSG",
-  "away": "Troyes"
- },
- {
-  "turnaj": "1. Portugalsko",
   "home": "Rio Ave",
-  "away": "SC Braga"
+  "away": "SC Braga",
+  "kod_ligy": "P1",
+  "chybi": [
+   "SC Braga"
+  ]
  },
  {
   "turnaj": "1. Řecko",
   "home": "OFI Kreta",
-  "away": "Atromitos"
+  "away": "Atromitos",
+  "kod_ligy": "G1",
+  "chybi": [
+   "OFI Kreta"
+  ]
  },
  {
   "turnaj": "1. Belgie",
   "home": "Truidense",
-  "away": "Waregem"
+  "away": "Waregem",
+  "kod_ligy": "B1",
+  "chybi": [
+   "Truidense"
+  ]
  },
  {
   "turnaj": "2. Španělsko",
   "home": "Sporting Gijón",
-  "away": "Valladolid"
+  "away": "Valladolid",
+  "kod_ligy": "SP2",
+  "chybi": [
+   "Sporting Gijón"
+  ]
  }
 ]
