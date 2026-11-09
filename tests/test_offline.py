@@ -17,6 +17,13 @@ import pytest  # noqa: E402
 def _bez_fortuny(monkeypatch):
     """Ranní běh v testu nesmí stahovat skutečnou nabídku Fortuny (na GitHubu by to visělo). Jen pro tento soubor."""
     monkeypatch.setattr(fortuna, "nabidka", lambda *a, **k: [])
+    orig = config.nacti_cfg
+
+    def _cfg(*a, **k):                              # testy ověřují i H2H modul s Odds API, který je v ostré konfiguraci vypnutý
+        c = orig(*a, **k)
+        c["nastaveni"]["odds_api_h2h"] = True
+        return c
+    monkeypatch.setattr(config, "nacti_cfg", _cfg)
 
 UTC = datetime.timezone.utc
 TED = datetime.datetime(2026, 11, 4, 7, 0, tzinfo=UTC)      # 08:00 v Praze (zimní čas)
@@ -167,6 +174,13 @@ def test_doplnkove_integrace():
 
 if __name__ == "__main__":
     fortuna.nabidka = lambda *a, **k: []
+    _orig = config.nacti_cfg
+
+    def _cfg(*a, **k):
+        c = _orig(*a, **k)
+        c["nastaveni"]["odds_api_h2h"] = True
+        return c
+    config.nacti_cfg = _cfg
     for n, f in list(globals().items()):
         if n.startswith("test_"):
             f()

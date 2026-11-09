@@ -512,3 +512,20 @@ def test_ucici_papirove_tipy(tmp_path, monkeypatch):
     assert ucici.vyhodnot(datetime.datetime(2026, 11, 8, 7, 0)) == 4
     k = ucici.kalibrace()
     assert k["hokej|vše"]["n"] == 4 and k["hokej|vše"]["uspesnost"] == 0.5
+
+
+def test_rozbor_vyberu_z_cele_nabidky():
+    import json
+    from bot import analyza, report, tipsteri
+    univ = [{"sport": "snooker", "zapas": "Hawkins B. - Wakelin C.", "start": "2026-11-08T18:00", "liga": "Turnaj", "trh": "Počet framů v zápasu 6.5", "vyber": "Méně než 6.5", "kurz": 1.32, "p": 0.73},
+            {"sport": "sipky", "zapas": "West S. - Whitehead C.", "start": "2026-11-08T19:00", "liga": "PDC", "trh": "Vítěz 1. legu", "vyber": "West S.", "kurz": 1.33, "p": 0.72}]
+    odp = {"vysledky": [{"id": "Hawkins B. - Wakelin C.", "verdikt": "OK", "duvod": "sedí", "text": "Souvislý rozbor zápasu.", "duvera_gemini": 7, "pro": ["a"], "proti": ["b"], "riziko": "r"},
+                        {"id": "West S. - Whitehead C.", "verdikt": "VETO", "duvod": "West odstoupil", "text": "x", "duvera_gemini": 1}]}
+    platne, vyrazene = analyza.rozsir_univ(univ, {}, vola_gemini=lambda prompt: json.dumps(odp))
+    assert [c["zapas"] for c in platne] == ["Hawkins B. - Wakelin C."] and len(vyrazene) == 1
+    c = platne[0]
+    assert c["sazej_od"] >= round(1.02 / 0.73, 2) and 1 <= c["duvera"] <= 10
+    h = report._tab_univ(platne, "Europe/Prague")
+    assert "Souvislý rozbor zápasu." in h and "Sázej od" in h and f"{c['duvera']}/10" in h and "Hawkins" in h
+    bez, _ = analyza.rozsir_univ([dict(univ[0])], {}, vola_gemini=lambda prompt: "nesmysl")     # rozbor nejde přečíst: zůstane základ
+    assert bez[0]["analyza"]["verdikt"] == "NEOVERENO" and bez[0]["duvera"] >= 1
