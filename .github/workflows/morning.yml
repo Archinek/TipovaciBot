@@ -13,7 +13,7 @@ on:
     - cron: "7 8 * * *"
     - cron: "37 8 * * *"
   repository_dispatch:
-    types: [ranni-report]
+    types: [spustit_bota, ranni-report]
   workflow_dispatch:
     inputs:
       akce:
