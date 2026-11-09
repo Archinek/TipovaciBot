@@ -13,6 +13,7 @@ nastaveni:
   stake_cap: 0.03
   max_tipu_denne: 20
   max_na_sport: 8
+  odds_api_h2h: false          # true = navíc placené porovnání s Pinnaclem (sekce Příležitosti H2H); false = jen celá nabídka Fortuny
   kredity_max_na_beh: 15
   regiony: ["eu"]
 
@@ -208,6 +209,7 @@ analyza:
   zapnuto: true
   max_zapasu_h2h: 8       # u kolika h2h zápasů (všechny sporty) se dělá plný rozbor
   max_zapasu_fotbal: 6    # u kolika fotbalových zápasů z nabídky Fortuny
+  univ_zapnuto: true      # rozbor (Gemini) i u nejpravděpodobnějších sázek ze všech sportů
 
 tikety:                  # denní tiket na kurz ~2.00 a Pyramida (skládání z nabídky všech sportů)
   denni_cil: 2.0
