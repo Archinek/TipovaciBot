@@ -2,10 +2,18 @@ name: Ranní report
 
 on:
   schedule:
-    # Dva časy kvůli letnímu/zimnímu času (07:00 v Praze). Kód sám pozná, kdy je ranní okno,
-    # a druhý běh téhož dne přeskočí (idempotence podle data/picks_DATUM.json).
-    - cron: "0 5 * * *"
-    - cron: "0 6 * * *"
+    # GitHub plánované běhy zdržuje a občas vynechá (hlavně kolem celé hodiny), proto je spouštěčů víc a na "kulatých" minutách se nic neplánuje.
+    # Kód sám pozná ranní okno 07:00-09:59 v Praze (zima i léto) a běh, který přijde po hotovém reportu, ihned skončí
+    # (idempotence podle data/picks_DATUM.json). Když ranní běh spadne, další spouštěč to zkusí znovu.
+    - cron: "23 5 * * *"
+    - cron: "7 6 * * *"
+    - cron: "37 6 * * *"
+    - cron: "7 7 * * *"
+    - cron: "37 7 * * *"
+    - cron: "7 8 * * *"
+    - cron: "37 8 * * *"
+  repository_dispatch:
+    types: [ranni-report]
   workflow_dispatch:
     inputs:
       akce:
