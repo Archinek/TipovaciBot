@@ -295,7 +295,7 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         aktivni = {x['key'] for x in api_sports if x.get('active')}
         cile, nenamapovane = vyber_cile(api_sports, cfg, rezimy)
     else:                                                  # H2H porovnání s trhem přes placené Odds API je vypnuté: hlavní je celá nabídka Fortuny
-        cile, nenamapovane = [], set()
+        cile, nenamapovane, aktivni = [], set(), set()
         _log("ℹ️ Odds API (porovnání s Pinnaclem) je vypnuto v sporty.yaml; pracuje se s celou nabídkou Fortuny.")
     if nenamapovane:
         _log(f"ℹ️ Nenamapované skupiny Odds API (ignoruji): {sorted(g for g in nenamapovane if g)}")
