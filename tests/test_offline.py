@@ -185,3 +185,13 @@ if __name__ == "__main__":
         if n.startswith("test_"):
             f()
             print("✅", n)
+
+
+def test_ranni_beh_s_vypnutym_odds_api(monkeypatch, tmp_path):
+    """Regrese: při odds_api_h2h=false ranní běh nesmí spadnout (proměnná 'aktivni' se používá v doplňkových trzích)."""
+    import inspect
+    from bot import main as bm
+    src = inspect.getsource(bm)
+    i = src.index('nast.get("odds_api_h2h", True)')
+    blok = src[i:i + 900]
+    assert "aktivni" in blok.split("else:")[1][:300]
