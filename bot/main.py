@@ -290,9 +290,13 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
 
     # 2) cílové sporty
     rezimy = store.nacti_rezimy()
-    api_sports = api.sports()
-    aktivni = {x['key'] for x in api_sports if x.get('active')}
-    cile, nenamapovane = vyber_cile(api_sports, cfg, rezimy)
+    if nast.get("odds_api_h2h", True):
+        api_sports = api.sports()
+        aktivni = {x['key'] for x in api_sports if x.get('active')}
+        cile, nenamapovane = vyber_cile(api_sports, cfg, rezimy)
+    else:                                                  # H2H porovnání s trhem přes placené Odds API je vypnuté: hlavní je celá nabídka Fortuny
+        cile, nenamapovane = [], set()
+        _log("ℹ️ Odds API (porovnání s Pinnaclem) je vypnuto v sporty.yaml; pracuje se s celou nabídkou Fortuny.")
     if nenamapovane:
         _log(f"ℹ️ Nenamapované skupiny Odds API (ignoruji): {sorted(g for g in nenamapovane if g)}")
     _log(f"🎯 Sportovních klíčů ke kontrole: {len(cile)}")
@@ -393,6 +397,13 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         _log(f"⭐ Tip dne: {len(tip)} z {len(fort)} kandidátů.")
     except Exception as e:
         _log(f"⚠️ Analýza/Fortuna selhala: {type(e).__name__}: {e}")
+    try:                                                              # rozbor i pro nejpravděpodobnější sázky ze všech sportů (bez modelu)
+        from . import analyza as _an
+        if univ and (cfg.get("analyza") or {}).get("zapnuto", True) and (cfg.get("analyza") or {}).get("univ_zapnuto", True):
+            univ, univ_veto = _an.rozsir_univ(univ, cfg)
+            _log(f"🔎 Rozbor výběru z celé nabídky: {len(univ)} sázek, VETO {len(univ_veto)}.")
+    except Exception as e:
+        _log(f"⚠️ Rozbor výběru z celé nabídky selhal: {type(e).__name__}: {e}")
     log_text = ""
     try:                                                              # fáze 1: log hran, výsledky, CLV, Brier modelu vs. trhu
         from . import fortuna_log, tenis

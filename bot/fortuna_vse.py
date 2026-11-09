@@ -55,5 +55,6 @@ def text(univ):
         if c["sport"] in videno:
             continue
         videno.add(c["sport"])
-        radky.append(f"• {c['sport']}: {c['zapas']} – {c['vyber']} ({c['trh']}) kurz {c['kurz']}, p {c['p'] * 100:.0f} %")
+        radky.append(f"• {c['sport']}: {c['zapas']} – {c['vyber']} ({c['trh']}) kurz {c['kurz']}, od {c.get('sazej_od', c['kurz'])}, p {c['p'] * 100:.0f} %"
+                     + (f", důvěra {c['duvera']}/10" if c.get("duvera") else ""))
     return ["", f"📋 *Nejpravděpodobnější podle sportů* ({len(radky)} sportů, bez modelu, jen férová p trhu)"] + radky

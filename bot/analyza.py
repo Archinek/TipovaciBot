@@ -19,7 +19,7 @@ def _kriteria_text(sport):
     vse = kriteria.nacti(sport)
     radky = []
     for k in sorted(vse, key=lambda k: -k["w"]):
-        trhy = f" [trhy: {', '.join(k['trhy'])}]" if k.get("trhy") else ""
+        trhy = f" [trhy: {', '.join(str(x) for x in k['trhy'])}]" if k.get("trhy") else ""
         radky.append(f"  - ({k['typ']}, váha {k['w']}) {k['id']}: {k['co']}{trhy}")
     return "\n".join(radky)
 
@@ -160,3 +160,100 @@ def rozsir(picks, cfg, vola_gemini=None, max_zapasu=None):
         p["analyza"] = vysl[p["zapas"]]
         (vyrazene if p["analyza"].get("verdikt") == "VETO" else platne).append(p)
     return platne, vyrazene
+
+
+def _prompt_univ(polozky):
+    sporty = sorted({p["sport"] for p in polozky})
+    krit = "\n".join(f"{sp.upper()}:\n{_kriteria_text(sp) or '  (bez kritérií: použij obecný rozum a to, co dohledáš)'}" for sp in sporty)
+    return (
+        "Jsi zkušený sportovní analytik. Níže jsou sázky z celé nabídky sázkové kanceláře na různé sporty (včetně méně běžných: "
+        "šipky, snooker, vodní pólo, esporty, stolní tenis, rugby...). Pravděpodobnost 'p_trhu' je férová pravděpodobnost "
+        "trhu bez marže; NESMÍŠ ji měnit ani vymýšlet jinou. Pro KAŽDOU sázku napiš PROFESIONÁLNÍ rozbor v češtině pro sázkaře "
+        "(do poznámky na Tipsport) a dohledej k dnešnímu dni přes Google Search fakta o zápase.\n\n"
+        "KRITÉRIA PODLE SPORTU (použij, co je relevantní):\n" + krit + "\n\n"
+        "PRAVIDLA:\n"
+        "- Nevymýšlej. Co nenajdeš (sestavy, forma, zranění, hlavní vzájemné zápasy, situace v tabulce, soupeř a styl hry), "
+        "výslovně napiš 'nenalezeno'. Pokud je to málo známý zápas a nic jsi nenašel, řekni to a spoléhej jen na to, co víš jistě.\n"
+        "- 'text': SOUVISLÝ rozbor jako jeden plynulý odstavec (bez odrážek a nadpisů), 6-10 vět: kontext zápasu a forma, "
+        "klíčové faktory pro daný trh (u počtu gólů/bodů/setů/framů styl hry a tempo, u vítěze síla a motivace, u handicapu "
+        "předpokládaný rozdíl), co hraje pro a proti vybranému výsledku a co by sázku zhatilo. Konkrétní jména a čísla.\n"
+        "- verdikt: VETO jen při potvrzeném tvrdém faktu proti sázce (klíčový hráč chybí, zápas odložen/zrušen, odstoupení, "
+        "zjevně jiný zápas než v nabídce), OK když fakta sedí, NEJISTE když chybí klíčové informace.\n"
+        "- 'duvera_gemini': celé číslo 1-10, jak moc ověřená fakta podporují výběr (1 = fakta proti / nic neověřeno, 10 = vše sedí).\n"
+        "- 'pro' a 'proti': 2-4 konkrétní věty (max 160 znaků).\n\n"
+        'Odpověz POUZE čistým JSON bez Markdownu:\n'
+        '{"vysledky":[{"id":"<id>","verdikt":"OK|VETO|NEJISTE","duvod":"max 160 znaků","text":"rozbor 6-10 vět",'
+        '"duvera_gemini":6,"pro":["..."],"proti":["..."],"riziko":"hlavní riziko v jedné větě"}]}\n\n'
+        "SÁZKY:\n" + json.dumps(polozky, ensure_ascii=False)
+    )
+
+
+def _zaklad_univ(c):
+    return {"verdikt": "NEOVERENO", "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+            "text": f"Výběr {c['vyber']} ({c['trh']}) má podle férové pravděpodobnosti trhu (bez marže) {c['p'] * 100:.0f} %. "
+                    "Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+            "pro": [f"Tržní pravděpodobnost {c['p'] * 100:.0f} % při kurzu {c['kurz']}."], "proti": ["Fakta o zápase nebyla ověřena."],
+            "riziko": "Nezjištěná sestava a zranění."}
+
+
+def rozsir_univ(univ, cfg, vola_gemini=None, davka=6, vlaken=3):
+    """Ke každé sázce z výběru celé nabídky přidá 'analyza' (Gemini, dávkově a paralelně), 'sazej_od' a 'duvera'.
+    VETO sázky vyřadí. -> (platne, vyrazene). Bez klíče Gemini zůstane jen základní text."""
+    import math
+    from concurrent.futures import ThreadPoolExecutor
+    from . import tipsteri
+    if not univ:
+        return [], []
+    me = float(((cfg.get("fortuna") or {}).get("univerzalni") or {}).get("min_edge", 0.02))
+    for c in univ:
+        c["sazej_od"] = math.ceil((1 + me) / c["p"] * 100) / 100
+    vysl = {c["zapas"]: _zaklad_univ(c) for c in univ}
+    klic = config.env("GEMINI_API_KEY")
+    if klic or vola_gemini:
+        polozky = [{"id": c["zapas"], "zapas": c["zapas"], "sport": c.get("sport"), "liga": c.get("liga"), "start_utc": c.get("start"),
+                    "trh": c["trh"], "vyber": c["vyber"], "kurz": c["kurz"], "p_trhu": c["p"]} for c in univ]
+        davky = [polozky[i:i + davka] for i in range(0, len(polozky), davka)]
+
+        def _jedna(d):
+            prompt = _prompt_univ(d)
+            if vola_gemini:
+                return vola_gemini(prompt)
+            from google import genai
+            from google.genai import types
+            client = genai.Client(api_key=klic)
+            for model in config.gemini_modely():
+                try:
+                    r = config.s_limitem(lambda: client.models.generate_content(
+                        model=model, contents=prompt, config=types.GenerateContentConfig(tools=[{"google_search": {}}])), 300)
+                    return r.text or ""
+                except Exception as e:
+                    print(f"⚠️ Rozbor výběru přes {model} selhal: {type(e).__name__}: {e}")
+            return None
+
+        print(f"🔎 Rozbor výběru z celé nabídky: {len(polozky)} sázek v {len(davky)} dávkách (paralelně {vlaken}).")
+        with ThreadPoolExecutor(max_workers=vlaken) as ex:
+            texty = list(ex.map(lambda d: _bezpecne(_jedna, d), davky))
+        for text in texty:
+            if not text:
+                continue
+            try:
+                data = json.loads(text[text.find("{"): text.rfind("}") + 1])
+                for v in data.get("vysledky", []):
+                    if v.get("id") in vysl and v.get("verdikt") in VERDIKTY:
+                        vysl[v["id"]] = {**v, "verdikt": v["verdikt"]}
+            except (ValueError, TypeError) as e:
+                print(f"⚠️ Odpověď rozboru výběru nešla přečíst: {e}")
+    platne, vyrazene = [], []
+    for c in univ:
+        c["analyza"] = vysl[c["zapas"]]
+        c["duvera"] = tipsteri.duvera_10_univ(c, c["analyza"])
+        (vyrazene if c["analyza"].get("verdikt") == "VETO" else platne).append(c)
+    return platne, vyrazene
+
+
+def _bezpecne(fn, x):
+    try:
+        return fn(x)
+    except Exception as e:
+        print(f"⚠️ Dávka rozboru selhala: {type(e).__name__}: {e}")
+        return None

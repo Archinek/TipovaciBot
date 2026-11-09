@@ -199,8 +199,14 @@ def _wa_tikety(tik, zona):
 
 def _tab_univ(univ, zona):
     if not univ: return "<p class='mut'>Žádný kandidát.</p>"
-    r = "".join(f"<tr><td>{html.escape(str(c['sport']))}</td><td>{html.escape(str(c['zapas']))}</td><td>{html.escape(str(c['trh']))}: <b>{html.escape(str(c['vyber']))}</b></td><td>{c['kurz']}</td><td>{c['p'] * 100:.0f} %</td></tr>" for c in univ)
-    return f"<p class='mut'>Bez modelu, jen férová pravděpodobnost trhu.</p><table><tr><th>Sport</th><th>Zápas</th><th>Výběr</th><th>Kurz</th><th>p</th></tr>{r}</table>"
+    r = []
+    for c in univ:
+        r.append(f"<h3>{_e(str(c['sport']).upper())} · ZÁPAS: {_e(c['zapas'])} <span class='mut'>({_e(c.get('liga') or '')}, {_cas(c['start'], zona)})</span></h3>")
+        r.append("<div class='w'><table><tr><th>Příležitost (trh a tip)</th><th>Kurz Fortuna</th><th>Sázej od (min. kurz)</th><th>Pravděpodobnost</th><th>Důvěra</th></tr>")
+        r.append(f"<tr><td>{_e(c['trh'])}: <b>{_e(c['vyber'])}</b></td><td>{c['kurz']}</td><td><b>{c.get('sazej_od', '–')}+</b></td>"
+                 f"<td><b>{c['p'] * 100:.0f} %</b></td><td><b>{c.get('duvera') or '–'}/10</b></td></tr></table></div>")
+        r.append(_prozaicky(c.get("analyza")))
+    return "".join(r)
 
 
 def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=None, fort=None, univ=None, tik=None):

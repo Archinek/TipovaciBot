@@ -116,3 +116,16 @@ def duvera_10(c, cfg=None, an=None):
     if isinstance(dg, (int, float)) and 1 <= dg <= 10:
         d = 0.5 * d + 0.5 * float(dg)
     return int(round(min(10.0, max(1.0, d))))
+
+
+def duvera_10_univ(c, an=None):
+    """Důvěra 1-10 pro sázku z výběru celé nabídky (bez modelu): jen tržní p, proto strop 7 (model by ji mohl potvrdit).
+    Základ z pravděpodobnosti (p 60 % ~ 3, 75 % ~ 6, 85 %+ ~ 7), kontrola Gemini: OK 0, NEOVĚŘENO -1, NEJISTÉ -2, VETO -5;
+    vlastní 'duvera_gemini' (1-10) se zprůměruje se základem."""
+    an = an if an is not None else (c.get("analyza") or {})
+    d = min(7.0, max(2.0, (float(c.get("p", 0)) - 0.40) * 16.0))
+    d += {"OK": 0.0, "NEJISTE": -2.0, "VETO": -5.0}.get(an.get("verdikt"), -1.0)
+    dg = an.get("duvera_gemini")
+    if isinstance(dg, (int, float)) and 1 <= dg <= 10:
+        d = 0.5 * d + 0.5 * float(dg)
+    return int(round(min(10.0, max(1.0, d))))
