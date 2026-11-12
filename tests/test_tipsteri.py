@@ -207,10 +207,11 @@ def test_report_tip_dne():
          "typ": "esa_hrac", "kurz_fortuna": 2.0, "p_model": 0.58, "p_trh": 0.52, "p": 0.55, "edge": 0.10, "sazej_od": 1.87,
          "fair": 1.82, "mu": 6.1, "tip_dne": 1, "jistejsi": 1, "vklad_pct": 0.9, "rodina": "Tenis: esa", "skore": 0.1, "sport": "tenis"}
     html = report.sestav_report("2026-11-06", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", fort=[f])
-    assert "Tip dne" in html and "Liga &lt;x&gt;" in html and "Liga <x>" not in html
-    txt = report.wa_ranni("2026-11-06", [], "", "", "Europe/Prague", fort=[f], log_text="📊 Log Fortuny: 1 linií")
-    assert "TIP DNE" in txt and "od *1.87*" in txt and "Log Fortuny" in txt and "JISTĚJŠÍ" in txt and "vklad ~0.9 %" in txt
-    assert "Dnes žádný kandidát" in report.sestav_report("2026-11-06", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", fort=[])
+    assert "Value drop" in html and "Liga &lt;x&gt;" in html and "Liga <x>" not in html and "1.87+" in html
+    txt = report.wa_ranni("2026-11-06", [], "", "https://x.cz/docs", "Europe/Prague", fort=[f], log_text="📊 Log Fortuny: 1 linií")
+    assert "https://x.cz/docs/reports/2026-11-06.html" in txt and len(txt) < 200 and "Log Fortuny" not in txt
+    h = report.sestav_report("2026-11-06", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", fort=[])
+    assert "Dnes žádný kandidát" in h and h.index("Analýzy zápasů") < h.index("Pyramida")                # Pyramida je úplně na konci
 
 
 def test_jistejsi_a_vklad():
@@ -529,3 +530,67 @@ def test_rozbor_vyberu_z_cele_nabidky():
     assert "Souvislý rozbor zápasu." in h and "Sázej od" in h and f"{c['duvera']}/10" in h and "Hawkins" in h
     bez, _ = analyza.rozsir_univ([dict(univ[0])], {}, vola_gemini=lambda prompt: "nesmysl")     # rozbor nejde přečíst: zůstane základ
     assert bez[0]["analyza"]["verdikt"] == "NEOVERENO" and bez[0]["duvera"] >= 1
+
+
+def test_pyramida_realisticky_kurz_tipsportu():
+    """Tiket se skládá podle ODHADU kurzu Tipsportu: drobné kurzy 1.05 se nesčítají, jedna silná noha vyhraje nad dvěma slabými."""
+    import time
+    from bot import tikety
+    def n(z, k, p):
+        return {"sport": "s", "zapas": z, "trh": "t", "vyber": "v", "kurz": k, "p": p, "zdroj": "trh", "duvera": 6}
+    noh = [n("A", 1.06, 0.935), n("B", 1.06, 0.935), n("C", 1.30, 0.80), n("D", 1.9, 0.52)]
+    t = tikety.nejlepsi_tiket(noh, 1.1, 0.03, srazka=0.12, shrink=0.01)
+    assert [c["zapas"] for c in t["noze"]] == ["C"] and t["kurz_tipsport_odhad"] >= 1.1 * 1.03
+    assert t["noze"][0]["sazej_od"] >= 1.1
+    s = tikety.nejlepsi_tiket(noh, 1.1, 0.0)                     # bez srážky by se skládaly drobné kurzy
+    assert len(s["noze"]) == 2
+    import random
+    random.seed(1)
+    velka = [n(f"Z{i}", round(random.uniform(1.08, 4), 2), round(random.uniform(0.2, 0.9), 2)) for i in range(400)]
+    t0 = time.time()
+    for prah in tikety.PRAHY_PYRAMIDY:
+        assert tikety.nejlepsi_tiket(velka, prah, 0.03, srazka=0.12, shrink=0.01)
+    assert time.time() - t0 < 20
+
+
+def test_report_nove_sekce():
+    import datetime
+    from bot import report, tikety, config
+    cfg = config.nacti_cfg()
+    st = "2026-11-12T18:00:00+00:00"
+    def f(zapas, rodina, kurz, edge, p=0.55):
+        return {"zapas": zapas, "liga": "L", "start": st, "trh": "Rohy: více než 9.5", "kurz_fortuna": kurz, "p": p, "p_model": p, "p_trh": p - 0.03,
+                "edge": edge, "sazej_od": 1.9, "rodina": rodina, "analyza": {"verdikt": "OK", "duvod": "sedí", "text": "Souvislý rozbor."}}
+    fort = [f("A - B", "Fotbal: rohy", 1.95, 0.08), f("C - D", "Fotbal: rohy", 1.60, 0.12), f("E - F", "Tenis: esa", 2.2, 0.20), f("G - H", "Fotbal: střely na bránu", 2.1, 0.05)]
+    assert [x["zapas"] for x in report.vyber_fild(fort, cfg)] == ["A - B", "G - H"]            # jen statistické trhy a kurz od 1.80
+    assert report.vyber_value_drop(fort, cfg)[0]["zapas"] == "E - F"                             # největší hrana napřed
+    ted = datetime.datetime(2026, 11, 12, 6, 0, tzinfo=datetime.timezone.utc)
+    zap = [{"sport": "fotbal", "nazev": "X - Y", "turnaj": "L", "start": st, "dvou": [{"n": "Góly", "o": [["Více než 0.5", 1.07], ["Méně než 0.5", 9.0]]}]},
+           {"sport": "hokej", "nazev": "P - Q", "turnaj": "NHL", "start": st, "dvou": [{"n": "Vítěz", "o": [["P", 2.1], ["Q", 1.75]]}]}]
+    j = tikety.jistoty(zap, [], cfg, ted)
+    assert len(j) == 1 and j[0]["zapas"] == "X - Y" and j[0]["p"] >= 0.85                       # kurz 1.07 je tu v pořádku, p musí být vysoká
+    univ = [{"sport": "hokej", "zapas": "P - Q", "liga": "NHL", "start": st, "trh": "Vítěz", "vyber": "Q", "kurz": 1.75, "p": 0.62, "sazej_od": 1.7, "duvera": 6,
+             "analyza": {"verdikt": "OK", "duvod": "ok", "text": "Rozbor hokeje."}}]
+    h = report.sestav_report("2026-11-12", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", fort=fort, univ=univ, jist=[{**j[0], "duvera": 7}], cfg=cfg)
+    poradi = [h.index(x) for x in ("Value drop", "Fildův tip", "Tipsport od kurzu 1.30", "Nejjistější dne", "Denní tiket", "Analýzy zápasů", "Pyramida")]
+    assert poradi == sorted(poradi)                                                              # tabulky -> analýzy -> Pyramida na konci
+    assert "Souvislý rozbor." in h and "Rozbor hokeje." in h
+
+
+def test_prehled_uceni():
+    from bot import prehled, report
+    def r(i, datum, sport, kurz, p, y, skup="vyber"):
+        return {"id": f"{datum}|{i}", "datum": datum, "sport": sport, "liga": "L", "zapas": f"A{i} - B{i}", "start": "", "trh": "Vítěz", "vyber": "A",
+                "kurz": str(kurz), "p": str(p), "zdroj": "trh", "skupina": skup, "vysledek": y, "duvod": ""}
+    nohy = [r(1, "2026-11-11", "hokej", 1.5, 0.64, "1"), r(2, "2026-11-11", "hokej", 1.6, 0.6, "0", "jistota"), r(3, "2026-11-11", "basketbal", 1.3, 0.75, ""),
+            r(4, "2026-11-10", "hokej", 1.5, 0.64, "1")]
+    uc = [r(10 + i, f"2026-11-{10 + i % 2}", "hokej", 1.8, 0.55, str(i % 2)) for i in range(20)] + [r(1, "2026-11-11", "hokej", 1.5, 0.64, "1")]   # id 1 duplicitní -> jednou
+    u = prehled.vypocti("2026-11-12", nohy, uc)
+    assert u["zapsano"] == 4 + 20 and u["vyhodnoceno"] == 3 + 20
+    assert u["vcera"]["Nejjistější dne"]["n"] == 1 and u["chyby"][0]["zapas"] == "A2 - B2"
+    m100 = u["mety"][0]
+    assert m100["stav"] == 23 and abs(m100["podil"] - 0.23) < 1e-9 and m100["eta"] > "2026-11-12"
+    assert u["sporty"]["hokej"]["n"] == 23 and "1.6–2" in u["pasma"] or any("1.6" in k for k in u["pasma"])
+    h = report.sestav_report("2026-11-12", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", uceni=u, model_text="Brier +3 %")
+    assert "Učení bota" in h and "Kde se bot spletl" in h and "Postup k dalším metám" in h and h.index("Učení bota") < h.index("Pyramida")
+    assert "Přehled se nepodařilo" in report._tab_uceni(None)

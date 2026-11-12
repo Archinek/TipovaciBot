@@ -118,7 +118,7 @@ def test_h2h_vsechny_sporty():
     html = report._tab_picks(ok, "Europe/Prague")
     wa = report.wa_ranni("2026-11-07", ok, "", "", "Europe/Prague")
     assert "povrch kurtu" in html, html[-600:]
-    assert "Souhrn." in wa, wa
+    assert len(wa) < 200 and "Souhrn." not in wa
 
 
 if __name__ == "__main__":

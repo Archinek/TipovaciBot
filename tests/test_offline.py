@@ -108,7 +108,7 @@ def test_cely_beh_vyhodnoceni_a_closing():
 
     res = bm.morning(api=FakeApi(), veto_fn=veto_fn, wa_fn=odeslano.append, ted=TED)
     assert len(res["picks"]) == 1 and res["picks"][0]["vyber"] == "Arsenal"
-    assert "sázej od" in odeslano[0] and "SLEDOVAT" in odeslano[0]       # výchozí režim = paper
+    assert "TIPOVACI_BOT" in odeslano[0] and len(odeslano[0]) < 200                # WhatsApp: jen nadpis a odkaz       # výchozí režim = paper
     assert (config.DOCS / "reports" / "2026-11-04.html").exists()
     assert (config.DOCS / "index.html").exists()
     # idempotence: druhý běh téhož dne nic nedělá
@@ -156,7 +156,7 @@ def test_doplnkove_integrace():
     assert res is not None
     html = (config.DOCS / "reports" / "2026-11-04.html").read_text(encoding="utf-8")
     assert "Doplňkové trhy" in html and "Sázej od" in html and "T3 vs T4" in html
-    assert "MODEL & BUILDERY" in odeslano[0] and "od *" in odeslano[0]
+    assert len(odeslano[0]) < 200
     log = dp.nacti_log()
     assert len(log) > 0 and all(r["vysledek"] == "" for r in log)
     # vyhodnocení: zápas T3-T4 "odehraný" včera, výsledek známe z falešné historie
