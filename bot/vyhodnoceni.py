@@ -39,7 +39,7 @@ def _id(datum, n):
     return f"{datum}|{n['zapas']}|{n['trh']}|{n['vyber']}"
 
 
-def zaloguj(datum, univ, tik):
+def zaloguj(datum, univ, tik, jist=None):
     """Zapíše nové sázky (univ + nohy tiketů); stejná sázka v tiketu i ve výběru se zapíše jednou, skupiny se spojí."""
     rows = nacti()
     mam = {r["id"]: r for r in rows}
@@ -61,6 +61,8 @@ def zaloguj(datum, univ, tik):
 
     for n in univ or []:
         pridej(n, "vyber")
+    for n in jist or []:
+        pridej(n, "jistota")
     if tik:
         for klic in ("denni", "denni_alt"):
             for n in ((tik.get(klic) or {}).get("noze") or []):

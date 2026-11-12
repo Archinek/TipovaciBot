@@ -126,9 +126,9 @@ def probe(log=print):
 
 
 def fortuna_vysledky(log=print):
-    """Sonda výsledků Fortuny: stejné veřejné JSON API (api.ifortuna.cz), které používá jejich stránka Výsledky.
-    Uloží seznam turnajů dne a zápasy několika turnajů (adresa /offer/result/api/v1_0/tournament/<id>/matches?date=&overviewMarkets=true),
-    ať vidíme, kde je skóre a které trhy vyhrály. Poctivý User-Agent, pauzy, při 403/429 se končí."""
+    """Sonda výsledků Fortuny (v3): API /offer/result/api/v1_0. Už víme: sports?date=, tournament/<id>/matches?date=&overviewMarkets=true
+    (skóre a u každého trhu result WINNING/LOSING/VOIDED). Zjišťujeme: výpis turnajů daného sportu a dne, všechny trhy (ne jen přehledové).
+    Poctivý User-Agent, pauzy, při 403/429 se končí."""
     from . import fortuna
     d = config.DATA / "probe_vysledky"
     d.mkdir(parents=True, exist_ok=True)
@@ -149,17 +149,25 @@ def fortuna_vysledky(log=print):
         text = json.dumps(data, ensure_ascii=False, indent=1)
         (d / f"fortuna_vysl_{nazev}.txt").write_text(f"{url}\ndélka {len(text)}\n\n{text[:40000]}", encoding="utf-8")
         log(f"✅ {nazev}: {len(text)} znaků")
-        return text
+        return data
 
     try:
-        seznam = None
-        for i, tvar in enumerate((f"{zaklad}/tournaments?date={den}", f"{zaklad}/tournaments?date={den}&categories=true", f"{zaklad}/sports?date={den}")):
-            t = stahni(f"turnaje_{i}", tvar)
-            if i == 0 or i == 1:
-                seznam = seznam or t
-        ids = ["ufo:tour:0w-01n"] + [x for x in dict.fromkeys(re.findall(r"ufo:tour:[A-Za-z0-9_-]+", seznam or "")) if x != "ufo:tour:0w-01n"][:5]
-        for i, tid in enumerate(ids):
-            stahni(f"zapasy_{i}", f"{zaklad}/tournament/{urllib.parse.quote(tid, safe=':')}/matches?date={den}&overviewMarkets=true")
+        sporty = stahni("sporty", f"{zaklad}/sports?date={den}") or []
+        sid = next((x.get("id") for x in sporty if x.get("name") == "Hokej"), "ufo:sprt:0w")
+        q = urllib.parse.quote(sid, safe=":")
+        for i, tvar in enumerate((f"{zaklad}/sport/{q}/tournaments?date={den}", f"{zaklad}/sports/{q}/tournaments?date={den}",
+                                  f"{zaklad}/tournaments?sportId={q}&date={den}", f"{zaklad}/tournaments?date={den}&sportId={q}",
+                                  f"{zaklad}/sport/{q}?date={den}", f"{zaklad}/sports/{q}?date={den}",
+                                  f"{zaklad}/sport/{q}/matches?date={den}", f"{zaklad}/tournaments/{q}?date={den}")):
+            stahni(f"turnaje_v{i}", tvar)
+        tid = "ufo:tour:0w-01n"
+        m = stahni("zapasy_vse_trhy", f"{zaklad}/tournament/{tid}/matches?date={den}&overviewMarkets=false") or {}
+        stahni("zapasy_bez_parametru", f"{zaklad}/tournament/{tid}/matches?date={den}")
+        fx = (m.get("fixtures") or [{}])[0].get("id")
+        if fx:
+            stahni("zapas_trhy", f"{zaklad}/fixture/{fx}/markets")
+            stahni("zapas_trhy2", f"{zaklad}/match/{fx}/markets")
+            stahni("zapas_detail", f"{zaklad}/fixture/{fx}")
     except fortuna.FortunaBlok:
         return
-    log(f"📊 Sonda výsledků Fortuny hotová, soubory fortuna_vysl_*.txt v data/probe_vysledky/ (poslat je).")
+    log("📊 Sonda výsledků Fortuny hotová, soubory fortuna_vysl_*.txt v data/probe_vysledky/ (poslat je).")

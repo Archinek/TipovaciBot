@@ -9,7 +9,6 @@ Bot nezná kurzy Tipsportu: u tiketu je proto uvedený minimální celkový kurz
 a u každé sázky "sázej od" = kurz, pod který se kombinace dostane pod požadovaný celkový kurz.
 """
 import datetime
-import itertools
 import math
 
 from . import engine
@@ -57,54 +56,91 @@ def _stack(zapasy, fort, cfg, ted):
     return out
 
 
-def _vyber_noh(noh, n=45):
-    """Zúží zásobu na n sázek rozložených přes pásma kurzu (aby šly poskládat všechny cíle)."""
-    pasma = [(1.05, 1.3), (1.3, 1.6), (1.6, 2.0), (2.0, 2.6), (2.6, 4.01)]
-    out, videno = [], set()
-    for lo, hi in pasma:
-        cast = sorted((x for x in noh if lo <= x["kurz"] < hi), key=lambda x: -x["p"] * x["kurz"])
-        poc = 0
-        for x in cast:
-            k = (x["zapas"], x["trh"], x["vyber"])
-            if k in videno:
-                continue
+def _tip_kurz(k, srazka):
+    """Odhad kurzu Tipsportu z kurzu Fortuny: srazí se zisková část kurzu (1.06 -> ~1.05, 1.40 -> ~1.36)."""
+    return 1.0 + (k - 1.0) * (1.0 - srazka)
+
+
+def _zasoba(noh, srazka, shrink, n=60):
+    """Zúží zásobu sázek: nejlepší poměr 'cena v pravděpodobnosti' / 'zisk v kurzu' + nejjistější sázky; max. jedna varianta na trh."""
+    def cena(x):
+        lk = math.log(max(1.0001, _tip_kurz(x["kurz"], srazka)))
+        return -math.log(x["p"] * (1 - shrink)) / lk
+    videno, out = set(), []
+    for x in sorted(noh, key=cena)[:n] + sorted(noh, key=lambda x: -x["p"])[: n // 3]:
+        k = (x["zapas"], x["trh"], x["vyber"])
+        if k not in videno:
             videno.add(k)
             out.append(x)
-            poc += 1
-            if poc >= n // len(pasma):
-                break
     return out
 
 
-def nejlepsi_tiket(noh, cil, rezerva=0.0, vyloucit=(), max_noh=None):
-    """Kombinace z různých zápasů s celkovým kurzem >= cil*(1+rezerva) a nejvyšší pravděpodobností výhry."""
+def nejlepsi_tiket(noh, cil, rezerva=0.0, vyloucit=(), max_noh=None, srazka=0.0, shrink=0.0):
+    """Kombinace z různých zápasů, jejíž ODHADNUTÝ kurz na Tipsportu je >= cil*(1+rezerva) a pravděpodobnost výhry nejvyšší.
+
+    Přesné hledání (větvení s ořezáváním): p kombinace jen klesá s každou další nohou, takže se zahodí každá větev,
+    která už nepřekoná dosavadní nejlepší, nebo která už nemůže dosáhnout kurzu. Sázky s kurzem blízko 1.0 se tím samy
+    vyřadí (na Tipsportu by se jejich součin dostal pod práh); `shrink` je srážka z p za každou nohu (nejistota odhadu).
+    """
     noh = [x for x in noh if x["zapas"] not in vyloucit]
-    zasoba = _vyber_noh(noh)
+    zasoba = _zasoba(noh, srazka, shrink)
     prah = cil * (1 + rezerva)
-    max_noh = max_noh or (3 if cil <= 4 else 4 if cil <= 8 else 5)
-    nejlepsi, nej_p = None, 0.0
-    for n in range(1, max_noh + 1):
-        for comb in itertools.combinations(zasoba, n):
-            if len({c["zapas"] for c in comb}) < n:
+    max_noh = max_noh or (3 if cil <= 3 else 4 if cil <= 6 else 5)
+    lt = math.log(prah)
+    pol = [(math.log(x["p"] * (1 - shrink)), math.log(max(1.0001, _tip_kurz(x["kurz"], srazka))), x) for x in zasoba]
+    pol.sort(key=lambda r: -r[0])                              # nejjistější první
+    nejvyssi_lk = sorted((r[1] for r in pol), reverse=True)
+    stav = {"lp": -1e18, "comb": None}
+
+    def dfs(start, comb, lp, lk, zapasy):
+        if lk >= lt - 1e-12:
+            if lp > stav["lp"] + 1e-12:
+                stav["lp"], stav["comb"] = lp, list(comb)
+            return                                             # další noha by p jen snížila
+        zbyva = max_noh - len(comb)
+        if zbyva <= 0 or lk + sum(nejvyssi_lk[:zbyva]) < lt:
+            return
+        for i in range(start, len(pol)):
+            l_p, l_k, x = pol[i]
+            if lp + l_p <= stav["lp"] or x["zapas"] in zapasy:
                 continue
-            k = math.prod(c["kurz"] for c in comb)
-            if k < prah:
-                continue
-            p = math.prod(c["p"] for c in comb)
-            if p > nej_p + 1e-12 or (abs(p - nej_p) <= 1e-12 and nejlepsi and k < nejlepsi["kurz"]):
-                nejlepsi, nej_p = {"noze": list(comb), "kurz": k, "p": p}, p
-    if not nejlepsi:
+            comb.append(x)
+            zapasy.add(x["zapas"])
+            dfs(i + 1, comb, lp + l_p, lk + l_k, zapasy)
+            zapasy.discard(x["zapas"])
+            comb.pop()
+
+    dfs(0, [], 0.0, 0.0, set())
+    if not stav["comb"]:
         return None
-    t = nejlepsi
+    comb = stav["comb"]
+    t = {"noze": comb, "kurz": math.prod(c["kurz"] for c in comb), "p": math.prod(c["p"] for c in comb)}
+    tip = [_tip_kurz(c["kurz"], srazka) for c in comb]
+    t["kurz_tipsport_odhad"] = round(math.prod(tip), 3)
     t["cil"] = cil
     t["hrana"] = t["p"] * t["kurz"] - 1
-    t["duvera"] = max(1, min(10, round(sum(c["duvera"] for c in t["noze"]) / len(t["noze"]) - 0.5 * (len(t["noze"]) - 1))))
-    for c in t["noze"]:                                     # sázej od: kurz sázky, pod který celek padne pod cíl
-        ostatni = t["kurz"] / c["kurz"]
-        c["sazej_od"] = round(max(1.01, cil / ostatni), 2)
+    t["duvera"] = max(1, min(10, round(sum(c["duvera"] for c in comb) / len(comb) - 0.5 * (len(comb) - 1))))
+    for c, tk in zip(comb, tip):                              # sázej od: nejnižší kurz na Tipsportu, při kterém celek ještě drží cíl
+        ostatni = t["kurz_tipsport_odhad"] / tk
+        c["sazej_od"] = round(max(1.01, math.ceil(cil / ostatni * 100) / 100), 2)
     t["min_celkovy_kurz"] = round(cil, 2)
-    t["jen_trh"] = all(c["zdroj"] == "trh" for c in t["noze"])
+    t["jen_trh"] = all(c["zdroj"] == "trh" for c in comb)
     return t
+
+
+def jistoty(zapasy, fort, cfg, ted):
+    """Nejjistější příležitosti dne napříč všemi sporty a kurzy: nejvyšší pravděpodobnost, max. jedna na zápas.
+    Bez záruky: p je nejlepší odhad (trh bez marže, u fotbalu a tenisu smíchaný s modelem). Analýza (Gemini) pak vyřadí VETO."""
+    r = (cfg.get("report") or {})
+    t = dict(cfg.get("tikety") or {})
+    t["min_kurz_noha"], t["max_kurz_noha"] = float(r.get("jistota_min_kurz", 1.05)), 100.0
+    noh = _stack(zapasy, fort, {**cfg, "tikety": t}, ted)
+    nej = {}
+    for x in noh:
+        if x["p"] >= float(r.get("jistota_min_p", 0.85)) and (x["zapas"] not in nej or x["p"] > nej[x["zapas"]]["p"]):
+            nej[x["zapas"]] = x
+    out = sorted(nej.values(), key=lambda x: -x["p"])[: int(r.get("jistota_max", 6))]
+    return [{**{k: v for k, v in x.items() if k != "duvera"}, "sazej_od": math.ceil(1.02 / x["p"] * 100) / 100} for x in out]
 
 
 def sestav(zapasy, fort, cfg, ted):
@@ -113,14 +149,15 @@ def sestav(zapasy, fort, cfg, ted):
     noh = _stack(zapasy, fort, cfg, ted)
     rez = float(t.get("rezerva", 0.03))
     cil = float(t.get("denni_cil", 2.0))
-    d1 = nejlepsi_tiket(noh, cil, rez)
-    d2 = nejlepsi_tiket(noh, cil, rez, vyloucit={c["zapas"] for c in d1["noze"]}) if d1 else None
+    sr, sh = float(t.get("tipsport_srazka", 0.12)), float(t.get("p_srazka_za_nohu", 0.01))
+    d1 = nejlepsi_tiket(noh, cil, rez, srazka=sr, shrink=sh)
+    d2 = nejlepsi_tiket(noh, cil, rez, vyloucit={c["zapas"] for c in d1["noze"]}, srazka=sr, shrink=sh) if d1 else None
     if d1 and d2 and d2["p"] > d1["p"]:
         d1, d2 = d2, d1
     pyr = []
     for kolo, prah in enumerate(PRAHY_PYRAMIDY, start=1):
-        t1 = nejlepsi_tiket(noh, prah, rez)
-        t2 = nejlepsi_tiket(noh, prah, rez, vyloucit={c["zapas"] for c in t1["noze"]}) if t1 else None
+        t1 = nejlepsi_tiket(noh, prah, rez, srazka=sr, shrink=sh)
+        t2 = nejlepsi_tiket(noh, prah, rez, vyloucit={c["zapas"] for c in t1["noze"]}, srazka=sr, shrink=sh) if t1 else None
         if t1 and t2 and t2["p"] > t1["p"]:
             t1, t2 = t2, t1
         pyr.append({"kolo": kolo, "prah": prah, "tiket": t1, "alt": t2})
