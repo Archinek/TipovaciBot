@@ -231,3 +231,12 @@ report:
   jistota_min_p: 0.85        # Nejjistější dne: libovolný kurz, ale p aspoň ...
   jistota_min_kurz: 1.05
   jistota_max: 6
+
+# Papírové sázky na pozadí (bot/ucici.py): bot si "natipuje" nabídku Fortuny a další dny ji vyhodnotí z výsledků Fortuny (do reportu se nepíše).
+ucici:
+  vse: true              # všechny sporty a všechny trhy z nabídky (false = jen NHL, NFL, NBA, WNBA, MLB)
+  min_kurz: 1.05
+  max_kurz: 8.0
+  max_marze: 0.12        # trhy s vyšší marží (půlené linie, chybějící strana) se přeskočí
+  okno_h: 36             # zápasy začínající do 36 h
+  max_radku_den: 20000   # pojistka proti nafouknutí repozitáře
