@@ -217,5 +217,17 @@ tikety:                  # denní tiket na kurz ~2.00 a Pyramida (skládání z 
   okno_h: 20             # zápasy začínající do 20 h od ranního běhu (vyhodnotí se do dalšího dne)
   min_do_startu_min: 20
   max_marze: 0.10
-  min_kurz_noha: 1.05
+  min_kurz_noha: 1.08     # kratší kurzy se na Tipsportu po srážce skoro nesčítají
+  tipsport_srazka: 0.12   # odhad: Tipsport dává o ~12 % menší ziskovou část kurzu než Fortuna
+  p_srazka_za_nohu: 0.01  # nejistota odhadu p: každá noha navíc sníží p o 1 %
   max_kurz_noha: 4.0
+
+# Uspořádání reportu (bot/report.py): sekce a jejich prahy.
+report:
+  value_drop_max: 5          # Value drop: největší hrana modelu proti trhu (tam, kde se kurz nejspíš sníží)
+  fild_min_kurz: 1.80        # Fildův tip: statistické trhy (rohy, střely, fauly, karty) s kurzem od ...
+  fild_max: 5
+  fild_rodiny: ["rohy", "střely", "fauly", "karty"]
+  jistota_min_p: 0.85        # Nejjistější dne: libovolný kurz, ale p aspoň ...
+  jistota_min_kurz: 1.05
+  jistota_max: 6
