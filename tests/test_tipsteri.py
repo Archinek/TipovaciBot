@@ -594,3 +594,64 @@ def test_prehled_uceni():
     h = report.sestav_report("2026-11-12", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", uceni=u, model_text="Brier +3 %")
     assert "Učení bota" in h and "Kde se bot spletl" in h and "Postup k dalším metám" in h and h.index("Učení bota") < h.index("Pyramida")
     assert "Přehled se nepodařilo" in report._tab_uceni(None)
+
+
+def test_vysledky_z_api_fortuny(monkeypatch):
+    """Čtečka výsledků Fortuny: skóre i WINNING/LOSING/VOIDED u trhů, spárování podle názvu a času, nevyhodnotí rozehrané."""
+    import datetime
+    from bot import fortuna, vyhodnoceni, vysledky_fortuna as vf
+    vf._CACHE.clear()
+
+    def mk(nazev, odds):
+        return {"id": "m1", "name": nazev, "startDatetime": int(datetime.datetime(2026, 11, 11, 0, 0, tzinfo=datetime.timezone.utc).timestamp() * 1000),
+                "score": {"homeScore": 4, "awayScore": 2}}
+    trhy = [{"fixtureId": "m1", "name": "Výsledek zápasu", "outcomes": [
+                {"name": "1", "longName": "Charlotte", "result": "WINNING"}, {"name": "2", "longName": "Providence", "result": "LOSING"}, {"name": "0", "longName": "Remíza", "result": "LOSING"}]},
+            {"fixtureId": "m1", "name": "Počet gólů v zápasu 5.5", "outcomes": [
+                {"name": "Více než 5.5", "longName": "Více než 5.5", "result": "VOIDED"}, {"name": "Méně než 5.5", "longName": "Méně než 5.5", "result": "VOIDED"}]},
+            {"fixtureId": "m1", "name": "Počet gólů v zápasu 6.5", "outcomes": [
+                {"name": "Více než 6.5", "longName": "Více než 6.5", "result": None}, {"name": "Méně než 6.5", "result": None}]}]
+
+    class K:
+        def __init__(self, pauza=0): pass
+        def get(self, u):
+            if "/sports?" in u: return [{"id": "s1", "name": "Hokej"}, {"id": "s2", "name": "Tenis"}]
+            if "/sport/s1/tournaments" in u: return {"tournaments": [{"id": "t1", "name": "AHL"}]}
+            if "/tournament/t1/matches" in u: return {"fixtures": [mk("Charlotte - Providence", None)], "markets": trhy}
+            if "/fixture/m1?date=2026-11-11&markets=true" in u:        # detail se všemi trhy (hráči, rohy...)
+                return {"fixture": {"id": "m1", "score": {"homeScore": 4, "awayScore": 2}},
+                        "markets": [{"fixtureId": "m1", "name": "Střely hráče Novák: více než 2.5", "outcomes": [
+                            {"name": "Ano", "result": "WINNING"}, {"name": "Ne", "result": "LOSING"}]}]}
+            raise AssertionError(u)
+    monkeypatch.setattr(fortuna, "Klient", K)
+    def r(trh, vyber, zapas="Charlotte - Providence"):
+        return {"id": trh + vyber, "datum": "2026-11-10", "sport": "hokej", "liga": "AHL", "zapas": zapas, "start": "2026-11-11T00:00:00+00:00", "trh": trh, "vyber": vyber,
+                "kurz": "2.0", "p": "0.5", "zdroj": "trh", "skupina": "vyber", "vysledek": "", "duvod": ""}
+    rows = [r("Výsledek zápasu", "Charlotte"), r("Výsledek zápasu", "Providence"), r("Počet gólů v zápasu 5.5", "Více než 5.5"),
+            r("Počet gólů v zápasu 6.5", "Méně než 6.5"), r("Výsledek zápasu", "Charlotte", "Jiný - Zápas"),
+            r("Střely hráče Novák: více než 2.5", "Ano")]
+    ted = datetime.datetime(2026, 11, 12, 6, 0, tzinfo=datetime.timezone.utc)
+    n = vyhodnoceni.vyhodnot_radky(rows, ted, log=lambda *a: None)
+    assert [x["vysledek"] for x in rows[:3]] == ["1", "0", "V"] and rows[5]["vysledek"] == "1" and n == 3                        # VOIDED se nepočítá do úspěšnosti
+    assert rows[3]["vysledek"] == "" and rows[4]["vysledek"] == ""                                # trh bez výsledku / zápas nenalezen zůstane čekat
+    assert vyhodnoceni.souhrn(rows)["vyhodnoceno"] == 3
+
+
+def test_ucici_vse_sporty_a_cas_bez_zony(tmp_path, monkeypatch):
+    """Rozšířený sběr: všechny sporty a trhy; čas bez zóny se vyhodnotí (dřív TypeError); limit řádků za den."""
+    import datetime
+    from bot import config, ucici, vyhodnoceni
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    ted = datetime.datetime(2026, 11, 12, 6, 0, tzinfo=datetime.timezone.utc)
+    st = (ted + datetime.timedelta(hours=3)).isoformat()
+    z = [{"sport": "volejbal", "nazev": "A - B", "turnaj": "Liga", "start": st, "dvou": [{"n": "Počet bodů hráče X: více než 10.5", "o": [["Ano", 1.8], ["Ne", 1.95]]}]},
+         {"sport": "tenis", "nazev": "C - D", "turnaj": "ATP", "start": st, "dvou": [{"n": "Počet es 12.5", "o": [["Více než 12.5", 1.9], ["Méně než 12.5", 1.85]]}]}]
+    assert ucici.zaloguj("2026-11-12", z, ted) == 0                                          # výchozí = jen vyhodnotitelné ligy
+    n = ucici.zaloguj("2026-11-12", z, ted, cfg={"ucici": {"vse": True}})
+    assert n == 4
+    ucici.zaloguj("2026-11-12", z, ted, cfg={"ucici": {"vse": True, "max_radku_den": 1}})   # limit: nic dalšího
+    rows = ucici.vsechny_radky()
+    r = rows[0]
+    r["start"] = (ted - datetime.timedelta(days=1)).replace(tzinfo=None).isoformat(timespec="minutes")   # bez zóny
+    vyhodnoceni.vyhodnot_radky([r], ted, log=lambda *a: None)                                # nesmí spadnout
+    assert r["start"].endswith("+00:00")
