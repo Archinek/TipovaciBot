@@ -1,0 +1,2 @@
+https://api.ifortuna.cz/offer/result/api/v1_0/fixture/ufo:mtch:1xm-02f
+CHYBA FortunaChyba: HTTP 400 u https://api.ifortuna.cz/offer/result/api/v1_0/fixture/ufo:mtch:1xm-02f

@@ -1,0 +1,336 @@
+https://api.ifortuna.cz/offer/result/api/v1_0/sport/ufo:sprt:0w/tournaments?date=2026-11-11
+délka 6113
+
+{
+ "sport": {
+  "id": "ufo:sprt:0w",
+  "name": "Hokej",
+  "order": 4,
+  "icon": "ufo-sprt-0w.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 101
+ },
+ "tournaments": [
+  {
+   "id": "ufo:tour:0w-010",
+   "name": "ECHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 2
+  },
+  {
+   "id": "ufo:tour:0w-00j",
+   "name": "NHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "order": 1,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 7
+  },
+  {
+   "id": "ufo:tour:0w-01n",
+   "name": "AHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 6
+  },
+  {
+   "id": "ufo:tour:0w-014",
+   "name": "NCAA",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  },
+  {
+   "id": "ufo:tour:0w-009",
+   "name": "WHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-03",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 10
+  },
+  {
+   "id": "ufo:tour:0w-002",
+   "name": "MHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-00",
+   "order": 4,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 5
+  },
+  {
+   "id": "ufo:tour:0w-02u",
+   "name": "RHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-00",
+   "order": 5,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 2
+  },
+  {
+   "id": "ufo:tour:0w-001",
+   "name": "VHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-00",
+   "order": 3,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 3
+  },
+  {
+   "id": "ufo:tour:0w-01f",
+   "name": "MS-ženy",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0f",
+   "order": 2,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 4
+  },
+  {
+   "id": "ufo:tour:0w-006",
+   "name": "1. Bělorusko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-05",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 3
+  },
+  {
+   "id": "ufo:tour:0w-01l",
+   "name": "2. Česko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0d",
+   "order": 3,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 7
+  },
+  {
+   "id": "ufo:tour:0w-005",
+   "name": "1. Finsko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0b",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 6
+  },
+  {
+   "id": "ufo:tour:0w-02c",
+   "name": "Finsko U20",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0b",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  },
+  {
+   "id": "ufo:tour:0w-00k",
+   "name": "1. Slovensko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0k",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 6
+  },
+  {
+   "id": "ufo:tour:0w-01h",
+   "name": "Liga Mistrů",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0f",
+   "order": 1,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 3
+  },
+  {
+   "id": "ufo:tour:0w-00c",
+   "name": "2. Slovensko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0k",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 5
+  },
+  {
+   "id": "ufo:tour:0w-00w",
+   "name": "KHL",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-00",
+   "order": 1,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 3
+  },
+  {
+   "id": "ufo:tour:0w-00g",
+   "name": "1. Lotyšsko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-06",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  },
+  {
+   "id": "ufo:tour:0w-00h",
+   "name": "Rakousko U20",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0h",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  },
+  {
+   "id": "ufo:tour:0w-00r",
+   "name": "1. Dánsko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0g",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  },
+  {
+   "id": "ufo:tour:0w-01m",
+   "name": "2. Norsko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-09",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 3
+  },
+  {
+   "id": "ufo:tour:0w-01d",
+   "name": "2. Švédsko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0a",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 6
+  },
+  {
+   "id": "ufo:tour:0w-00q",
+   "name": "1. Rakousko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0h",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 2
+  },
+  {
+   "id": "ufo:tour:0w-037",
+   "name": "2. Francie",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-04",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 2
+  },
+  {
+   "id": "ufo:tour:0w-003",
+   "name": "1. Švýcarsko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0e",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  },
+  {
+   "id": "ufo:tour:0w-053",
+   "name": "Univerzitní liga",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0d",
+   "order": 8,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  },
+  {
+   "id": "ufo:tour:0w-00a",
+   "name": "1. Británie",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-07",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 2
+  },
+  {
+   "id": "ufo:tour:0w-01k",
+   "name": "3. Švédsko",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-0a",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 6
+  },
+  {
+   "id": "ufo:tour:0w-02h",
+   "name": "Norsko U20",
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-09",
+   "order": 2147483647,
+   "features": [
+    "MATCHES"
+   ],
+   "fixturesCount": 1
+  }
+ ]
+}

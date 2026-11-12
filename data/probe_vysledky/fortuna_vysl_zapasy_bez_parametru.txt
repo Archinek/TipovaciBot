@@ -1,0 +1,187 @@
+https://api.ifortuna.cz/offer/result/api/v1_0/tournament/ufo:tour:0w-01n/matches?date=2026-11-11
+délka 3881
+
+{
+ "tournament": {
+  "id": "ufo:tour:0w-01n",
+  "name": "AHL",
+  "sportId": "ufo:sprt:0w",
+  "categoryId": "ufo:ctgr:0w-08",
+  "order": 2147483647,
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 6
+ },
+ "fixtures": [
+  {
+   "id": "ufo:mtch:1xm-02f",
+   "name": "Charlotte - Providence",
+   "note": null,
+   "startDatetime": 1794355200000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00hs",
+     "name": "Charlotte",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hk",
+     "name": "Providence",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 4,
+    "awayScore": 2
+   }
+  },
+  {
+   "id": "ufo:mtch:1xl-015",
+   "name": "WB Scranton - Utica",
+   "note": null,
+   "startDatetime": 1794353700000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00hq",
+     "name": "WB Scranton",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hi",
+     "name": "Utica",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 0,
+    "awayScore": 4
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02g",
+   "name": "Texas - Manitoba",
+   "note": null,
+   "startDatetime": 1794358800000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00hv",
+     "name": "Texas",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hf",
+     "name": "Manitoba",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 2,
+    "awayScore": 3
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02v",
+   "name": "Abbotsford - Colorado Eagles",
+   "note": null,
+   "startDatetime": 1794362400000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00ok",
+     "name": "Abbotsford",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00bj",
+     "name": "Colorado Eagles",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 3,
+    "awayScore": 4
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02w",
+   "name": "Bakersfield - Calgary Wranglers",
+   "note": null,
+   "startDatetime": 1794364800000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00ht",
+     "name": "Bakersfield",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00pg",
+     "name": "Calgary Wranglers",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 2,
+    "awayScore": 4
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02x",
+   "name": "Grand Rapids - Rockford",
+   "note": null,
+   "startDatetime": 1794412800000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00h8",
+     "name": "Grand Rapids",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hm",
+     "name": "Rockford",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 6,
+    "awayScore": 3
+   }
+  }
+ ],
+ "markets": null
+}

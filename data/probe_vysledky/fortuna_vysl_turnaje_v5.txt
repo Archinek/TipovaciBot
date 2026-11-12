@@ -1,0 +1,2 @@
+https://api.ifortuna.cz/offer/result/api/v1_0/sports/ufo:sprt:0w?date=2026-11-11
+CHYBA FortunaChyba: HTTP 404 u https://api.ifortuna.cz/offer/result/api/v1_0/sports/ufo:sprt:0w?date=2026-11-11
