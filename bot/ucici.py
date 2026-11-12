@@ -46,7 +46,7 @@ def _rozpoznan(trh, vyber, sport, zapas="A - B"):
     return duvod not in ("trh nerozpoznán", "linie")
 
 
-def zaloguj(datum, zapasy, ted, okno_h=36, log=print):
+def zaloguj(datum, zapasy, ted, okno_h=36, log=print, cfg=None):
     """Zapíše všechny vyhodnotitelné dvou/třícestné sázky zápasů začínajících v okně. Vrací počet nových řádků."""
     f = _adresar() / f"{datum}.csv.gz"
     rows = _nacti(f)
@@ -54,12 +54,21 @@ def zaloguj(datum, zapasy, ted, okno_h=36, log=print):
     for dd in (1, 2):                                                   # sázky už zapsané dřívějším během se neopakují
         d = (datetime.date.fromisoformat(datum) - datetime.timedelta(days=dd)).isoformat()
         mam |= {r["id"] for r in _nacti(_adresar() / f"{d}.csv.gz")}
+    u = (cfg or {}).get("ucici") or {}
+    vse = bool(u.get("vse", False))                                     # všechny sporty a trhy (výsledky z API Fortuny)
+    kmin, kmax, max_marze = float(u.get("min_kurz", 1.05)), float(u.get("max_kurz", 4.0 if not vse else 8.0)), float(u.get("max_marze", 0.12))
+    okno_h = float(u.get("okno_h", okno_h))
+    limit = int(u.get("max_radku_den", 20000))
+    if ted.tzinfo:                                                      # porovnává se s časy zápasů v UTC bez zóny
+        ted = ted.astimezone(datetime.timezone.utc).replace(tzinfo=None)
     od, do = ted + datetime.timedelta(minutes=15), ted + datetime.timedelta(hours=okno_h)
     nove = 0
     nerozp = {}
     for z in zapasy:
-        if z.get("turnaj") not in LIGY:
+        if not vse and z.get("turnaj") not in LIGY:
             continue
+        if len(rows) >= limit:
+            break
         try:
             s = datetime.datetime.fromisoformat(z["start"])
         except (KeyError, TypeError, ValueError):
@@ -71,13 +80,13 @@ def zaloguj(datum, zapasy, ted, okno_h=36, log=print):
         for t in z.get("dvou") or []:
             kurzy = [k for _, k in t["o"]]
             marze = sum(1 / k for k in kurzy) - 1
-            if not (0 <= marze <= 0.12) or len(kurzy) < 2:
+            if not (0 <= marze <= max_marze) or len(kurzy) < 2:
                 continue
             ps = engine.no_vig_power(kurzy)
             for (jm, k), p in zip(t["o"], ps):
-                if not (1.05 <= k <= 4.0):
+                if not (kmin <= k <= kmax):
                     continue
-                if not _rozpoznan(t["n"], jm, z["sport"], z["nazev"]):
+                if not vse and not _rozpoznan(t["n"], jm, z["sport"], z["nazev"]):
                     nerozp[t["n"][:60]] = nerozp.get(t["n"][:60], 0) + 1
                     continue
                 i = f"{z['nazev']}|{t['n']}|{jm}|{z['start'][:10]}"

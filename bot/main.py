@@ -432,7 +432,7 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         from . import ucici
         _log(f"🧠 Papírové tipy (učení): vyhodnoceno {ucici.vyhodnot(ted, log=_log)}")
         ucici.uloz_kalibraci(log=_log)
-        _log(f"🧠 Papírové tipy (učení): +{ucici.zaloguj(datum, zap_fortuna, ted, log=_log)} nových z nabídky Fortuny")
+        _log(f"🧠 Papírové tipy (učení): +{ucici.zaloguj(datum, zap_fortuna, ted, log=_log, cfg=cfg)} nových z nabídky Fortuny")
     except Exception as e:
         _log(f"⚠️ Vyhodnocení sázek ze všech sportů selhalo: {type(e).__name__}: {e}")
 
@@ -560,6 +560,16 @@ def main(argv):
             d = (_dt.date.today() - _dt.timedelta(days=dd)).isoformat()
             v = vysledky.ziskej(d, log=_log, cache=False)
             _log(f"📊 Výsledky {d}: {len(v)} zápasů; ukázka: " + "; ".join(f"{x['liga']} {x['home']} {x['h']}:{x['a']} {x['away']}" for x in v[:4]))
+    elif cmd == "vysledky_fortuna":
+        import datetime as _dt
+        from . import vysledky_fortuna as vf
+        d = (_dt.date.today() - _dt.timedelta(days=1)).isoformat()
+        z = vf.stahni({d}, {"hokej", "basketbal", "fotbal", "tenis"}, log=_log)
+        if z:
+            n = vf.doplnit_detail(z[:2], log=_log)
+            _log(f"📊 Detail se všemi trhy u 2 zápasů: {n}; počty trhů: " + ", ".join(f"{x['name']} {len(x['trhy'])}" for x in z[:2]))
+        _log(f"📊 Výsledky Fortuny {d}: {len(z)} zápasů, s vyhodnocenými trhy {sum(1 for x in z if x['trhy'])}; "
+             + "; ".join(f"{x['sport']} {x['name']} {x['h']}:{x['a']} ({len(x['trhy'])} trhů)" for x in z[:4]))
     elif cmd == "vysledky_probe":
         from . import vysledky_probe
         vysledky_probe.probe(log=_log)

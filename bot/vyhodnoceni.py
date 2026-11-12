@@ -129,6 +129,8 @@ def rozhodni(r, v):
 def vyhodnot_radky(rows, ted, log=print):
     """Vyhodnotí (na místě) řádky, jejichž zápas už skončil (start + 5 h < ted). Vrací počet nově vyhodnocených."""
     cek = []
+    if ted.tzinfo is None:
+        ted = ted.replace(tzinfo=datetime.timezone.utc)
     for r in rows:
         if r["vysledek"] != "":
             continue
@@ -136,10 +138,56 @@ def vyhodnot_radky(rows, ted, log=print):
             s = datetime.datetime.fromisoformat(r["start"])
         except ValueError:
             continue
+        if s.tzinfo is None:                                 # papírové sázky mají čas bez zóny (UTC)
+            s = s.replace(tzinfo=datetime.timezone.utc)
+            r["start"] = s.isoformat(timespec="minutes")
         if s + datetime.timedelta(hours=5) < ted:
             cek.append((r, s))
     if not cek:
         return 0
+    hotovo = 0
+    try:                                                    # 1) výsledky přímo z API Fortuny (u každého trhu WINNING/LOSING/VOIDED)
+        from . import vysledky_fortuna as vf
+        fzap = vf.stahni({vf.pražský_den(r["start"]) for r, _ in cek}, {r["sport"] for r, _ in cek}, log=log)
+        idx = vf.index(fzap)
+        zbyva = []
+        for r, s in cek:
+            z = vf.najdi(idx, r["zapas"], r["start"]) if idx else None
+            y, duvod = vf.rozhodni(r["trh"], r["vyber"], z) if z else (None, "")
+            if y is not None:
+                r["vysledek"], r["duvod"] = y, duvod
+                if y != "V":
+                    hotovo += 1
+            else:
+                zbyva.append((r, s))
+        # 2) u zápasů, které Fortuna ukazuje jen přehledově, se stáhne detail se všemi trhy (hráči, over/under, rohy...)
+        potreba = {}
+        for r, s in zbyva:
+            z = vf.najdi(idx, r["zapas"], r["start"]) if idx else None
+            if z and not z.get("detail"):
+                potreba[z["id"]] = z
+        if potreba:
+            n_det = vf.doplnit_detail(list(potreba.values()), log=log)
+            log(f"   Fortuna: detail se všemi trhy stažen u {n_det} zápasů.")
+            zbyva2 = []
+            for r, s in zbyva:
+                z = vf.najdi(idx, r["zapas"], r["start"])
+                y, duvod = vf.rozhodni(r["trh"], r["vyber"], z) if z else (None, "")
+                if y is not None:
+                    r["vysledek"], r["duvod"] = y, duvod
+                    if y != "V":
+                        hotovo += 1
+                else:
+                    if duvod:
+                        r["duvod"] = duvod
+                    zbyva2.append((r, s))
+            zbyva = zbyva2
+        log(f"   Fortuna: {len(fzap)} zápasů s výsledky, z toho vyhodnoceno {hotovo} sázek.")
+        cek = zbyva
+    except Exception as e:
+        log(f"   ⚠️ Výsledky z Fortuny selhaly: {type(e).__name__}: {e}")
+    if not cek:
+        return hotovo
     dny = set()
     for _, s in cek:
         for dd in (-1, 0):
@@ -149,7 +197,6 @@ def vyhodnot_radky(rows, ted, log=print):
         vse += vysledky.ziskej(d, log=log)
     fin = [x for x in vse if x.get("final")]
     sporty = {x["sport"] for x in fin}
-    hotovo = 0
     for r, s in cek:
         v = vysledky.najdi(fin, r["zapas"], sport=r["sport"] if r["sport"] in sporty else None)
         if not v:
@@ -185,7 +232,7 @@ def souhrn(rows=None):
         s["brier"] += (p - y) ** 2
         s["kurz_zisk"] += (float(r["kurz"]) - 1) if y else -1
     for r in rows:
-        if r["vysledek"] == "" and r["duvod"] == "trh nerozpoznán":
+        if r["vysledek"] == "" and r["duvod"] in ("trh nerozpoznán", "trh není ve výsledcích Fortuny", "možnost není ve výsledcích Fortuny"):
             k = r["trh"][:45]
             out["nerozpoznane"][k] = out["nerozpoznane"].get(k, 0) + 1
     return out
