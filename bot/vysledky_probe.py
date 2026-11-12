@@ -123,3 +123,43 @@ def probe(log=print):
                     log(f"   boxscore {hry[0]['id']}: HTTP {st3}, {len(bx)} znaků")
         except Exception as e:
             log(f"   {nazev}: zpracování selhalo: {type(e).__name__}: {e}")
+
+
+def fortuna_vysledky(log=print):
+    """Sonda výsledků Fortuny: stejné veřejné JSON API (api.ifortuna.cz), které používá jejich stránka Výsledky.
+    Uloží seznam turnajů dne a zápasy několika turnajů (adresa /offer/result/api/v1_0/tournament/<id>/matches?date=&overviewMarkets=true),
+    ať vidíme, kde je skóre a které trhy vyhrály. Poctivý User-Agent, pauzy, při 403/429 se končí."""
+    from . import fortuna
+    d = config.DATA / "probe_vysledky"
+    d.mkdir(parents=True, exist_ok=True)
+    den = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+    zaklad = "https://api.ifortuna.cz/offer/result/api/v1_0"
+    k = fortuna.Klient(pauza=0.6)
+
+    def stahni(nazev, url):
+        try:
+            data = k.get(url)
+        except fortuna.FortunaBlok as e:
+            log(f"⛔ {e}")
+            raise
+        except Exception as e:
+            log(f"⚠️ {nazev}: {type(e).__name__}: {e}")
+            (d / f"fortuna_vysl_{nazev}.txt").write_text(f"{url}\nCHYBA {type(e).__name__}: {e}", encoding="utf-8")
+            return None
+        text = json.dumps(data, ensure_ascii=False, indent=1)
+        (d / f"fortuna_vysl_{nazev}.txt").write_text(f"{url}\ndélka {len(text)}\n\n{text[:40000]}", encoding="utf-8")
+        log(f"✅ {nazev}: {len(text)} znaků")
+        return text
+
+    try:
+        seznam = None
+        for i, tvar in enumerate((f"{zaklad}/tournaments?date={den}", f"{zaklad}/tournaments?date={den}&categories=true", f"{zaklad}/sports?date={den}")):
+            t = stahni(f"turnaje_{i}", tvar)
+            if i == 0 or i == 1:
+                seznam = seznam or t
+        ids = ["ufo:tour:0w-01n"] + [x for x in dict.fromkeys(re.findall(r"ufo:tour:[A-Za-z0-9_-]+", seznam or "")) if x != "ufo:tour:0w-01n"][:5]
+        for i, tid in enumerate(ids):
+            stahni(f"zapasy_{i}", f"{zaklad}/tournament/{urllib.parse.quote(tid, safe=':')}/matches?date={den}&overviewMarkets=true")
+    except fortuna.FortunaBlok:
+        return
+    log(f"📊 Sonda výsledků Fortuny hotová, soubory fortuna_vysl_*.txt v data/probe_vysledky/ (poslat je).")

@@ -404,6 +404,17 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
             _log(f"🔎 Rozbor výběru z celé nabídky: {len(univ)} sázek, VETO {len(univ_veto)}.")
     except Exception as e:
         _log(f"⚠️ Rozbor výběru z celé nabídky selhal: {type(e).__name__}: {e}")
+    jist = []
+    try:                                                              # nejjistější příležitosti dne (libovolný kurz), s rozborem
+        from . import analyza as _an2, tikety as _tk
+        jist = _tk.jistoty(zap_fortuna, fort, cfg, ted) if zap_fortuna else []
+        if jist and (cfg.get("analyza") or {}).get("zapnuto", True):
+            jist, jist_veto = _an2.rozsir_univ(jist, cfg)
+            _log(f"🔒 Nejjistější dne: {len(jist)} sázek, VETO {len(jist_veto)}.")
+        else:
+            _log(f"🔒 Nejjistější dne: {len(jist)} sázek.")
+    except Exception as e:
+        _log(f"⚠️ Nejjistější dne selhalo: {type(e).__name__}: {e}")
     log_text = ""
     try:                                                              # fáze 1: log hran, výsledky, CLV, Brier modelu vs. trhu
         from . import fortuna_log, tenis
@@ -437,7 +448,7 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
 
     try:
         from . import vyhodnoceni
-        _log(f"🗂️ Sázky ze všech sportů: +{vyhodnoceni.zaloguj(datum, univ, tik)} nových do evidence.")
+        _log(f"🗂️ Sázky ze všech sportů: +{vyhodnoceni.zaloguj(datum, univ, tik, jist)} nových do evidence.")
     except Exception as e:
         _log(f"⚠️ Evidence sázek selhala: {type(e).__name__}: {e}")
 
@@ -446,17 +457,23 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         p["veto_kontext"] = p.pop("_kontext", "")
     rows = store.nacti()
     celkem = store.metriky(rows)
-    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort, univ, tik)
+    uceni = None
+    try:
+        from . import prehled
+        uceni = prehled.vypocti(datum)
+    except Exception as e:
+        _log(f"⚠️ Přehled učení selhal: {type(e).__name__}: {e}")
+    sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort, univ, tik, jist, uceni, log_text)
     cesta_picks.write_text(json.dumps(
-        {"datum": datum, "picks": picks, "vyrazene": vyrazene, "vcera": vcera, "doplnkove": dopl, "fortuna": fort},
+        {"datum": datum, "picks": picks, "vyrazene": vyrazene, "vcera": vcera, "doplnkove": dopl, "fortuna": fort, "univ": univ, "jistoty": jist},
         ensure_ascii=False, indent=2), encoding="utf-8")
 
-    text = report.wa_ranni(datum, picks, vcera, config.pages_reports_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ, tik=tik)
+    text = report.wa_ranni(datum, picks, vcera, config.pages_reports_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ, tik=tik, jist=jist)
     wa_fn(text)
     return {"picks": picks, "vyrazene": vyrazene, "celkem": celkem}
 
 
-def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None, fort=None, univ=None, tik=None):
+def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, kalib=None, fort=None, univ=None, tik=None, jist=None, uceni=None, model_text=""):
     config.DOCS.mkdir(parents=True, exist_ok=True)
     (config.DOCS / "reports").mkdir(exist_ok=True)
     (config.DOCS / ".nojekyll").touch()
@@ -465,7 +482,7 @@ def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, ka
     podle_sportu = store.metriky_podle(rows, "sport")
     (config.DOCS / "reports" / f"{datum}.html").write_text(
         report.sestav_report(datum, picks, vyrazene, vcera, {"vše": celkem, **podle_tieru}, nast["zona"],
-                             dopl=dopl, kalib=kalib, fort=fort, univ=univ, tik=tik),
+                             dopl=dopl, kalib=kalib, fort=fort, univ=univ, tik=tik, jist=jist, cfg=cfg, uceni=uceni, model_text=model_text),
         encoding="utf-8")
 
     doporuceni = {}
@@ -546,6 +563,9 @@ def main(argv):
     elif cmd == "vysledky_probe":
         from . import vysledky_probe
         vysledky_probe.probe(log=_log)
+    elif cmd == "fortuna_vysledky":
+        from . import vysledky_probe
+        vysledky_probe.fortuna_vysledky(log=_log)
     elif cmd == "fortuna_probe":
         from . import fortuna
         fortuna.probe()
