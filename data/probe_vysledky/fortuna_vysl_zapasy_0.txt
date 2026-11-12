@@ -1,0 +1,944 @@
+https://api.ifortuna.cz/offer/result/api/v1_0/tournament/ufo:tour:0w-01n/matches?date=2026-11-11&overviewMarkets=true
+délka 21072
+
+{
+ "tournament": {
+  "id": "ufo:tour:0w-01n",
+  "name": "AHL",
+  "sportId": "ufo:sprt:0w",
+  "categoryId": "ufo:ctgr:0w-08",
+  "order": 2147483647,
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 6
+ },
+ "fixtures": [
+  {
+   "id": "ufo:mtch:1xm-02f",
+   "name": "Charlotte - Providence",
+   "note": null,
+   "startDatetime": 1794355200000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00hs",
+     "name": "Charlotte",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hk",
+     "name": "Providence",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 4,
+    "awayScore": 2
+   }
+  },
+  {
+   "id": "ufo:mtch:1xl-015",
+   "name": "WB Scranton - Utica",
+   "note": null,
+   "startDatetime": 1794353700000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00hq",
+     "name": "WB Scranton",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hi",
+     "name": "Utica",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 0,
+    "awayScore": 4
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02g",
+   "name": "Texas - Manitoba",
+   "note": null,
+   "startDatetime": 1794358800000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00hv",
+     "name": "Texas",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hf",
+     "name": "Manitoba",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 2,
+    "awayScore": 3
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02v",
+   "name": "Abbotsford - Colorado Eagles",
+   "note": null,
+   "startDatetime": 1794362400000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00ok",
+     "name": "Abbotsford",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00bj",
+     "name": "Colorado Eagles",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 3,
+    "awayScore": 4
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02w",
+   "name": "Bakersfield - Calgary Wranglers",
+   "note": null,
+   "startDatetime": 1794364800000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00ht",
+     "name": "Bakersfield",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00pg",
+     "name": "Calgary Wranglers",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 2,
+    "awayScore": 4
+   }
+  },
+  {
+   "id": "ufo:mtch:1xm-02x",
+   "name": "Grand Rapids - Rockford",
+   "note": null,
+   "startDatetime": 1794412800000,
+   "sportId": "ufo:sprt:0w",
+   "categoryId": "ufo:ctgr:0w-08",
+   "tournamentId": "ufo:tour:0w-01n",
+   "participants": [
+    {
+     "id": "ufo:team:0w-00h8",
+     "name": "Grand Rapids",
+     "type": "HOME",
+     "icon": "default_icehockey_home.png"
+    },
+    {
+     "id": "ufo:team:0w-00hm",
+     "name": "Rockford",
+     "type": "AWAY",
+     "icon": "default_icehockey_away.png"
+    }
+   ],
+   "order": 2147483647,
+   "score": {
+    "homeScore": 6,
+    "awayScore": 3
+   }
+  }
+ ],
+ "markets": [
+  {
+   "id": "ufo:mkt:1xm-02f-004",
+   "fixtureId": "ufo:mtch:1xm-02f",
+   "name": "Výsledek zápasu",
+   "marketTypeId": "ufo:mtyp:0w-00",
+   "marketTypeName": "Výsledek zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 100000,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02f-004-00",
+     "marketId": "ufo:mkt:1xm-02f-004",
+     "name": "1",
+     "longName": "Charlotte",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.27,
+     "result": "WINNING"
+    },
+    {
+     "id": "ufo:opt:1xm-02f-004-01",
+     "marketId": "ufo:mkt:1xm-02f-004",
+     "name": "2",
+     "longName": "Providence",
+     "order": {
+      "rowOrder": 3,
+      "columnOrder": 0
+     },
+     "odds": 2.49,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02f-004-02",
+     "marketId": "ufo:mkt:1xm-02f-004",
+     "name": "0",
+     "longName": "Remíza",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 4.0,
+     "result": "LOSING"
+    }
+   ],
+   "syntheticGroupKey": "vysledek_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02f-01a",
+   "fixtureId": "ufo:mtch:1xm-02f",
+   "name": "Počet gólů v zápasu 8.5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105034,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02f-01a-01",
+     "marketId": "ufo:mkt:1xm-02f-01a",
+     "name": "Více než 8.5",
+     "longName": "Více než 8.5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 5.2,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02f-01a-00",
+     "marketId": "ufo:mkt:1xm-02f-01a",
+     "name": "Méně než 8.5",
+     "longName": "Méně než 8.5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.11,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02f-00i",
+   "fixtureId": "ufo:mtch:1xm-02f",
+   "name": "Počet gólů v zápasu 3.5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105014,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02f-00i-00",
+     "marketId": "ufo:mkt:1xm-02f-00i",
+     "name": "Méně než 3.5",
+     "longName": "Méně než 3.5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 5.0,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02f-00i-01",
+     "marketId": "ufo:mkt:1xm-02f-00i",
+     "name": "Více než 3.5",
+     "longName": "Více než 3.5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 1.12,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xl-015-00v",
+   "fixtureId": "ufo:mtch:1xl-015",
+   "name": "Výsledek zápasu",
+   "marketTypeId": "ufo:mtyp:0w-00",
+   "marketTypeName": "Výsledek zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 100000,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xl-015-00v-00",
+     "marketId": "ufo:mkt:1xl-015-00v",
+     "name": "2",
+     "longName": "Utica",
+     "order": {
+      "rowOrder": 3,
+      "columnOrder": 0
+     },
+     "odds": 2.55,
+     "result": "WINNING"
+    },
+    {
+     "id": "ufo:opt:1xl-015-00v-01",
+     "marketId": "ufo:mkt:1xl-015-00v",
+     "name": "1",
+     "longName": "WB Scranton",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.19,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xl-015-00v-02",
+     "marketId": "ufo:mkt:1xl-015-00v",
+     "name": "0",
+     "longName": "Remíza",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 4.1,
+     "result": "LOSING"
+    }
+   ],
+   "syntheticGroupKey": "vysledek_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xl-015-008",
+   "fixtureId": "ufo:mtch:1xl-015",
+   "name": "Počet gólů v zápasu 6",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105024,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xl-015-008-01",
+     "marketId": "ufo:mkt:1xl-015-008",
+     "name": "Více než 6",
+     "longName": "Více než 6",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 2.29,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xl-015-008-00",
+     "marketId": "ufo:mkt:1xl-015-008",
+     "name": "Méně než 6",
+     "longName": "Méně než 6",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.53,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xl-015-00c",
+   "fixtureId": "ufo:mtch:1xl-015",
+   "name": "Počet gólů v zápasu 6.5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105026,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xl-015-00c-01",
+     "marketId": "ufo:mkt:1xl-015-00c",
+     "name": "Více než 6.5",
+     "longName": "Více než 6.5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 2.7,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xl-015-00c-00",
+     "marketId": "ufo:mkt:1xl-015-00c",
+     "name": "Méně než 6.5",
+     "longName": "Méně než 6.5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.39,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02g-000",
+   "fixtureId": "ufo:mtch:1xm-02g",
+   "name": "Výsledek zápasu",
+   "marketTypeId": "ufo:mtyp:0w-00",
+   "marketTypeName": "Výsledek zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 100000,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02g-000-00",
+     "marketId": "ufo:mkt:1xm-02g-000",
+     "name": "0",
+     "longName": "Remíza",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 4.2,
+     "result": "WINNING"
+    },
+    {
+     "id": "ufo:opt:1xm-02g-000-02",
+     "marketId": "ufo:mkt:1xm-02g-000",
+     "name": "2",
+     "longName": "Manitoba",
+     "order": {
+      "rowOrder": 3,
+      "columnOrder": 0
+     },
+     "odds": 2.16,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02g-000-01",
+     "marketId": "ufo:mkt:1xm-02g-000",
+     "name": "1",
+     "longName": "Texas",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.6,
+     "result": "LOSING"
+    }
+   ],
+   "syntheticGroupKey": "vysledek_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02g-012",
+   "fixtureId": "ufo:mtch:1xm-02g",
+   "name": "Počet gólů v zápasu 4.5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105018,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02g-012-01",
+     "marketId": "ufo:mkt:1xm-02g-012",
+     "name": "Méně než 4.5",
+     "longName": "Méně než 4.5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.95,
+     "result": "WINNING"
+    },
+    {
+     "id": "ufo:opt:1xm-02g-012-00",
+     "marketId": "ufo:mkt:1xm-02g-012",
+     "name": "Více než 4.5",
+     "longName": "Více než 4.5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 1.34,
+     "result": "LOSING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02g-00r",
+   "fixtureId": "ufo:mtch:1xm-02g",
+   "name": "Počet gólů v zápasu 6",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105024,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02g-00r-01",
+     "marketId": "ufo:mkt:1xm-02g-00r",
+     "name": "Více než 6",
+     "longName": "Více než 6",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 2.0,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02g-00r-00",
+     "marketId": "ufo:mkt:1xm-02g-00r",
+     "name": "Méně než 6",
+     "longName": "Méně než 6",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.69,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02v-011",
+   "fixtureId": "ufo:mtch:1xm-02v",
+   "name": "Výsledek zápasu",
+   "marketTypeId": "ufo:mtyp:0w-00",
+   "marketTypeName": "Výsledek zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 100000,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02v-011-01",
+     "marketId": "ufo:mkt:1xm-02v-011",
+     "name": "2",
+     "longName": "Colorado Eagles",
+     "order": {
+      "rowOrder": 3,
+      "columnOrder": 0
+     },
+     "odds": 2.5,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02v-011-02",
+     "marketId": "ufo:mkt:1xm-02v-011",
+     "name": "1",
+     "longName": "Abbotsford",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.23,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02v-011-00",
+     "marketId": "ufo:mkt:1xm-02v-011",
+     "name": "0",
+     "longName": "Remíza",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 4.1,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "vysledek_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02v-01z",
+   "fixtureId": "ufo:mtch:1xm-02v",
+   "name": "Počet gólů v zápasu 7",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105028,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02v-01z-00",
+     "marketId": "ufo:mkt:1xm-02v-01z",
+     "name": "Více než 7",
+     "longName": "Více než 7",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 3.45,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02v-01z-01",
+     "marketId": "ufo:mkt:1xm-02v-01z",
+     "name": "Méně než 7",
+     "longName": "Méně než 7",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.23,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02v-00t",
+   "fixtureId": "ufo:mtch:1xm-02v",
+   "name": "Počet gólů v zápasu 4.5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105018,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02v-00t-01",
+     "marketId": "ufo:mkt:1xm-02v-00t",
+     "name": "Méně než 4.5",
+     "longName": "Méně než 4.5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.47,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02v-00t-00",
+     "marketId": "ufo:mkt:1xm-02v-00t",
+     "name": "Více než 4.5",
+     "longName": "Více než 4.5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 1.46,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02w-007",
+   "fixtureId": "ufo:mtch:1xm-02w",
+   "name": "Výsledek zápasu",
+   "marketTypeId": "ufo:mtyp:0w-00",
+   "marketTypeName": "Výsledek zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 100000,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02w-007-01",
+     "marketId": "ufo:mkt:1xm-02w-007",
+     "name": "1",
+     "longName": "Bakersfield",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.33,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02w-007-02",
+     "marketId": "ufo:mkt:1xm-02w-007",
+     "name": "0",
+     "longName": "Remíza",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 4.1,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02w-007-00",
+     "marketId": "ufo:mkt:1xm-02w-007",
+     "name": "2",
+     "longName": "Calgary Wranglers",
+     "order": {
+      "rowOrder": 3,
+      "columnOrder": 0
+     },
+     "odds": 2.39,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "vysledek_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02w-00a",
+   "fixtureId": "ufo:mtch:1xm-02w",
+   "name": "Počet gólů v zápasu 6",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105024,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02w-00a-01",
+     "marketId": "ufo:mkt:1xm-02w-00a",
+     "name": "Méně než 6",
+     "longName": "Méně než 6",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.58,
+     "result": "VOIDED"
+    },
+    {
+     "id": "ufo:opt:1xm-02w-00a-00",
+     "marketId": "ufo:mkt:1xm-02w-00a",
+     "name": "Více než 6",
+     "longName": "Více než 6",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 2.19,
+     "result": "VOIDED"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02w-017",
+   "fixtureId": "ufo:mtch:1xm-02w",
+   "name": "Počet gólů v zápasu 3.5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105014,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02w-017-00",
+     "marketId": "ufo:mkt:1xm-02w-017",
+     "name": "Méně než 3.5",
+     "longName": "Méně než 3.5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 4.6,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02w-017-01",
+     "marketId": "ufo:mkt:1xm-02w-017",
+     "name": "Více než 3.5",
+     "longName": "Více než 3.5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 1.15,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02x-006",
+   "fixtureId": "ufo:mtch:1xm-02x",
+   "name": "Výsledek zápasu",
+   "marketTypeId": "ufo:mtyp:0w-00",
+   "marketTypeName": "Výsledek zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 100000,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02x-006-02",
+     "marketId": "ufo:mkt:1xm-02x-006",
+     "name": "0",
+     "longName": "Remíza",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 4.5,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02x-006-01",
+     "marketId": "ufo:mkt:1xm-02x-006",
+     "name": "1",
+     "longName": "Grand Rapids",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.75,
+     "result": "WINNING"
+    },
+    {
+     "id": "ufo:opt:1xm-02x-006-00",
+     "marketId": "ufo:mkt:1xm-02x-006",
+     "name": "2",
+     "longName": "Rockford",
+     "order": {
+      "rowOrder": 3,
+      "columnOrder": 0
+     },
+     "odds": 3.35,
+     "result": "LOSING"
+    }
+   ],
+   "syntheticGroupKey": "vysledek_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02x-010",
+   "fixtureId": "ufo:mtch:1xm-02x",
+   "name": "Počet gólů v zápasu 6.5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105026,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02x-010-01",
+     "marketId": "ufo:mkt:1xm-02x-010",
+     "name": "Méně než 6.5",
+     "longName": "Méně než 6.5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 1.49,
+     "result": "LOSING"
+    },
+    {
+     "id": "ufo:opt:1xm-02x-010-00",
+     "marketId": "ufo:mkt:1xm-02x-010",
+     "name": "Více než 6.5",
+     "longName": "Více než 6.5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 2.38,
+     "result": "WINNING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  },
+  {
+   "id": "ufo:mkt:1xm-02x-012",
+   "fixtureId": "ufo:mtch:1xm-02x",
+   "name": "Počet gólů v zápasu 5",
+   "marketTypeId": "ufo:mtyp:0w-05",
+   "marketTypeName": "Počet gólů v zápasu",
+   "marketTypeDescription": "",
+   "variant": "STANDARD",
+   "order": 1105020,
+   "overview": true,
+   "outcomes": [
+    {
+     "id": "ufo:opt:1xm-02x-012-00",
+     "marketId": "ufo:mkt:1xm-02x-012",
+     "name": "Více než 5",
+     "longName": "Více než 5",
+     "order": {
+      "rowOrder": 2,
+      "columnOrder": 0
+     },
+     "odds": 1.44,
+     "result": "WINNING"
+    },
+    {
+     "id": "ufo:opt:1xm-02x-012-01",
+     "marketId": "ufo:mkt:1xm-02x-012",
+     "name": "Méně než 5",
+     "longName": "Méně než 5",
+     "order": {
+      "rowOrder": 1,
+      "columnOrder": 0
+     },
+     "odds": 2.5,
+     "result": "LOSING"
+    }
+   ],
+   "syntheticGroupKey": "pocet_golu_v_zapasu"
+  }
+ ]
+}

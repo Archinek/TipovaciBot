@@ -1,0 +1,245 @@
+https://api.ifortuna.cz/offer/result/api/v1_0/sports?date=2026-11-11
+délka 3682
+
+[
+ {
+  "id": "ufo:sprt:0c",
+  "name": "eFotbal",
+  "order": 48,
+  "icon": "ufo-sprt-0c.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 1152
+ },
+ {
+  "id": "ufo:sprt:0j",
+  "name": "Stolní tenis",
+  "order": 114,
+  "icon": "ufo-sprt-0j.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 968
+ },
+ {
+  "id": "ufo:sprt:0e",
+  "name": "eBasketbal",
+  "order": 49,
+  "icon": "ufo-sprt-0e.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 180
+ },
+ {
+  "id": "ufo:sprt:0x",
+  "name": "Tenis",
+  "order": 5,
+  "icon": "ufo-sprt-0x.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 550
+ },
+ {
+  "id": "ufo:sprt:0i",
+  "name": "Basketbal",
+  "order": 7,
+  "icon": "ufo-sprt-0i.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 236
+ },
+ {
+  "id": "ufo:sprt:0p",
+  "name": "Futsal",
+  "order": 46,
+  "icon": "ufo-sprt-0p.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 7
+ },
+ {
+  "id": "ufo:sprt:0q",
+  "name": "Baseball",
+  "order": 33,
+  "icon": "ufo-sprt-0q.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 12
+ },
+ {
+  "id": "ufo:sprt:0w",
+  "name": "Hokej",
+  "order": 4,
+  "icon": "ufo-sprt-0w.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 101
+ },
+ {
+  "id": "ufo:sprt:35",
+  "name": "eHokej",
+  "order": 50,
+  "icon": "1772102536489-1.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 72
+ },
+ {
+  "id": "ufo:sprt:00",
+  "name": "Fotbal",
+  "order": 3,
+  "icon": "ufo-sprt-00.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 129
+ },
+ {
+  "id": "ufo:sprt:0r",
+  "name": "Badminton",
+  "order": 22,
+  "icon": "ufo-sprt-0r.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 178
+ },
+ {
+  "id": "ufo:sprt:0m",
+  "name": "Volejbal",
+  "order": 9,
+  "icon": "ufo-sprt-0m.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 77
+ },
+ {
+  "id": "ufo:sprt:0g",
+  "name": "Americký fotbal",
+  "order": 27,
+  "icon": "ufo-sprt-0g.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 3
+ },
+ {
+  "id": "ufo:sprt:02",
+  "name": "Esport Counter Strike",
+  "order": 50,
+  "icon": "ufo-sprt-02.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 25
+ },
+ {
+  "id": "ufo:sprt:04",
+  "name": "Esport DOTA2",
+  "order": 52,
+  "icon": "ufo-sprt-04.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 21
+ },
+ {
+  "id": "ufo:sprt:0l",
+  "name": "Šipky",
+  "order": 118,
+  "icon": "ufo-sprt-0l.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 29
+ },
+ {
+  "id": "ufo:sprt:0d",
+  "name": "Bandy",
+  "order": 2147483647,
+  "icon": "ufo-sprt-0d.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 11
+ },
+ {
+  "id": "ufo:sprt:0k",
+  "name": "Kriket",
+  "order": 2147483647,
+  "icon": "ufo-sprt-0k.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 1
+ },
+ {
+  "id": "ufo:sprt:0y",
+  "name": "Házená",
+  "order": 8,
+  "icon": "ufo-sprt-0y.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 65
+ },
+ {
+  "id": "ufo:sprt:0h",
+  "name": "Snooker",
+  "order": 106,
+  "icon": "ufo-sprt-0h.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 3
+ },
+ {
+  "id": "ufo:sprt:0v",
+  "name": "Squash",
+  "order": 112,
+  "icon": "ufo-sprt-0v.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 6
+ },
+ {
+  "id": "ufo:sprt:11",
+  "name": "Florbal",
+  "order": 46,
+  "icon": "ufo-sprt-11.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 6
+ },
+ {
+  "id": "ufo:sprt:0o",
+  "name": "Vodní pólo",
+  "order": 125,
+  "icon": "ufo-sprt-0o.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 5
+ },
+ {
+  "id": "ufo:sprt:19",
+  "name": "Bojové sporty",
+  "order": 11,
+  "icon": "ufo-sprt-19.png",
+  "features": [
+   "MATCHES"
+  ],
+  "fixturesCount": 7
+ }
+]
