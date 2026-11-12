@@ -4,5 +4,1059 @@
   "vyrazene": [],
   "vcera": "",
   "doplnkove": [],
-  "fortuna": []
+  "fortuna": [],
+  "univ": [
+    {
+      "sport": "fotbal",
+      "zapas": "Turecko - Belgie",
+      "start": "2026-11-12T17:00:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Počet gólů v zápasu 4.5",
+      "vyber": "Méně než 4.5",
+      "kurz": 1.3,
+      "p": 0.7545,
+      "marze": 0.0395,
+      "sazej_od": 1.36,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 4.5 (Počet gólů v zápasu 4.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 5
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Černá Hora - Lotyšsko",
+      "start": "2026-11-12T19:45:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Výsledek zápasu",
+      "vyber": "Černá Hora",
+      "kurz": 1.3,
+      "p": 0.7538,
+      "marze": 0.0544,
+      "sazej_od": 1.36,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Černá Hora (Výsledek zápasu) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 5
+    },
+    {
+      "sport": "hokej",
+      "zapas": "Chicago Blackhawks - Buffalo Sabres",
+      "start": "2026-11-13T01:07:00+00:00",
+      "liga": "NHL",
+      "trh": "Počet gólů v zápasu 4.5",
+      "vyber": "Více než 4.5",
+      "kurz": 1.3,
+      "p": 0.7503,
+      "marze": 0.0509,
+      "sazej_od": 1.36,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Více než 4.5 (Počet gólů v zápasu 4.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 5
+    },
+    {
+      "sport": "hokej",
+      "zapas": "Utah Mammoth - St. Louis Blues",
+      "start": "2026-11-13T02:07:00+00:00",
+      "liga": "NHL",
+      "trh": "Počet gólů do rozhodnutí 7.5",
+      "vyber": "Méně než 7.5",
+      "kurz": 1.3,
+      "p": 0.7503,
+      "marze": 0.0509,
+      "sazej_od": 1.36,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 7.5 (Počet gólů do rozhodnutí 7.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 5
+    },
+    {
+      "sport": "basketbal",
+      "zapas": "Olympiakos Piraeus - Dubai",
+      "start": "2026-11-12T19:15:00+00:00",
+      "liga": "Euroliga - muži",
+      "trh": "Handicap (včetně prodloužení) -11.5",
+      "vyber": "Dubai (+11.5)",
+      "kurz": 1.3,
+      "p": 0.7503,
+      "marze": 0.0509,
+      "sazej_od": 1.36,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Dubai (+11.5) (Handicap (včetně prodloužení) -11.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 5
+    },
+    {
+      "sport": "basketbal",
+      "zapas": "Valencia - Bayern Munchen",
+      "start": "2026-11-12T19:30:00+00:00",
+      "liga": "Euroliga - muži",
+      "trh": "Handicap (včetně prodloužení) -2.5",
+      "vyber": "Valencia (-2.5)",
+      "kurz": 1.31,
+      "p": 0.7449,
+      "marze": 0.0491,
+      "sazej_od": 1.37,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Valencia (-2.5) (Handicap (včetně prodloužení) -2.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.31."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 5
+    },
+    {
+      "sport": "sipky",
+      "zapas": "Schmidt J. - Nussbaum L.",
+      "start": "2026-11-12T21:30:00+00:00",
+      "liga": "German Super League",
+      "trh": "Vítěz zápasu",
+      "vyber": "Schmidt J.",
+      "kurz": 1.3,
+      "p": 0.7423,
+      "marze": 0.0723,
+      "sazej_od": 1.38,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Schmidt J. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "tenis",
+      "zapas": "Uchida K. - Harris B.",
+      "start": "2026-11-13T03:10:00+00:00",
+      "liga": "M - ATP Chall. Matsuyama, dvouhra",
+      "trh": "Počet gamů v 1.setu 10.5",
+      "vyber": "- 10.5",
+      "kurz": 1.3,
+      "p": 0.7406,
+      "marze": 0.0769,
+      "sazej_od": 1.38,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr - 10.5 (Počet gamů v 1.setu 10.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "tenis",
+      "zapas": "Andreescu B.V. - Bassols Ribera M.",
+      "start": "2026-11-12T16:10:00+00:00",
+      "liga": "Ž - WTA Sopo, dvouhra",
+      "trh": "Andreescu B.V. vyhraje svůj první servis game",
+      "vyber": "Ano",
+      "kurz": 1.3,
+      "p": 0.7406,
+      "marze": 0.0769,
+      "sazej_od": 1.38,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Ano (Andreescu B.V. vyhraje svůj první servis game) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "americky-fotbal",
+      "zapas": "NY Giants - Washington",
+      "start": "2026-11-13T01:15:00+00:00",
+      "liga": "NFL",
+      "trh": "NY Giants počet touchdownů včetně prodloužení 1.5",
+      "vyber": "Více než 1.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Více než 1.5 (NY Giants počet touchdownů včetně prodloužení 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "vodni-polo",
+      "zapas": "VK Budva - Honvéd",
+      "start": "2026-11-12T17:00:00+00:00",
+      "liga": "Euro Cup - muži",
+      "trh": "Mršić Marko: Počet gólů hráče 1.5",
+      "vyber": "+ 1.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr + 1.5 (Mršić Marko: Počet gólů hráče 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "vodni-polo",
+      "zapas": "Pays D Aix Natation - Jug Dubrovnik",
+      "start": "2026-11-12T19:00:00+00:00",
+      "liga": "Euro Cup - muži",
+      "trh": "Burian Gergely: Počet gólů hráče 1.5",
+      "vyber": "+ 1.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr + 1.5 (Burian Gergely: Počet gólů hráče 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "bojove-sporty",
+      "zapas": "Alves, Natalia - Vinuto, Raiane",
+      "start": "2026-11-13T22:00:00+00:00",
+      "liga": "LFA",
+      "trh": "Vítěz zápasu",
+      "vyber": "Alves, Natalia",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Alves, Natalia (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "snooker",
+      "zapas": "Wilson K. - Carter A.",
+      "start": "2026-11-12T14:00:00+00:00",
+      "liga": "Champion of Champions",
+      "trh": "Počet framů v zápasu 6.5",
+      "vyber": "Méně než 6.5",
+      "kurz": 1.3,
+      "p": 0.7369,
+      "marze": 0.0867,
+      "sazej_od": 1.39,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 6.5 (Počet framů v zápasu 6.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "sipky",
+      "zapas": "Whitehead C. - Duff N.",
+      "start": "2026-11-12T16:40:00+00:00",
+      "liga": "Modus Super Series",
+      "trh": "Počet 180 v zápasu 1.5",
+      "vyber": "Méně než 1.5",
+      "kurz": 1.3,
+      "p": 0.735,
+      "marze": 0.0918,
+      "sazej_od": 1.39,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 1.5 (Počet 180 v zápasu 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "hazena",
+      "zapas": "Tremblay - Caen",
+      "start": "2026-11-13T19:30:00+00:00",
+      "liga": "1. Francie - muži",
+      "trh": "Výsledek 1. poločasu bez remízy",
+      "vyber": "Tremblay",
+      "kurz": 1.3,
+      "p": 0.735,
+      "marze": 0.0918,
+      "sazej_od": 1.39,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Tremblay (Výsledek 1. poločasu bez remízy) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "stolni-tenis",
+      "zapas": "Szocs B.C. - Samara E.",
+      "start": "2026-11-12T15:10:00+00:00",
+      "liga": "Ž - WTT Contender Istanbul, dvouhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Szocs B.C.",
+      "kurz": 1.3,
+      "p": 0.733,
+      "marze": 0.0971,
+      "sazej_od": 1.4,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Szocs B.C. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 73 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "rugby",
+      "zapas": "Francie - JAR",
+      "start": "2026-11-13T20:10:00+00:00",
+      "liga": "RU - Nations Championship",
+      "trh": "Počet bodů v 1. poločasu 33.5",
+      "vyber": "Méně než 33.5",
+      "kurz": 1.3,
+      "p": 0.733,
+      "marze": 0.0971,
+      "sazej_od": 1.4,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 33.5 (Počet bodů v 1. poločasu 33.5) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 73 % při kurzu 1.3."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "badminton",
+      "zapas": "Haase N. - Nguyen Josh",
+      "start": "2026-11-12T12:55:00+00:00",
+      "liga": "M - Irish Open, dvouhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Nguyen Josh",
+      "kurz": 1.31,
+      "p": 0.731,
+      "marze": 0.0859,
+      "sazej_od": 1.4,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Nguyen Josh (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 73 % při kurzu 1.31."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "volejbal",
+      "zapas": "Club Son de Rosario - Monteros",
+      "start": "2026-11-12T18:00:00+00:00",
+      "liga": "1. Argentina - muži",
+      "trh": "Handicap setů v zápasu 2.5",
+      "vyber": "Club Son de Rosario +2.5",
+      "kurz": 1.31,
+      "p": 0.731,
+      "marze": 0.0859,
+      "sazej_od": 1.4,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Club Son de Rosario +2.5 (Handicap setů v zápasu 2.5) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 73 % při kurzu 1.31."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "hazena",
+      "zapas": "Melsungen - Bergischer",
+      "start": "2026-11-12T18:00:00+00:00",
+      "liga": "Německo - pohár - muži",
+      "trh": "Výsledek 2. poločasu",
+      "vyber": "Melsungen",
+      "kurz": 1.32,
+      "p": 0.73,
+      "marze": 0.0957,
+      "sazej_od": 1.4,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Melsungen (Výsledek 2. poločasu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 73 % při kurzu 1.32."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "volejbal",
+      "zapas": "Sesc RJ Flamengo - Fluminense",
+      "start": "2026-11-13T00:00:00+00:00",
+      "liga": "1. Brazílie - ženy",
+      "trh": "Vítěz 1. setu",
+      "vyber": "Sesc RJ Flamengo",
+      "kurz": 1.31,
+      "p": 0.729,
+      "marze": 0.0912,
+      "sazej_od": 1.4,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Sesc RJ Flamengo (Vítěz 1. setu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 73 % při kurzu 1.31."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "stolni-tenis",
+      "zapas": "Grebnev M. - Yigenler A.",
+      "start": "2026-11-12T15:35:00+00:00",
+      "liga": "M - WTT Contender Istanbul, dvouhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Grebnev M.",
+      "kurz": 1.32,
+      "p": 0.7208,
+      "marze": 0.0966,
+      "sazej_od": 1.42,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Grebnev M. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 72 % při kurzu 1.32."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "box-1",
+      "zapas": "Orobio, Jhon - Cedeno, Hendri",
+      "start": "2026-11-13T02:30:00+00:00",
+      "liga": "Zápasy",
+      "trh": "Zápas skončí na body nebo technickým rozhodnutím",
+      "vyber": "Ne",
+      "kurz": 1.34,
+      "p": 0.7155,
+      "marze": 0.0796,
+      "sazej_od": 1.43,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Ne (Zápas skončí na body nebo technickým rozhodnutím) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 72 % při kurzu 1.34."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "box-1",
+      "zapas": "Tsendbaatar, Erdenebat - Yaqubov, Muhammadkhuja",
+      "start": "2026-11-14T00:30:00+00:00",
+      "liga": "Zápasy",
+      "trh": "Zápas",
+      "vyber": "Tsendbaatar, Erdenebat",
+      "kurz": 1.34,
+      "p": 0.7155,
+      "marze": 0.0796,
+      "sazej_od": 1.43,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Tsendbaatar, Erdenebat (Zápas) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 72 % při kurzu 1.34."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "esport-counter-strike",
+      "zapas": "Team Vitality - MOUZ",
+      "start": "2026-11-13T08:00:00+00:00",
+      "liga": "BLAST Premier",
+      "trh": "Handicap map v zápasu",
+      "vyber": "MOUZ +1.5",
+      "kurz": 1.34,
+      "p": 0.7155,
+      "marze": 0.0796,
+      "sazej_od": 1.43,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr MOUZ +1.5 (Handicap map v zápasu) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 72 % při kurzu 1.34."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "badminton",
+      "zapas": "Popov T.J. - Vitidsarn K.",
+      "start": "2026-11-13T01:20:00+00:00",
+      "liga": "M - Kumamoto Masters Japan, dvouhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Vitidsarn K.",
+      "kurz": 1.35,
+      "p": 0.7073,
+      "marze": 0.0856,
+      "sazej_od": 1.45,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Vitidsarn K. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 71 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 71 % při kurzu 1.35."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "esport-counter-strike",
+      "zapas": "Lph Gaming - Maybe",
+      "start": "2026-11-12T14:00:00+00:00",
+      "liga": "ESL Challenger League EU",
+      "trh": "Handicap map v zápasu",
+      "vyber": "Lph Gaming +1.5",
+      "kurz": 1.35,
+      "p": 0.7049,
+      "marze": 0.0916,
+      "sazej_od": 1.45,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Lph Gaming +1.5 (Handicap map v zápasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 70 % při kurzu 1.35."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "bandy",
+      "zapas": "Roea - NTNUI",
+      "start": "2026-11-13T18:00:00+00:00",
+      "liga": "1. Norsko",
+      "trh": "Výsledek zápasu",
+      "vyber": "Roea",
+      "kurz": 1.37,
+      "p": 0.7018,
+      "marze": 0.0962,
+      "sazej_od": 1.46,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Roea (Výsledek zápasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 70 % při kurzu 1.37."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "americky-fotbal",
+      "zapas": "Louisiana-Monroe Warhawks - Louisiana Lafayette Ragin Cajuns",
+      "start": "2026-11-13T02:00:00+00:00",
+      "liga": "NCAA",
+      "trh": "Výsledek 1. poločasu",
+      "vyber": "Louisiana Lafayette Ragin Cajuns",
+      "kurz": 1.38,
+      "p": 0.7004,
+      "marze": 0.0782,
+      "sazej_od": 1.46,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Louisiana Lafayette Ragin Cajuns (Výsledek 1. poločasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 70 % při kurzu 1.38."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "bojove-sporty",
+      "zapas": "Montouro, Rafael - Santos, Lincon",
+      "start": "2026-11-13T22:00:00+00:00",
+      "liga": "LFA",
+      "trh": "Vítěz zápasu",
+      "vyber": "Santos, Lincon",
+      "kurz": 1.37,
+      "p": 0.6978,
+      "marze": 0.0808,
+      "sazej_od": 1.47,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Santos, Lincon (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 70 % při kurzu 1.37."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "snooker",
+      "zapas": "Wakelin C. - Robertson N.",
+      "start": "2026-11-13T19:00:00+00:00",
+      "liga": "Champion of Champions",
+      "trh": "Počet framů v zápasu 8.5",
+      "vyber": "Více než 8.5",
+      "kurz": 1.37,
+      "p": 0.6953,
+      "marze": 0.0871,
+      "sazej_od": 1.47,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Více než 8.5 (Počet framů v zápasu 8.5) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 70 % při kurzu 1.37."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 4
+    },
+    {
+      "sport": "bandy",
+      "zapas": "Villa Lidkoping - Västeras",
+      "start": "2026-11-13T18:00:00+00:00",
+      "liga": "1. Švédsko",
+      "trh": "Výsledek zápasu",
+      "vyber": "Villa Lidkoping",
+      "kurz": 1.43,
+      "p": 0.6695,
+      "marze": 0.0995,
+      "sazej_od": 1.53,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Villa Lidkoping (Výsledek zápasu) má podle férové pravděpodobnosti trhu (bez marže) 67 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 67 % při kurzu 1.43."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 3
+    },
+    {
+      "sport": "squash",
+      "zapas": "Hawal A. - Chotrani V.",
+      "start": "2026-11-12T18:30:00+00:00",
+      "liga": "M - Pittsburgh Open, dvouhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Chotrani V.",
+      "kurz": 1.6,
+      "p": 0.5796,
+      "marze": 0.0989,
+      "sazej_od": 1.76,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Chotrani V. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 58 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 58 % při kurzu 1.6."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 2
+    },
+    {
+      "sport": "kriket",
+      "zapas": "Nový Zéland - Indie",
+      "start": "2026-11-13T02:00:00+00:00",
+      "liga": "Přátelská utkání - One Day",
+      "trh": "Vítěz zápasu do rozhodnutí",
+      "vyber": "Indie",
+      "kurz": 1.67,
+      "p": 0.5569,
+      "marze": 0.089,
+      "sazej_od": 1.84,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Indie (Vítěz zápasu do rozhodnutí) má podle férové pravděpodobnosti trhu (bez marže) 56 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 56 % při kurzu 1.67."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 2
+    },
+    {
+      "sport": "futsal",
+      "zapas": "Plzeň - Chrudim",
+      "start": "2026-11-13T18:00:00+00:00",
+      "liga": "1.Česko",
+      "trh": "1.poločas: počet gólů",
+      "vyber": "Méně než 2.5",
+      "kurz": 1.67,
+      "p": 0.552,
+      "marze": 0.0988,
+      "sazej_od": 1.85,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 2.5 (1.poločas: počet gólů) má podle férové pravděpodobnosti trhu (bez marže) 55 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 55 % při kurzu 1.67."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 1
+    }
+  ],
+  "jistoty": [
+    {
+      "sport": "hokej",
+      "zapas": "Dallas Stars - Winnipeg Jets",
+      "start": "2026-11-13T01:07:00+00:00",
+      "liga": "NHL",
+      "trh": "Počet gólů v zápasu 9.5",
+      "vyber": "Méně než 9.5",
+      "kurz": 1.05,
+      "p": 0.9432825093841798,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 9.5 (Počet gólů v zápasu 9.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 6
+    },
+    {
+      "sport": "hokej",
+      "zapas": "Utah Mammoth - St. Louis Blues",
+      "start": "2026-11-13T02:07:00+00:00",
+      "liga": "NHL",
+      "trh": "Počet gólů v zápasu 2.5",
+      "vyber": "Více než 2.5",
+      "kurz": 1.05,
+      "p": 0.9432825093841798,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Více než 2.5 (Počet gólů v zápasu 2.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 6
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Anglie - Chorvatsko",
+      "start": "2026-11-12T19:45:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Počet gólů v zápasu 6",
+      "vyber": "Méně než 6",
+      "kurz": 1.05,
+      "p": 0.9432825093841798,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 6 (Počet gólů v zápasu 6) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 6
+    },
+    {
+      "sport": "hokej",
+      "zapas": "Florida Panthers - Detroit Red Wings",
+      "start": "2026-11-13T00:37:00+00:00",
+      "liga": "NHL",
+      "trh": "Počet gólů v zápasu 2.5",
+      "vyber": "Více než 2.5",
+      "kurz": 1.05,
+      "p": 0.9415914399164564,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Více než 2.5 (Počet gólů v zápasu 2.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 6
+    },
+    {
+      "sport": "hokej",
+      "zapas": "Los Angeles Kings - NY Islanders",
+      "start": "2026-11-13T03:07:00+00:00",
+      "liga": "NHL",
+      "trh": "Počet gólů v zápasu 9.5",
+      "vyber": "Méně než 9.5",
+      "kurz": 1.05,
+      "p": 0.9415914399164564,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Méně než 9.5 (Počet gólů v zápasu 9.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 6
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Černá Hora - Lotyšsko",
+      "start": "2026-11-12T19:45:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Počet gólů v zápasu 1",
+      "vyber": "Více než 1",
+      "kurz": 1.05,
+      "p": 0.9415914399164564,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "verdikt": "NEOVERENO",
+        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
+        "text": "Výběr Více než 1 (Počet gólů v zápasu 1) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "pro": [
+          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+        ],
+        "proti": [
+          "Fakta o zápase nebyla ověřena."
+        ],
+        "riziko": "Nezjištěná sestava a zranění."
+      },
+      "duvera": 6
+    }
+  ]
 }
