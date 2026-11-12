@@ -448,7 +448,7 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
 
     try:
         from . import vyhodnoceni
-        _log(f"🗂️ Sázky ze všech sportů: +{vyhodnoceni.zaloguj(datum, univ, tik, jist)} nových do evidence.")
+        _log(f"🗂️ Sázky ze všech sportů: +{vyhodnoceni.zaloguj(datum, univ, tik, jist, vd=[report._z_fort(f) | {"sport": f.get("sport") or ""} for f in report.vyber_value_drop(fort, cfg)], fild=[report._z_fort(f) | {"sport": f.get("sport") or ""} for f in report.vyber_fild(fort, cfg)])} nových do evidence.")
     except Exception as e:
         _log(f"⚠️ Evidence sázek selhala: {type(e).__name__}: {e}")
 

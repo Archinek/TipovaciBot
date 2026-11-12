@@ -5,13 +5,14 @@ skóre vyhodnotí (1 = vyšla, 0 = nevyšla). Trhy, kterým skórem nerozumíme 
 nevyhodnocené a v souhrnu se vypíše, které to jsou, abychom je mohli doplnit. Souhrn: úspěšnost a kalibrace p po sportech.
 """
 import csv
+import json
 import datetime
 import re
 import unicodedata
 
 from . import config, vysledky
 
-POLE = ["id", "datum", "sport", "liga", "zapas", "start", "trh", "vyber", "kurz", "p", "zdroj", "skupina", "vysledek", "duvod"]
+POLE = ["id", "datum", "sport", "liga", "zapas", "start", "trh", "vyber", "kurz", "p", "zdroj", "skupina", "vysledek", "duvod", "sazej_od", "duvera"]
 
 
 def _cesta():
@@ -39,8 +40,39 @@ def _id(datum, n):
     return f"{datum}|{n['zapas']}|{n['trh']}|{n['vyber']}"
 
 
-def zaloguj(datum, univ, tik, jist=None):
-    """Zapíše nové sázky (univ + nohy tiketů); stejná sázka v tiketu i ve výběru se zapíše jednou, skupiny se spojí."""
+def _cesta_tiketu():
+    return config.DATA / "tikety_log.json"
+
+
+def nacti_tikety():
+    f = _cesta_tiketu()
+    try:
+        return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+    except ValueError:
+        return []
+
+
+def _zaloguj_tikety(datum, tik):
+    """Uloží složení tiketů dne (denní, alternativa, každé kolo Pyramidy) jako seznam id nohou; výsledek tiketu se pak složí z výsledků nohou."""
+    if not tik:
+        return
+    vse = [t for t in nacti_tikety() if t.get("datum") != datum]
+
+    def ulozit(klic, nazev, t):
+        if t and t.get("noze"):
+            vse.append({"datum": datum, "klic": klic, "nazev": nazev, "kurz": t.get("kurz"), "p": t.get("p"), "prah": t.get("min_celkovy_kurz"),
+                        "noze": [_id(datum, n) for n in t["noze"]]})
+    ulozit("denni", "Denní tiket", tik.get("denni"))
+    ulozit("denni_alt", "Denní tiket (alternativa)", tik.get("denni_alt"))
+    for k in tik.get("pyramida") or []:
+        ulozit(f"pyr{k['kolo']}", f"Pyramida · kolo {k['kolo']}", k.get("tiket"))
+        ulozit(f"pyr{k['kolo']}_alt", f"Pyramida · kolo {k['kolo']} (alternativa)", k.get("alt"))
+    _cesta_tiketu().parent.mkdir(parents=True, exist_ok=True)
+    _cesta_tiketu().write_text(json.dumps(vse[-600:], ensure_ascii=False), encoding="utf-8")
+
+
+def zaloguj(datum, univ, tik, jist=None, vd=None, fild=None):
+    """Zapíše nové sázky (univ + nohy tiketů + Value drop + Fildův tip); stejná sázka ve více kategoriích se zapíše jednou, skupiny se spojí."""
     rows = nacti()
     mam = {r["id"]: r for r in rows}
     nove = 0
@@ -54,7 +86,7 @@ def zaloguj(datum, univ, tik, jist=None):
             return
         r = {"id": i, "datum": datum, "sport": n.get("sport") or "", "liga": n.get("liga") or "", "zapas": n["zapas"], "start": n.get("start") or "",
              "trh": n["trh"], "vyber": n.get("vyber") or "", "kurz": n["kurz"], "p": round(float(n["p"]), 4), "zdroj": n.get("zdroj", "trh"),
-             "skupina": skupina, "vysledek": "", "duvod": ""}
+             "skupina": skupina, "vysledek": "", "duvod": "", "sazej_od": n.get("sazej_od") or "", "duvera": n.get("duvera") or ""}
         rows.append(r)
         mam[i] = r
         nove += 1
@@ -63,6 +95,10 @@ def zaloguj(datum, univ, tik, jist=None):
         pridej(n, "vyber")
     for n in jist or []:
         pridej(n, "jistota")
+    for n in vd or []:
+        pridej(n, "valuedrop")
+    for n in fild or []:
+        pridej(n, "fild")
     if tik:
         for klic in ("denni", "denni_alt"):
             for n in ((tik.get(klic) or {}).get("noze") or []):
@@ -72,6 +108,10 @@ def zaloguj(datum, univ, tik, jist=None):
                 for n in ((k.get(kl) or {}).get("noze") or []):
                     pridej(n, "pyramida")
     uloz(rows)
+    try:
+        _zaloguj_tikety(datum, tik)
+    except Exception as e:
+        print(f"   ⚠️ Log tiketů selhal: {type(e).__name__}: {e}")
     return nove
 
 

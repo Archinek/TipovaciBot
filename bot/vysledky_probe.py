@@ -153,21 +153,20 @@ def fortuna_vysledky(log=print):
 
     try:
         sporty = stahni("sporty", f"{zaklad}/sports?date={den}") or []
-        sid = next((x.get("id") for x in sporty if x.get("name") == "Hokej"), "ufo:sprt:0w")
-        q = urllib.parse.quote(sid, safe=":")
-        for i, tvar in enumerate((f"{zaklad}/sport/{q}/tournaments?date={den}", f"{zaklad}/sports/{q}/tournaments?date={den}",
-                                  f"{zaklad}/tournaments?sportId={q}&date={den}", f"{zaklad}/tournaments?date={den}&sportId={q}",
-                                  f"{zaklad}/sport/{q}?date={den}", f"{zaklad}/sports/{q}?date={den}",
-                                  f"{zaklad}/sport/{q}/matches?date={den}", f"{zaklad}/tournaments/{q}?date={den}")):
-            stahni(f"turnaje_v{i}", tvar)
         tid = "ufo:tour:0w-01n"
-        m = stahni("zapasy_vse_trhy", f"{zaklad}/tournament/{tid}/matches?date={den}&overviewMarkets=false") or {}
-        stahni("zapasy_bez_parametru", f"{zaklad}/tournament/{tid}/matches?date={den}")
-        fx = (m.get("fixtures") or [{}])[0].get("id")
-        if fx:
-            stahni("zapas_trhy", f"{zaklad}/fixture/{fx}/markets")
-            stahni("zapas_trhy2", f"{zaklad}/match/{fx}/markets")
-            stahni("zapas_detail", f"{zaklad}/fixture/{fx}")
+        m = stahni("zapasy_prehled", f"{zaklad}/tournament/{tid}/matches?date={den}&overviewMarkets=true") or {}
+        fx = (m.get("fixtures") or [{}])[0].get("id") or "ufo:mtch:1xm-02f"
+        q = urllib.parse.quote
+        varianty = [
+            f"fixture/{fx}?date={den}", f"fixture/{fx}/markets?date={den}", f"fixture/{fx}/markets?date={den}&overviewMarkets=false",
+            f"fixtures/{fx}?date={den}", f"match/{fx}?date={den}", f"matches/{fx}?date={den}",
+            f"tournament/{tid}/matches/{fx}?date={den}", f"tournament/{tid}/match/{fx}?date={den}", f"tournament/{tid}/fixture/{fx}?date={den}",
+            f"tournament/{tid}/matches?date={den}&fixtureId={fx}", f"tournament/{tid}/matches?date={den}&overviewMarkets=true&fixtureId={fx}",
+            f"tournament/{tid}/matches?date={den}&allMarkets=true", f"tournament/{tid}/matches?date={den}&overviewMarkets=true&allMarkets=true",
+            f"tournament/{tid}/markets?date={den}", f"fixture/{fx}/outcomes?date={den}", f"fixture/{fx}/result?date={den}",
+        ]
+        for i, v in enumerate(varianty):
+            stahni(f"v4_{i:02d}", f"{zaklad}/{v}")
     except fortuna.FortunaBlok:
         return
     log("📊 Sonda výsledků Fortuny hotová, soubory fortuna_vysl_*.txt v data/probe_vysledky/ (poslat je).")
