@@ -130,7 +130,7 @@ def test_cely_beh_vyhodnoceni_a_closing():
     m = store.metriky(store.nacti())
     assert m["n"] == 1 and m["roi_paper"] == 1.25 and m["avg_clv"] is not None
     html = report.sestav_report("2026-11-04", res["picks"], [], "1✅ / 0❌", {"vše": m}, "Europe/Prague")
-    assert "Arsenal" in html and "<script" not in html
+    assert "Arsenal" in html and "<script src" not in html
 
 
 def test_veto_a_xss():

@@ -211,7 +211,7 @@ def test_report_tip_dne():
     txt = report.wa_ranni("2026-11-06", [], "", "https://x.cz/docs", "Europe/Prague", fort=[f], log_text="📊 Log Fortuny: 1 linií")
     assert "https://x.cz/docs/reports/2026-11-06.html" in txt and len(txt) < 200 and "Log Fortuny" not in txt
     h = report.sestav_report("2026-11-06", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", fort=[])
-    assert "Dnes žádný kandidát" in h and h.index("Analýzy zápasů") < h.index("Pyramida")                # Pyramida je úplně na konci
+    assert "Dnes žádný kandidát" in h and h.index("<h2 id='ana'>") < h.index("<h2 id='pyr'>")                # Pyramida je úplně na konci
 
 
 def test_jistejsi_a_vklad():
@@ -572,7 +572,7 @@ def test_report_nove_sekce():
     univ = [{"sport": "hokej", "zapas": "P - Q", "liga": "NHL", "start": st, "trh": "Vítěz", "vyber": "Q", "kurz": 1.75, "p": 0.62, "sazej_od": 1.7, "duvera": 6,
              "analyza": {"verdikt": "OK", "duvod": "ok", "text": "Rozbor hokeje."}}]
     h = report.sestav_report("2026-11-12", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", fort=fort, univ=univ, jist=[{**j[0], "duvera": 7}], cfg=cfg)
-    poradi = [h.index(x) for x in ("Value drop", "Fildův tip", "Tipsport od kurzu 1.30", "Nejjistější dne", "Denní tiket", "Analýzy zápasů", "Pyramida")]
+    poradi = [h.index(f"<h2 id='{x}'>") for x in ("vd", "fild", "tip", "jist", "den", "ana", "pyr")]
     assert poradi == sorted(poradi)                                                              # tabulky -> analýzy -> Pyramida na konci
     assert "Souvislý rozbor." in h and "Rozbor hokeje." in h
 
@@ -592,7 +592,7 @@ def test_prehled_uceni():
     assert m100["stav"] == 23 and abs(m100["podil"] - 0.23) < 1e-9 and m100["eta"] > "2026-11-12"
     assert u["sporty"]["hokej"]["n"] == 23 and "1.6–2" in u["pasma"] or any("1.6" in k for k in u["pasma"])
     h = report.sestav_report("2026-11-12", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", uceni=u, model_text="Brier +3 %")
-    assert "Učení bota" in h and "Kde se bot spletl" in h and "Postup k dalším metám" in h and h.index("Učení bota") < h.index("Pyramida")
+    assert "Učení bota" in h and "Kde se bot včera spletl" in h and "Postup k dalším metám" in h and h.index("<h2 id='uc'>") < h.index("<h2 id='pyr'>")
     assert "Přehled se nepodařilo" in report._tab_uceni(None)
 
 
@@ -655,3 +655,42 @@ def test_ucici_vse_sporty_a_cas_bez_zony(tmp_path, monkeypatch):
     r["start"] = (ted - datetime.timedelta(days=1)).replace(tzinfo=None).isoformat(timespec="minutes")   # bez zóny
     vyhodnoceni.vyhodnot_radky([r], ted, log=lambda *a: None)                                # nesmí spadnout
     assert r["start"].endswith("+00:00")
+
+
+def test_horni_prehled_vcera_a_rozklik(tmp_path, monkeypatch):
+    """Horní přehled (období, koláč), včerejší vyhodnocení po kategoriích vč. tiketů a Pyramidy, Tipsport 1.30 řazený dle p s časem a rozklikem."""
+    from bot import config, prehled, report, vyhodnoceni
+    monkeypatch.setattr(config, "DATA", tmp_path)
+
+    def noha(i, n, kurz, p, skup, y, duvod="Fortuna: 3:2"):
+        return {"zapas": f"A{i} - B{i}", "sport": "hokej", "liga": "L", "start": "2026-11-11T17:00:00+00:00", "trh": "Vítěz", "vyber": f"A{i}", "kurz": kurz, "p": p,
+                "zdroj": "trh", "sazej_od": 1.35, "duvera": 7}
+    n1, n2, n3 = noha(1, 0, 1.45, 0.60, "", ""), noha(2, 0, 1.40, 0.80, "", ""), noha(3, 0, 1.5, 0.7, "", "")
+    tik = {"denni": {"kurz": 2.03, "p": 0.4, "min_celkovy_kurz": 2.0, "noze": [n1, n2]}, "denni_alt": None,
+           "pyramida": [{"kolo": 1, "prah": 1.1, "tiket": {"kurz": 1.4, "p": 0.8, "min_celkovy_kurz": 1.1, "noze": [n2]}, "alt": None},
+                        {"kolo": 2, "prah": 2.0, "tiket": {"kurz": 2.1, "p": 0.4, "min_celkovy_kurz": 2.0, "noze": [n1, n3]}, "alt": None}]}
+    vyhodnoceni.zaloguj("2026-11-11", [n1, n2], tik, [n3], vd=[n3], fild=[])
+    rows = vyhodnoceni.nacti()
+    assert {r["skupina"] for r in rows if r["zapas"] == "A3 - B3"} == {"jistota+valuedrop+pyramida"} or all("valuedrop" in r["skupina"] for r in rows if r["zapas"] == "A3 - B3")
+    for r in rows:
+        r["vysledek"] = "0" if r["zapas"] == "A1 - B1" else "1"
+        r["duvod"] = "Fortuna: 3:2"
+    vyhodnoceni.uloz(rows)
+    u = prehled.vypocti("2026-11-12", vyhodnoceni.nacti(), [])
+    assert u["obdobi"]["vcera"]["stat"]["n"] == 3 and u["obdobi"]["vse"]["stat"]["n"] == 3 and u["obdobi"]["7"]["sporty"]["hokej"]["n"] == 3
+    vk = u["vcera_kat"]
+    assert [k["klic"] for k in vk["kategorie"]] == ["valuedrop", "vyber", "jistota"] or {k["klic"] for k in vk["kategorie"]} >= {"valuedrop", "vyber", "jistota"}
+    t = {x["klic"]: x["vysledek"] for x in vk["tikety"]}
+    assert t["denni"] == "0" and t["pyr1"] == "1" and t["pyr2"] == "0"
+    assert 0 <= u["dalsi_meta"]["podil"] <= 1
+    fort_an = {"text": "Rozbor jedna.", "verdikt": "OK", "duvod": "d"}
+    univ = [{"zapas": "Nízká - X", "sport": "hokej", "liga": "L", "start": "2026-11-12T17:00:00+00:00", "trh": "Vítěz", "vyber": "Nízká", "kurz": 1.4, "sazej_od": 1.3, "p": 0.6, "duvera": 6, "analyza": fort_an},
+            {"zapas": "Vysoká - Y", "sport": "hokej", "liga": "L", "start": "2026-11-12T19:30:00+00:00", "trh": "Vítěz", "vyber": "Vysoká", "kurz": 1.5, "sazej_od": 1.4, "p": 0.9, "duvera": 8, "analyza": {"text": "Rozbor dvě."}}]
+    pyr = [{"kolo": k, "prah": 1.0 + k, "tiket": {"kurz": 1.0 + k, "p": 0.5, "duvera": 5, "hrana": 0.0, "min_celkovy_kurz": 1.0 + k, "noze": [n2]}, "alt": None} for k in range(1, 11)]
+    h = report.sestav_report("2026-11-12", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", univ=univ, tik={"denni": None, "pyramida": pyr}, uceni=u)
+    tip = h[h.index("id='tip'"):h.index("id='jist'")]
+    assert tip.index("Vysoká - Y") < tip.index("Nízká - X")                      # nejvyšší pravděpodobnost nahoře
+    assert "12.11. 20:30" in tip and "class='klik'" in tip and "Rozbor dvě." in tip and "class='roz'" in tip
+    assert h.count("<h3>Kolo ") == 10                                           # Pyramida celá, všech 10 kol
+    assert h.index("id='vcera'") < h.index("id='vd'") and "Včerejší vyhodnocení (11. 11. 2026)" in h and "do úpravy modelu" in h and "data-k='vcera'" in h
+    assert "✔ VÝHRA (3:2)" in h and "✖ PROHRA" in h
