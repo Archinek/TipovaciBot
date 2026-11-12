@@ -8,31 +8,6 @@
   "univ": [
     {
       "sport": "fotbal",
-      "zapas": "Turecko - Belgie",
-      "start": "2026-11-12T17:00:00+00:00",
-      "liga": "Liga národů",
-      "trh": "Počet gólů v zápasu 4.5",
-      "vyber": "Méně než 4.5",
-      "kurz": 1.3,
-      "p": 0.7545,
-      "marze": 0.0395,
-      "sazej_od": 1.36,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 4.5 (Počet gólů v zápasu 4.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 75 % při kurzu 1.3."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 5
-    },
-    {
-      "sport": "fotbal",
       "zapas": "Černá Hora - Lotyšsko",
       "start": "2026-11-12T19:45:00+00:00",
       "liga": "Liga národů",
@@ -43,18 +18,51 @@
       "marze": 0.0544,
       "sazej_od": 1.36,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Černá Hora (Výsledek zápasu) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Černá Hora - Lotyšsko",
+        "verdikt": "OK",
+        "duvod": "Černá Hora hraje doma o jistotu postupu proti poslednímu týmu skupiny bez formy a útoku.",
+        "text": "V 5. kole skupiny C2 Ligy národů hostí Černá Hora v Podgorici výběr Lotyšska a v sázce je pro domácí klíčový krok k postupu do Ligy B. Černohorci vedou tabulku se ziskem 10 bodů a skóre 7:4, přičemž těží ze zkušeností lídrů, jako je stoper Stefan Savić a ofenzivní opory Nikola Krstović z Atalanty či Vasilije Adžić ze Sassuola. Naopak Lotyšsko pod vedením italského trenéra Paola Nicolata paběrkuje, když je se ziskem jediného bodu a pasivním skóre 2:6 přikováno na dně tabulky. Pobaltský celek dlouhodobě trápí produktivita, což dokládají pouhé dvě vstřelené branky za čtyři zápasy, z nichž jednu dal Markuss Strods. Balkánský celek má nesrovnatelně vyšší individuální kvalitu kádru a před vlastním publikem v Podgorici si nemůže dovolit zaváhání. Jedinou hrozbou pro sázku by mohla být přílišná pasivita domácích v koncovce a tuhý hluboký blok hostů, na němž se už natrápil Kypr. Pokud však Černohorci udrží standardní koncentraci a prosadí se v prvním poločase, zápas by měli bez potíží dovést ke třem bodům. Kvalitativní i motivační rozdíl je propastný a kurz odpovídá vysoké dominanci favorita.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+          "Černá Hora vede skupinu se ziskem 10 bodů a doma potřebuje vyhrát pro potvrzení postupu.",
+          "Lotyšsko je beznadějně poslední s 1 bodem a za 4 zápasy vstřelilo pouhé dvě branky."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Lotyšsko může nasadit hluboký obranný blok a spoléhat na bezbrankový stav.",
+          "Černohorci mohou být svázáni postupovou nervozitou."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Podcenění houževnatého soupeře a neschopnost překonat zahuštěnou obranu Lotyšska."
       },
-      "duvera": 5
+      "duvera": 7
+    },
+    {
+      "sport": "basketbal",
+      "zapas": "Olympiakos Piraeus - Dubai",
+      "start": "2026-11-12T19:15:00+00:00",
+      "liga": "Euroliga - muži",
+      "trh": "Handicap (včetně prodloužení) -11.5",
+      "vyber": "Dubai (+11.5)",
+      "kurz": 1.3,
+      "p": 0.7517,
+      "marze": 0.047,
+      "sazej_od": 1.36,
+      "analyza": {
+        "id": "Olympiakos Piraeus - Dubai",
+        "verdikt": "OK",
+        "duvod": "Handicap +11.5 bodu pro ambiciózní Dubai je proti defenzivnímu pojetí Olympiakosu velmi výhodný.",
+        "text": "V rámci základní části basketbalové Euroligy přivítá Olympiakos Pireus na své palubovce v hale Míru a přátelství ambiciózního nováčka soutěže Dubai Basketball. Domácí svěřenci Georgiose Bartzokase jsou favoritem duelu, avšak vypsaný handicap +11.5 bodu pro hostující Dubai představuje pro sázející velmi štědrý polštář. Dubai disponuje mimořádně silným a nákladně sestaveným kádrem plným ostřílených veteránů, kteří dokáží držet tempo i s těmi nejlepšími evropskými celky. Olympiakos navíc v Eurolize tradičně sází na organizovanou, pomalejší hru v polovičním hřišti a pevnou defenzivu, což málokdy vede k drtivým dvouciferným debaklům kvalitních soupeřů. Hostující celek má dostatečnou palebnou sílu na perimetru i pod košem, aby se vyvaroval dlouhým střeleckým výpadkům. Pro sázku hraje fakt, že Olympiakos po vybudování náskoku v závěru často šetří klíčové hráče a zápas dohrává v úsporném režimu. Hlavním rizikem by byla výjimečná trojková exploze domácích střelců a ztráta disciplíny dubajského týmu pod tlakem bouřlivé řecké kulisy. Celkově by však Dubai měl udržet vyrovnaný průběh a nepřipustit porážku o 12 a více bodů.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Dubai disponuje hvězdným kádrem schopným držet krok s evropskou špičkou.",
+          "Olympiakos preferuje pomalejší tempo hry a málokdy soupeře deklasuje vysokým rozdílem."
+        ],
+        "proti": [
+          "Bouřlivé domácí prostředí v Pireu může nováčka z Dubaje dostat pod enormní tlak.",
+          "Olympiakos má vynikající obranu schopnou soupeře na delší úseky zcela vymazat."
+        ],
+        "riziko": "Rychlý únik Olympiakosu v první čtvrtině a ztráta koncentrace hostujícího celku."
+      },
+      "duvera": 7
     },
     {
       "sport": "hokej",
@@ -68,18 +76,22 @@
       "marze": 0.0509,
       "sazej_od": 1.36,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Více než 4.5 (Počet gólů v zápasu 4.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Chicago Blackhawks - Buffalo Sabres",
+        "verdikt": "OK",
+        "duvod": "Běžná hranice v NHL je 6.5 gólu, over 4.5 při děravé obraně Chicaga nabízí mimořádnou hodnotu.",
+        "text": "V nočním programu NHL změří síly Chicago Blackhawks a Buffalo Sabres v United Center, přičemž hranice 4.5 gólu je na poměry současného hokeje nasazena mimořádně nízko. Standardní over/under lajna na tento souboj je stanovena na 6.5 branky, což věrně odráží herní styl i defenzivní slabiny obou mužstev. Chicago prožívá těžkou krizi s bilancí 4-13-1 a průměrně inkasuje hrozivých 4,2 gólu na utkání. Buffalo na tom není v obraně o mnoho lépe, když v průměru dostává 3,3 branky a v posledních zápasech se podílelo na divokých přestřelkách s Tampou Bay či Anaheimem. V ofenzivě Sabres exceluje dvanáctigólový Tage Thompson, zatímco na straně Blackhawks pravidelně hrozí Connor Bedard s Romanem Kantserovem. Oběma celkům navíc selhávají brankáři a hra v oslabení patří k podprůměrným v lize, což otevírá prostor pro časté brejky a přečíslení. Sázku by mohl zhatit pouze naprosto mimořádný den obou gólmanů spojený s festivalem spálených tutovek. Trend vzájemných i nedávných ligových střetnutí však jednoznačně směřuje k dosažení alespoň pěti branek v základní hrací době.",
+        "duvera_gemini": 9,
         "pro": [
-          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+          "Chicago inkasuje v průměru 4,2 gólu na zápas a prohrálo 8 z posledních 10 utkání.",
+          "Ofenzivu táhnou Tage Thompson (10 gólů) na jedné a Connor Bedard na druhé straně."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Oba týmy mají podprůměrnou úspěšnost využití přesilových her pod 15 %.",
+          "Případný nadstandardní výkon startujícího brankáře může tempo zápasu utlumit."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Výrazné střelecké trápení obou týmů a selhání střelců v zakončení vyložených šancí."
       },
-      "duvera": 5
+      "duvera": 7
     },
     {
       "sport": "hokej",
@@ -93,68 +105,80 @@
       "marze": 0.0509,
       "sazej_od": 1.36,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 7.5 (Počet gólů do rozhodnutí 7.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Utah Mammoth - St. Louis Blues",
+        "verdikt": "OK",
+        "duvod": "Velmi vysoká hranice 7.5 gólu v zápase defenzivně orientovaných Blues proti Utahu.",
+        "text": "V zápase NHL na ledě Delta Center přivítá Utah Mammoth celek St. Louis Blues v konfrontaci, kde volba méně než 7.5 gólu do rozhodnutí představuje velmi bezpečnou alternativu. Hranice 7.5 branky včetně případného prodloužení vyžaduje k neúspěchu sázky až osm přesných zásahů, což je v soubojích těchto soupeřů velmi ojedinělý jev. Blues pod vedením trenéra Jima Montgomeryho staví svůj herní projev na organizovaném středním pásmu a defenzivní disciplíně, což potvrdili i v předchozím vítězství 3:2 nad Detroitem. Utah v domácím prostředí těží z nadmořské výšky Salt Lake City a rovněž se snaží kontrolovat tempo hry s důrazem na odpovědný návrat do obrany. Vzájemná střetnutí z minulé i probíhající sezony nabídla těsné výsledky typu 3:2, 4:2 či dokonce fotbalové 1:0 pro Blues. Rizikem by mohla být pouze naprostá ztráta brankářské stability v první třetině nebo enormní množství nabídnutých přesilovek po vyhrocených potyčkách. V běžném průběhu je však ofenzivní potence obou týmů natolik limitovaná, že by celkový součet branek měl bez problémů zůstat pod nastavenou hranicí.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+          "Předchozí vzájemné zápasy obou týmů skončily nízkými výsledky 3:2, 4:2 i 1:0.",
+          "Hranice 7.5 gólu včetně prodloužení dává velkorysou rezervu i při vyšší produktivitě."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "V NHL se v případě divokých přesilovek může skóre rychle vyšplhat k osmi brankám.",
+          "St. Louis občas venku kolabuje v defenzivě při hře v oslabení."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Brankářský kolaps na jedné ze stran a proměňování většiny nabídnutých přesilovek."
       },
-      "duvera": 5
+      "duvera": 7
     },
     {
-      "sport": "basketbal",
-      "zapas": "Olympiakos Piraeus - Dubai",
-      "start": "2026-11-12T19:15:00+00:00",
-      "liga": "Euroliga - muži",
-      "trh": "Handicap (včetně prodloužení) -11.5",
-      "vyber": "Dubai (+11.5)",
-      "kurz": 1.3,
-      "p": 0.7503,
-      "marze": 0.0509,
-      "sazej_od": 1.36,
+      "sport": "fotbal",
+      "zapas": "Turecko - Belgie",
+      "start": "2026-11-12T17:00:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Počet gólů v zápasu 4.5",
+      "vyber": "Méně než 4.5",
+      "kurz": 1.31,
+      "p": 0.7493,
+      "marze": 0.0373,
+      "sazej_od": 1.37,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Dubai (+11.5) (Handicap (včetně prodloužení) -11.5) má podle férové pravděpodobnosti trhu (bez marže) 75 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Turecko - Belgie",
+        "verdikt": "OK",
+        "duvod": "Lukaku je zraněný a taktika obou reprezentací směřuje k opatrnému průběhu pod 4.5 gólu.",
+        "text": "V prestižním souboji Ligy národů přivítá Turecko v Izmiru reprezentaci Belgie v zápase, kde se očekává taktická a opatrná bitva bez gólových hodů. Pro sázku na méně než 4.5 gólu hraje celá řada zásadních faktorů v čele s absencí hvězdného belgického střelce Romelua Lukakua, který neodcestoval kvůli zranění kyčle a zůstal v Bruselu. Belgický trenér Mark van Bommel tak musí do ofenzivy nasadit alternativy jako Charles De Ketelaere či nováček Hugo Cuypers, což zákonitě snižuje přímočarost a údernou sílu belgického útoku. Turecký národní tým na domácí půdě sází na pevnou defenzivní strukturu řízenou zkušenými stopery a oboustranná motivace v závěru skupiny velí vyhnout se fatálním chybám v defenzivě. Hranice 4.5 branky vyžaduje hned pět vstřelených gólů, což je na mezinárodní úrovni mezi dvěma vyrovnanými soupeři z elitní společnosti velmi nepravděpodobné. Jediným rizikem by byla brzká červená karta nebo série nečekaných hrubých kiksů v rozehrávce, které by zápas zcela otevřely. Očekává se spíše vyčkávací styl s dominancí ve středu hřiště a konečný výsledek nepřesahující tři vstřelené góly.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 75 % při kurzu 1.3."
+          "Belgii chybí klíčový kanonýr Romelu Lukaku, který zůstal doma se zraněním kyčle.",
+          "Jde o taktickou bitvu v Lize národů, kde ani jeden tým nebude bezhlavě otevírat hru."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Oba týmy disponují kvalitními ofenzivními křídly schopnými individuálního zakončení.",
+          "Rychlý úvodní gól může utkání změnit v otevřenou oboustrannou partii."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Brzká červená karta nebo hrubé individuální chyby obránců, které otevřou skóre."
       },
-      "duvera": 5
+      "duvera": 7
     },
     {
       "sport": "basketbal",
       "zapas": "Valencia - Bayern Munchen",
       "start": "2026-11-12T19:30:00+00:00",
       "liga": "Euroliga - muži",
-      "trh": "Handicap (včetně prodloužení) -2.5",
-      "vyber": "Valencia (-2.5)",
-      "kurz": 1.31,
-      "p": 0.7449,
-      "marze": 0.0491,
+      "trh": "Výsledek zápasu",
+      "vyber": "Valencia",
+      "kurz": 1.3,
+      "p": 0.7492,
+      "marze": 0.0658,
       "sazej_od": 1.37,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Valencia (-2.5) (Handicap (včetně prodloužení) -2.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Valencia - Bayern Munchen",
+        "verdikt": "OK",
+        "duvod": "Valencia na domácí palubovce dominuje ligovým statistikám proti trápícímu se Bayernu.",
+        "text": "V 11. kole basketbalové Euroligy nastoupí Valencia Basket v moderní Roig Areně proti německému Bayernu Mnichov a v roli jasného favorita cílí na upevnění pozice v ligové špičce. Valencia v této sezoně disponuje drtivou ofenzivní silou, v průměru sází 95,8 bodu na zápas s týmovým indexem užitečnosti 107,5, k čemuž výrazně přispívá rozehrávač TJ Shorts s průměrným PIR 20,4. Na opačném pólu tabulky se nachází trápící se Bayern, který se krčí na 17. příčce s průměrem 86,8 vstřelených bodů a pasivním defenzivním hodnocením. Bavorský klub má obrovské potíže především na venkovních palubovkách, kde naposledy utrpěl těžký debakl na hřišti Crvene Zvezdy 73:103. Domácí prostředí nového stánku Valencii svědčí, tým dominuje na útočném i obranném doskoku (39,6 ku 31,5 na zápas) a minimálně chybuje v distribuci míče. Proti sázce hraje pouze možný střelecký výpadek domácích střelců z dlouhé vzdálenosti a střelecký den bavorského lídra Johannese Thiemanna. Vzhledem k propastnému rozdílu v současné herní pohodě i taktické kvalitě by si však Valencia měla připsat přesvědčivé domácí vítězství.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.31."
+          "Valencia je na 3. místě Euroligy s průměrem 95,8 bodu na zápas a excelentním TJ Shortsem.",
+          "Bayern je v hluboké krizi na 17. místě a venku utrpěl debakl o 30 bodů na Crvene Zvezdě."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Bayern v lednu Valencii doma porazil 93:89 a má zkušené veterány v sestavě.",
+          "Vyšší únava domácích z náročného euroligového a ligového programu."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Střelecký výpadek Valencie zpoza oblouku a nečekané probuzení německé ofenzivy."
       },
-      "duvera": 5
+      "duvera": 7
     },
     {
       "sport": "sipky",
@@ -168,18 +192,23 @@
       "marze": 0.0723,
       "sazej_od": 1.38,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Schmidt J. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Schmidt J. - Nussbaum L.",
+        "verdikt": "OK",
+        "duvod": "Jan Schmidt má výrazně vyšší tříšipkový průměr i zkušenosti z Development Tour, zatímco Nussbaum na velkých turnajích dlouhodobě zaostává.",
+        "text": "V rámci turnaje PDC Europe Super League v německém Hildesheimu na sebe narážejí Jan Schmidt a Lukas Nussbaum v souboji, kde je Schmidt pasován do role jednoznačného favorita. Schmidt stabilně prokazuje vyšší výkonnostní strop na turnajích PDC Development Tour, kde se drží v popředí Order of Merit a jeho tříšipkový průměr se pravidelně pohybuje kolem hranice 85 až 90 bodů. Naproti tomu Lukas Nussbaum patří mezi méně prověřené hráče německé šipkařské scény s ratingem Elo kolem 1538 a jeho průměry v těžkých zápasech často padají k hranici 75 bodů. Formát zápasu na vítězné legy sice teoreticky dává outsiderovi drobnou šanci na překvapení, ale Schmidtova konzistence při zavírání a vyšší frekvence náhozů 140+ a 180 by měly převážit. Nussbaum v předchozích zápasech doplácel na slabší procentuální úspěšnost na doublech, která se pohybovala pod 30 %, což dává Schmidtovi značný prostor pro brejky. Pokud Schmidt udrží svůj standardní rytmus na vlastním podání a vyvaruje se zbytečného výpadku v úvodu, měl by bez větších komplikací dokráčet k vítězství.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Jan Schmidt vykazuje dlouhodobě vyšší 3-dart average (85+) než jeho soupeř.",
+          "Schmidt má cenné zkušenosti a výsledky z PDC Development Tour.",
+          "Nussbaum má dlouhodobě nižší úspěšnost na doublech pod 30 %."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Krátký legový formát dává outsiderovi prostor k náhodnému brejku.",
+          "Tlak turnaje Super League může přinést nervozitu na zavírání."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Rychlý úvodní brejk Nussbauma a následná ztráta jistoty favorita na doublech."
       },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "tenis",
@@ -193,18 +222,23 @@
       "marze": 0.0769,
       "sazej_od": 1.38,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr - 10.5 (Počet gamů v 1.setu 10.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Uchida K. - Harris B.",
+        "verdikt": "OK",
+        "duvod": "Rozdíl v servisu a žebříčkovém postavení naznačuje časný brejk, takže první set by neměl dospět do stavu 5:5 ani tie-breaku.",
+        "text": "Čtvrtfinále na turnaji ATP Challenger v japonské Macujamě na tvrdém povrchu svede dohromady domácího zástupce Kaichiho Uchidu a britského ranaře Billyho Harrise. Sázka cílí na to, že první sada nabídne méně než 10,5 gamu, tedy neskončí stavem 7:5 ani tie-breakem, což znamená nutnost prolomení servisu před stavem 5:5. Harris je s výškou 193 cm a 227. místem na žebříčku ATP výrazně dominantnějším hráčem na servisu než Uchida, který figuruje až kolem 431. příčky. Uchida se dlouhodobě trápí s udržením vlastního podání proti agresivním returnérům a jeho hold procento na tvrdém povrchu bývá zranitelné. Naopak Brit má zvyk vstupovat do zápasů s velkou intenzitou a vytvářet si brejkové příležitosti hned v úvodních servis-gamech soupeře. Vzájemný střet stylů napovídá, že rozdíl v úderové razanci zpoza základní čáry vytvoří brejk dříve než za stavu 5:5. Rizikem by mohl být pouze pasivní vstup Harrise do zápasu, k čemuž však v jeho duelech v Macujamě nedochází.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Billy Harris disponuje velkým servisem a výškovou převahou 193 cm.",
+          "Kaichi Uchida (431. na ATP) má slabší servis a čelí často brejkbolům.",
+          "V zápasech obou hráčů na challengerech je tie-break v 1. setu méně častý."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Uchida hraje v domácím prostředí a může se v úvodu na servisu vybičovat.",
+          "Pomalý rozjezd Harrise na returnu by mohl sadu posunout do koncovky."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Vyrovnaný začátek bez brejku až do stavu 5:5 při horším Harrisově returnu."
       },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "tenis",
@@ -218,18 +252,53 @@
       "marze": 0.0769,
       "sazej_od": 1.38,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Ano (Andreescu B.V. vyhraje svůj první servis game) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Andreescu B.V. - Bassols Ribera M.",
+        "verdikt": "OK",
+        "duvod": "Andreescu má výrazně silnější servis než soupeřka a vysoká nadmořská výška v Sopó její první podání ještě zrychluje.",
+        "text": "Na antukovém turnaji WTA 125 Cundinamarca Open v kolumbijském Sopó se ve čtvrtfinále střetává Bianca Vanessa Andreescu s Marinou Bassols Riberou. Sázka vyžaduje, aby bývalá šampionka US Open Andreescu úspěšně udržela své první podání v úvodu střetnutí. Specifické podmínky v Sopó v nadmořské výšce přes 2600 metrů nad mořem způsobují, že míče létají výrazně rychleji, což silovému servisu Kanaďanky enormně nahrává. Španělka Bassols Ribera je ryze defenzivní hráčkou bez výraznější útočné zbraně a její returny proti prudkému prvnímu podání bývají krátké a zranitelné. Andreescu má navíc výraznou herní i mentální převahu pramenící z kvality na okruhu a v předchozích kolech si nástupy do zápasů na podání pohlídala. Pokud se vyvaruje série laciných dvojchyb přímo v úvodní hře, měla by svůj první servis-game díky razantním úderům a tlaku hned po podání bez problémů vyhrát.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Obrovský rozdíl v útočné síle a kvalitě podání ve prospěch Andreescu.",
+          "Vysoká nadmořská výška v Sopó (přes 2600 m n. m.) nahrává razantnímu servisu.",
+          "Bassols Ribera má pasivní return a spoléhá spíše na nevynucené chyby soupeřky."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Nerozehranost v úplně prvním gamu utkání může přinést laciné chyby.",
+          "Antukový povrch dává returnující hráčce více času na reakci."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Chladný start Andreescu s nevynucenými chybami či dvojchybami v prvním gamu."
       },
-      "duvera": 4
+      "duvera": 7
+    },
+    {
+      "sport": "volejbal",
+      "zapas": "Chaumont - Toulouse",
+      "start": "2026-11-12T19:00:00+00:00",
+      "liga": "1. Francie - muži",
+      "trh": "Počet setů v zápasu 3.5",
+      "vyber": "Více než 3.5",
+      "kurz": 1.3,
+      "p": 0.7406,
+      "marze": 0.0769,
+      "sazej_od": 1.38,
+      "analyza": {
+        "id": "Chaumont - Toulouse",
+        "verdikt": "OK",
+        "duvod": "Vzájemné zápasy ve francouzské lize bývají velmi vyrovnané a Chaumont v domácí hale pravidelně ztrácí alespoň jeden set.",
+        "text": "V rámci francouzské nejvyšší volejbalové soutěže mužů Marmara SpikeLigue přivítá Chaumont 52 na domácí palubovce celek Spacer's Toulouse. Sázka na více než 3,5 setu předpokládá, že utkání neskončí jednoznačným výsledkem 3:0 pro kterýkoliv tým a uvidíme minimálně čtyři sety. Chaumont disponuje silnou ofenzivou v čele se smečařem Joãem Franckem a domácím prostředím v hale Palestra, avšak v úvodu sezony pravidelně ztrácí koncentraci a pouští soupeřům sety, což potvrdil i nedávný duel s Paris Volley (3:1). Toulouse má velmi organizovanou obranu v poli dirigovanou zkušeným liberem Facundem Santuccim a jejich útok dokáže v klíčových koncovkách bodovat. Vzájemná střetnutí těchto dvou tradičních klubů bývají dlouhodobě vyrovnaná a málokdy končí hladkou výhrou ve třech setech. Herní styl obou celků je navíc založen na agresivním servisu s vyšším počtem chyb, což v jednotlivých sadách vede k bodovým propadům. Očekává se tuhý boj, v němž si oba soupeři dokážou připsat minimálně po jedné vítězné sadě.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Vyrovnanost francouzské Ligue A, kde málokdy dochází k výsledku 3:0.",
+          "Chaumont v posledních domácích duelech pravidelně pouštěl sety (např. s Paris 3:1).",
+          "Toulouse má pevnou defenzivu a zkušené opory schopné urvat koncovku."
+        ],
+        "proti": [
+          "Dominantní výkon Chaumontu na podání a bloku by mohl zápas zkrátit na 3:0.",
+          "Únava Toulouse z náročného cestování a výpadek na příjmu."
+        ],
+        "riziko": "Naprosté selhání Toulouse na příjmu podání a hladká výhra domácích 3:0."
+      },
+      "duvera": 7
     },
     {
       "sport": "americky-fotbal",
@@ -243,18 +312,23 @@
       "marze": 0.0817,
       "sazej_od": 1.39,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Více než 1.5 (NY Giants počet touchdownů včetně prodloužení 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "NY Giants - Washington",
+        "verdikt": "OK",
+        "duvod": "Giants průměrují přes 22 bodů na zápas a obrana Commanders je dlouhodobě propustná proti přihrávkám i v red zone.",
+        "text": "Desátý týden NFL otevírá čtvrteční divizní střetnutí NFC East na stadionu MetLife mezi domácími New York Giants a Washington Commanders. Předmětem sázky je zisk alespoň 2 touchdownů v podání newyorských Giants v celém zápase včetně případného prodloužení. Giants v této sezoně disponují produktivním útokem, který v průměru zapisuje 22,8 bodu na zápas a opírá se o mladou hvězdu Malika Naberse a tight enda Isaiaha Likelyho. Obrana Commanders dlouhodobě patří k nejhůře hodnoceným v lize proti přihrávkám i v bránění červené zóny, kde soupeřům povoluje vysoké procento skórování. V prvním vzájemném duelu této sezony v pátém týdnu skončil zápas divokou remízou 27:27 a Giants bez potíží dosáhli na trojici touchdownů. Útočná sestava domácích je kompletní a schopná v domácím prostředí minimálně dvakrát projít do soupeřovy endzóny. Hlavním nebezpečím by mohl být pouze nečekaný kolaps v red zone zakončený sérií field goalů Dominica Zvady, avšak Washingtonova propustná obrana poskytne dostatek šancí na plný bodový zisk.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "V prvním vzájemném duelu v sezoně skórovali Giants 27 bodů (3 touchdowny).",
+          "Obrana Washingtonu je podprůměrná v bránění pasu i tight endů v red zone.",
+          "Ofenziva Giants má stabilní průměr 22,8 bodu na zápas."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Čtvrteční zápasy (TNF) bývají občas chudší na body a plné chyb v útoku.",
+          "Kicker Zvada proměňuje dlouhé field goaly a Giants by se mohli spokojit s kopy."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Uvíznutí útoků Giants v red zone a proměňování pouze field goalů místo touchdownů."
       },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "vodni-polo",
@@ -268,18 +342,23 @@
       "marze": 0.0817,
       "sazej_od": 1.39,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr + 1.5 (Mršić Marko: Počet gólů hráče 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "VK Budva - Honvéd",
+        "verdikt": "OK",
+        "duvod": "Marko Mršić je hlavní útočnou oporou Budvy, střílí přesilovky i penalty a v divokém tempu s Honvédem má velký střelecký prostor.",
+        "text": "Ve třetím kole základní skupiny Euro Cupu mužů ve vodním pólu hostí černohorská Budva maďarský velkoklub Budapesti Honvéd. Trh se zaměřuje na střeleckou produktivitu opory domácího celku Marka Mršiće s hranicí alespoň 2 vstřelených branek. Černohorský reprezentant Mršić nosí v Budvě číslo pět a plní roli klíčového kanonýra na křídle, jenž si bere na starost zakončení v přesilových hrách i pokutové hody. Zápasy s maďarskými týmy tradičně přinášejí velmi rychlé tempo a vysoký počet vyloučení, což výrazně zvyšuje počet střeleckých pokusů pro hlavní zakončovatele. V duelech na mezinárodní scéně i v Jadranské lize patří Mršić stabilně k nejvytěžovanějším hráčům týmu a pravidelně střílí mezi 2 až 4 brankami na utkání. Proti ofenzivně laděnému Honvédu bude muset Budva spoléhat na své nejlepší individuality z dálky, čímž Mršić dostane dostatečný prostor na perimetru. Pokud se vyhne brzkému vyfaulování na tři osobní chyby, překonání vypsané linie 1,5 gólu je pro lídra domácí ofenzivy velmi reálným počinem.",
+        "duvera_gemini": 7,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Marko Mršić je hlavní střeleckou volbou Budvy při přesilových hrách.",
+          "Zápasy Honvédu bývají otevřené a padá v nich vysoký počet branek.",
+          "Mršić pravidelně v zápasech Euro Cupu i ligy střílí 2 a více gólů."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Honvéd má kvalitní defenzivní blok a může Mršiće těsně zdvojovat.",
+          "Riziko rychlého nasbírání tří osobních chyb a předčasného konce v bazénu."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Tři osobní chyby Mršiće v obraně znamenající předčasné vyloučení do konce zápasu."
       },
-      "duvera": 4
+      "duvera": 6
     },
     {
       "sport": "vodni-polo",
@@ -293,18 +372,22 @@
       "marze": 0.0817,
       "sazej_od": 1.39,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr + 1.5 (Burian Gergely: Počet gólů hráče 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Pays D Aix Natation - Jug Dubrovnik",
+        "verdikt": "OK",
+        "duvod": "Jug je obrovský favorit, v útoku střílí spoustu gólů a křídelník Gergely Burián je jejich hlavní střelec s vysokou minutáží.",
+        "text": "Ve 3. kole základní skupiny D mužského Euro Cupu přivítá francouzský Pays d'Aix chorvatského giganta Jug Dubrovnik. Mezi oběma celky panuje propastný výkonnostní rozdíl, což Jug potvrdil již v předchozím vzájemném měření sil, které vyhrál suverénně 17:11. Maďarský reprezentant Gergely Burián přišel do Dubrovníku jako klíčová posila a elitní levoruký střelec na pravé křídlo. Burián pravidelně operuje na klíčových pozicích při přesilových hrách, má vysokou úspěšnost zakončení z dálky a hojně těží také z rychlých brejků. Proti propustnější obraně francouzského týmu se očekává dominance hostů s celkovým počtem branek kolem patnácti, což nabízí Buriánovi dostatečný objem střeleckých příležitostí. Vypsaná hranice minimálně dvou vstřelených branek pro takto vytěžovaného kanonýra plně odpovídá jeho standardu na mezinárodní scéně. Jediným rizikem je brzké vysoké vedení Jugu a případné pošetření minut maďarského křídla ve čtvrté čtvrtině.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Gergely Burián je elitní levoruký střelec a klíčový zakončovatel přesilovek Jugu Dubrovnik.",
+          "Jug v předchozím vzájemném měření sil nasázel Aixu 17 branek a má obrovskou palebnou převahu."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Při rychlém a vysokém vedení může trenér opory v závěru šetřit na střídačce.",
+          "Aix může v domácím bazénu zvolit pasivnější a výrazně zataženější tempo."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Předčasné rozhodnutí zápasu a výrazné zkrácení Buriánova herního času ve prospěch lavičky."
       },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "bojove-sporty",
@@ -318,23 +401,56 @@
       "marze": 0.0817,
       "sazej_od": 1.39,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Alves, Natalia (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Alves, Natalia - Vinuto, Raiane",
+        "verdikt": "OK",
+        "duvod": "Neporažená Natalia Alvesová disponuje dominantním wrestlingem i submisemi, styl soupeřky jí dokonale vyhovuje.",
+        "text": "Titulový souboj o volný pás slámové váhy organizace LFA 246 v brazilském Cajamaru svede neporaženou Natalii Alvesovou proti Raiane Vinutové. Alvesová drží perfektní profesionální bilanci 8-0 a do titulové bitvy vstupuje jako velká favoritka reprezentující prestižní gym The Fighting Nerds. Její styl stojí na neutuchajícím nátlaku, skvělém strhávání na zem a nebezpečném grapplingu, kde již zaznamenala čtyři ukončení na submisi. Vinutová má sice solidní zápasovou praxi a bilanci 6-1, avšak v postoji často inkasuje a její obrana proti takedownům zatím nečelila tak nátlakové zemařce. Pětikolový formát šampionského klání navíc nahrává fyzicky skvěle připravené Alvesové, která dokáže tempo stupňovat v pozdějších kolech. Proti sázce hraje mírná výšková a dosahová převaha Vinutové v úvodních minutách. Alvesová však disponuje podstatně komplexnějším arzenálem a měla by si dojít pro titul.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Natalia Alvesová má perfektní bilanci 8-0 a silné zázemí gymu The Fighting Nerds.",
+          "Na zemi má Alvesová obrovskou převahu díky skvělé kontrole a 4 výhrám na submisi."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Vinutová disponuje větším výškovým i délkovým rozpětím pro boj v postoji.",
+          "V šampionském pětikolovém zápase hrozí nebezpečí nečekaného úderu."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Trefa Vinutové z ústupu v úvodních výměnách dříve, než Alvesová přenese boj na zem."
       },
-      "duvera": 4
+      "duvera": 7
+    },
+    {
+      "sport": "sipky",
+      "zapas": "Bailey D. - Drayton J.",
+      "start": "2026-11-12T15:15:00+00:00",
+      "liga": "Modus Super Series",
+      "trh": "Vítěz zápasu",
+      "vyber": "Drayton J.",
+      "kurz": 1.3,
+      "p": 0.7369,
+      "marze": 0.0867,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Bailey D. - Drayton J.",
+        "verdikt": "OK",
+        "duvod": "Jack Drayton má podstatně vyšší bodový průměr na tři šipky i lepší zavírání než jeho soupeř Declan Bailey.",
+        "text": "V rámci ligové fáze turnaje Modus Super Series se u terče potkávají Declan Bailey a favorizovaný Jack Drayton v zápase hraném na čtyři vítězné legy. Drayton dlouhodobě prokazuje stabilnější formu a v této soutěži se jeho průměr na tři šipky běžně pohybuje okolo 88 až 92 bodů. Oproti tomu Declan Bailey se potýká s výraznými výkyvy na skórování a jeho čísla v sérii často padají pod hranici 82 bodů. V krátkém formátu best-of-7 hraje klíčovou roli konstantní tlak vysokými náhozy, kde si Drayton pravidelně vytváří náskok jedné až dvou návštěv před náhozem na double. Na zavírání si navíc Drayton udržuje slušnou úspěšnost na doublech okolo 40 %, což je proti Baileyho slabší koncovce zásadní zbraň. Proti sázce hraje zrádnost krátkého sprintu, kde jedno zaváhání na vlastním podání může outsidera vrátit do hry. Celková šipkařská kvalita i současná herní jistota však hovoří jasně pro vítězství Jacka Draytona.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Jack Drayton stabilně dosahuje průměrů kolem 90 bodů na tři šipky.",
+          "Declan Bailey v soutěži Modus Super Series dlouhodobě zaostává v nábězích."
+        ],
+        "proti": [
+          "Formát na pouhé 4 vítězné legy dává prostor náhodě a momentálnímu výpadku.",
+          "Ztráta vlastního podání v úvodu může Draytona dostat pod výsledkový tlak."
+        ],
+        "riziko": "Rychlý brejk soupeře v krátkém formátu best-of-7 legs a chvilkový výpadek na dablech."
+      },
+      "duvera": 7
     },
     {
       "sport": "snooker",
       "zapas": "Wilson K. - Carter A.",
-      "start": "2026-11-12T14:00:00+00:00",
+      "start": "2026-11-12T14:20:00+00:00",
       "liga": "Champion of Champions",
       "trh": "Počet framů v zápasu 6.5",
       "vyber": "Méně než 6.5",
@@ -343,43 +459,80 @@
       "marze": 0.0867,
       "sazej_od": 1.39,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 6.5 (Počet framů v zápasu 6.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Wilson K. - Carter A.",
+        "verdikt": "OK",
+        "duvod": "Hraje se na pouhé 4 vítězné framy (best of 7), sázka prohrává pouze při výsledku 4:3 v decideru.",
+        "text": "Prestižní turnaj Champion of Champions v Leicesteru nabízí v úvodním kole duel úřadujícího mistra světa Kyrena Wilsona proti zkušenému Alimu Carterovi. Zápas se hraje systémem best-of-7 na pouhé čtyři vítězné framy, což znamená, že sázka na méně než 6,5 framu je úspěšná při jakémkoliv výsledku kromě rozhodujícího sedmého framu (4:0, 4:1 i 4:2). Wilson se nachází v fantastickém rozpoložení, vyhrál 12 po sobě jdoucích zápasů a ovládl dva velké bodované turnaje v Belfastu a Nankingu. Carter je sice houževnatý taktik se skvělou defenzivní hrou, ale proti Wilsonově současné brejkové formě bude pod obrovským tlakem. Pokud Wilson naváže na své náběhy nad padesát bodů z předchozích dnů, zápas by měl uzavřít s náskokem minimálně dvou framů. Hrozbou pro sázku je pouze Carterova schopnost rozkouskovat tempo přes safety hru a dotlačit zápas do dramatické koncovky 3:3. Statistická pravděpodobnost, že duel neskončí v decideru, je však při tomto krátkém formátu velmi vysoká.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Formát best-of-7 znamená výhru sázky při jakémkoli skóre kromě decideru 4:3.",
+          "Kyren Wilson drží sérii 12 výher v řadě po triumfech v Belfastu a Nankingu."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Ali Carter je zkušený taktik schopný safety hrou duel zpomalit a zdramatizovat.",
+          "Únava Wilsona z náročného cestování z Číny se může projevit chybami v nábězích."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Případné dotažení zápasu do těsného a nervózního rozhodujícího 7. framu (4:3)."
       },
-      "duvera": 4
+      "duvera": 7
     },
     {
-      "sport": "sipky",
-      "zapas": "Whitehead C. - Duff N.",
-      "start": "2026-11-12T16:40:00+00:00",
-      "liga": "Modus Super Series",
-      "trh": "Počet 180 v zápasu 1.5",
-      "vyber": "Méně než 1.5",
+      "sport": "volejbal",
+      "zapas": "Pinheiros - Barueri",
+      "start": "2026-11-12T21:30:00+00:00",
+      "liga": "1. Brazílie - ženy",
+      "trh": "Barueri: vyhraje alespoň set",
+      "vyber": "Ano",
       "kurz": 1.3,
       "p": 0.735,
       "marze": 0.0918,
       "sazej_od": 1.39,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 1.5 (Počet 180 v zápasu 1.5) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Pinheiros - Barueri",
+        "verdikt": "OK",
+        "duvod": "Pinheiros postihla vlna zranění včetně klíčové nahrávačky Ju Carrijo, Barueri má kvalitu na zisk setu.",
+        "text": "V 5. kole ženské brazilské Superligy hostí EC Pinheiros celek Paulistano Barueri na palubovce v Sao Paulu. Domácí Pinheiros prochází těžkou personální krizí, když má mimo hru klíčovou první nahrávačku Ju Carrijo kvůli natržené Achillovce a zdravotní trable hlásí i smečařka Amanda Danielli či libero Paola Villegas. Místo zkušených opor musí zaskakovat mladé hráčky, což se negativně projevuje na stabilitě přihrávky a plynulosti útoku. Barueri vedené uznávaným trenérem Wagaoem disponuje kádrem s reprezentačními nadějemi jako univerzálka Jheovana či blokařka Luzia Nezzo a ve vzájemném duelu letos v šampionátu Paulista porazilo Pinheiros 3:1. Přestože Barueri zatím v lize kvůli těžkému losu sbírá prohry, proti silným soupeřům dokázalo hrát vyrovnané pasáže a na servisu je značně agresivní. Vzhledem k oslabené základní sestavě Pinheiros je zisk alespoň jedné sady pro Barueri vysoce pravděpodobný. Rizikem by byl pouze výpadek hostujících hráček na příjmu v samotných koncovkách.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Pinheiros postrádá elitní první nahrávačku Ju Carrijo i další opory kvůli zranění.",
+          "Barueri porazilo Pinheiros v nedávném měření sil v šampionátu Paulista 3:1."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Pinheiros hraje v domácí hale Henrique Villaboim, kde bývá tradičně silné.",
+          "Mladý tým Barueri mívá výpadky v sériích na přihrávce a nevynucené chyby."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Ztráta koncentrace týmu Barueri a nezvládnuté koncovky těsných setů."
       },
-      "duvera": 4
+      "duvera": 7
+    },
+    {
+      "sport": "badminton",
+      "zapas": "Chen Y.F. - Chochuwong P.",
+      "start": "2026-11-13T02:20:00+00:00",
+      "liga": "Ž - Kumamoto Masters Japan, dvouhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Chen Y.F.",
+      "kurz": 1.3,
+      "p": 0.735,
+      "marze": 0.0918,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Chen Y.F. - Chochuwong P.",
+        "verdikt": "OK",
+        "duvod": "Chen Yu Fei je herně i takticky o třídu výše a styl Pornpawee Chochuwong jí dlouhodobě maximálně vyhovuje.",
+        "text": "Čtvrtfinále prestižního turnaje Super 500 Kumamoto Masters v Japonsku svede dohromady olympijskou šampionku Chen Yu Fei a thajskou reprezentantku Pornpawee Chochuwong. Chen Yu Fei se po podzimní pauze vrátila ve skvělé formě a v Kumamotu prošla úvodními koly naprosto přesvědčivě a suverénně v dlouhých výměnách. Vzájemná bilance hovoří jednoznačně ve prospěch čínské hráčky, která Pornpawee pravidelně poráží díky bezchybnému čtení hry. Chochuwong se spoléhá na útočný badminton plný ostrých smečí, avšak Chen Yu Fei je považována za nejlepší obranářku na světě, která ofenzivní snahu soupeřek dokonale otupuje. Thajka má navíc tendenci kupit nevynucené chyby v momentech, kdy se výměna protáhne přes patnáct úderů, což je přesně styl diktovaný Číňankou. Proti sázce hraje pouze možná horší adaptace na drift košíčku v hale v Kumamotu. Všechny výkonnostní ukazatele i herní vyspělost však jasně směřují k postupu Chen Yu Fei.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Chen Yu Fei je bývalá olympijská vítězka s excelentní celodvorcovou obranou.",
+          "Vzájemná bilance jasně favorizuje čínskou hráčku, naposledy vyhrála Thailand Open."
+        ],
+        "proti": [
+          "Chochuwong má nebezpečný a agresivní útočný styl schopný dostat Chen pod tlak.",
+          "Rychlejší drift košíčku v hale může mírně nahrávat přímočaré hře Thajky."
+        ],
+        "riziko": "Série nevynucených chyb Číňanky při případné horší adaptaci na drift v japonské hale."
+      },
+      "duvera": 7
     },
     {
       "sport": "hazena",
@@ -393,23 +546,28 @@
       "marze": 0.0918,
       "sazej_od": 1.39,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Tremblay (Výsledek 1. poločasu bez remízy) má podle férové pravděpodobnosti trhu (bez marže) 74 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Tremblay - Caen",
+        "verdikt": "OK",
+        "duvod": "Tremblay má na domácí palubovce stabilní formu a proti nováčkovi Caen by měl v 1. poločase potvrdit roli favorita s pojistkou vrácení vkladu při remíze.",
+        "text": "V 10. kole nejvyšší francouzské soutěže StarLigue přivítá pátý Tremblay na své palubovce osmý celek Caen Handball. Domácí výběr pod vedením trenéra Chérifa Hamaniho nasbíral z devíti kol 11 bodů při skóre 300:286 a v domácí hale Palais des Sports dokázal obrat o body i špičkový Montpellier či porazit Cesson. Caen sice vstoupilo do sezóny slušně s 10 body, venku má však pasivní bilanci a průměrně inkasuje přes 31 branek na utkání. Pro sázku na výsledek prvního poločasu bez remízy (DNB) hovoří fakt, že Tremblay do domácích duelů vstupuje s velkým tlakem a agresivní defenzivou 6-0. Caen se naopak na cizích palubovkách rozjíždí pomaleji, což se projevilo vysokými poločasovými ztrátami v Nantes i v Aix. Případná nerozhodná koncovka první půle navíc znamená vrácení vkladu, což výrazně eliminuje riziko. Pokud by Tremblay selhalo v efektivitě střelby ze spojek, Caen by mohlo udržet vyrovnaný stav, herní převaha je však na straně domácích.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 74 % při kurzu 1.3."
+          "Tremblay doma předvádí dominantní vstupy do utkání a v lize patří k nejlépe skórujícím celkům.",
+          "Caen venku inkasuje v průměru přes 31 gólů a proti silným týmům mívá vlažnější poločasy.",
+          "Sázka bez remízy (DNB) chrání vklad v případě vyrovnaného stavu po 30 minutách."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Caen už dokázalo venku těsně zaskočit Toulouse po skvělém taktickém výkonu.",
+          "Případné vyloučení v úvodu může Tremblay zbrzdit v nástupu."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Nevydařený vstup Tremblay do zápasu a slabší úspěšnost zákroků v úvodní čtvrthodině."
       },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "stolni-tenis",
       "zapas": "Szocs B.C. - Samara E.",
-      "start": "2026-11-12T15:10:00+00:00",
+      "start": "2026-11-12T15:15:00+00:00",
       "liga": "Ž - WTT Contender Istanbul, dvouhra",
       "trh": "Vítěz zápasu",
       "vyber": "Szocs B.C.",
@@ -418,18 +576,23 @@
       "marze": 0.0971,
       "sazej_od": 1.4,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Szocs B.C. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Szocs B.C. - Samara E.",
+        "verdikt": "OK",
+        "duvod": "Bernadette Szocs je dlouhodobě výkonnostně výše než její reprezentační kolegyně a na okruhu WTT potvrzuje roli elitní evropské hráčky.",
+        "text": "V úvodním kole turnaje WTT Contender v Istanbulu se střetávají dvě rumunské reprezentantky a deblové partnerky Bernadette Szocs a veteránka Elizabeta Samara. Szocs se stabilně drží ve světové špičce okolo elitní patnáctky a v posledních sezonách prokazuje výbornou dynamiku a jistotu v delších výměnách. Sedmatřicetiletá Samara sice těží z obrovských zkušeností a levorukého bekhendu, její pohyb a úderová razance však proti mladší kolegyni narážejí na limity. Obě hráčky se dokonale znají z národního týmu i společných deblů, což mírně stírá taktická překvapení. Pro Szocs jednoznačně hraje aktuální zápasová vytíženost na velkých akcích Champions a stabilní return. Proti sázce stojí pouze fakt, že Samara nemá proti krajance co ztratit a může hrát uvolněně. Kvalita a konzistence ve výměnách by však měly přinést vítězství pro nasazenou Szocs.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 73 % při kurzu 1.3."
+          "Szocs stabilně patří do nejlepší světové patnáctky s výbornou formou z turnajů WTT.",
+          "Samara v delších výměnách zaostává v pohybu a rychlosti nohou.",
+          "Vzájemné reprezentační tréninky Szocs dávají detailní přehled o servisu Samary."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Perfektní vzájemná znalost z deblu může Samaru udržet dlouho v setech.",
+          "Samara dokáže díky zkušenostem takticky trestat nepřipravené údery."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Tlak role jednoznačné favoritky a nervozita proti dlouholeté reprezentační kolegyni."
       },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "rugby",
@@ -443,68 +606,23 @@
       "marze": 0.0971,
       "sazej_od": 1.4,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 33.5 (Počet bodů v 1. poločasu 33.5) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Francie - JAR",
+        "verdikt": "OK",
+        "duvod": "Hranice 33.5 bodu v 1. poločase je na střet dvou nejlepších defenziv světa s taktickou hrou a důrazem na kopy mimořádně vysoká.",
+        "text": "V pátečním šlágru 5. kola Nations Championship na zaplněném Stade de France přivítá Francie neporažený výběr Jihoafrické republiky. Zápas nabídne souboj úřadujících mistrů světa s vedoucím týmem severní hemisféry, kde se očekává enormní fyzický tlak a taktické šachy. Hranice 33.5 bodu pro samotný první poločas je v zápase takového kalibru postavena velmi vysoko, protože oba týmy disponují nejlepšími roji a obranami současnosti. Springboks pod Rassiem Erasmusem navíc v průměru povolují pouhých 7 trestných kopů na utkání a v úvodních dějstvích hrají na teritoriální převahu skrze kopy Handrého Pollarda. Francie s navrátilcem Antoinem Dupontem na pozici útokové spojky rovněž zvolí pragmatický plán zaměřený na držení míče a poziční hru. Chladné pařížské počasí s teplotou kolem 7 °C rovněž podpoří silové souboje a méně divoké tempo. Sázku by ohrozila pouze série hrubých individuálních chyb v zadních liniích nebo rychlá červená karta, což je však málo pravděpodobné.",
+        "duvera_gemini": 9,
         "pro": [
-          "Tržní pravděpodobnost 73 % při kurzu 1.3."
+          "Oba celky disponují nejkompaktnějšími defenzivami na mezinárodní scéně.",
+          "Jarní i podzimní test match velmocí tradičně začínají opatrným kličkováním a kopy na body.",
+          "Jihoafričané v turnaji povolují nejméně trestných kopů a poločasové skóre drží nízko."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Geniální záblesky Antoina Duponta či Cheslina Kolbeho mohou přinést rychlé body z protiútoků.",
+          "Případná žlutá karta v úvodu by otevřela obranu pro položení pětky."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Dvě rychle položené pětky v otevřeném poli po nevynucených chybách na vlastní polovině."
       },
-      "duvera": 4
-    },
-    {
-      "sport": "badminton",
-      "zapas": "Haase N. - Nguyen Josh",
-      "start": "2026-11-12T12:55:00+00:00",
-      "liga": "M - Irish Open, dvouhra",
-      "trh": "Vítěz zápasu",
-      "vyber": "Nguyen Josh",
-      "kurz": 1.31,
-      "p": 0.731,
-      "marze": 0.0859,
-      "sazej_od": 1.4,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Nguyen Josh (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 73 % při kurzu 1.31."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 4
-    },
-    {
-      "sport": "volejbal",
-      "zapas": "Club Son de Rosario - Monteros",
-      "start": "2026-11-12T18:00:00+00:00",
-      "liga": "1. Argentina - muži",
-      "trh": "Handicap setů v zápasu 2.5",
-      "vyber": "Club Son de Rosario +2.5",
-      "kurz": 1.31,
-      "p": 0.731,
-      "marze": 0.0859,
-      "sazej_od": 1.4,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Club Son de Rosario +2.5 (Handicap setů v zápasu 2.5) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 73 % při kurzu 1.31."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "hazena",
@@ -514,52 +632,62 @@
       "trh": "Výsledek 2. poločasu",
       "vyber": "Melsungen",
       "kurz": 1.32,
-      "p": 0.73,
-      "marze": 0.0957,
+      "p": 0.7316,
+      "marze": 0.0901,
       "sazej_od": 1.4,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Melsungen (Výsledek 2. poločasu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Melsungen - Bergischer",
+        "verdikt": "OK",
+        "duvod": "Melsungen bojuje o špici Bundesligy, disponuje podstatně širší lavičkou a ve druhé půli by měl fyzicky zlomit odpor hostujícího BHC.",
+        "text": "V osmifinále německého poháru DHB-Pokal hostí MT Melsungen v kasselské Rothenbach-Halle celek Bergischer HC. Melsungen prožívá skvělou sezonu v nejvyšší soutěži, kde se drží na dostřel čela tabulky a pyšní se jednou z nejpevnějších obran v lize. Proti Bergischeru mají domácí mimořádnou motivaci, neboť je právě tento soupeř v loňském ročníku poháru překvapivě vyřadil. Pro sázku na vítězství Melsungenu ve 2. poločase je zásadní hloubka kádru a kondiční převaha, která se v házené obvykle láme po 40. minutě hry. Trenér Roberto García Parrondo může točit kompletní dvě vyrovnané šestky, zatímco Bergischer musí klíčové hráče přetěžovat. Sázku by mohla zkomplikovat situace, kdy by Melsungen vedl v poločase o 8 branek a ve druhém dějství nechal prostor mladíkům, nicméně touha po revanši a postupový klíč poháru velí hrát naplno až do konce.",
+        "duvera_gemini": 7,
         "pro": [
-          "Tržní pravděpodobnost 73 % při kurzu 1.32."
+          "Melsungen má nesrovnatelně kvalitnější a širší rotaci hráčů na spojkách i na křídlech.",
+          "Domácí mají s Bergischerem nevyřízené účty z loňského pohárového vyřazení.",
+          "Fyzická kondice a tlak Melsungenu pravidelně rozhodují právě v závěrečných 20 minutách."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Pokud Melsungen rozhodne už v první půli, trenér může ve druhém poločase šetřit hvězdy.",
+          "Bergischer umí pohárové zápasy vyhecovat a hrát na hranici sebeobětování."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Polevení koncentrace Melsungenu ve druhém poločase při vysokém náskoku z prvního dějství."
       },
-      "duvera": 4
+      "duvera": 6
     },
     {
-      "sport": "volejbal",
-      "zapas": "Sesc RJ Flamengo - Fluminense",
-      "start": "2026-11-13T00:00:00+00:00",
-      "liga": "1. Brazílie - ženy",
-      "trh": "Vítěz 1. setu",
-      "vyber": "Sesc RJ Flamengo",
-      "kurz": 1.31,
-      "p": 0.729,
-      "marze": 0.0912,
-      "sazej_od": 1.4,
+      "sport": "esport-counter-strike",
+      "zapas": "Kuusamo.Gg - Balkan Outlaws",
+      "start": "2026-11-12T14:00:00+00:00",
+      "liga": "ESL Challenger League EU",
+      "trh": "Vítěz 2. mapy",
+      "vyber": "Balkan Outlaws",
+      "kurz": 1.32,
+      "p": 0.723,
+      "marze": 0.0909,
+      "sazej_od": 1.42,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Sesc RJ Flamengo (Vítěz 1. setu) má podle férové pravděpodobnosti trhu (bez marže) 73 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Kuusamo.Gg - Balkan Outlaws",
+        "verdikt": "OK",
+        "duvod": "Balkan Outlaws jsou v rámci turnajů ESL Challenger výrazně sehranějším celkem a v sérii BO3 by měli ovládnout druhou mapu.",
+        "text": "V rámci turnaje ESL Challenger League Season 52 Europe Cup 12 skupiny D se utkávají finští KUUSAMO.gg a balkánský mix Balkan Outlaws. Formát zápasu je BO3 a trh je vypsán na vítěze 2. mapy. Balkan Outlaws v čele s d1majem a starplajerzem mají v posledních týdnech stabilnější výsledky v tier-2/3 evropské konkurenci a opírají se o solidní map pool na Infernu i Mirage. KUUSAMO.gg působí spíše jako mix složený pro online kvalifikace a jejich taktická hloubka na T straně často zaostává za sehranými celky. Ať už bude druhá mapa vlastním výběrem Balkan Outlaws nebo pickem Finska, individuální palebná síla a efektivita v koncovkách kol jasně hovoří pro balkánský tým. Proti hraje pouze nevyzpytatelnost online formátu a možnost, že KUUSAMO překvapí neortodoxními cally na svém picku. Celková kvalita a herní zkušenosti by však měly Balkan Outlaws zajistit výhru.",
+        "duvera_gemini": 7,
         "pro": [
-          "Tržní pravděpodobnost 73 % při kurzu 1.31."
+          "Balkan Outlaws mají mnohem stabilnější výsledky v rámci ESL turnajů.",
+          "KUUSAMO.gg vykazují slabiny v taktické komunikaci při hře za teroristy.",
+          "Vyšší individuální rating klíčových hráčů Balkan Outlaws v CS2."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Druhá mapa může být oblíbeným pickem KUUSAMO.gg se specifickou přípravou.",
+          "Online zápasy v CS2 s sebou vždy nesou riziko výkyvu formy střelců."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Prohra Balkan Outlaws na vlastní mapě v případě ztracených eco kol a horší pistolky."
       },
-      "duvera": 4
+      "duvera": 6
     },
     {
       "sport": "stolni-tenis",
       "zapas": "Grebnev M. - Yigenler A.",
-      "start": "2026-11-12T15:35:00+00:00",
+      "start": "2026-11-12T15:40:00+00:00",
       "liga": "M - WTT Contender Istanbul, dvouhra",
       "trh": "Vítěz zápasu",
       "vyber": "Grebnev M.",
@@ -568,68 +696,23 @@
       "marze": 0.0966,
       "sazej_od": 1.42,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Grebnev M. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Grebnev M. - Yigenler A.",
+        "verdikt": "OK",
+        "duvod": "Grebnev disponuje výrazně vyšší mezinárodní úrovní a přesvědčivými útočnými zbraněmi, které by na Yigenlera měly stačit.",
+        "text": "V 1. kole mužské dvouhry na turnaji WTT Contender v Istanbulu vyzve neutrální reprezentant Maksim Grebnev domácího tureckého hráče Abdullaha Yigenlera. Grebnev, bývalý mistr Evropy ve čtyřhře a stabilní účastník mezinárodních podniků, se prezentuje moderním nátlakovým stylem založeným na bleskovém prvním topspinu a stabilním servisu. Yigenler patří k domácí turecké špičce, ale na mezinárodních akcích Contender pravidelně naráží na limity proti hráčům z první dvoustovky světového žebříčku. Vzájemné zkušenosti z turnajů i deblových střetnutí hovoří pro Grebneva, který Yigenlera v minulosti dokázal přehrát. Jediným výrazným faktorem na straně Turka je domácí prostředí sportovní haly v Istanbulu a podpora publika. Pokud si Grebnev udrží koncentraci na příjmu a vyvaruje se nevynucených chyb, měl by tento duel bez větších potíží zvládnout.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 72 % při kurzu 1.32."
+          "Grebnev má podstatně vyšší úderovou jistotu a tvrdost v útočných výměnách.",
+          "Yigenler má proti hráčům mezinárodní špičky dlouhodobě zápornou bilanci.",
+          "Technická vybavenost servisu a příjmu je jednoznačně na straně Grebneva."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Yigenler hraje před domácím publikem v Istanbulu, což mu dodá extra motivaci.",
+          "Grebnev mívá občasné výpadky koncentrace v úvodech jednotlivých setů."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Podpora tureckého publika v Istanbulu a případný úvodní ztracený set v koncovce."
       },
-      "duvera": 4
-    },
-    {
-      "sport": "box-1",
-      "zapas": "Orobio, Jhon - Cedeno, Hendri",
-      "start": "2026-11-13T02:30:00+00:00",
-      "liga": "Zápasy",
-      "trh": "Zápas skončí na body nebo technickým rozhodnutím",
-      "vyber": "Ne",
-      "kurz": 1.34,
-      "p": 0.7155,
-      "marze": 0.0796,
-      "sazej_od": 1.43,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Ne (Zápas skončí na body nebo technickým rozhodnutím) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 72 % při kurzu 1.34."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 4
-    },
-    {
-      "sport": "box-1",
-      "zapas": "Tsendbaatar, Erdenebat - Yaqubov, Muhammadkhuja",
-      "start": "2026-11-14T00:30:00+00:00",
-      "liga": "Zápasy",
-      "trh": "Zápas",
-      "vyber": "Tsendbaatar, Erdenebat",
-      "kurz": 1.34,
-      "p": 0.7155,
-      "marze": 0.0796,
-      "sazej_od": 1.43,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Tsendbaatar, Erdenebat (Zápas) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 72 % při kurzu 1.34."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 4
+      "duvera": 7
     },
     {
       "sport": "esport-counter-strike",
@@ -643,93 +726,113 @@
       "marze": 0.0796,
       "sazej_od": 1.43,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr MOUZ +1.5 (Handicap map v zápasu) má podle férové pravděpodobnosti trhu (bez marže) 72 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Team Vitality - MOUZ",
+        "verdikt": "OK",
+        "duvod": "MOUZ patří mezi světovou elitu a v posledních vzájemných zápasech Vitality pravidelně trápí, handicap +1.5 mapy je vysoce pravděpodobný.",
+        "text": "Zápas mezi Team Vitality a MOUZ v rámci BLAST Rivals představuje souboj dvou týmů z nejužší světové špičky Counter-Strike 2. MOUZ v průběhu celé sezony prokazují obrovskou stabilitu a hloubku map poolu, což jim dává výhodu zejména na vlastním výběru mapy. Poslední vzájemný duel na BLAST Open Porto ovládl MOUZ poměrem 2:0 a i v dalších sériích na velkých turnajích dokázal Vitality pravidelně obírat o body. Vitality se sice opírají o individuální genialitu ZywOo a střelce ropze s flameZem, avšak občas trpí pomalejšími rozjezdy do série. Pro sázku na zisk alespoň jedné mapy týmem MOUZ hovoří jejich vynikající čísla na Mirage i Dust2, kde mají proti Vitality stabilně přes 60 % úspěšnosti. Sázku by mohl ohrozit pouze bezchybný individuální den všech hlavních opor Vitality spojený s kolapsem koncovky zvolené mapy MOUZ. Předpokládá se vyrovnaný duel, ve kterém MOUZ minimálně na svém map picku udrží krok a mapu urve.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 72 % při kurzu 1.34."
+          "MOUZ vyhráli poslední vzájemný duel na BLAST Open Porto 2:0.",
+          "MOUZ mají dlouhodobě vysokou úspěšnost na svých silných mapách Mirage a Dust2.",
+          "Tým Vitality často v sériích proti absolutní špičce ztrácí alespoň jednu mapu."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Pokud ZywOo předvede nadlidský individuální výkon, může Vitality vyhrát 2:0.",
+          "MOUZ občas v rozhodujících fázích velkých zápasů zaváhají na T-straně."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Dominantní nástup Vitality a nečekané selhání MOUZ na vlastní mapě."
       },
-      "duvera": 4
+      "duvera": 7
+    },
+    {
+      "sport": "box-1",
+      "zapas": "Orobio, Jhon - Cedeno, Hendri",
+      "start": "2026-11-13T02:30:00+00:00",
+      "liga": "Zápasy",
+      "trh": "Zápas skončí na body nebo technickým rozhodnutím",
+      "vyber": "Ne",
+      "kurz": 1.34,
+      "p": 0.7155,
+      "marze": 0.0796,
+      "sazej_od": 1.43,
+      "analyza": {
+        "id": "Orobio, Jhon - Cedeno, Hendri",
+        "verdikt": "OK",
+        "duvod": "Střet dvou neporažených knockoutérů s enormní silou úderu, ukončení před časovým limitem má obrovskou hodnotu i logiku.",
+        "text": "V montrealském kasinu se v duelu o pás WBC Continental Americas v super lehké váze střetnou dva neporažení boxeři Jhon Orobio a Hendri Cedeno. Kolumbijec Orobio žijící v Kanadě drží bilanci 19 výher, přičemž 17 duelů ukončil před limitem, což představuje téměř 90% úspěšnost knockoutů. Dominikánský vyzyvatel Cedeno má na kontě 16 výher a z toho 12 KO, přičemž do ringu nastupuje s agresivním stylem a snahou soupeře zlomit na tělo. Oba borci jsou ofenzivně ladění a disponují devastující silou, což v desetikolové bitvě málokdy vede k bodovému verdiktu. Orobio v zápasech vyvíjí enormní nátlak od prvních sekund a nutí protivníky do divokých přestřelek u provazů. Pro sázku hovoří statistika obou ranařů i menší ring, kde je vyhýbání se úderům obtížné. Sázku by mohl ohrozit pouze extrémně defenzivní a svázaný styl jednoho z boxerů v úvodních kolech. Výsledkem by mělo být předčasné ukončení zápasu technickým či čistým knokautem.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Orobio má 17 knockoutů z 19 vítězných zápasů a drtivý úder.",
+          "Cedeno ukončil před limitem 75 % svých profesionálních soubojů.",
+          "Oba vyznávají nátlakový styl a přestřelky na střední vzdálenost."
+        ],
+        "proti": [
+          "Při velkém vzájemném respektu může přijít pasivnější začátek zápasu.",
+          "Pokud Orobio nedokáže Cedenovu odolnost brzy zlomit, může duel dospět k bodům."
+        ],
+        "riziko": "Přehnaně opatrná defenzivní taktika obou neporažených borců vedoucí k doboxování všech kol."
+      },
+      "duvera": 7
+    },
+    {
+      "sport": "box-1",
+      "zapas": "Tsendbaatar, Erdenebat - Yaqubov, Muhammadkhuja",
+      "start": "2026-11-14T00:30:00+00:00",
+      "liga": "Zápasy",
+      "trh": "Zápas",
+      "vyber": "Tsendbaatar, Erdenebat",
+      "kurz": 1.34,
+      "p": 0.7155,
+      "marze": 0.0796,
+      "sazej_od": 1.43,
+      "analyza": {
+        "id": "Tsendbaatar, Erdenebat - Yaqubov, Muhammadkhuja",
+        "verdikt": "OK",
+        "duvod": "Mongolský olympionik Erdenebat je neporažený, výrazně aktivnější a Yaqubov se vrací po roční pauze a zranění ze sparingu.",
+        "text": "V super pérové váze na galavečeru ProBox TV v texaském El Pasu se utkají Erdenebat Tsendbaatar a Muhammadkhuja Yaqubov. Tsendbaatar, mongolský dvojnásobný olympionik s bilancí 15-0, se rychle propracoval do elitní desítky žebříčku WBC a předvádí vynikající technický box s vysokou frekvencí úderů. Jeho soupeř Yaqubov s bilancí 23-1-1 sice disponuje bohatými zkušenostmi a trénuje u slavného Freddieho Roache, avšak v ringu nestál celých dvanáct měsíců kvůli zranění ze sparingu. Poslední Yaqubovovo vystoupení navíc skončilo rozpačitou remízou proti Cristianu Chaconovi. Tsendbaatar je v laufu, zápasí pravidelně a jeho neustálý pohyb a přesné kombinace budou pro vracejícího se Tádžika obrovskou zkouškou. Pro vítězství Tsendbaatara jednoznačně mluví zápasové tempo, kondice a hlad po posunu k titulové šanci. Rizikem pro sázku je Yaqubovova ringová vyzrálost a schopnost kontrovat z obrany, pokud Mongol zvolí příliš zbrklý nátlak. Přesto by měl Tsendbaatar dominovat a připsat si další cenný triumf.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Tsendbaatar je neporažený (15-0) a v plném zápasovém zápřahu.",
+          "Yaqubov neboxoval celý rok kvůli zranění a v minulém zápase jen remizoval.",
+          "Tsendbaatar disponuje špičkovou amatérskou školou a vysokým tempem úderů."
+        ],
+        "proti": [
+          "Yaqubov je velmi zkušený a trénuje pod vedením Freddieho Roache.",
+          "Jediná Yaqubovova kariérní prohra přišla až se světovým šampionem Fosterem."
+        ],
+        "riziko": "Takticky bezchybný výkon Yaqubova z ústupu s přesnými údery z kontrů."
+      },
+      "duvera": 7
     },
     {
       "sport": "badminton",
-      "zapas": "Popov T.J. - Vitidsarn K.",
-      "start": "2026-11-13T01:20:00+00:00",
-      "liga": "M - Kumamoto Masters Japan, dvouhra",
+      "zapas": "Miyashita R. - Richardo R.D.",
+      "start": "2026-11-13T05:25:00+00:00",
+      "liga": "M - Kaohsiung Masters, dvouhra",
       "trh": "Vítěz zápasu",
-      "vyber": "Vitidsarn K.",
-      "kurz": 1.35,
-      "p": 0.7073,
-      "marze": 0.0856,
-      "sazej_od": 1.45,
+      "vyber": "Richardo R.D.",
+      "kurz": 1.34,
+      "p": 0.7109,
+      "marze": 0.0911,
+      "sazej_od": 1.44,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Vitidsarn K. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 71 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Miyashita R. - Richardo R.D.",
+        "verdikt": "OK",
+        "duvod": "Richardo je na žebříčku o téměř 100 míst výše, dominuje 2:0 a Miyashita má v nohách náročnou kvalifikaci a třísetové drama.",
+        "text": "Čtvrtfinále turnaje Kaohsiung Masters kategorie BWF Super 100 přináší souboj mezi japonským překvapením turnaje Reiem Miyashitou a indonéským talentem Richiem Dutou Richardem. Richardo je aktuálně hráčem světové čtyřicítky (kolem 47. na žebříčku BWF), zatímco Miyashita figuruje až na 144. pozici. Miyashita sice v osmifinále šokoval výhrou 2:1 nad Gintingem, ovšem do hlavní soutěže musel projít náročnou kvalifikací a na kurtu strávil extrémní množství času. Naopak Richardo prochází turnajem naprosto suverénně a své soupeře vyřazuje hladce 2:0 na sety s minimálním výdejem energie. Indonéský hráč disponuje dynamičtějším útokem u sítě, drtivým smečem a podstatně lepší kontrolou driftu v hale. Pro Richarda hovoří výrazně vyšší herní úroveň, menší únava a skvělá forma v posledních týdnech na okruhu Super 100. Proti sázce hraje pouze mentální vzpruha Japonce po vyřazení známého jména, která by mu mohla dodat sebevědomí na úvod prvního setu. Kvalita i fyzické síly jsou však jednoznačně na straně Richarda.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 71 % při kurzu 1.35."
+          "Richardo má podstatně vyšší postavení v žebříčku BWF (47. vs. 144.).",
+          "Miyashita má za sebou náročnou kvalifikaci i vyčerpávající třísetový maraton.",
+          "Richardo na turnaji zatím neztratil ani set a šetřil fyzické síly."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Miyashita se veze na vlně euforie po nečekané výhře nad Gintingem.",
+          "Při nepříznivém proudění vzduchu v hale může Japonec těžit z defenzivní trpělivosti."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Využití euforie a mimořádné houževnatosti Miyashity v dlouhých výměnách."
       },
-      "duvera": 4
-    },
-    {
-      "sport": "esport-counter-strike",
-      "zapas": "Lph Gaming - Maybe",
-      "start": "2026-11-12T14:00:00+00:00",
-      "liga": "ESL Challenger League EU",
-      "trh": "Handicap map v zápasu",
-      "vyber": "Lph Gaming +1.5",
-      "kurz": 1.35,
-      "p": 0.7049,
-      "marze": 0.0916,
-      "sazej_od": 1.45,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Lph Gaming +1.5 (Handicap map v zápasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 70 % při kurzu 1.35."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 4
-    },
-    {
-      "sport": "bandy",
-      "zapas": "Roea - NTNUI",
-      "start": "2026-11-13T18:00:00+00:00",
-      "liga": "1. Norsko",
-      "trh": "Výsledek zápasu",
-      "vyber": "Roea",
-      "kurz": 1.37,
-      "p": 0.7018,
-      "marze": 0.0962,
-      "sazej_od": 1.46,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Roea (Výsledek zápasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 70 % při kurzu 1.37."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 4
+      "duvera": 6
     },
     {
       "sport": "americky-fotbal",
@@ -738,23 +841,28 @@
       "liga": "NCAA",
       "trh": "Výsledek 1. poločasu",
       "vyber": "Louisiana Lafayette Ragin Cajuns",
-      "kurz": 1.38,
-      "p": 0.7004,
-      "marze": 0.0782,
-      "sazej_od": 1.46,
+      "kurz": 1.37,
+      "p": 0.7054,
+      "marze": 0.0799,
+      "sazej_od": 1.45,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Louisiana Lafayette Ragin Cajuns (Výsledek 1. poločasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Louisiana-Monroe Warhawks - Louisiana Lafayette Ragin Cajuns",
+        "verdikt": "OK",
+        "duvod": "Louisiana Lafayette je mnohem kvalitnější celek, vede vzájemnou bilanci a proti slabému ULM pravidelně dominuje už v první půli.",
+        "text": "Tradiční rivalita Sun Belt konference známá jako Battle on the Bayou tentokrát svede Louisiana Lafayette na hřiště Malone Stadium proti Louisiana-Monroe Warhawks. Hostující Ragin Cajuns bojují o čelo divize s bilancí 6-3, zatímco Warhawks se trápí na dně s bilancí 2-7 a doma v této sezoně nezaznamenali ještě ani jedno vítězství. Ofenziva Lafayette vedená quarterbackem Lunchem Winfieldem funguje velmi spolehlivě po zemi i vzduchem a dokáže trestat chyby soupeřů už v úvodních čtvrtinách. ULM má dlouhodobé problémy v obraně proti běhové hře a v prvních poločasech inkasuje vysoký počet bodů. Louisiana Lafayette vyhrála šest z posledních sedmi vzájemných měření sil a do zápasů s lokálním rivalem vstupuje s velkým nasazením. Pro výběr vedení Ragin Cajuns po prvním poločase hovoří obrovský rozdíl ve schopnosti skórovat v red zone a pevnější obrana Lafayette. Sázku by mohla zkomplikovat pouze zbytečná ztráta míče na vlastní polovině nebo typické derby emoce na začátku utkání. Hosté by si však měli vybudovat náskok již před přestávkou.",
+        "duvera_gemini": 7,
         "pro": [
-          "Tržní pravděpodobnost 70 % při kurzu 1.38."
+          "Louisiana Lafayette má bilanci 6-3 a bojuje o postup, zatímco ULM má 2-7.",
+          "Warhawks doma v letošní sezoně prohráli všechny čtyři odehrané duely.",
+          "Lafayette vyhrála 6 z posledních 7 vzájemných zápasů."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Jedná se o prestižní státní derby, kde ULM doma může na začátku kousat.",
+          "Případné ztráty míče (turnovers) Lafayette mohou darovat ULM laciné body."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Pomalý start útoku Ragin Cajuns a vyrovnaný stav po chybách na začátku utkání."
       },
-      "duvera": 4
+      "duvera": 6
     },
     {
       "sport": "bojove-sporty",
@@ -768,18 +876,23 @@
       "marze": 0.0808,
       "sazej_od": 1.47,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Santos, Lincon (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Montouro, Rafael - Santos, Lincon",
+        "verdikt": "OK",
+        "duvod": "Lincon Santos je prověřený LFA veterán s vynikající zemí i postojem, Montouro nastupuje s horší bilancí a čelí výkonnostnímu skoku.",
+        "text": "Na turnaji LFA 246 v brazilském Cajamaru se v muší váze střetnou Lincon Santos a Rafael Montouro. Santos z proslulého gymu Brazilian Top Team má na kontě bilanci 10-3 a v organizaci LFA již odzápasil řadu náročných bitev s kvalitními protivníky jako Ivan Neto či Kleberson Sousa. Jeho silnou stránkou je všestrannost se 60% mírou ukončení před limitem, přičemž těží z dosahové převahy se 69 palci rozpětí paží. Rafael Montouro naopak přichází s bilancí kolem 7-4 (respektive 5-1 na lokální scéně) a čelí zdaleka nejtěžší výzvě své dosavadní kariéry. Santos dokáže výborně kontrolovat tempo boje na pletivu a na zemi disponuje nebezpečnými submisemi, což by mělo eliminovat pokusy Montoura o jakýkoliv zvrat. Pro Santose hovoří zkušenosti z hlavních karet prestižní organizace LFA a podstatně vyšší úroveň dřívějších soupeřů. Jediným výrazným rizikem by byl nečekaný šťastný úder v divoké výměně v postoji, na který však Santos soupeřům málokdy nechává prostor. Santos by měl duel kontrolovat a dojít si pro přesvědčivé vítězství.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 70 % při kurzu 1.37."
+          "Santos má výrazně více zkušeností z LFA (bilance 10-3) a trénuje v Brazilian Top Teamu.",
+          "Santos disponuje solidním dosahem paží (69 palců) a 60% úspěšností ukončení.",
+          "Montouro dosud nečelil protivníkovi takových kvalit v organizaci LFA."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "V muší váze stačí jedna přesná rána v postoji k nečekanému obratu.",
+          "Santos v minulosti utrpěl dvě porážky před limitem na KO/TKO."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Nekontrolovaná přestřelka v úvodu a tvrdý trefený úder od Montoura."
       },
-      "duvera": 4
+      "duvera": 6
     },
     {
       "sport": "snooker",
@@ -793,18 +906,53 @@
       "marze": 0.0871,
       "sazej_od": 1.47,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Více než 8.5 (Počet framů v zápasu 8.5) má podle férové pravděpodobnosti trhu (bez marže) 70 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Wakelin C. - Robertson N.",
+        "verdikt": "OK",
+        "duvod": "Semifinále prestižního Champion of Champions na 6 vítězných framů (best of 11) slibuje vyrovnanou bitvu dvou hráčů v aktuálně skvělé formě.",
+        "text": "V semifinále prestižního turnaje Champion of Champions 2026 se střetnou Chris Wakelin a Neil Robertson ve formátu na šest vítězných framů (best of 11). Pro pokrytí sázky na více než 8,5 framu je nutné, aby poražený hráč uhrál alespoň tři framy, což je při vypsaném formátu velmi reálný scénář. Chris Wakelin zažívá výjimečné období kariéry, v pondělní skupině vyřadil Barryho Hawkinse 4:1 i obhájce trofeje Marka Selbyho 6:2 a navázal na nedávné finále z International Championship. Neil Robertson předvádí vysoké náběhy i spolehlivou safety hru, v úvodních kolech si poradil s Jakem Jonesem 6:3 a Panchayou Channoi 4:2. H2H bilance z větších turnajů sice hovoří ve prospěch Australana, ovšem Wakelinova aktuální sebedůvěra a potápění dlouhých koulí vylučují jednoznačný debakl. Oba hráči disponují skvělou tvorbou breaků a v dlouhém zápase se dá čekat přetahovaná o jednotlivé framy. Jediným rizikem by byl kolaps jednoho ze soupeřů v úvodu a jednostranný průběh se skóre 6:0 až 6:2.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 70 % při kurzu 1.37."
+          "Wakelin je v životní formě a v předešlém kole vyřadil Selbyho přesvědčivě 6:2.",
+          "Robertson v pavouku neztratil rytmus a pravidelně předvádí vysoké bodové náběhy.",
+          "Dlouhý formát na 6 vítězných framů poskytuje dostatek prostoru na zisk alespoň 3 framů pro oba."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Robertson má s Wakelinem příznivou vzájemnou bilanci z velkých turnajů.",
+          "Při Robertsonově dominanci u stolu může zápas skončit rychlým debaklem 6:1 či 6:2."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Rychlý únik jednoho z hráčů do trháku a následná psychická rezignace soupeře vedoucí k výsledku 6:0 až 6:2."
       },
-      "duvera": 4
+      "duvera": 6
+    },
+    {
+      "sport": "bandy",
+      "zapas": "Roea - NTNUI",
+      "start": "2026-11-13T18:00:00+00:00",
+      "liga": "1. Norsko",
+      "trh": "Výsledek zápasu",
+      "vyber": "Roea",
+      "kurz": 1.43,
+      "p": 0.6698,
+      "marze": 0.0979,
+      "sazej_od": 1.53,
+      "analyza": {
+        "id": "Roea - NTNUI",
+        "verdikt": "OK",
+        "duvod": "Røa je stabilním účastníkem norské Eliteserien, zatímco univerzitní tým NTNUI patří k nejslabším celkům soutěže bez vlastního domácího ledu.",
+        "text": "V norské Eliteserien v bandy přivítá domácí celek Røa IL soupeře z Trondheimu NTNUI. Røa patří k pravidelným účastníkům vyřazovacích bojů a disponuje mnohem sehranějším kádrem se zkušenostmi z těžkých ligových střetnutí. Hostující univerzitní celek NTNUI je nováčkem a dlouhodobě bojuje s úzkým kádrem i náročným cestováním, navíc své zápasy hraje převážně na hřištích soupeřů. Vzájemné zápasy z minulých ročníků i postavení v tabulce vyznívají jednoznačně ve prospěch Røy, která loni na domácím ledě přehrála NTNUI bez větších potíží 8:3. Domácí prostředí představuje výraznou výhodu z hlediska adaptace na kvalitu ledu a povětrnostní podmínky. Případná zranění klíčových hráčů nejsou hlášena a Røa nastoupí v plné ligové síle. Pro NTNUI hraje pouze možnost podcenění ze strany favorita, avšak bodový rozdíl a kvalita obou soupisek by měly zajistit čisté vítězství domácích.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Røa má stabilní ligový kádr a na domácím ledě pravidelně poráží týmy ze spodku tabulky.",
+          "NTNUI je univerzitní tým s výrazně slabší defenzivou a vysokým průměrem inkasovaných branek.",
+          "Vzájemná bilance jasně favorizuje Røu, která vyhrála poslední měření sil rozdílem třídy."
+        ],
+        "proti": [
+          "Začátek soutěže s sebou nese riziko nerozehranosti a slabší střelecké efektivity favorita.",
+          "Při zhoršených povětrnostních podmínkách se na venkovním kluzišti může smazat herní rozdíl."
+        ],
+        "riziko": "Podcenění soupeře ze strany Røy spojené s výborným výkonem brankáře NTNUI v nepříznivém počasí."
+      },
+      "duvera": 6
     },
     {
       "sport": "bandy",
@@ -818,18 +966,23 @@
       "marze": 0.0995,
       "sazej_od": 1.53,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Villa Lidkoping (Výsledek zápasu) má podle férové pravděpodobnosti trhu (bez marže) 67 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Villa Lidkoping - Västeras",
+        "verdikt": "OK",
+        "duvod": "Villa Lidköping je dlouhodobým vládcem švédského bandy a doma ve Sparbanken Lidköping Areně prohrává jen naprosto výjimečně.",
+        "text": "Šlágr švédské Elitserien nabídne souboj gigantů mezi Villa Lidköping BK a Västerås SK, což je repríza finále play-off i prestižních pohárových bitev. Villa Lidköping představuje absolutní špičku švédského bandy a ve své kryté hale Sparbanken Lidköping Arena předvádí strojově přesnou ofenzivní hru s vysokým držením míčku. Klíčové opory domácích v čele s prověřenými střelci jsou připraveny k zápasu a v hale panují perfektní podmínky bez vlivu počasí. Västerås má rovněž špičkovou kvalitu a patří do nejužší špičky, venku na ledě Lidköpingu však v posledních sezónách tahá za kratší konec. Poslední vzájemný finálový duel ovládla Villa v přestřelce 7:6 a potvrdila psychologickou převahu v klíčových momentech. Västerås sice disponuje nebezpečnými brejky a kvalitními rohovými údery, ale obrovský tlak domácího publika a ofenzivní síla Villy by měly rozhodnout o výhře domácích.",
+        "duvera_gemini": 8,
         "pro": [
-          "Tržní pravděpodobnost 67 % při kurzu 1.43."
+          "Villa Lidköping má v domácí aréně dlouhodobě dominantní bilanci a vysoký gólový průměr.",
+          "Domácí kádr disponuje nejlepším ofenzivním systémem v soutěži a stabilní brankářskou jedničkou.",
+          "Psychologická výhoda z posledních vzájemných zápasů na velkých turnajích hraje pro Villu."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Västerås je jedním z mála soupeřů, kteří dokážou Villu po herní stránce potrápit.",
+          "Případná vysoká efektivita hostů z rohových úderů může zápas zdramatizovat."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Vyrovnaná taktická bitva, v níž hostující brankář předvede mimořádný výkon a udrží Västerås ve hře až do závěru."
       },
-      "duvera": 3
+      "duvera": 6
     },
     {
       "sport": "squash",
@@ -843,18 +996,23 @@
       "marze": 0.0989,
       "sazej_od": 1.76,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Chotrani V. (Vítěz zápasu) má podle férové pravděpodobnosti trhu (bez marže) 58 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Hawal A. - Chotrani V.",
+        "verdikt": "OK",
+        "duvod": "Veer Chotrani je zkušenější hráč na okruhu PSA s vyšším žebříčkovým postavením a stabilnější formou v hlavních soutěžích.",
+        "text": "Na turnaji mužů Pittsburgh Open 2026 se v singlovém duelu střetnou mladý egyptský talent Adam Hawal a indický reprezentant Veer Chotrani. Třiadvacetiletý Chotrani, bývalý šampion z americké univerzitní ligy, se stabilně pohybuje v elitní padesátce světového žebříčku PSA a prokazuje vyzrálý herní styl s výborným pohybem po kurtu. Hawal je sice obrovským příslibem a juniorským finalistou, avšak na velkých seniorských turnajích mu zatím chybí potřebná vyrovnanost a fyzická odolnost v dlouhých výměnách. Chotrani do turnaje vstoupil sebevědomou výhrou 3:0 nad Japoncem Tsukueem a drží si vysokou úspěšnost zkrácení hry i přesnost základních délek. H2H bilance na seniorské úrovni je minimální, styl hry obou soupeřů však více nahrává trpělivějšímu pojetí indického hráče. Pro Hawala hraje dravost a rychlé útočné pojetí typické pro egyptskou školu, které může favorita zaskočit v úvodu. Pokud však Chotrani udrží rytmus a nenechá se vtáhnout do divoké přestřelky, měl by svou herní vyzrálostí dojít k postupu.",
+        "duvera_gemini": 7,
         "pro": [
-          "Tržní pravděpodobnost 58 % při kurzu 1.6."
+          "Chotrani je na okruhu PSA déle a stabilně poráží hráče mimo nejužší světovou špičku.",
+          "Indický hráč vstoupil do turnaje hladkým vítězstvím 3:0 a předvádí precizní taktickou hru.",
+          "Hawal v seniorské konkurenci často doplácí na zbrklost a nevynucené chyby v koncovkách setů."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Hawal je mimořádně nebezpečný útočný hráč s vynikající egyptskou technikou z přední části kurtu.",
+          "Pokud Chotrani ztratí tempo a fyzickou přesnost, mladý Egypťan dokáže trestat každou nepřesnost."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Hawalův agresivní styl od úvodu přinese rychlé vítězné míče a dostane favorita pod psychický tlak."
       },
-      "duvera": 2
+      "duvera": 5
     },
     {
       "sport": "kriket",
@@ -868,18 +1026,23 @@
       "marze": 0.089,
       "sazej_od": 1.84,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Indie (Vítěz zápasu do rozhodnutí) má podle férové pravděpodobnosti trhu (bez marže) 56 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Nový Zéland - Indie",
+        "verdikt": "OK",
+        "duvod": "Indie disponuje širokým a mimořádně kvalitním kádrem v ODI formátu v čele s ostřílenými pálkaři a špičkovými rotátory.",
+        "text": "Ve 4. zápase ODI série na Novém Zélandu se na stadionu Bay Oval v Mount Maunganui představí Indie proti domácím Black Caps. Indie po úspěšném průběhu předchozí T20I série prokazuje stabilnější formu v odpalovací fázi, kde se opírá o zkušenosti hvězdného jádra s Rohithem Sharmou a Viratem Kohlim a o vedení Shreyase Iyera. Nový Zéland pod kapitánem Mitchellem Santnerem spoléhá na domácí podmínky a šikovnost svých rychlých nadhazovačů, avšak v rotaci a střední fázi směny tahá proti indické sestavě za kratší konec. Hřiště v Bay Oval tradičně nabízí dobrý povrch pro pálkaře s lehkým zpomalením ve druhé směně, což zvýhodňuje indické spinery Kuldeepa Yadava a Axara Patela. Zranění klíčových opor v indickém týmu nenastalo, proběhla pouze plánovaná rotace pro udržení svěžesti před blížícími se testy. Domácí tým může kousat zásluhou Glenna Phillipse a opor v death overech, nicméně komplexní kvalita a hloubka indické pálkařské sestavy dělá z hostů oprávněného favorita.",
+        "duvera_gemini": 7,
         "pro": [
-          "Tržní pravděpodobnost 56 % při kurzu 1.67."
+          "Indická pálkařská řada disponuje obrovskou zkušeností a skvělou adaptací na tempo novozélandských hřišť.",
+          "Spinová dvojice Kuldeep Yadav a Axar Patel dokáže v prostředních směnách efektivně brzdit skórování.",
+          "Indie vyhrála předešlou sérii T20I a drží si psychologickou převahu v těsných koncovkách."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Nový Zéland na domácí půdě v Bay Oval pravidelně předvádí bojovný výkon s kvalitním rychlým bowlingem.",
+          "Rotace indické sestavy může mírně narušit souhru ve fieldingové a nadhazovací části."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Ztráta losu a nutnost pálkovat v nevýhodnějších podmínkách za přispění případného zkrácení zápasu deštěm."
       },
-      "duvera": 2
+      "duvera": 5
     },
     {
       "sport": "futsal",
@@ -893,21 +1056,116 @@
       "marze": 0.0988,
       "sazej_od": 1.85,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 2.5 (1.poločas: počet gólů) má podle férové pravděpodobnosti trhu (bez marže) 55 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Plzeň - Chrudim",
+        "verdikt": "OK",
+        "duvod": "Největší šlágr české 1. futsal ligy nabídne svázanou taktickou bitvu o čelo tabulky se zaměřením na pevnou defenzivu a elitní gólmany.",
+        "text": "V 8. kole 1. Futsal ligy přivítá dosud neporažený lídr SK Interobal Plzeň svého největšího rivala FK Chrudim v hale TJ Lokomotiva Plzeň. Sázka na méně než 2,5 gólu v 1. poločase reflektuje obrovskou taktickou vyspělost obou trenérů i fakt, že jde o přímý souboj o první místo po podzimní části. Vzájemné zápasy těchto celků se vyznačují mimořádnou opatrností v úvodním dějství, kde žádný tým nechce udělat fatální chybu z otevřené obrany. V brankách obou týmů stojí reprezentační opory (Jan Žežulka či Lukáš Němec na straně Plzně a Michal Špánik s Ondřejem Vahalou v Chrudimi), což výrazně snižuje pravděpodobnost laciných gólů. Úvodní duel sezóny sice přinesl poločas 1:3, avšak v domácím prostředí Plzně bývají úvody mnohem více svázané taktikou a pečlivým bráněním power-play. Rizikem pro sázku je rychlý gól do 3. minuty nebo brzká akumulace pěti faulů vedoucí k desítkám, nicméně styl pískání zkušených rozhodčích Černého a Dragouna by měl udržet hru pod kontrolou.",
+        "duvera_gemini": 7,
         "pro": [
-          "Tržní pravděpodobnost 55 % při kurzu 1.67."
+          "Oba týmy disponují nejlepšími defenzivami a brankáři v celé české lize.",
+          "První poločasy vzájemných šlágrů bývají extrémně opatrné a soustředěné na vyčkávání.",
+          "Obrovská důležitost zápasu o 1. místo v tabulce nutí oba trenéry minimalizovat riziko."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Vysoká individuální kvalita zakončovatelů (Drozd, Vnuk, Künstner) může vyústit v gól i z pološance.",
+          "Rychlé nasbírání kumulovaných faulů v prvním poločase by nabídlo přímé kopy bez zdi z 10 metrů."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Brzká branka v prvních minutách, která donutí jeden z týmů otevřít hru nebo sáhnout k power-play."
       },
-      "duvera": 1
+      "duvera": 5
     }
   ],
   "jistoty": [
+    {
+      "sport": "fotbal",
+      "zapas": "Turecko - Belgie",
+      "start": "2026-11-12T17:00:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Počet gólů v zápasu 6",
+      "vyber": "Méně než 6",
+      "kurz": 1.05,
+      "p": 0.9447325552141029,
+      "zdroj": "trh",
+      "sazej_od": 1.08,
+      "analyza": {
+        "id": "Turecko - Belgie",
+        "verdikt": "OK",
+        "duvod": "Obrovská bezpečnostní rezerva na gólovém stropu, Turecko pod novým koučem zpevní defenzivu a vzájemný duel v říjnu přinesl pouze tři trefy.",
+        "text": "Páté kolo elitní skupiny 1 Ligy národů s sebou přináší souboj trápícího se Turecka proti Belgii. Turecký národní tým prožívá krizi, po čtyřech porážkách a skóre 2:11 byl odvolán kouč Vincenzo Montella a kormidla se čerstvě ujal Sergen Yalcin, od kterého se čeká okamžité zpevnění propustné defenzivy. Belgie pod Markem van Bommelem bojuje o postup, avšak v ofenzivě bývá v cizím prostředí pragmatická, což potvrdila i říjnová výhra 3:0 nad Turky v Bruselu. Hranice méně než šesti branek představuje v mezistátním fotbale mimořádně vysoký polštář, který překonávají jen naprosté debakly trpaslíků. Domácí prostředí požene Turky k bojovnosti a soustředěnému bloku, protože další inkasovaný výprask by znamenal definitivní pád a ztrátu důvěry fanoušků. Belgie navíc po předchozí prohře 1:4 ve Francii potřebuje především kontrolovat výsledek a brát tři body bez zbytečného riskování. Žádný z týmů neoplývá tak drtivou efektivitou, aby v takto taktickém měření sil padlo šest a více branek.",
+        "duvera_gemini": 9,
+        "pro": [
+          "V říjnovém vzájemném duelu padly pouze tři góly při jasné kontrole Belgičanů.",
+          "Nový turecký trenér Sergen Yalcin se zaměří především na nápravu děravé obrany.",
+          "Hranice šesti gólů je na úrovni elitní Ligy národů překonávána zcela výjimečně."
+        ],
+        "proti": [
+          "Turecko má v této skupině vysoký průměr téměř tří inkasovaných branek na utkání.",
+          "Brzký gól by mohl zápas otevřít a donutit domácí k bezhlavému útočení."
+        ],
+        "riziko": "Rychlý rozpad turecké defenzivy po inkasované brance vedoucí k divoké přestřelce."
+      },
+      "duvera": 8
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Anglie - Chorvatsko",
+      "start": "2026-11-12T19:45:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Počet gólů v zápasu 6",
+      "vyber": "Méně než 6",
+      "kurz": 1.05,
+      "p": 0.9447325552141029,
+      "zdroj": "trh",
+      "sazej_od": 1.08,
+      "analyza": {
+        "id": "Anglie - Chorvatsko",
+        "verdikt": "OK",
+        "duvod": "Chorvaté po říjnovém debaklu 0:7 zvolí ve Wembley hluboký obranný blok a Tuchel bude kontrolovat hru bez zbytečné divočiny.",
+        "text": "Anglie pod vedením Thomase Tuchela přivítá ve Wembley Chorvatsko v prestižním duelu skupiny 3 Ligy národů. Přestože říjnové střetnutí v Rijece skončilo nevídanou demolicí 7:0 pro Albión, odveta slibuje diametrálně odlišný taktický scénář. Chorvatský trenér Slaven Bilić i lídr Luka Modrić po minulé ostudě avizovali totální defenzivní konsolidaci s cílem nedostat další lekci. Angličané v čele s Harrym Kanem, který slaví rekordní 126. reprezentační start, sice disponují enormní útočnou silou, ale pod Tuchelem preferují poziční kontrolu a držení míče, nikoliv bezhlavé tempo po celých devadesát minut. Zápas řídí dánský arbitr Morten Krogh, jenž obvykle nechává hru plynout a kouskuje ji jen při nutných faulech. Šest a více branek v duelech evropských špiček padá jen raritně a Chorvatsko na posvátném trávníku ve Wembley postaví kompaktní hluboký blok. Prohra o jednu či dvě branky by hostům vyhovovala více než otevřená partie s rizikem dalšího debaklu.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Chorvaté udělají maximum pro nápravu minulé ostudy a zavřou obranné pásmo.",
+          "Anglie pod Tuchelem hraje pragmatický a kontrolovaný fotbal na držení míče.",
+          "Hranice šesti gólů je v mezinárodním fotbale překonávána pouze naprosto anomálně."
+        ],
+        "proti": [
+          "Anglický útok má obrovskou formu a minule nasázel Chorvatům hned sedm branek.",
+          "Kane, Bellingham i Saka jsou ve špičkové střelecké pohodě a mohou rychle skórovat."
+        ],
+        "riziko": "Opakovaný kolaps chorvatské defenzivy jako při říjnovém debaklu v Rijece."
+      },
+      "duvera": 8
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Itálie - Francie",
+      "start": "2026-11-12T19:45:00+00:00",
+      "liga": "Liga národů",
+      "trh": "Počet gólů v zápasu 1",
+      "vyber": "Více než 1",
+      "kurz": 1.05,
+      "p": 0.9447325552141029,
+      "zdroj": "trh",
+      "sazej_od": 1.08,
+      "analyza": {
+        "id": "Itálie - Francie",
+        "verdikt": "OK",
+        "duvod": "Oba týmy mají špičkovou ofenzivní palebnou sílu a v jejich podzimních duelech Ligy národů padá pravidelně velké množství branek.",
+        "text": "Na milánském San Siru se odehraje šlágr gigantů skupiny 1 mezi Itálií a Francií, ve kterém se hraje o přímý postup do vyřazovací fáze. Oba výběry se v letošním ročníku prezentují otevřeným pojetím a vysokou gólovou produkcí. Francie v posledním kole rozstřílela Belgii 4:1 a disponuje smrtící ofenzivní silou, zatímco Italové v předchozích kolech nasázeli Turecku čtyřikrát a třikrát. Trh na více než jeden gól v zápase nabízí enormní jistotu, neboť bezgólová remíza mezi těmito týmy při současné útočné fazoně neodpovídá realitě. Domácí Squadra Azzurra hraje odvážný nátlakový fotbal a pravidelně skóruje, zároveň však její obrana nabízí okénka, kterých francouzské křídelní hvězdy dokážou okamžitě využít. V sázce je prestiž a vedoucí příčka, takže žádný z týmů nebude pouze bránit remízu. Dva a více zásahů v tomto prestižním střetnutí představují naprosto nejpravděpodobnější scénář vývoje.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Francie v minulém kole deklasovala Belgii čtyřmi góly a má skvělou ofenzivu.",
+          "Itálie v posledních zápasech Ligy národů pravidelně střílí tři až čtyři branky.",
+          "Sázka na více než 1 gól má pojistku ve formě vrácení vkladu při přesně jedné trefě."
+        ],
+        "proti": [
+          "Taktické šachy v prestižním souboji o první místo mohou vést k opatrnému úvodu.",
+          "Kvalitní brankáři a organizované obrany mohou dlouho držet čisté konto."
+        ],
+        "riziko": "Extrémně svázaný taktický průběh s neproměňováním šancí končící bezbrankovou remízou."
+      },
+      "duvera": 8
+    },
     {
       "sport": "hokej",
       "zapas": "Dallas Stars - Winnipeg Jets",
@@ -920,18 +1178,23 @@
       "zdroj": "trh",
       "sazej_od": 1.09,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 9.5 (Počet gólů v zápasu 9.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Dallas Stars - Winnipeg Jets",
+        "verdikt": "OK",
+        "duvod": "Divizní derby s elitními defenzivami a brankáři, kde v říjnu padlo jen pět branek a hranice 9.5 gólu je v NHL téměř nepřekonatelná.",
+        "text": "V American Airlines Center hostí Dallas Stars divizního soka Winnipeg Jets v odvetě za říjnový duel, který Stars vyhráli těsně 3:2 po prodloužení. Hranice méně než 9.5 gólu je v moderní NHL obrovským bezpečnostním polštářem, který pokrývá drtivou většinu myslitelných výsledků. Dallas se opírá o fantastické oslabení s úspěšností takřka 90 % a stabilní brankářskou jedničku Jakea Oettingera, což výrazně omezuje palebnou sílu soupeřů. Winnipeg po sérii nevýrazných výsledků zlepšil herní projev, avšak jeho ofenziva nepatří k nejdivočejším a v defenzivě se spoléhá na pevnou strukturu. Stars sice mají v sestavě produktivního Mikka Rantanena i kapitána Jamieho Benna útočícího na metu tisíce bodů, zápasy s Winnipegem však tradičně bývají fyzicky náročné a těsné. Aby byla hranice pokořena, musel by zápas skončit výsledkem jako 6:4 či 7:3, což se při disciplíně obou celků a kvalitě jejich obranných dvojic stává naprosto ojediněle.",
+        "duvera_gemini": 10,
         "pro": [
-          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+          "První vzájemný zápas v této sezoně přinesl v základní hrací době pouze čtyři branky.",
+          "Dallas disponuje elitním oslabením s úspěšností téměř devadesát procent.",
+          "Hranice 9.5 branky je v duelech kvalitních týmů NHL pokořena pouze raritně."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Winnipeg i Dallas disponují vysokou individuální kvalitou v přesilovkových formacích.",
+          "Nečekaný výpadek startujícího gólmana může vést k otevřené gólové smršti."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Brankářský kolaps na obou stranách kombinovaný s velkým množstvím vyloučení."
       },
-      "duvera": 6
+      "duvera": 8
     },
     {
       "sport": "hokej",
@@ -945,43 +1208,23 @@
       "zdroj": "trh",
       "sazej_od": 1.09,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Více než 2.5 (Počet gólů v zápasu 2.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Utah Mammoth - St. Louis Blues",
+        "verdikt": "OK",
+        "duvod": "Hranice tří branek je v NHL naprostý standard, v minulých zápasech obou týmů padlo osm branek a obrany nejsou bezchybné.",
+        "text": "V Delta Center v Salt Lake City přivítá domácí celek Utah Mammoth hokejisty St. Louis Blues v prvním vzájemném střetnutí nové sezony. Sázka na více než 2.5 gólu představuje v NHL nejzákladnější hranici, která je pokořena v naprosté většině duelů základní části. St. Louis v minulém kole přetlačilo Detroit 3:2, přičemž střelecky táhne tým Jimmy Snuggerud a Robert Thomas, který v předchozím vzájemném zápase na jaře zaznamenal hattrick při výhře Blues 5:3. Utah má za sebou divokou prohru 3:5 ve Vegas a jeho hra se vyznačuje rychlým přechodem do útoku, avšak také častými chybami v defenzivním pásmu. Oba týmy pouštějí stabilně kolem tří branek na utkání a jejich brankářské jedničky nepatří mezi neprůstřelné jistoty ligy. Útočné zbraně jako Keller či Crouse na straně Utahu a Kyrou se Snuggerudem u hostů garantují vysoký počet gólových šancí. K úspěchu sázky stačí jakýkoli běžný hokejový výsledek typu 2:1 či 3:0.",
+        "duvera_gemini": 10,
         "pro": [
-          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+          "V posledním vzájemném souboji padlo celkem osm gólů při výhře Blues 5:3.",
+          "Utah i St. Louis inkasují v průměru okolo tří branek na zápas.",
+          "Vypsaná hranice 2.5 gólu je v NHL pokořena v drtivé většině utkání."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Případný vynikající výkon jednoho z brankářů může udržet skóre na minimu.",
+          "Oba týmy mohou po sérii proher zvolit až příliš opatrnou defenzivní taktiku."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Fotbalový průběh zápasu s vynikajícími zákroky brankářů a výsledkem 1:1 či 2:0."
       },
-      "duvera": 6
-    },
-    {
-      "sport": "fotbal",
-      "zapas": "Anglie - Chorvatsko",
-      "start": "2026-11-12T19:45:00+00:00",
-      "liga": "Liga národů",
-      "trh": "Počet gólů v zápasu 6",
-      "vyber": "Méně než 6",
-      "kurz": 1.05,
-      "p": 0.9432825093841798,
-      "zdroj": "trh",
-      "sazej_od": 1.09,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 6 (Počet gólů v zápasu 6) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 94 % při kurzu 1.05."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 6
+      "duvera": 8
     },
     {
       "sport": "hokej",
@@ -995,68 +1238,23 @@
       "zdroj": "trh",
       "sazej_od": 1.09,
       "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Více než 2.5 (Počet gólů v zápasu 2.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
+        "id": "Florida Panthers - Detroit Red Wings",
+        "verdikt": "OK",
+        "duvod": "Vzájemný zápas před deseti dny skončil divokou výhrou Detroitu 5:3 a slabé oslabení Red Wings nahrává produktivnímu útoku Floridy.",
+        "text": "Amerant Bank Arena v Sunrise uvidí odvetu mezi domácími Florida Panthers a hostujícími Detroit Red Wings, kteří před pouhými deseti dny šokovali Floridu výhrou 5:3. Floridští panteři disponují jednou z nejúdernějších ofenziv ligy vedenou Matthewem Tkachukem, Samem Reinhartem a Carterem Verhaeghem, která průměrně generuje přes 3.1 gólu na utkání. Detroit se po čtyřech porážkách v řadě trápí především v obraně a jeho oslabení s úspěšností pod 70 % patří k nejhorším v celé soutěži. Na druhou stranu Red Wings mají v čele s DeBrincatem a Raymondem dostatek šikovnosti na to, aby využili případných zaváhání gólmana Jacoba Markströma. Sázka na více než 2.5 branky vyžaduje pouhé tři trefy za šedesát minut, což je při ofenzivním stylu Floridy a propustnosti defenzivy Detroitu prakticky formalitou. Zápas by musel skončit naprosto anomálním výsledkem 1:0 nebo 2:0, což je při ofenzivním profilu obou mužstev velmi nepravděpodobné.",
+        "duvera_gemini": 10,
         "pro": [
-          "Tržní pravděpodobnost 94 % při kurzu 1.05."
+          "Minulé vzájemné měření sil z 2. listopadu skončilo divokým výsledkem 5:3 pro Detroit.",
+          "Florida patří s průměrem přes tři vstřelené góly na zápas k předním útokům NHL.",
+          "Detroit má podprůměrnou úspěšnost oslabení a inkasuje pravidelně velké množství branek."
         ],
         "proti": [
-          "Fakta o zápase nebyla ověřena."
+          "Detroit v minulých čtyřech zápasech dal dohromady pouze pět branek.",
+          "Případné brankářské představení Jacoba Markströma může hosty zcela vynulovat."
         ],
-        "riziko": "Nezjištěná sestava a zranění."
+        "riziko": "Naprostá střelecká impotence Detroitu kombinovaná s těsnou výhrou Floridy 2:0."
       },
-      "duvera": 6
-    },
-    {
-      "sport": "hokej",
-      "zapas": "Los Angeles Kings - NY Islanders",
-      "start": "2026-11-13T03:07:00+00:00",
-      "liga": "NHL",
-      "trh": "Počet gólů v zápasu 9.5",
-      "vyber": "Méně než 9.5",
-      "kurz": 1.05,
-      "p": 0.9415914399164564,
-      "zdroj": "trh",
-      "sazej_od": 1.09,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Méně než 9.5 (Počet gólů v zápasu 9.5) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 94 % při kurzu 1.05."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 6
-    },
-    {
-      "sport": "fotbal",
-      "zapas": "Černá Hora - Lotyšsko",
-      "start": "2026-11-12T19:45:00+00:00",
-      "liga": "Liga národů",
-      "trh": "Počet gólů v zápasu 1",
-      "vyber": "Více než 1",
-      "kurz": 1.05,
-      "p": 0.9415914399164564,
-      "zdroj": "trh",
-      "sazej_od": 1.09,
-      "analyza": {
-        "verdikt": "NEOVERENO",
-        "duvod": "Gemini kontrola neproběhla, k dispozici je jen tržní pravděpodobnost.",
-        "text": "Výběr Více než 1 (Počet gólů v zápasu 1) má podle férové pravděpodobnosti trhu (bez marže) 94 %. Kontextová fakta (forma, sestavy, zranění, program) nebyla ověřena.",
-        "pro": [
-          "Tržní pravděpodobnost 94 % při kurzu 1.05."
-        ],
-        "proti": [
-          "Fakta o zápase nebyla ověřena."
-        ],
-        "riziko": "Nezjištěná sestava a zranění."
-      },
-      "duvera": 6
+      "duvera": 8
     }
   ]
 }
