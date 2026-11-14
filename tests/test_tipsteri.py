@@ -589,7 +589,7 @@ def test_prehled_uceni():
     assert u["zapsano"] == 4 + 20 and u["vyhodnoceno"] == 3 + 20
     assert u["vcera"]["Nejjistější dne"]["n"] == 1 and u["chyby"][0]["zapas"] == "A2 - B2"
     m100 = u["mety"][0]
-    assert m100["stav"] == 23 and abs(m100["podil"] - 0.23) < 1e-9 and m100["eta"] > "2026-11-12"
+    assert m100["stav"] == 23 and abs(m100["podil"] - 0.115) < 1e-9 and m100["dny"] == 2 and m100["eta"] > "2026-11-12"
     assert u["sporty"]["hokej"]["n"] == 23 and "1.6–2" in u["pasma"] or any("1.6" in k for k in u["pasma"])
     h = report.sestav_report("2026-11-12", [], [], "", {"vše": {"n": 0}}, "Europe/Prague", uceni=u, model_text="Brier +3 %")
     assert "Učení bota" in h and "Kde se bot včera spletl" in h and "Postup k dalším metám" in h and h.index("<h2 id='uc'>") < h.index("<h2 id='pyr'>")
@@ -692,5 +692,26 @@ def test_horni_prehled_vcera_a_rozklik(tmp_path, monkeypatch):
     assert tip.index("Vysoká - Y") < tip.index("Nízká - X")                      # nejvyšší pravděpodobnost nahoře
     assert "12.11. 20:30" in tip and "class='klik'" in tip and "Rozbor dvě." in tip and "class='roz'" in tip
     assert h.count("<h3>Kolo ") == 10                                           # Pyramida celá, všech 10 kol
-    assert h.index("id='vcera'") < h.index("id='vd'") and "Včerejší vyhodnocení (11. 11. 2026)" in h and "do úpravy modelu" in h and "data-k='vcera'" in h
+    assert h.index("id='vcera'") < h.index("id='vd'") and "Včerejší vyhodnocení (11. 11. 2026)" in h and "Postup k další úpravě modelu" in h and "data-k='vcera'" in h
     assert "✔ VÝHRA (3:2)" in h and "✖ PROHRA" in h
+
+
+def test_overeni_segmentu():
+    """Segment je 'ověřen' jen když zisk platí na objevném i na novějším (nepoužitém) období; náhodný šum ne."""
+    import random
+    from bot import overeni
+    random.seed(1)
+    def r(i, den, sport, p_real, kurz=2.0, trh="Počet gólů: Více než 5.5"):
+        return {"id": f"{den}{i}{sport}", "datum": den, "sport": sport, "zapas": f"A{i}{sport}{den}", "start": den, "trh": trh, "vyber": "Více",
+                "kurz": str(kurz), "p": "0.5", "vysledek": "1" if random.random() < p_real else "0"}
+    dny = [f"2026-11-{d:02d}" for d in range(1, 15)]
+    rows = [r(i, d, "hokej", 0.62) for d in dny for i in range(30)] + [r(i, d, "tenis", 0.5) for d in dny for i in range(30)]
+    seg = overeni.vypocti(rows)
+    kh = ("hokej", "over/under", "2–2.6")
+    assert overeni.rodina("Góly Zibanejad Mika v zápase: Dá gól") == "hráč: gól/bod" and overeni.rodina("Výsledek zápasu", "Sparta") == "vítěz"
+    assert seg[kh]["stav"] == "ověřeno"                      # skutečně 62 % při kurzu 2.0 (čekáno 50 %): zisk drží na obou obdobích
+    assert seg[("tenis", "over/under", "2–2.6")]["stav"] != "ověřeno"      # férová mince: nikdy ověřeno
+    krat = overeni.vypocti([x for x in rows if x["datum"] < "2026-11-05"])
+    assert all(v["stav"] == "málo dat" for v in krat.values())  # málo dní -> nic se neověřuje
+    x = {"sport": "hokej", "trh": "Počet gólů: Více než 5.5", "vyber": "Více", "kurz": 2.0}
+    overeni.oznac([x], seg); assert x["overeni"] == "ověřeno"
