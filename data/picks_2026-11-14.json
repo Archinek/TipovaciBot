@@ -84,148 +84,148 @@
       "analyza": {
         "id": "Mallorca - Cordoba CF",
         "verdikt": "OK",
-        "duvod": "Sázka na méně než 2.5 gólu v kurzu 2.34 přináší hodnotu díky pevné defenzivě Mallorcy (0.5 inkasovaných gólů na zápas) a taktickému očekávání opatrného průběhu.",
-        "souhrn": "Souboj 14. kola druhé španělské ligy staví proti sobě šestou Mallorcu a jedenáctou Córdobu. Domácí tým se dlouhodobě prezentuje nepropustnou defenzivou s průměrem pouhých 0.5 obdržených branek na zápas. Vzhledem k postavení v tabulce se očekává obezřetný duel s důrazem na kontrolu středu pole.",
-        "text": "Zápas čtrnáctého kola španělské druhé ligy na Estadi Mallorca Son Moix nabídne konfrontaci šesté Mallorcy s jedenáctou Córdobou, kde se střetnou dva odlišné herní přístupy. Domácí celek se v posledních týdnech prezentuje mimořádně pevnou defenzivní strukturou, což dokládá bilance pouhých pěti inkasovaných branek v deseti ligových utkáních a tři remízové výsledky s nízkým skóre z předchozích pěti kol. Córdoba sice v lize vykazuje divočejší bilanci se skóre 22:22 a venku inkasuje častěji, avšak proti organizovanému bloku Mallorcy se bude prosazovat velmi obtížně. V sestavách by neměly chybět klíčové postavy ofenzivy v čele s domácím střelcem Fuentesem a hostujícím Percanem, přičemž stěžejní opory defenzivy domácích zaručují stabilitu vzadu. Utkání dostal na starost arbitr Rafael Sánchez López, nicméně ligová statistika rozhodčího v dodané databázi k dispozici není. Hrací plocha disponuje standardními ligovými rozměry 105 x 68 metrů a předpověď počasí pro Palma de Mallorca hlásí teploty kolem 18 až 20 stupňů Celsia s možností přeháněk, což nahrává spíše opatrnějšímu fotbalu. Oba celky mají za sebou obvyklý týdenní cyklus bez pohárového vytížení, takže únava ani nucená rotace do průběhu nezasáhnou. Motivace v horní polovině tabulky velí hrát bez zbytečného rizika a neotevírat prostory pro brejky soupeře. Matematický model identifikuje na trhu méně než 2.5 gólu kurzovou hranu s kurzem 2.34, což představuje zajímavou hodnotovou asymetrii. Sázku by zhatil pouze rychlý náhodný gól v úvodních minutách či brzká červená karta, jinak herní parametry podporují defenzivně laděný duel.",
-        "duvera_gemini": 7,
+        "duvod": "Fakta o extrémně pevné domácí obraně Mallorcy a rozsáhlých ofenzivních absencích na obou stranách plně podporují matematickou hranu modelu na Under 2.5 gólů v kurzu 2.34.",
+        "souhrn": "Mallorca na domácím stadionu Son Moix inkasuje naprosté minimum a s pouhými 7 obdrženými góly ve 12 zápasech patří k nejlepším defenzivám LaLigy Hypermotion. Oba týmy navíc čelí početným absencím klíčových ofenzivních hráčů kvůli reprezentační pauze a zraněním, což favorizuje taktickou bitvu s nízkým počtem šancí. Vysoký kurz 2.34 na méně než 2.5 gólu tak nabízí zřetelnou hodnotu.",
+        "text": "Mallorca přivítá na Estadi Mallorca Son Moix v rámci 14. kola LaLigy Hypermotion tým Córdoby v zápase, kde se střetává skvěle organizovaná domácí defenziva s andaluským vyzyvatelem. Domácí celek se drží na 6. místě tabulky s 22 body a inkasoval za dosavadní ligový průběh pouhých 7 branek, přičemž na svém stadionu ovládl pět ze šesti letošních duelů. Hostující Córdoba s 19 body sice neprohrála čtyři kola v řadě, nicméně její venkovní bilance se dvěma výhrami a čtyřmi porážkami ukazuje na výrazně nižší sebedůvěru na hřištích soupeřů. Oběma trenérům výrazně zkomplikoval situaci reprezentační termín a marodka, což tvrdě zasáhne zejména ofenzivní vozbu; kouč Mallorcy Luis García postrádá až deset fotbalistů včetně křídelníka Zita Luvumba a stopera Martina Valjenta na reprezentačních srazech i zraněného tvůrce hry Manua Morlanese. Hostům z Córdoby zase chybí reprezentační brankářská jednička Iker Álvarez i zraněná ofenzivní křídla Adilson a Kevin Medina. Hlavním rozhodčím utkání je Rafael Sánchez López, k němuž interní statistika ligy sice data neuvádí, ale jeho ligový průměr kolem 27 faulů na utkání předznamenává časté kouskování hry. Přírodní trávník v Son Moix o standardních rozměrech 105 x 68 metrů nabídne férové podmínky při příjemné podzimní teplotě kolem 18 °C. Vzhledem k výpadkům na křídlech se u Mallorcy očekává zahuštění středu pole čtyřmi záložníky a pomalejší, kontrolovaná výstavba útoků. Sázkový model detekoval v kurzu 2.34 na Under 2.5 gólů solidní hranu přes 3,1 %, přičemž trh kurz zbytečně navýšil na základě celkové divoké bilance Córdoby z domácích utkání. Všechna zjištěná fakta s ohledem na oslabené útoky a taktickou povahu duelu podporují sázku na méně než 2.5 gólu, kterou by mohla zhatit pouze hrubá individuální minela náhradního gólmana hostů Fernandese.",
+        "duvera_gemini": 8,
         "faktory": [
           {
             "kriterium": "rozhodci_vliv",
-            "zjisteni": "Delegován Rafael Sánchez López; statistika rozhodčího v dodané ligové databázi není k dispozici",
+            "zjisteni": "Zápas řídí Rafael Sánchez López. V interní ligové tabulce 'rozhodci_v_lize' statistika není k dispozici (z externích dat průměruje 4,8 ŽK a 27,6 faulů na zápas).",
             "stav": "nalezeno",
-            "dopad": "0 Neutrální vliv na gólový trh, v datech ligy statistika rozhodčího chybí."
+            "dopad": "+ | Vyšší počet odpískaných faulů kouskuje tempo a zpomaluje přechod do útoku."
           },
           {
             "kriterium": "velikost_hriste",
-            "zjisteni": "Estadi Mallorca Son Moix má rozměry 105 x 68 metrů a přírodní trávník",
+            "zjisteni": "Estadi Mallorca Son Moix, rozměry 105 x 68 m, přírodní trávník.",
             "stav": "nalezeno",
-            "dopad": "0 Standardní rozměry hrací plochy bez deformace tempa hry."
+            "dopad": "0 | Standardní rozměry hřiště nemají vychylující vliv na celkový počet gólů."
           },
           {
             "kriterium": "pocasi",
-            "zjisteni": "Palma de Mallorca, teplota 18-20 °C, oblačno, možnost izolovaných přeháněk a vítr 10-15 km/h",
+            "zjisteni": "Palma de Mallorca, teplota v době zápasu cca 18-21 °C, polojasno až oblačno, mírný vítr, bez extrémních srážek.",
             "stav": "nalezeno",
-            "dopad": "+ Zvýšená vlhkost a případný déšť zhoršují kombinaci a podporují nižší skóre."
+            "dopad": "0 | Běžné středomořské počasí bez negativního dopadu na technickou hru."
           },
           {
             "kriterium": "program_a_unava",
-            "zjisteni": "Standardní týdenní ligová pauza bez vložených pohárových duelů či dlouhého cestování",
+            "zjisteni": "Mallorca nehrála 12 dní kvůli odloženému duelu s Andorrou, Córdoba hrála před týdnem. Žádné pohárové zatížení.",
             "stav": "nalezeno",
-            "dopad": "0 Týmy mají vyrovnaný rytmus a plné síly na taktický boj."
+            "dopad": "+ | Delší herní pauza domácích může vést k pomalejšímu útočnému tempu a menší souhře."
           },
           {
             "kriterium": "derby_rivalita",
-            "zjisteni": "Běžné ligové střetnutí, Baleáry vs Andalusie, nejde o regionální derby",
+            "zjisteni": "Nejedná se o derby ani o vypjatou historickou rivalitu.",
             "stav": "nalezeno",
-            "dopad": "0 Žádné abnormální emoce snižující taktickou ukázněnost."
+            "dopad": "0 | Neutrální ligový kontext bez přehnaných emocí."
           },
           {
             "kriterium": "potvrzena_sestava",
-            "zjisteni": "Do výkopu zbývá více času, předpokládají se standardní sestavy s oporami",
-            "stav": "odhad",
-            "dopad": "0 Základní jedenáctky by měly nastoupit v nejsilnějším možném složení."
+            "zjisteni": "Oficiální zápis zatím nebyl vydán, sestavy se skládají z předpokládaných jedenáctek podle španělských médií.",
+            "stav": "nenalezeno",
+            "dopad": "0 | Absence oficiálního zápisu zatím nemění předpokládané rozložení sil."
           },
           {
             "kriterium": "zraneni_a_suspendace",
-            "zjisteni": "Klíčové ofenzivní i defenzivní opory (Fuentes, Raíllo, Percan) jsou k dispozici",
+            "zjisteni": "Mallorca: zranění Manu Morlanes, Jan Salas, David López, Josep Cerdà, John Donald. Córdoba: zranění Adilson, Kevin Medina, Yussi Diarra, Fomeyem.",
             "stav": "nalezeno",
-            "dopad": "0 Žádné zásadní absence na klíčových postech obou mužstev."
+            "dopad": "+ | Marodka zasáhla především ofenzivní křídla a kreativce, což výrazně sráží gólový potenciál obou celků."
           },
           {
             "kriterium": "ignoruj_vysoky_kurz",
-            "zjisteni": "Kurz 2.34 nese kurzovou hranu 0.0316 a modelovou pravděpodobnost 48.76 %",
+            "zjisteni": "Kurz Fortuny na Under 2.5 je 2.34 při pravděpodobnosti modelu 48,76 % a kladné hraně +3,16 %.",
             "stav": "nalezeno",
-            "dopad": "+ Vyšší kurz nabízí matematickou hodnotu, která se nezamítá."
+            "dopad": "+ | Vysoký kurz plně respektujeme, protože odráží asymetrii a nabízí sázkovou hodnotu."
           },
           {
             "kriterium": "motivace_tabulka",
-            "zjisteni": "Mallorca na 6. místě (22 b.), Córdoba na 11. místě (19 b.), boj o postupové pozice",
+            "zjisteni": "Mallorca na 6. místě (22 bodů), Córdoba na 11. místě (19 bodů). Přímý souboj o elitní šestku pro play-off.",
             "stav": "nalezeno",
-            "dopad": "+ Těsný bodový odstup vede k opatrnější a pragmatické hře bez zbytečného rizika."
+            "dopad": "+ | Velká bodová důležitost utkání nutí oba týmy k opatrnosti a minimalizaci chyb vzadu."
           },
           {
             "kriterium": "vzajemne_zapasy",
-            "zjisteni": "V dodaných datech z historie chybí záznamy vzájemných zápasů",
-            "stav": "nenalezeno",
-            "dopad": "0 Analýza vychází především z aktuální ligové formy obou celků."
+            "zjisteni": "Historické ligové zápasy: 3:2, 3:0, 1:1, 0:2, 0:1. V posledních pěti letech se v lize nepotkaly.",
+            "stav": "nalezeno",
+            "dopad": "0 | Dlouhý časový odstup od posledních vzájemných střetnutí snižuje relevanci historického H2H."
           },
           {
             "kriterium": "styl_a_taktika",
-            "zjisteni": "Mallorca vyniká skálopevnou defenzivou s inkasovanými 0.5 branky na duel, Córdoba venku naráží na blok",
+            "zjisteni": "Mallorca se opírá o vysoké držení míče (přes 60 %) a pevnou defenzivní strukturu. Córdoba venku volí konzervativní blok.",
             "stav": "nalezeno",
-            "dopad": "+ Zatažená a organizovaná obrana domácích efektivně eliminuje šance soupeře."
+            "dopad": "+ | Držení míče Mallorcy a zatažená obrana Córdoby eliminují divoké brejky a nahrávají underu."
           },
           {
             "kriterium": "formace_a_styl",
-            "zjisteni": "Oba týmy pokračují v ustálených taktických systémech bez radikálních proměn",
-            "stav": "odhad",
-            "dopad": "0 Herní plány jsou stabilní a nepřinášejí neočekávané přestřelky."
+            "zjisteni": "Trenér Mallorcy Luis García zvažuje kvůli absenci křídel nasazení čtyř středních záložníků.",
+            "stav": "nalezeno",
+            "dopad": "+ | Zahuštěný střed hřiště bez klasických křídelních útoků obvykle vede k menšímu počtu centrovaných šancí."
           },
           {
             "kriterium": "forma_poslednich_zapasu",
-            "zjisteni": "Mallorca v 5 zápasech 3x remizovala s nízkým skóre (0:0, 1:1, 1:1) a inkasovala pouze 5 gólů v 10 zápasech",
+            "zjisteni": "Mallorca z posledních 10 ligových kol inkasovala v průměru pouze 0,5 gólu na zápas, Córdoba venku ztrácí střeleckou produktivitu.",
             "stav": "nalezeno",
-            "dopad": "+ Defenzivní stabilita domácího celku je silným argumentem pro under."
+            "dopad": "+ | Špičková obranná forma Mallorcy představuje hlavní oporu pro nízký počet branek."
           },
           {
             "kriterium": "domaci_vs_venku",
-            "zjisteni": "Mallorca doma inkasuje minimum branek a kontroluje hru, Córdoba venku ztrácí útočný tlak",
+            "zjisteni": "Mallorca doma inkasovala minimum gólů a vyhrála 5 ze 6 utkání. Córdoba venku prohrála 4 ze 7 duelů.",
             "stav": "nalezeno",
-            "dopad": "+ Domácí prostředí posiluje defenzivní dominanci Mallorcy."
+            "dopad": "+ | Domácí nepropustnost Mallorcy drží soupeře daleko od nebezpečných zakončení."
           },
           {
             "kriterium": "standardky",
-            "zjisteni": "Defenziva Mallorcy pod vedením vysokých stoperů kraluje vzdušnému prostoru při standardkách",
-            "stav": "odhad",
-            "dopad": "+ Nízká pravděpodobnost laciných gólů po rohových a volných kopech."
+            "zjisteni": "Mallorca má vysokého stopera Raílla, avšak při absenci rozehrávačů jako Morlanes je efektivita standardek oslabena.",
+            "stav": "nalezeno",
+            "dopad": "+ | Absence hlavních exekutorů standardních situací snižuje riziko náhodných gólů ze vzduchu."
           },
           {
             "kriterium": "disciplina_tymu",
-            "zjisteni": "Mallorca 3.1 žluté a 14.6 faulů, Córdoba 3.5 žluté a 15.4 faulů na zápas",
+            "zjisteni": "Mallorca má průměr 3,1 ŽK a 14,6 faulů na zápas, Córdoba 3,5 ŽK a 15,4 faulů na zápas.",
             "stav": "nalezeno",
-            "dopad": "0 Kartové i faulové průměry jsou v ligovém normálu, nehrozí rozvrat zápasu."
+            "dopad": "+ | Agresivnější pojetí obou středových řad vede k faulům, které rozbíjejí plynulost ofenziv."
           },
           {
             "kriterium": "zmena_rozhodciho",
-            "zjisteni": "Žádná náhlá změna delegovaného rozhodčího nebyla hlášena",
+            "zjisteni": "Žádná náhlá změna nebyla reportována, delegován je řádně Rafael Sánchez López.",
             "stav": "nenalezeno",
-            "dopad": "0 Zápas řídí původně určený rozhodčí."
+            "dopad": "0 | Změna nenastala, platí původní předpoklady."
           },
           {
             "kriterium": "rotace_pohar",
-            "zjisteni": "Žádná pohárová rotace neprobíhá, prioritou je plný zisk v ligové tabulce",
-            "stav": "nalezeno",
-            "dopad": "0 Oba týmy nastupují s plným nasazením."
+            "zjisteni": "Pohárové zápasy v tomto týdnu neprobíhaly, rotace je způsobena čistě reprezentační přestávkou.",
+            "stav": "nenalezeno",
+            "dopad": "0 | Žádné šetření hráčů na pohár se nekoná."
           },
           {
             "kriterium": "korelace_builder",
-            "zjisteni": "Sázka je vypsána jako samostatná položka na celkový počet gólů",
+            "zjisteni": "Vysoké držení míče Mallorcy s menším počtem přímých střel na bránu silně koreluje s nízkým počtem gólů.",
             "stav": "nalezeno",
-            "dopad": "0 Irelevantní pro single sázku na Under 2.5."
+            "dopad": "+ | Herní profil domácích podporuje underový průběh zápasu."
           },
           {
-            "kriterium": "tempo_ligy",
-            "zjisteni": "Ligový průměr činí 2.65 gólu na zápas, defenzivní čísla Mallorcy jsou hluboko pod tímto průměrem",
+            "kriterium": "stav_tymu_cizinci_reprezentanti",
+            "zjisteni": "Ztráty vlivem reprezentačních srazů: Mallorce chybí Martin Valjent, Zito Luvumbo, Lucas Bergström a Guille Fernández; Córdobě chybí brankář Iker Álvarez.",
             "stav": "nalezeno",
-            "dopad": "+ Mallorca dlouhodobě tlačí celkový počet branek ve svých duelech směrem dolů."
+            "dopad": "+ | Odjezd Luvumba a dalších reprezentantů citelně oslabuje především přímočarost a zakončení Mallorcy."
           }
         ],
         "pro": [
-          "Mallorca v 10 zápasech obdržela pouze 5 branek (průměr 0.5 inkasovaného gólu na utkání).",
-          "Ve třech z posledních pěti ligových utkání Mallorcy padly maximálně dva góly (0:0, 1:1, 1:1).",
-          "Kurz 2.34 na méně než 2.5 gólu nabízí kurzovou hranu 3.16 % oproti podhodnocenému kurzu sázkového trhu.",
-          "Možné dešťové přeháňky a opatrný styl v souboji o horní patra tabulky omezí gólové příležitosti."
+          "Mallorca má vynikající defenzivu, když ve 12 kolech inkasovala jen 7 branek a doma v Son Moix povolila minimum šancí.",
+          "Oba celky zasáhl 'virus FIFA' a zranění, kvůli nimž chybí klíčoví ofenzivní hráči včetně Luvumba, Cerdày a Mediny.",
+          "Pravděpodobné nasazení čtyř středních záložníků u Mallorcy zpevní střed a zpomalí tempo přechodu do útoku.",
+          "Matematický model ukazuje hodnotnou hranu +3,16 % s férovou pravděpodobností na Under přes 44 %."
         ],
         "proti": [
-          "Córdoba v lize produkuje otevřenější výsledky s průměrem 1.5 vstřelených a 1.8 obdržených gólů na zápas.",
-          "Model očekávaných gólů (1.61 pro Mallorcu a 1.12 pro Córdobu) součtem mírně překračuje hranici 2.5.",
-          "Poslední dva domácí ligové zápasy Mallorcy přinesly výsledky 2:1 a 3:1."
+          "Córdoba má v celé sezóně vysoký brankový průměr 3,4 gólu na zápas daný divokými přestřelkami v domácím prostředí.",
+          "Mallorce chybí reprezentační stoper Martin Valjent a Córdobě brankář Iker Álvarez, což může přinést chyby v defenzivě.",
+          "Hosté neprohráli čtyři ligová kola v řadě a dokázali se prosadit ve čtyřech z posledních pěti venkovních zápasů."
         ],
-        "riziko": "Hlavním rizikem je otevřenější herní pojetí Córdoby v případě brzkého inkasovaného gólu, který by nutil hosty otevřít hru.",
+        "riziko": "Hlavním rizikem je absence stopera Valjenta a záskok náhradního brankáře Fernandese v hostující svatyni, což může vést k nečekaným individuálním chybám v obraně.",
         "komentare_k_trhum": [
           {
             "trh": "Góly v zápase: méně než 2.5",
-            "komentar": "Velmi lákavý kurz 2.34 nabízí zřetelnou matematickou hodnotu podpořenou neprostupnou defenzivou Mallorcy na domácím hřišti."
+            "komentar": "Kurz 2.34 nabízí vynikající hodnotu, protože bookmakeři přecenili celkový gólový průměr Córdoby, aniž by zohlednili domácí defenzivní sílu Mallorcy a zásadní ofenzivní absence na obou stranách."
           }
         ]
       },
@@ -248,19 +248,19 @@
       "analyza": {
         "id": "Toronto Maple Leafs - Edmonton Oilers",
         "verdikt": "OK",
-        "duvod": "Hranice 8.5 gólu v NHL představuje velký bezpečnostní polštář, který v duelech těchto kanadských rivalů bývá překonán jen zřídka.",
-        "text": "Prestižní sobotní souboj kanadských rivalů v torontské Scotiabank Areně svede proti sobě Maple Leafs a Edmonton Oilers v čele s Connorem McDavidem. Přestože oba týmy disponují elitními ofenzivními zbraněmi, vypsaná hranice 8.5 gólu do rozhodnutí je v podmínkách současné NHL extrémně vysoko posazená. Vzájemná utkání obou gigantů obvykle mívají parametry play-off s důrazem na poctivé bránění středního pásma a disciplínu. V dresu Oilers táhnou produktivitu McDavid a Leon Draisaitl, zatímco Toronto se opírá o pevnou strukturu a formu hráčů jako Mitchell Marner či William Nylander. Na straně Toronta navíc gólmani podávají spolehlivé výkony a Edmonton se pod taktickým vedením snaží eliminovat zbytečná přečíslení soupeře. K překonání devíti branek by bylo zapotřebí naprostého kolapsu obou brankářů a nezvyklého festivalu využitých přesilovek. Hlavním faktorem hrajícím pro sázku je statistická realita, kdy v běžné základní části padá devět a více gólů v méně než deseti procentech zápasů. Rizikem by mohla být pouze divoká přestřelka vyvolaná časnými góly a sérií trestů, avšak taktická kázeň obou celků by měla udržet skóre v rozumných mezích.",
+        "duvod": "Hranice 8.5 gólu je v NHL extrémně vysoko; i přes elitní ofenzivy obou celků končí většina jejich vzájemných duelů pod touto hranicí.",
+        "text": "Kanadské derby mezi Torontem a Edmontonem v Scotiabank Areně slibuje střet prvotřídních ofenzivních hvězd na čele s Connorem McDavidem, Leonem Draisaitlem a Austonem Matthewsem. Přesto je sázková hranice 8.5 gólu do rozhodnutí v kontextu moderní NHL posazena neobvykle vysoko, neboť standardní ligový total se pohybuje okolo 6.0 až 6.5 branky. Pro prolomení této hranice by oba týmy musely vyprodukovat devět a více gólů, což se stává v méně než 15 % zápasů. Poslední vzájemná střetnutí skončila většinou v rozmezí 5 až 7 branek, například loňská výhra Toronta 4:3 po prodloužení. Oba trenéři v prestižních sledovaných duelech sobotního programu kladou zvýšený důraz na defenzivní disciplínu a eliminaci přesilových her soupeře. Pokud neselžou oba brankáři současně nebo nedojde k divoké přestřelce hned v první třetině, sázka na méně než 8.5 gólu nabízí vysokou míru bezpečí.",
         "duvera_gemini": 8,
         "pro": [
-          "Hranice 8.5 gólu je v NHL nadstandardně vysoká a vyžaduje alespoň 9 branek k prohře.",
-          "Oba týmy v klíčových sobotních duelech dbají na defenzivní systém a hru v pěti.",
-          "Gólmanské jedničky obou celků disponují solidní formou a drží průměry pod kontrolou."
+          "Hranice 8.5 gólu vyžaduje alespoň 9 branek, což je v NHL statistická anomálie.",
+          "Vzájemné zápasy obou rivalů málokdy přerostou hranici 7 gólů (naposledy 4:3 pp).",
+          "Oba týmy si uvědomují sílu přesilovek soupeře a budou hrát defenzivně disciplinovaně."
         ],
         "proti": [
-          "Obrovská individuální kvalita v útoku v čele s McDavidem, Draisaitlem a Marnerem.",
-          "Vysoká efektivita obou přesilovkových formací může skóre rychle navýšit."
+          "McDavid, Draisaitl i Matthews disponují schopností rozhodovat zápasy sérií rychlých gólů.",
+          "Případný kolaps jednoho ze startujících gólmanů může skóre rychle navýšit."
         ],
-        "riziko": "Rychlý úvodní gól s následnou otevřenou přestřelkou a velkým počtem přesilovek."
+        "riziko": "Rizikem je festival využitých přesilovek a rychlé branky na obou stranách hned v úvodu duelu."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -279,50 +279,50 @@
       "analyza": {
         "id": "Rakousko - Irsko",
         "verdikt": "OK",
-        "duvod": "Rakousko pod Rangnickem praktikuje ofenzivní fotbal a první vzájemný duel skončil remízou 2:2, over 1.5 gólu má vysokou hodnotu.",
-        "text": "V 5. kole skupiny B3 Ligy národů hostí dosud neporažené Rakousko na půdě v Linci reprezentaci Irska. Svěřenci Ralfa Rangnicka vedou tabulku s osmi body a devíti nastřílenými góly, což z nich dělá nejproduktivnější celek skupiny. Rakušané praktikují typický agresivní presink s rychlým přechodem do ofenzivy, přičemž tři z jejich čtyř zápasů v tomto ročníku nabídly přesně čtyři branky. Irsko vedené Heimirem Hallgrímssonem se po slabším rozjezdu zvedlo a v útoku spoléhá na produktivního Troye Parrotta, který dal v soutěži už čtyři góly. První vzájemné měření sil v Dublinu skončilo divokou remízou 2:2, když Irové vedli o dva góly a Rakousko v závěru dotahovalo trefami Prasse a Gregoritsche. Domácí výběr si v případě výhry zajistí přímý postup do Ligy A, takže od prvních minut vyvine enormní ofenzivní tlak. Přesné složení základních jedenáctek bude známo až před výkopem, ale absence klíčových opor v nominacích hlášeny nejsou. Jediným výraznějším rizikem by byl extrémně tuhý defenzivní blok Irska a neproměňování vyložených šancí, nicméně k naplnění hranice postačují pouhé dva góly.",
+        "duvod": "Rakousko pod Rangnickem hraje vysoce ofenzivní nátlakový fotbal a doma v Linzi pravidelně generuje gólové příležitosti.",
+        "text": "V rámci skupiny Ligy národů hostí Rakousko v linzské Raiffeisen Areně výběr Irska v zápase, kde domácí potřebují bodovat v boji o přední příčky skupiny B3. Rakouský národní tým pod vedením trenéra Ralfa Rangnicka dlouhodobě praktikuje agresivní celoplošný presink, což přirozeně otevírá hru a přináší brankové příležitosti na obou stranách. Domácí ofenziva tažená Marcelem Sabitzerem či Christophem Baumgartnerem skóruje na domácí půdě s vysokou pravidelností a nedávná remíza 1:1 s Kosovem potvrdila, že zápasy Rakušanů gólově nestrádají. Irsko pod Heimirem Hallgrímssonem sice sází na pevnou defenzivní strukturu, avšak při rychlém přechodu soupeře často inkasuje a samo z brejků hrozí díky Evanu Fergusonovi. Hranice 1.5 gólu představuje velmi nízkou laťku, kterou spolehlivě pokrývá jakákoliv výhra 2:0, remíza 1:1 či divočejší výsledek. Zápas by zhatila pouze extrémní neefektivita v zakončení za nepříznivého počasí.",
         "duvera_gemini": 8,
         "pro": [
-          "První vzájemný duel nabídl ofenzivní podívanou a skončil remízou 2:2.",
-          "Rakousko je s 9 góly nejproduktivnějším týmem skupiny a hraje nátlakový fotbal.",
-          "Irský útočník Troy Parrott má skvělou střeleckou formu se 4 brankami v LN."
+          "Rakousko pod Rangnickem produkuje vysoké xG a hraje otevřený vertikální fotbal.",
+          "V zápasech obou týmů v Lize národů běžně padají alespoň dvě branky.",
+          "Irsko disponuje nebezpečnými brejkovými hráči, což nahrává oboustranné gólové produkci."
         ],
         "proti": [
-          "Irsko může zvolit hluboký obranný blok s cílem uhrát bezgólový výsledek.",
-          "Tlak na postup může na kopačky Rakušanů přinést nervozitu v zakončení."
+          "Irsko může zvolit hluboký obranný blok a soustředit se na bezbrankový stav.",
+          "Riziko nepříznivých povětrnostních podmínek v podzimním Linzi."
         ],
-        "riziko": "Dlouhé dobývání hlubokého bloku Irska s nízkou efektivitou v zakončení."
+        "riziko": "Jednobrankové vítězství 1:0 při tuhé defenzivě Irska a spálených šancích domácích."
       },
       "duvera": 7,
       "overeni": "málo dat"
     },
     {
       "sport": "hokej",
-      "zapas": "Carolina Hurricanes - Seattle Kraken",
-      "start": "2026-11-14T18:07:00+00:00",
+      "zapas": "Pittsburgh Penguins - Ottawa Senators",
+      "start": "2026-11-15T00:07:00+00:00",
       "liga": "NHL",
-      "trh": "Handicap do rozhodnutí -3.5",
-      "vyber": "Seattle Kraken (+3.5)",
+      "trh": "Handicap do rozhodnutí -1.5",
+      "vyber": "Ottawa Senators (+1.5)",
       "kurz": 1.3,
       "p": 0.7472,
       "marze": 0.0591,
       "sazej_od": 1.37,
       "analyza": {
-        "id": "Carolina Hurricanes - Seattle Kraken",
+        "id": "Pittsburgh Penguins - Ottawa Senators",
         "verdikt": "OK",
-        "duvod": "Kraken v odvetě finské Global Series disponují vysokým náskokem +3.5 gólu, přičemž v NHL jsou debakly o 4 branky ojedinělé.",
-        "text": "V helsinské Veikkaus Areně se v rámci NHL Global Series uzavírá dvojzápas mezi Carolinou Hurricanes a Seattlem Kraken. Úvodní čtvrteční střetnutí ovládli Hurricanes poměrem 4:1 zásluhou dvou branek domácí finské hvězdy Sebastiana Aha a příspěvků Nikolaje Ehlerse. Přestože Carolina patří s bilancí 15-3-2 k nejlepším celkům ligy a disponuje propracovaným systémem forecheckingu, handicap +3.5 branky pro Seattle je mimořádně štědrý. V sériích na neutrální evropské půdě týmy po prvním utkání provádějí taktické korekce a druhý duel bývá podstatně vyrovnanější. Seattle má v brance Philippa Grubauera a defenzivní struktura trenérského štábu Kraken dokáže držet zápasy na dostřel. Sázka prohrává pouze v případě, že by Hurricanes zvítězili rozdílem čtyř a více branek, což se v NHL proti konsolidovaným soupeřům stává zřídka. Potvrzené startující gólmany a finální složení formací týmy oznámí až při rozbruslení. Pokud Kraken udrží disciplínu v oslabení a vyvarují se chyb v rozehrávce, pokrýt handicap +3.5 by pro ně neměl být problém.",
+        "duvod": "Ottawa prožívá vydařenější vstup do sezóny (12-6-2) a trápící se Pittsburgh (7-10-2) má problém vyhrávat o více než gól.",
+        "text": "Pittsburgh Penguins přivítají v PPG Paints Areně celek Ottawa Senators v atmosféře slavnostního večera věnovaného klubové síni slávy. Domácí Penguins však prožívají herní krizi s bilancí 7-10-2 a sérií tří domácích porážek v řadě, přičemž jejich defenziva a gólmani vykazují značnou nestabilitu. Naproti tomu Senators vstoupili do ročníku ve vynikající formě s bilancí 12-6-2 a opírají se o produktivní osu v čele s Timem Stützlem a Bradym Tkachukem. Handicap Ottawa +1.5 znamená, že sázka je výherní nejen při jakékoliv výhře Senators či remíze po 60 minutách, ale i při těsné prohře o jediný gól. Vzhledem k tomu, že Pittsburgh vyhrává zápasy jen zřídka a téměř vůbec ne s výrazným rozdílem, je pokrytí hendikepu hosty vysoce pravděpodobné. Jedinou hrozbou by bylo mimořádné vzepětí Sidneyho Crosbyho podpořené bezchybným výkonem v brankovišti Penguins.",
         "duvera_gemini": 8,
         "pro": [
-          "Handicap +3.5 gólu pokrývá i porážku Seattlu o tři branky.",
-          "Odvetné zápasy na neutrálním evropském kluzišti bývají takticky svázanější.",
-          "Seattle po čtvrteční prohře 1:4 s Carolinou provede defenzivní úpravy."
+          "Ottawa má podstatně lepší aktuální formu a bilanci (12-6-2 oproti 7-10-2 Pittsburghu).",
+          "Penguins prohráli tři domácí zápasy v řadě a jejich obrana patří k nejvíce inkasujícím.",
+          "Handicap +1.5 kryje i těsnou porážku Ottawy o jednu branku."
         ],
         "proti": [
-          "Carolina má famózní formu se sedmi výhrami z posledních osmi utkání.",
-          "Finský útočník Sebastian Aho hraje před domácím publikem ve skvělé pohodě."
+          "Slavnostní večer síně slávy v Pittsburghu může domácí veterány namotivovat k elitnímu výkonu.",
+          "Penguins mají silnou přesilovku, která může utkání zlomit."
         ],
-        "riziko": "Kolaps obrany Seattlu a inkasování gólů do prázdné branky při power-play."
+        "riziko": "Případná výhra Penguins o dva góly zpečetěná trefou do prázdné branky při power-play Ottawy."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -341,19 +341,19 @@
       "analyza": {
         "id": "Valladolid - CD Castellon",
         "verdikt": "OK",
-        "duvod": "Zápasy obou týmů přinášejí bohaté gólové příděly, Castellón disponuje skvělým útokem a asijská hranice více než 2 góly jistí vklad.",
-        "text": "Ve 14. kole španělské LaLigy Hypermotion přivítá Real Valladolid na stadionu José Zorrilla celek CD Castellón. Domácí zažívají na svém stadionu divoké přestřelky, což dokládají nedávné výsledky 4:3 proti Leganés, 2:3 s Eldense nebo 5:0 proti Albacete. Na svém kontě mají po dvanácti kolech skóre 20:19, což z nich dělá jeden z nejotevřenějších týmů celé druhé ligy. Hostující Castellón prožívá výbornou sezonu, s 27 body útočí na čelní příčky a pyšní se nejlepší ofenzivou soutěže s 23 vstřelenými brankami. Herní styl obou celků je založen na rychlém přechodu a vysokém počtu střel, což pravidelně generuje gólové situace na obou stranách. Asijská hranice více než 2.0 branky je velmi výhodná, protože v případě přesně dvou gólů se vrací vklad a k plné výhře stačí tři zásahy. Domácím chybí kvůli trestu obránce Iván Alejo a zraněný útočník Juanmi Latasa, zatímco hosté postrádají potrestaného Orozca. Vzhledem k otevřenému pojetí obou soupeřů je překonání dvoubrankové metry vysoce pravděpodobným scénářem.",
+        "duvod": "Castellón hraje pod Schreuiderem nejotevřenější fotbal v LaLize 2 a asijská hranice over 2.0 nabízí při dvou gólech vrácení vkladu.",
+        "text": "Střetnutí 14. kola španělské LaLigy 2 na stadionu José Zorrilla mezi Valladolidem a CD Castellón slibuje atraktivní podívanou. Hostující Castellón pod trenérem Dickem Schreuderem vyznává extrémně ofenzivní styl s vysokým napadáním, což z něj činí tým s nejvyšší gólovou frekvencí v soutěži. Castellón vstřelil dvě a více branek v 67 % svých venkovních vystoupení v této sezóně a vzájemný souboj z minulé sezóny skončil jednoznačnou výhrou Castellónu 4:0. Real Valladolid doma pravidelně skóruje a opírá se o čtyři výhry z posledních šesti domácích ligových duelů. Sázka na více než 2.0 gólu (asijský total) představuje ideální poměr hodnoty a bezpečí, protože přesně dva vstřelené góly znamenají vrácení vkladu. Aby byla sázka proherní, musel by zápas skončit bezbrankovou remízou nebo výsledkem 1:0, což je při stylu Castellónu málo pravděpodobné.",
         "duvera_gemini": 8,
         "pro": [
-          "Domácí Valladolid má v posledních kolech průměr přes 3.5 branky na zápas.",
-          "Castellón disponuje s 23 góly nejúdernějším útokem celé LaLigy 2.",
-          "Při přesně dvou vstřelených brankách se vklad na asijské lince vrací zpět."
+          "Castellón praktikuje nejofenzivnější styl v celé druhé španělské lize.",
+          "Asijská hranice 2.0 nabízí bezpečnostní pojistku vrácení vkladu při přesně dvou brankách.",
+          "Valladolid dal dvě a více branek v 6 z posledních 10 soutěžních vystoupení."
         ],
         "proti": [
-          "Druhá španělská liga bývá tradičně takticky svázaná a defenzivně laděná.",
-          "Absence domácího útočníka Latasy může mírně oslabit efektivitu ve vápně."
+          "Druhá španělská liga je obecně známá taktickou svázaností a nižším gólovým průměrem.",
+          "Absence útočníka Latasy na straně domácích může oslabit jejich zakončení."
         ],
-        "riziko": "Taktické vyčkávání a defenzivní opatrnost vedoucí k bezbrankovému stavu."
+        "riziko": "Taktická bitva končící výsledkem 1:0 nebo 0:0 při pečlivé přípravě domácího trenéra na brejky soupeře."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -372,19 +372,19 @@
       "analyza": {
         "id": "Ostrow Wlkp. - Dziki Warszawa",
         "verdikt": "OK",
-        "duvod": "Dziki Warszawa se nacházejí v horních patrech tabulky ve skvělé formě, zatímco Stal Ostrów se dlouhodobě trápí v ofenzivě.",
-        "text": "V polské nejvyšší basketbalové soutěži přivítá Tasomix Rosiek Stal Ostrów Wielkopolski v domácí 3mk Areně celek Dziki Warszawa. Hostující tým z Varšavy prožívá výtečné období, drží se na pozici vicelídra ligy a úspěšně reprezentuje i v mezinárodní soutěži ENBL. Tahounem Dziků je skvěle hrající Quan Jackson, který se vrací do haly svého bývalého klubu s vynikající individuální formou. Domácí Stal se pod trenérem Andrzejem Urbanem naopak herně trápí, což potvrdila i nedávná domácí porážka se Zielonou Górou, kde Ostrów vyprodukoval pouhých 69 bodů. Ofenzivní trápení a nízká úspěšnost střelby z pole jsou hlavními problémy domácího kádru v úvodu sezony. Dziki se prezentují pevnou obranou a organizovanou přechodovou fází, což jim umožnilo vyhrát v Ostrowě i předchozí ligový vzájemný zápas. Kurz 1.30 na výhru hostů věrně odráží aktuální rozpoložení i formu obou týmů. Pokud se domácí výrazně nezvednou ve střelbě z dálky, měl by si tým z Varšavy dojít pro další ligové vítězství.",
+        "duvod": "Dziki Warszawa jsou ve skvělé formě se sérií výher (13-2), zatímco Stal Ostrów se trápí v útoku a prohrála tři zápasy za sebou.",
+        "text": "V polské basketbalové ligi přivítá Stal Ostrów Wielkopolski celek Dziki Warszawa a papírové předpoklady jednoznačně favorizují hosty. Dziki zažívají vynikající období, drží se na špici tabulky s celkovou bilancí 13 výher a 2 porážek a táhnou sérii šesti vítězství v řadě. Tahounem varšavského celku je americký guard Quan Jackson, který se navíc vrací do haly Ostrova, kde dříve úspěšně působil. Naopak domácí Stal pod vedením trenéra Andrzeje Urbana prochází krizí s bilancí 2-4 a třemi porážkami v řadě, přičemž v minulém kole zklamala tristní ofenzivou a pouhými 69 body proti Zieloné Góře. Dziki navíc vyhrály i poslední vzájemné střetnutí v Ostrówě poměrem 83:73. Domácí prostředí a podpora publika v 3mk Areně jsou jediným faktorem držícím Stal v naději, avšak herní pohoda a kompaktní obrana hostů by měly zajistit vítězství Dziki.",
         "duvera_gemini": 8,
         "pro": [
-          "Dziki Warszawa jsou v tabulce na 2. místě a disponují vyrovnanou rotací.",
-          "Tahoun hostů Quan Jackson má výbornou formu a halu v Ostrowě dokonale zná.",
-          "Stal Ostrów se trápí v útoku, v minulém kole zaznamenala pouhých 69 bodů."
+          "Dziki Warszawa mají formu se sérií 6 výher a dominují v lize i evropském poháru ENBL.",
+          "Stal Ostrów se trápí střelecky (naposledy jen 69 bodů) a prohrála 3 utkání v řadě.",
+          "Poslední vzájemný zápas na palubovce Stalu ovládly Dziki poměrem 83:73."
         ],
         "proti": [
-          "Domácí prostředí v 3mk Areně dokáže vytvořit velmi bouřlivou atmosféru.",
-          "Stal disponuje trenérem Urbanem, který dokáže takticky překvapit favorita."
+          "Hala 3mk Arena v Ostrówě bývá pro hostující týmy bouřlivým prostředím.",
+          "Stal má motivaci před domácími fanoušky přerušit sérii nezdarů."
         ],
-        "riziko": "Mimořádný střelecký den domácích střelců zpoza tříbodového oblouku."
+        "riziko": "Vzepětí domácí Stalu na doskoku a nadstandardní střelecký den zpoza tříbodového oblouku."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -403,19 +403,19 @@
       "analyza": {
         "id": "Napoli - Trieste 2004",
         "verdikt": "OK",
-        "duvod": "Basket Napoli je na 2. místě Serie A s bilancí 6-1 a v domácí hale PalaBarbuto je proti Trieste jasným favoritem.",
-        "text": "V 8. kole italské basketbalové Serie A hostí rozjeté Basket Napoli v domácí hale PalaBarbuto celek Pallacanestro Trieste. Neapolský celek vstoupil do ligového ročníku výborně a s bilancí šesti výher z úvodních sedmi kol okupuje druhé místo tabulky za Virtusem Bologna. Tým těží z vyrovnané rotace na obvodu i pod košem, kde odvádí kvalitní práci Leonardo Totè a rozehrávačská dvojice Kevin Pangos se Zachem Copelandem. Hostující Trieste má bilanci čtyř výher a tří porážek, přičemž se v posledních týdnech prezentuje otevřeným basketbalem s vysokým počtem bodů. Vzájemná historie v minulé sezoně sice přinesla úspěchy Trieste, současná Neapol je však herně i mentálně na zcela jiné úrovni a na domácí palubovce hraje spolehlivě. Klíčem k úspěchu domácích bude eliminace střelců Trieste na perimetru a kontrola obranného doskoku. Zápas budou řídit rozhodčí Lanzarini, Bartolomeo a Vita, kteří obvykle pouštějí plynulou hru bez zbytečného kouskování. Pokud Neapol potvrdí dosavadní konzistenci a nepodlehne podcenění, měla by roli favorita zvládnout.",
+        "duvod": "Neapol pod koučem Repesou zažívá historicky nejlepší start do Serie A, hraje doma a těží ze skvělé formy Ramseyho a Browna.",
+        "text": "V 8. kole italské Lega Basket Serie A hostí Neapol celek Pallacanestro Trieste v hale PalaBarbuto. Domácí Napoli Basket pod vedením zkušeného trenéra Jasmina Repesy prožívá historický vstup do sezóny a po senzační obratové výhře v derby nad Scafati (91:89) disponuje obrovským sebevědomím. Klíčovou roli v sestavě hrají ex-hráči Terstu Jahmi'us Ramsey a Markel Brown, které skvěle diriguje rozehrávač Marco Spissu a produktivní Jeff Dowtin. Neapol se opírá o vynikající střelbu z dálky s ligovou úspěšností 40.6 % za tři body a průměrem téměř 94 bodů na utkání. Terst sice disponuje nebezpečným střelcem LaJaem Jonesem a dirigentem Colbeym Rossem, avšak při venkovních zápasech proti špičkovým týmům často zaostává v defenzivní rotaci. Domácí palubovka a komplexnější rotace kádru staví Neapol do role oprávněného favorita, který by měl zápas dovést k vítězství.",
         "duvera_gemini": 8,
         "pro": [
-          "Neapol se nachází na 2. místě Serie A s výbornou zápasovou bilancí 6-1.",
-          "Silné domácí prostředí v PalaBarbuto a vyvážená ofenzivní produkce opor.",
-          "Kvalitní forma klíčových postav Pangose, Copelanda a pivota Totèho."
+          "Neapol vyrovnala svůj nejlepší historický start v Serii A a veze se na vítězné vlně.",
+          "Klíčové opory Neapole Ramsey a Brown dokonale znají herní styl a slabiny svého bývalého klubu Trieste.",
+          "Neapol dominuje ve střelbě za tři body s úspěšností přes 40 %."
         ],
         "proti": [
-          "Trieste umí být v útoku nebezpečné a disponuje čtyřmi výhrami z pěti kol.",
-          "Vzájemné zápasy v předchozím ročníku hovořily statisticky ve prospěch hostů."
+          "Terst má v sestavě LaJae Jonese, který je schopen nastřílet přes 30 bodů za zápas.",
+          "Terst vyhrál předchozí vzájemný zápas na palubovce Neapole vysoko 110:84."
         ],
-        "riziko": "Podcenění soupeře a výpadek v defenzivním doskoku pod vlastním košem."
+        "riziko": "Extrémní střelecký den perimetru Terstu vedeného Colbeym Rossem a výpadek neapolské obrany."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -434,18 +434,18 @@
       "analyza": {
         "id": "Roncadelli F. - Alcala Gurri M.",
         "verdikt": "OK",
-        "duvod": "Alcalá Gurri je na antuce výrazným favoritem a dvousetový průběh udrží počet jeho gamů pod vypsanou hranicí.",
-        "text": "Semifinále antukového challengeru v peruánské Limě přináší souboj mezi favorizovaným Španělem Maxem Alcalou Gurrim a Uruguaycem Francem Roncadellim. Vypsaná sázka na méně než 13,5 vyhraných gamů Alcaly Gurriho je splněna, pokud Španěl vyhraje ve dvou setech bez dvou extrémních tiebreaků, případně pokud by nečekaně hladce padl. Alcalá Gurri se na antuce prezentuje výbornou formou i stabilním servisem a proti žebříčkově níže postavenému Roncadellimu bude diktovat tempo výměn od základní čáry. Uruguayský tenista sice prošel do semifinále překvapivě, ale proti komplexním antukářům mívá problém na returnu a málokdy dokáže favorita dostat pod dlouhodobý tlak. Vzájemná bilance z hlavního okruhu je nenalezena, oba hráči jsou však podle dostupných informací po zdravotní stránce v pořádku. Pro sázku hraje znatelný výkonnostní rozdíl a předpoklad dvousetového průběhu, který dává Španělovi prostor na zisk maximálně 12 až 13 gamů. Jediným výrazným ohrožením tohoto tipu by byla ztráta koncentrace favorita v jednom ze setů a následné prodloužení duelu do tří setů.",
+        "duvod": "Semifinále antukového challengeru v Limě; Alcala Gurri je favoritem na postup ve 2 setech, což drží počet jeho vyhraných gamů pod 13.5.",
+        "text": "Semifinále antukového challengeru v peruánské Limě proti sobě staví španělského antukáře Maxe Alcalu Gurriho a uruguayského kvalifikanta Franca Roncadelliho. Alcala Gurri, který je na turnaji nasazený jako číslo pět, prošel do semifinále po náročném obratu nad Tristanem Boyerem. Roncadelli sice překvapivě vyřadil nasazeného Comesaňu a včera Magadana, avšak v nohách má už pět zápasů včetně dvoukolové kvalifikace. Sázený trh na méně než 13,5 gamu Alcaly Gurriho je splněn při jakékoliv výhře Španěla ve dvou setech bez dvou tiebreaků (například 6:4, 6:4 nebo 7:5, 6:3) i při jeho případné dvousetové porážce. Pro sázku hraje vysoká kvalita hry Alcaly Gurriho od základní čáry a postupující únava Roncadelliho. Proti hovoří fakt, že pokud zápas půjde do tří setů a Španěl v nich zvítězí, hranici 13,5 gamu téměř jistě překročí. Zhatit sázku by tak mohl především vyrovnaný třísetový maraton, v němž by Alcala Gurri získal 14 a více her.",
         "duvera_gemini": 7,
         "pro": [
-          "Alcalá Gurri je na antuce jasným favoritem a dvousetová výhra drží počet jeho gamů pod hranicí 13,5.",
-          "Roncadelli má slabší servis a proti kvalitnímu returnu soupeře by neměl vyhrát set ani dojít do tiebreaku."
+          "Alcala Gurri je favoritem a výhra 2:0 na sety udrží počet jeho vyhraných gamů pod hranicí 13.5.",
+          "Roncadelli má v nohách náročnou kvalifikaci a dvě třísetové bitvy, což zvyšuje únavu."
         ],
         "proti": [
-          "Pokud Roncadelli urve jeden set, Alcalá Gurri při třísetovém vítězství hranici 13,5 gamů překročí.",
-          "Případné dva dlouhé sety s tiebreaky (např. 7:6, 7:6) by znamenaly prohru sázky."
+          "Pokud zápas dospěje do třetího setu a Španěl vyhraje, hranici 13.5 gamu téměř jistě překoná.",
+          "Roncadelli na turnaji ukázal velkou bojovnost a v předchozích kolech vyřadil favority."
         ],
-        "riziko": "Ztráta koncentrace favorita v jedné sadě a rozuzlení zápasu až ve třetím setu."
+        "riziko": "Třísetový zápas s vítězstvím Alcaly Gurriho, kde Španěl nasbírá 14 a více gamů."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -464,18 +464,18 @@
       "analyza": {
         "id": "Chidekh C. - Zheng M.",
         "verdikt": "OK",
-        "duvod": "Rychlý povrch v hale v Knoxville a kvalitní servisy obou tenistů výrazně nahrávají zisku alespoň 9 gamů v setu.",
-        "text": "V semifinále halového turnaje ATP Challenger v americkém Knoxville se střetnou Clément Chidekh a Michael Zheng. Sázka na více než 8,5 gamu v úvodním setu představuje velmi bezpečnou volbu, k jejímuž pokrytí stačí jakýkoliv výsledek sady od stavu 6:3 výše. Hraje se na rychlém krytém tvrdém povrchu, kde dominují servisy a brejky nebývají na začátku utkání příliš časté. Chidekh má v hale skvělou bilanci, vyhrál 8 z posledních 10 zápasů a drží si vysokou úspěšnost na servisu. Také Zheng se na domácí půdě opírá o spolehlivý první servis a v Knoxville předvádí sebevědomý tenis. Jejich předchozí vzájemný zápas na okruhu je nenalezen (bilance 0:0), stylisticky jde však o duel dvou kvalitních servismanů. K neúspěchu sázky by vedl pouze naprostý kolaps jednoho z hráčů na podání hned v úvodu zápasu a výsledek typu 6:0, 6:1 nebo 6:2.",
+        "duvod": "Semifinále halového challengeru v Knoxville; rychlý povrch a kvalitní servis obou hráčů nahrávají zisku alespoň 9 gamů v úvodním setu.",
+        "text": "V semifinále amerického challengeru v Knoxville na tvrdém povrchu v hale se střetávají Francouz Clement Chidekh a domácí Michael Zheng. Oba tenisté se na tomto rychlém indoor povrchu opírají o spolehlivý první servis a vysokou úspěšnost vlastních podání. Trh na více než 8,5 gamu v prvním setu znamená, že úvodní sada nesmí skončit jednoznačným výsledkem 6:0, 6:1 ani 6:2. Hráči se na profesionálním okruhu dosud neutkali, vzájemná bilance je nenalezena, což v úvodu utkání často vede k opatrnější hře a důrazu na kontrolu vlastního podání. Chidekh i Zheng v turnaji vykazují nízký počet ztracených servisů a jejich sady pravidelně dospívají do těsných koncovek či zkrácených her. Proti sázce stojí pouze riziko brzkého výpadku koncentrace a okamžitá ztráta dvou servisů hned zkraje utkání. Pokud však oba předvedou svůj standardní výkon na podání, skóre v úvodní sadě bez problémů dosáhne alespoň výsledku 6:3 či 5:4.",
         "duvera_gemini": 8,
         "pro": [
-          "Rychlý indoor povrch v Knoxville výrazně zvýhodňuje podávající hráče a omezuje počet brejků.",
-          "K úspěchu sázky stačí jakýkoliv běžný výsledek sady od stavu 6:3 výše, což je v hale norma."
+          "Rychlý halový tvrdý povrch výrazně zvýhodňuje podávající hráče a ztěžuje brejky.",
+          "Hranici 8.5 gamu pokrývá jakýkoliv výsledek prvního setu od 6:3 výše."
         ],
         "proti": [
-          "Rychlá ztráta podání hned v úvodu utkání způsobená nevynucenými chybami jednoho z hráčů.",
-          "Jednostranný průběh setu v případě výpadku koncentrace (výsledky 6:0, 6:1 nebo 6:2)."
+          "Možný rychlý dvojitý brejk při horším vstupu jednoho z hráčů do zápasu.",
+          "Oba hráči se dosud na okruhu neutkali, vzájemná bilance je nenalezena."
         ],
-        "riziko": "Rychlý dvojbrejk na začátku zápasu způsobený nevynucenými chybami jednoho z hráčů na podání."
+        "riziko": "Rychlá ztráta dvou servisů jednoho z hráčů znamenající skóre setu 6:2 nebo jednoznačnější."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -494,18 +494,18 @@
       "analyza": {
         "id": "Torrelavega - Ademar León",
         "verdikt": "OK",
-        "duvod": "Torrelavega je v domácí hale mimořádně silná, zatímco Ademar León venku zaostává a prohrál 3 z posledních 5 utkání.",
-        "text": "V devátém kole španělské Ligy ASOBAL přivítá Bathco BM Torrelavega celek Abanca Ademar León. Domácí Torrelavega zažívá vydařený vstup do ročníku, figuruje v horní části tabulky a v hale Vicente Trueba se může opřít o bouřlivou diváckou kulisu. Naopak Ademar León se pod vedením trenéra Luise Puertase herně hledá a z posledních pěti ligových utkání třikrát prohrál. Ve vzájemných soubojích na palubovce Torrelavegy domácí ovládli tři z posledních pěti měření sil a minule zvítězili vysoko 40:33. Ofenzívu Torrelavegy táhnou rozehrávač Jakub Prokop, spojka Andrés Moyano a křídelník Javi Muñoz, kteří dokáží trestat chyby soupeře z rychlých brejků. Sázka na výsledek prvního poločasu bez remízy chrání vklad v případě nerozhodného stavu po třiceti minutách a ztrácí pouze při vedení hostů. Zhatit tuto volbu by mohl pouze pomalejší rozjezd domácích zaviněný únavou před nadcházejícím duelem v Evropské lize.",
+        "duvod": "9. kolo španělské Ligy ASOBAL; Torrelavega je v popředí tabulky v dobré formě a doma tradičně Ademar León přehrává.",
+        "text": "V rámci 9. kola španělské nejvyšší soutěže házenkářů hostí Bathco BM Torrelavega celek Abanca Ademar León. Domácí Torrelavega se drží v popředí tabulky (5. místo s 11 body) a na domácí palubovce Vicente Trueba těží z výborně organizované obrany a bouřlivé divácké kulisy. Naopak Ademar León (8. místo, 6 bodů) se potýká s nevyrovnanými výkony, zejména venku, kde často ztrácí kontakt již v první půli. Poslední vzájemný ligový duel ovládla Torrelavega jednoznačně poměrem 40:33. Sázený trh na poločasový výsledek bez remízy navíc chrání sázejícího vrácením vkladu v případě remízy po 30 minutách. Žádná nová zásadní zranění v kádrech nebyla hlášena. Proti sázce hovoří schopnost Ademaru držet krok při rychlém přechodu do první i druhé vlny. Pokud si však domácí pohlídají koncentraci od úvodního hvizdu, poločasové vedení by si měli pohlídat.",
         "duvera_gemini": 8,
         "pro": [
-          "Torrelavega je doma velmi silná a z posledních 5 vzájemných duelů na svém hřišti vyhrála tři.",
-          "Ademar León má slabou formu, když prohrál 3 z posledních 5 ligových zápasů."
+          "Torrelavega má výbornou domácí bilanci a vyhrála i poslední vzájemný duel 40:33.",
+          "Sázka bez remízy vrací vklad při nerozhodném poločasovém skóre."
         ],
         "proti": [
-          "Hostující střelec Gonzalo Pérez Arce může v úvodu držet León v těsném kontaktu.",
-          "Hrozící únava Torrelavegy z náročného programu a nadcházejících pohárových duelů."
+          "Ademar León disponuje kvalitním útokem schopným držet s domácími krok.",
+          "Vzájemné zápasy v historii přinesly několik vyrovnaných poločasů."
         ],
-        "riziko": "Pomalejší vstup domácích do utkání vlivem náročného pohárového programu a rotace sestavy."
+        "riziko": "Vlažný vstup domácích do zápasu a nepříznivý stav po úvodních 30 minutách."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -524,48 +524,18 @@
       "analyza": {
         "id": "Atl.Valladolid - Eon Horneo Alicante",
         "verdikt": "OK",
-        "duvod": "Valladolid má doma zavedenou pevnou defenzívu a sázka bez remízy v 1. poločase poskytuje vysokou míru bezpečí.",
-        "text": "V rámci španělské nejvyšší soutěže házené hostí Recoletas Atlético Valladolid celek Eon Horneo Alicante. Domácí Valladolid je v hale Huerta del Rey dlouhodobě velmi nepříjemným soupeřem díky propracovanému obrannému systému 6-0 a spolehlivému brankáři. Alicante patří k outsiderům ligy a na hřištích soupeřů pravidelně zaostává v útočné efektivitě i šířce kádru. Valladolid má zkušenější sestavu a v úvodních dvaceti minutách dokáže soupeře dostat pod silný fyzický tlak. Sázka na výhru domácích v prvním poločase bez remízy nabízí vysokou jistotu, jelikož případná remíza v poločase znamená vrácení vkladu. Informace o nových závažných zraněních klíčových opor na obou stranách jsou nenalezeny. Ohrožením tipu by byly pouze nevynucené technické chyby domácích v postupném útoku a střelecké trápení ze sedmimetrových hodů.",
-        "duvera_gemini": 7,
-        "pro": [
-          "Valladolid má v domácí hale Huerta del Rey pevnou obranu 6-0 a diktuje tempo od začátku.",
-          "Sázka bez remízy vrací vklad v případě nerozhodného poločasu, což minimalizuje riziko."
-        ],
-        "proti": [
-          "Případné neproměňování šancí a sedmimetrových hodů ze strany Valladolidu v 1. půli.",
-          "Alicante nemá co ztratit a může vstoupit do utkání s maximálním rizikem."
-        ],
-        "riziko": "Střelecký výpadek Valladolidu v postupném útoku v první čtvrthodině zápasu."
-      },
-      "duvera": 6,
-      "overeni": "málo dat"
-    },
-    {
-      "sport": "volejbal",
-      "zapas": "Slepsk Suwalki - Kedzierzyn Kozle",
-      "start": "2026-11-14T17:00:00+00:00",
-      "liga": "1. Polsko - muži",
-      "trh": "Handicap setů v zápasu -1.5",
-      "vyber": "Kedzierzyn Kozle +1.5",
-      "kurz": 1.3,
-      "p": 0.7406,
-      "marze": 0.0769,
-      "sazej_od": 1.38,
-      "analyza": {
-        "id": "Slepsk Suwalki - Kedzierzyn Kozle",
-        "verdikt": "OK",
-        "duvod": "Kędzierzyn-Koźle vyhrál 3 zápasy v řadě a k pokrytí handicapu +1,5 setu mu stačí uhrát pouze dva sety.",
-        "text": "Šesté kolo prestižní polské PlusLigy nabídne střetnutí mezi Ślepsk Malow Suwałki a ZAKSA Kędzierzyn-Koźle. Favorizovaná ZAKSA se po horším vstupu do sezóny zvedá, vyhrála tři ligová utkání v řadě včetně triumfů nad Resovií a Olsztynem a její forma stoupá. Domácí Suwałki naopak okupují až desátou příčku a proti týmům z čela tabulky dlouhodobě doplácejí na slabší příjem a méně efektivní obranu na síti. Handicap +1,5 setu na hosty znamená, že ZAKSA potřebuje uhrát pouze dva sety, přičemž sázka je výherní i při její těsné prohře 2:3. Vzájemná bilance hovoří jasně pro Kędzierzyn-Koźle, který zvítězil v jedenácti ze čtrnácti vzájemných měření sil. ZAKSA má výraznou převahu na servisu i na bloku, což by mělo eliminovat hrozbu hladké porážky 0:3 nebo 1:3. Rizikem zůstává pouze možná ztráta koncentrace hostů na specifické palubovce Suwałki Areny a výpadek v koncovkách setů.",
+        "duvod": "Liga ASOBAL; Valladolid je na domácí palubovce Huerta del Rey velmi silný a proti slabšímu Alicante je jasným favoritem.",
+        "text": "V dalším ligovém střetnutí španělské Ligy ASOBAL přivítá Recoletas Atlético Valladolid hostující tým Eon Horneo Alicante. Valladolid těží z mimořádně silného domácího prostředí v hale Huerta del Rey, kde v této sezoně pravidelně sbírá vítězství díky agresivní zatažené obraně 6-0. Celek z Alicante patří k týmům bojujícím o záchranu, na hřištích soupeřů často kupí technické chyby a má nižší úspěšnost zákroků brankářů. Trh poločasového vítězství bez remízy nabízí bezpečnostní polštář v podobě vrácení sázky při nerozhodném stavu o poločase. Domácí mužstvo nastupuje v ustálené sestavě s touhou napravit bodové ztráty a odskočit spodku tabulky. Proti sázce hovoří možnost pomalejšího tempa a nervozity v zakončení v úvodní čtvrthodině. Vzhledem ke kvalitativní převaze v kádru a domácímu publiku by si však Valladolid měl vypracovat poločasový náskok.",
         "duvera_gemini": 8,
         "pro": [
-          "ZAKSA vyhrála 3 ligové zápasy v řadě a historicky ovládla 11 ze 14 vzájemných utkání.",
-          "K výhře sázky stačí zisk pouhých 2 setů, což favorit s takovou ofenzivní silou zvládne."
+          "Výrazná dominance Valladolidu v domácím prostředí před zaplněným hledištěm.",
+          "Hostující Alicante patří k nejslabším venkovním týmům soutěže."
         ],
         "proti": [
-          "Suwałki Arena je specifická hala, kde domácí dokáží favority potrápit v servisu.",
-          "Případný výpadek ZAKSY na přihrávce a nevynucené chyby v koncovkách setů."
+          "Možnost pomalejšího tempa a nervózního začátku ze strany favorita.",
+          "Případná nerozhodnost v koncovce prvního poločasu vede pouze k vrácení vkladu."
         ],
-        "riziko": "Série nevynucených chyb ZAKSY na přihrávce vedoucí ke ztrátě těsných koncovek setů."
+        "riziko": "Slabší střelecká efektivita Valladolidu v úvodních dvaceti minutách zápasu."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -584,18 +554,18 @@
       "analyza": {
         "id": "Surace, Bruno - Bednarek, Kamil",
         "verdikt": "OK",
-        "duvod": "Surace má nesrovnatelně větší zkušenosti ze zápasů s absolutní světovou špičkou a disponuje technickou převahou.",
-        "text": "Na prestižním galavečeru v Rijádu v rámci Riyadh Season se v superstřední váze střetnou Bruno Surace a Kamil Bednarek. Francouz Surace disponuje bohatými zkušenostmi ze světové scény, držel titul EBU Silver a nedávno svedl vyrovnané bitvy s absolutní světovou elitou včetně Jaimeho Munguii. Polský soupeř Kamil Bednarek je sice dosud neporažený levoruký boxer, avšak většinu svých zápasů absolvoval na polských galavečerech proti soupeřům druhé kategorie. Surace je technicky mnohem vyspělejší bojovník, skvěle kontroluje vzdálenost přední rukou a těží z výborného pohybu na nohou. Proti Bednarkovi hraje skokový nárůst kvality soupeře a absence zkušeností z takto velkých mezinárodních arén. Sázka na výhru Suraceho plně odpovídá rozdílu v zápasnickém rodokmenu obou borců. Ohrožením pro favorita může být nepříjemný jižanský postoj Bednarka a jeho nebezpečný levý hák v úvodních kolech.",
+        "duvod": "Boxerský galavečer Zuffa Boxing v Rijádu; Surace prověřený světovou špičkou je velkým favoritem proti neprověřenému Bednarekovi.",
+        "text": "Na galavečeru Zuffa Boxing v Rijádu se v superstřední váze střetnou francouzský šampion Bruno Surace a polský zástupce Kamil Bednarek. Surace (bilance 26-1-2) se nesmazatelně zapsal na světovou scénu duelem s hvězdným Jaime Munguiou, kterého v prosinci 2024 senzačně knokautoval v 6. kole a následně svedl těsnou dvanáctikolovou odvetu. Oproti tomu Kamil Bednarek sice drží čistou bilanci 17-0, avšak jeho soupeři na polské regionální scéně byli o dvě třídy slabší. Francouz disponuje vynikající technikou, skvělým pohybem a zkušenostmi z velkých dvanáctikolových duelů. Proti výběru hovoří fakt, že Bednarek je nepříjemný levoruký boxer (southpaw) s 58% knockout ratio, který v Rijádu nemá co ztratit. Surace navíc není vyložený ranař a zápasy vyhrává spíše na body než čistým KO. Obrovská propast v kvalitě dosavadních soupeřů by se však měla projevit a Surace by měl bez potíží zvítězit.",
         "duvera_gemini": 8,
         "pro": [
-          "Surace má obrovské zkušenosti ze zápasů s elitou a je technicky na vyšší úrovni.",
-          "Bednarek dosud nečelil soupeři takového kalibru a boxoval převážně na domácí scéně."
+          "Surace má obrovské zkušenosti ze světové špičky včetně výhry nad Jaime Munguiou.",
+          "Bednarek dosud nečelil žádnému soupeři elitní světové úrovně."
         ],
         "proti": [
-          "Bednarek je dosud neporažený a disponuje nepříjemným levorukým postojem.",
-          "Riziko nečekaného tvrdého knockoutového úderu polského boxera."
+          "Bednarek má obrácený gard (southpaw) a solidní úderovou sílu při bilanci 17-0.",
+          "Surace není typickým knokautérem a většinu duelů rozhoduje na body."
         ],
-        "riziko": "Nebezpečný kontr z obráceného guardu Bednarka v úvodních kolech zápasu."
+        "riziko": "Trefený tvrdý úder z Bednarekova levého gardu v úvodní fázi zápasu."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -614,19 +584,18 @@
       "analyza": {
         "id": "Western Kentucky Hilltoppers - Jacksonville State Gamecocks",
         "verdikt": "OK",
-        "duvod": "Jacksonville State vede konferenci CUSA bez porážky (5-0), zatímco WKU se trápí s bilancí 3-6 a čelí krizi.",
-        "text": "Zápas Conference USA přináší střetnutí týmů v diametrálně odlišném rozpoložení. Jacksonville State Gamecocks pod trenérem Charlesem Kellym dominují konferenci s bilancí 5-0 (celkově 7-2) a výhra jim prakticky zajistí účast ve finále konference. Naopak domácí Western Kentucky Hilltoppers trenéra Tysona Heltona zažívají velké trápení s bilancí 3-6 a hrozí jim konec sérií účastí v bowl games. Gamecocks mají v posledních týdnech výbornou formu, což potvrdili výhrami 47:14 nad Sam Houstonem a 24:0 na hřišti New Mexico State. Pro Jacksonville State hraje spolehlivá defenzíva a vyvážený běhový útok, na který obrana Hilltoppers jen těžko hledá odpověď. WKU se sice může spolehnout na produktivního nováčka Stafforda a domácí prostředí v Bowling Green, ale tým sráží nestabilita na postu rozehrávače. Zápas by mohl zhatit pouze podceněný vstup hostů do utkání nebo výjimečný výkon domácího útoku v přestřelce. Vzhledem k herní pohodě a jasné motivaci Jacksonville State je sázka na vítězství hostů podložená fakty.",
+        "duvod": "NCAA; Jacksonville State (7-2) bojuje o titul v C-USA a má výrazně lepší formu i bilanci než trápící se Western Kentucky (3-6).",
+        "text": "V konferenčním duelu Conference USA přivítá Western Kentucky rozjetý tým Jacksonville State Gamecocks. Hostující Gamecocks prožívají výbornou sezonu s bilancí 7-2, útočí na účast v konferenčním finále a disponují jednou z nejefektivnějších běhových ofenziv v lize (průměr 29 bodů na zápas). Na druhé straně Western Kentucky prožívá těžký útlum s bilancí 3-6 a jeho obrana patří k nejvíce propustným, když inkasuje v průměru přes 31 bodů na zápas. Jacksonville State navíc vyhrál 2 z posledních 3 vzájemných měření sil. Pro sázku na Jacksonville State hraje jasná motivace v tabulce i diametrální rozdíl v herní pohodě obou mužstev. Proti stojí výhoda domácího stadionu Houchens-Smith Stadium pro Hilltoppers a jejich snaha se před vlastními fanoušky vzepřít nepříznivému vývoji sezony. Pokud si hosté pohlídají míč a vyvarují se laciných ztrát, měli by potvrdit roli výrazného favorita.",
         "duvera_gemini": 8,
         "pro": [
-          "Jacksonville State drží v Conference USA bilanci 5-0 a bojuje o konferenční finále.",
-          "Hosté v posledních týdnech deklasovali Sam Houston 47:14 a NM State 24:0.",
-          "WKU prožívá nejhorší sezónu za pět let a v obraně kupí chyby."
+          "Jacksonville State má skvělou formu (7-2) a bojuje o finále konference.",
+          "Obrana Western Kentucky inkasuje v průměru přes 31 bodů na zápas."
         ],
         "proti": [
-          "WKU hraje doma na Houchens Industries–L.T. Smith Stadium v Bowling Green.",
-          "Hilltoppers bojují o zbytky naděje na záchranu sezóny a mají nebezpečného Stafforda."
+          "Western Kentucky hraje na domácím stadionu Houchens-Smith Stadium.",
+          "V zápasech univerzitního fotbalu mohou momentum otočit náhodné turnovers."
         ],
-        "riziko": "Podcenění zápasu ze strany Gamecocks a možný střelecký den domácího útoku WKU."
+        "riziko": "Ztráty míče na útočné polovině a bodová přestřelka s využitím domácího prostředí."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -645,19 +614,50 @@
       "analyza": {
         "id": "Holy Cross Crusaders - Villanova Wildcats",
         "verdikt": "OK",
-        "duvod": "Villanova vyhrála 4 zápasy v řadě s průměrným náskokem 20 bodů a nutně potřebuje výhru pro účast v play-off FCS.",
-        "text": "V Patriot League na úrovni NCAA FCS se střetávají dva týmy se shodnou konferenční bilancí 5-2. Villanova Wildcats pod koučem Markem Ferrantem drží sérii čtyř výher v řadě s průměrným rozdílem dvaceti bodů na zápas a usiluje o účast v play-off. Ofenzívu hostů táhne quarterback Pat McQuaide, který nasbíral již přes 2 200 yardů a v minulém kole třemi touchdowny režíroval výhru 30:0 nad Richmondem. Holy Cross s trenérem Danem Curranem sice po slabém vstupu do sezóny vyhrál pět z šesti duelů, ale na domácím Fitton Field čelí nejkomplexnějšímu soupeři podzimu. Wildcats navíc útočí na klubový rekord v podobě desáté venkovní výhry v řadě proti FCS protivníkům a vedou i historickou vzájemnou bilanci 14-9. Proti Villanově hraje houževnatost Crusaders v koncovkách, kterou předvedli obratem v poslední minutě na Georgetownu (27:24). Sázku by mohly ohrozit případné chyby McQuaidea pod tlakem nebo ztráta tempa na začátku zápasu. Celková kvalita soupisky a fazóna z posledních týdnů však výrazně favorizují hostující tým.",
+        "duvod": "Villanova vyhrála 4 zápasy v řadě s průměrným rozdílem 20 bodů a hraje o postup do FCS play-off, zatímco Holy Cross má v sezóně kolísavou bilanci 5-5.",
+        "text": "Villanova Wildcats s bilancí 6-4 v celkovém pořadí a 5-2 v konferenci Patriot League zajíždějí na Fitton Field v Massachusetts, kde se střetnou s Holy Cross Crusaders s bilancí 5-5 v klíčovém souboji o účast ve vyřazovacích bojích FCS. Svěřenci zkušeného trenéra Marka Ferranteho chytili v závěru podzimu znamenitou fazónu a drží sérii čtyř výher v řadě s průměrným rozdílem dvaceti bodů. Minulý týden předvedla Villanova naprosto dominantní výkon v defenzivě, když deklasovala Richmond 30:0 a v prvním poločase povolila soupeři pouhých dvacet yardů. Ofenzivu Wildcats spolehlivě diriguje quarterback Pat McQuaide, jenž v sezóně naházel přes 2 200 yardů a v minulém kole zaznamenal tři touchdownové přihrávky. Na zemi září running back Isaiah Ragland, který pokořil hranici 2 000 kariérních yardů a proti Richmondu zaznamenal 125 běhových yardů. Holy Cross pod vedením kouče Dana Currana sice vyhrál pět z minulých šesti střetnutí, herní komplexnost a síla kádru však jasně hovoří pro hosty. Villanova navíc útočí na desáté venkovní vítězství proti týmům z FCS v řadě a má obrovskou motivaci. Jediným reálným rizikem je domácí prostředí Crusaders a jejich produktivita v red zone, avšak kvalita Wildcats by měla rozhodnout.",
         "duvera_gemini": 8,
         "pro": [
-          "Villanova drží šňůru čtyř přesvědčivých výher v řadě s průměrem 34,3 bodu.",
-          "Quarterback Pat McQuaide má skvělou formu (v minulém kole 3 TD přihrávky).",
-          "Wildcats útočí na desátou venkovní výhru v řadě proti FCS týmům."
+          "Villanova táhne sérii čtyř výher v řadě s průměrným náskokem 20 bodů.",
+          "Obrana Wildcats v minulém kole udržela čisté konto proti Richmondu (30:0).",
+          "Skvělá forma QB Pata McQuaidea a running backa Isaiaha Raglanda."
         ],
         "proti": [
-          "Holy Cross hraje doma na Fitton Field a z posledních 6 zápasů jich 5 vyhrál.",
-          "Crusaders prokázali velkou morálku při těsných obratech v závěrech zápasů."
+          "Holy Cross vyhrál 5 z posledních 6 utkání a hraje doma.",
+          "Vzájemná bilance v konferenci je vyrovnaná (obě mužstva 5-2)."
         ],
-        "riziko": "Ztráta koncentrace Villanovy v nepřátelském venkovním prostředí na Fitton Field."
+        "riziko": "Domácí prostředí Holy Cross a případná ztráta koncentrace defenzivy Wildcats v červené zóně."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "sipky",
+      "zapas": "Aspinall N. - Kuivenhoven M.",
+      "start": "2026-11-14T16:15:00+00:00",
+      "liga": "Grand Slam of Darts",
+      "trh": "Počet 180 v zápasu 5.5",
+      "vyber": "Méně než 5.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Aspinall N. - Kuivenhoven M.",
+        "verdikt": "OK",
+        "duvod": "Krátký formát základní skupiny Grand Slam of Darts na 5 vítězných legů dává minimální prostor pro dosažení 6 a více stoosmdesátek.",
+        "text": "V rámci prestižního turnaje Grand Slam of Darts se v úvodním duelu základní skupiny P střetávají anglický šipkař Nathan Aspinall a nizozemský vyzyvatel Maik Kuivenhoven. Zápasy ve skupinové fázi se hrají ve velmi svižném formátu na pět vítězných legů (best of 9 legs), což obvykle znamená celkovou délku trvání pouze šest až osm legů. K překonání hranice 5,5 stoosmdesátek by oba hráči museli hodit v průměru takřka jedno maximum v každém odehraném legu, což je statisticky vysoce nepravděpodobné. Nathan Aspinall sice umí skórovat vysoké náhozy, po návratu ke špičkovým výkonům se však soustředí především na plynulost a úspěšnost zavírání dablů. Maik Kuivenhoven je na okruhu PDC spíše průměrným hráčem, jehož průměr 180 na zápas v krátkých zápasech jen zřídka překračuje dvě maxima. Úvodní vystoupení ve skupině navíc bývá poznamenáno lehkou nervozitou a adaptací na pódiový terč ve Wolverhamptonu. Pokud Aspinall v utkání potvrdí roli favorita a zvítězí rychle například 5:1 nebo 5:2, nebude v zápase dostatek legů na tolik maxim. Jediné ohrožení sázky představuje případné vyhrocené drama do stavu 5:4 s abnormální úspěšností na triplu 20 u obou šipkařů.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Krátký formát na pouhých 5 vítězných legů výrazně limituje celkový počet náhozů.",
+          "Kuivenhoven dlouhodobě nepatří mezi elitní producenty stoosmdesátek na okruhu.",
+          "Běžná sázková hranice na celkový počet 180 v tomto zápase bývá jen 4,5."
+        ],
+        "proti": [
+          "Při dramatickém průběhu na stav 5:4 se odehraje maximální počet 9 legů.",
+          "Aspinall dokáže při chycení rytmu trefit i dvě maxima v jediném legu."
+        ],
+        "riziko": "Případný vyrovnaný průběh na devět legů doprovázený mimořádnou přesností obou hráčů na T20."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -676,21 +676,52 @@
       "analyza": {
         "id": "Paris Volley - Tourcoing",
         "verdikt": "OK",
-        "duvod": "Tourcoing je ve vynikající formě, zatímco Paříž prohrála 4 z 5 zápasů a zápasy francouzské ligy zřídka jdou do 5 setů.",
-        "text": "Šesté kolo nejvyšší francouzské volejbalové soutěže svede v Salle Pierre Charpy trápící se domácí Paříž a rozjetý Tourcoing. Paris Volley prohrál čtyři z posledních pěti soutěžních duelů a v lize uhrál jediný set za poslední dvě kola po hladkých porážkách 0:3 v Poitiers a v Cannes. Naopak Tourcoing Lille Métropole přijíždí v roli jednoho z nejlépe bránících a servírujících týmů ligy s formou přesahující osmdesát procent úspěšnosti. Trh na méně než 4,5 setu předpokládá, že utkání neskončí pětisetovým tie-breakem, což plně odpovídá současnému výkonnostnímu rozdílu. Ve francouzské lize končí tie-breakem dlouhodobě méně než čtvrtina zápasů, přičemž nevyrovnanost Paříže nahrává rychlému průběhu na 3:0 nebo 3:1. Pro sázku hovoří spolehlivá obrana Tourcoingu na síti a nestabilní přihrávka domácího výběru pod tlakem kvalitního podání. Proti hraje pouze možný záchvěv domácích v bouřlivém prostředí pařížské haly a případné polevení hostů po zisku dvou setů. Pokud si hostující favorit pohlídá koncentraci, utkání se do páté sady nedostane.",
-        "duvera_gemini": 8,
+        "duvod": "Tourcoing patří ke špičce ligy a vzájemné zápasy obvykle končí v poměru 3:0 či 3:1 bez nutnosti pátého tie-breakového setu.",
+        "text": "V 6. kole francouzské volejbalové ligy Alterna Volstar přivítá Paris Volley ve své hale Salle Pierre-Charpy rozjetý tým Tourcoing VB Lille Métropole. Hostující Tourcoing zahájil ročník ve vynikající formě, figuruje na 3. místě tabulky se čtyřmi výhrami z pěti utkání a může se opřít o stabilní servis i pevnou obranu na síti. Domácí pařížský celek se naopak trápí s nevyrovnaností výkonů a proti soupeřům z vrchní poloviny tabulky pravidelně ztrácí rytmus v koncovkách setů. Vzájemné ligové duely těchto soupeřů málokdy docházejí do páté sady; v posledním měření sil Tourcoing dominoval a vyhrál 3:1 po setech 27:29, 25:21, 25:20 a 25:17. Herní styl hostů opřený o spolehlivého univerzála a kvalitní bloky dělá domácím dlouhodobě velké potíže. Sázka na méně než 4,5 setu nabízí velkou flexibilitu, neboť je výherní při jakémkoliv triumfu kteréhokoliv celku v poměru 3:0 nebo 3:1. Proti sázce může stát zaplněná hala Charpy a možný výpadek hostů na příjmu, který by Paříži pomohl urvat dva dílčí sety. Kvalitativní rozdíl v aktuální formě však předurčuje, že utkání skončí maximálně ve čtyřech setech.",
+        "duvera_gemini": 7,
         "pro": [
-          "Paris Volley prohrál 4 z posledních 5 utkání a neuhrál ani set v Poitiers či Cannes.",
-          "Tourcoing se opírá o výborný servis i blok a má 80% úspěšnost z posledních duelů.",
-          "Dlouhodobá statistika Ligue A ukazuje, že méně než 25 % duelů jde do 5. setu."
+          "Tourcoing vyhrál 4 z úvodních 5 ligových kol a dominuje na bloku.",
+          "Předchozí vzájemný duel skončil výsledkem 3:1 na sety pro Tourcoing.",
+          "Sázka pokrývá široké spektrum nejpravděpodobnějších výsledků (3:0 i 3:1)."
         ],
         "proti": [
-          "Paris Volley hraje v domácí Salle Charpy, kde dokáže potrápit i silnější týmy.",
-          "Možné uspokojení favorita po vedení 2:0 a následná ztráta setu."
+          "Paříž v domácí hale Pierre-Charpy dokáže favority potrápit.",
+          "Případné polevení hostů po zisku dvou setů může zápas poslat do tie-breaku."
         ],
-        "riziko": "Domácí vzepětí Paris Volley a vynucení tie-breaku za stavu 2:2 na sety."
+        "riziko": "Ztráta koncentrace favorita v koncovkách setů a vybojování tie-breaku domácí Paříží."
       },
-      "duvera": 7,
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "volejbal",
+      "zapas": "Brescia - Consolini Volley",
+      "start": "2026-11-15T16:00:00+00:00",
+      "liga": "1.Itálie - ženy",
+      "trh": "Handicap setů v zápasu -1.5",
+      "vyber": "Consolini Volley +1.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Brescia - Consolini Volley",
+        "verdikt": "OK",
+        "duvod": "Consolini Volley přijíždí povzbuzeno senzační výhrou 3:2 nad Scandicci a proti srovnatelně silné Brescii má velkou šanci uhrát minimálně dva sety.",
+        "text": "V 9. kole italské nejvyšší soutěže Serie A1 žen hostí Banca Valsabbina Millenium Brescia v hale PalaGeorge tým Omag Consolini Volley ze San Giovanni in Marignano. Hostující družstvo vedené trenérem Massimem Bellanem přijíždí v ohromné euforii po nečekaném triumfu 3:2 nad gigantem Scandicci, kde dokázalo senzačně otočit stav z 0:2 na sety. V tomto utkání excelovala především smečařka Jessica Rivero s pětadvaceti body a Martina Bracchi, jež přispěla dvaadvaceti body. Domácí Brescia pod taktovkou kouče Solforatiho a s reprezentantkou Beatrice Parrocchiale na liberu sice v týdnu trápila favority z Milána i Bergama, v tabulce se však rovněž nachází v boji o záchranu. Oba týmy se výborně znají z dřívějších vzájemných bitev v Serii A2, které byly tradičně vyrovnané a plné dlouhých výměn. Handicap +1,5 setu na hosty znamená, že Consolini stačí k úspěchu uhrát alespoň dva sety, případně celý zápas vyhrát. Proti sázce hovoří výhoda domácí palubovky pro Brescii a únava hráček Consolini po pětisetové bitvě. Přesto ofenzivní síla dua Rivero–Bracchi a narostlé sebevědomí činí prohru hostů 0:3 nebo 1:3 málo pravděpodobnou.",
+        "duvera_gemini": 7,
+        "pro": [
+          "Consolini má obrovské sebevědomí po obratu proti špičkovému Scandicci (3:2).",
+          "Úderná útočná forma smečařek Martiny Bracchi a Jessicy Rivero.",
+          "Brescia je přímým konkurentem v boji o záchranu, což slibuje vyrovnanou bitvu."
+        ],
+        "proti": [
+          "Brescia hraje doma na PalaGeorge a nutně potřebuje body.",
+          "Fyzická únava hráček Consolini po náročném pětisetovém střetnutí."
+        ],
+        "riziko": "Případný hladký třísetový kolaps hostujícího celku při ztrátě stability na přihrávce."
+      },
+      "duvera": 6,
       "overeni": "málo dat"
     },
     {
@@ -707,19 +738,19 @@
       "analyza": {
         "id": "Square Dubrovnik - Osijek",
         "verdikt": "OK",
-        "duvod": "Zápasy Squaru Dubrovnik jsou gólovou smrští s průměrem přes 9 gólů na utkání a hranice 4,5 je ve futsalu velmi nízko.",
-        "text": "V 5. kole chorvatské futsalové SuperSport HMNL hostí Square Dubrovnik v hale Gospino polje celek MNK Osijek Kandit. Domácí Square představuje nejofenzivnější tým úvodu sezóny, když v jeho čtyřech ligových zápasech padlo neuvěřitelných 37 branek při skóre 20:17. Dubrovník v dosavadním průběhu porazil Novo Vrijeme 7:3, Rijeku 6:4, remizoval 3:3 s Hajdukem a podlehl Olmissumu 4:7. V týmu trenéra Iva Jukiće střelecky excelují Marko Kuraja s pěti góly a André Sasse se čtyřmi zásahy. Hranice 4,5 gólu je na poměry otevřeného stylu Squaru posazena velmi nízko a byla překonána ve všech dosavadních ligových duelech obou týmů. Navíc při nepříznivém skóre oba celky pravidelně sahají k power-play s létajícím brankářem, což v závěru přináší další zásahy do odkryté brány. Sázku by mohlo ohrozit pouze mimořádné představení obou brankářů v čele s domácím Primicem a extrémně defenzivní taktika hostů. Ofenzivní předpoklady i dosavadní průměr přes devět gólů na zápas u domácích však jasně směřují k přestřelce.",
-        "duvera_gemini": 9,
+        "duvod": "Chorvatská futsalová liga je proslulá vysokým počtem gólů a vzájemné střetnutí v play-off nabídlo divokou přestřelku 4:4.",
+        "text": "V chorvatské futsalové superlize SuperSport HMNL přivítá MNK Square Dubrovnik v bouřlivém prostředí sportovní haly Gospino polje celek MNK Osijek Kandit. Chorvatská soutěž patří k nejofenzivnějším futsalovým ligám v Evropě a hranice 4,5 branky bývá s přehledem pokořována v naprosté většině ligových utkání. Tyto dva kluby se potkaly v jarním čtvrtfinále play-off, kde předvedly dramatickou přestřelku, jež po základní hrací době skončila remízou 4:4 a po prodloužení 6:5 pro Square. Dubrovnický tým spoléhá na produktivní ofenzivní opory, mezi něž patří Marko Kuraja, Maro Đuraš či slovenský reprezentant Matúš Ševčík. Hosté z Osijeku disponují obrovskou útočnou silou díky reprezentačnímu pivotovi Antoniu Sekulićovi a technicky zdatným brazilským hráčům v čele s Evertonem Gallem. Zásadním faktorem v závěru zápasů je taktika hry s létajícím brankářem v power-play, která při nepříznivém stavu takřka bez výjimky přináší branky na jedné či druhé straně. Proti sázce by stál pouze nadpozemský výkon brankářů Zorana Primiće či Franka Jamičiće. Vzhledem k otevřenému stylu obou protivníků je dosažení alespoň pěti gólů téměř jistotou.",
+        "duvera_gemini": 8,
         "pro": [
-          "Ve 4 ligových zápasech Squaru padlo 37 gólů, což je průměr přes 9 branek na zápas.",
-          "Dubrovník má ve skvělé formě střelce Marka Kuraju (5 gólů) i Andrého Sasseho (4).",
-          "Futsalová hranice 4,5 gólu bývá pravidelně překonávána i díky hře s power-play."
+          "Poslední vzájemný soutěžní zápas nabídl v základní době hned 8 branek (4:4).",
+          "SuperSport HMNL dlouhodobě vykazuje průměr přes 5,5 gólu na zápas.",
+          "Kvalitní střelci na obou stranách včetně Sekuliće, Ševčíka a Kuraji."
         ],
         "proti": [
-          "Osijek může zvolit hluboký obranný blok s cílem zbrzdit tempo hry.",
-          "Brankář Zoran Primić má dny, kdy dokáže zavřít bránu s minimem inkasovaných gólů."
+          "Výjimečný den brankářů Primiće a Jamičiće by mohl tempo zpomalit.",
+          "Případná opatrná defenzivní taktika v úvodních minutách střetnutí."
         ],
-        "riziko": "Zavřená taktická bitva a mimořádný den brankářů držící stav na fotbalovém skóre."
+        "riziko": "Mimořádný výkon obou brankářů spojený se slabou efektivitou v zakončení šancí."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -738,19 +769,19 @@
       "analyza": {
         "id": "MNK Hajduk Split - Futsal Istra Pula",
         "verdikt": "OK",
-        "duvod": "Hajduk Split hraje po postupu divoké ofenzivní zápasy a futsalová linie 4,5 gólu je dlouhodobě velmi snadno překonatelná.",
-        "text": "Nováček nejvyšší chorvatské futsalové soutěže MNK Hajduk Split přivítá v hale Gripe celek Futsal Istra Pula. Hajduk hraje po postupu velmi odvážný a otevřený futsal, což demonstrují ligové výsledky 2:4 s Rijekou, 3:5 s mistrovským Olmissumem a divoká remíza 3:3 se Squarem. Pula sice dokázala na úvod překvapit defenzivní výhrou 2:1 nad Dinamem, avšak proti přímočaře hrajícím týmům se zápasy pravidelně mění v otevřenou partii. Vypsaná hranice 4,5 gólu je ve futsalovém prostředí jednou z nejnižších možných linií a ve třech ze čtyř ligových duelů Hajduku byla hravě pokořena. Klíčovým faktorem pro over je také taktika hry s pátým hráčem v poli, kterou oba trenéři nasazují už při jednobrankovém manku v posledních minutách. Proti sázce hovoří schopnost Istrijských zahušťovat prostor před brankovištěm a spoléhat na rychlé brejky do zformované obrany. Případné selhání sázky by vyžadovalo sterilní ofenzívu obou výběrů a festival neproměněných šancí. Atmosféra v hale Gripe a herní odvaha domácích však slibují útočný duel s minimálně pěti zásahy.",
+        "duvod": "Pula i Hajduk produkují útočný futsal plný branek, což potvrzují jejich poslední ligové i pohárové zápasy s vysokým skóre.",
+        "text": "V dalším kole chorvatské nejvyšší soutěže SuperSport HMNL vyzve MNK Hajduk Split před svými fanoušky jednoho z favoritů soutěže MNK Futsal Istra Pula. Domácí Hajduk praktikuje v nejvyšší soutěži velmi odvážný a otevřený futsal, což se projevilo i v nedávném divokém zápase proti Rijece zakončeném porážkou 2:4. Pula, jež dříve vystupovala jako Stanoinvest Futsal Pula, disponuje jedním z nejkvalitnějších útoků v lize plným špičkových cizinců i chorvatských reprezentantů. Mužstvo z Istrie navíc v nedávném pohárovém utkání s Torcidou předvedlo divokou přestřelku 3:4, což ukazuje na skvělou ofenzivu, ale také zranitelnost v obraně. V chorvatské lize hraje obrovskou roli pravidlo akumulovaných faulů, kdy po pátém provinění následují nebezpečné přímé kopy bez zdi. Závěrečné minuty navíc téměř s jistotou nabídnou hru s pátým hráčem v poli (flying goalkeeper), což při risku jednoho z celků generuje rychlé góly. Jediným faktorem proti overu by mohla být přílišná taktická svázanost Puly při rychlém brzkém vedení. Přesto herní dynamika Hajduku a ofenzivní kvality soupeře vytvářejí perfektní předpoklady pro překonání hranice 4,5 gólu.",
         "duvera_gemini": 8,
         "pro": [
-          "Ve 3 ze 4 ligových zápasů Hajduku padlo 6 a více branek (4:2, 5:3, 3:3).",
-          "Hajduk doma na Gripama hraje ve vysokém tempu s podporou publika.",
-          "Standardní využití power-play při nepříznivém stavu generuje pozdní góly."
+          "Poslední zápasy obou celků pravidelně končí s minimálně šesti góly na kontě.",
+          "Pula disponuje mimořádnou ofenzivní silou podpořenou zahraničními akvizicemi.",
+          "Vysoká pravděpodobnost power-play a desítek z akumulovaných faulů v závěru."
         ],
         "proti": [
-          "Istra Pula umí zahrát velmi disciplinovaně v defenzívě, jak ukázala výhra 2:1 nad Dinamem.",
-          "Nervozita nováčka v souboji o důležité body do záchrany."
+          "Pula by při rychlém vedení mohla přepnout na údržbový defenzivní režim.",
+          "Méně zkušený kádr Hajduku může narazit na organizovanou obranu favorita."
         ],
-        "riziko": "Přílišná opatrnost v záchranářském duelu a nízká efektivita při zakončení."
+        "riziko": "Případné brzké vedení Puly vedoucí k pasivní kontrole hry s minimem střelby."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -769,50 +800,18 @@
       "analyza": {
         "id": "Dobey C. - Schmidt J.",
         "verdikt": "OK",
-        "duvod": "Chris Dobey je jedním z největších mašin na 180s v celém PDC a k překonání hranice mu stačí dvě maxima.",
-        "text": "V úvodním kole skupinové fáze Grand Slam of Darts ve Wolverhamptonu nastoupí nasazený Chris Dobey proti Janu Schmidtovi. Formát zápasu na pět vítězných legů dává zkušenějšímu Angličanovi dostatečný prostor pro uplatnění jeho obrovské skórovací potence na triple dvacet. Chris Dobey dlouhodobě patří mezi absolutní špičku PDC v produkci maximálních náhozů s průměrem výrazně převyšujícím 0,35 stoosmdesátky na leg. Pro splnění hranice více než 1,5 stoosmdesátky mu stačí trefit pouhá dvě maxima v průběhu celého utkání. Německý mladík Schmidt sice překvapil postupem do finále juniorského šampionátu, ale na velkém pódiu televizního majoru se teprve rozkoukává. Pro sázku jednoznačně mluví Dobeyho stabilní šipkařský rytmus a schopnost nacházet T20 hned od prvního hodu. Jediným reálným rizikem by byl naprosto jednostranný a extrémně rychlý průběh 5:0 bez většího počtu odházených šipek na Dobeyho straně. Hollywood však obvykle rozjíždí zápasy vysokým bodovým náporem a dvě stoosmdesátky by měl bez potíží zvládnout.",
-        "duvera_gemini": 9,
-        "pro": [
-          "Dobey patří k absolutním špičkám PDC v počtu 180 na leg (dlouhodobě přes 0,35).",
-          "K výhře sázky stačí trefit pouze 2x 180 v zápase hraném na 5 vítězných legů.",
-          "Dobey disponuje elitním scoringem na T20 a vysokým 3-dart average."
-        ],
-        "proti": [
-          "Krátký formát na 5 vítězných legů dává méně prostoru při bleskovém zápase.",
-          "Riziko rychlé výhry 5:0 s minimálním počtem náběhů k terči."
-        ],
-        "riziko": "Rychlá a jednostranná výhra Dobeyho 5:0, kde Angličan nestihne odházet dostatek náběhů."
-      },
-      "duvera": 7,
-      "overeni": "málo dat"
-    },
-    {
-      "sport": "sipky",
-      "zapas": "Aspinall N. - Kuivenhoven M.",
-      "start": "2026-11-14T16:15:00+00:00",
-      "liga": "Grand Slam of Darts",
-      "trh": "Počet 180 v zápasu 5.5",
-      "vyber": "Méně než 5.5",
-      "kurz": 1.3,
-      "p": 0.7369,
-      "marze": 0.0867,
-      "sazej_od": 1.39,
-      "analyza": {
-        "id": "Aspinall N. - Kuivenhoven M.",
-        "verdikt": "OK",
-        "duvod": "Krátký formát na 5 vítězných legů v kombinaci s nižší 180-kadencí Kuivenhovena silně favorizuje under 5.5.",
-        "text": "V zápase základní skupiny Grand Slam of Darts se střetne anglický favorit Nathan Aspinall s nizozemským zástupcem Maikem Kuivenhovenem. Skupinová fáze se hraje ve zkráceném formátu na pouhých pět vítězných legů, což výrazně limituje prostor pro vysoký počet maximálních náhozů. Trh nabízí hranici 5.5 na méně s férovou pravděpodobností trhu 0.7369, přičemž standardní celková lajna u většiny bookmakerů bývá nastavena o bod níže na 4.5. Maik Kuivenhoven nepatří mezi elitní skórovače a jeho vlastní hranice se pohybuje kolem pouhých 1.5 maxima na zápas. Aspinall sice dokáže v rytmu sázet 180 v sériích, v krátkých duelech se však jeho průměr pohybuje spíše mezi dvěma až třemi maximy. Aby padlo alespoň šest stoosmdesátek, musel by zápas nabídnout téměř maximální délku 5:4 a kadenci přesahující 0.65 maxima na leg. Hlavním argumentem pro sázku je tedy krátká stopáž duelu a stabilně střídmější statistika Kuivenhovena na pódiu. Zhatit tip by mohl pouze výjimečně vyrovnaný duel, kde oba borci chytnou mimořádnou vlnu trefování trojnásobků dvacítky.",
+        "duvod": "Dobey je excelentní hráč na 180 a hranice 1.5 maxima je pro něj i v kratším formátu velmi příznivá.",
+        "text": "Na šipkařském Grand Slam of Darts se v základní skupině potkávají anglický favorit Chris Dobey a mladý německý vyzyvatel Jan Schmidt, přičemž se hraje formátem na pět vítězných legů. Dobey dlouhodobě patří k nejužší špičce PDC v produkci maximálních náhozů 180 a jeho průměr na zápas tuto nízkou lajnu spolehlivě překračuje. Schmidt se kvalifikoval především díky finále na World Youth Championship a na velkém pódiu bude čelit obrovskému tlaku. Pro vybranou sázku na minimálně dvě stoosmdesátky hraje Chrisův stabilní rytmus na triplu 20 a vysoká scoringová potence, kterou ukazuje po celou sezónu. Jediným výraznějším protiargumentem je krátký formát na pět vítězných legů, jenž dává méně návštěv u terče, pokud by Dobey dominoval příliš rychle. Sázku by zhatil pouze extrémně jednostranný průběh 5:0 bez rytmu nebo brzké přecházení na jiné triply při horším prvním náhozu. Vzhledem k Dobeyho síle v trefování T20 je však hranice 1.5 velmi dobře hratelná.",
         "duvera_gemini": 8,
         "pro": [
-          "Zápas základní skupiny Grand Slam of Darts se hraje pouze na 5 vítězných legů (best of 9).",
-          "Maik Kuivenhoven nepatří mezi elitní skórovače a má vypsanou vlastní lajnu na pouhých 1.5 maxima.",
-          "K prolomení hranice 5.5 je potřeba mimořádně vyrovnaný duel 5:4 s kadencí přesahující 0.65 maxima na leg."
+          "Chris Dobey patří k nejlepším hráčům na okruhu v počtu hozených 180 na leg.",
+          "Hranice 1.5 je pro hráče Dobeyho kalibru překonatelná během 3 až 4 odehraných legů."
         ],
         "proti": [
-          "Nathan Aspinall dokáže v rytmu nasázet tři a více 180 i v krátkém formátu.",
-          "Při maximálním průběhu do stavu 5:4 se celková šance na více maxim znatelně zvyšuje."
+          "Formát na 5 vítězných legů je krátký a při rychlém vítězství 5:0 dává málo šancí.",
+          "Schmidt je outsider a nemusí Dobeyho přinutit k delšímu zápasu s více legy."
         ],
-        "riziko": "Pokud se zápas protáhne do rozhodujícího devátého legu a oba hráči chytnou vysokou skórovací vlnu."
+        "riziko": "Příliš rychlý a jednostranný průběh utkání 5:0 či 5:1, kdy Dobey nestihne dvě maxima hodit."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -831,19 +830,18 @@
       "analyza": {
         "id": "Gittens, Dan - Cawse, Daniel",
         "verdikt": "OK",
-        "duvod": "Gittens má v BKB bohaté zkušenosti a stoprocentní bilanci KO ve svých výhrách, Cawse je nováček.",
-        "text": "Na londýnském galavečeru BKB 61 v aréně Indigo at The O2 se ve velterové divizi střetnou britští bojovníci Dan Gittens a Daniel Cawse. Dan Gittens nastupuje do ringu s bilancí 6 výher a jediné porážky, přičemž všech šest svých vítězství v organizaci BKB ukončil před limitem formou KO či TKO. Po květnovém titulovém zápase s Javonem Wrightem se Gittens vrací s obrovskou motivací potvrdit své výsadní postavení v širší špičce velterové váhy. Daniel Cawse naproti tomu zažívá premiéru v organizaci BKB pod plnými pravidly boxu holých kloubů a postrádá prověření proti zkušené špičce. Trh vypsal výhru Gittense s férovou pravděpodobností 0.7369, což přesně odráží výrazný výkonnostní i zkušenostní rozdíl mezi oběma muži. V boxu bez rukavic hraje adaptace na tvrdé zásahy a obrana proti cutům klíčovou roli a Gittens je v tomto ohledu prověřeným válečníkem. Proti sázce hovoří pouze nevyzpytatelnost disciplíny, kde stačí jediný nekrytý zásah na bradu. Přesto by měla Gittensova dynamika a knokautová síla zajistit předpokládaný triumf.",
+        "duvod": "Dan Gittens je prověřený borec v BKB s bilancí 6-1 a všemi výhrami na KO, soupeř Cawse debutuje.",
+        "text": "Na galavečeru BKB 61 v londýnské O2 Areně změří síly ve welterové váze Dan Gittens a Daniel Cawse v souboji bez rukavic. Gittens je v organizaci BKB již ostříleným veteránem s působivou bilancí šesti výher a jediné porážky, přičemž všech šest vítězství získal před časovým limitem via KO nebo TKO. Naopak pro Daniela Cawseho jde o absolutní premiéru v profesionálním bare knuckle boxu, když jeho jediný záznam na BoxRecu je porážka v hybridním boxu. Zkušenosti s tvrdostí úderů holými klouby a pohybem v malém trigonu mluví jednoznačně ve prospěch Gittense, který navíc disponuje prověřenou knockoutovou silou. Proti němu může hrát pouze fakt, že po květnové porážce s Javonem Wrightem o titul potřebuje znovu nalézt rytmus. Sázku by mohl ohrozit náhodný úder v úvodní divoké přestřelce nebo nepříjemná tržná rána či zlomenina ruky, což je v soubojích bez rukavic poměrně běžné. Rozdíl ve zkušenostech a adaptaci na specifika BKB je však propastný a Gittens by měl utkání dominovat.",
         "duvera_gemini": 8,
         "pro": [
-          "Dan Gittens má v profi bare knuckle bilanci 6-1 a všech šest vítězství ukončil před limitem na KO/TKO.",
-          "Daniel Cawse zažívá plnohodnotný debut v organizaci BKB pod pravidly boxu bez rukavic.",
-          "Gittens nedávno bojoval o titul velterové váhy a má obrovskou převahu v technice."
+          "Dan Gittens má v BKB skvělou bilanci 6-1 a 100% úspěšnost ukončení před limitem.",
+          "Daniel Cawse je v bare knuckle boxu debutantem bez prověřených zkušeností na této úrovni."
         ],
         "proti": [
-          "V boxu bez rukavic stačí jediný čistý zásah k nečekanému knokautu.",
-          "Gittens se vrací po těžké prohře s Javonem Wrightem z května."
+          "V boxu bez rukavic stačí jediný nekrytý úder na bradu nebo tržná rána k ukončení.",
+          "Gittens se vrací po své první tvrdé porážce před limitem s Javonem Wrightem."
         ],
-        "riziko": "Rychlý lucky punch od Cawseho v divoké úvodní přestřelce, která je v bare knuckle častá."
+        "riziko": "Rychlý lucky punch soupeře nebo zranění ruky při úderech bez rukavic."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -862,21 +860,50 @@
       "analyza": {
         "id": "Lloyd, Ashley - Pond, Marcus",
         "verdikt": "OK",
-        "duvod": "Marcus Pond utrpěl v bare knuckle ringu několik těžkých proher na KO v řadě, Lloyd je stabilnější.",
-        "text": "Na kartě galavečera BKB 61 v Londýně změří v křižové váze síly Ashley Lloyd a Marcus Pond. Marcus Pond má za sebou sérii tvrdých porážek, když v organizaci BKFC inkasoval rychlá KO s Liamem Dooleym i Tobym Bindonem a padl v prvních dvou kolech. Tyto nezdary jasně ukázaly limity Pondovy defenzívy i narušenou schopnost absorbovat tvrdé zásahy v soubojích bez rukavic. Ashley Lloyd nastupuje jako papírový favorit s tržní pravděpodobností 0.7369 a sázkový kurz 1.30 reflektuje Pondův herní propad. Lloyd vstoupí do klinčů agresivně a jeho záměrem bude vyvinout souvislý tlak na soupeře, který pod palbou v posledních duelech rychle kapituloval. Pro Ponda hovoří teoretická šance na nečekaný úder, kterým v minulosti dokázal překvapit Ryana Harrise. Zhatit sázku by mohla jedině Lloydova taktická chyba a otevřená brada v první minutě zápasu. Celkový kontext Pondovy série však staví Lloyda do velmi silné a podložené pozice.",
+        "duvod": "Ashley Lloyd je favoritem díky velké síle úderu a Marcus Pond má na kontě tři porážky KO za sebou.",
+        "text": "Předzápasová karta turnaje BKB 61 v Londýně nabídne souboj v křižové váze mezi debutujícím Ashleym Lloydem a Marcusem Pondem přezdívaným The Pilgrim. Ačkoliv Ashley Lloyd absolvuje svůj debut na oficiální scéně BKB, z poloprofesionálních boxerských lig BOXA a Quest přichází s pověstí nebezpečného ranaře a specialisty na knockouty. Marcus Pond má sice v bare knuckle celkovou bilanci 3-3, ale aktuálně táhne sérii tří těžkých porážek před limitem, kdy padl na KO proti Dooleymu, Tomatinimu i Bindonovi. Pondova slábnoucí odolnost vůči tvrdým zásahům dává agresivnímu Lloydovi ideální šanci prosadit svou fyzickou sílu a dynamiku. Proti Lloydovi hovoří nováčkovská daň a absence prověření v ostrém ringu BKB bez rukavic na takto velkém pódiu. Celý tip by mohl zhatit pouze Pondův návrat k taktické defenzivě a využití chyb přemotivovaného debutanta. Kurzové zvýhodnění Lloyda nicméně odráží současnou křehkost Ponda i Lloydův knockoutový potenciál.",
         "duvera_gemini": 7,
         "pro": [
-          "Marcus Pond inkasoval tvrdá KO v prvních dvou kolech v BKFC s Dooleym i Bindonem.",
-          "Pondova odolnost a brada vykazují po sérii knokautových porážek značnou křehkost.",
-          "Ashley Lloyd nastupuje na turnaji BKB 61 v pozici jasného favorita křižové váhy."
+          "Marcus Pond inkasoval tři tvrdé porážky na KO/TKO v řadě a jeho odolnost upadá.",
+          "Ashley Lloyd disponuje knockoutovou silou prověřenou v sériích BOXA a Quest."
         ],
         "proti": [
-          "Pond disponuje knockoutovým úderem, což prokázal při výhře nad Harrisem.",
-          "O Lloydově aktuální zápasové formě je v profi záznamech méně detailních dat."
+          "Lloyd nastupuje ke své oficiální premiéře v BKB a chybí mu zkušenosti bez rukavic.",
+          "Pond má za sebou šest duelů v holých kloubech a zná specifika ringu i tempo."
         ],
-        "riziko": "Marcus Pond trefí tvrdý kontr na začátku zápasu předtím, než Lloyd uplatní převahu."
+        "riziko": "Taktický zápas na body, kde se projeví větší zkušenost Ponda v bare knuckle formátu."
       },
       "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "rugby",
+      "zapas": "Itálie - Argentina",
+      "start": "2026-11-14T11:40:00+00:00",
+      "liga": "RU - Nations Championship",
+      "trh": "Počet bodů v 1. poločasu 31.5",
+      "vyber": "Méně než 31.5",
+      "kurz": 1.3,
+      "p": 0.735,
+      "marze": 0.0918,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Itálie - Argentina",
+        "verdikt": "OK",
+        "duvod": "Po těžkých debaklech v minulém kole obě reprezentace vsadí na pevnou defenzivu a boj v roji.",
+        "text": "V pátém kole turnaje Nations Championship hostí Itálie v Janově na Stadio Luigi Ferraris argentinské Pumas a sázka míří na méně než 31.5 bodu v prvním poločase. Oba týmy mají za sebou minulý víkend těžké porážky, když Itálie utrpěla debakl 7:66 od Jihoafrické republiky a Argentina prohrála 12:42 v Dublinu s Irskem. Trenéři Gonzalo Quesada i Felipe Contepomi sáhli k pěti změnám v základní sestavě a prioritou bude návrat k disciplíně a pevné defenzivě. Argentině navíc chybí klíčový kapitán Julián Montoya i tahouni Marcos Kremer a Juan Cruz Mallía, kapitánskou pásku přebírá Pablo Matera. V mezinárodním ragby hranice 32 bodů za prvních 40 minut vyžaduje obvykle alespoň čtyři pětky, což při očekávaném taktickém boji v mlýnech a na autech nepředpokládáme. Proti sázce by hrál pouze extrémně otevřený poločas s fatálními chybami v obraně nebo brzká žlutá karta znamenající hru v oslabení. Vzhledem k psychickému tlaku po debaklech se však dá čekat opatrný začátek opřený o poziční kopy Paola Garbisiho a Tomáse Albornoze.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Oba týmy se po debaklech v minulém kole soustředí primárně na pevnou defenzivu a disciplínu.",
+          "Argentině chybí klíčové opory Montoya a Mallía, což oslabí souhru a plynulost v útoku."
+        ],
+        "proti": [
+          "Rychlá žlutá nebo červená karta v úvodu může defenzivu jednoho z týmů zcela rozložit.",
+          "Křídla jako Ange Capuozzo nebo Bautista Delguy dokáží skórovat z ojedinělých brejků."
+        ],
+        "riziko": "Brzké vyloučení či série hrubých chyb v obraně vedoucí k rychlým pětkám obou stran."
+      },
+      "duvera": 7,
       "overeni": "málo dat"
     },
     {
@@ -893,19 +920,48 @@
       "analyza": {
         "id": "Anglie - Japonsko",
         "verdikt": "OK",
-        "duvod": "Anglie i Japonsko praktikují otevřené útočné ragby, jejich vzájemné duely pravidelně přinášejí přestřelky.",
-        "text": "V podzimním mezinárodním testu prestižní série Nations Championship hostí Anglie na Allianz Stadium v Twickenhamu tým Japonska. Vypisovaná hranice na počet bodů v prvním poločase je 25.5 při kurzu 1.30 a férové pravděpodobnosti trhu 0.733. Vzájemná střetnutí těchto dvou soupeřů dlouhodobě nabízejí ofenzivní festival a rychlé bodové nárůsty. V posledním měření sil vedla Anglie po čtyřiceti minutách drtivým poměrem 35:7, což tuto poločasovou lajnu překonalo zcela suverénně. Japonsko pod taktovkou trenéra Eddieho Jonese prosazuje běhavé ragby s rychlým uvolňováním míčů, jež však generuje fatální díry v jejich vlastní obranné linii. Fyzicky dominantní anglický roj i rychlé křídelní formace dokážou v úvodu utkání trestat každou nepřesnost položením pětky. Proti overu by mohly hrát komplikace v podobě silného londýnského deště nebo nadměrného kouskování hry skrumovými kolapsy. Při předpokládaném vysokém tempu a útočné mentalitě obou výběrů je však překonání 26 bodů v první půli velmi reálné.",
+        "duvod": "Útočný herní styl Japonska pod Eddiem Jonesem a dravý mladý útok Anglie slibují body.",
+        "text": "Anglie v londýnském Twickenhamu přivítá v rámci pátého kola Nations Championship Japonsko a volba směřuje na více než 25.5 bodu v prvním poločase. Japonsko pod vedením trenéra Eddieho Jonese vyznává extrémně rychlé a útočné pojetí hry, které však často zanechává propustnou defenzivu, jak ukázal i poslední vzájemný duel končící výhrou Anglie 59:14. Anglický kouč Steve Borthwick udělal v sestavě hned deset personálních změn a nasadil hladové mladíky jako Maxe Ojomoha, Willa Josepha či Henryho Pollocka, kteří se chtějí předvést. Hranice 26 bodů v první půli odpovídá například skóre 19:7 či 21:7, což je proti fyzicky subtilnějším a otevřeně hrajícím Brave Blossoms běžný scénář. Pro sázku mluví obrovská fyzická převaha anglického roje a schopnost položit dvě až tři rychlé pětky v úvodních třiceti minutách. Proti hovoří možnost horší sehranosti výrazně pozměněného anglického kádru nebo deštivé počasí v Londýně s vyšším počtem chyb na míči. Hlad po bodech na obou stranách a vysoké zápasové tempo by však měly přinést atraktivní poločas plný bodů.",
         "duvera_gemini": 8,
         "pro": [
-          "V posledním vzájemném střetnutí na podzim 2024 padlo v prvním poločase 42 bodů (35:7).",
-          "Japonsko pod Eddiem Jonesem hraje riskantní běhavé ragby, které otevírá obrovské prostory.",
-          "Anglický útok i roj doma v Twickenhamu dominují a skórují v úvodech vysokým tempem."
+          "Japonsko hraje pod Eddiem Jonesem otevřené ragby s vysokým počtem bodů a slabší obranou.",
+          "Anglie postavila obměněnou sestavu plnou dravých mladíků lačnících po položení pětek."
         ],
         "proti": [
-          "Nepříznivé počasí v Londýně by mohlo zhoršit manipulaci s míčem a vést ke kopací hře.",
-          "Zvýšená nepřesnost a zdlouhavé přerušování skrumů mohou ubrat čistý herní čas."
+          "Deset změn v základní sestavě Anglie může v úvodních minutách vést k váznoucí souhře.",
+          "Případné nepříznivé počasí v Twickenhamu by vedlo k opatrnější kopací hře na zemi."
         ],
-        "riziko": "Případný silný déšť a chyby v rozehrávce v první dvacetiminutovce, které by brzdily tempo poločasu."
+        "riziko": "Taktické zahájení s minimem útočného rizika a neproměněné trestné kopy v úvodu utkání."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "esport-counter-strike",
+      "zapas": "FURIA - Team Falcons",
+      "start": "2026-11-14T10:30:00+00:00",
+      "liga": "BLAST Premier",
+      "trh": "FURIA: počet kol v 1. mapě",
+      "vyber": "+ 9.5",
+      "kurz": 1.3,
+      "p": 0.733,
+      "marze": 0.0971,
+      "sazej_od": 1.4,
+      "analyza": {
+        "id": "FURIA - Team Falcons",
+        "verdikt": "OK",
+        "duvod": "FURIA má v CS2 skvělou formu (výhra nad Vitality 2:1) a zisk 10 kol na úvodní mapě je reálný.",
+        "text": "Na turnaji BLAST Premier Rivals Hong Kong v Counter-Strike 2 se v prestižním zápase střetávají FURIA a Team Falcons, kde sázka míří na zisk minimálně deseti kol brazilského celku na první mapě. FURIA se pod taktovkou zkušeného kapitána Gabriela 'FalleN' Toleda nachází ve výborném rozpoložení, což dokázala v minulém zápase senzačním vítězstvím nad Team Vitality poměrem 2:1. Herní chemie týmu s hvězdným střelcem KSCERATEM a agresivním YEKINDAREM funguje na vysoké úrovni a Brazilci disponují velmi širokým map poolem. Pro Falcons je FURIA mimořádně nepříjemným soupeřem a systém MR12 nahrává vyrovnaným průběhům, kde zisk deseti kol znamená prohrát těsně 10:13 nebo dotáhnout mapu do prodloužení. Proti výběru může hrát pouze situace, kdy první mapou bude volba Falcons na silné CT mapě a FURIA nezvládne obě pistolová kola. Pokud by Brazilci ztratili ekonomiku a prohráli obě pistolky, dohánět manko by bylo na MR12 kritické. Vzhledem k aktuální palebné síle FURIe je však zisk 10 kol vysoce pravděpodobný.",
+        "duvera_gemini": 8,
+        "pro": [
+          "FURIA se veze na vlně skvělé formy po skalpu Vitality 2:1 na tomto turnaji.",
+          "KSCERATO a YEKINDAR mají vysoký individuální dopad i proti elitním světovým týmům."
+        ],
+        "proti": [
+          "Ztráta obou pistolových kol by v systému MR12 FURIi zkomplikovala cestu k 10 kolům.",
+          "Falcons mají pevnou strukturu a na své vlastní mapové volbě dokáží dominovat v obraně."
+        ],
+        "riziko": "Ztráta obou pistolkových kol a ekonomický kolaps na silně jednostranné CT mapě."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -924,19 +980,19 @@
       "analyza": {
         "id": "Bilibili Gaming - Gen.G",
         "verdikt": "OK",
-        "duvod": "Agresivní čínský styl BLG v kombinaci se sníženou hranicí 23.5 killů zaručuje vysokou pravděpodobnost overu.",
-        "text": "Ve velkém finále světového šampionátu League of Legends Worlds v newyorské aréně Barclays Center změří síly čínští Bilibili Gaming s korejským týmem Gen.G. Trh nabízí sázku na více než 23.5 killů ve 2. mapě v kurzu 1.31 při tržní pravděpodobnosti 0.729. Bilibili Gaming jsou vyhlášení nekompromisním LPL stylem hry, který staví na neustálých šarvátkách a agresivním napadání už od prvních minut. Základní lajna na celkový počet killů v mapě se obvykle vypisuje kolem 27.5, takže hranice 23.5 představuje velmi příznivou a bezpečnou alternativu. Po úvodní zahřívací mapě bývá druhá hra série podstatně uvolněnější, neboť týmy reagují na drafty a častěji volí akční kompozice. Klíčové boje o draky a heralda nevyhnutelně vyvolají hromadné teamfighty s mnoha zářezy na obou stranách. Proti hovoří možnost, že Gen.G v čele s Chovym nastolí pomalou makro kontrolu a eliminují chyby na minimum. Vzhledem k herní nátuře BLG a prestiži finále je však divoká druhá mapa vysoce pravděpodobná.",
+        "duvod": "Finále Worlds mezi agresivními BLG a taktickými Gen.G tradičně přináší divoké skirmishe přesahující hranici 23.5 killu.",
+        "text": "Grand finále světového šampionátu Worlds 2026 v newyorském Barclays Center přináší souboj dvou gigantů, čínských Bilibili Gaming a jihokorejských Gen.G. Bilibili Gaming pod vedením opor jako Bin, Knight a Elk praktikují extrémně agresivní a proaktivní herní styl s neustálým napadáním objektivů a ranými potyčkami. Druhá mapa v sérii hrané na pět vítězných bývá po úvodním oťukání v draftu obvykle podstatně otevřenější a dynamičtější. Přestože Gen.G v čele s Chovym preferují kontrolované makro a eliminaci zbytečného rizika, proti agresivnímu čínskému tempu jsou nuceni do častých šarvátek u draků a void grubs vstupovat. Hranice 23,5 killu je na poměry formátu Worlds a herního projevu BLG nastavena velmi nízko a v zápasech těchto celků běžně padá už kolem 25. minuty. Proti sázce hraje pouze scénář naprostého jednostranného debaklu, kdy by jedna ze stran získala gigantický náskok hned v laning phase a hru uzavřela v rychlém tempu. Celkový střet dvou rozdílných herních filozofií by však měl nabídnout divokou podívanou s bohatou přestřelkou. Informace o zdravotních potížích hráčů nebyly hlášeny (nenalezeno).",
         "duvera_gemini": 8,
         "pro": [
-          "Bilibili Gaming vyznává extrémně bojovný LPL styl založený na neustálých potyčkách.",
-          "Standardní lajna na killy na mapu bývá u těchto týmů na úrovni 27.5, lajna 23.5 je nízko.",
-          "Ve finále Worlds se po úvodní oťukávací mapě hra ve druhé mapě obvykle více rozvolní."
+          "BLG hrají agresivní LPL styl s vysokým počtem soubojů o neutrální cíle.",
+          "Hranice 23.5 killu je v elitních sériích Worlds nízko posazená a často překračovaná.",
+          "Ve 2. mapě Bo5 série týmy obvykle více riskují po adaptaci draftu."
         ],
         "proti": [
-          "Gen.G v čele s Chovym preferují makro kontrolu s minimem zbytečných úmrtí.",
-          "Při jednostranné dominanci jednoho z celků může mapa skončit rychlým pushem s málo killy."
+          "Gen.G umí hru extrémně zpomalit a kontrolovat mapu bez zbytečných potyček.",
+          "Rychlý jednostranný stomp jedné ze stran by mohl skončit pod 24 killy."
         ],
-        "riziko": "Pomalá šachová partie vedená Gen.G s kontrolovaným braním objektivů a vyhýbáním se teamfightům."
+        "riziko": "Pomalá kontrolní hra v režii Gen.G s minimem chyb a vyhýbáním se otevřeným týmovým bitkám."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -955,81 +1011,19 @@
       "analyza": {
         "id": "Ortiz I. - Kuchmenov, Dariial",
         "verdikt": "OK",
-        "duvod": "Kuchmenov (10-0, 8 KO) je elitně prosazovaným talentem Zuffa Boxing s vysokou knockoutovou silou.",
-        "text": "V lehké váze na galavečeru Zuffa Boxing 13 v saúdskoarabském Rijádu se střetnou dva dosud neporažení borci Dariial Kuchmenov a Cesar Ivan Ortiz. Kuchmenov nastupuje s čistým rekordem deseti vítězství, z nichž osm ukončil před limitem, a veze se na sérii pěti po sobě jdoucích knokautů. Ruský bijec těží z výborného amatérského základu, výškové převahy i značného dosahu paží. Trh ho staví do pozice favorita s férovou pravděpodobností 0.7271 a kurzem 1.32. Cesar Ivan Ortiz má na kontě 13 výher a dvě remízy a naposledy si připsal cenný skalp Justina Vilorii. Ortiz je tvrdý a neústupný soupeř, nicméně proti skvělému pohybu a razanci Kuchmenova bude čelit dosud nejtěžšímu testu kariéry. Zhatit sázku by mohl Ortizův úspěšný tlak v boji na blízko, pokud by Kuchmenovovi sebral prostor na distanc. Fyzické parametry, úderová přesnost a podpora organizace však jednoznačně favorizují Kuchmenova.",
-        "duvera_gemini": 7,
-        "pro": [
-          "Dariial Kuchmenov táhne sérii pěti KO v řadě a má skvělé technické i silové dispozice.",
-          "Kuchmenov disponuje výškovou převahou a drtivou bilancí 8 ukončení z 10 výher.",
-          "Zuffa Boxing staví Kuchmenova na prestižní kartu v Rijádu jako jasného prospekta."
-        ],
-        "proti": [
-          "Ivan Ortiz je rovněž neporažený (13-0-2, 9 KO) a naposledy zaskočil favorita Vilorii.",
-          "Ortiz má v profesionálním ringu o pět zápasů více zkušeností než Kuchmenov."
-        ],
-        "riziko": "Ortiz dokáže zápas zkrátit na tělo, neutralizovat Kuchmenovův dosah a bodovat u rozhodčích."
-      },
-      "duvera": 6,
-      "overeni": "málo dat"
-    },
-    {
-      "sport": "rugby",
-      "zapas": "Itálie - Argentina",
-      "start": "2026-11-14T11:40:00+00:00",
-      "liga": "RU - Nations Championship",
-      "trh": "Handicap v 1. poločasu",
-      "vyber": "Argentina +1.5",
-      "kurz": 1.32,
-      "p": 0.7271,
-      "marze": 0.0802,
-      "sazej_od": 1.41,
-      "analyza": {
-        "id": "Itálie - Argentina",
-        "verdikt": "OK",
-        "duvod": "Argentina drží sérii 9 výher nad Itálií v řadě a poločasový handicap +1.5 bodu bezpečně kryje i remízu či vedení soupeře o bod.",
-        "text": "V pátém kole turnaje Nations Championship na stadionu Luigi Ferraris v Janově se utkají celky toužící po nápravě minulých debaklů. Itálie pod vedením Gonzala Quesady podlehla Jihoafrické republice 7:66, zatímco Argentina nestačila v Dublinu na Irsko v poměru 12:42. Oba trenéři reagovali pěti změnami v základní sestavě, přičemž Pumas sice schází zraněný kapitán Julián Montoya i Marcos Kremer, pásku však spolehlivě převzal zkušený Pablo Matera. Historie mluví zcela jasně pro Jihoameričany, kteří vyhráli devět vzájemných duelů v řadě a naposledy v roce 2024 smetli Italy 50:18. Klíčovou postavou pro vývoj prvního poločasu bude argentinský otvírač Tomás Albornoz, jenž v probíhající sezóně proměnil 15 ze 16 kopů na bránu, což představuje excelentní úspěšnost 94 %. Argentina navíc tradičně dominuje v osobních soubojích a s průměrem přes 34 překonaných obránců na zápas má nejnebezpečnější útok soutěže. Handicap +1.5 bodu v prvním poločase dává Pumas dostatečný polštář, neboť pokrývá jakékoliv vedení hostů i nerozhodný poločasový stav. Hlavním rizikem sázky je nedisciplinovanost Pumas v úvodní čtvrtině zápasu a přesné trestné kopy Tommasa Allana.",
-        "duvera_gemini": 9,
-        "pro": [
-          "Argentina vyhrála posledních 9 vzájemných zápasů proti Itálii.",
-          "Kopáč Tomás Albornoz drží mimořádnou úspěšnost kopů na bránu 94 %.",
-          "Handicap +1.5 bodu v 1. poločase kryje jakékoliv vedení hostů i poločasovou remízu."
-        ],
-        "proti": [
-          "Argentině chybí zraněné opory základní patnáctky Montoya, Mallía a Kremer.",
-          "Itálie má po debaklu obrovskou motivaci doma v Janově zachytit úvod utkání."
-        ],
-        "riziko": "Rychlá série trestných kopů proměněných Itálií po nedisciplinovanosti Pumas v úvodních minutách."
-      },
-      "duvera": 7,
-      "overeni": "málo dat"
-    },
-    {
-      "sport": "esport-counter-strike",
-      "zapas": "FURIA - Team Falcons",
-      "start": "2026-11-14T10:30:00+00:00",
-      "liga": "BLAST Premier",
-      "trh": "Handicap map v zápasu",
-      "vyber": "Team Falcons +1.5",
-      "kurz": 1.32,
-      "p": 0.7271,
-      "marze": 0.0802,
-      "sazej_od": 1.41,
-      "analyza": {
-        "id": "FURIA - Team Falcons",
-        "verdikt": "OK",
-        "duvod": "Team Falcons disponuje dostatečnou palebnou silou a v Bo3 formátu proti FURII je zisk alespoň jedné mapy vysoce pravděpodobný.",
-        "text": "Semifinálový souboj na turnaji BLAST Rivals Hong Kong 2026 svede dohromady brazilský celek FURIA a mezinárodní sestavu Team Falcons. Zápas se hraje systémem Bo3 a jeho vítěz postoupí do nedělního grandfinále. Falcons v turnaji prokazují vzestupnou formu a opírají se o obrovskou palebnou sílu svých hvězd v čele s m0NESYm a NiKem. FURIA sice pod vedením veterána FalleNa předvádí svižný útočný styl, proti týmům nejužší světové špičky však mívá na svém vlastním map picku slabší pasáže. Falcons mají stabilní a široký map pool, na němž dokážou diktovat tempo na T straně a trestat defenzivní chyby soupeře. Vypsaný handicap +1.5 mapy znamená, že týmu Falcons stačí k úspěchu sázky vyhrát jedinou mapu v celé sérii. Vzhledem k vyrovnanosti obou celků je třímapová bitva nejpravděpodobnějším scénářem celého duelu. Prohru 0:2 na mapy by mohl zapříčinit pouze totální kolaps klíčových střelců Falcons v úvodních pistolových kolech.",
+        "duvod": "Kuchmenov je technicky a nátlakově vyspělejším boxerem s čistým štítem proti méně prověřenému Ortizovi.",
+        "text": "Na galavečeru Zuffa Boxing v saúdskoarabském Rijádu se v lehké váze střetávají dva neporažení boxeři Dariial Kuchmenov a Mexičan Ivan Ortiz. Čtyřiadvacetiletý Kuchmenov, přezdívaný Wolf, má na svém kontě bezchybnou profesionální bilanci deseti výher a na pátečním oficiálním vážení navážil 134,5 libry. Jeho mexický soupeř Ortiz disponuje bilancí třináct výher a dvě remízy při váze 135 liber, avšak většinu duelů absolvoval proti méně prověřeným protivníkům na domácí půdě. Ačkoliv má Ortiz mírnou výhodu v dosahu paží 73 ku 70 palcům, Kuchmenov platí za technicky komplexnějšího a nátlakovějšího boxera s excelentním amatérským základem. Kuchmenov exceluje ve zkracování vzdálenosti a kontrole středu ringu tvrdými kombinacemi na tělo i hlavu. Případné komplikace by mohl způsobit Ortizův dlouhý direkt, pokud by se mu podařilo udržet boj z ústupu po celých osm kol. Přesto sportovní a taktická převaha jednoznačně nahrává Kuchmenovovi, jenž je v zápase právem favorizován. Zranění či zdravotní komplikace před duelem nebyly hlášeny (nenalezeno).",
         "duvera_gemini": 8,
         "pro": [
-          "Falcons mají dostatečnou palebnou sílu k ovládnutí alespoň jedné ze tří map v Bo3.",
-          "Vzájemná měření sil obou týmů bývají pravidelně vyrovnaná.",
-          "FURIA mívá v sériích výpadky koncentrace na vlastním picku."
+          "Kuchmenov má perfektní bilanci a vynikající technický i amatérský základ.",
+          "Ortiz sbíral výhry proti slabší konkurenci a má na kontě už dvě remízy.",
+          "Kuchmenov skvěle zvládá tlak a zkracování vzdálenosti v ringu."
         ],
         "proti": [
-          "FURIA má velmi agresivní T stranu, která dokáže soupeře rychle zaskočit.",
-          "Falcons občas inkasují zbytečné šňůry prohraných kol na CT straně."
+          "Ortiz disponuje delším rozpětím paží o 3 palce (73 vs 70).",
+          "Ortiz je houževnatý mexický boxer bez jediné kariérní porážky."
         ],
-        "riziko": "Ztráta všech pistolových kol a následný taktický kolaps Falcons na obou zahraných mapách."
+        "riziko": "Udržení zápasu Ortizem na dlouhou vzdálenost přes bodový zásah z ústupu."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -1048,19 +1042,19 @@
       "analyza": {
         "id": "Bvsc Zuglo - ZV De Zaan",
         "verdikt": "OK",
-        "duvod": "ZV De Zaan je nizozemský mistr v plné síle a po drtivé výhře 17:8 nad UVSE má jasnou převahu nad trápícím se BVSC.",
-        "text": "V základní skupině prestižní ženské Ligy mistryň ve vodním pólu přivítá maďarský zástupce BVSC-Zugló nizozemského šampiona ZV De Zaan. Domácí hráčky BVSC vstoupily do skupinové fáze debaklem 9:16 proti Mataró a jejich obrana vykazovala zásadní nedostatky. Naopak ZV De Zaan předvedl fantastický úvod, když doslova deklasoval maďarského giganta UVSE poměrem 17:8. Kádr hostí těží ze sehranosti nizozemských reprezentantek v čele se zkušenou centrkou Vivian Sevenich a nebezpečnou střelkyní Lieke Rogge. ZV De Zaan navíc v říjnové kvalifikaci dokázal vyhrát na maďarské půdě nad Dunaújvárosem 14:13 a porazil i italské Rapallo, takže venkovní zápasy zvládá bez obtíží. BVSC se dlouhodobě trápí v ubránění rychlých protiútoků, což je dominantní zbraň nizozemského celku. Čistá výhra hostujícího týmu je podložena výrazně lepší aktuální formou i vyšší individuální kvalitou na všech postech. Jedinou hrozbou by mohla být přílišná nedisciplinovanost a vyloučení klíčových nizozemských obránkyň v úvodu duelu.",
+        "duvod": "ZV De Zaan prožívá vynikající podzim v Lize mistrů a disponuje podstatně kvalitnějším kádrem než maďarský BVSC.",
+        "text": "V základní skupině ženské Ligy mistrů ve vodním pólu přivítá maďarský BVSC Zugló nizozemského mistra ZV De Zaan. Hostující De Zaan zažívá vynikající období na evropské scéně, kdy v kvalifikaci vyřadil Dunaújváros i Rapallo a v říjnu přejel slavný UVSE Budapešť jednoznačně 17:8. Tým ze Zaandamu staví na oporách nizozemské reprezentace v čele s Lieke Rogge, Vivian Sevenich či Maud Koopman, které představují špičkovou mezinárodní kvalitu. Domácí maďarský celek BVSC Zugló se sice může spolehnout na domácí bazén, na nejužší kontinentální elitu však kvalitativně ztrácí a v defenzivě mívá velké mezery. De Zaan disponuje obrovskou palebnou silou na perimetru a fyzickou převahou na centru, kde Sevenich pravidelně vypracovává přesilové hry. Případná zranění na obou stranách nebyla před zápasem reportována (nenalezeno). Jediným rizikem pro hostující favoritky je bouřlivé maďarské prostředí a možný výpadek koncentrace. Herní kvalita a současná fazóna však jasně staví ZV De Zaan do role vítěze.",
         "duvera_gemini": 9,
         "pro": [
-          "ZV De Zaan v minulém kole deklasoval silné maďarské UVSE poměrem 17:8.",
-          "Hostující tým má osu kádru tvořenou elitními nizozemskými reprezentantkami.",
-          "BVSC v prvním zápase propadlo v defenzivě a prohrálo 9:16 s Mataró."
+          "ZV De Zaan je ve skvělé formě po výhrách nad Rapallem a UVSE (17:8).",
+          "Kádr hostí táhnou reprezentační opory Nizozemska Rogge a Sevenich.",
+          "BVSC Zugló na elitní evropskou konkurenci dlouhodobě nestačí."
         ],
         "proti": [
-          "BVSC má výhodu domácího budapešťského bazénu a bouřlivé divácké kulisy.",
-          "Maďarské týmy bývají na domácí půdě tradičně houževnaté v osobních soubojích."
+          "BVSC hraje ve svém známém domácím bazénu v Budapešti.",
+          "Maďarská škola vodního póla je tradičně nepříjemná a tvrdá v obraně."
         ],
-        "riziko": "Rychlé nasbírání osobních chyb a vyfaulování klíčových hráček ZV De Zaan na pozici centra."
+        "riziko": "Podcenění soupeře a slabší efektivita v přesilových hrách v nepřátelské atmosféře."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -1079,19 +1073,19 @@
       "analyza": {
         "id": "9INE - Wraith Pcific",
         "verdikt": "OK",
-        "duvod": "9INE disponují vyšší taktickou vyspělostí i zkušenostmi z Tier 2 scény a v Bo3 sérii si postup pohlídají.",
-        "text": "V rozhodujícím utkání play-off desáté série European Pro League v CS2 se střetne mezinárodní formace 9INE s tureckým týmem Wraith Pcific. Organizace 9INE má pod taktovkou zkušeného dánského kapitána raalze stabilní taktický systém a dlouhodobě hraje proti kvalitnějším protivníkům na evropské scéně. Wraith Pcific sice proklouzli do vyřazovacích bojů po solidních výsledcích, v zápasech proti strukturovaným týmům však doplácejí na omezený map pool i slabší komunikaci. Formát série hraný na dvě vítězné mapy výrazně nahrává favoritovi a eliminuje prvek jednorázového překvapení. 9INE vykazují výborná čísla na klíčových mapách Mirage a Inferno, kde dokážou efektivně trestat chyby soupeře při obraně plantu. Turecká sestava často závisí pouze na individuálních flash přesahech a postrádá plán B, jakmile favorit začne kontrolovat tempo. Rozdíl v herní kvalitě i taktické vyzrálosti obou týmů odpovídá vypsanému kurzu na celkovou výhru 9INE. Zhatit výsledek by mohl pouze zcela mimořádný střelecký výkon opor Wraith Pcific doprovázený sérií prohraných force-buy kol favorita.",
+        "duvod": "9INE se pyšní sérií čtyř výher v řadě a disponují výrazně lepší pozicí v žebříčku i širším map poolem.",
+        "text": "V osmifinále play-off turnaje European Pro League Series 10 v Counter-Striku se střetává mezinárodní tým 9INE proti turecké sestavě WRAITH PCIFIC. Celek 9INE pod vedením zkušeného kapitána raalze chytil solidní fazónu a vyhrál čtyři soutěžní zápasy v řadě. V žebříčku VRS patří 9INE 81. příčka, zatímco jejich soupeř PCIFIC zaostává na 105. pozici. Oba týmy sice musejí v sérii využít stand-ina, konkrétně 9INE nasazuje hráče Br4tkO a Turci nastupují s hráčem mini, palebná síla tahounů flayye a b1elanyho je však jednoznačně na straně favorita. 9INE má silnou oporu na své nejlepší mapě Cache s 83% bilancí a stabilní čísla vykazuje i na Mirage. Turecký tým bývá dravý a nebezpečný v úvodních pistolových kolech, ale v makro hře na plném nákupu často chybuje. Rizikem v Bo3 formátu může být pouze nesehranost nově postavených obran se záskokem. Přesto celkový herní projev a střelecká kvalita favorizují 9INE.",
         "duvera_gemini": 8,
         "pro": [
-          "9INE mají pod vedením raalze výrazně propracovanější taktickou strukturu.",
-          "Formát Bo3 dává jasnou výhodu týmu s hlubším a vyrovnanějším map poolem.",
-          "Wraith Pcific na Tier 2 scéně dlouhodobě ztrácí proti zkušenějším evropským celkům."
+          "9INE drží sérii 4 výher a jsou lépe postaveným týmem v žebříčku VRS.",
+          "Flayy a b1elany disponují vysokým střeleckým ratingem a formou.",
+          "WRAITH PCIFIC hrají se stand-inem a mají slabší týmové makro."
         ],
         "proti": [
-          "Wraith Pcific hrají nepředvídatelný agresivní styl, který může činit favoritovi potíže.",
-          "9INE občas zaváhají v úvodech zápasů při hře proti neznámým soupeřům."
+          "9INE rovněž nastupují s náhradníkem Br4tkO, což může ovlivnit souhru.",
+          "Turecké sestavy hrají agresivně a spoléhají na divoké individuální souboje."
         ],
-        "riziko": "Mimořádný individuální aim výkon tureckých střelců a ztráta klíčových force-buy kol."
+        "riziko": "Chyby v komunikaci při rotacích způsobené nesehraností se záskokem."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -1110,19 +1104,19 @@
       "analyza": {
         "id": "Norsko - Slovensko",
         "verdikt": "OK",
-        "duvod": "V přípravném měření sil před MS v Tampere se očekává vyčkávací a taktická 1. třetina, v níž sotva padnou 4 branky.",
-        "text": "V rámci turnaje 4 Nations Floorball Challenge na univerzitní půdě v Žilině na sebe narazí reprezentace Norska a domácího Slovenska. Pro oba národní výběry představuje tento listopadový asociační termín generálku před prosincovým mistrovstvím světa ve finském Tampere. Vzájemná střetnutí Norska se Slovenskem jsou tradičně svázána přísnou defenzivní taktikou a opatrností, jelikož oba týmy patří do vyrovnaného pásma evropského širšího vrcholu. Hranice 3.5 gólu pro úvodních dvacet minut je nastavena poměrně vysoko, protože v první třetině budou trenéři vyžadovat především bezchybné plnění defenzivních úkolů. Domácí Slováci se před vlastními příznivci zaměří na precizní hru v bloku a minimalizaci brejkových situací. Norsko rovněž nevyniká zběsilou ofenzivou, nýbrž hrou v pevném středním pásmu a pomalým zakládáním postupných útoků. Vzhledem k absenci herního tlaku se dá v první třetině očekávat opatrné tempo a minimum vyložených šancí. Jedinou vážnou hrozbou pro podlimitní počet gólů by byla brzká vyloučení a bleskově využité přesilové hry na obou stranách.",
+        "duvod": "Úvodní třetiny vyrovnaných mezinárodních zápasů bývají svázané taktikou a nepřekračují hranici 3.5 branky.",
+        "text": "Na turnaji 4 Nations Floorball Challenge ve slovenské Žilině se utkává reprezentace Norska s domácím výběrem Slovenska. Hranice na méně než 3,5 gólu v první dvacetiminutovce je nastavena velmi výhodně, jelikož střetnutí těchto tabulkových sousedů z elitní světové desítky se vyznačují opatrným vstupem. Norové v pátečním souboji s Lotyšskem remizovali 4:4 a potvrdili svou pověst organizovaného celku spoléhajícího na hluboký obranný blok. Slováci sice v pátečním programu rozstříleli outsidera ze Slovinska, proti severskému protivníkovi se však musí vyrovnat s mnohem vyšším fyzickým presinkem. Přesné nasazení brankářských jedniček ani absence opor nebyly týmy předem zveřejněny (nenalezeno). Oba celky mají v nohách páteční zátěž, takže se v úvodním dějství dá čekat vyčkávací styl bez přehnaného otevírání prostoru. Ohrožením sázky by mohla být série rychlých vyloučení s využitými přesilovkami v úvodních minutách, což by rozbilo defenzivní schéma. Při standardním průběhu hry pět na pět je však padnutí čtyř branek v první třetině nepravděpodobné.",
         "duvera_gemini": 8,
         "pro": [
-          "Vzájemné zápasy obou reprezentací jsou tradičně opatrné a svázané taktikou.",
-          "V úvodní třetině přípravy trenéři testují systémy a vyžadují hru z pevného bloku.",
-          "Hranice 3.5 gólu v prvních 20 minutách je u vyrovnaných týmů velmi bezpečná."
+          "Úvodní třetiny vyrovnaných mezinárodních zápasů bývají svázané taktikou.",
+          "Norsko se prezentuje velmi organizovanou defenzivou, což potvrdilo s Lotyšskem (4:4).",
+          "Padnutí 4 a více branek během úvodních 20 minut je mezi těmito týmy raritní."
         ],
         "proti": [
-          "Florbal je dynamický sport, kde dvě slepené chyby v obraně mohou otevřít brankostroj.",
-          "Domácí slovenské publikum může hnát svůj tým k útočnějšímu pojetí."
+          "Slovenský útok má vysokou individuální kvalitu vedenou Dudovičem.",
+          "Brzké vyloučení na jedné straně může nabídnout snadné přesilovkové trefy."
         ],
-        "riziko": "Série zbytečných faulů v úvodních minutách a rychlé góly z přesilových her."
+        "riziko": "Rychlý úvodní gól v prvních minutách a následné zdivočení hry s využitými přesilovkami."
       },
       "duvera": 7,
       "overeni": "málo dat"
@@ -1141,19 +1135,19 @@
       "analyza": {
         "id": "Lee S.H. / Park M.J. - Moon I.S. / Park S.",
         "verdikt": "OK",
-        "duvod": "Pár Lee/Park prochází celým turnajem Irish Open bez ztráty setu a disponuje stabilnější mezihrou i vyšší kvalitou než soupeřky.",
-        "text": "Finále ženské čtyřhry na mezinárodním badmintonovém turnaji Irish Open v Dublinu přinese ryze jihokorejské střetnutí dvou reprezentačních dvojic. Favorizovaný pár Seung Hee Lee a Min Ji Park prošel pavoukem bez zaváhání a bez jediné ztráty setu, přičemž na své cestě do finále vyřadil i skotské turnajové jedničky Macphersonovou s Torranceovou. Jejich finálové soupeřky Moon In Seo a Park Seul sice v semifinále překvapily výhrou nad japonskou dvojicí Endo/Takasaki, jejich hra však vykazuje podstatně více nevynucených chyb. Lee s Park těží z vynikajícího pokrytí prostoru u sítě a skvělé obrany proti smečím, což jim v delších výměnách zaručuje převahu. V Dublinu panují ve sportovní hale National Indoor Arena stabilní podmínky bez silného driftu košíčku, což technicky lépe vybavené favoritce Lee a její partnerce vyhovuje. Vnitrostátní finále sice stírá taktická překvapení ze vzájemných tréninků, ale herní konzistence hovoří jasně pro pár Lee/Park. Ohrozit vítězství by mohl pouze nezvládnutý začátek zápasu a nervozita v těsné koncovce setu.",
+        "duvod": "Zkušenější korejský pár Lee/Park potvrzuje na turnaji stabilní formu a na síti má proti krajankám převahu.",
+        "text": "Finále ženské čtyřhry na mezinárodním turnaji Irish Open v Dublinu přináší ryze korejský souboj mezi dvojicí Seung Hee Lee / Min Ji Park a párem In Seo Moon / Seul Park. Pár Lee/Park je na okruhu BWF etablovanější, v celosvětovém rankingu stojí výše a pravidelně startuje na velkých asijských podnicích BWF World Tour. V pátečním dublinském semifinále předvedly Lee s Park skvělý výkon, když ve třech setech vyřadily silné Dánky Hvid a Klausholm. Moon a Park sice také prošly do finále přesvědčivě po výhře nad japonským párem Endo/Takasaki, celkově však mají na mezinárodní úrovni méně zkušeností s klíčovými koncovkami. Proudění vzduchu v dublinské hale je stabilní bez výraznějšího vlivu driftu košíku, což svědčí nátlakové deblové hře na síti, v níž Lee i Park vynikají. Zdravotní stav hráček je v pořádku, žádná zranění ani nedávné skreče nebyly evidovány (nenalezeno). Určitou hrozbou u interních národních duelů bývá dokonalá vzájemná znalost z reprezentačních tréninků, herní jistota a zkušenosti však staví Lee s Park do role zasloužených favoritek.",
         "duvera_gemini": 8,
         "pro": [
-          "Lee a Park neztratily na celém turnaji v Dublinu ani jeden set.",
-          "Ve čtvrtfinále suverénně vyřadily nejvýše nasazený skotský pár turnaje.",
-          "Lee a Park disponují stabilnější obranou a nižším počtem nevynucených chyb."
+          "Lee a Park jsou zkušenější pár z turnajů vyšší kategorie BWF World Tour.",
+          "V semifinále prokázaly pevnou mentalitu obratem proti dánskému páru Hvid/Klausholm.",
+          "Vyšší sehranost a precizní zvládání nátlakové hry na síti."
         ],
         "proti": [
-          "Jde o vnitrostátní duel krajanek, které se detailně znají ze společné reprezentace.",
-          "Moon a Park mají po vyřazení favoritek z Japonska vysoké sebevědomí."
+          "Korejské derby bez trenérského koučinku s dokonalou znalostí slabin soupeře.",
+          "Moon a Park mají po výhře nad japonskými soupeřkami vysoké sebevědomí."
         ],
-        "riziko": "Ztráta koncentrace favoritek a nezvládnutá vyhrocená koncovka úvodního setu."
+        "riziko": "Taktická svázanost a nervozita v interním souboji tréninkových partnerek."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1172,18 +1166,18 @@
       "analyza": {
         "id": "Murphy S. - Wilson K.",
         "verdikt": "OK",
-        "duvod": "Semifinále Champion of Champions se hraje na 6 vítězných framů. Oba hráči mají skvělou formu i náběhy, takže je vysoce pravděpodobné uhraní alespoň 3 framů poraženým.",
-        "text": "Semifinále prestižního turnaje Champion of Champions v Leicesteru se hraje ve formátu Best of 11 na šest vítězných framů. Hranice více než 8,5 framu znamená, že poražený hráč musí uhrát minimálně 3 framy, takže sázka vyhrává při výsledku 6:3 nebo ještě těsnějším. Shaun Murphy prošel skupinou suverénně bez ztráty jediného framu, když porazil Ronnieho O'Sullivana 4:0 i Čanga Ping-jü 6:0 s náběhem 142 bodů. Kyren Wilson prožívá životní formu se sérií 14 výher v řadě po triumfech na Northern Ireland Open a International Championship a ve skupině vyřadil Cartera 4:2 i světovou jedničku Čao Sin-tchunga 6:1 s třemi stovkovými náběhy. Oba angličtí šampioni se prezentují fantastickou hrou náběhů a extrémní jistotou při potápění těžkých koulí. Vyrovnaná vzájemná bilance i skvělá pohoda obou aktérů výrazně snižují pravděpodobnost jednostranné partie. Pro sázku mluví excelentní fazóna a vysoké bodování obou semifinalistů, proti pouze možný náhlý výpadek koncentrace jednoho z nich. Sázku by zhatila pouze nečekaná demolice poměrem 6:0, 6:1 nebo 6:2, což je při aktuálním standardu obou hráčů velmi nepravděpodobné.",
+        "duvod": "Semifinále prestižního turnaje se hraje na 6 vítězných framů (best of 11), kde střet dvou mistrů světa v solidní formě slibuje vyrovnanou bitvu s minimem 9 framů.",
+        "text": "Semifinálový souboj prestižního turnaje Champion of Champions nabídne střetnutí dvou elitních anglických hráčů a bývalých či současných šampionů Shaun Murphyho a Kyrena Wilsona. Zápas se hraje ve formátu best of 11 frames, což znamená, že vítěz potřebuje získat 6 framů, a hranice 8,5 framu bude překonána v případě, že poražený hráč uhraje alespoň 3 framy (skóre 6:3, 6:4 nebo 6:5). Oba aktéři předvádějí v Boltonu kvalitní snooker s vysokou úspěšností potápění z dálky i solidní tvorbou náběhů. Kyren Wilson těží ze stability a skvělé taktické safety hry, zatímco Murphy sází na tradičně agresivní potting a bodové brejky. Vzhledem k vyrovnanosti vzájemné bilance a důležitosti postupu do finále je jednostranný debakl 6:0, 6:1 či 6:2 málo pravděpodobný. Pro sázku hovoří vyrovnaná výkonnost obou borců a delší formát zápasu, proti by mohl být pouze ojedinělý herní kolaps jednoho z nich spojený s mimořádnou chybovostí na snadných koulích. Hlavní hrozbou by byla jednostranná jízda jednoho hráče na vlně několika century breaků v řadě bez reakce soupeře.",
         "duvera_gemini": 8,
         "pro": [
-          "Oba hráči jsou v mimořádné herní i bodové formě a pravidelně tvoří vysoké náběhy.",
-          "Formát Best of 11 vyžaduje pro úspěch sázky pouze 3 framy od poraženého hráče."
+          "Hraje se na 6 vítězných framů, over pokrývá jakýkoliv výsledek od 6:3 výše.",
+          "Oba hráči patří k absolutní špičce a mají vyrovnanou vzájemnou bilanci."
         ],
         "proti": [
-          "Murphy prošel předchozí fází bez ztráty jediného framu a může soupeře na startu zaskočit.",
-          "Wilsonova 14zápasová série výher demonstruje schopnost zcela ovládnout stůl."
+          "Dominantní nástup jednoho z hráčů a rychlé vedení 5:0 či 5:1.",
+          "Případný herní výpadek Shauna Murphyho při riskantním long pottingu."
         ],
-        "riziko": "Jednostranný průběh a dominance jednoho z hráčů s výsledkem 6:0, 6:1 nebo 6:2."
+        "riziko": "Rychlý jednostranný trhák favorita se stoprocentním potápěním končící debaklem 6:1 nebo 6:2."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1202,18 +1196,18 @@
       "analyza": {
         "id": "Lidkopings - Molndal Bandy",
         "verdikt": "OK",
-        "duvod": "Lidköpings AIK je doma v hale velmi silný a v nedávných vzájemných duelech Mölndal jasně přehrával (např. 7:3 a 9:4).",
-        "text": "Ve švédské druhé nejvyšší soutěži Bandyallsvenskan přivítá Lidköpings AIK na domácím ledě ve Sparbanken Areně celek Mölndal Bandy. Domácí Lidköpings patří dlouhodobě k nejkvalitnějším týmům soutěže a ve své hale disponuje vysokou střeleckou produktivitou. Mölndal má na venkovních kluzištích dlouhodobě problémy s defenzivou a inkasuje velké množství branek. Vzájemná bilance z posledních střetnutí hovoří jasně pro Lidköpings, který zvítězil například 7:3 venku a 9:4 v pohárovém utkání Supercupen. Informace o zásadních absencích v sestavách nebyly hlášeny, přičemž přesné soupisky před zápasem jsou nenalezeny. Domácí prostředí pod střechou a vyšší individuální kvalita na všech postech dělají z Lidköpingu jednoznačného favorita. Pro sázku mluví dlouhodobá převaha domácích a stabilní výsledky proti týmům ze spodní poloviny tabulky. Proti sázce může stát pouze podcenění zápasu ze strany favorita nebo mimořádný den brankáře hostů. Sázku by zhatila nečekaná remíza či překvapivé selhání domácí ofenzivy.",
+        "duvod": "Domácí Lidköpings AIK má v hale Sparbanken Lidköping Arena tradičně silnou převahu a Mölndal patří mezi nejslabší celky ligy na venkovních kluzištích.",
+        "text": "V rámci švédské druhé nejvyšší soutěže Allsvenskan přivítá Lidköpings AIK na domácím ledě celek Mölndal Bandy. Domácí prostředí v kryté Sparbanken Lidköping Areně představuje pro Lidköping obrovskou výhodu díky perfektní kvalitě ledu a rychlé kombinační hře. Mölndal Bandy dlouhodobě patří k celkům ze spodních pater tabulky a v defenzivě při venkovních zápasech inkasuje velké množství branek. Vzájemný duel v Supercupu skončil přesvědčivou výhrou Lidköpings 8:3, kde ofenzivní tahouni domácích Alfons Altersved a Sebastian Mölsted jasně dominovali. Pro výhru domácích hovoří výrazně kvalitnější kádr, zázemí moderní arény a slabá venkovní bilance hostů. Proti hraje pouze občasná nedůslednost Lidköpingu v obraně při standardních situacích a brejcích soupeře. Kdyby hosté z Mölndalu dokázali zabetonovat středové pásmo a proměnit ojedinělé protiútoky, mohl by favorit znejistět, ale tříbodový zisk domácích je vysoce pravděpodobný.",
         "duvera_gemini": 8,
         "pro": [
-          "Lidköpings má v domácí aréně dlouhodobě vysokou efektivitu a jisté body.",
-          "Poslední vzájemné zápasy skončily jasnými výhrami Lidköpingu 7:3 a 9:4."
+          "Výrazná výhoda rychlého ledu v kryté Sparbanken Lidköping Areně.",
+          "Nedávná jednoznačná výhra Lidköpingu 8:3 v ligovém poháru."
         ],
         "proti": [
-          "Mölndal v minulosti dokázal doma překvapit a Lidköpings jednou porazit.",
-          "V bandy může rychlý sled vyloučení na 10 minut výrazně ovlivnit tempo hry."
+          "Mölndal dokázal v minulé sezóně doma Lidköping překvapivě porazit.",
+          "Občasné výpadky v defenzivě domácích při vedení."
         ],
-        "riziko": "Podcenění soupeře favoritem a nečekaná střelecká nemohoucnost v koncovce."
+        "riziko": "Podcenění defenzivy domácím celkem a vysoká efektivita hostů z rychlých brejků."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1232,48 +1226,48 @@
       "analyza": {
         "id": "Tikhonov E. / Panfilova M. - Green C. / Hursey A.",
         "verdikt": "OK",
-        "duvod": "Tichonov s Panfilovovou v semifinále vyřadili silný čínský pár a disponují lepší deblovou souhrou i kvalitnějším servisem.",
-        "text": "Ve finále smíšené čtyřhry na prestižním turnaji WTT Contender v Istanbulu se střetne pár Jevgenij Tichonov a Marija Panfilovová s britsko-velšskou dvojicí Callum Green a Anna Hurseyová. Obě dvojice zvládly náročné pětisetové semifinále, což potvrdilo jejich psychickou odolnost v koncovkách. Tichonov s Panfilovovou v semifinále vyřadili silnou čínskou dvojici Chuang / Čchin poměrem 3:2, přičemž rozhodující sadu urvali 11:9. Green s Hurseyovou sice zaskočili korejský pár Lim / Ču, avšak jejich deblová souhra vykazuje více mezer. Tichonov s Panfilovovou těží z vyrovnanější technické úrovně obou partnerů a preciznějšího servisu i příjmu. Vzájemný zápas těchto dvojic v historii je nenalezen, jde o jejich první vzájemné měření sil. Pro výběr hovoří sehranost a taktická disciplína rusko-neutrální dvojice, proti hraje houževnatost soupeřů a těsný charakter deblových bitev. Sázku by zhatil slabší den Panfilovové na příjmu servisu a nezvládnuté koncovky setů.",
-        "duvera_gemini": 7,
+        "duvod": "Tikhonov s Panfilovou jsou sehraný deblový pár a nedávní šampioni z Almaty, v Istanbulu potvrzují roli nasazených favoritů v boji o titul.",
+        "text": "Finále smíšené čtyřhry na turnaji WTT Contender v Istanbulu svede dohromady rusko-neutrální dvojici Jevgenij Tichonov s Marií Panfilovovou proti britskému páru Connor Green a Anna Hurseyová. Tichonov s Panfilovovou už letos dokázali ovládnout turnaj WTT Contender v Almaty a jejich souhra v mixu je na světové úrovni skvěle prověřená. V istanbulském semifinále zvládli těžký pětisetový duel proti silné čínské dvojici Huang/Qin a prokázali pevné nervy v koncovkách setů. Britská dvojice Green s Hurseyovou se sice překvapivě probojovala do finále po výhře 3:2 nad korejským párem Lim/Joo, ale v individuální deblové konzistenci a taktické připravenosti na sehranější soupeře ztrácí. Pro Tichonova s Panfilovovou hovoří stabilní servis, agresivní nátlakový styl u stolu a psychická pohoda z předchozích titulů. Proti výběru hraje nepředvídatelnost britského mladého páru a formát zápasu, kde jakákoliv šňůra nevynucených chyb může finále zkomplikovat. Pokud favorit udrží vysoký standard příjmu a první rotace, měl by trofej z Istanbulu získat.",
+        "duvera_gemini": 8,
         "pro": [
-          "Skalpy silných soupeřů v turnaji, zejména vyřazení čínského páru v semifinále.",
-          "Vyrovnanější technické vybavení obou hráčů a stabilnější servis."
+          "Titul z WTT Contender Almaty a dlouhodobá deblová souhra.",
+          "Vyřazení silné čínské dvojice v semifinále po vyzrálém výkonu."
         ],
         "proti": [
-          "Green s Hurseyovou jsou posilněni cenným semifinálovým obratem.",
-          "Specifika smíšené čtyřhry často přinášejí vyrovnané koncovky na dva body."
+          "Mladý britský pár hraje bez tlaku a v semifinále vyřadil favority.",
+          "Riziko nervozity ve finálovém duelu a ztráta koncentrace."
         ],
-        "riziko": "Nezvládnutí těsných koncovek sad pod tlakem finálového zápasu."
+        "riziko": "Nevyzpytatelná agresivní hra britského páru na příjmu schopná zvrátit těsné koncovky setů."
       },
       "duvera": 6,
       "overeni": "málo dat"
     },
     {
       "sport": "stolni-tenis",
-      "zapas": "Zahradka M. - Louda J.",
-      "start": "2026-11-14T11:00:00+00:00",
-      "liga": "Czech Liga Pro - muži",
+      "zapas": "Grmela T. - Sedlacek R.",
+      "start": "2026-11-14T17:15:00+00:00",
+      "liga": "TT Cup - muži",
       "trh": "Vítěz zápasu",
-      "vyber": "Zahradka M.",
-      "kurz": 1.35,
-      "p": 0.7024,
-      "marze": 0.0979,
-      "sazej_od": 1.46,
+      "vyber": "Grmela T.",
+      "kurz": 1.34,
+      "p": 0.7086,
+      "marze": 0.0971,
+      "sazej_od": 1.44,
       "analyza": {
-        "id": "Zahradka M. - Louda J.",
+        "id": "Grmela T. - Sedlacek R.",
         "verdikt": "OK",
-        "duvod": "Zahrádka vede ve vzájemné bilanci 33:14 ze 47 utkání, což přesně odpovídá vypsané pravděpodobnosti přes 70 %.",
-        "text": "V rámci české Ligy Pro ve stolním tenisu se u stolu utkají Michal Zahrádka a Jiří Louda. Zahrádka vstupuje do utkání v roli prověřeného favorita, což jednoznačně dokládá bohatá vzájemná bilance. Oba borci spolu v této sérii odehráli už 47 zápasů, přičemž Zahrádka zvítězil ve 33 případech, což představuje více než 70% úspěšnost. Zahrádka má výrazně navrch v rychlosti forhendových útoků i v rotaci při zahájení výměn. Louda se proti jeho stylu dlouhodobě trápí a mívá potíže s přesností pasivního bloku. Vzhledem k rychlému tempu turnajových zápasů je klíčový vstup do prvního setu, kde Zahrádka obvykle přebírá kontrolu. Pro výhru favorita hovoří výrazná psychologická i statistická převaha, proti pouze možný slabší rozjezd v dopoledním bloku. Sázku by zhatila pouze nezvykle vysoká chybovost Zahrádky v mezihře a úspěšný nátlak Loudy od stolu.",
+        "duvod": "Tomáš Grmela v TT Cupu disponuje stabilnější formou a v nedávném vzájemném měření sil Sedláčka smetl bez ztráty setu 3:0.",
+        "text": "V rámci programu turnaje TT Cup se utkají Tomáš Grmela a Radek Sedláček, přičemž kurzové i výkonnostní parametry staví do role favorita Grmelu. Poslední vzájemný zápas odehraný na konci října 2026 skončil jasnou výhrou Grmely 3:0 na sety (11:7, 11:9, 13:11), což ukazuje jeho převahu v delších výměnách i koncovkách. Grmela se opírá o kvalitní topspinovou hru a spolehlivý bekhendový blok, kterým eliminuje útočné snahy soupeřů. Sedláček se v posledních týdnech potýká s velkou nevyrovnaností úderů a v sérii zápasů zaznamenal vyšší počet nevynucených chyb. Formát turnajů TT Cup vyžaduje rychlé přizpůsobení a právě v tom má herně zkušenější Grmela navrch. Pro sázku svědčí čerstvá vzájemná bilance i vyšší úspěšnost vyhraných setů na straně Grmely. Proti hraje pouze specifická povaha celodenních turnajů s možnou kumulací únavy z několika zápasů v řadě. Pokud Grmela udrží koncentraci na returnu, měl by potvrdit roli kurzového favorita a zvítězit.",
         "duvera_gemini": 8,
         "pro": [
-          "Dominantní vzájemná bilance 33:14 hovoří jednoznačně pro Zahrádku.",
-          "Lepší útočný topspin a variabilita rotací při podání na straně favorita."
+          "Jednoznačná výhra 3:0 v posledním vzájemném duelu z října 2026.",
+          "Vyšší technická i herní jistota Grmely v útočných výměnách."
         ],
         "proti": [
-          "V rychlém formátu Ligy Pro může krátkodobý výpadek stát celý set.",
-          "Louda dokázal v minulosti Zahrádku několikrát zaskočit dobrým blokem."
+          "Specifické a kolísavé tempo turnajů TT Cup během nabitého dne.",
+          "Schopnost Sedláčka v dobrém dnu držet vyrovnané koncovky setů."
         ],
-        "riziko": "Pomalý nástup favorita do zápasu a nevynucené chyby v prvních dvou setech."
+        "riziko": "Ztráta koncentrace Grmely v úvodu a případné nezvládnutí pěti setů při těsném průběhu."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1292,18 +1286,18 @@
       "analyza": {
         "id": "Kauffmann V.O. - Cho H.W.",
         "verdikt": "OK",
-        "duvod": "Korejec Cho Hyeon-woo má komplexnější hru a vynikající pohyb, což by mělo eliminovat Kauffmannův útočný styl.",
-        "text": "V semifinále turnaje Irish Open v Dublinu se v mužské dvouhře utkají Victor Oerding Kauffmann z Dánska a Jihokorejec Cho Hyeon-woo. Korejský hráč se v pavouku prezentuje mimořádnou fyzickou kondicí a precizním pokrytím kurtu. Kauffmann sází na agresivní útok a vysoký dosah na síti, avšak proti trpělivým obranářům často ztrácí rytmus a kupí chyby. Žádné zdravotní potíže ani skreče v posledních týdnech u hráčů hlášeny nebyly, vliv driftu v dublinské hale je nenalezen. Vzájemný zápas na mezinárodním okruhu je nenalezen, půjde o jejich první střetnutí. Zápasové vytížení v turnaji je pro oba srovnatelné, avšak komplexnější herní styl a stabilita v koncovkách zvýhodňují Choa. Pro sázku mluví lepší defenzivní přechod a technická vytříbenost asijského hráče, proti hraje Kauffmannův nepříjemný útočný tlak z prvních úderů. Sázku by zhatila vysoká úspěšnost Kauffmannových smečů a neschopnost Choa držet košík v delších výměnách.",
-        "duvera_gemini": 7,
+        "duvod": "Korejec Cho Hyeon Woo prošel turnajem suverénně včetně vyřazení nasazené dvojky Oldorffa a ve finále má proti Kauffmannovi pohybovou i herní převahu.",
+        "text": "Finále mužské dvouhry na turnaji AIG VICTOR Irish Open 2026 v Dublinu proti sobě postaví dánského reprezentanta Victora Oerdinga Kauffmanna a jihokorejského favorita Cho Hyeon Wooa. Cho prochází irským turnajem ve fantastické formě, když v semifinále vyřadil druhou nasazenou hvězdu Joakima Oldorffa z Finska poměrem 22:20 a 21:12 a předtím hladce přehrál Poláka Kwintu. Kauffmann sice postoupil po výhrách nad krajanem Bøgebjergem a Korejcem Parkem, na kurtu však strávil více času a musel řešit složité obraty. Korejský badmintonista dominuje v rychlosti pohybu, bezchybném celokurtovém krytí a rychlých přechodech z hluboké obrany do útočného drajvu. V hale v National Indoor Areně nepůsobí výrazný drift košíčku, což nahrává techničtější a trpělivější hře Cho Hyeon Wooa. Pro sázku hovoří skvělá kondiční připravenost Korejce a skalp elitních soupeřů v turnajovém pavouku. Proti může být Kauffmannův tvrdý útočný smeč a snaha zkracovat výměny na síti. Cho Hyeon Woo má všechny předpoklady pro to, aby dánského soka přehrál a získal titul.",
+        "duvera_gemini": 8,
         "pro": [
-          "Vynikající fyzická kondice a stabilní celodvorcová obrana jihokorejského hráče.",
-          "Kauffmann má sklony ke zbytečným nevynuceným chybám při delších výměnách."
+          "Skalp druhého nasazeného Oldorffa 2:0 v semifinále turnaje.",
+          "Excelentní pohyb po dvorci a minimum nevynucených chyb korejského hráče."
         ],
         "proti": [
-          "Dánský hráč disponuje nebezpečným strmým smečem a útokem na síti.",
-          "Hráči se vzájemně neznají, což může v úvodu nahrávat Kauffmannovu tlaku."
+          "Kauffmannův agresivní styl a nebezpečné zakončení na síti.",
+          "Finálový tlak, kde Dán nemá co ztratit a může riskovat."
         ],
-        "riziko": "Vysoká efektivita Kauffmannova útočného smeče a rychlé ztráty bodů v sériích."
+        "riziko": "Mimořádně přesný útočný den Kauffmanna s vysokou úspěšností smečů po lajně."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1322,18 +1316,18 @@
       "analyza": {
         "id": "Mornar Split - Solaris Sibenik",
         "verdikt": "OK",
-        "duvod": "Solaris vyhrál první zápas čtvrtfinále o 6 branek a v odvetě ve Splitu nepotřebuje hnát výsledek. Handicap +1.5 kryje i těsnou prohru Mornaru.",
-        "text": "V odvetném utkání čtvrtfinále Chorvatského poháru hostí Mornar Split tým Solaris Šibenik. První duel v Šibeniku skončil jednoznačným triumfem Solarisu o šest branek, což zásadně určuje dynamiku této odvety. Hostující Solaris má postup prakticky jistý a nemusí se hnát za vysokou výhrou, což trenérovi umožňuje protočit sestavu a šetřit opory. Domácí Mornar má před vlastními fanoušky velkou motivaci napravit dojem a odehrát vyrovnanou partii. Mornar navíc v nedávném ligovém kole ukázal vzestup formy, když venku vyhrál na hřišti Primorje Rijeka 13:11. Přesné sestavy pro odvetu jsou nenalezeny, avšak rozložení sil a situace ve dvojzápase nahrávají vyrovnanějšímu průběhu. Vybraný handicap +1,5 branky kryje jakékoliv vítězství Mornaru, remízu i těsnou porážku o jeden gól. Pro sázku hovoří domácí prostředí, uvolněný přístup Solarisu bránícího náskok a vzestup formy Mornaru, proti pouze případný kolaps domácí obrany při přesilovkách soupeře. Sázku by zhatila porážka Mornaru o dvě a více branek v případě ztráty motivace po nepovedeném začátku.",
-        "duvera_gemini": 8,
+        "duvod": "Solaris vyhrál první čtvrtfinále 16:10, v odvetě ve Splitu mu stačí pohodlně hlídat náskok, což nahrává pokrytí handicapu +1.5 pro domácí Mornar.",
+        "text": "Odveta čtvrtfinále Chorvatského poháru ve vodním pólu přináší souboj mezi Mornarem Split a Solarisem Šibenik na bazénu v Poljudu. První duel v Šibeniku skončil jednoznačným triumfem Solarisu 16:10, což hostům dává do odvety gigantický polštář šesti branek. Šibenický celek je sice dlouhodobě kvalitnějším týmem a v minulých měsících Mornar opakovaně porážel, v tomto zápase však absolutně nepotřebuje honit vysoké vítězství. Solaris čeká nabitý program na evropské scéně a v domácí lize, takže trenér může klíčové opory po zajištění postupu šetřit a dát prostor širší lavičce. Domácí Mornar má před vlastními fanoušky velkou motivaci napravit vysokou porážku a porvat se o čestný výsledek. Handicap +1,5 branky znamená, že sázka je výherní při jakékoliv výhře Mornaru, remíze i těsné prohře o jediný gól. Pro sázku hraje polevení tempa hostů a motivace domácích odčinit debakl, proti stojí vyšší individuální kvalita kádru Solarisu, pokud by zápas odehrál v plném nasazení celých 32 minut.",
+        "duvera_gemini": 7,
         "pro": [
-          "Solaris má po výhře o 6 branek v prvním duelu postup v kapse a stačí mu kontrolovat tempo.",
-          "Handicap +1.5 kryje jakýkoliv bodový zisk Mornaru i případnou těsnou prohru o gól."
+          "Solaris má z prvního zápasu komfortní náskok 6 branek a stačí mu postup hlídat.",
+          "Handicap +1.5 kryje výhru, remízu i těsnou porážku domácích o gól."
         ],
         "proti": [
-          "Solaris v prvním vzájemném pohárovém duelu ukázal výraznou herní převahu.",
-          "Mornar může při nepříznivém vývoji rezignovat na celkový výsledek."
+          "Solaris vyhrál poslední vzájemné zápasy s Mornarem vždy vysokým rozdílem.",
+          "Hrozba ztráty koncentrace Mornaru při nepříznivém vývoji zápasu."
         ],
-        "riziko": "Výpadek domácí defenzivy a inkasování gólů v oslabení vedoucí k prohře o 2 a více branek."
+        "riziko": "Pokud Solaris nastoupí v plné sestavě a udrží stoprocentní tempo, může vyhrát o více než dvě branky."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1352,49 +1346,50 @@
       "analyza": {
         "id": "Synapse - Allied",
         "verdikt": "OK",
-        "duvod": "Synapse je v stabilnější formě a disponuje výrazně silnější soupiskou než soupeř.",
-        "text": "V rámci základní skupiny B turnaje Asgard Championship Season 2 se střetávají týmy Synapse a Allied v sérii na dvě vítězné mapy (Bo3). Synapse vstupuje do duelu v pozici jasného favorita díky dlouhodobě stabilnější formě a lepším individuálním statistikám v porovnání s méně zkušeným soupeřem. Allied se v posledních vystoupeních trápí zejména v přechodu do střední fáze hry, kde doplácí na taktické chyby při kontrole mapy a slabší drafty. Herní tempo a sehranost základní pětky Synapse představují klíčovou výhodu, jež by měla vést k dominantnímu výkonu na obou mapách. Pro sázku na Synapse hovoří vyšší úspěšnost v týmových bitvách kolem Roshana a schopnost trestat poziční zaváhání soupeře. Určitým rizikem může být podcenění úvodních minut a agresivní nájezdy Allied v brzké fázi hry, nicméně celková kvalita soupisky i šíře hero poolu Synapse by měly zápas bez větších komplikací překlopit na jejich stranu. Sázku by ohrozil pouze naprostý kolaps v draftové fázi nebo fatální individuální chyby carry hráče Synapse.",
-        "duvera_gemini": 7,
+        "duvod": "Synapse má výrazně kvalitnější drafty i laning fázi a v Asgard Championship je proti Allied jasným favoritem.",
+        "text": "Utkání základní skupiny Asgard Championship Season 2 mezi Team Synapse a Team Allied staví proti sobě dva týmy s odlišnou formou i individuální kvalitou. Team Synapse se dlouhodobě prezentuje sehranější makro hrou i stabilnější fází draftu, díky čemuž v turnaji patří k aspirantům na postup do play-off. Naproti tomu Team Allied se na turnaji trápí zejména v přechodu ze střední do pozdní fáze hry a jejich individuální laning phase často nestačí proti organizovanějším soupeřům. Pro vítězství Synapse jednoznačně hovoří široký hero pool jejich klíčových jader a lepší kontrola mapy kolem Roshan contestů. Proti nim stojí pouze nevyzpytatelnost tier-2/3 scény, kde jeden nepovedený draft nebo brzký pick-off může znamenat ztrátu celé mapy. Sázku by mohl ohrozit experimentální draft ze strany Synapse nebo podcenění laning fáze. V sérii na dvě vítězné mapy (Bo3) je však herní převaha Synapse natolik markantní, že by měli sérii dotáhnout do vítězného konce.",
+        "duvera_gemini": 8,
         "pro": [
-          "Synapse disponuje výrazně silnější individuální kvalitou i sehraností kádru.",
-          "Allied má dlouhodobé potíže s kontrolou mapy a draftovou fází ve střední hře."
+          "Team Synapse vykazuje dlouhodobě mnohem stabilnější výsledky i drafty v turnajích tier 2/3 úrovně.",
+          "Allied mají problémy v mid-game fázích i při kontrole klíčových objektivů na mapě."
         ],
         "proti": [
-          "V zápasech nižších soutěží hrozí občasné výkyvy koncentrace favorita.",
-          "Allied může kousat v úvodu hry při agresivních rotacích."
+          "Na nižší Dota 2 scéně bývá častá volatilita výkonů a riziko nepovedených draftů.",
+          "Kurz 1.42 nenabízí velký manévrovací prostor při případné ztrátě jedné mapy."
         ],
-        "riziko": "Podcenění úvodu zápasu a ztráta kontroly nad mapou po chybách v týmových fightech."
+        "riziko": "Případné podcenění draftu a ztráta laning fáze na rozhodující mapě."
       },
       "duvera": 6,
       "overeni": "málo dat"
     },
     {
       "sport": "esport-dota2",
-      "zapas": "Zero Tenacity - Xipto",
-      "start": "2026-11-14T14:30:00+00:00",
+      "zapas": "Power Rangers - PlayTime",
+      "start": "2026-11-14T18:00:00+00:00",
       "liga": "DreamLeague Division 2",
-      "trh": "Počet map v zápasu 2.5",
-      "vyber": "- 2.5",
-      "kurz": 1.41,
-      "p": 0.6707,
-      "marze": 0.0938,
-      "sazej_od": 1.53,
+      "trh": "Handicap map v zápasu",
+      "vyber": "Power Rangers +1.5",
+      "kurz": 1.43,
+      "p": 0.6613,
+      "marze": 0.0915,
+      "sazej_od": 1.55,
       "analyza": {
-        "id": "Zero Tenacity - Xipto",
+        "id": "Power Rangers - PlayTime",
         "verdikt": "OK",
-        "duvod": "Xipto včera smetlo Zero Tenacity 2:0 a vzájemné bilanci jasně vévodí bez ztráty mapy.",
-        "text": "V play-off turnaje DreamLeague Division 2 Series 5 na sebe v dolním pavouku narážejí sestavy Zero Tenacity a Xipto Esports v klíčové sérii Bo3. Sázka na méně než 2,5 mapy se opírá o výrazný výkonnostní rozdíl a čerstvou vzájemnou bilanci, kde Xipto jednoznačně dominuje. Tým Xipto v čele s hvězdným carry hráčem 23savage a středopolařem inYourdreaM porazil Zero Tenacity teprve včera v rámci EPC Season 3 hladce 2:0 a stejným výsledkem 2:0 skončil i jejich vzájemný souboj z 5. listopadu na turnaji Asgard Championship. Zero Tenacity proti agresivnímu hernímu stylu a rychlým rotacím soupeře dlouhodobě nenachází protizbraň a mívá velké problémy se zajištěním farmy v rané fázi hry. Vzhledem k tomu, že Xipto disponuje mnohem kvalitnějším makrem a spolehlivější exekucí v týmových potyčkách, je nejpravděpodobnějším scénářem další rychlý sweep 2:0 ve prospěch asijského týmu. Pro sázku hovoří stoprocentní bilance dvoumapových konců v jejich duelech a propast v individuální zručnosti hráčů. Hlavní hrozbou pro tento tip je případná překvapivá volba neortodoxních hrdinů od Zero Tenacity v draftu, která by jim zajistila jednu urvanou mapu.",
-        "duvera_gemini": 8,
+        "duvod": "PlayTime sice vyhrál vzájemný zápas 2:0, ale ve vyřazovací fázi Bo3 by Power Rangers měli uhrát alespoň jednu mapu.",
+        "text": "V 1. kole dolního pavouka play-off turnaje DreamLeague Division 2 Series 5 se utkávají Power Rangers a PlayTime ve formátu Bo3. PlayTime ovládl základní skupinu A s bilancí 7-0 a 14 vyhranými mapami, přičemž 8. listopadu porazil právě Power Rangers hladce 2:0. Sestava PlayTime v čele s hráči jako Shad, No!ob a Kidaro disponuje obrovskou palebnou silou a stabilním teamfightem. Power Rangers se sestavou kolem shigetsu, Nicky`Cool a Immersion však v závěru skupiny ukázali zlepšení a v zápase o přežití v turnaji budou mít připravené specifické protitaktiky. Pro sázku na zisk alespoň jedné mapy (+1.5) hraje vyřazovací povaha utkání a schopnost Power Rangers trestat chyby agresivním early game tempem. Hlavním protiargumentem je dominantní forma PlayTime, kteří soupeře před týdnem přejeli na obou mapách bez výraznějších potíží. Zhatit sázku může rychlá prohra na obou mapách, pokud PlayTime opět získá dominanci v laning fázi a nenechá shigetsua nafarmit potřebné itemy. I přes minulou prohru je v play-off zisk alespoň jedné mapy reálný.",
+        "duvera_gemini": 6,
         "pro": [
-          "Xipto porazilo Zero Tenacity včera 2:0 a před týdnem rovněž 2:0 bez ztráty mapy.",
-          "Hvězdná sestava Xipto v čele s 23savage drtí soupeře tempem i individuální třídou."
+          "Ve vyřazovacím zápase o vše lze od Power Rangers čekat maximální přípravu a agresivní koncepty.",
+          "Power Rangers disponují zkušenými hráči jako shigetsu či Immersion schopnými rozhodnout mapu."
         ],
         "proti": [
-          "Zero Tenacity hrají o přežití v turnaji a mohou zkusit překvapit neobvyklým draftem."
+          "PlayTime porazil Power Rangers ve skupině před pouhými šesti dny jednoznačně 2:0.",
+          "PlayTime prošel základní skupinou bez jediné porážky s bilancí 7 výher."
         ],
-        "riziko": "Překvapivá cheese strategie nebo experimentální draft Xipto vedoucí ke ztrátě jedné mapy."
+        "riziko": "Zopakování dominance PlayTime z laning fáze a rychlá prohra Power Rangers 0:2."
       },
-      "duvera": 6,
+      "duvera": 5,
       "overeni": "málo dat"
     },
     {
@@ -1411,17 +1406,18 @@
       "analyza": {
         "id": "Boltic - Ljusdals",
         "verdikt": "OK",
-        "duvod": "Boltic je doma na Tingvalle suverénní, vyhrál 4 z 5 kol a drží 2. místo v tabulce.",
-        "text": "V šestém kole švédské Bandyallsvenskan přivítá IF Boltic na domácím ledě v hale Tingvalla Isstadion celek Ljusdals BK. Domácí Boltic prožívá vynikající vstup do sezóny, když z pěti odehraných kol vybojoval osm bodů za čtyři výhry a drží druhou příčku v tabulce se skóre 32:14. Mužstvo z Karlstadu se opírá o skvělou střeleckou fazonu a pevnou defenzivu, což potvrdilo v posledním kole drtivým vítězstvím 9:2 na ledě Kungälvu i předchozí domácí výhrou 7:3 nad Örebro SK. Ljusdals BK má na kontě šest bodů, ale v duelech proti ofenzivně laděným soupeřům z čela ligy mívá v obraně značné trhliny. Na domácím kluzišti Tingvalla je Boltic v této sezoně stoprocentní a těží z vysoké rychlosti bruslení a nacvičených standardních situací po rozích. Pro triumf domácích hovoří jednoznačně aktuální vítězná vlna, širší kádr a vysoká produktivita v čele s oporami Adamem Stålbergem a Patrickem Backmanem. Zmařit sázku by mohla pouze neočekávaná nedisciplinovanost v obraně spojená s vyšším počtem vyloučení na straně domácích.",
+        "duvod": "Boltic má vynikající vstup do sezóny, excelentní útok a na domácím ledě Tingvalla je proti Ljusdals favoritem.",
+        "text": "V 6. kole švédské Bandyallsvenskan přivítá IF Boltic na domácím Tingvalla Isstadionu v Karlstadu tým Ljusdals BK. Boltic vstoupil do sezóny ve skvělé formě, v tabulce mu patří druhá příčka s bilancí 4 výher z 5 zápasů a působivým skóre 32:14. Ljusdal je na pátém místě s bilancí 3 výher ze 4 duelů a skóre 21:15, což potvrzuje jeho kvalitu, venku je však zranitelnější. Domácí tým se opírá o mimořádně produktivní ofenzívu, kterou předvedl už v předsezónním Allsvenska Supercupu, kde vyhrál všechna 4 utkání. Výhodou pro Boltic je domácí otevřený led na Tingvalle, kde si dlouhodobě udržuje vysokou úspěšnost a diktuje fyzické tempo hry. Proti sázce hraje houževnatost Ljusdalu, který umí trestat chyby v obraně z rychlých brejků a rohových úderů. Sázku by mohla narušit slabší konverze standardních situací na straně Bolticu nebo mimořádný výkon brankáře hostů. Celkově však herní pohoda a útočná dominance staví domácí Boltic do role zaslouženého favorita.",
         "duvera_gemini": 8,
         "pro": [
-          "Boltic vyhrál 4 z 5 ligových kol a drží druhé místo s impozantním skóre 32:14.",
-          "Domácí na Tingvalle vyhráli všechny tři zápasy a naposledy deklasovali Kungälv 9:2."
+          "IF Boltic je na domácím ledě Tingvalla nesmírně silný a vyhrál 4 z úvodních 5 kol ligy.",
+          "Boltic má průměr přes 6 vstřelených branek na zápas se skóre 32:14."
         ],
         "proti": [
-          "Ljusdals BK je nepříjemný protivník schopný trestat mezery z brejků."
+          "Ljusdal má rovněž kvalitní start do sezóny se třemi výhrami ze čtyř utkání.",
+          "V bandy hokeji mohou zápas zdramatizovat nepříznivé povětrnostní podmínky na venkovním ledu."
         ],
-        "riziko": "Vysoký počet trestných minut a zaváhání defenzivy Bolticu při rohových úderech soupeře."
+        "riziko": "Výpadek v defenzívě Bolticu při bránění nebezpečných rohových úderů Ljusdalu."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1440,17 +1436,18 @@
       "analyza": {
         "id": "Sydney S. - Melbourne R.",
         "verdikt": "OK",
-        "duvod": "Sixers táhnou šňůru pěti výher v řadě a před třemi dny Renegades porazily o 11 runů.",
-        "text": "Ve 23. zápase dvanáctého ročníku WBBL přivítají ženy Sydney Sixers na svém domovském stadionu North Sydney Oval tým Melbourne Renegades. Sixers se nacházejí v naprosté herní pohodě, táhnou sérii pěti ligových výher v řadě a figurují na druhém místě tabulky s deseti body. Obě družstva se utkala teprve před třemi dny na Junction Oval v Melbourne, kde Sixers zvítězily o 11 runů po skvělém představení Amelie Kerr (53 runů) a kapitánky Ashleigh Gardner (3/13 s míčem). Renegades pod vedením Sophie Molineux sice disponují nebezpečnými hráčkami jako Hayley Matthews nebo Deandra Dottin, ale jejich pálkařská sestava trpí častými kolapsy, což demonstroval i minulý zápas s vyautováním na 129 runech. Rozměry North Sydney Oval s kratšími hranicemi nahrávají agresivní a hluboké pálkařské linii Sixers v čele s legendární Ellyse Perry. Pro domácí mluví nejen psychická převaha z nedávného triumfu, ale také vyrovnanější forma bowlerek ve středních a koncových overech. Ohrozit výhru favoritek by mohl mimořádný individuální den některé ze zahraničních hvězd Renegades, pokud by dokázala v powerplay rychle vyřadit klíčové opory Sixers.",
+        "duvod": "Sydney Sixers vyhrály všech pět zápasů sezóny včetně vzájemného měření sil před dvěma dny a hrají doma.",
+        "text": "V rámci 23. zápasu ženské Big Bash League přivítají suverénní Sydney Sixers na svém domovském stadionu North Sydney Oval celek Melbourne Renegades. Sixers prožívají snový vstup do ročníku WBBL|12, když vyhrály všech úvodních pět duelů a vévodí tabulce. Oba soupeři se střetli před pouhými dvěma dny v Melbourne, kde Sixers zvítězily o 11 runů zásluhou skvělého výkonu Amelie Kerr (53 runů) a Ellyse Perry (30 runů). Hřiště North Sydney Oval s velmi krátkými postranními hranicemi dokonale vyhovuje silovým pálkařkám Sixers v čele s Ashleigh Gardner a Ellyse Perry. V ranním čase od 11:00 místního času nebude hrát roli večerní rosa (dew), což svědčí kvalitnímu bowlingu Sixers podpořenému spolehlivým spinem Kerr. Proti Sixers stojí hvězdný potenciál Renegades s kapitánkou Sophie Molineux a all-rounderkami Hayley Matthews či Deandrou Dottin. Sázku by mohla zhatit individuální exploze Matthews na odpalu v úvodním powerplay nebo nečekaný kolaps pálkařského středu Sydney. Výhoda domácího hřiště a stoprocentní forma však jasně favorizují Sixers.",
         "duvera_gemini": 8,
         "pro": [
-          "Sydney Sixers vyhrály pět zápasů v řadě a před třemi dny porazily Renegades o 11 runů.",
-          "Hvězdná osa Perry, Kerr a Gardner má na menším North Sydney Oval ideální podmínky."
+          "Sydney Sixers v letošním ročníku WBBL vyhrály všech 5 zápasů včetně vzájemného duelu před 2 dny.",
+          "North Sydney Oval má krátké hranice, což nahrává agresivní pálkařské sestavě Perry a Gardner."
         ],
         "proti": [
-          "Renegades mají individuálně silné pálkařky v čele s Deandrou Dottin a Hayley Matthews."
+          "Melbourne Renegades mají na soupisce nebezpečná mezinárodní jména jako Matthews a Dottin.",
+          "T20 formát žen nese vždy riziko, že jeden vynikající individuální výkon otočí celý zápas."
         ],
-        "riziko": "Rychlý kolaps horní pálkařské řady Sixers proti nové bowlingové dvojici soupeře v powerplay."
+        "riziko": "Případná pálkařská exploze Hayley Matthews v rané fázi powerplay."
       },
       "duvera": 6,
       "overeni": "málo dat"
@@ -1462,54 +1459,25 @@
       "liga": "Přátelská utkání - One Day",
       "trh": "Vítěz zápasu do rozhodnutí",
       "vyber": "Indie",
-      "kurz": 1.54,
-      "p": 0.6103,
-      "marze": 0.0879,
-      "sazej_od": 1.68,
+      "kurz": 1.56,
+      "p": 0.6009,
+      "marze": 0.0895,
+      "sazej_od": 1.7,
       "analyza": {
         "id": "Nový Zéland - Indie",
         "verdikt": "OK",
-        "duvod": "Indie vede sérii 2:1 a i bez Gilla s Rahulem má v kádru opory s obrovskou motivací.",
-        "text": "Páté a závěrečné utkání jednodenní série (ODI) mezi Novým Zélandem a Indií se odehraje na stadionu Bay Oval v Mount Maunganui za stavu 2:1 pro indický výběr. Indie sice ovládla první dva duely série, avšak v pátečním čtvrtém zápase na témže hřišti utrpěla debakl o 244 runů, když byla smetena za pouhých 89 runů. Novozélandský pacer Matt Henry si připsal famózní bilanci 6/27 a v prvním overu poslal ze hřiště s nulou Rohit Sharmu, Virata Kohliho i kapitána Shreyase Iyera. Indická sestava, která v této fázi série postrádá odpočívajícího Shubmana Gilla a wicketkeepera KL Rahula, však disponuje obrovskou vnitřní silou a touhou napravit jeden z nejhorších výpadků v moderní historii. Na Bay Oval se očekává opět výrazný švih nového míče, s čímž se indická top order musí vyrovnat podstatně trpělivějším přístupem v powerplay. Pro Indii hraje špičková kvalita bowlingového útoku vedeného Arshdeepem Singhem a Kuldeepem Yadavem i obrovská motivace pečetit celkové vítězství v sérii. Hlavním rizikem zůstává rozjeté novozélandské pálkařské duo Will Young a Tim Seifert i přetrvávající psychická stopa z drtivé páteční porážky.",
+        "duvod": "Indie po debaklu v minulém zápase potřebuje reagovat, má kvalitnější sestavu pro 50 overů a bojuje o celou sérii.",
+        "text": "Rozhodující 5. ODI mezi Novým Zélandem a Indií na stadionu Bay Oval v Mount Maunganui uzavře pětizápasovou sérii, v níž Indie vede 2:1 na zápasy. V předchozím 4. duelu na stejném stadionu utrpěla Indie historický debakl o 244 runů, když Nový Zéland nastřílel 333 runů a pacer Matt Henry (6/27) smetl indický top order včetně nul pro Rohita Sharmu, Virata Kohliho a Shreyase Iyera. Hřiště v Mount Maunganui nabízí s novým míčem výrazný swing, z čehož těží novozélandští rychlíci Jamieson a Henry, nicméně s postupem směny povrch výrazně usnadňuje pálkování. Pro vítězství Indie hovoří obrovská kvalita a hrdost zkušených hvězd jako Rohit Sharma a Virat Kohli, kteří málokdy selžou dvakrát po sobě, společně s možným posílením bowlingu o Mohammeda Siraje. Proti Indii stojí psychická výhoda Black Caps a životní forma pálkaře Willa Younga (125 v minulém utkání) i brankáře Tima Seiferta. Sázku by mohl překazit další rychlý kolaps indického vršku proti novému bílému míči v chladnějších pobřežních podmínkách. Očekává se však taktická korekce Indie a koncentrovaný výkon, který by jim měl zajistit celkové vítězství v sérii.",
         "duvera_gemini": 6,
         "pro": [
-          "Indie má navzdory minulé prohře mimořádnou kvalitu kádru a stále vede sérii 2:1.",
-          "Hvězdy Kohli i Rohit Sharma mají obrovskou motivaci odčinit páteční selhání."
+          "Indie má na soupisce pálkařské legendy Rohita Sharmu a Virata Kohliho schopné okamžité reakce.",
+          "Indie vede v sérii 2:1 a má vyšší celkovou kvalitu kádru pro formát 50 overů."
         ],
         "proti": [
-          "Nový Zéland na stejném hřišti před dvěma dny smetl Indii rozdílem 244 runů.",
-          "Pacer Matt Henry je v životní formě a podmínky na Bay Oval mu extrémně sedí."
+          "Nový Zéland deklasoval Indii na tomto hřišti před 48 hodinami o 244 runů.",
+          "Matt Henry a Kyle Jamieson s novým míčem dokonale využívají místní swingové podmínky."
         ],
-        "riziko": "Rychlé ztráty prvních wicketů v novozélandských švihových podmínkách s novým míčem."
-      },
-      "duvera": 5,
-      "overeni": "málo dat"
-    },
-    {
-      "sport": "baseball",
-      "zapas": "J.Korea - Tchajwan",
-      "start": "2026-11-14T10:00:00+00:00",
-      "liga": "Asia Professional Championship",
-      "trh": "Handicap včetně extra inningů -1.5",
-      "vyber": "Tchajwan +1.5",
-      "kurz": 1.65,
-      "p": 0.5644,
-      "marze": 0.0892,
-      "sazej_od": 1.81,
-      "analyza": {
-        "id": "J.Korea - Tchajwan",
-        "verdikt": "OK",
-        "duvod": "Korea inkasovala 17 bodů ve 2 duelech, startér Lee má ERA 5.61 a handicap +1.5 kryje remízu.",
-        "text": "V závěrečném utkání základní skupiny turnaje Asia Professional Baseball Championship 2026 v krytém Tokyo Dome se střetnou Jižní Korea a Tchaj-wan. Jihokorejský výběr se ocitl pod obrovským tlakem po dvou úvodních porážkách s Austrálií (7:8) a Japonskem (5:9), v nichž zcela selhal nadhazovačský personál inkasující dohromady 17 bodů. Do zápasu nasazuje Korea jako startéra Lee Eo-roona z týmu SSG Landers, což je primárně relief nadhazovač s ligovou ERA 5,61, jehož bullpen je navíc po dvou náročných směnách značně vytížen. Naopak Tchaj-wan po úvodní porážce s Japonskem zvládl klíčový duel s Austrálií (6:4) a do zápasu jde v podstatně klidnějším psychickém rozpoložení. Vzájemné zápasy obou asijských rivalů na této věkové úrovni bývají tradičně vyrovnanými taktickými bitvami, které často končí rozdílem jediného bodu nebo v extra směnách. Plusový handicap +1.5 runu dává Tchaj-wanu výrazný polštář, protože jim stačí uhrát těsný výsledek nebo přímo zvítězit. Pro sázku hovoří solidnější tchajwanská defenziva a hluboká krize korejského nadhozu, zatímco hrozbou by bylo probuzení korejských pálkařských es Han Dong-heeho a Kim Do-yeonga a jejich brzký útočný trhák.",
-        "duvera_gemini": 8,
-        "pro": [
-          "Handicap +1.5 kryje jakoukoli výhru Tchaj-wanu i těsnou prohru o jediný bod.",
-          "Korejský nadhoz inkasoval 17 bodů ve 2 duelech a startér Lee Eo-roon má ERA 5.61."
-        ],
-        "proti": [
-          "Korejský útok má sílu s hvězdami jako Han Dong-hee a Kim Do-yeong."
-        ],
-        "riziko": "Včasný tlak a vícebodový homerun korejského útoku proti střídajícím tchajwanským nadhazovačům."
+        "riziko": "Opakovaný kolaps indického top orderu proti novému míči v úvodních deseti overech."
       },
       "duvera": 5,
       "overeni": "málo dat"
@@ -1530,19 +1498,19 @@
       "analyza": {
         "id": "Los Angeles Kings - Calgary Flames",
         "verdikt": "OK",
-        "duvod": "Extrémně vysoká hranice 9.5 gólu v zápase dvou defenzivně orientovaných týmů s průměrnou produktivitou.",
-        "text": "V rámci programu NHL přivítají Los Angeles Kings na svém ledě v Crypto.com Areně celek Calgary Flames. Oba týmy se v aktuálním průběhu sezony spoléhají především na systémovou defenzivu a jejich produktivita se drží okolo ligového průměru. Calgary má v posledních deseti duelech průměr 2,8 vstřelených i 2,8 obdržených branek na zápas, přičemž naposledy padlo s Rangers 1:3. V brankovištích se očekává start Darcyho Kuempera na straně Kings a mladého Dustina Wolfa u Flames. Hranice 9,5 gólu je pro zápas NHL položena výjimečně vysoko a k jejímu prolomení dochází v méně než 4 % všech utkání. Poslední vzájemná střetnutí skončila výsledky 3:2 po nájezdech a 3:1 pro Calgary, což potvrzuje taktický a opatrný ráz jejich střetů. Hra na užším kluzišti v Los Angeles obvykle přináší tuhé souboje u mantinelu a minimum přečíslení. Jediným reálným rizikem by byl naprostý kolaps obou gólmanů spojený s oboustrannou kanonádou v přesilovkách.",
+        "duvod": "Extrémně vysoká hranice 9.5 gólu v NHL, kde oba týmy vyznávají defenzivní a organizovaný herní systém.",
+        "text": "Souboj divizních rivalů v losangeleské Crypto.com Areně svede dohromady týmy, které svou hru staví především na organizované defenzivě a pevném systému. Los Angeles Kings pod trenérem Jimem Hillerem dlouhodobě uplatňují defenzivní systém 1-3-1 ve středním pásmu, který drasticky omezuje přečíslení a drží celkový gólový průměr zápasů hluboko pod ligovým standardem. Calgary Flames pod Ryanem Huskou rovněž nemají ofenzivní sílu na pravidelné gólové přestřelky a v útoku se často trápí, což kompenzují poctivou prací směrem dozadu. Hranice 9.5 gólu je pro poměry NHL nastavená nebývale vysoko, neboť běžný ligový total se pohybuje okolo šesti branek. Vzájemné zápasy těchto soupeřů bývají fyzicky náročné a těsné, kde o vítězi rozhodují spíše detaily a přesilovky než otevřené dostihy. Pro sázku hovoří taktická vyzrálost Kings i spolehlivost brankářů na obou stranách. Jediným faktorem, který by mohl sázku ohrozit, by byl naprostý kolaps obou gólmanů spojený s extrémním počtem vyloučení a pěti využitými přesilovkami na každé straně. Matematická pravděpodobnost trhu přesahující 94 % plně odpovídá realitě a sázka na méně než 9.5 gólu nabízí naprosto bezpečný polštář.",
         "duvera_gemini": 9,
         "pro": [
-          "Calgary má v posledních deseti duelech průměr pouze 2,8 vstřelené i obdržené branky na zápas.",
-          "Poslední vzájemné zápasy nabídly pouze pět a čtyři branky (3:2sn a 3:1).",
-          "Hranice 9,5 gólu je v NHL překonána v méně než 4 % všech odehraných střetnutí."
+          "Los Angeles aplikuje striktní systém 1-3-1 tlumící gólové hody.",
+          "Calgary postrádá elitní ofenzivní esa a soustředí se na obranu.",
+          "Běžný průměr gólů v duelech těchto týmů nepřekračuje 6 branek."
         ],
         "proti": [
-          "V brankovišti Kings má Kuemper v této sezoně úspěšnost zákroků pod 88 %.",
-          "Při vyšším počtu vyloučení může Calgary využít solidní 23% úspěšnost přesilovek."
+          "Divoký průběh způsobený brzkým střídáním brankářů.",
+          "Vysoký počet trestných minut a mimořádná efektivita přesilovek."
         ],
-        "riziko": "Selhání brankářů a série laciných gólů z přesilových her na obou stranách."
+        "riziko": "Naprostý výpadek obou brankářů a série trestů s vysokou úspěšností přesilovek."
       },
       "duvera": 8,
       "overeni": "málo dat"
@@ -1561,19 +1529,19 @@
       "analyza": {
         "id": "Kosovo - Izrael",
         "verdikt": "OK",
-        "duvod": "Zápas Ligy národů s nízkou gólovou frekvencí a vysokou hranicí under 5 branek.",
-        "text": "V 5. kole Ligy národů UEFA hostí Kosovo na stadionu Fadila Vokrriho v Prištině reprezentaci Izraele. Oběma celkům jde o klíčové body pro záchranu v Lize B, přičemž Kosovo ve čtyřech kolech uhrálo dvě remízy a Izrael má rovněž na kontě pouze dva body. První vzájemné měření sil v této skupině skončilo taktickou bezbrankovou remízou 0:0. Pouze 25 % z posledních osmi zápasů Kosova nabídlo více než 2,5 gólu a domácí udrželi čisté konto v polovině duelů. Ofenziva Izraele venku dlouhodobě tápe, což potvrdila i remíza 1:1 na půdě Irska. Hranice méně než 5 gólů poskytuje obrovskou rezervu, kterou by zničila pouze nevídaná šestigólová přestřelka. Taktika obou trenérů se zaměří především na neprostupný střed pole, protože jakýkoliv inkasovaný gól může rozhodnout o sestupu. Ohrozit tento tip by mohla pouze brzká červená karta a následný rozklad defenzivního bloku jednoho z celků.",
+        "duvod": "Zápas Ligy národů s obrovským významem pro tabulku, v němž poslední vzájemný duel skončil bez branek.",
+        "text": "V pátém kole skupiny B3 fotbalové Ligy národů přivítá Kosovo na stadionu Fadila Vokrriho v Prištině reprezentaci Izraele v přímém souboji o důležité body. Domácí Kosovo drží v tabulce druhou příčku s reálnou šancí na postup do baráže o Ligu A, zatímco Izrael potřebuje nutně bodovat, aby se vyhnul přímému sestupu. Poslední vzájemný duel těchto soupeřů hraný v říjnu na neutrální půdě v Maďarsku skončil bezbrankovou remízou 0:0, přičemž oba celky předvedly především taktickou obezřetnost a slabší produktivitu. Hranice 5.0 gólu je na úrovni mezinárodního reprezentačního fotbalu obrovská a padá málokdy, zvláště v zápasech s tak vysokým taktickým nábojem. Ačkoliv má Izrael v ofenzivě individuality jako je Manor Solomon a Kosovo zase Edona Zhegrovu s Vedatem Muriqim, defenzivní bloky obou týmů bývají kompaktní. Domácí prostředí a podpora fanoušků v Prištině požene Kosovo dopředu, avšak otevřenou partii s hrozbou brejků si domácí trenér Franco Foda nedovolí. Zhatit tento tip by mohla pouze červená karta v úvodu zápasu a totální otevření hry obou mužstev, což je však nepravděpodobné. Celkový ráz utkání směřuje k urputné bitvě s maximálně dvěma až třemi góly.",
         "duvera_gemini": 9,
         "pro": [
-          "První vzájemný zápas v této skupině skončil bezbrankovou remízou 0:0.",
-          "Pouze 25 % z posledních osmi zápasů Kosova mělo více než 2,5 vstřelené branky.",
-          "Oba týmy mají v Lize národů průměr pod 3 střely na branku a slabou produktivitu."
+          "V říjnu skončil první vzájemný zápas ve skupině remízou 0:0.",
+          "Oba týmy hrají pod velkým tlakem o postup či záchranu v Lize B.",
+          "Ofenzivy obou celků dlouhodobě nepatří k evropské střelecké špičce."
         ],
         "proti": [
-          "Izrael v minulosti dokázal odehrát divoká utkání s Itálií či Norskem.",
-          "Případný rychlý gól by mohl donutit prohrávající tým k totálnímu otevření hry."
+          "Individuální záblesky hvězd jako Zhegrova, Muriqi či Solomon.",
+          "Případné brzké vyloučení narušující kompaktní defenzivu jednoho z týmů."
         ],
-        "riziko": "Rychlé vyloučení na jedné straně a následný kolaps zformované defenzivy."
+        "riziko": "Brzké vyloučení vedoucí k totálnímu rozpadu obranných řad jednoho z týmů."
       },
       "duvera": 8,
       "overeni": "málo dat"
@@ -1592,19 +1560,19 @@
       "analyza": {
         "id": "Boston Bruins - Minnesota Wild",
         "verdikt": "OK",
-        "duvod": "Minimální hranice přes 2.5 gólu v zápase NHL s ofenzivními esy Pastrňákem a Boldym.",
-        "text": "V bostonské TD Garden se domácí Bruins postaví lídrovi Západní konference Minnesotě Wild. Boston nutně potřebuje odčinit předchozí zaváhání a před vlastním publikem se požene do útoku tažen Davidem Pastrňákem. Minnesota se nachází ve vynikající fazoně, přičemž její ofenzivu táhne produktivní duo Matt Boldy a Kirill Kaprizov. Sázka na více než 2,5 gólu představuje v moderní NHL s průměrem přes 6 branek na zápas nejzákladnější hranici. Výsledky s méně než třemi brankami (jako 1:0 nebo 2:0) se v zámořské soutěži vyskytují jen zhruba v 5 % odehraných utkání. Obě mužstva disponují vysoce nebezpečnými přesilovkovými formacemi, které dokážou trestat i menší nedisciplinovanost soupeře. Cestování Wild navíc provázely logistické komplikace s leteckou dopravou v USA, což se může podepsat na únavě obranných řad. Jediným rizikem pro tuto sázku by byl naprosto mimořádný brankářský duel se stoprocentní úspěšností zásahů.",
+        "duvod": "Hranice pouhých 2.5 gólu je v moderní NHL s elitními střelci Pastrňákem a Kaprizovem snadno dosažitelná.",
+        "text": "Tradiční střetnutí Východní a Západní konference v bostonské TD Garden svede proti sobě Bruins a Minnesotu Wild, přičemž vypsaná lajna na pouhé 2.5 góly je v současné NHL naprostou anomálií. Minnesota v této sezóně předvádí pod trenérem Johnem Hynesem velmi dynamický hokej, kterému vévodí fantasticky hrající Kirill Kaprizov a produktivní Matt Boldy. Domácí Boston se po slabším vstupu do sezóny zvedá a jeho ofenziva tažená Davidem Pastrňákem a kapitánem Bradem Marchandem představuje permanentní hrozbu pro každou obranu. Průměr branek v zápasech NHL dlouhodobě přesahuje hodnotu 6.0 gólů na utkání a výsledek 1:0 či 2:0 nastává v ligovém měřítku ve méně než šesti procentech případů. I přes nespornou kvalitu v brankovištích, kde se očekává souboj Jeremyho Swaymana proti Filipu Gustavssonovi, je pravděpodobnost tří vstřelených branek obrovská. Týmy mají navíc k dispozici vysoce nebezpečné přesilovkové formace, které dokáží trestat sebemenší zaváhání disciplíny soupeře. K neúspěchu sázky by vedl pouze zázračný výkon obou gólmanů s úspěšností zákroků přes 98 % a totální fotbalový zápas bez chyb, což je v moderní NHL velice výjimečné. Tři branky v zápase jsou pro tyto ofenzivní individuality naprosto přirozeným minimem.",
         "duvera_gemini": 9,
         "pro": [
-          "V moderní NHL končí méně než 6 % všech zápasů součtem gólů 2 a méně.",
-          "V kádrech obou celků nastoupí elitní střelci jako David Pastrňák či Matt Boldy.",
-          "Minnesota přijíždí v pozici ofenzivního lídra Západní konference."
+          "Přítomnost elitních světových střelců Davida Pastrňáka a Kirilla Kaprizova.",
+          "Dlouhodobý ligový průměr NHL činí více než šest branek na zápas.",
+          "Výsledky pod 2.5 gólu se v NHL vyskytují ve méně než 6 % případů."
         ],
         "proti": [
-          "Boston se po nepovedeném zápase může soustředit na přehnaně pasivní hru vzadu.",
-          "Brankáři obou týmů patří k širší špičce ligy a mohou zavřít branku."
+          "Perfektní gólmanský duel mezi Jeremy Swaymanem a Filipem Gustavssonem.",
+          "Příliš svázaný taktický styl obou trenérů při defenzivním pojetí."
         ],
-        "riziko": "Brankářský koncert obou jedniček a bezgólový stav po většinu základní hrací doby."
+        "riziko": "Mimořádný výkon obou gólmanů a bezchybná defenzivní hra bez vyloučení."
       },
       "duvera": 8,
       "overeni": "málo dat"
@@ -1623,19 +1591,19 @@
       "analyza": {
         "id": "St. Louis Blues - Florida Panthers",
         "verdikt": "OK",
-        "duvod": "Extrémně nízká hranice 2.5 gólu proti sobě staví ofenzivní sílu Floridy a chybující Blues.",
-        "text": "Úřadující vítěz Stanley Cupu Florida Panthers nastoupí v St. Louis v hale Enterprise Center. Tým kouče Paula Mauriceho se prezentuje nátlakovým hokejem a naposledy předvedl skvělý obrat proti Detroitu při výhře 5:4. Floridský útok táhnou skvěle hrající Sam Reinhart s 11 góly i Carter Verhaeghe s Bradym Tkachukem, kteří mají po deseti zásazích. Blues mají v obraně dlouhodobé výpadky, pouštějí soupeře do velkého počtu střel a jejich brankáři čelí vysokému xG. K úspěchu sázky na více než 2,5 gólu stačí v celém zápase pouze tři přesné zásahy, což splňuje drtivá většina duelů Panthers. Agresivní napadání Floridy pravidelně generuje fauly a přesilovky, které obě strany dokážou zužitkovat. Určité opotřebení hostů ze zápasového maratonu (sedm zápasů ve dvanácti dnech) navíc nahrává chybám ve vlastní defenzivě. Sázku by zmařila pouze nevídaná střelecká nemohoucnost a fotbalový výsledek 1:0 nebo 2:0.",
+        "duvod": "Úřadující šampioni z Floridy hrají s obrovským objemem střelby a over 2.5 gólu je v jejich duelech téměř jistotou.",
+        "text": "V Enterprise Center přivítají domácí St. Louis Blues floridské Pantery a fanoušci se mohou těšit na konfrontaci stylů, ve které je hranice více než 2.5 gólu extrémně dostupná. Florida Panthers pod Paulem Mauricem pokračují ve svém agresivním pojetí založeném na drtivém forčekinku, vysokém počtu střel a fyzické převaze v útočném pásmu. Hráči jako Sam Reinhart, Aleksander Barkov či Matthew Tkachuk dokáží pravidelně generovat obrovské množství šancí a Florida patří k nejproduktivnějším celkům celé soutěže. St. Louis Blues sice v brance spoléhají na stabilní výkony Joela Hofera či Jordana Binningtona, nicméně jejich defenzivní linie často pouští soupeře do velkého počtu střeleckých pokusů. Na druhé straně mají Blues v sestavě šikovné útočníky Roberta Thomase a Jordana Kyroua, kteří dokáží trestat přečíslení z rychlých protiútoků. Aby v celém zápase včetně případného prodloužení padly maximálně dva góly, musel by brankář St. Louis předvést jeden z nejlepších výkonů sezóny a totálně vymazat floridskou palebnou sílu. Zápasy Floridy končí pod hranicí 2.5 branky jen naprosto mizivě. Všechny statistické ukazatele xG i tempo zápasů jednoznačně nahrávají vstřelení minimálně tří branek.",
         "duvera_gemini": 9,
         "pro": [
-          "Florida vstřelila v minulém zápase pět branek a Reinhart s Tkachukem jsou ve formě.",
-          "St. Louis dlouhodobě nabízí soupeřům vysoký počet gólových přečíslení.",
-          "Více než 2,5 gólu padá v duelech Floridy ve více než 95 % případů."
+          "Florida patří k nejagresivnějším týmům ligy s vysokým objemem střel.",
+          "Ofenzivní lídři Panthers jako Reinhart a Barkov v plné formě.",
+          "St. Louis čelí pravidelně vysokému počtu soupeřových střel na branku."
         ],
         "proti": [
-          "Florida hraje sedmý zápas ve 12 dnech a únava může srazit celkové tempo.",
-          "Případný defenzivní zámek St. Louis by mohl kouskovat plynulost hry."
+          "Čerstvý shutout brankáře Joela Hofera a jeho fazóna.",
+          "Extrémní disciplinovanost obou týmů bez nabídnutých přesilovek."
         ],
-        "riziko": "Střelecká impotence obou týmů a těsný výsledek 1:0 či 2:0."
+        "riziko": "Brankář domácích chytne životní formu a Florida selže v koncovce."
       },
       "duvera": 8,
       "overeni": "málo dat"
@@ -1654,19 +1622,19 @@
       "analyza": {
         "id": "Toronto Maple Leafs - Edmonton Oilers",
         "verdikt": "OK",
-        "duvod": "Extrémní hranice 10.5 gólu; padnout 11 branek v prestižním kanadském derby je anomálie.",
-        "text": "Sváteční kanadské derby v Scotiabank Areně svede proti sobě Toronto Maple Leafs a Edmonton Oilers. Ačkoliv se na ledě potkají ofenzivní hvězdy jako Connor McDavid, Leon Draisaitl či Auston Matthews, hranice 10,5 gólu je pro základní hrací dobu NHL obrovská. Toronto prožívá nepovedenou domácí sérii, prohrálo pět duelů v řadě se skóre 9:22 a trenérský štáb ordinuje striktní návrat k defenzivní odpovědnosti. Edmonton v čele s obráncem Evanem Bouchardem sice vyhrál třikrát v řadě, ale klade důraz na pevnou pětici u sebe, což ukázala výhra 3:2 v prodloužení nad Philadelphií. Jedenáct a více gólů padá v zápasech NHL v méně než 2 % případů a vyžaduje absolutní rozpad taktiky i brankářů. Anthony Stolarz v brance Toronta i přes porážky drží solidní standard chycených střel. Prestiž celonárodně sledovaného duelu navíc nutí oba týmy hrát s intenzitou blížící se vyřazovacím bojům. Jediným ohrožením by byla naprostá rezignace na bránění a série proměněných brejků v každé třetině.",
+        "duvod": "Při hranici 10.5 gólu nabízí sázka obrovskou rezervu; Toronto pod Berubem klade mnohem větší důraz na obranu.",
+        "text": "Hvězdný kanadský souboj v zaplněné Scotiabank Areně přinese střet dvou ofenzivních gigantů, nicméně vypsaná hranice 10.5 gólu je v reálném hokeji NHL extrémní. Proti sobě sice nastoupí Connor McDavid a Leon Draisaitl na straně Edmontonu proti Mitchi Marnerovi a Williamu Nylanderovi na straně Toronta, ale současný herní projev obou týmů má k deseti gólům daleko. Maple Leafs pod vedením Craiga Berubeho výrazně přitvrdili v defenzivě, zjednodušili hru a snaží se eliminovat laciné ztráty puků ve středním pásmu. Edmonton pod Krisem Knoblauchem po loňské finálové jízdě rovněž ví, že bez spolehlivé hry v obranném pásmu a kvalitního návratu útočníků nelze dlouhodobě vyhrávat. Vzájemné zápasy obou velkoklubů sice nabízejí atraktivní hokej, ale obvykle končí výsledky okolo 4:2 nebo 4:3 po prodloužení, což je stále hluboko pod jedenácti góly. K překonání hranice 10.5 branky by muselo dojít k totálnímu selhání obou brankářů a zápasu ve stylu utkání hvězd, kde se vůbec nebrání. Takový scénář je v prestižním sobotním celonárodním televizním zápase Hockey Night in Canada takřka vyloučený. Sázka na méně než 10.5 branky tak představuje mimořádně stabilní a hodnotnou volbu.",
         "duvera_gemini": 9,
         "pro": [
-          "V zápasech NHL padá 11 a více branek pouze v necelých 2 % případů.",
-          "Edmonton vyhrál poslední duel těsně 3:2 po prodloužení a hlídá si strukturu.",
-          "Toronto po pěti domácích prohrách zpřísňuje defenzivní disciplínu."
+          "Hranice 10.5 branky je v NHL překonána v méně než 2 % zápasů.",
+          "Toronto pod trenérem Berubem klade maximální důraz na defenzivu.",
+          "Běžné vzájemné výsledky končí v rozmezí 5 až 7 branek celkem."
         ],
         "proti": [
-          "McDavid s Draisaitlem a Matthewsem představují nejvyšší možnou ofenzivní extratřídu.",
-          "Obrana Maple Leafs v minulých zápasech inkasovala 22 branek v pěti utkáních."
+          "Genialita McDavida, Draisaitla a Matthewse v přesilových hrách.",
+          "Případný brzký kolaps jednoho z brankářů a následná divoká přestřelka."
         ],
-        "riziko": "Naprostý kolaps obou gólmanů a bezhlavá přestřelka elitních útočných formací."
+        "riziko": "Blesková série využitých přesilovek a totální selhání obou gólmanů."
       },
       "duvera": 8,
       "overeni": "málo dat"
@@ -1685,19 +1653,19 @@
       "analyza": {
         "id": "Švédsko - Bosna a Hercegovina",
         "verdikt": "OK",
-        "duvod": "Hranice více než 1 gól nabízí skvělé krytí při ofenzivě Gyökerese s Isakem proti oslabené Bosně.",
-        "text": "V solenské Strawberry Areně se v Lize národů střetne neporažené Švédsko s Bosnou a Hercegovinou o přímý postup. Domácí vedou skupinu s deseti body a v útoku disponují smrtící silou v podobě Viktora Gyökerese, Alexandera Isaka a navrátilce Dejana Kulusevského. Švédové doma v této kampani porazili Polsko 3:1 i Rumunsko 2:1 a na vlastním hřišti pravidelně dominují v počtu vytvořených šancí. Bosna přijíždí bez distancovaného stopera Muharemoviće, zraněného Hadžikaduniće i kapitána Edina Džeka, což její zadní řady citelně oslabí. Sázka na více než 1 gól má vynikající parametry: jediná branka znamená vrácení vkladu a dvě branky jistou výhru. První vzájemný zápas na balkánské půdě skončil 1:1, což hranici pokrylo. Zápas řídí italský arbitr Simone Sozza, který podporuje plynulost hry a příliš nekouskuje ofenzivní akce. Sázku by potopila pouze překvapivá bezbranková remíza 0:0 při totálním betonu hostí.",
+        "duvod": "Švédsko disponuje smrtícím útokem v čele s Gyökeresem a Isakem; při sázce Over 1.0 stačí jediný gól na vrácení vkladu.",
+        "text": "Ve stockholmské Strawberry Areně se odehraje klíčový souboj o prvenství ve skupině 4 Ligy B národů, kde neporažené Švédsko hostí Bosnu a Hercegovinu. Švédové pod dánským trenérem Jonem Dahlem Tomassonem praktikují atraktivní, přímočarý a nátlakový fotbal, který se opírá o fantastickou formu útočného esa Viktora Gyökerese a rychlost Alexandera Isaka. Bosna a Hercegovina ztrácí na Švédsko dva body a pokud chce pomýšlet na přímý postup do elitní Ligy A, musí v Solně bezpodmínečně zvítězit a hrát odvážně. První vzájemný zápas na bosenské půdě skončil remízou 1:1, což potvrdilo, že oba týmy mají ofenzivní kvalitu na překonání soupeřovy defenzivy. Asijská hranice více než 1.0 gólu je pro sázkaře mimořádně výhodná, protože v případě přesně jednoho vstřeleného gólu se vklad vrací a prohru znamená pouze bezbrankový stav 0:0. Švédsko na domácím stadionu průměrně střílí více než dvě branky na zápas a jeho obrovský ofenzivní potenciál je zárukou šancí. Bosenská obrana vedená zkušenými stopery bude pod obrovským tlakem a jen stěží udrží čisté konto po celých devadesát minut. Všechny faktory od motivace obou týmů až po individuální kvalitu hrotových útočníků jednoznačně nahrávají padání branek.",
         "duvera_gemini": 9,
         "pro": [
-          "Švédský útok táhnou v životní formě hrající Gyökeres a Isak s Kulusevským.",
-          "Bosně schází klíčoví stopeři Hadžikadunić a Muharemović i kanonýr Džeko.",
-          "Při vstřelení přesně jednoho gólu v zápase se sázejícímu vrací vklad."
+          "Fenomenální střelecká fazóna švédského útočníka Viktora Gyökerese.",
+          "Bosna musí hrát na výhru, což otevře prostory pro švédské brejky.",
+          "Při přesně jednom gólu se vklad vrací, prohrává pouze stav 0:0."
         ],
         "proti": [
-          "Bosna v probíhající skupině ještě neprohrála a umí bránit v hlubokém bloku.",
-          "V prvním vzájemném měření sil padly pouze dvě branky při remíze 1:1."
+          "Případný hluboký a neprostupný defenzivní blok bosenského týmu.",
+          "Nečekaná střelecká nemohoucnost švédských hvězd v zakončení."
         ],
-        "riziko": "Trvalý bezbrankový stav 0:0 způsobený hlubokým obranným blokem Bosny."
+        "riziko": "Takticky svázaný zápas s neprostupným valem Bosny a konečnou remízou 0:0."
       },
       "duvera": 8,
       "overeni": "málo dat"
