@@ -240,3 +240,10 @@ ucici:
   max_marze: 0.12        # trhy s vyšší marží (půlené linie, chybějící strana) se přeskočí
   okno_h: 36             # zápasy začínající do 36 h
   max_radku_den: 20000   # pojistka proti nafouknutí repozitáře
+
+# Ověření segmentů (sport × druh trhu × pásmo kurzu): kdy se pravděpodobnost z trhu smí považovat za ověřenou
+overeni:
+  min_zapasu: 150      # unikátních zápasů v segmentu
+  min_dnu: 7           # dnů dat celkem (bez nich není ochranné období)
+  jistota_z: 1.64      # jednostranně ~95 %
+  min_holdout: 40      # zápasů na novějším (neobjevném) období
