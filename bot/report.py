@@ -246,6 +246,14 @@ def _pil_d(d):
     return f"<span class='pill {t}'>{d}/10</span>"
 
 
+def _zdroj_p(x):
+    """Odkud pravděpodobnost je a jestli je ověřená: 'model'/'trh' + stav segmentu (bot ho ověřuje na vlastních vyhodnocených sázkách)."""
+    zdroj = "model" if (x.get("zdroj") == "model" or x.get("p_model") is not None) else "trh"
+    st = x.get("overeni") or "málo dat"
+    ikona = {"ověřeno": "✔", "kandidát": "◐", "trh přeceňuje": "⚠"}.get(st, "○")
+    return f"<br><span class='mut'>{zdroj} · {ikona} {_e(st)}</span>"
+
+
 def _kompakt(radky, zona, prazdno):
     """Přehledová tabulka: jeden řádek na příležitost, klik na řádek rozbalí rozbor zápasu. Řádek = dict s klíči zapas, liga, start, trh, kurz, sazej_od, p, duvera, analyza, hrana (volitelně)."""
     if not radky: return f"<p class='mut'>{_e(prazdno)}</p>"
@@ -258,7 +266,7 @@ def _kompakt(radky, zona, prazdno):
         r.append(f"<tr{kl}><td class='kdy'>{_cas(x['start'], zona)}</td>"
                  f"<td><span class='m'>{_e(x['zapas'])}</span><br><span class='mut'>{_e(x.get('sport') or '')} {_e(x.get('liga') or '')}</span><br>{_e(x['trh'])}{(': <b>' + _e(x['vyber']) + '</b>') if x.get('vyber') else ''}{sip}</td>"
                  f"<td>{_kc(x['kurz'])}</td><td><b>{_kc(x.get('sazej_od'))}+</b></td>"
-                 f"<td>{_pil_p(x['p'])}{hr}</td><td>{_pil_d(x.get('duvera'))}</td></tr>")
+                 f"<td>{_pil_p(x['p'])}{hr}{_zdroj_p(x)}</td><td>{_pil_d(x.get('duvera'))}</td></tr>")
         if an:
             r.append(f"<tr class='roz'><td colspan='6'>{an}</td></tr>")
     r.append("</table></div>")
@@ -267,7 +275,7 @@ def _kompakt(radky, zona, prazdno):
 
 def _z_fort(f):
     return {"zapas": f["zapas"], "sport": f.get("sport") or "", "analyza": f.get("analyza"), "liga": f.get("liga"), "start": f["start"], "trh": f["trh"], "vyber": "", "kurz": f["kurz_fortuna"],
-            "sazej_od": f["sazej_od"], "p": f["p"], "duvera": _duv(f), "hrana": f.get("edge")}
+            "sazej_od": f["sazej_od"], "p": f["p"], "duvera": _duv(f), "hrana": f.get("edge"), "p_model": f.get("p_model"), "overeni": f.get("overeni")}
 
 
 def vyber_value_drop(fort, cfg=None):
@@ -349,6 +357,16 @@ def _t_stat(hlavicka, radky):
     return "".join(r) + "</table></div>"
 
 
+def _tab_segmenty(seg):
+    if not seg: return ""
+    r = ["<h3>Ověření: kde se bot skutečně osvědčil</h3><p class='mut'>Segment = sport × druh trhu × pásmo kurzu. <b>Ověřeno</b> = zisk je statisticky kladný na starší části dat a znovu kladný na novější, kterou test při objevu nepoužil. "
+         "Do té doby je pravděpodobnost jen z trhu a řádky v reportu mají značku ○ neověřeno.</p>",
+         "<div class='w'><table><tr><th>Sport</th><th>Druh trhu</th><th>Pásmo</th><th>Zápasů</th><th>Úspěšnost</th><th>Čekáno</th><th>ROI</th><th>Stav</th></tr>"]
+    for x in seg:
+        r.append(f"<tr><td>{_e(x['sport'])}</td><td>{_e(x['rodina'])}</td><td>{_e(x['pasmo'])}</td><td>{x['zapasu']}</td><td>{x['uspesnost'] * 100:.0f} %</td><td>{x['cekano'] * 100:.0f} %</td><td>{x['roi'] * 100:+.1f} %</td><td><b>{_e(x['stav'])}</b></td></tr>")
+    return "".join(r) + "</table></div>"
+
+
 def _tab_uceni(u, model_text=""):
     if not u: return "<p class='mut'>Přehled se nepodařilo sestavit.</p>"
     r = []
@@ -364,22 +382,17 @@ def _tab_uceni(u, model_text=""):
                  "ROI je záporné o marži kanceláře, dokud nenajdeme systematickou chybu trhu.</p>")
     else:
         r.append(f"<p class='mut'>Zapsáno {u['zapsano']} sázek, zatím žádná není vyhodnocená.</p>")
+    r.append(_tab_segmenty(u.get("segmenty_top")))
     r.append(_t_stat("Sport", u["sporty"]))
     r.append(_t_stat("Kategorie (co bot ukazuje)", u["skupiny"]))
     r.append(_t_stat("Pásmo kurzu", u["pasma"]))
     if model_text: r.append(f"<p class='mut'>Model fotbalu a tenisu: {_e(model_text)}</p>")
-    r.append("<h3>Postup k dalším metám (kdy sáhnout do kódu)</h3><div class='w'><table><tr><th>Meta</th><th>Stav</th><th>Co to odemkne</th><th>Odhad</th></tr>")
+    r.append("<h3>Postup k dalším metám (kdy sáhnout do kódu)</h3><p class='mut'>Počítají se unikátní vyhodnocené zápasy (sázky na stejný zápas jsou závislé) a počet dnů dat. Postup = pomalejší z obou podmínek.</p><div class='w'><table><tr><th>Meta</th><th>Stav</th><th>Co to odemkne</th><th>Odhad</th></tr>")
     for m in u["mety"]:
         procent = f"{m['podil'] * 100:.0f} %"
-        cil = f"{m['cil']} " + ("vyhodnocených celkem" if m["druh"] == "celkem" else "u sportu")
-        if m["druh"] == "celkem":
-            odhad = "splněno" if m["stav"] >= m["cil"] else (m["eta"] or "bez dat")
-            stav = f"{m['stav']} / {m['cil']} ({procent})<div class='bar'><i style='width:{m['podil'] * 100:.0f}%'></i></div>"
-        else:
-            dosazene = [sp for sp, v in m["sporty"].items() if v["n"] >= m["cil"]]
-            nej = sorted(((v["n"], sp, v["eta"]) for sp, v in m["sporty"].items() if v["n"] < m["cil"]), reverse=True)[:2]
-            stav = f"nejdál {m['stav']} / {m['cil']} ({procent})<div class='bar'><i style='width:{m['podil'] * 100:.0f}%'></i></div>" + (f"; splněno: {', '.join(dosazene)}" if dosazene else "")
-            odhad = ", ".join(f"{sp} ~{e}" for _, sp, e in nej if e) or ("splněno" if dosazene else "bez dat")
+        cil = f"{m['cil']} zápasů a {m['min_dny']} dní dat"
+        odhad = "splněno" if m["podil"] >= 1 else (m["eta"] or "bez dat")
+        stav = f"{m['stav']} zápasů, {m['dny']} dní ({procent})<div class='bar'><i style='width:{m['podil'] * 100:.0f}%'></i></div>"
         r.append(f"<tr><td>{_e(cil)}</td><td>{stav}</td><td>{_e(m['co'])}</td><td>{_e(odhad)}</td></tr>")
     r.append("</table></div>")
     return "".join(r)

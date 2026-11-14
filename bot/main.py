@@ -460,7 +460,10 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
     uceni = None
     try:
         from . import prehled
-        uceni = prehled.vypocti(datum)
+        uceni = prehled.vypocti(datum, cfg=cfg)
+        from . import overeni
+        for seznam in (univ, jist, fort):
+            overeni.oznac(seznam, uceni["segmenty"])
     except Exception as e:
         _log(f"⚠️ Přehled učení selhal: {type(e).__name__}: {e}")
     sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl, kalib, fort, univ, tik, jist, uceni, log_text)

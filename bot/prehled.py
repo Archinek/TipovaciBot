@@ -7,11 +7,13 @@ import datetime
 
 from . import ucici, vyhodnoceni
 
+# (unikátních vyhodnocených zápasů, dnů dat, co to odemkne). Sázky na stejný zápas jsou závislé, proto se počítají zápasy, ne sázky;
+# dny jsou potřeba, aby vzorek nebyl jen z jednoho dne (jeden den = jedna sada výsledků, náhoda).
 MILNIKY = [
-    (100, "celkem", "ověřit, že se vyhodnocuje správně, a doplnit trhy, které bot nerozpoznal"),
-    (300, "sport", "první orientační kalibrace daného sportu (úspěšnost vs. čekaná pravděpodobnost)"),
-    (1000, "sport", "smí se upravit pravděpodobnost podle kalibrace a ladit výběr sázek"),
-    (3000, "celkem", "ladit prahy (min. pravděpodobnost, pásma kurzu) a váhy modelu"),
+    (200, 3, "ověřit, že se vyhodnocuje správně, a doplnit trhy, které bot nerozpoznal"),
+    (600, 7, "první orientační kalibrace (úspěšnost vs. čekaná pravděpodobnost) u největších sportů"),
+    (2000, 14, "smí se upravit pravděpodobnost podle kalibrace a ladit výběr sázek"),
+    (6000, 30, "ladit prahy (min. pravděpodobnost, pásma kurzu) a váhy modelu"),
 ]
 KATEGORIE = [("valuedrop", "💧", "1) Value drop"), ("fild", "🎯", "2) Fildův tip"), ("vyber", "🛡️", "3) Tipsport od kurzu 1.30"), ("jistota", "🔒", "4) Nejjistější dne")]
 SKUPINY = {"valuedrop": "Value drop", "fild": "Fildův tip", "vyber": "Tipsport od 1.30", "jistota": "Nejjistější dne", "tiket": "Denní tiket", "pyramida": "Pyramida"}
@@ -41,7 +43,7 @@ def _pasmo(r):
     return next((f"{lo:g}–{hi:g}" for lo, hi in ucici.PASMA if lo <= k < hi), "jiné")
 
 
-def vypocti(datum, nohy=None, uc=None):
+def vypocti(datum, nohy=None, uc=None, cfg=None):
     """-> slovník pro report. datum = datum dnešního reportu (YYYY-MM-DD)."""
     nohy = nohy if nohy is not None else vyhodnoceni.nacti()
     uc = uc if uc is not None else ucici.vsechny_radky()
@@ -60,25 +62,22 @@ def vypocti(datum, nohy=None, uc=None):
     dny = {r["datum"] for r in h}
     tempo = len(h) / max(1, len(dny)) if h else 0.0
     dnes = datetime.date.fromisoformat(datum)
+    zapasy = {(r["zapas"], (r.get("start") or "")[:10]) for r in h}
+    n_zap, n_dny = len(zapasy), len(dny)
+    tempo_z = n_zap / max(1, n_dny)
     mety = []
-    for cil, druh, co in MILNIKY:
-        if druh == "celkem":
-            stav = len(h)
-            zbyva = max(0, cil - stav)
-            eta = None if zbyva == 0 else (dnes + datetime.timedelta(days=int(zbyva / tempo) + 1)).isoformat() if tempo else None
-            mety.append({"cil": cil, "druh": druh, "stav": stav, "podil": min(1.0, stav / cil), "eta": eta, "co": co, "sporty": {}})
-        else:
-            tempo_s = {}
-            for sp, s in sporty.items():
-                dd = {r["datum"] for r in h if (r["sport"] or "?") == sp}
-                tempo_s[sp] = s["n"] / max(1, len(dd))
-            st = {sp: {"n": s["n"], "eta": None if s["n"] >= cil or not tempo_s[sp] else (dnes + datetime.timedelta(days=int((cil - s["n"]) / tempo_s[sp]) + 1)).isoformat()}
-                  for sp, s in sporty.items()}
-            nej = max((s["n"] for s in sporty.values()), default=0)
-            mety.append({"cil": cil, "druh": druh, "stav": nej, "podil": min(1.0, nej / cil), "eta": None, "co": co, "sporty": st})
-    return {"datum": datum, "vcera_datum": vcera_d, "vcera": vcera_skupiny, "chyby": chyby, "celkem": _stat(vse), "sporty": sporty,
+    for cil, min_dny, co in MILNIKY:
+        podil = min(1.0, n_zap / cil, n_dny / min_dny)
+        eta = None
+        if podil < 1 and tempo_z:
+            za = max(int(max(0, cil - n_zap) / tempo_z) + 1, max(0, min_dny - n_dny))
+            eta = (dnes + datetime.timedelta(days=za)).isoformat()
+        mety.append({"cil": cil, "druh": "celkem", "stav": n_zap, "min_dny": min_dny, "dny": n_dny, "podil": podil, "eta": eta, "co": co, "sporty": {}})
+    from . import overeni
+    seg = overeni.vypocti(vse, cfg)
+    return {"segmenty": seg, "segmenty_top": overeni.tabulka(seg), "datum": datum, "vcera_datum": vcera_d, "vcera": vcera_skupiny, "chyby": chyby, "celkem": _stat(vse), "sporty": sporty,
             "skupiny": _podle(nohy, lambda r: SKUPINY.get(r["skupina"].split("+")[0], r["skupina"])),
-            "pasma": _podle(vse, _pasmo), "obdobi": obdobi(datum, vse), "vcera_kat": vcera_kategorie(datum, nohy), "dalsi_meta": dalsi_meta(mety), "zapsano": len(vse), "vyhodnoceno": len(h), "tempo_den": tempo, "mety": mety}
+            "pasma": _podle(vse, _pasmo), "obdobi": obdobi(datum, vse), "vcera_kat": vcera_kategorie(datum, nohy), "dalsi_meta": dalsi_meta(mety), "zapsano": len(vse), "vyhodnoceno": len(h), "tempo_den": tempo, "zapasu": n_zap, "dnu": n_dny, "mety": mety}
 
 
 def _radek(r):
@@ -132,8 +131,8 @@ def obdobi(datum, vse):
 
 
 def dalsi_meta(mety):
-    """Nejbližší nesplněná meta (pro koláč): podíl hotovo, název, odhad."""
+    """Nejbližší nesplněná meta (pro koláč): podíl hotovo, počet zápasů a dní, odhad."""
     for m in mety:
         if m["podil"] < 1:
-            return {"podil": m["podil"], "cil": m["cil"], "druh": m["druh"], "stav": m["stav"], "eta": m["eta"], "co": m["co"], "sporty": m["sporty"]}
-    return {"podil": 1.0, "cil": mety[-1]["cil"] if mety else 0, "druh": "celkem", "stav": mety[-1]["stav"] if mety else 0, "eta": None, "co": "všechny mety splněny", "sporty": {}}
+            return dict(m)
+    return dict(mety[-1], podil=1.0, co="všechny mety splněny") if mety else {"podil": 0.0, "cil": 0, "druh": "celkem", "stav": 0, "dny": 0, "min_dny": 0, "eta": None, "co": "", "sporty": {}}
