@@ -222,7 +222,8 @@ def vyhodnot_radky(rows, ted, log=print):
                         r["duvod"] = duvod
                     zbyva2.append((r, s))
             zbyva = zbyva2
-        log(f"   Fortuna: {len(fzap)} zápasů s výsledky, z toho vyhodnoceno {hotovo} sázek.")
+        nenalez = sum(1 for r, _ in cek if not (vf.najdi(idx, r["zapas"], r["start"]) if idx else None))
+        log(f"   Fortuna: {len(fzap)} zápasů s výsledky, z toho vyhodnoceno {hotovo} sázek; zápas nenalezen podle názvu a času u {nenalez} z {len(cek)}.")
         cek = zbyva
     except Exception as e:
         log(f"   ⚠️ Výsledky z Fortuny selhaly: {type(e).__name__}: {e}")
@@ -248,7 +249,21 @@ def vyhodnot_radky(rows, ted, log=print):
             r["vysledek"] = str(y)
             hotovo += 1
     log(f"   vyhodnoceno {hotovo} z {len(cek)} čekajících sázek (ostatní: výsledek nenalezen / trh nerozpoznán)")
+    _diagnostika(cek, log)
     return hotovo
+
+
+def _diagnostika(cek, log):
+    """Do logu: proč se sázky nevyhodnotily (počty podle důvodu + 4 příklady), ať je vidět, jestli drhne spárování zápasu nebo názvu trhu."""
+    zbyva = [r for r, _ in cek if r["vysledek"] == ""]
+    if not zbyva:
+        return
+    pocty = {}
+    for r in zbyva:
+        pocty[r["duvod"] or "bez důvodu"] = pocty.get(r["duvod"] or "bez důvodu", 0) + 1
+    log("   Nevyhodnoceno " + str(len(zbyva)) + ": " + "; ".join(f"{k} ×{v}" for k, v in sorted(pocty.items(), key=lambda x: -x[1])[:6]))
+    for r in zbyva[:4]:
+        log(f"     · {r['sport']} | {r['zapas']} | start {r['start']} | {r['trh']} | {r['vyber']} | {r['duvod'] or 'bez důvodu'}")
 
 
 def vyhodnot(ted, log=print):
