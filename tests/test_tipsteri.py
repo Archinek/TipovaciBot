@@ -715,3 +715,40 @@ def test_overeni_segmentu():
     assert all(v["stav"] == "málo dat" for v in krat.values())  # málo dní -> nic se neověřuje
     x = {"sport": "hokej", "trh": "Počet gólů: Více než 5.5", "vyber": "Více", "kurz": 2.0}
     overeni.oznac([x], seg); assert x["overeni"] == "ověřeno"
+
+
+def test_kapital_vklady_a_html(tmp_path):
+    import json, re, subprocess
+    from bot import kapital, report
+    r = [{"zapas": "A - B", "start": "2026-11-16T17:00:00+00:00", "sport": "fotbal", "trh": "Více než 1.5", "vyber": "", "kurz": 1.45, "p": 0.82, "overeni": "ověřeno"},
+         {"zapas": "C - D", "start": "2026-11-16T18:00:00+00:00", "sport": "hokej", "trh": "Výsledek", "vyber": "C", "kurz": 1.40, "p": 0.80, "overeni": "kandidát"},
+         {"zapas": "E - F", "start": "2026-11-16T19:00:00+00:00", "sport": "tenis", "trh": "Výsledek", "vyber": "E", "kurz": 1.30, "p": 0.85, "overeni": "málo dat"},
+         {"zapas": "G - H", "start": "2026-11-16T19:00:00+00:00", "sport": "fotbal", "trh": "Více než 0.5", "vyber": "", "kurz": 1.30, "p": 0.70, "overeni": "ověřeno"}]
+    o = kapital.vklady(6797.77, r)
+    assert o[0]["vklad"] > 0 and o[0]["vklad"] % 10 == 0
+    assert 0 < o[1]["vklad"] < o[0]["vklad"]                      # kandidát jen zlomkem
+    assert o[2]["vklad"] == 0 and o[2]["duvod"] == "segment není ověřen"
+    assert o[3]["vklad"] == 0 and "bez hrany" in o[3]["duvod"]    # p 0,70 při kurzu 1,30 hranu nemá
+    assert sum(x["vklad"] for x in o) <= 6797.77 * 0.08 + 10
+    assert len(kapital.kandidati(r, r)) == 4                      # duplicity se sloučí
+    h = kapital.sekce(r)
+    assert "id='kapIn'" in h and "<script src" not in h
+    if subprocess.run(["which", "node"], capture_output=True).returncode == 0:   # JS musí dát stejné vklady jako Python
+        dat, cfg = [re.search(rf"id='{i}'>(.*?)</script>", h, re.S).group(1) for i in ("kapDat", "kapCfg")]
+        js = ("const D=%s,C=%s,K=6797.77;" % (dat, cfg)) + re.search(r"function vypocti\(K\)\{.*?return o\}", kapital.JS, re.S).group(0) + "console.log(JSON.stringify(vypocti(K).map(b=>b.v)))"
+        v = json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, check=True).stdout)
+        assert v == [x["vklad"] for x in o]
+
+
+def test_tip130_max_na_den_a_filtr():
+    import re, subprocess
+    from bot import report
+    univ = [{"zapas": f"T{i} - U{i}", "start": f"2026-11-{16 + i % 2}T{10 + i % 8:02d}:00:00+00:00", "sport": "fotbal", "trh": "Více než 0.5", "vyber": "",
+             "kurz": 1.35, "kurz_fortuna": 1.35, "p": 0.60 + i / 100, "sazej_od": 1.3, "overeni": "málo dat"} for i in range(30)]
+    v = report.vyber_tip130(univ, "Europe/Prague", {"report": {"tip130_max_na_den": 10}})
+    assert len(v) == 20 and all(v[i]["p"] >= v[i + 1]["p"] for i in range(19))
+    for den in ("2026-11-16", "2026-11-17"):
+        assert sum(report._mistni(c["start"], "Europe/Prague")[:10] == den for c in v) == 10
+    h = report._filtr130(v, "Europe/Prague") + "<div id='t130'>" + report._kompakt(v, "Europe/Prague", "x") + "</div>"
+    assert "data-d='2026-11-16'" in h and "data-d='2026-11-17'" in h and h.count("data-s='") == 20
+    assert "f130" in __import__("bot.report_prehled", fromlist=["x"]).SCRIPT

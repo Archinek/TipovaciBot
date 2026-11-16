@@ -224,6 +224,7 @@ tikety:                  # denní tiket na kurz ~2.00 a Pyramida (skládání z 
 
 # Uspořádání reportu (bot/report.py): sekce a jejich prahy.
 report:
+  tip130_max_na_den: 10      # tabulka Tipsport 1.30+: nejvýš tolik nejpravděpodobnějších příležitostí na každý den
   value_drop_max: 5          # Value drop: největší hrana modelu proti trhu (tam, kde se kurz nejspíš sníží)
   fild_min_kurz: 1.80        # Fildův tip: statistické trhy (rohy, střely, fauly, karty) s kurzem od ...
   fild_max: 5
@@ -247,3 +248,14 @@ overeni:
   min_dnu: 7           # dnů dat celkem (bez nich není ochranné období)
   jistota_z: 1.64      # jednostranně ~95 %
   min_holdout: 40      # zápasů na novějším (neobjevném) období
+
+kapital:                      # doporučené vklady podle vlastního kapitálu (sekce "Kapitál a vklady" v reportu)
+  srazka_tipsport: 0.12       # odhad: kurz Tipsport ≈ 1 + (kurz Fortuna − 1) × (1 − srážka)
+  odecet_p: 0.02              # bezpečnostní odečet od pravděpodobnosti (odhad p je vždy nejistý)
+  min_hrana: 0.02             # pod touto hranou po odečtu se nesází
+  kelly_frakce: 0.25          # čtvrtinový Kelly
+  max_na_tip: 0.02            # strop vkladu na jeden zápas (podíl kapitálu)
+  max_denne: 0.08             # strop součtu vkladů za den
+  koef_kandidat: 0.25         # kandidát (prošel jen objevným obdobím) = čtvrtina vkladu, jen na zkoušku
+  zaokrouhlit: 10             # Kč
+  min_vklad: 20               # Kč, pod tím se nesází

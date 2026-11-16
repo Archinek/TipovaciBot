@@ -3,7 +3,7 @@ import html
 import json
 import urllib.request
 from zoneinfo import ZoneInfo
-from . import config, report_prehled
+from . import config, kapital, report_prehled
 
 CSS = """
 :root{color-scheme:dark;--bg:#0b0f14;--card:#141a22;--card2:#1a222c;--txt:#e8eef5;--mut:#8f9bab;--line:#2a3441;--acc:#5aa9ff;--ok:#34c76b;--bad:#ff5c57;--warn:#e0a82e;--box:#14233a;--r:12px}
@@ -231,6 +231,30 @@ def _tab_univ(univ, zona):
     return "".join(r)
 
 
+def _mistni(iso, zona):
+    return datetime.datetime.fromisoformat(iso).astimezone(ZoneInfo(zona)).strftime("%Y-%m-%d %H:%M")
+
+
+def vyber_tip130(univ, zona, cfg=None):
+    """Tabulka 1.30+: nejvýš `tip130_max_na_den` příležitostí na místní kalendářní den, nejpravděpodobnější napřed."""
+    n = int(((cfg or {}).get("report") or {}).get("tip130_max_na_den", 10))
+    dny = {}
+    for c in sorted(univ or [], key=lambda c: -c["p"]):
+        d = dny.setdefault(_mistni(c["start"], zona)[:10], [])
+        if len(d) < n: d.append(c)
+    return sorted((c for d in dny.values() for c in d), key=lambda c: -c["p"])
+
+
+_FILTR = ("<div class='filtr' id='f130'><b>Zobrazit:</b> {chips} <label>od <input type='time' id='f130od' value='00:00'></label> <label>do <input type='time' id='f130do' value='23:59'></label>"
+          " <span class='mut' id='f130n'></span></div>")
+
+
+def _filtr130(radky, zona):
+    dny = sorted({_mistni(c["start"], zona)[:10] for c in radky})
+    chips = "<button class='chip on' data-d=''>Vše</button>" + "".join(f"<button class='chip' data-d='{d}'>{int(d[8:])}.{int(d[5:7])}.</button>" for d in dny)
+    return _FILTR.format(chips=chips)
+
+
 def _kc(v):
     return "–" if v is None else f"{float(v):.2f}"
 
@@ -263,7 +287,7 @@ def _kompakt(radky, zona, prazdno):
         an = _prozaicky(x.get("analyza"))
         kl = " class='klik'" if an else ""
         sip = "<br><span class='sipka'>▼ rozbor</span>" if an else ""
-        r.append(f"<tr{kl}><td class='kdy'>{_cas(x['start'], zona)}</td>"
+        r.append(f"<tr{kl} data-s='{_mistni(x['start'], zona)}'><td class='kdy'>{_cas(x['start'], zona)}</td>"
                  f"<td><span class='m'>{_e(x['zapas'])}</span><br><span class='mut'>{_e(x.get('sport') or '')} {_e(x.get('liga') or '')}</span><br>{_e(x['trh'])}{(': <b>' + _e(x['vyber']) + '</b>') if x.get('vyber') else ''}{sip}</td>"
                  f"<td>{_kc(x['kurz'])}</td><td><b>{_kc(x.get('sazej_od'))}+</b></td>"
                  f"<td>{_pil_p(x['p'])}{hr}{_zdroj_p(x)}</td><td>{_pil_d(x.get('duvera'))}</td></tr>")
@@ -317,6 +341,7 @@ def _dosad_cas(text, zona):
 
 def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=None, fort=None, univ=None, tik=None, jist=None, cfg=None, uceni=None, model_text=""):
     vc = f"<div class='box'><b>Včera:</b> {_e(vcera)}</div>" if vcera else ""
+    univ = vyber_tip130(univ, zona, cfg)
     vd, fild = vyber_value_drop(fort, cfg), vyber_fild(fort, cfg)
     h2h = ("<p><b>H2H (srovnání knih):</b></p>" + _tab_picks(picks, zona)) if picks else ""
     prehled = (
@@ -324,14 +349,15 @@ def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=
         + _kompakt([_z_fort(f) for f in vd], zona, "Dnes žádný kandidát s dostatečnou hranou.") + h2h
         + "<h2 id='fild'>🎯 2) Fildův tip</h2><p class='mut'>Statistické trhy (rohy, střely, fauly, karty) s kurzem od %.2f; to, co se skutečně hraje.</p>" % float(((cfg or {}).get("report") or {}).get("fild_min_kurz", 1.80))
         + _kompakt([_z_fort(f) for f in fild], zona, "Dnes žádná statistická příležitost s tak vysokým kurzem a hranou.")
-        + "<h2 id='tip'>🛡️ 3) Tipsport od kurzu 1.30 (z celé nabídky)</h2><p class='mut'>Seřazeno od nejvyšší pravděpodobnosti. Kliknutím na řádek se rozbalí rozbor zápasu. Pravděpodobnost je u sportů bez modelu jen férový trh.</p>"
-        + _kompakt(sorted(univ or [], key=lambda c: -c["p"]), zona, "Žádný kandidát.")
+        + "<h2 id='tip'>🛡️ 3) Tipsport od kurzu 1.30 (z celé nabídky)</h2><p class='mut'>Nejvýš %d nejpravděpodobnějších na každý den, seřazeno od nejvyšší pravděpodobnosti. Kliknutím na řádek se rozbalí rozbor zápasu, tlačítky a časem lze filtrovat den a hodiny. Pravděpodobnost je u sportů bez modelu jen férový trh.</p>" % int(((cfg or {}).get("report") or {}).get("tip130_max_na_den", 10))
+        + (_filtr130(univ, zona) if univ else "") + "<div id='t130'>" + _kompakt(univ, zona, "Žádný kandidát.") + "</div>"
         + "<h2 id='jist'>🔒 4) Nejjistější dne (libovolný kurz)</h2><p class='mut'>Nejvyšší pravděpodobnost z celé dnešní nabídky, ověřená rozborem. Žádná sázka není stoprocentní.</p>"
         + _kompakt(jist, zona, "Dnes žádná sázka nepřekročila práh jistoty.")
         + "<h2 id='den'>🎟️ 5) Denní tiket na kurz ~2.00</h2>" + _tab_denni(tik, zona))
+    kap = kapital.sekce(kapital.kandidati(univ, jist, [_z_fort(f) for f in vd + fild]), cfg)
     sekce = [("fort", f) for f in vd + fild] + [("univ", c) for c in (univ or [])] + [("univ", c) for c in (jist or [])]
     analyzy = "".join(_dosad_cas("".join(_analyzy(sekce)), zona)) or "<p class='mut'>Dnes bez rozborů.</p>"
-    nav = ("<nav><a href='#vcera'>Včera</a><a href='#vd'>Value drop</a><a href='#fild'>Fildův tip</a><a href='#tip'>Tipsport 1.30+</a><a href='#jist'>Nejjistější</a>"
+    nav = ("<nav><a href='#vcera'>Včera</a><a href='#kap'>Kapitál</a><a href='#vd'>Value drop</a><a href='#fild'>Fildův tip</a><a href='#tip'>Tipsport 1.30+</a><a href='#jist'>Nejjistější</a>"
            "<a href='#den'>Denní tiket</a><a href='#ana'>Analýzy</a><a href='#uc'>Učení</a><a href='#pyr'>Pyramida</a></nav>")
     kpi = ("<div class='kpi'>" + "".join(f"<div><b>{n}</b><span>{t}</span></div>" for n, t in (
         (len(vd), "Value drop"), (len(fild), "Fildův tip"), (len(univ or []), "Tipsport 1.30+"), (len(jist or []), "Nejjistější dne"),
@@ -340,7 +366,7 @@ def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=
              f"<details><summary><b>Doplňkové trhy (model)</b></summary>{_tab_doplnkove(dopl, kalib, zona)}</details>"
              f"<details><summary><b>Dosavadní bilance</b></summary>{_tab_metriky(celkem)}</details>")
     return (f"<!DOCTYPE html><html lang='cs'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>TIPOVACI_BOT</title><style>{CSS}{report_prehled.CSS}</style></head>"
-            f"<body><div class='c'><a href='../index.html'>⬅ Archiv</a><h1>Ranní report {datum}</h1>{vc}{nav}{report_prehled.horni(uceni)}{report_prehled.vcera(uceni)}{prehled}<h2 id='ana'>📝 Analýzy zápasů</h2>{analyzy}{dalsi}"
+            f"<body><div class='c'><a href='../index.html'>⬅ Archiv</a><h1>Ranní report {datum}</h1>{vc}{nav}{report_prehled.horni(uceni)}{report_prehled.vcera(uceni)}{kap}{prehled}<h2 id='ana'>📝 Analýzy zápasů</h2>{analyzy}{dalsi}"
             f"<h2 id='pyr'>🔺 Pyramida: tiket pro každé kolo</h2>{_tab_pyramida(tik, zona)}</div>{report_prehled.SCRIPT}</body></html>")
 
 def _r_stat(n, s):

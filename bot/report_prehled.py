@@ -24,6 +24,8 @@ CSS = """
 .v{display:inline-block;padding:3px 10px;border-radius:999px;font-weight:700;font-size:12.5px;white-space:nowrap}
 .vw{background:#12301f;color:var(--ok);border:1px solid #1f5a36}.vl{background:#341616;color:var(--bad);border:1px solid #5e2626}.vv{background:#2a2a2a;color:var(--mut);border:1px solid #444}.vp{background:#14233a;color:var(--acc);border:1px solid #28466f}
 td .m{color:var(--acc);font-weight:600}td .sp{color:var(--mut);font-size:12px}
+tr.skryty,tr.skryty+tr.roz{display:none!important}
+.filtr{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px}.filtr .chip{all:unset;cursor:pointer;padding:5px 14px;border-radius:999px;border:1px solid #2a3441;color:var(--mut)}.filtr .chip.on{background:var(--acc);color:#06121f;font-weight:700;border-color:var(--acc)}.filtr input{background:#10161d;color:inherit;border:1px solid #2a3441;border-radius:6px;padding:3px 6px}
 tr.klik{cursor:pointer}tr.klik td:first-child{border-left:3px solid var(--acc)}tr.roz{display:none}tr.roz.on{display:table-row}tr.roz td{background:#10161d;padding:4px 18px 14px;white-space:normal}
 .kdy{white-space:nowrap;font-weight:600}.sipka{color:var(--acc);font-size:12px}
 """
@@ -36,6 +38,10 @@ document.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function
  document.querySelectorAll('.roi div[data-k]').forEach(function(p){p.style.opacity=p.dataset.k===b.dataset.k?1:.55});};});
 document.querySelectorAll('tr.klik').forEach(function(r){r.onclick=function(e){if(e.target.tagName==='A')return;var n=r.nextElementSibling;n.classList.toggle('on');
  var s=r.querySelector('.sipka');if(s)s.textContent=n.classList.contains('on')?'▲ skrýt rozbor':'▼ rozbor';};});
+(function(){var f=document.getElementById('f130');if(!f)return;var rows=document.querySelectorAll('#t130 tr[data-s]'),od=document.getElementById('f130od'),do_=document.getElementById('f130do'),n=document.getElementById('f130n'),den='';
+ function ap(){var v=0;rows.forEach(function(r){var d=r.dataset.s.slice(0,10),t=r.dataset.s.slice(11,16),ok=(!den||d===den)&&t>=(od.value||'00:00')&&t<=(do_.value||'23:59');r.classList.toggle('skryty',!ok);if(ok)v++});n.textContent='Zobrazeno '+v+' z '+rows.length;}
+ f.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){den=b.dataset.d;f.querySelectorAll('.chip').forEach(function(x){x.classList.toggle('on',x===b)});ap()}});
+ od.oninput=ap;do_.oninput=ap;ap()})();
 </script>"""
 
 NAZVY = {"vcera": "Včera", "7": "7 dní", "30": "30 dní", "vse": "Celkem"}
