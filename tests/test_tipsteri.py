@@ -756,17 +756,23 @@ def test_tip130_max_na_den_a_filtr():
 
 def test_pyramida_postup_a_cisla():
     from bot import cisla, pyramida, report_prehled
-    assert cisla.tis(40425) == "40 425" and cisla.cz(6797.77) == "6 797,77" and cisla.kc(1797) == "1 797 Kč"
-    nohy = [{"id": f"n{i}", "vysledek": v} for i, v in enumerate(["1", "1", "1", "0", ""])]
-    log = [{"datum": "2026-11-12", "klic": "pyr1", "kurz": 1.2, "p": 0.8, "prah": 1.1, "noze": ["n0"]},
-           {"datum": "2026-11-12", "klic": "pyr2", "kurz": 2.1, "p": 0.4, "prah": 2.0, "noze": ["n3"]},
-           {"datum": "2026-11-13", "klic": "pyr2", "kurz": 2.1, "p": 0.4, "prah": 2.0, "noze": ["n1"]},
-           {"datum": "2026-11-14", "klic": "pyr3", "kurz": 3.1, "p": 0.3, "prah": 3.0, "noze": ["n3"]},
-           {"datum": "2026-11-15", "klic": "pyr1", "kurz": 1.2, "p": 0.8, "prah": 1.1, "noze": ["n4"]}]
+    assert cisla.tis(40425) == "40\u00a0425" and cisla.cz(6797.77) == "6\u00a0797,77" and cisla.kc(1797) == "1\u00a0797\u00a0Kč"
+    nohy = [{"id": "w1", "vysledek": "1", "kurz": "1.2"}, {"id": "w2", "vysledek": "1", "kurz": "2.1"}, {"id": "l", "vysledek": "0", "kurz": "3"},
+            {"id": "v", "vysledek": "V", "kurz": "1.5"}, {"id": "c", "vysledek": "", "kurz": "1.3"}]
+
+    def tk(d, k, noze, kurz=2.2, prah=None):
+        return {"datum": d, "klic": f"pyr{k}", "kurz": kurz, "p": 0.5, "prah": prah or float(k), "noze": noze}
+    # den 1: kola 1 a 2 vyhrána, kolo 3 prohra (jedna Pyramida, kola 1-3 za den) -> dosaženo 2
+    # den 2: kolo 1 vyhrán, kolo 2 jen díky zrušené noze nedosáhne kurzu -> život; den 3: kolo 2 čeká
+    log = [tk("2026-11-12", 1, ["w1"], 1.2, 1.1), tk("2026-11-12", 2, ["w2"], 2.1, 2.0), tk("2026-11-12", 3, ["l"], 3.0, 3.0),
+           tk("2026-11-13", 1, ["w1"], 1.2, 1.1), tk("2026-11-13", 2, ["w2", "v"], 3.15, 2.5), tk("2026-11-14", 2, ["c"], 2.1, 2.0)]
     p = pyramida.postup(log, nohy)
-    assert p["behy"] == [{"od": "2026-11-12", "do": "2026-11-14", "dosazeno": 2, "padl_na": 3, "stav": "prohra"}]
-    assert p["aktualni"]["kolo"] == 1 and p["aktualni"]["ceka"] and p["nejlepsi"] == 2
-    assert p["kola"][0]["n"] == 1 and p["kola"][0]["vyhry"] == 1
-    assert pyramida.postup(log, nohy, {"pyramida": {"pri_prohre": "o_kolo_zpet"}})["behy"] == []
+    assert p["behy"] == [{"od": "2026-11-12", "do": "2026-11-12", "dosazeno": 2, "padl_na": 3, "stav": "prohra"}]
+    a = p["aktualni"]
+    assert a["kolo"] == 2 and a["zivot"] is False and a["ceka"] and p["nejlepsi"] == 2
+    assert p["kola"][0]["n"] == 2 and p["kola"][0]["vyhry"] == 2 and p["kola"][1]["cena"] is None and p["kola"][3]["cena"] == "50 Netů"
+    # kolo 4 se za jeden den nepřidá k předchozím (jen kola 1-3 za den)
+    log2 = [tk("2026-11-12", k, ["w1"], 1.2, float(k)) for k in range(1, 6)]
+    assert pyramida.postup(log2, nohy)["aktualni"]["kolo"] == 4
     h = report_prehled.pyramida_postup({"pyramida": p})
-    assert "kolo 1 z 10" in h and "prohra v 3. kole" in h and "class='pyr'" in h
+    assert "kolo <b>2 z 10</b>" in h and "prohra v 3. kole" in h and "class='pyr'" in h and "50 Netů" in h

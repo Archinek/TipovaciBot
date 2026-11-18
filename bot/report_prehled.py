@@ -187,31 +187,36 @@ def vcera(u):
 
 
 def pyramida_postup(u):
-    """Postup bota v Pyramidě: 10 kol, aktuální kolo, historie her a úspěšnost po kolech podle výsledků zalogovaných tiketů."""
+    """Postup bota v Pyramidě (pravidla Tipsportu): 10 kol, aktivní Pyramidy, historie her, úspěšnost po kolech."""
     p = (u or {}).get("pyramida")
     if not p or not p.get("dnu"):
         return "<p class='mut'>Zatím nejsou žádná data o tiketech Pyramidy.</p>"
-    a, kolo = p["aktualni"], p["aktualni"]["kolo"]
-    boxy = "".join(f"<div class='{'ok' if k < kolo else 'cur' if k == kolo else ''}'>{k}<small>{'✔' if k < kolo else 'teď' if k == kolo else ''}</small></div>" for k in range(1, 11))
-    ceka = ""
-    if a.get("uvizl"):
-        ceka = f" ⚠ Tiket kola {kolo} z {_datum_cz(a['ceka_od'])} se nepodařilo vyhodnotit (některý zápas bez výsledku), hra proto stojí. Opraví se po doplnění výsledků."
-    elif a.get("ceka"):
-        ceka = " Tiket aktuálního kola ještě není vyhodnocený."
-    pravidlo = "prohra hru ukončí a další den se začíná od 1. kola" if p["pravidlo"] == "konec" else "prohra vrací o jedno kolo zpět"
-    head = (f"<p>Aktuální hra: <b>kolo {kolo} z 10</b>{(' od ' + _datum_cz(a['od'])) if a.get('od') else ''}, série <b>{a['serie']}</b> výher v řadě.{ceka} "
-            f"Nejdál bot došel do <b>{p['nejlepsi']}. kola</b>, vyhraných Pyramid (10 kol): <b>{p['vyhrano']}</b>.</p>")
+    bloky = []
+    for n, a in enumerate(p["aktivni"], start=1):
+        kolo = a["kolo"]
+        boxy = "".join(f"<div class='{'ok' if k < kolo else 'cur' if k == kolo else ''}'>{k}<small>{'✔' if k < kolo else 'teď' if k == kolo else ''}</small></div>" for k in range(1, 11))
+        info = ""
+        if a.get("uvizl"):
+            info = f" ⚠ Tiket kola {kolo} z {_datum_cz(a['ceka_od'])} se nepodařilo vyhodnotit (některý zápas bez výsledku), hra proto stojí."
+        elif a.get("ceka"):
+            info = " Tiket aktuálního kola ještě není vyhodnocený."
+        zivot = "život ještě je" if a["zivot"] else "život už spotřebován (zrušená noha)"
+        zb = f", do konce limitu zbývá {a['zbyva_dni']} z 42 dní" if a.get("zbyva_dni") is not None else ""
+        od = f" od {_datum_cz(a['od'])}" if a.get("od") else " (ještě nezačala)"
+        bloky.append(f"<div class='pyr'>{boxy}</div><p><b>Pyramida {n}:</b> kolo <b>{kolo} z 10</b>{od}, série {a['serie']} výher, {zivot}{zb}.{info}</p>")
+    head = f"<p>Nejdál bot došel do <b>{p['nejlepsi']}. kola</b>, vyhraných Pyramid (10 kol): <b>{p['vyhrano']}</b>.</p>"
     behy = ""
     if p["behy"]:
-        behy = ("<div class='w'><table><tr><th>Hra</th><th>Dosažené kolo</th><th>Konec</th></tr>" + "".join(
-            f"<tr><td>{_datum_cz(b['od'])} až {_datum_cz(b['do'])}</td><td><b>{b['dosazeno']}</b> z 10</td><td>{'🏆 vyhráno' if b['stav'] == 'vyhráno' else 'prohra v ' + str(b['padl_na']) + '. kole'}</td></tr>" for b in p["behy"]) + "</table></div>")
-    r = ["<div class='w'><table><tr><th>Kolo</th><th>Min. kurz</th><th>Vyhodnoceno</th><th>Vyšlo</th><th>Úspěšnost</th><th>Čekáno (model/trh)</th><th>Šance dojít až sem*</th></tr>"]
+        behy = ("<div class='w'><table><tr><th>Ukončená hra</th><th>Dosažené kolo</th><th>Konec</th></tr>" + "".join(
+            f"<tr><td>{_datum_cz(b['od'])} až {_datum_cz(b['do'])}</td><td><b>{b['dosazeno']}</b> z 10</td><td>{'🏆 vyhráno' if b['stav'] == 'vyhráno' else b['stav'] + ' v ' + str(b['padl_na']) + '. kole'}</td></tr>" for b in p["behy"]) + "</table></div>")
+    r = ["<div class='w'><table><tr><th>Kolo</th><th>Min. kurz</th><th>Cena za kolo</th><th>Vyhodnoceno</th><th>Vyšlo</th><th>Úspěšnost</th><th>Čekáno (model/trh)</th><th>Šance dojít až sem*</th></tr>"]
     for k, sa in zip(p["kola"], p["sance"]):
         us = _pct(k["uspesnost"]) if k["uspesnost"] is not None else "–"
         ce = _pct(k["cekano"]) if k["cekano"] is not None else "–"
-        r.append(f"<tr><td><b>{k['kolo']}</b></td><td>{(format(k['prah'], '.2f') if k['prah'] else '–')}</td><td>{tis(k['n'])}</td><td>{tis(k['vyhry'])}</td><td>{us}</td><td>{ce}</td><td>{_pct(sa, 1)}</td></tr>")
+        r.append(f"<tr><td><b>{k['kolo']}</b></td><td>{(format(k['prah'], '.2f') if k['prah'] else '–')}</td><td>{_e(k.get('cena') or '–')}</td><td>{tis(k['n'])}</td><td>{tis(k['vyhry'])}</td><td>{us}</td><td>{ce}</td><td>{_pct(sa, 1)}</td></tr>")
     r.append("</table></div>")
-    return (f"<div class='card'><h4>Postup bota v Pyramidě</h4><div class='pyr'>{boxy}</div>{head}{behy}</div>"
+    return (f"<div class='card'><h4>Postup bota v Pyramidě</h4>{''.join(bloky)}{head}{behy}</div>"
             "<details open><summary><b>Úspěšnost po kolech</b></summary>" + "".join(r) + "</details>"
-            f"<p class='mut'>* Součin čekaných pravděpodobností kol 1 až N podle modelu a trhu (ne zaručená šance). Simulace: bot hraje každý den hlavní tiket aktuálního kola, výhra posune dál, {pravidlo}. "
-            f"Zatím {p['dnu']} dní dat, takže čísla u vyšších kol jsou jen z pár tiketů a o schopnosti bota moc neříkají. Pravidlo jde změnit v sporty.yaml (pyramida: pri_prohre).</p>")
+            "<p class='mut'>* Součin čekaných pravděpodobností kol 1 až N podle modelu a trhu (ne zaručená šance). "
+            "Pravidla Tipsportu: 10 kol s min. kurzem 1,1 až 10, prohra Pyramidu ukončí (jeden život jen při zrušené příležitosti), nejvýš jeden tiket denně (kola 1–3 lze za jeden den), na dokončení 42 dní, najednou až 5 Pyramid. "
+            f"Simulace hraje {p['soubezne']} Pyramid{'u' if p['soubezne'] == 1 else 'y'} najednou (sporty.yaml: pyramida.soubezne) hlavními tikety kol. Zatím {p['dnu']} dní dat, takže čísla u vyšších kol vycházejí z pár tiketů.</p>")
