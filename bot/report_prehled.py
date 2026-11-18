@@ -1,6 +1,7 @@
 """Horní část reportu: statický řádek, koláč do další úpravy modelu, úspěšnost podle období a sportů, a včerejší vyhodnocení po kategoriích."""
 import datetime
 import html
+from .cisla import tis
 
 CSS = """
 .strip{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;font-size:14px;margin:12px 0}
@@ -26,6 +27,8 @@ CSS = """
 td .m{color:var(--acc);font-weight:600}td .sp{color:var(--mut);font-size:12px}
 tr.skryty,tr.skryty+tr.roz{display:none!important}
 .filtr{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px}.filtr .chip{all:unset;cursor:pointer;padding:5px 14px;border-radius:999px;border:1px solid #2a3441;color:var(--mut)}.filtr .chip.on{background:var(--acc);color:#06121f;font-weight:700;border-color:var(--acc)}.filtr input{background:#10161d;color:inherit;border:1px solid #2a3441;border-radius:6px;padding:3px 6px}
+.pyr{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.pyr div{min-width:44px;text-align:center;padding:8px 6px;border-radius:8px;border:1px solid #2a3441;color:var(--mut);font-weight:700}
+.pyr .ok{background:#16351f;border-color:#34c76b;color:#34c76b}.pyr .cur{background:var(--acc);color:#06121f;border-color:var(--acc)}.pyr small{display:block;font-weight:400;font-size:10px}
 tr.klik{cursor:pointer}tr.klik td:first-child{border-left:3px solid var(--acc)}tr.roz{display:none}tr.roz.on{display:table-row}tr.roz td{background:#10161d;padding:4px 18px 14px;white-space:normal}
 .kdy{white-space:nowrap;font-weight:600}.sipka{color:var(--acc);font-size:12px}
 """
@@ -78,7 +81,7 @@ def _kol(m, nazev, aktualni):
     pz, pd = min(1.0, m["stav"] / m["cil"]), min(1.0, m["dny"] / m["min_dny"])
     eta = "splněno" if p >= 1 else (m["eta"] or "bez dat")
     return (f"<div class='kol{' akt' if aktualni else ''}'><div class='kn'>{_e(nazev)}</div>{svg}"
-            f"<div class='kz'>Zápasů <b>{m['stav']} / {m['cil']}</b></div><div class='bar'><i style='width:{pz * 100:.0f}%'></i></div>"
+            f"<div class='kz'>Zápasů <b>{tis(m['stav'])} / {tis(m['cil'])}</b></div><div class='bar'><i style='width:{pz * 100:.0f}%'></i></div>"
             f"<div class='kz'>Dnů dat <b>{m['dny']} / {m['min_dny']}</b></div><div class='bar'><i style='width:{pd * 100:.0f}%'></i></div>"
             f"<div class='kz'>Odhad: <b>{_e(eta)}</b></div><div class='mut'>{_e(m['co'])}</div></div>")
 
@@ -99,13 +102,13 @@ def _panel(k, o, aktivni):
     rozdil = (s["uspesnost"] - s["cekano"]) * 100
     bars = ""
     for nazev, v in sorted(sp.items(), key=lambda x: -x[1]["n"]):
-        bars += (f"<div class='sr'><div class='sn'>{_e(nazev.capitalize())} <span class='mut'>· {v['n']} sázek</span></div>"
+        bars += (f"<div class='sr'><div class='sn'>{_e(nazev.capitalize())} <span class='mut'>· {tis(v['n'])} sázek</span></div>"
                  f"<div class='bar2'><i style='width:{v['uspesnost'] * 100:.0f}%'></i><b style='left:{v['cekano'] * 100:.0f}%'></b></div>"
                  f"<div class='sv'><b>{_pct(v['uspesnost'])}</b> čekáno {_pct(v['cekano'])} <span class='{_tr(v['uspesnost'] - v['cekano'])}'>{(v['uspesnost'] - v['cekano']) * 100:+.1f} b.</span> "
                  f"ROI <span class='{_tr(v['roi'])}'>{_sg(v['roi'])}</span></div></div>")
     return (f"<div class='per{on}' data-k='{k}'><div class='card'><h4>Úspěšnost na celé nabídce · {NAZVY[k].lower()}</h4>"
             f"<div class='big'>{_pct(s['uspesnost'], 1)} <small>čekáno {_pct(s['cekano'], 1)} · rozdíl {rozdil:+.1f} b.</small></div>"
-            f"<div class='kp'><div><span>Vyšlo</span><b>{s['vyslo']} z {s['n']}</b></div><div><span>ROI (flat)</span><b class='{_tr(s['roi'])}'>{_sg(s['roi'])}</b></div><div><span>Sportů</span><b>{len(sp)}</b></div></div>"
+            f"<div class='kp'><div><span>Vyšlo</span><b>{tis(s['vyslo'])} z {tis(s['n'])}</b></div><div><span>ROI (flat)</span><b class='{_tr(s['roi'])}'>{_sg(s['roi'])}</b></div><div><span>Sportů</span><b>{len(sp)}</b></div></div>"
             f"<h4>Rozpad podle sportů</h4><div class='mut' style='margin:-4px 0 6px'>Modrá = skutečná úspěšnost, žlutá čárka = čekaná z trhu</div>{bars}</div></div>")
 
 
@@ -117,8 +120,8 @@ def horni(u):
     roi = "".join(f"<div data-k='{k}' style='opacity:{1 if k == '7' else .55}'><span class='s'>{NAZVY[k].lower() if k != 'vse' else 'celkem'}</span>"
                   f"<b class='{_tr(ob[k]['stat']['roi']) if ob[k]['stat'].get('n') else ''}'>{_sg(ob[k]['stat']['roi']) if ob[k]['stat'].get('n') else '–'}</b></div>" for k in ("vcera", "7", "30", "vse"))
     m = u["dalsi_meta"]
-    meta = f"{m['cil']} zápasů a {m['min_dny']} dní"
-    strip = (f"<div class='strip'><div><span class='s'>Zapsáno</span><b>{u['zapsano']}</b></div><div><span class='s'>Vyhodnoceno</span><b>{u['vyhodnoceno']}</b></div>"
+    meta = f"{tis(m['cil'])} zápasů a {m['min_dny']} dní"
+    strip = (f"<div class='strip'><div><span class='s'>Zapsáno</span><b>{tis(u['zapsano'])}</b></div><div><span class='s'>Vyhodnoceno</span><b>{tis(u['vyhodnoceno'])}</b></div><div><span class='s'>Pyramida</span><b>{('kolo ' + str(u['pyramida']['aktualni']['kolo']) + ' z 10') if u.get('pyramida') and u['pyramida'].get('dnu') else '–'}</b></div>"
              f"<div><span class='s'>Úspěšnost (celkem)</span><b>{_pct(cel['uspesnost'], 1) if cel.get('n') else '–'}</b></div><div class='sep'></div>"
              f"<div><span class='s'>ROI podle období</span><div class='roi'>{roi}</div></div><div class='sep'></div><div><span class='s'>Další meta</span><b>{_e(meta)}</b></div></div>")
     tabs = "<div class='tabs'>" + "".join(f"<button data-k='{k}'{' class=on' if k == '7' else ''}>{NAZVY[k]}</button>" for k in ("vcera", "7", "30", "vse")) + "</div>"
@@ -143,8 +146,8 @@ def _vysl(r, duvod=""):
 
 def _chips(s):
     if not s["n"]:
-        return f"<span class='chip'>zatím <b>nevyhodnoceno</b> ({s['celkem']})</span>"
-    return (f"<span class='chip'><b>{s['vyslo']}</b> z <b>{s['n']}</b> vyšlo</span><span class='chip'>úspěšnost <b>{_pct(s['uspesnost'])}</b></span>"
+        return f"<span class='chip'>zatím <b>nevyhodnoceno</b> ({tis(s['celkem'])})</span>"
+    return (f"<span class='chip'><b>{tis(s['vyslo'])}</b> z <b>{tis(s['n'])}</b> vyšlo</span><span class='chip'>úspěšnost <b>{_pct(s['uspesnost'])}</b></span>"
             f"<span class='chip'>ROI <b class='{_tr(s['roi'])}'>{_sg(s['roi'])}</b></span>")
 
 
@@ -181,3 +184,34 @@ def vcera(u):
             o.append(f"<tr><td><b>{_e(t['nazev'])}</b></td><td>{noze}</td><td>{kurz}</td><td>{p}</td><td>{_vysl(t['vysledek'], pocet)}</td></tr>")
         o.append("</table></div>")
     return "".join(o)
+
+
+def pyramida_postup(u):
+    """Postup bota v Pyramidě: 10 kol, aktuální kolo, historie her a úspěšnost po kolech podle výsledků zalogovaných tiketů."""
+    p = (u or {}).get("pyramida")
+    if not p or not p.get("dnu"):
+        return "<p class='mut'>Zatím nejsou žádná data o tiketech Pyramidy.</p>"
+    a, kolo = p["aktualni"], p["aktualni"]["kolo"]
+    boxy = "".join(f"<div class='{'ok' if k < kolo else 'cur' if k == kolo else ''}'>{k}<small>{'✔' if k < kolo else 'teď' if k == kolo else ''}</small></div>" for k in range(1, 11))
+    ceka = ""
+    if a.get("uvizl"):
+        ceka = f" ⚠ Tiket kola {kolo} z {_datum_cz(a['ceka_od'])} se nepodařilo vyhodnotit (některý zápas bez výsledku), hra proto stojí. Opraví se po doplnění výsledků."
+    elif a.get("ceka"):
+        ceka = " Tiket aktuálního kola ještě není vyhodnocený."
+    pravidlo = "prohra hru ukončí a další den se začíná od 1. kola" if p["pravidlo"] == "konec" else "prohra vrací o jedno kolo zpět"
+    head = (f"<p>Aktuální hra: <b>kolo {kolo} z 10</b>{(' od ' + _datum_cz(a['od'])) if a.get('od') else ''}, série <b>{a['serie']}</b> výher v řadě.{ceka} "
+            f"Nejdál bot došel do <b>{p['nejlepsi']}. kola</b>, vyhraných Pyramid (10 kol): <b>{p['vyhrano']}</b>.</p>")
+    behy = ""
+    if p["behy"]:
+        behy = ("<div class='w'><table><tr><th>Hra</th><th>Dosažené kolo</th><th>Konec</th></tr>" + "".join(
+            f"<tr><td>{_datum_cz(b['od'])} až {_datum_cz(b['do'])}</td><td><b>{b['dosazeno']}</b> z 10</td><td>{'🏆 vyhráno' if b['stav'] == 'vyhráno' else 'prohra v ' + str(b['padl_na']) + '. kole'}</td></tr>" for b in p["behy"]) + "</table></div>")
+    r = ["<div class='w'><table><tr><th>Kolo</th><th>Min. kurz</th><th>Vyhodnoceno</th><th>Vyšlo</th><th>Úspěšnost</th><th>Čekáno (model/trh)</th><th>Šance dojít až sem*</th></tr>"]
+    for k, sa in zip(p["kola"], p["sance"]):
+        us = _pct(k["uspesnost"]) if k["uspesnost"] is not None else "–"
+        ce = _pct(k["cekano"]) if k["cekano"] is not None else "–"
+        r.append(f"<tr><td><b>{k['kolo']}</b></td><td>{(format(k['prah'], '.2f') if k['prah'] else '–')}</td><td>{tis(k['n'])}</td><td>{tis(k['vyhry'])}</td><td>{us}</td><td>{ce}</td><td>{_pct(sa, 1)}</td></tr>")
+    r.append("</table></div>")
+    return (f"<div class='card'><h4>Postup bota v Pyramidě</h4><div class='pyr'>{boxy}</div>{head}{behy}</div>"
+            "<details open><summary><b>Úspěšnost po kolech</b></summary>" + "".join(r) + "</details>"
+            f"<p class='mut'>* Součin čekaných pravděpodobností kol 1 až N podle modelu a trhu (ne zaručená šance). Simulace: bot hraje každý den hlavní tiket aktuálního kola, výhra posune dál, {pravidlo}. "
+            f"Zatím {p['dnu']} dní dat, takže čísla u vyšších kol jsou jen z pár tiketů a o schopnosti bota moc neříkají. Pravidlo jde změnit v sporty.yaml (pyramida: pri_prohre).</p>")

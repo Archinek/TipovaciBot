@@ -259,3 +259,6 @@ kapital:                      # doporučené vklady podle vlastního kapitálu (
   koef_kandidat: 0.25         # kandidát (prošel jen objevným obdobím) = čtvrtina vkladu, jen na zkoušku
   zaokrouhlit: 10             # Kč
   min_vklad: 20               # Kč, pod tím se nesází
+
+pyramida:                     # postup bota v Pyramidě (simulace nad zalogovanými tikety kol 1–10)
+  pri_prohre: konec           # konec = prohra ukončí hru, další den od 1. kola; o_kolo_zpet = prohra vrací o kolo zpět

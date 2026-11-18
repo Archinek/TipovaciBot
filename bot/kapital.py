@@ -64,6 +64,7 @@ JS = r"""
 (function(){var D=JSON.parse(document.getElementById('kapDat').textContent),C=JSON.parse(document.getElementById('kapCfg').textContent);
 var inp=document.getElementById('kapIn'),tb=document.getElementById('kapTb'),sum=document.getElementById('kapSum');
 function kc(v){return v.toLocaleString('cs-CZ',{minimumFractionDigits:0,maximumFractionDigits:0})+' Kč'}
+function kc2(v){return v.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2}).replace(/\u202f/g,'\u00a0')+'\u00a0Kč'}
 function vypocti(K){var o=D.map(function(x){var koef=x.overeni==='ověřeno'?1:x.overeni==='kandidát'?C.koef_kandidat:0;
  var kt=1+(x.kurz-1)*(1-C.srazka_tipsport),pe=x.p-C.odecet_p,h=pe*kt-1,v=0,d='';
  if(koef===0)d='segment není ověřen';else if(kt<=1||h<C.min_hrana)d='po odečtu a srážce bez hrany';else{v=K*Math.min(C.kelly_frakce*h/(kt-1)*koef,C.max_na_tip)}
@@ -72,14 +73,16 @@ function vypocti(K){var o=D.map(function(x){var koef=x.overeni==='ověřeno'?1:x
  o.forEach(function(b){if(b.v){b.v=Math.round(b.v/C.zaokrouhlit)*C.zaokrouhlit;if(b.v<C.min_vklad){b.v=0;b.d='vklad pod minimem'}}});return o}
 function kresli(){var K=parseFloat((inp.value||'').replace(/\s/g,'').replace(',','.'));
  if(!(K>0)){tb.innerHTML='';sum.textContent='Zadej kapitál, např. 6797,77.';return}
+ 
  try{localStorage.setItem('tb_kapital',inp.value)}catch(e){}
  var o=vypocti(K),s=o.reduce(function(a,b){return a+b.v},0),n=o.filter(function(b){return b.v>0}).length;
- sum.innerHTML=n?('Doporučeno vsadit <b>'+kc(s)+'</b> ('+(s/K*100).toFixed(1).replace('.',',')+' % kapitálu) na '+n+' tip'+(n>4?'ů':n>1?'y':'')+'.'):'<b>Dnes nic nevsazovat.</b> Žádný tip nesplňuje podmínky (ověřený trh a hrana po srážce). Seznam níže ukazuje, proč.';
+ var zk='<div class="kpi" style="margin:8px 0"><div><b>'+kc2(K)+'</b><span>moje základna</span></div><div><b>'+kc2(s)+'</b><span>dnes sázím ('+(s/K*100).toFixed(1).replace('.',',')+' %)</span></div><div><b>'+kc2(K-s)+'</b><span>zůstává mimo hru</span></div></div>';
+ sum.innerHTML=zk+(n?('Doporučeno vsadit na '+n+' tip'+(n>4?'ů':n>1?'y':'')+'. Součet vkladů je <b>'+kc(s)+'</b>.'):'<b>Dnes nic nevsazovat.</b> Žádný tip nesplňuje podmínky (ověřený trh a hrana po srážce). Seznam níže ukazuje, proč.');
  tb.innerHTML=o.map(function(b){var t=new Date(b.start);var cas=isNaN(t)?'':t.toLocaleString('cs-CZ',{day:'numeric',month:'numeric',hour:'2-digit',minute:'2-digit'});
  return '<tr><td>'+cas+'</td><td>'+esc(b.zapas)+'<br><span class="mut">'+esc(b.trh)+(b.vyber?': <b>'+esc(b.vyber)+'</b>':'')+'</span></td><td>'+b.kurz.toFixed(2)+'<br><span class="mut">Tipsport ~'+b.kt.toFixed(2)+'</span></td><td>'+Math.round(b.p*100)+' %<br><span class="mut">'+esc(b.overeni)+'</span></td><td>'+(b.v>0?'<b>'+kc(b.v)+'</b>':'<span class="mut">– '+esc(b.d)+'</span>')+'</td></tr>'}).join('')}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 try{var u=localStorage.getItem('tb_kapital');if(u)inp.value=u}catch(e){}
-inp.addEventListener('input',kresli);kresli()})();
+inp.addEventListener('input',kresli);inp.addEventListener('blur',function(){var K=parseFloat((inp.value||'').replace(/\s/g,'').replace(',','.'));if(K>0)inp.value=K.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2}).replace(/\u202f/g,'\u00a0')});kresli()})();
 """
 
 

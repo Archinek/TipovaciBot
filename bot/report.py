@@ -4,6 +4,7 @@ import json
 import urllib.request
 from zoneinfo import ZoneInfo
 from . import config, kapital, report_prehled
+from .cisla import tis
 
 CSS = """
 :root{color-scheme:dark;--bg:#0b0f14;--card:#141a22;--card2:#1a222c;--txt:#e8eef5;--mut:#8f9bab;--line:#2a3441;--acc:#5aa9ff;--ok:#34c76b;--bad:#ff5c57;--warn:#e0a82e;--box:#14233a;--r:12px}
@@ -71,7 +72,7 @@ def _tab_metriky(rows_metr):
         if not m.get("n"): continue
         real = "–" if m["roi_real"] is None else f"{_pct(m['roi_real'])} ({m['n_real']})"
         ci_text = f" ±{m.get('ci_95', 0)*100:.1f}%" if m.get("n") > 2 else ""
-        r.append(f"<tr><td><b>{_e(k)}</b></td><td>{m['n']}</td><td>{m['winrate'] * 100:.1f} %</td><td>{m['ocekavany_winrate'] * 100:.1f} %</td><td><b>{_pct(m['roi_paper'])}{ci_text}</b></td><td>{m.get('sazek_do_jistoty', 'N/A')}</td><td>{_pct(m['avg_clv'])}</td><td>{real}</td></tr>")
+        r.append(f"<tr><td><b>{_e(k)}</b></td><td>{tis(m['n'])}</td><td>{m['winrate'] * 100:.1f} %</td><td>{m['ocekavany_winrate'] * 100:.1f} %</td><td><b>{_pct(m['roi_paper'])}{ci_text}</b></td><td>{m.get('sazek_do_jistoty', 'N/A')}</td><td>{_pct(m['avg_clv'])}</td><td>{real}</td></tr>")
     r.append("</table></div><p class='mut'><b>Sázek do jistoty:</b> Kolik tiketů je matematicky potřeba k potvrzení, že ROI není jen náhoda (pokud ukazuje 0, edge je prokázána). CI = Confidence Interval.</p>")
     return "".join(r)
 
@@ -358,7 +359,7 @@ def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=
     sekce = [("fort", f) for f in vd + fild] + [("univ", c) for c in (univ or [])] + [("univ", c) for c in (jist or [])]
     analyzy = "".join(_dosad_cas("".join(_analyzy(sekce)), zona)) or "<p class='mut'>Dnes bez rozborů.</p>"
     nav = ("<nav><a href='#vcera'>Včera</a><a href='#kap'>Kapitál</a><a href='#vd'>Value drop</a><a href='#fild'>Fildův tip</a><a href='#tip'>Tipsport 1.30+</a><a href='#jist'>Nejjistější</a>"
-           "<a href='#den'>Denní tiket</a><a href='#ana'>Analýzy</a><a href='#uc'>Učení</a><a href='#pyr'>Pyramida</a></nav>")
+           "<a href='#den'>Denní tiket</a><a href='#ana'>Analýzy</a><a href='#uc'>Učení</a><a href='#pyrp'>Postup Pyramidy</a><a href='#pyr'>Pyramida</a></nav>")
     kpi = ("<div class='kpi'>" + "".join(f"<div><b>{n}</b><span>{t}</span></div>" for n, t in (
         (len(vd), "Value drop"), (len(fild), "Fildův tip"), (len(univ or []), "Tipsport 1.30+"), (len(jist or []), "Nejjistější dne"),
         (len({c["zapas"] for _, c in sekce if c.get("analyza")}), "rozborů zápasů"))) + "</div>")
@@ -367,12 +368,12 @@ def sestav_report(datum, picks, vyrazene, vcera, celkem, zona, dopl=None, kalib=
              f"<details><summary><b>Dosavadní bilance</b></summary>{_tab_metriky(celkem)}</details>")
     return (f"<!DOCTYPE html><html lang='cs'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>TIPOVACI_BOT</title><style>{CSS}{report_prehled.CSS}</style></head>"
             f"<body><div class='c'><a href='../index.html'>⬅ Archiv</a><h1>Ranní report {datum}</h1>{vc}{nav}{report_prehled.horni(uceni)}{report_prehled.vcera(uceni)}{kap}{prehled}<h2 id='ana'>📝 Analýzy zápasů</h2>{analyzy}{dalsi}"
-            f"<h2 id='pyr'>🔺 Pyramida: tiket pro každé kolo</h2>{_tab_pyramida(tik, zona)}</div>{report_prehled.SCRIPT}</body></html>")
+            f"<h2 id='pyrp'>🔺 Postup v Pyramidě</h2>{report_prehled.pyramida_postup(uceni)}<h2 id='pyr'>🔺 Pyramida: tiket pro každé kolo</h2>{_tab_pyramida(tik, zona)}</div>{report_prehled.SCRIPT}</body></html>")
 
 def _r_stat(n, s):
     if not s.get("n"): return f"<tr><td>{_e(n)}</td><td colspan='5' class='mut'>zatím nic vyhodnoceno</td></tr>"
     rozdil = (s["uspesnost"] - s["cekano"]) * 100
-    return (f"<tr><td>{_e(n)}</td><td>{s['n']}</td><td><b>{s['uspesnost'] * 100:.0f} %</b></td><td>{s['cekano'] * 100:.0f} %</td>"
+    return (f"<tr><td>{_e(n)}</td><td>{tis(s['n'])}</td><td><b>{s['uspesnost'] * 100:.0f} %</b></td><td>{s['cekano'] * 100:.0f} %</td>"
             f"<td>{rozdil:+.1f} b.</td><td>{s['roi'] * 100:+.1f} %</td></tr>")
 
 
@@ -389,7 +390,7 @@ def _tab_segmenty(seg):
          "Do té doby je pravděpodobnost jen z trhu a řádky v reportu mají značku ○ neověřeno.</p>",
          "<div class='w'><table><tr><th>Sport</th><th>Druh trhu</th><th>Pásmo</th><th>Zápasů</th><th>Úspěšnost</th><th>Čekáno</th><th>ROI</th><th>Stav</th></tr>"]
     for x in seg:
-        r.append(f"<tr><td>{_e(x['sport'])}</td><td>{_e(x['rodina'])}</td><td>{_e(x['pasmo'])}</td><td>{x['zapasu']}</td><td>{x['uspesnost'] * 100:.0f} %</td><td>{x['cekano'] * 100:.0f} %</td><td>{x['roi'] * 100:+.1f} %</td><td><b>{_e(x['stav'])}</b></td></tr>")
+        r.append(f"<tr><td>{_e(x['sport'])}</td><td>{_e(x['rodina'])}</td><td>{_e(x['pasmo'])}</td><td>{tis(x['zapasu'])}</td><td>{x['uspesnost'] * 100:.0f} %</td><td>{x['cekano'] * 100:.0f} %</td><td>{x['roi'] * 100:+.1f} %</td><td><b>{_e(x['stav'])}</b></td></tr>")
     return "".join(r) + "</table></div>"
 
 
@@ -402,12 +403,12 @@ def _tab_uceni(u, model_text=""):
     c = u["celkem"]
     r.append("<h3>Celková bilance učení</h3>")
     if c.get("n"):
-        r.append(f"<p>Zapsáno <b>{u['zapsano']}</b> sázek, vyhodnoceno <b>{u['vyhodnoceno']}</b>. Úspěšnost <b>{c['uspesnost'] * 100:.1f} %</b> "
+        r.append(f"<p>Zapsáno <b>{tis(u['zapsano'])}</b> sázek, vyhodnoceno <b>{tis(u['vyhodnoceno'])}</b>. Úspěšnost <b>{c['uspesnost'] * 100:.1f} %</b> "
                  f"(čekáno {c['cekano'] * 100:.1f} %), ROI (flat) <b>{c['roi'] * 100:+.1f} %</b>. Tempo ~{u['tempo_den']:.0f} vyhodnocených sázek denně.</p>")
         r.append("<p class='mut'>Rozdíl = úspěšnost minus čekaná pravděpodobnost trhu (v procentních bodech). Kladný = trh podceňuje, záporný = přeceňuje. "
                  "ROI je záporné o marži kanceláře, dokud nenajdeme systematickou chybu trhu.</p>")
     else:
-        r.append(f"<p class='mut'>Zapsáno {u['zapsano']} sázek, zatím žádná není vyhodnocená.</p>")
+        r.append(f"<p class='mut'>Zapsáno {tis(u['zapsano'])} sázek, zatím žádná není vyhodnocená.</p>")
     r.append(_tab_segmenty(u.get("segmenty_top")))
     r.append(_t_stat("Sport", u["sporty"]))
     r.append(_t_stat("Kategorie (co bot ukazuje)", u["skupiny"]))
@@ -416,9 +417,9 @@ def _tab_uceni(u, model_text=""):
     r.append("<h3>Postup k dalším metám (kdy sáhnout do kódu)</h3><p class='mut'>Počítají se unikátní vyhodnocené zápasy (sázky na stejný zápas jsou závislé) a počet dnů dat. Postup = pomalejší z obou podmínek.</p><div class='w'><table><tr><th>Meta</th><th>Stav</th><th>Co to odemkne</th><th>Odhad</th></tr>")
     for m in u["mety"]:
         procent = f"{m['podil'] * 100:.0f} %"
-        cil = f"{m['cil']} zápasů a {m['min_dny']} dní dat"
+        cil = f"{tis(m['cil'])} zápasů a {m['min_dny']} dní dat"
         odhad = "splněno" if m["podil"] >= 1 else (m["eta"] or "bez dat")
-        stav = f"{m['stav']} zápasů, {m['dny']} dní ({procent})<div class='bar'><i style='width:{m['podil'] * 100:.0f}%'></i></div>"
+        stav = f"{tis(m['stav'])} zápasů, {m['dny']} dní ({procent})<div class='bar'><i style='width:{m['podil'] * 100:.0f}%'></i></div>"
         r.append(f"<tr><td>{_e(cil)}</td><td>{stav}</td><td>{_e(m['co'])}</td><td>{_e(odhad)}</td></tr>")
     r.append("</table></div>")
     return "".join(r)

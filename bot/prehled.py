@@ -5,7 +5,7 @@ ROI je "flat": jako by se každá sázka hrála stejným vkladem. Při malém po
 """
 import datetime
 
-from . import ucici, vyhodnoceni
+from . import pyramida, ucici, vyhodnoceni
 
 # (unikátních vyhodnocených zápasů, dnů dat, co to odemkne). Sázky na stejný zápas jsou závislé, proto se počítají zápasy, ne sázky;
 # dny jsou potřeba, aby vzorek nebyl jen z jednoho dne (jeden den = jedna sada výsledků, náhoda).
@@ -77,7 +77,7 @@ def vypocti(datum, nohy=None, uc=None, cfg=None):
     seg = overeni.vypocti(vse, cfg)
     return {"segmenty": seg, "segmenty_top": overeni.tabulka(seg), "datum": datum, "vcera_datum": vcera_d, "vcera": vcera_skupiny, "chyby": chyby, "celkem": _stat(vse), "sporty": sporty,
             "skupiny": _podle(nohy, lambda r: SKUPINY.get(r["skupina"].split("+")[0], r["skupina"])),
-            "pasma": _podle(vse, _pasmo), "obdobi": obdobi(datum, vse), "vcera_kat": vcera_kategorie(datum, nohy), "dalsi_meta": dalsi_meta(mety), "zapsano": len(vse), "vyhodnoceno": len(h), "tempo_den": tempo, "zapasu": n_zap, "dnu": n_dny, "mety": mety}
+            "pasma": _podle(vse, _pasmo), "obdobi": obdobi(datum, vse), "vcera_kat": vcera_kategorie(datum, nohy), "dalsi_meta": dalsi_meta(mety), "zapsano": len(vse), "vyhodnoceno": len(h), "pyramida": pyramida.postup(vyhodnoceni.nacti_tikety(), nohy, cfg), "tempo_den": tempo, "zapasu": n_zap, "dnu": n_dny, "mety": mety}
 
 
 def _radek(r):

@@ -68,7 +68,7 @@ def _zaloguj_tikety(datum, tik):
         ulozit(f"pyr{k['kolo']}", f"Pyramida · kolo {k['kolo']}", k.get("tiket"))
         ulozit(f"pyr{k['kolo']}_alt", f"Pyramida · kolo {k['kolo']} (alternativa)", k.get("alt"))
     _cesta_tiketu().parent.mkdir(parents=True, exist_ok=True)
-    _cesta_tiketu().write_text(json.dumps(vse[-600:], ensure_ascii=False), encoding="utf-8")
+    _cesta_tiketu().write_text(json.dumps(vse[-2000:], ensure_ascii=False), encoding="utf-8")
 
 
 def zaloguj(datum, univ, tik, jist=None, vd=None, fild=None):

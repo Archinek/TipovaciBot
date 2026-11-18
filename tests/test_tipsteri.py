@@ -752,3 +752,21 @@ def test_tip130_max_na_den_a_filtr():
     h = report._filtr130(v, "Europe/Prague") + "<div id='t130'>" + report._kompakt(v, "Europe/Prague", "x") + "</div>"
     assert "data-d='2026-11-16'" in h and "data-d='2026-11-17'" in h and h.count("data-s='") == 20
     assert "f130" in __import__("bot.report_prehled", fromlist=["x"]).SCRIPT
+
+
+def test_pyramida_postup_a_cisla():
+    from bot import cisla, pyramida, report_prehled
+    assert cisla.tis(40425) == "40 425" and cisla.cz(6797.77) == "6 797,77" and cisla.kc(1797) == "1 797 Kč"
+    nohy = [{"id": f"n{i}", "vysledek": v} for i, v in enumerate(["1", "1", "1", "0", ""])]
+    log = [{"datum": "2026-11-12", "klic": "pyr1", "kurz": 1.2, "p": 0.8, "prah": 1.1, "noze": ["n0"]},
+           {"datum": "2026-11-12", "klic": "pyr2", "kurz": 2.1, "p": 0.4, "prah": 2.0, "noze": ["n3"]},
+           {"datum": "2026-11-13", "klic": "pyr2", "kurz": 2.1, "p": 0.4, "prah": 2.0, "noze": ["n1"]},
+           {"datum": "2026-11-14", "klic": "pyr3", "kurz": 3.1, "p": 0.3, "prah": 3.0, "noze": ["n3"]},
+           {"datum": "2026-11-15", "klic": "pyr1", "kurz": 1.2, "p": 0.8, "prah": 1.1, "noze": ["n4"]}]
+    p = pyramida.postup(log, nohy)
+    assert p["behy"] == [{"od": "2026-11-12", "do": "2026-11-14", "dosazeno": 2, "padl_na": 3, "stav": "prohra"}]
+    assert p["aktualni"]["kolo"] == 1 and p["aktualni"]["ceka"] and p["nejlepsi"] == 2
+    assert p["kola"][0]["n"] == 1 and p["kola"][0]["vyhry"] == 1
+    assert pyramida.postup(log, nohy, {"pyramida": {"pri_prohre": "o_kolo_zpet"}})["behy"] == []
+    h = report_prehled.pyramida_postup({"pyramida": p})
+    assert "kolo 1 z 10" in h and "prohra v 3. kole" in h and "class='pyr'" in h
