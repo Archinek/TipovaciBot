@@ -190,9 +190,20 @@ def vyhodnot_radky(rows, ted, log=print):
         from . import vysledky_fortuna as vf
         fzap = vf.stahni({vf.pražský_den(r["start"]) for r, _ in cek}, {r["sport"] for r, _ in cek}, log=log)
         idx = vf.index(fzap)
+        mapa_id, id_zap, stuby = vf.nacti_idy([r for r, _ in cek]), {z["id"]: z for z in fzap if z.get("id")}, {}
+
+        def nalezni(r):
+            """Zápas k sázce: nejdřív podle id zápasu ve Fortuně (přesné), pak podle názvu a času; zápas mimo seznam výsledků dne se dohledá přímo podle id."""
+            fid = vf.id_radku(mapa_id, r)
+            z = id_zap.get(fid) if fid else None
+            if z is None:
+                z = vf.najdi(idx, r["zapas"], r["start"]) if idx else None
+            if z is None and fid and len(stuby) < 150:
+                z = stuby.get(fid) or stuby.setdefault(fid, vf.stub(fid, r))
+            return z
         zbyva = []
         for r, s in cek:
-            z = vf.najdi(idx, r["zapas"], r["start"]) if idx else None
+            z = nalezni(r)
             y, duvod = vf.rozhodni(r["trh"], r["vyber"], z) if z else (None, "")
             if y is not None:
                 r["vysledek"], r["duvod"] = y, duvod
@@ -203,7 +214,7 @@ def vyhodnot_radky(rows, ted, log=print):
         # 2) u zápasů, které Fortuna ukazuje jen přehledově, se stáhne detail se všemi trhy (hráči, over/under, rohy...)
         potreba = {}
         for r, s in zbyva:
-            z = vf.najdi(idx, r["zapas"], r["start"]) if idx else None
+            z = nalezni(r)
             if z and not z.get("detail"):
                 potreba[z["id"]] = z
         if potreba:
@@ -211,7 +222,7 @@ def vyhodnot_radky(rows, ted, log=print):
             log(f"   Fortuna: detail se všemi trhy stažen u {n_det} zápasů.")
             zbyva2 = []
             for r, s in zbyva:
-                z = vf.najdi(idx, r["zapas"], r["start"])
+                z = nalezni(r)
                 y, duvod = vf.rozhodni(r["trh"], r["vyber"], z) if z else (None, "")
                 if y is not None:
                     r["vysledek"], r["duvod"] = y, duvod
@@ -222,8 +233,8 @@ def vyhodnot_radky(rows, ted, log=print):
                         r["duvod"] = duvod
                     zbyva2.append((r, s))
             zbyva = zbyva2
-        nenalez = sum(1 for r, _ in cek if not (vf.najdi(idx, r["zapas"], r["start"]) if idx else None))
-        log(f"   Fortuna: {len(fzap)} zápasů s výsledky, z toho vyhodnoceno {hotovo} sázek; zápas nenalezen podle názvu a času u {nenalez} z {len(cek)}.")
+        nenalez = sum(1 for r, _ in cek if not nalezni(r) or nalezni(r).get("stub") and not nalezni(r).get("trhy"))
+        log(f"   Fortuna: {len(fzap)} zápasů s výsledky, z toho vyhodnoceno {hotovo} sázek; zápas nenalezen (podle id ani názvu a času, nebo bez výsledku v detailu) u {nenalez} z {len(cek)}; dohledáno přímo podle id {len(stuby)}.")
         cek = zbyva
     except Exception as e:
         log(f"   ⚠️ Výsledky z Fortuny selhaly: {type(e).__name__}: {e}")

@@ -596,11 +596,12 @@ def test_prehled_uceni():
     assert "Přehled se nepodařilo" in report._tab_uceni(None)
 
 
-def test_vysledky_z_api_fortuny(monkeypatch):
+def test_vysledky_z_api_fortuny(monkeypatch, tmp_path):
     """Čtečka výsledků Fortuny: skóre i WINNING/LOSING/VOIDED u trhů, spárování podle názvu a času, nevyhodnotí rozehrané."""
     import datetime
-    from bot import fortuna, vyhodnoceni, vysledky_fortuna as vf
+    from bot import config, fortuna, vyhodnoceni, vysledky_fortuna as vf
     vf._CACHE.clear()
+    monkeypatch.setattr(config, "DATA", tmp_path)
 
     def mk(nazev, odds):
         return {"id": "m1", "name": nazev, "startDatetime": int(datetime.datetime(2026, 11, 11, 0, 0, tzinfo=datetime.timezone.utc).timestamp() * 1000),
@@ -776,3 +777,39 @@ def test_pyramida_postup_a_cisla():
     assert pyramida.postup(log2, nohy)["aktualni"]["kolo"] == 4
     h = report_prehled.pyramida_postup({"pyramida": p})
     assert "kolo <b>2 z 10</b>" in h and "prohra v 3. kole" in h and "class='pyr'" in h and "50 Netů" in h
+
+
+def test_vysledky_podle_id_zapasu(monkeypatch, tmp_path):
+    """Zápas se k sázce spáruje podle id Fortuny, i když se názvy liší nebo turnaj výsledky nevrací (404): výsledek se vezme z detailu podle id."""
+    import datetime, json
+    from bot import config, fortuna, vyhodnoceni, vysledky_fortuna as vf
+    vf._CACHE.clear()
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    start = "2026-11-11T00:00:00+00:00"
+    nab = [{"id": "ufo:mtch:A", "nazev": "Sparta Praha - Hradec Králové", "start": start}, {"id": "ufo:mtch:B", "nazev": "MASONIC - SAW Youngsters", "start": start}]
+    (tmp_path / "fortuna_nabidka_2026-11-10.json").write_text(json.dumps(nab), encoding="utf-8")
+    ms = int(datetime.datetime(2026, 11, 11, tzinfo=datetime.timezone.utc).timestamp() * 1000)
+
+    class K:
+        def __init__(self, pauza=0): pass
+        def get(self, u):
+            if "/sports?" in u: return [{"id": "s1", "name": "Hokej"}]
+            if "/sport/s1/tournaments" in u: return {"tournaments": [{"id": "t1", "name": "Liga"}, {"id": "t2", "name": "Rozbitý turnaj"}]}
+            if "/tournament/t1/matches" in u:
+                return {"fixtures": [{"id": "ufo:mtch:A", "name": "Sparta - Hradec", "startDatetime": ms, "score": {"homeScore": 3, "awayScore": 1}}],
+                        "markets": [{"fixtureId": "ufo:mtch:A", "name": "Výsledek zápasu", "outcomes": [{"name": "1", "longName": "Sparta Praha", "result": "WINNING"}]}]}
+            if "/tournament/t2/matches" in u: raise fortuna.FortunaChyba("HTTP 404")
+            if "/fixture/ufo:mtch:B?date=2026-11-11" in u:
+                return {"fixture": {"id": "ufo:mtch:B", "score": {"homeScore": 2, "awayScore": 0}},
+                        "markets": [{"fixtureId": "ufo:mtch:B", "name": "Handicap map v zápasu", "outcomes": [{"name": "MASONIC +1.5", "result": "WINNING"}]}]}
+            raise AssertionError(u)
+    monkeypatch.setattr(fortuna, "Klient", K)
+    def r(zapas, trh, vyber, sport):
+        return {"id": zapas + trh, "datum": "2026-11-10", "sport": sport, "liga": "L", "zapas": zapas, "start": start, "trh": trh, "vyber": vyber, "kurz": "2.0", "p": "0.5",
+                "zdroj": "trh", "skupina": "vyber", "vysledek": "", "duvod": ""}
+    rows = [r("Sparta Praha - Hradec Králové", "Výsledek zápasu", "Sparta Praha", "hokej"), r("MASONIC - SAW Youngsters", "Handicap map v zápasu", "MASONIC +1.5", "esport-counter-strike")]
+    ted = datetime.datetime(2026, 11, 12, 6, 0, tzinfo=datetime.timezone.utc)
+    logy = []
+    assert vyhodnoceni.vyhodnot_radky(rows, ted, log=logy.append) == 2
+    assert [x["vysledek"] for x in rows] == ["1", "1"]
+    assert any("dohledáno přímo podle id 1" in l for l in logy)

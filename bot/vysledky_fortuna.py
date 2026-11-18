@@ -6,11 +6,12 @@ bot jen čte. Trhy, které v přehledu nejsou (rohy, střely, karty...), zůstá
 Pravidla slušnosti stejná jako u nabídky: poctivý User-Agent, pauzy, při 403/429 se končí a nic neobchází.
 """
 import datetime
+import json
 import re
 import unicodedata
 from zoneinfo import ZoneInfo
 
-from . import fortuna
+from . import config, fortuna
 
 ZAKLAD = "https://api.ifortuna.cz/offer/result/api/v1_0"
 _CACHE = {}          # (datum, id sportu) -> [zápasy]; jen po dobu jednoho běhu
@@ -177,3 +178,48 @@ def rozhodni(trh, vyber, z):
 def pražský_den(iso):
     s = datetime.datetime.fromisoformat(iso)
     return (s if s.tzinfo else s.replace(tzinfo=datetime.timezone.utc)).astimezone(ZoneInfo("Europe/Prague")).date().isoformat()
+
+
+def _minuty(iso):
+    try:
+        s = datetime.datetime.fromisoformat(iso)
+    except (TypeError, ValueError):
+        return None
+    return int((s if s.tzinfo else s.replace(tzinfo=datetime.timezone.utc)).timestamp() // 60)
+
+
+def nacti_idy(rows):
+    """{(název zápasu, začátek v minutách): id zápasu ve Fortuně} z uložených nabídek data/fortuna_nabidka_<datum>.json.
+    Sázka vznikla z této nabídky, takže se název i čas shodují přesně; id je stejné jako ve výsledcích Fortuny (ufo:mtch:…)."""
+    dny = set()
+    for r in rows:
+        try:
+            d = datetime.date.fromisoformat(r["datum"])
+        except (KeyError, ValueError):
+            continue
+        dny |= {(d + datetime.timedelta(days=k)).isoformat() for k in (-1, 0, 1)}
+    mapa = {}
+    for d in sorted(dny):
+        f = config.DATA / f"fortuna_nabidka_{d}.json"
+        if not f.exists():
+            continue
+        try:
+            for x in json.loads(f.read_text(encoding="utf-8")):
+                m = _minuty(x.get("start"))
+                if x.get("id") and m is not None:
+                    mapa[(x.get("nazev") or "", m)] = x["id"]
+        except (ValueError, OSError):
+            continue
+    return mapa
+
+
+def id_radku(mapa, r):
+    m = _minuty(r.get("start"))
+    return mapa.get((r.get("zapas") or "", m)) if m is not None else None
+
+
+def stub(fid, r):
+    """Zápas, který není v seznamu výsledků dne (např. turnaj vrací 404): známe jen id, výsledky a trhy se doplní z detailu zápasu."""
+    s = datetime.datetime.fromisoformat(r["start"])
+    s = s if s.tzinfo else s.replace(tzinfo=datetime.timezone.utc)
+    return {"id": fid, "name": r.get("zapas") or "", "start_ms": int(s.timestamp() * 1000), "sport": r.get("sport"), "turnaj": r.get("liga"), "h": None, "a": None, "trhy": {}, "stub": True}
