@@ -158,6 +158,8 @@ sporty:
 # Anonymní nabídka Fortuny (bot/fortuna.py). Pauza mezi požadavky je záměrně pomalá, ať nic neblokují.
 fortuna:
   zapnuto: true
+  pokusy_nabidky: 4      # při výpadku Fortuny (např. HTTP 503) se stažení nabídky zopakuje tolikrát
+  pauza_nabidky_s: 120   # a před dalším pokusem se počká tolik sekund
   pauza_s: 0.15          # společný rozestup požadavků (všechna vlákna dohromady)
   vlaken: 4
   max_sekund: 0          # 0 = bez limitu: stáhne se celá nabídka

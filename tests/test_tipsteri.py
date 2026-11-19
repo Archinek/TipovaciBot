@@ -813,3 +813,42 @@ def test_vysledky_podle_id_zapasu(monkeypatch, tmp_path):
     assert vyhodnoceni.vyhodnot_radky(rows, ted, log=logy.append) == 2
     assert [x["vysledek"] for x in rows] == ["1", "1"]
     assert any("dohledáno přímo podle id 1" in l for l in logy)
+
+
+def test_fortuna_opakuje_pri_vypadku(monkeypatch):
+    import io, urllib.error
+    from bot import fortuna, main as bm
+    monkeypatch.setattr(fortuna.time, "sleep", lambda s: None)
+    volani = []
+
+    class R(io.BytesIO):
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+
+    def otevri(req, timeout=0):
+        volani.append(1)
+        if len(volani) < 3:
+            raise urllib.error.HTTPError(req.full_url, 503, "nedostupné", {}, None)
+        return R(b'{"ok": 1}')
+    monkeypatch.setattr(fortuna.urllib.request, "urlopen", otevri)
+    k = fortuna.Klient(pauza=0)
+    k.opakovani = (1, 1, 1)
+    assert k.get("https://x/y") == {"ok": 1} and len(volani) == 3
+    volani.clear()
+    monkeypatch.setattr(fortuna.urllib.request, "urlopen", lambda req, timeout=0: (_ for _ in ()).throw(urllib.error.HTTPError(req.full_url, 404, "x", {}, None)))
+    try:
+        k.get("https://x/y")
+        assert False
+    except fortuna.FortunaChyba:
+        pass
+    # nabídka: dva výpadky a třetí pokus projde
+    monkeypatch.setattr(bm.time, "sleep", lambda s: None)
+    stav = {"n": 0}
+
+    def nab(**kw):
+        stav["n"] += 1
+        if stav["n"] < 3:
+            raise fortuna.FortunaChyba("HTTP 503")
+        return [{"id": "z"}]
+    monkeypatch.setattr(fortuna, "nabidka", nab)
+    assert bm._nabidka_s_opakovanim({"fortuna": {"pokusy_nabidky": 4, "pauza_nabidky_s": 1}}) == [{"id": "z"}] and stav["n"] == 3

@@ -7,6 +7,8 @@
   python -m bot.main builder "soccer_epl|Arsenal|Chelsea|karty>4.5,rohy>9.5|3.4|Rozhodčí"
   python -m bot.main sports    # diagnostika: které skupiny sportů vrací Odds API a které máš namapované
 """
+import os
+import time
 import datetime
 import json
 import sys
@@ -51,6 +53,28 @@ def vyber_cile(api_sports, cfg, rezimy):
 
 
 # ------------------------------------------------------------ vyhodnocení
+def _nabidka_s_opakovanim(cfg):
+    """Nabídka Fortuny; při výpadku serveru (např. HTTP 503 ráno) počká a zkusí to znovu, aby jeden výpadek nezabil celý den."""
+    from . import fortuna
+    c = cfg.get("fortuna") or {}
+    pokusy, pauza = int(c.get("pokusy_nabidky", 4)), int(c.get("pauza_nabidky_s", 120))
+    if os.environ.get("TIPOVACI_BEZ_CEKANI"):                      # testy nečekají
+        pauza = 0
+    for pokus in range(1, pokusy + 1):
+        try:
+            zap = fortuna.nabidka(filtry=("today", "tomorrow"), max_zapasu=c.get("max_zapasu", 0), max_sekund=c.get("max_sekund", 0), log=_log)
+        except fortuna.FortunaChyba as e:
+            if pokus == pokusy:
+                raise
+            _log(f"⚠️ Fortuna nedostupná ({e}), pokus {pokus} z {pokusy}, za {pauza} s zkouším znovu.")
+            time.sleep(pauza)
+            continue
+        if zap or pokus == pokusy:
+            return zap
+        _log(f"⚠️ Fortuna vrátila prázdnou nabídku, pokus {pokus} z {pokusy}, za {pauza} s zkouším znovu.")
+        time.sleep(pauza)
+
+
 def vyhodnot(api, cfg, ted):
     """Doplní výsledek a zisk řádkům po zápase. Chyby jednoho sportu nezastaví zbytek."""
     rows = store.nacti()
@@ -334,9 +358,7 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
     try:
         from . import fortuna
         if (cfg.get("fortuna") or {}).get("zapnuto", True):
-            zap_fortuna = fortuna.nabidka(filtry=("today", "tomorrow"),
-                                          max_zapasu=(cfg.get("fortuna") or {}).get("max_zapasu", 0),
-                                          max_sekund=(cfg.get("fortuna") or {}).get("max_sekund", 0), log=_log)
+            zap_fortuna = _nabidka_s_opakovanim(cfg)
             try:
                 from . import fortuna_vse
                 univ = fortuna_vse.nejpravdepodobnejsi(zap_fortuna, cfg)
