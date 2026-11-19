@@ -872,3 +872,13 @@ def test_vysledky_vypadek_jednoho_dne_nezahodi_ostatni(monkeypatch, tmp_path):
     logy = []
     z = vf.stahni(["2026-11-08", "2026-11-11"], ["Hokej"], log=logy.append, klient=K())
     assert [x["id"] for x in z] == ["ufo:mtch:A"] and any("522" in l for l in logy)
+
+
+def test_pyramida_pocita_jen_od_data():
+    from bot import pyramida
+    nohy = [{"id": "w", "vysledek": "1", "kurz": "1.2"}, {"id": "c", "vysledek": "", "kurz": "1.3"}]
+    log = [{"datum": "2026-11-14", "klic": "pyr1", "kurz": 1.2, "p": 0.8, "prah": 1.1, "noze": ["c"]},
+           {"datum": "2026-11-20", "klic": "pyr1", "kurz": 1.2, "p": 0.8, "prah": 1.1, "noze": ["w"]}]
+    assert pyramida.postup(log, nohy)["aktualni"]["ceka"]
+    p = pyramida.postup(log, nohy, {"pyramida": {"od": "2026-11-20"}})
+    assert not p["aktualni"]["ceka"] and p["aktualni"]["kolo"] == 2 and p["dnu"] == 1

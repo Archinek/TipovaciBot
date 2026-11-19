@@ -263,4 +263,5 @@ kapital:                      # doporučené vklady podle vlastního kapitálu (
   min_vklad: 20               # Kč, pod tím se nesází
 
 pyramida:                     # postup bota v Pyramidě (simulace podle pravidel Tipsportu nad zalogovanými tikety kol 1–10)
+  od: 2026-11-20              # simulace počítá jen dny od tohoto data (dřívější tikety kvůli chybějícím výsledkům neodpovídaly)
   soubezne: 1                 # kolik Pyramid se hraje najednou (Tipsport dovoluje až 5; paralelní Pyramidy hrají stejné tikety)

@@ -55,7 +55,8 @@ def _novy():
 def postup(tiklog, nohy, cfg=None):
     """-> {aktivni: [{kolo, od, zbyva_dni, zivot, ceka, ceka_od, uvizl}], aktualni (první aktivní), behy, nejlepsi, vyhrano, kola, sance, dnu, soubezne}"""
     soubezne = max(1, min(5, int(((cfg or {}).get("pyramida") or {}).get("soubezne", 1))))
-    dny = tikety_kol(tiklog, nohy)
+    od_data = str(((cfg or {}).get("pyramida") or {}).get("od") or "")
+    dny = {d: v for d, v in tikety_kol(tiklog, nohy).items() if d >= od_data}      # starší dny se do simulace nepočítají
     sloty, behy, vyhrano = [_novy() for _ in range(soubezne)], [], 0
     posledni = max(dny) if dny else None
     for d in sorted(dny):
