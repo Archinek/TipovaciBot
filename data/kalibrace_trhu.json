@@ -6,22 +6,22 @@
   "uspesnost": 0.7778
  },
  "americky-fotbal|1.3-1.6": {
-  "n": 17,
-  "p_trhu": 0.6581,
-  "roi": -0.1612,
-  "uspesnost": 0.5882
+  "n": 18,
+  "p_trhu": 0.655,
+  "roi": -0.2078,
+  "uspesnost": 0.5556
  },
  "americky-fotbal|1.6-2": {
-  "n": 24,
-  "p_trhu": 0.5217,
-  "roi": -0.1796,
-  "uspesnost": 0.4583
+  "n": 28,
+  "p_trhu": 0.5186,
+  "roi": -0.1671,
+  "uspesnost": 0.4643
  },
  "americky-fotbal|2.0-2.6": {
-  "n": 17,
-  "p_trhu": 0.4062,
-  "roi": 0.0359,
-  "uspesnost": 0.4706
+  "n": 18,
+  "p_trhu": 0.4058,
+  "roi": 0.1039,
+  "uspesnost": 0.5
  },
  "americky-fotbal|2.6-4.01": {
   "n": 15,
@@ -36,82 +36,136 @@
   "uspesnost": 0.0
  },
  "americky-fotbal|vše": {
-  "n": 87,
-  "p_trhu": 0.4926,
-  "roi": -0.064,
-  "uspesnost": 0.4943
+  "n": 93,
+  "p_trhu": 0.4931,
+  "roi": -0.0611,
+  "uspesnost": 0.4946
+ },
+ "badminton|1.0-1.3": {
+  "n": 12,
+  "p_trhu": 0.8424,
+  "roi": -0.1367,
+  "uspesnost": 0.75
+ },
+ "badminton|1.3-1.6": {
+  "n": 9,
+  "p_trhu": 0.6614,
+  "roi": 0.1267,
+  "uspesnost": 0.7778
+ },
+ "badminton|1.6-2": {
+  "n": 10,
+  "p_trhu": 0.514,
+  "roi": -0.103,
+  "uspesnost": 0.5
+ },
+ "badminton|2.0-2.6": {
+  "n": 5,
+  "p_trhu": 0.402,
+  "roi": -0.594,
+  "uspesnost": 0.2
+ },
+ "badminton|2.6-4.01": {
+  "n": 11,
+  "p_trhu": 0.2682,
+  "roi": -0.1818,
+  "uspesnost": 0.2727
+ },
+ "badminton|jiné": {
+  "n": 9,
+  "p_trhu": 0.1053,
+  "roi": 0.1,
+  "uspesnost": 0.2222
+ },
+ "badminton|vše": {
+  "n": 56,
+  "p_trhu": 0.4841,
+  "roi": -0.1,
+  "uspesnost": 0.4821
+ },
+ "bandy|1.0-1.3": {
+  "n": 2,
+  "p_trhu": 0.8542,
+  "roi": 0.145,
+  "uspesnost": 1.0
+ },
+ "bandy|1.3-1.6": {
+  "n": 4,
+  "p_trhu": 0.6341,
+  "roi": -0.255,
+  "uspesnost": 0.5
  },
  "bandy|1.6-2": {
-  "n": 15,
-  "p_trhu": 0.5064,
-  "roi": 0.078,
-  "uspesnost": 0.6
+  "n": 36,
+  "p_trhu": 0.5125,
+  "roi": -0.1022,
+  "uspesnost": 0.5
  },
  "bandy|2.0-2.6": {
-  "n": 3,
-  "p_trhu": 0.3848,
-  "roi": -0.2,
-  "uspesnost": 0.3333
+  "n": 9,
+  "p_trhu": 0.4192,
+  "roi": 0.2044,
+  "uspesnost": 0.5556
  },
  "bandy|2.6-4.01": {
-  "n": 2,
-  "p_trhu": 0.3222,
-  "roi": -1.0,
-  "uspesnost": 0.0
+  "n": 9,
+  "p_trhu": 0.2887,
+  "roi": -0.0111,
+  "uspesnost": 0.3333
  },
  "bandy|jiné": {
-  "n": 5,
-  "p_trhu": 0.1211,
-  "roi": -1.0,
-  "uspesnost": 0.0
+  "n": 14,
+  "p_trhu": 0.1246,
+  "roi": -0.5286,
+  "uspesnost": 0.0714
  },
  "bandy|vše": {
-  "n": 25,
-  "p_trhu": 0.4,
-  "roi": -0.2572,
-  "uspesnost": 0.4
+  "n": 74,
+  "p_trhu": 0.4164,
+  "roi": -0.1361,
+  "uspesnost": 0.4189
  },
  "basketbal|1.0-1.3": {
-  "n": 73,
-  "p_trhu": 0.8449,
-  "roi": -0.1038,
-  "uspesnost": 0.7808
+  "n": 129,
+  "p_trhu": 0.8534,
+  "roi": -0.0902,
+  "uspesnost": 0.7984
  },
  "basketbal|1.3-1.6": {
-  "n": 409,
-  "p_trhu": 0.6478,
-  "roi": -0.1456,
-  "uspesnost": 0.577
+  "n": 470,
+  "p_trhu": 0.6505,
+  "roi": -0.127,
+  "uspesnost": 0.5936
  },
  "basketbal|1.6-2": {
-  "n": 1743,
-  "p_trhu": 0.5206,
-  "roi": -0.0799,
-  "uspesnost": 0.5106
+  "n": 1855,
+  "p_trhu": 0.5209,
+  "roi": -0.0767,
+  "uspesnost": 0.5127
  },
  "basketbal|2.0-2.6": {
-  "n": 796,
-  "p_trhu": 0.4221,
-  "roi": 0.0062,
-  "uspesnost": 0.4598
+  "n": 868,
+  "p_trhu": 0.4209,
+  "roi": 0.0003,
+  "uspesnost": 0.4562
  },
  "basketbal|2.6-4.01": {
-  "n": 252,
-  "p_trhu": 0.3025,
-  "roi": 0.0562,
-  "uspesnost": 0.3611
+  "n": 302,
+  "p_trhu": 0.2973,
+  "roi": -0.0293,
+  "uspesnost": 0.3311
  },
  "basketbal|jiné": {
-  "n": 55,
-  "p_trhu": 0.116,
-  "roi": 0.1636,
-  "uspesnost": 0.2182
+  "n": 96,
+  "p_trhu": 0.1173,
+  "roi": 0.0187,
+  "uspesnost": 0.1875
  },
  "basketbal|vše": {
-  "n": 3328,
-  "p_trhu": 0.4966,
-  "roi": -0.0536,
-  "uspesnost": 0.4964
+  "n": 3720,
+  "p_trhu": 0.4969,
+  "roi": -0.0593,
+  "uspesnost": 0.4965
  },
  "esport-counter-strike|1.0-1.3": {
   "n": 5,
@@ -198,166 +252,214 @@
   "uspesnost": 0.5
  },
  "florbal|1.0-1.3": {
-  "n": 2,
-  "p_trhu": 0.8403,
-  "roi": 0.165,
-  "uspesnost": 1.0
+  "n": 6,
+  "p_trhu": 0.8452,
+  "roi": -0.215,
+  "uspesnost": 0.6667
  },
  "florbal|1.3-1.6": {
-  "n": 1,
-  "p_trhu": 0.739,
-  "roi": 0.31,
-  "uspesnost": 1.0
+  "n": 4,
+  "p_trhu": 0.66,
+  "roi": 0.0675,
+  "uspesnost": 0.75
  },
  "florbal|1.6-2": {
-  "n": 5,
-  "p_trhu": 0.5095,
-  "roi": 0.126,
-  "uspesnost": 0.6
- },
- "florbal|2.0-2.6": {
-  "n": 1,
-  "p_trhu": 0.4526,
-  "roi": -1.0,
-  "uspesnost": 0.0
- },
- "florbal|jiné": {
-  "n": 4,
-  "p_trhu": 0.116,
-  "roi": -1.0,
-  "uspesnost": 0.0
- },
- "florbal|vše": {
-  "n": 13,
-  "p_trhu": 0.4526,
-  "roi": -0.2869,
-  "uspesnost": 0.4615
- },
- "fotbal|1.0-1.3": {
-  "n": 5999,
-  "p_trhu": 0.8363,
-  "roi": -0.0438,
-  "uspesnost": 0.8248
- },
- "fotbal|1.3-1.6": {
-  "n": 5417,
-  "p_trhu": 0.6604,
-  "roi": -0.06,
-  "uspesnost": 0.6555
- },
- "fotbal|1.6-2": {
-  "n": 4927,
-  "p_trhu": 0.5209,
-  "roi": -0.0846,
-  "uspesnost": 0.5157
- },
- "fotbal|2.0-2.6": {
-  "n": 5076,
-  "p_trhu": 0.3972,
-  "roi": -0.0904,
-  "uspesnost": 0.4046
- },
- "fotbal|2.6-4.01": {
-  "n": 6390,
-  "p_trhu": 0.2658,
-  "roi": -0.1475,
-  "uspesnost": 0.2695
- },
- "fotbal|jiné": {
-  "n": 4739,
-  "p_trhu": 0.1307,
-  "roi": -0.247,
-  "uspesnost": 0.1439
- },
- "fotbal|vše": {
-  "n": 32548,
-  "p_trhu": 0.4761,
-  "roi": -0.1099,
-  "uspesnost": 0.4762
- },
- "hazena|1.0-1.3": {
   "n": 9,
-  "p_trhu": 0.8435,
-  "roi": -0.3356,
+  "p_trhu": 0.524,
+  "roi": 0.0133,
   "uspesnost": 0.5556
  },
- "hazena|1.3-1.6": {
-  "n": 6,
-  "p_trhu": 0.6333,
-  "roi": 0.5,
-  "uspesnost": 1.0
- },
- "hazena|1.6-2": {
-  "n": 141,
-  "p_trhu": 0.5139,
-  "roi": -0.0276,
-  "uspesnost": 0.539
- },
- "hazena|2.0-2.6": {
-  "n": 48,
-  "p_trhu": 0.4203,
-  "roi": -0.2929,
+ "florbal|2.0-2.6": {
+  "n": 3,
+  "p_trhu": 0.41,
+  "roi": -0.2267,
   "uspesnost": 0.3333
  },
- "hazena|2.6-4.01": {
-  "n": 4,
-  "p_trhu": 0.279,
+ "florbal|2.6-4.01": {
+  "n": 5,
+  "p_trhu": 0.3006,
+  "roi": 0.228,
+  "uspesnost": 0.4
+ },
+ "florbal|jiné": {
+  "n": 12,
+  "p_trhu": 0.1304,
+  "roi": -0.4417,
+  "uspesnost": 0.0833
+ },
+ "florbal|vše": {
+  "n": 39,
+  "p_trhu": 0.4289,
+  "roi": -0.1472,
+  "uspesnost": 0.4103
+ },
+ "fotbal|1.0-1.3": {
+  "n": 6172,
+  "p_trhu": 0.8363,
+  "roi": -0.0456,
+  "uspesnost": 0.8232
+ },
+ "fotbal|1.3-1.6": {
+  "n": 5578,
+  "p_trhu": 0.6604,
+  "roi": -0.062,
+  "uspesnost": 0.6542
+ },
+ "fotbal|1.6-2": {
+  "n": 5088,
+  "p_trhu": 0.5209,
+  "roi": -0.0857,
+  "uspesnost": 0.5151
+ },
+ "fotbal|2.0-2.6": {
+  "n": 5223,
+  "p_trhu": 0.3972,
+  "roi": -0.0877,
+  "uspesnost": 0.4059
+ },
+ "fotbal|2.6-4.01": {
+  "n": 6593,
+  "p_trhu": 0.2657,
+  "roi": -0.1434,
+  "uspesnost": 0.2707
+ },
+ "fotbal|jiné": {
+  "n": 4886,
+  "p_trhu": 0.1306,
+  "roi": -0.2421,
+  "uspesnost": 0.1449
+ },
+ "fotbal|vše": {
+  "n": 33540,
+  "p_trhu": 0.4759,
+  "roi": -0.1088,
+  "uspesnost": 0.476
+ },
+ "futsal|1.0-1.3": {
+  "n": 1,
+  "p_trhu": 0.9353,
+  "roi": 0.05,
+  "uspesnost": 1.0
+ },
+ "futsal|1.3-1.6": {
+  "n": 2,
+  "p_trhu": 0.6635,
+  "roi": 0.44,
+  "uspesnost": 1.0
+ },
+ "futsal|1.6-2": {
+  "n": 3,
+  "p_trhu": 0.5179,
+  "roi": 0.22,
+  "uspesnost": 0.6667
+ },
+ "futsal|2.0-2.6": {
+  "n": 1,
+  "p_trhu": 0.4463,
   "roi": -1.0,
   "uspesnost": 0.0
  },
+ "futsal|2.6-4.01": {
+  "n": 1,
+  "p_trhu": 0.2105,
+  "roi": -1.0,
+  "uspesnost": 0.0
+ },
+ "futsal|jiné": {
+  "n": 3,
+  "p_trhu": 0.1541,
+  "roi": -1.0,
+  "uspesnost": 0.0
+ },
+ "futsal|vše": {
+  "n": 11,
+  "p_trhu": 0.4487,
+  "roi": -0.31,
+  "uspesnost": 0.4545
+ },
+ "hazena|1.0-1.3": {
+  "n": 17,
+  "p_trhu": 0.8472,
+  "roi": -0.1788,
+  "uspesnost": 0.7059
+ },
+ "hazena|1.3-1.6": {
+  "n": 17,
+  "p_trhu": 0.6582,
+  "roi": 0.0165,
+  "uspesnost": 0.7059
+ },
+ "hazena|1.6-2": {
+  "n": 177,
+  "p_trhu": 0.5133,
+  "roi": -0.0715,
+  "uspesnost": 0.5141
+ },
+ "hazena|2.0-2.6": {
+  "n": 63,
+  "p_trhu": 0.4169,
+  "roi": -0.1027,
+  "uspesnost": 0.4127
+ },
+ "hazena|2.6-4.01": {
+  "n": 11,
+  "p_trhu": 0.2595,
+  "roi": -0.4045,
+  "uspesnost": 0.1818
+ },
  "hazena|jiné": {
-  "n": 18,
-  "p_trhu": 0.1041,
-  "roi": 0.8889,
-  "uspesnost": 0.2778
+  "n": 28,
+  "p_trhu": 0.11,
+  "roi": 0.2143,
+  "uspesnost": 0.1786
  },
  "hazena|vše": {
-  "n": 226,
-  "p_trhu": 0.4735,
-  "roi": -0.0264,
-  "uspesnost": 0.4779
+  "n": 313,
+  "p_trhu": 0.4749,
+  "roi": -0.065,
+  "uspesnost": 0.4728
  },
  "hokej|1.0-1.3": {
-  "n": 8979,
+  "n": 10292,
   "p_trhu": 0.8376,
-  "roi": -0.0441,
+  "roi": -0.0443,
   "uspesnost": 0.825
  },
  "hokej|1.3-1.6": {
-  "n": 8284,
-  "p_trhu": 0.6586,
-  "roi": -0.0658,
-  "uspesnost": 0.6497
+  "n": 9574,
+  "p_trhu": 0.6588,
+  "roi": -0.0686,
+  "uspesnost": 0.648
  },
  "hokej|1.6-2": {
-  "n": 9098,
-  "p_trhu": 0.5206,
-  "roi": -0.0763,
-  "uspesnost": 0.5208
+  "n": 10583,
+  "p_trhu": 0.5203,
+  "roi": -0.0775,
+  "uspesnost": 0.5197
  },
  "hokej|2.0-2.6": {
-  "n": 8389,
-  "p_trhu": 0.3991,
-  "roi": -0.103,
-  "uspesnost": 0.3997
+  "n": 9675,
+  "p_trhu": 0.3992,
+  "roi": -0.0998,
+  "uspesnost": 0.4012
  },
  "hokej|2.6-4.01": {
-  "n": 8958,
+  "n": 10335,
   "p_trhu": 0.2698,
-  "roi": -0.1355,
-  "uspesnost": 0.2781
+  "roi": -0.1308,
+  "uspesnost": 0.2798
  },
  "hokej|jiné": {
-  "n": 6338,
-  "p_trhu": 0.132,
-  "roi": -0.2365,
-  "uspesnost": 0.1474
+  "n": 7273,
+  "p_trhu": 0.1318,
+  "roi": -0.2447,
+  "uspesnost": 0.1462
  },
  "hokej|vše": {
-  "n": 50046,
-  "p_trhu": 0.4859,
-  "roi": -0.1041,
-  "uspesnost": 0.4857
+  "n": 57732,
+  "p_trhu": 0.4857,
+  "roi": -0.1045,
+  "uspesnost": 0.4856
  },
  "kriket|1.3-1.6": {
   "n": 1,
@@ -384,87 +486,117 @@
   "uspesnost": 0.5
  },
  "sipky|1.0-1.3": {
-  "n": 76,
-  "p_trhu": 0.828,
-  "roi": -0.1868,
-  "uspesnost": 0.6974
+  "n": 82,
+  "p_trhu": 0.8265,
+  "roi": -0.172,
+  "uspesnost": 0.7073
  },
  "sipky|1.3-1.6": {
-  "n": 96,
-  "p_trhu": 0.6546,
-  "roi": -0.0571,
-  "uspesnost": 0.6458
+  "n": 129,
+  "p_trhu": 0.6525,
+  "roi": -0.0481,
+  "uspesnost": 0.6512
  },
  "sipky|1.6-2": {
-  "n": 109,
-  "p_trhu": 0.5103,
-  "roi": -0.1383,
-  "uspesnost": 0.4771
+  "n": 135,
+  "p_trhu": 0.5105,
+  "roi": -0.1439,
+  "uspesnost": 0.4741
  },
  "sipky|2.0-2.6": {
-  "n": 85,
-  "p_trhu": 0.3865,
-  "roi": -0.0849,
-  "uspesnost": 0.4
+  "n": 112,
+  "p_trhu": 0.3851,
+  "roi": -0.0542,
+  "uspesnost": 0.4107
  },
  "sipky|2.6-4.01": {
-  "n": 100,
-  "p_trhu": 0.2644,
-  "roi": 0.1005,
-  "uspesnost": 0.35
+  "n": 114,
+  "p_trhu": 0.2667,
+  "roi": 0.0132,
+  "uspesnost": 0.3246
  },
  "sipky|jiné": {
-  "n": 63,
-  "p_trhu": 0.1293,
-  "roi": 0.327,
-  "uspesnost": 0.2381
+  "n": 65,
+  "p_trhu": 0.1296,
+  "roi": 0.3877,
+  "uspesnost": 0.2462
  },
  "sipky|vše": {
-  "n": 529,
-  "p_trhu": 0.4704,
-  "roi": -0.0214,
-  "uspesnost": 0.4745
+  "n": 637,
+  "p_trhu": 0.4754,
+  "roi": -0.03,
+  "uspesnost": 0.4788
  },
  "snooker|1.0-1.3": {
-  "n": 40,
-  "p_trhu": 0.7966,
-  "roi": -0.1537,
-  "uspesnost": 0.7
+  "n": 63,
+  "p_trhu": 0.7936,
+  "roi": -0.1694,
+  "uspesnost": 0.6825
  },
  "snooker|1.3-1.6": {
-  "n": 37,
-  "p_trhu": 0.6739,
-  "roi": -0.2411,
-  "uspesnost": 0.5405
+  "n": 55,
+  "p_trhu": 0.6722,
+  "roi": -0.2073,
+  "uspesnost": 0.5636
  },
  "snooker|1.6-2": {
-  "n": 47,
-  "p_trhu": 0.5137,
-  "roi": -0.1143,
-  "uspesnost": 0.4894
+  "n": 77,
+  "p_trhu": 0.516,
+  "roi": -0.0919,
+  "uspesnost": 0.5065
  },
  "snooker|2.0-2.6": {
-  "n": 22,
-  "p_trhu": 0.3946,
-  "roi": 0.2382,
-  "uspesnost": 0.5455
+  "n": 39,
+  "p_trhu": 0.395,
+  "roi": 0.1633,
+  "uspesnost": 0.5128
  },
  "snooker|2.6-4.01": {
-  "n": 53,
-  "p_trhu": 0.258,
-  "roi": 0.0802,
-  "uspesnost": 0.3396
+  "n": 80,
+  "p_trhu": 0.2571,
+  "roi": 0.0006,
+  "uspesnost": 0.3125
  },
  "snooker|jiné": {
-  "n": 11,
-  "p_trhu": 0.1549,
-  "roi": 0.5545,
-  "uspesnost": 0.3636
+  "n": 15,
+  "p_trhu": 0.1504,
+  "roi": 1.2933,
+  "uspesnost": 0.4667
  },
  "snooker|vše": {
-  "n": 210,
+  "n": 329,
+  "p_trhu": 0.5013,
+  "roi": -0.0101,
+  "uspesnost": 0.5015
+ },
+ "squash|1.0-1.3": {
+  "n": 8,
+  "p_trhu": 0.8011,
+  "roi": -0.5375,
+  "uspesnost": 0.375
+ },
+ "squash|1.3-1.6": {
+  "n": 1,
+  "p_trhu": 0.6739,
+  "roi": 0.4,
+  "uspesnost": 1.0
+ },
+ "squash|2.6-4.01": {
+  "n": 7,
+  "p_trhu": 0.2408,
+  "roi": 0.4643,
+  "uspesnost": 0.4286
+ },
+ "squash|jiné": {
+  "n": 2,
+  "p_trhu": 0.1159,
+  "roi": 4.3,
+  "uspesnost": 1.0
+ },
+ "squash|vše": {
+  "n": 18,
   "p_trhu": 0.5,
-  "roi": -0.0231,
+  "roi": 0.4417,
   "uspesnost": 0.5
  },
  "stolni-tenis|1.0-1.3": {
@@ -510,87 +642,117 @@
   "uspesnost": 0.4976
  },
  "tenis|1.0-1.3": {
-  "n": 2241,
-  "p_trhu": 0.8294,
-  "roi": -0.0293,
-  "uspesnost": 0.8322
+  "n": 2735,
+  "p_trhu": 0.83,
+  "roi": -0.024,
+  "uspesnost": 0.8373
  },
  "tenis|1.3-1.6": {
-  "n": 3077,
-  "p_trhu": 0.6541,
-  "roi": -0.0718,
-  "uspesnost": 0.6435
+  "n": 3650,
+  "p_trhu": 0.6543,
+  "roi": -0.0723,
+  "uspesnost": 0.6433
  },
  "tenis|1.6-2": {
-  "n": 5057,
+  "n": 6038,
   "p_trhu": 0.5137,
-  "roi": -0.0767,
-  "uspesnost": 0.5165
+  "roi": -0.0741,
+  "uspesnost": 0.5181
  },
  "tenis|2.0-2.6": {
-  "n": 2876,
+  "n": 3411,
   "p_trhu": 0.3985,
-  "roi": -0.0846,
-  "uspesnost": 0.4099
+  "roi": -0.0932,
+  "uspesnost": 0.406
  },
  "tenis|2.6-4.01": {
-  "n": 2288,
-  "p_trhu": 0.2669,
-  "roi": -0.2153,
-  "uspesnost": 0.2561
+  "n": 2752,
+  "p_trhu": 0.2663,
+  "roi": -0.218,
+  "uspesnost": 0.2551
  },
  "tenis|jiné": {
-  "n": 1359,
-  "p_trhu": 0.1173,
-  "roi": -0.3815,
-  "uspesnost": 0.1199
+  "n": 1659,
+  "p_trhu": 0.1164,
+  "roi": -0.3852,
+  "uspesnost": 0.1175
  },
  "tenis|vše": {
-  "n": 16898,
+  "n": 20245,
   "p_trhu": 0.4962,
-  "roi": -0.1141,
-  "uspesnost": 0.4962
+  "roi": -0.1153,
+  "uspesnost": 0.4963
+ },
+ "vodni-polo|1.0-1.3": {
+  "n": 2,
+  "p_trhu": 0.9375,
+  "roi": 0.05,
+  "uspesnost": 1.0
+ },
+ "vodni-polo|1.6-2": {
+  "n": 1,
+  "p_trhu": 0.4859,
+  "roi": -1.0,
+  "uspesnost": 0.0
+ },
+ "vodni-polo|2.0-2.6": {
+  "n": 1,
+  "p_trhu": 0.3941,
+  "roi": 1.32,
+  "uspesnost": 1.0
+ },
+ "vodni-polo|jiné": {
+  "n": 1,
+  "p_trhu": 0.1199,
+  "roi": -1.0,
+  "uspesnost": 0.0
+ },
+ "vodni-polo|vše": {
+  "n": 5,
+  "p_trhu": 0.575,
+  "roi": -0.116,
+  "uspesnost": 0.6
  },
  "volejbal|1.0-1.3": {
-  "n": 28,
-  "p_trhu": 0.8508,
-  "roi": -0.1818,
-  "uspesnost": 0.7143
+  "n": 60,
+  "p_trhu": 0.8341,
+  "roi": -0.0652,
+  "uspesnost": 0.8
  },
  "volejbal|1.3-1.6": {
-  "n": 39,
-  "p_trhu": 0.6526,
-  "roi": -0.051,
-  "uspesnost": 0.641
+  "n": 69,
+  "p_trhu": 0.6569,
+  "roi": -0.0059,
+  "uspesnost": 0.6812
  },
  "volejbal|1.6-2": {
-  "n": 124,
-  "p_trhu": 0.5086,
-  "roi": -0.1013,
-  "uspesnost": 0.5
+  "n": 179,
+  "p_trhu": 0.5094,
+  "roi": -0.0958,
+  "uspesnost": 0.5028
  },
  "volejbal|2.0-2.6": {
-  "n": 37,
-  "p_trhu": 0.4064,
-  "roi": -0.3014,
-  "uspesnost": 0.3243
+  "n": 61,
+  "p_trhu": 0.4025,
+  "roi": -0.3293,
+  "uspesnost": 0.3115
  },
  "volejbal|2.6-4.01": {
-  "n": 24,
-  "p_trhu": 0.2879,
-  "roi": 0.4604,
-  "uspesnost": 0.5
+  "n": 55,
+  "p_trhu": 0.2743,
+  "roi": 0.0264,
+  "uspesnost": 0.3455
  },
  "volejbal|jiné": {
-  "n": 23,
-  "p_trhu": 0.1202,
-  "roi": 0.4348,
-  "uspesnost": 0.2609
+  "n": 42,
+  "p_trhu": 0.1193,
+  "roi": 0.0071,
+  "uspesnost": 0.1905
  },
  "volejbal|vše": {
-  "n": 275,
-  "p_trhu": 0.4984,
-  "roi": -0.0354,
-  "uspesnost": 0.4982
+  "n": 466,
+  "p_trhu": 0.4962,
+  "roi": -0.0854,
+  "uspesnost": 0.4957
  }
 }
