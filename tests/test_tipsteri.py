@@ -852,3 +852,23 @@ def test_fortuna_opakuje_pri_vypadku(monkeypatch):
         return [{"id": "z"}]
     monkeypatch.setattr(fortuna, "nabidka", nab)
     assert bm._nabidka_s_opakovanim({"fortuna": {"pokusy_nabidky": 4, "pauza_nabidky_s": 1}}) == [{"id": "z"}] and stav["n"] == 3
+
+
+def test_vysledky_vypadek_jednoho_dne_nezahodi_ostatni(monkeypatch, tmp_path):
+    import datetime
+    from bot import config, fortuna, vysledky_fortuna as vf
+    vf._CACHE.clear()
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    ms = int(datetime.datetime(2026, 11, 11, tzinfo=datetime.timezone.utc).timestamp() * 1000)
+
+    class K:
+        def get(self, u):
+            if "/sports?date=2026-11-08" in u: raise fortuna.FortunaChyba("HTTP 522")
+            if "/sports?date=2026-11-11" in u: return [{"id": "s1", "name": "Hokej"}]
+            if "/sport/s1/tournaments" in u: return {"tournaments": [{"id": "t1", "name": "AHL"}]}
+            if "/tournament/t1/matches" in u:
+                return {"fixtures": [{"id": "ufo:mtch:A", "name": "A - B", "startDatetime": ms, "score": {"homeScore": 1, "awayScore": 0}}], "markets": []}
+            raise AssertionError(u)
+    logy = []
+    z = vf.stahni(["2026-11-08", "2026-11-11"], ["Hokej"], log=logy.append, klient=K())
+    assert [x["id"] for x in z] == ["ufo:mtch:A"] and any("522" in l for l in logy)

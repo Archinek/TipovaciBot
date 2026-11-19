@@ -90,7 +90,7 @@ class Klient:
             except urllib.error.HTTPError as e:
                 if e.code in (401, 403, 429):
                     raise FortunaBlok(f"HTTP {e.code} u {url}. Web přístup odmítl, končím a nic neobcházím.") from None
-                if e.code in (500, 502, 503, 504) and not posledni:
+                if e.code in (500, 502, 503, 504, 520, 521, 522, 523, 524) and not posledni:
                     continue
                 raise FortunaChyba(f"HTTP {e.code} u {url}") from None
             except (urllib.error.URLError, ValueError, TimeoutError) as e:

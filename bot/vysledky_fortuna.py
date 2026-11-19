@@ -109,7 +109,13 @@ def stahni(dny, sporty, log=print, klient=None):
     out = []
     try:
         for d in sorted(dny):
-            sporty_f = k.get(f"{ZAKLAD}/sports?date={d}")
+            try:
+                sporty_f = k.get(f"{ZAKLAD}/sports?date={d}")
+            except fortuna.FortunaBlok:
+                raise
+            except fortuna.FortunaChyba as e:                  # výpadek jednoho dne nesmí zahodit výsledky ostatních dnů
+                log(f"   ⚠️ Výsledky Fortuny {d}: seznam sportů nedostupný: {e}")
+                continue
             sporty_f = sporty_f if isinstance(sporty_f, list) else (sporty_f or {}).get("sports") or []
             for sp in sporty_f:
                 if chci and _sport_klic(sp.get("name")) not in chci:
