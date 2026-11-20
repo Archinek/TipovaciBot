@@ -1,1 +1,110 @@
-[]
+[
+ {
+  "turnaj": "1. Německo",
+  "home": "Bayern",
+  "away": "1.FC Köln",
+  "kod_ligy": "D1",
+  "chybi": [
+   "Bayern"
+  ]
+ },
+ {
+  "turnaj": "1. Španělsko",
+  "home": "Bilbao",
+  "away": "Espanyol",
+  "kod_ligy": "SP1",
+  "chybi": [
+   "Bilbao"
+  ]
+ },
+ {
+  "turnaj": "2. Anglie",
+  "home": "Wolverhampton",
+  "away": "Charlton",
+  "kod_ligy": "E1",
+  "chybi": [
+   "Wolverhampton"
+  ]
+ },
+ {
+  "turnaj": "2. Anglie",
+  "home": "Millwall",
+  "away": "Q.P.R.",
+  "kod_ligy": "E1",
+  "chybi": [
+   "Q.P.R."
+  ]
+ },
+ {
+  "turnaj": "2. Francie",
+  "home": "Lavallois",
+  "away": "Montpellier",
+  "kod_ligy": "F2",
+  "chybi": [
+   "Lavallois"
+  ]
+ },
+ {
+  "turnaj": "1. Anglie",
+  "home": "Bournemouth",
+  "away": "Nottingham",
+  "kod_ligy": "E0",
+  "chybi": [
+   "Nottingham"
+  ]
+ },
+ {
+  "turnaj": "1. Německo",
+  "home": "Frankfurt",
+  "away": "Hoffenheim",
+  "kod_ligy": "D1",
+  "chybi": [
+   "Frankfurt"
+  ]
+ },
+ {
+  "turnaj": "1. Francie",
+  "home": "Nice",
+  "away": "PSG",
+  "kod_ligy": "F1",
+  "chybi": [
+   "PSG"
+  ]
+ },
+ {
+  "turnaj": "1. Belgie",
+  "home": "Charleroi",
+  "away": "Truidense",
+  "kod_ligy": "B1",
+  "chybi": [
+   "Truidense"
+  ]
+ },
+ {
+  "turnaj": "2. Německo",
+  "home": "Hannover 96",
+  "away": "Fürth",
+  "kod_ligy": "D2",
+  "chybi": [
+   "Fürth"
+  ]
+ },
+ {
+  "turnaj": "2. Německo",
+  "home": "Wolfsburg",
+  "away": "Kiel",
+  "kod_ligy": "D2",
+  "chybi": [
+   "Kiel"
+  ]
+ },
+ {
+  "turnaj": "1. Turecko",
+  "home": "Amed SK",
+  "away": "Caykur Rizespor",
+  "kod_ligy": "T1",
+  "chybi": [
+   "Amed SK"
+  ]
+ }
+]
