@@ -1,23 +1,5 @@
 [
  {
-  "turnaj": "1. Německo",
-  "home": "Bayern",
-  "away": "1.FC Köln",
-  "kod_ligy": "D1",
-  "chybi": [
-   "Bayern"
-  ]
- },
- {
-  "turnaj": "1. Španělsko",
-  "home": "Bilbao",
-  "away": "Espanyol",
-  "kod_ligy": "SP1",
-  "chybi": [
-   "Bilbao"
-  ]
- },
- {
   "turnaj": "2. Anglie",
   "home": "Wolverhampton",
   "away": "Charlton",
@@ -105,6 +87,78 @@
   "kod_ligy": "T1",
   "chybi": [
    "Amed SK"
+  ]
+ },
+ {
+  "turnaj": "1. Řecko",
+  "home": "Panaitolikos",
+  "away": "Volos FC",
+  "kod_ligy": "G1",
+  "chybi": [
+   "Volos FC"
+  ]
+ },
+ {
+  "turnaj": "1. Řecko",
+  "home": "Panathinaikos",
+  "away": "OFI Kreta",
+  "kod_ligy": "G1",
+  "chybi": [
+   "OFI Kreta"
+  ]
+ },
+ {
+  "turnaj": "1. Německo",
+  "home": "Bremen",
+  "away": "Hamburger SV",
+  "kod_ligy": "D1",
+  "chybi": [
+   "Bremen"
+  ]
+ },
+ {
+  "turnaj": "1. Belgie",
+  "home": "Anderlecht",
+  "away": "Leuven",
+  "kod_ligy": "B1",
+  "chybi": [
+   "Leuven"
+  ]
+ },
+ {
+  "turnaj": "1. Belgie",
+  "home": "Lommel SK",
+  "away": "St.Liege",
+  "kod_ligy": "B1",
+  "chybi": [
+   "St.Liege"
+  ]
+ },
+ {
+  "turnaj": "1. Nizozemsko",
+  "home": "G.A.Eagles",
+  "away": "Sittard",
+  "kod_ligy": "N1",
+  "chybi": [
+   "Sittard"
+  ]
+ },
+ {
+  "turnaj": "2. Německo",
+  "home": "K lautern",
+  "away": "Dyn.Dresden",
+  "kod_ligy": "D2",
+  "chybi": [
+   "K lautern"
+  ]
+ },
+ {
+  "turnaj": "2. Španělsko",
+  "home": "Sporting Gijón",
+  "away": "Las Palmas",
+  "kod_ligy": "SP2",
+  "chybi": [
+   "Sporting Gijón"
   ]
  }
 ]
