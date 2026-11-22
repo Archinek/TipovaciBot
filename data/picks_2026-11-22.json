@@ -1,0 +1,2982 @@
+{
+  "datum": "2026-11-22",
+  "picks": [],
+  "vyrazene": [],
+  "vcera": "",
+  "doplnkove": [],
+  "fortuna": [
+    {
+      "zapas": "Lorient - Rennes",
+      "zapas_id": "ufo:mtch:1xx-08z",
+      "sport": "fotbal",
+      "home_fd": "Lorient",
+      "away_fd": "Rennes",
+      "noha_klic": "goly|3.5|over|",
+      "home": "Lorient",
+      "away": "Rennes",
+      "start": "2026-11-22T16:15:00+00:00",
+      "liga": "1. Francie",
+      "kod": "F1",
+      "trh": "Góly v zápase: více než 3.5",
+      "typ": "goly",
+      "linie": 3.5,
+      "strana": "over",
+      "kurz_fortuna": 3.6,
+      "p_model": 0.351,
+      "p_trh": 0.2483,
+      "p": 0.2996,
+      "edge": 0.0787,
+      "sazej_od": 3.44,
+      "fair": 3.34,
+      "mu": [
+        1.55,
+        1.44
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.87,
+          "rohy": 9.5,
+          "fauly": 24.23,
+          "karty": 3.69
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Le Mans 1:2",
+            "10.10. D Paris FC 1:0",
+            "18.10. D Monaco 1:0",
+            "25.10. V Angers 0:0",
+            "02.11. D Brest 0:2"
+          ],
+          "goly_pro": 0.7,
+          "goly_proti": 1.0,
+          "rohy_pro": 3.8,
+          "rohy_proti": 4.8,
+          "fauly_pro": 9.6,
+          "fauly_proti": 14.7,
+          "zlute_pro": 1.2,
+          "zlute_proti": 2.0
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Lyon 0:4",
+            "11.10. D Auxerre 4:1",
+            "18.10. V Paris FC 3:4",
+            "25.10. D Strasbourg 3:0",
+            "30.10. V Nice 2:5"
+          ],
+          "goly_pro": 2.1,
+          "goly_proti": 2.2,
+          "rohy_pro": 6.1,
+          "rohy_proti": 5.6,
+          "fauly_pro": 12.4,
+          "fauly_proti": 11.7,
+          "zlute_pro": 2.2,
+          "zlute_proti": 2.6
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "24.08.2025 Lorient 4:0, žluté 6, fauly 25, rohy 5",
+          "24.01.2026 Rennes 0:2, žluté 2, fauly 25, rohy 12"
+        ]
+      },
+      "skore": 0.0405,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.76,
+      "analyza": {
+        "id": "Lorient - Rennes",
+        "verdikt": "NEJISTE",
+        "duvod": "Zatímco Rennes hraje ofenzivní divočiny s vysokým počtem branek, Lorient drží sérii defenzivních duelů s minimem gólů a čistými konty, což vytváří silný stylový rozpor.",
+        "souhrn": "Bretaňské derby mezi Lorientem a Rennes staví proti sobě pevnou obranu Merlus a otevřenou hru hostů. Ačkoliv matematický model spatřuje hodnotu v Overech, defenzivní bilance Lorientu vyžaduje opatrnost.",
+        "text": "Tradiční bretaňské derby v 11. kole Ligue 1 představuje střet dvou naprosto protichůdných herních stylů. Domácí Lorient pod vedením trenéra vykazuje vysokou organizaci v defenzivě, když v dosavadních deseti ligových kolech inkasoval pouze 8 branek a udržel 6 čistých kont, přičemž jeho vlastní produktivita je velmi skromná s průměrem 0,7 gólu na zápas. Naproti tomu Rennes zažívá divoké přestřelky s ligovým skóre 21:21 po deseti kolech, což potvrzují nedávné výsledky 2:5 v Nice nebo 3:4 na Paris FC, a táhne je především kanonýr Esteban Lepaul se 7 trefami. Zápas se odehraje na Stade du Moustoir v Lorientu s hybridním trávníkem standardních rozměrů 105 x 68 metrů za typického bretaňského podzimního počasí kolem 12 °C s možností přeháněk. Rozhodčí utkání nebyl v ligové statistice specifikován, takže jeho vliv nelze exaktně kvantifikovat. Z pohledu programu přicházejí oba celky po reprezentační pauze čerstvé bez pohárové zátěže. Přestože vzájemné duely z minulosti i divoká obrana Rennes nahrávají ofenzivnímu průběhu, extrémní podzimní underovost Lorientu představuje zásadní protivítr proti sázkám na Over 2.5 a 3.5 gólu.",
+        "duvera_gemini": 6,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu gólových trhů."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "Stade du Moustoir, standardní rozměry 105 x 68 m, hybridní trávník.",
+            "stav": "nalezeno",
+            "dopad": "+ a standardní rozměry umožňují plynulou kombinaci i rychlý přechod do útoku."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Lorient, teplota cca 11-13 °C, oblačno až mírný déšť, vítr kolem 15-20 km/h.",
+            "stav": "odhad",
+            "dopad": "- a mokrý povrch může ztížit kombinaci, ale zároveň vést k chybám v obraně."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Zápas po reprezentační přestávce, oba týmy bez evropských pohárů v týdnu.",
+            "stav": "nalezeno",
+            "dopad": "+ a plná regenerace základních sestav a energie na plných 90 minut."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Bretaňské derby (Derby breton), tradičně emotivní a bojovný náboj.",
+            "stav": "nalezeno",
+            "dopad": "0 a zvýšená opatrnost v derby může tlumit ofenzivní odvahu na úkor taktiky."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Oficiální sestavy nejsou v předstihu potvrzeny.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na předzápasový protokol."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Klíčový střelec Rennes Esteban Lepaul je hlášen k dispozici; bez zásadních potvrzených absencí páteře týmů.",
+            "stav": "odhad",
+            "dopad": "+ a přítomnost nejlepšího střelce posiluje ofenzivní potenciál Rennes."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurz 3.60 na Over 3.5 obsahuje dle modelu edge +7.87 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a vysoký kurz matematicky kompenzuje vyšší volatilitu."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Lorient 10. místo (15 b.), Rennes 8. místo (16 b.), souboj o přiblížení k pohárovým příčkám.",
+            "stav": "nalezeno",
+            "dopad": "+ a těsný odstup v tabulce nutí oba celky hrát na vítězství."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemné zápasy v historii: 4:0 pro Lorient a 2:0 pro Lorient.",
+            "stav": "nalezeno",
+            "dopad": "0 a v minulosti padaly góly, ale v posledním vzájemném duelu jen 2."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Lorient preferuje kompaktní hluboký blok, Rennes hraje otevřený riskantní fotbal s velkými prostory vzadu.",
+            "stav": "nalezeno",
+            "dopad": "0 a přetahovaná o tempo hry – Rennes bude tlačit, Lorient hrozit z brejků."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Lorient drží ustálený systém s pětičlennou defenzivní linií bez míče.",
+            "stav": "odhad",
+            "dopad": "- a zahuštěný prostor před vápnem eliminuje rychlé kombinace soupeře."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "Lorient inkasoval jen 1 gól v průměru, Rennes skóre 2.1:2.2 na zápas.",
+            "stav": "nalezeno",
+            "dopad": "+ a Rennes své zápasy pravidelně posílá do divokých overových výsledků."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Lorient doma inkasoval většinu svých branek (6 z 8), Rennes venku 5 zápasů bez výhry.",
+            "stav": "nalezeno",
+            "dopad": "+ a slabší domácí defenziva Lorientu otevírá šance pro Rennes."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Rennes má vyšší počet rohů (6.1 na zápas), z nichž vytváří trvalý tlak.",
+            "stav": "nalezeno",
+            "dopad": "+ a standardní situace mohou rozbít pevnou obranu Lorientu."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Rennes sbírá 2.2 žluté karty a 12.4 faulů na zápas, Lorient 9.6 faulů.",
+            "stav": "nalezeno",
+            "dopad": "0 a disciplína je na standardní ligové úrovni bez hrozby rychlých červených karet."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Nebyla hlášena žádná změna rozhodčího.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Žádná rotace z důvodu pohárů se neočekává.",
+            "stav": "nalezeno",
+            "dopad": "+ a nastoupí nejsilnější možné základní jedenáctky."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Pro samostatné trhy celkových gólů není relevantní.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu."
+          }
+        ],
+        "pro": [
+          "Rennes má ligový průměr 4.3 gólu na zápas a jeho obrana patří k nejhorším v lize.",
+          "Útočník Rennes Esteban Lepaul je v produktivní formě se 7 góly v 7 ligových zápasech.",
+          "Lorient inkasoval 6 ze svých 8 ligových branek právě na domácím stadionu.",
+          "Matematický model dává solidní value u kurzů 2.05 (Over 2.5) a 3.60 (Over 3.5)."
+        ],
+        "proti": [
+          "Lorient udržel 6 čistých kont v 10 ligových kolech a sám dává pouze 0.7 gólu na zápas.",
+          "V posledních 5 ligových zápasech Lorientu padlo dohromady pouhých 5 branek.",
+          "Rivalita bretaňského derby často vede k taktickému vyčkávání a přerušování hry."
+        ],
+        "riziko": "Pokud Lorient dokáže svou disciplinovanou hlubokou obranou otupit nátlak Rennes, zápas může skončit bezbrankovou remízou nebo hubeným výsledkem 1:0.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Góly v zápase: více než 3.5",
+            "komentar": "Kurz 3.60 nabízí solidní hodnotu díky chaotické obraně Rennes, je však extrémně volatilní vzhledem k defenzivnímu pojetí Lorientu."
+          },
+          {
+            "trh": "Góly v zápase: více než 2.5",
+            "komentar": "Vyváženější varianta s kurzem 2.05, která počítá s prolomením lorientovského bloku alespoň jedním rychlým gólem."
+          }
+        ]
+      },
+      "tip_dne": 1,
+      "overeni": "trh sedí"
+    },
+    {
+      "zapas": "Monza - Fiorentina",
+      "zapas_id": "ufo:mtch:1xy-00q",
+      "sport": "fotbal",
+      "home_fd": "Monza",
+      "away_fd": "Fiorentina",
+      "noha_klic": "goly|4.5|over|",
+      "home": "Monza",
+      "away": "Fiorentina",
+      "start": "2026-11-23T19:45:00+00:00",
+      "liga": "1. Itálie",
+      "kod": "I1",
+      "trh": "Góly v zápase: více než 4.5",
+      "typ": "goly",
+      "linie": 4.5,
+      "strana": "over",
+      "kurz_fortuna": 4.2,
+      "p_model": 0.2965,
+      "p_trh": 0.2046,
+      "p": 0.2505,
+      "edge": 0.0522,
+      "sazej_od": 4.12,
+      "fair": 3.99,
+      "mu": [
+        1.84,
+        1.78
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.58,
+          "rohy": 8.99,
+          "fauly": 24.61,
+          "karty": 3.6
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. V Lazio 1:3",
+            "19.10. D Cagliari 4:0",
+            "23.10. V Torino 2:3",
+            "28.10. D Napoli 1:4",
+            "31.10. V Bologna 1:2"
+          ],
+          "goly_pro": 1.7,
+          "goly_proti": 2.4,
+          "rohy_pro": 3.8,
+          "rohy_proti": 4.5,
+          "fauly_pro": 12.2,
+          "fauly_proti": 10.4,
+          "zlute_pro": 1.7,
+          "zlute_proti": 1.7
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "10.10. V Genoa 1:2",
+            "18.10. D Como 1:3",
+            "25.10. V Inter 1:2",
+            "29.10. D Atalanta 2:2",
+            "02.11. V Sassuolo 4:2"
+          ],
+          "goly_pro": 1.5,
+          "goly_proti": 2.3,
+          "rohy_pro": 4.9,
+          "rohy_proti": 4.0,
+          "fauly_pro": 11.6,
+          "fauly_proti": 12.6,
+          "zlute_pro": 2.3,
+          "zlute_proti": 1.9
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.029,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.41,
+      "analyza": {
+        "id": "Monza - Fiorentina",
+        "verdikt": "OK",
+        "duvod": "Oba týmy se dlouhodobě trápí v obraně a vykazují extrémní průměry inkasovaných branek (2.4 a 2.3 na zápas), což jednoznačně podporuje vysoké gólové hranice.",
+        "souhrn": "Pondělní dohrávka Serie A mezi trápící se Monzou a ožívající Fiorentinou slibuje otevřený fotbal. Propustné defenzivy obou celků dělají z gólových overů velmi pravděpodobný scénář.",
+        "text": "Střetnutí na U-Power Stadium uzavírá 12. kolo italské Serie A soubojem dvou mužstev ze spodních pater tabulky, která mají shodně obrovské problémy v defenzivní činnosti. Domácí Monza pod vedením trenéra prohrála čtyři ligová kola v řadě (s Torinem, Neapolí, Bolognou a Atalantou), přičemž v posledních 10 duelech inkasuje v průměru alarmujících 2,4 gólu na utkání a hůře je na tom v celé lize pouze Sassuolo. Hostující Fiorentina se pod trenérem Paolem Vanolim mírně zvedla a začala sbírat body z přestřelek, jako byla venkovní výhra 4:2 na Sassuolu či remízy 2:2 s Atalantou a Juventusem, avšak v dosavadním průběhu sezony stále ani jednou neudržela čisté konto a průměrně inkasuje 2,3 branky. Zápas se odehraje na travnatém pažitu U-Power Stadium o rozměrech 105 x 65 metrů za chladného listopadového večera kolem 8 °C. Údaje o rozhodčím nebyly v ligovém přehledu dodány, nicméně styl hry obou týmů staví na přímočarých přechodech a hrubých chybách stoperů. Monza doma nutně potřebuje prolomit sérii porážek a Fiorentina hraje venku výrazně ofenzivněji než doma, což předurčuje oboustranně skórující a na branky bohaté utkání. Data a reálná forma zcela korelují s predikcí matematického modelu, který očekává součet kolem 3,6 gólu.",
+        "duvera_gemini": 8,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu gólů."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "U-Power Stadium (Monza), rozměry 105 x 65 m, přírodní trávník.",
+            "stav": "nalezeno",
+            "dopad": "0 a mírně užší hřiště zahušťuje střed, ale zrychluje dostřel do obou šestnáctek."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Monza, večerní výkop, teplota 7-9 °C, sucho, slabý vítr.",
+            "stav": "odhad",
+            "dopad": "+ a optimální fotbalové podmínky bez nepříznivých povětrnostních vlivů."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Hraje se v pondělí po reprezentační pauze, týmy měly dostatek času na regeneraci a přípravu.",
+            "stav": "nalezeno",
+            "dopad": "+ a čerství hráči s plnou fyzickou kondicí pro vysoké tempo."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Nejedná se o vyhrocené regionální derby, běžný ligový duel.",
+            "stav": "nalezeno",
+            "dopad": "+ a absence přehnaného napětí snižuje riziko svázanosti a faulů na úkor fotbalu."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Sestavy budou známy zhruba hodinu před pondělním výkopem.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na oficiální soupisku."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Oba týmy mají k dispozici hlavní ofenzivní zbraně; defenzivní řady jsou dlouhodobě nestabilní.",
+            "stav": "odhad",
+            "dopad": "+ a slabší obranné složení nahrává útočníkům soupeře."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurz 4.20 na Over 4.5 obsahuje edge +5.22 %, Over 3.5 kurz 2.39 s edge +4.92 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a vysoké kurzy jsou podloženy reálnými gólovými žněmi obou týmů."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Monza je 18. v pásmu sestupu (7 b.), Fiorentina 15. (9 b.); přímý souboj o záchranu.",
+            "stav": "nalezeno",
+            "dopad": "+ a Monza doma musí riskovat na výhru, což otevře prostor Fiorentině."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemná historie v datech prázdná, v minulých sezonách v Serii A padalo 2:1 a 2:2.",
+            "stav": "nalezeno",
+            "dopad": "+ a vzájemné zápasy historicky přinášely góly na obou stranách."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Fiorentina pod Vanolim sází na rychlé přechody a aktivní křídla, Monza propadá při bránění standardek i brejků.",
+            "stav": "nalezeno",
+            "dopad": "+ a taktická náchylnost obou defenziv vede k velkým gólovým šancím."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Monza pod trenérem praktikuje hru s vysokým presinkem, který často zanechává přečíslenou obranu.",
+            "stav": "odhad",
+            "dopad": "+ a riziko z brejků soupeře přímo generuje gólové příležitosti."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "Monza z 5 zápasů skóre 9:11, Fiorentina z 5 zápasů skóre 10:11.",
+            "stav": "nalezeno",
+            "dopad": "+ a brutální série overů na obou stranách v posledním měsíci."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Fiorentina obě svá ligová vítězství v sezoně vybojovala venku, venku hraje uvolněněji.",
+            "stav": "nalezeno",
+            "dopad": "+ a venkovní produktivita Fiorentiny táhne skóre nahoru."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Oba týmy inkasují značné množství branek po centrech a rozích ze standardních situací.",
+            "stav": "odhad",
+            "dopad": "+ a zvyšuje pravděpodobnost nečekaného gólu i v pasivnějších pasážích."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Monza 12.2 faulů/zápas, Fiorentina 11.6 faulů/zápas, karty pod průměrem ligy.",
+            "stav": "nalezeno",
+            "dopad": "0 a průměrná disciplína bez tendence k rozkouskování hry."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Žádná změna rozhodčího nebyla indikována.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Fiorentina nehraje v mezidobí evropské poháry, plné soustředění na ligu.",
+            "stav": "nalezeno",
+            "dopad": "+ a žádné šetření opor pro pohárový program."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Kombinace vysokého xG a slabých obran posiluje celkový trend overu.",
+            "stav": "nalezeno",
+            "dopad": "+ a synergie mezi ofenzivní produkcí a děravými obranami."
+          }
+        ],
+        "pro": [
+          "Monza inkasovala v posledních 10 zápasech průměrně 2.4 gólu na zápas.",
+          "Fiorentina v celé dosavadní ligové sezoně ani jednou neudržela čisté konto (průměr 2.3 obdrženého gólu).",
+          "V posledních 5 ligových zápasech Fiorentiny padlo v součtu 21 gólů (průměr 4.2 na zápas).",
+          "Monza v posledních kolech pravidelně inkasuje 2 až 4 góly (Lazio 1:3, Torino 2:3, Neapol 1:4)."
+        ],
+        "proti": [
+          "Jde o přímý souboj o záchranu, což může při vyrovnaném stavu vést k taktickému uzavření závěru utkání.",
+          "Monza v posledním odehraném duelu před pauzou neskórovala (porážka 0:1 s Atalantou)."
+        ],
+        "riziko": "Pokud by oba týmy vstoupily do utkání s extrémně pragmatickým defenzivním plánem a první poločas skončil 0:0, vysoké lajny Over 3.5 a 4.5 budou v ohrožení.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Góly v zápase: více než 4.5",
+            "komentar": "Velmi agresivní tip s atraktivním kurzem 4.20, kterému dodává reálnou šanci venkovní zápas Fiorentiny v Sassuolu (4:2) či duely Monzy s Neapolí a Turínem."
+          },
+          {
+            "trh": "Góly v zápase: více než 3.5",
+            "komentar": "Výborná rovnováha mezi kurzem 2.39 a realitou obou obran, které dlouhodobě pouštějí přes 2 góly na zápas."
+          },
+          {
+            "trh": "Góly v zápase: více než 2.5",
+            "komentar": "Základní jistější volba na hranici 1.58, která plně reflektuje katastrofální čistá konta Fiorentiny a chyby domácí obrany."
+          }
+        ]
+      },
+      "tip_dne": 2,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "zapas": "Lorient - Rennes",
+      "zapas_id": "ufo:mtch:1xx-08z",
+      "sport": "fotbal",
+      "home_fd": "Lorient",
+      "away_fd": "Rennes",
+      "noha_klic": "goly|2.5|over|",
+      "home": "Lorient",
+      "away": "Rennes",
+      "start": "2026-11-22T16:15:00+00:00",
+      "liga": "1. Francie",
+      "kod": "F1",
+      "trh": "Góly v zápase: více než 2.5",
+      "typ": "goly",
+      "linie": 2.5,
+      "strana": "over",
+      "kurz_fortuna": 2.05,
+      "p_model": 0.5635,
+      "p_trh": 0.4621,
+      "p": 0.5128,
+      "edge": 0.0513,
+      "sazej_od": 2.01,
+      "fair": 1.95,
+      "mu": [
+        1.55,
+        1.44
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.87,
+          "rohy": 9.5,
+          "fauly": 24.23,
+          "karty": 3.69
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Le Mans 1:2",
+            "10.10. D Paris FC 1:0",
+            "18.10. D Monaco 1:0",
+            "25.10. V Angers 0:0",
+            "02.11. D Brest 0:2"
+          ],
+          "goly_pro": 0.7,
+          "goly_proti": 1.0,
+          "rohy_pro": 3.8,
+          "rohy_proti": 4.8,
+          "fauly_pro": 9.6,
+          "fauly_proti": 14.7,
+          "zlute_pro": 1.2,
+          "zlute_proti": 2.0
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Lyon 0:4",
+            "11.10. D Auxerre 4:1",
+            "18.10. V Paris FC 3:4",
+            "25.10. D Strasbourg 3:0",
+            "30.10. V Nice 2:5"
+          ],
+          "goly_pro": 2.1,
+          "goly_proti": 2.2,
+          "rohy_pro": 6.1,
+          "rohy_proti": 5.6,
+          "fauly_pro": 12.4,
+          "fauly_proti": 11.7,
+          "zlute_pro": 2.2,
+          "zlute_proti": 2.6
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "24.08.2025 Lorient 4:0, žluté 6, fauly 25, rohy 5",
+          "24.01.2026 Rennes 0:2, žluté 2, fauly 25, rohy 12"
+        ]
+      },
+      "skore": 0.0267,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.22,
+      "analyza": {
+        "id": "Lorient - Rennes",
+        "verdikt": "NEJISTE",
+        "duvod": "Zatímco Rennes hraje ofenzivní divočiny s vysokým počtem branek, Lorient drží sérii defenzivních duelů s minimem gólů a čistými konty, což vytváří silný stylový rozpor.",
+        "souhrn": "Bretaňské derby mezi Lorientem a Rennes staví proti sobě pevnou obranu Merlus a otevřenou hru hostů. Ačkoliv matematický model spatřuje hodnotu v Overech, defenzivní bilance Lorientu vyžaduje opatrnost.",
+        "text": "Tradiční bretaňské derby v 11. kole Ligue 1 představuje střet dvou naprosto protichůdných herních stylů. Domácí Lorient pod vedením trenéra vykazuje vysokou organizaci v defenzivě, když v dosavadních deseti ligových kolech inkasoval pouze 8 branek a udržel 6 čistých kont, přičemž jeho vlastní produktivita je velmi skromná s průměrem 0,7 gólu na zápas. Naproti tomu Rennes zažívá divoké přestřelky s ligovým skóre 21:21 po deseti kolech, což potvrzují nedávné výsledky 2:5 v Nice nebo 3:4 na Paris FC, a táhne je především kanonýr Esteban Lepaul se 7 trefami. Zápas se odehraje na Stade du Moustoir v Lorientu s hybridním trávníkem standardních rozměrů 105 x 68 metrů za typického bretaňského podzimního počasí kolem 12 °C s možností přeháněk. Rozhodčí utkání nebyl v ligové statistice specifikován, takže jeho vliv nelze exaktně kvantifikovat. Z pohledu programu přicházejí oba celky po reprezentační pauze čerstvé bez pohárové zátěže. Přestože vzájemné duely z minulosti i divoká obrana Rennes nahrávají ofenzivnímu průběhu, extrémní podzimní underovost Lorientu představuje zásadní protivítr proti sázkám na Over 2.5 a 3.5 gólu.",
+        "duvera_gemini": 6,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu gólových trhů."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "Stade du Moustoir, standardní rozměry 105 x 68 m, hybridní trávník.",
+            "stav": "nalezeno",
+            "dopad": "+ a standardní rozměry umožňují plynulou kombinaci i rychlý přechod do útoku."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Lorient, teplota cca 11-13 °C, oblačno až mírný déšť, vítr kolem 15-20 km/h.",
+            "stav": "odhad",
+            "dopad": "- a mokrý povrch může ztížit kombinaci, ale zároveň vést k chybám v obraně."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Zápas po reprezentační přestávce, oba týmy bez evropských pohárů v týdnu.",
+            "stav": "nalezeno",
+            "dopad": "+ a plná regenerace základních sestav a energie na plných 90 minut."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Bretaňské derby (Derby breton), tradičně emotivní a bojovný náboj.",
+            "stav": "nalezeno",
+            "dopad": "0 a zvýšená opatrnost v derby může tlumit ofenzivní odvahu na úkor taktiky."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Oficiální sestavy nejsou v předstihu potvrzeny.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na předzápasový protokol."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Klíčový střelec Rennes Esteban Lepaul je hlášen k dispozici; bez zásadních potvrzených absencí páteře týmů.",
+            "stav": "odhad",
+            "dopad": "+ a přítomnost nejlepšího střelce posiluje ofenzivní potenciál Rennes."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurz 3.60 na Over 3.5 obsahuje dle modelu edge +7.87 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a vysoký kurz matematicky kompenzuje vyšší volatilitu."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Lorient 10. místo (15 b.), Rennes 8. místo (16 b.), souboj o přiblížení k pohárovým příčkám.",
+            "stav": "nalezeno",
+            "dopad": "+ a těsný odstup v tabulce nutí oba celky hrát na vítězství."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemné zápasy v historii: 4:0 pro Lorient a 2:0 pro Lorient.",
+            "stav": "nalezeno",
+            "dopad": "0 a v minulosti padaly góly, ale v posledním vzájemném duelu jen 2."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Lorient preferuje kompaktní hluboký blok, Rennes hraje otevřený riskantní fotbal s velkými prostory vzadu.",
+            "stav": "nalezeno",
+            "dopad": "0 a přetahovaná o tempo hry – Rennes bude tlačit, Lorient hrozit z brejků."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Lorient drží ustálený systém s pětičlennou defenzivní linií bez míče.",
+            "stav": "odhad",
+            "dopad": "- a zahuštěný prostor před vápnem eliminuje rychlé kombinace soupeře."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "Lorient inkasoval jen 1 gól v průměru, Rennes skóre 2.1:2.2 na zápas.",
+            "stav": "nalezeno",
+            "dopad": "+ a Rennes své zápasy pravidelně posílá do divokých overových výsledků."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Lorient doma inkasoval většinu svých branek (6 z 8), Rennes venku 5 zápasů bez výhry.",
+            "stav": "nalezeno",
+            "dopad": "+ a slabší domácí defenziva Lorientu otevírá šance pro Rennes."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Rennes má vyšší počet rohů (6.1 na zápas), z nichž vytváří trvalý tlak.",
+            "stav": "nalezeno",
+            "dopad": "+ a standardní situace mohou rozbít pevnou obranu Lorientu."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Rennes sbírá 2.2 žluté karty a 12.4 faulů na zápas, Lorient 9.6 faulů.",
+            "stav": "nalezeno",
+            "dopad": "0 a disciplína je na standardní ligové úrovni bez hrozby rychlých červených karet."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Nebyla hlášena žádná změna rozhodčího.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Žádná rotace z důvodu pohárů se neočekává.",
+            "stav": "nalezeno",
+            "dopad": "+ a nastoupí nejsilnější možné základní jedenáctky."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Pro samostatné trhy celkových gólů není relevantní.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu."
+          }
+        ],
+        "pro": [
+          "Rennes má ligový průměr 4.3 gólu na zápas a jeho obrana patří k nejhorším v lize.",
+          "Útočník Rennes Esteban Lepaul je v produktivní formě se 7 góly v 7 ligových zápasech.",
+          "Lorient inkasoval 6 ze svých 8 ligových branek právě na domácím stadionu.",
+          "Matematický model dává solidní value u kurzů 2.05 (Over 2.5) a 3.60 (Over 3.5)."
+        ],
+        "proti": [
+          "Lorient udržel 6 čistých kont v 10 ligových kolech a sám dává pouze 0.7 gólu na zápas.",
+          "V posledních 5 ligových zápasech Lorientu padlo dohromady pouhých 5 branek.",
+          "Rivalita bretaňského derby často vede k taktickému vyčkávání a přerušování hry."
+        ],
+        "riziko": "Pokud Lorient dokáže svou disciplinovanou hlubokou obranou otupit nátlak Rennes, zápas může skončit bezbrankovou remízou nebo hubeným výsledkem 1:0.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Góly v zápase: více než 3.5",
+            "komentar": "Kurz 3.60 nabízí solidní hodnotu díky chaotické obraně Rennes, je však extrémně volatilní vzhledem k defenzivnímu pojetí Lorientu."
+          },
+          {
+            "trh": "Góly v zápase: více než 2.5",
+            "komentar": "Vyváženější varianta s kurzem 2.05, která počítá s prolomením lorientovského bloku alespoň jedním rychlým gólem."
+          }
+        ]
+      },
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "zapas": "Monza - Fiorentina",
+      "zapas_id": "ufo:mtch:1xy-00q",
+      "sport": "fotbal",
+      "home_fd": "Monza",
+      "away_fd": "Fiorentina",
+      "noha_klic": "goly|3.5|over|",
+      "home": "Monza",
+      "away": "Fiorentina",
+      "start": "2026-11-23T19:45:00+00:00",
+      "liga": "1. Itálie",
+      "kod": "I1",
+      "trh": "Góly v zápase: více než 3.5",
+      "typ": "goly",
+      "linie": 3.5,
+      "strana": "over",
+      "kurz_fortuna": 2.39,
+      "p_model": 0.488,
+      "p_trh": 0.39,
+      "p": 0.439,
+      "edge": 0.0492,
+      "sazej_od": 2.35,
+      "fair": 2.28,
+      "mu": [
+        1.84,
+        1.78
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.58,
+          "rohy": 8.99,
+          "fauly": 24.61,
+          "karty": 3.6
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. V Lazio 1:3",
+            "19.10. D Cagliari 4:0",
+            "23.10. V Torino 2:3",
+            "28.10. D Napoli 1:4",
+            "31.10. V Bologna 1:2"
+          ],
+          "goly_pro": 1.7,
+          "goly_proti": 2.4,
+          "rohy_pro": 3.8,
+          "rohy_proti": 4.5,
+          "fauly_pro": 12.2,
+          "fauly_proti": 10.4,
+          "zlute_pro": 1.7,
+          "zlute_proti": 1.7
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "10.10. V Genoa 1:2",
+            "18.10. D Como 1:3",
+            "25.10. V Inter 1:2",
+            "29.10. D Atalanta 2:2",
+            "02.11. V Sassuolo 4:2"
+          ],
+          "goly_pro": 1.5,
+          "goly_proti": 2.3,
+          "rohy_pro": 4.9,
+          "rohy_proti": 4.0,
+          "fauly_pro": 11.6,
+          "fauly_proti": 12.6,
+          "zlute_pro": 2.3,
+          "zlute_proti": 1.9
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.0262,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 0.88,
+      "analyza": {
+        "id": "Monza - Fiorentina",
+        "verdikt": "OK",
+        "duvod": "Oba týmy se dlouhodobě trápí v obraně a vykazují extrémní průměry inkasovaných branek (2.4 a 2.3 na zápas), což jednoznačně podporuje vysoké gólové hranice.",
+        "souhrn": "Pondělní dohrávka Serie A mezi trápící se Monzou a ožívající Fiorentinou slibuje otevřený fotbal. Propustné defenzivy obou celků dělají z gólových overů velmi pravděpodobný scénář.",
+        "text": "Střetnutí na U-Power Stadium uzavírá 12. kolo italské Serie A soubojem dvou mužstev ze spodních pater tabulky, která mají shodně obrovské problémy v defenzivní činnosti. Domácí Monza pod vedením trenéra prohrála čtyři ligová kola v řadě (s Torinem, Neapolí, Bolognou a Atalantou), přičemž v posledních 10 duelech inkasuje v průměru alarmujících 2,4 gólu na utkání a hůře je na tom v celé lize pouze Sassuolo. Hostující Fiorentina se pod trenérem Paolem Vanolim mírně zvedla a začala sbírat body z přestřelek, jako byla venkovní výhra 4:2 na Sassuolu či remízy 2:2 s Atalantou a Juventusem, avšak v dosavadním průběhu sezony stále ani jednou neudržela čisté konto a průměrně inkasuje 2,3 branky. Zápas se odehraje na travnatém pažitu U-Power Stadium o rozměrech 105 x 65 metrů za chladného listopadového večera kolem 8 °C. Údaje o rozhodčím nebyly v ligovém přehledu dodány, nicméně styl hry obou týmů staví na přímočarých přechodech a hrubých chybách stoperů. Monza doma nutně potřebuje prolomit sérii porážek a Fiorentina hraje venku výrazně ofenzivněji než doma, což předurčuje oboustranně skórující a na branky bohaté utkání. Data a reálná forma zcela korelují s predikcí matematického modelu, který očekává součet kolem 3,6 gólu.",
+        "duvera_gemini": 8,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu gólů."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "U-Power Stadium (Monza), rozměry 105 x 65 m, přírodní trávník.",
+            "stav": "nalezeno",
+            "dopad": "0 a mírně užší hřiště zahušťuje střed, ale zrychluje dostřel do obou šestnáctek."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Monza, večerní výkop, teplota 7-9 °C, sucho, slabý vítr.",
+            "stav": "odhad",
+            "dopad": "+ a optimální fotbalové podmínky bez nepříznivých povětrnostních vlivů."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Hraje se v pondělí po reprezentační pauze, týmy měly dostatek času na regeneraci a přípravu.",
+            "stav": "nalezeno",
+            "dopad": "+ a čerství hráči s plnou fyzickou kondicí pro vysoké tempo."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Nejedná se o vyhrocené regionální derby, běžný ligový duel.",
+            "stav": "nalezeno",
+            "dopad": "+ a absence přehnaného napětí snižuje riziko svázanosti a faulů na úkor fotbalu."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Sestavy budou známy zhruba hodinu před pondělním výkopem.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na oficiální soupisku."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Oba týmy mají k dispozici hlavní ofenzivní zbraně; defenzivní řady jsou dlouhodobě nestabilní.",
+            "stav": "odhad",
+            "dopad": "+ a slabší obranné složení nahrává útočníkům soupeře."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurz 4.20 na Over 4.5 obsahuje edge +5.22 %, Over 3.5 kurz 2.39 s edge +4.92 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a vysoké kurzy jsou podloženy reálnými gólovými žněmi obou týmů."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Monza je 18. v pásmu sestupu (7 b.), Fiorentina 15. (9 b.); přímý souboj o záchranu.",
+            "stav": "nalezeno",
+            "dopad": "+ a Monza doma musí riskovat na výhru, což otevře prostor Fiorentině."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemná historie v datech prázdná, v minulých sezonách v Serii A padalo 2:1 a 2:2.",
+            "stav": "nalezeno",
+            "dopad": "+ a vzájemné zápasy historicky přinášely góly na obou stranách."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Fiorentina pod Vanolim sází na rychlé přechody a aktivní křídla, Monza propadá při bránění standardek i brejků.",
+            "stav": "nalezeno",
+            "dopad": "+ a taktická náchylnost obou defenziv vede k velkým gólovým šancím."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Monza pod trenérem praktikuje hru s vysokým presinkem, který často zanechává přečíslenou obranu.",
+            "stav": "odhad",
+            "dopad": "+ a riziko z brejků soupeře přímo generuje gólové příležitosti."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "Monza z 5 zápasů skóre 9:11, Fiorentina z 5 zápasů skóre 10:11.",
+            "stav": "nalezeno",
+            "dopad": "+ a brutální série overů na obou stranách v posledním měsíci."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Fiorentina obě svá ligová vítězství v sezoně vybojovala venku, venku hraje uvolněněji.",
+            "stav": "nalezeno",
+            "dopad": "+ a venkovní produktivita Fiorentiny táhne skóre nahoru."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Oba týmy inkasují značné množství branek po centrech a rozích ze standardních situací.",
+            "stav": "odhad",
+            "dopad": "+ a zvyšuje pravděpodobnost nečekaného gólu i v pasivnějších pasážích."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Monza 12.2 faulů/zápas, Fiorentina 11.6 faulů/zápas, karty pod průměrem ligy.",
+            "stav": "nalezeno",
+            "dopad": "0 a průměrná disciplína bez tendence k rozkouskování hry."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Žádná změna rozhodčího nebyla indikována.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Fiorentina nehraje v mezidobí evropské poháry, plné soustředění na ligu.",
+            "stav": "nalezeno",
+            "dopad": "+ a žádné šetření opor pro pohárový program."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Kombinace vysokého xG a slabých obran posiluje celkový trend overu.",
+            "stav": "nalezeno",
+            "dopad": "+ a synergie mezi ofenzivní produkcí a děravými obranami."
+          }
+        ],
+        "pro": [
+          "Monza inkasovala v posledních 10 zápasech průměrně 2.4 gólu na zápas.",
+          "Fiorentina v celé dosavadní ligové sezoně ani jednou neudržela čisté konto (průměr 2.3 obdrženého gólu).",
+          "V posledních 5 ligových zápasech Fiorentiny padlo v součtu 21 gólů (průměr 4.2 na zápas).",
+          "Monza v posledních kolech pravidelně inkasuje 2 až 4 góly (Lazio 1:3, Torino 2:3, Neapol 1:4)."
+        ],
+        "proti": [
+          "Jde o přímý souboj o záchranu, což může při vyrovnaném stavu vést k taktickému uzavření závěru utkání.",
+          "Monza v posledním odehraném duelu před pauzou neskórovala (porážka 0:1 s Atalantou)."
+        ],
+        "riziko": "Pokud by oba týmy vstoupily do utkání s extrémně pragmatickým defenzivním plánem a první poločas skončil 0:0, vysoké lajny Over 3.5 a 4.5 budou v ohrožení.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Góly v zápase: více než 4.5",
+            "komentar": "Velmi agresivní tip s atraktivním kurzem 4.20, kterému dodává reálnou šanci venkovní zápas Fiorentiny v Sassuolu (4:2) či duely Monzy s Neapolí a Turínem."
+          },
+          {
+            "trh": "Góly v zápase: více než 3.5",
+            "komentar": "Výborná rovnováha mezi kurzem 2.39 a realitou obou obran, které dlouhodobě pouštějí přes 2 góly na zápas."
+          },
+          {
+            "trh": "Góly v zápase: více než 2.5",
+            "komentar": "Základní jistější volba na hranici 1.58, která plně reflektuje katastrofální čistá konta Fiorentiny a chyby domácí obrany."
+          }
+        ]
+      },
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "zapas": "Monza - Fiorentina",
+      "zapas_id": "ufo:mtch:1xy-00q",
+      "sport": "fotbal",
+      "home_fd": "Monza",
+      "away_fd": "Fiorentina",
+      "noha_klic": "goly|2.5|over|",
+      "home": "Monza",
+      "away": "Fiorentina",
+      "start": "2026-11-23T19:45:00+00:00",
+      "liga": "1. Itálie",
+      "kod": "I1",
+      "trh": "Góly v zápase: více než 2.5",
+      "typ": "goly",
+      "linie": 2.5,
+      "strana": "over",
+      "kurz_fortuna": 1.58,
+      "p_model": 0.6999,
+      "p_trh": 0.6108,
+      "p": 0.6554,
+      "edge": 0.0355,
+      "sazej_od": 1.58,
+      "fair": 1.53,
+      "mu": [
+        1.84,
+        1.78
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.58,
+          "rohy": 8.99,
+          "fauly": 24.61,
+          "karty": 3.6
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "11.10. V Lazio 1:3",
+            "19.10. D Cagliari 4:0",
+            "23.10. V Torino 2:3",
+            "28.10. D Napoli 1:4",
+            "31.10. V Bologna 1:2"
+          ],
+          "goly_pro": 1.7,
+          "goly_proti": 2.4,
+          "rohy_pro": 3.8,
+          "rohy_proti": 4.5,
+          "fauly_pro": 12.2,
+          "fauly_proti": 10.4,
+          "zlute_pro": 1.7,
+          "zlute_proti": 1.7
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "10.10. V Genoa 1:2",
+            "18.10. D Como 1:3",
+            "25.10. V Inter 1:2",
+            "29.10. D Atalanta 2:2",
+            "02.11. V Sassuolo 4:2"
+          ],
+          "goly_pro": 1.5,
+          "goly_proti": 2.3,
+          "rohy_pro": 4.9,
+          "rohy_proti": 4.0,
+          "fauly_pro": 11.6,
+          "fauly_proti": 12.6,
+          "zlute_pro": 2.3,
+          "zlute_proti": 1.9
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.0201,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.53,
+      "analyza": {
+        "id": "Monza - Fiorentina",
+        "verdikt": "OK",
+        "duvod": "Oba týmy se dlouhodobě trápí v obraně a vykazují extrémní průměry inkasovaných branek (2.4 a 2.3 na zápas), což jednoznačně podporuje vysoké gólové hranice.",
+        "souhrn": "Pondělní dohrávka Serie A mezi trápící se Monzou a ožívající Fiorentinou slibuje otevřený fotbal. Propustné defenzivy obou celků dělají z gólových overů velmi pravděpodobný scénář.",
+        "text": "Střetnutí na U-Power Stadium uzavírá 12. kolo italské Serie A soubojem dvou mužstev ze spodních pater tabulky, která mají shodně obrovské problémy v defenzivní činnosti. Domácí Monza pod vedením trenéra prohrála čtyři ligová kola v řadě (s Torinem, Neapolí, Bolognou a Atalantou), přičemž v posledních 10 duelech inkasuje v průměru alarmujících 2,4 gólu na utkání a hůře je na tom v celé lize pouze Sassuolo. Hostující Fiorentina se pod trenérem Paolem Vanolim mírně zvedla a začala sbírat body z přestřelek, jako byla venkovní výhra 4:2 na Sassuolu či remízy 2:2 s Atalantou a Juventusem, avšak v dosavadním průběhu sezony stále ani jednou neudržela čisté konto a průměrně inkasuje 2,3 branky. Zápas se odehraje na travnatém pažitu U-Power Stadium o rozměrech 105 x 65 metrů za chladného listopadového večera kolem 8 °C. Údaje o rozhodčím nebyly v ligovém přehledu dodány, nicméně styl hry obou týmů staví na přímočarých přechodech a hrubých chybách stoperů. Monza doma nutně potřebuje prolomit sérii porážek a Fiorentina hraje venku výrazně ofenzivněji než doma, což předurčuje oboustranně skórující a na branky bohaté utkání. Data a reálná forma zcela korelují s predikcí matematického modelu, který očekává součet kolem 3,6 gólu.",
+        "duvera_gemini": 8,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu gólů."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "U-Power Stadium (Monza), rozměry 105 x 65 m, přírodní trávník.",
+            "stav": "nalezeno",
+            "dopad": "0 a mírně užší hřiště zahušťuje střed, ale zrychluje dostřel do obou šestnáctek."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Monza, večerní výkop, teplota 7-9 °C, sucho, slabý vítr.",
+            "stav": "odhad",
+            "dopad": "+ a optimální fotbalové podmínky bez nepříznivých povětrnostních vlivů."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Hraje se v pondělí po reprezentační pauze, týmy měly dostatek času na regeneraci a přípravu.",
+            "stav": "nalezeno",
+            "dopad": "+ a čerství hráči s plnou fyzickou kondicí pro vysoké tempo."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Nejedná se o vyhrocené regionální derby, běžný ligový duel.",
+            "stav": "nalezeno",
+            "dopad": "+ a absence přehnaného napětí snižuje riziko svázanosti a faulů na úkor fotbalu."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Sestavy budou známy zhruba hodinu před pondělním výkopem.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na oficiální soupisku."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Oba týmy mají k dispozici hlavní ofenzivní zbraně; defenzivní řady jsou dlouhodobě nestabilní.",
+            "stav": "odhad",
+            "dopad": "+ a slabší obranné složení nahrává útočníkům soupeře."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurz 4.20 na Over 4.5 obsahuje edge +5.22 %, Over 3.5 kurz 2.39 s edge +4.92 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a vysoké kurzy jsou podloženy reálnými gólovými žněmi obou týmů."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Monza je 18. v pásmu sestupu (7 b.), Fiorentina 15. (9 b.); přímý souboj o záchranu.",
+            "stav": "nalezeno",
+            "dopad": "+ a Monza doma musí riskovat na výhru, což otevře prostor Fiorentině."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemná historie v datech prázdná, v minulých sezonách v Serii A padalo 2:1 a 2:2.",
+            "stav": "nalezeno",
+            "dopad": "+ a vzájemné zápasy historicky přinášely góly na obou stranách."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Fiorentina pod Vanolim sází na rychlé přechody a aktivní křídla, Monza propadá při bránění standardek i brejků.",
+            "stav": "nalezeno",
+            "dopad": "+ a taktická náchylnost obou defenziv vede k velkým gólovým šancím."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Monza pod trenérem praktikuje hru s vysokým presinkem, který často zanechává přečíslenou obranu.",
+            "stav": "odhad",
+            "dopad": "+ a riziko z brejků soupeře přímo generuje gólové příležitosti."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "Monza z 5 zápasů skóre 9:11, Fiorentina z 5 zápasů skóre 10:11.",
+            "stav": "nalezeno",
+            "dopad": "+ a brutální série overů na obou stranách v posledním měsíci."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Fiorentina obě svá ligová vítězství v sezoně vybojovala venku, venku hraje uvolněněji.",
+            "stav": "nalezeno",
+            "dopad": "+ a venkovní produktivita Fiorentiny táhne skóre nahoru."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Oba týmy inkasují značné množství branek po centrech a rozích ze standardních situací.",
+            "stav": "odhad",
+            "dopad": "+ a zvyšuje pravděpodobnost nečekaného gólu i v pasivnějších pasážích."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Monza 12.2 faulů/zápas, Fiorentina 11.6 faulů/zápas, karty pod průměrem ligy.",
+            "stav": "nalezeno",
+            "dopad": "0 a průměrná disciplína bez tendence k rozkouskování hry."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Žádná změna rozhodčího nebyla indikována.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Fiorentina nehraje v mezidobí evropské poháry, plné soustředění na ligu.",
+            "stav": "nalezeno",
+            "dopad": "+ a žádné šetření opor pro pohárový program."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Kombinace vysokého xG a slabých obran posiluje celkový trend overu.",
+            "stav": "nalezeno",
+            "dopad": "+ a synergie mezi ofenzivní produkcí a děravými obranami."
+          }
+        ],
+        "pro": [
+          "Monza inkasovala v posledních 10 zápasech průměrně 2.4 gólu na zápas.",
+          "Fiorentina v celé dosavadní ligové sezoně ani jednou neudržela čisté konto (průměr 2.3 obdrženého gólu).",
+          "V posledních 5 ligových zápasech Fiorentiny padlo v součtu 21 gólů (průměr 4.2 na zápas).",
+          "Monza v posledních kolech pravidelně inkasuje 2 až 4 góly (Lazio 1:3, Torino 2:3, Neapol 1:4)."
+        ],
+        "proti": [
+          "Jde o přímý souboj o záchranu, což může při vyrovnaném stavu vést k taktickému uzavření závěru utkání.",
+          "Monza v posledním odehraném duelu před pauzou neskórovala (porážka 0:1 s Atalantou)."
+        ],
+        "riziko": "Pokud by oba týmy vstoupily do utkání s extrémně pragmatickým defenzivním plánem a první poločas skončil 0:0, vysoké lajny Over 3.5 a 4.5 budou v ohrožení.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Góly v zápase: více než 4.5",
+            "komentar": "Velmi agresivní tip s atraktivním kurzem 4.20, kterému dodává reálnou šanci venkovní zápas Fiorentiny v Sassuolu (4:2) či duely Monzy s Neapolí a Turínem."
+          },
+          {
+            "trh": "Góly v zápase: více než 3.5",
+            "komentar": "Výborná rovnováha mezi kurzem 2.39 a realitou obou obran, které dlouhodobě pouštějí přes 2 góly na zápas."
+          },
+          {
+            "trh": "Góly v zápase: více než 2.5",
+            "komentar": "Základní jistější volba na hranici 1.58, která plně reflektuje katastrofální čistá konta Fiorentiny a chyby domácí obrany."
+          }
+        ]
+      },
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "zapas": "Barcelona - Villarreal",
+      "zapas_id": "ufo:mtch:1xx-00p",
+      "sport": "fotbal",
+      "home_fd": "Barcelona",
+      "away_fd": "Villarreal",
+      "noha_klic": "goly|4.5|under|",
+      "home": "Barcelona",
+      "away": "Villarreal",
+      "start": "2026-11-22T13:00:00+00:00",
+      "liga": "1. Španělsko",
+      "kod": "SP1",
+      "trh": "Góly v zápase: méně než 4.5",
+      "typ": "goly",
+      "linie": 4.5,
+      "strana": "under",
+      "kurz_fortuna": 1.82,
+      "p_model": 0.6132,
+      "p_trh": 0.5241,
+      "p": 0.5686,
+      "edge": 0.0349,
+      "sazej_od": 1.82,
+      "fair": 1.76,
+      "mu": [
+        2.93,
+        1.15
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.76,
+          "rohy": 9.66,
+          "fauly": 25.02,
+          "karty": 4.4
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Sevilla 3:1",
+            "10.10. D Getafe 3:0",
+            "17.10. V Betis 5:2",
+            "25.10. D Real Madrid 1:2",
+            "31.10. D Alaves 6:1"
+          ],
+          "goly_pro": 4.1,
+          "goly_proti": 1.2,
+          "rohy_pro": 7.4,
+          "rohy_proti": 2.8,
+          "fauly_pro": 10.4,
+          "fauly_proti": 10.1,
+          "zlute_pro": 1.7,
+          "zlute_proti": 2.1
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "20.09. D Levante 3:1",
+            "10.10. V Real Madrid 0:1",
+            "17.10. D Elche 0:0",
+            "24.10. V Valencia 2:1",
+            "30.10. D Espanol 0:1"
+          ],
+          "goly_pro": 1.3,
+          "goly_proti": 1.3,
+          "rohy_pro": 7.0,
+          "rohy_proti": 4.3,
+          "fauly_pro": 11.0,
+          "fauly_proti": 12.2,
+          "zlute_pro": 1.7,
+          "zlute_proti": 2.6
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "21.12.2025 Villarreal 0:2, žluté 2, fauly 18, rohy 15",
+          "28.02.2026 Barcelona 4:1, žluté 3, fauly 20, rohy 5"
+        ]
+      },
+      "skore": 0.0197,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.06,
+      "analyza": {
+        "id": "Barcelona - Villarreal",
+        "verdikt": "OK",
+        "duvod": "Hranice Under 4.5 gólu v zápase a Under 3.5 gólu Barcelony jsou nastaveny dostatečně vysoko, aby pokryly běžné ligové vítězství proti kvalitní defenzivě Villarrealu.",
+        "souhrn": "Barcelona hostí Villarreal v šlágru La Ligy. Přestože má Barcelona ohromnou palebnou sílu, Villarreal disponuje taktickou vyspělostí, která by měla zabránit totální gólové přestřelce.",
+        "text": "V nedělním odpoledním programu La Ligy přivítá Barcelona na svém stadionu nevyzpytatelný Villarreal. Katalánský gigant dominuje ligovým statistikám s neuvěřitelným průměrem 4,1 vstřeleného gólu na zápas a doma naposledy zničil Alavés 6:1, nicméně proti Villarrealu jej čeká podstatně lépe organizovaný protivník. Villarreal pod Marcelem inkasuje v průměru pouze 1,3 gólu na utkání a v posledních pěti duelech se prezentuje velmi střídmými výsledky, když prohrál těsně 0:1 na Realu Madrid a s Espanyolem, remizoval 0:0 s Elche a porazil Valencii 2:1. Hřiště na barcelonském stadionu má špičkové parametry 105 x 68 metrů a předpověď hlásí slunečné počasí s teplotou kolem 16 °C. Informace o konkrétním rozhodčím ligová tabulka neobsahuje. Přestože Barcelona dokáže soupeře rozebrat, hranice 4,5 gólu na zápas a 3,5 gólu pro samotný domácí celek jsou postaveny extrémně vysoko. Poslední vzájemný zápas na hřišti Villarrealu skončil výhrou Barcelony 2:0 a předchozí 4:1, což ukazuje, že Žlutá ponorka umí Barceloně klást odpor. Pokud Villarreal udrží kompaktní střed pole a vyvaruje se zbytečných vyloučení, sázky na Under 4.5 v zápase i Under 3.5 domácích mají vysoké opodstatnění.",
+        "duvera_gemini": 7,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "Estadi Olímpic Lluís Companys / Camp Nou, 105 x 68 m, špičkový hybridní trávník.",
+            "stav": "nalezeno",
+            "dopad": "+ a velká plocha sedí Barceloně, ale Villarreal umí bránit v hlubokém bloku."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Barcelona, jasno až polojasno, teplota kolem 15-17 °C, bezvětří.",
+            "stav": "odhad",
+            "dopad": "+ a ideální fotbalové podmínky bez extrémů."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Utkání po reprezentační pauze, Villarreal ušetřil řadu hráčů bez reprezentačních povinností.",
+            "stav": "nalezeno",
+            "dopad": "+ a Villarreal bude takticky a fyzicky stoprocentně připraven."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Běžný ligový šlágr, žádné vyhrocené lokální derby.",
+            "stav": "nalezeno",
+            "dopad": "0 a taktická vyzrálost bez zbytečných excesů."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Oficiální jedenáctky budou k dispozici hodinu před výkopem.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na předzápasovou soupisku."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Villarreal nastoupí v takřka kompletním defenzivním složení.",
+            "stav": "odhad",
+            "dopad": "+ a stabilní obrana hostů snižuje riziko debaklu."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurzy 1.82 a 1.71 nabízejí hrany +3.49 % a +3.43 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a férově ohodnocené sázky s matematickou přidanou hodnotou."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Barcelona usiluje o čelo ligy, Villarreal bojuje o umístění v nejlepší šestce.",
+            "stav": "nalezeno",
+            "dopad": "0 a vysoká motivace na obou stranách vede k taktické kázni."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemné zápasy v datech: výhra Barcelony 2:0 a 4:1.",
+            "stav": "nalezeno",
+            "dopad": "+ a v obou případech by hranice Under 4.5 gólu v zápase byla v toleranci či na hraně."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Barcelona dominuje v držení míče (průměr 7.4 rohů), Villarreal hraje organizovaný zónový presink a brejky.",
+            "stav": "nalezeno",
+            "dopad": "+ a zónová obrana Villarrealu znesnadňuje průnikové přihrávky do vápna."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Villarreal hraje venku kompaktní 4-4-2 s důrazem na zhuštění meziprostor.",
+            "stav": "odhad",
+            "dopad": "+ a zahuštěný střed limituje počet velkých šancí Barcelony."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "V posledních 4 zápasech Villarrealu padly celkem pouze 5 gólů (průměr 1.25 na zápas).",
+            "stav": "nalezeno",
+            "dopad": "+ a výrazný underový trend na straně Villarrealu drží skóre nízko."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Barcelona je doma extrémně silná, ale Villarreal venku inkasoval na Realu Madrid pouze 1 gól.",
+            "stav": "nalezeno",
+            "dopad": "+ a Villarreal umí na hřištích gigantů bránit s minimem inkasovaných gólů."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Villarreal je vzdušně silný a dobře brání rohové kopy soupeřů.",
+            "stav": "odhad",
+            "dopad": "+ a eliminace gólů po rohových kopech Barcelony."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Oba týmy mají nízký počet žlutých karet (Barcelona 1.7, Villarreal 1.7 na zápas).",
+            "stav": "nalezeno",
+            "dopad": "+ a nehrozí rozpad zápasu vinou předčasného vyloučení."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Žádná změna rozhodčího nebyla evidována.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Týmy po reprezentační pauze nenasadí oslabené sestavy.",
+            "stav": "nalezeno",
+            "dopad": "+ a plné sestavy zaručují taktickou kvalitu."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Under 4.5 gólu v zápase silně koreluje s Under 3.5 gólu Barcelony.",
+            "stav": "nalezeno",
+            "dopad": "+ a oba trhy logicky těží ze stejného předpokladu tuhého odporu Villarrealu."
+          }
+        ],
+        "pro": [
+          "Villarreal má v posledních 4 zápasech průměr pouze 1.25 gólu na zápas a drží pevnou defenzivu.",
+          "Na hřišti Realu Madrid inkasoval Villarreal pouze jediný gól (prohra 0:1).",
+          "Aby Barcelona překonala 3.5 gólu, musela by předvést naprosto mimořádnou střeleckou efektivitu proti týmu z elitní šestky.",
+          "Model očekává 2.93 gólu Barcelony a 1.15 gólu Villarrealu, což dává prostor pod hranicí 4.5."
+        ],
+        "proti": [
+          "Barcelona disponuje obrovskou ofenzivní silou a v lize má průměr 4.1 vstřeleného gólu.",
+          "V posledních domácích zápasech Barcelona deklasovala Alavés 6:1 a porazila Betis 5:2."
+        ],
+        "riziko": "Pokud Barcelona vstřelí dva rychlé góly v prvních dvaceti minutách, Villarreal bude nucen hru otevřít a zápas se může změnit v divokou přestřelku.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Góly v zápase: méně než 4.5",
+            "komentar": "Velmi pevná linie s kurzem 1.82, která počítá i s možnou výhrou Barcelony 3:1 nebo 2:1."
+          },
+          {
+            "trh": "Góly domácích: méně než 3.5",
+            "komentar": "Logická alternativa s kurzem 1.71; vstřelit 4 góly organizovanému Villarrealu je i pro Barcelonu mimořádně náročný úkol."
+          }
+        ]
+      },
+      "overeni": "trh sedí"
+    },
+    {
+      "zapas": "Ajax - Den Haag",
+      "zapas_id": "ufo:mtch:1xx-03c",
+      "sport": "fotbal",
+      "home_fd": "Ajax",
+      "away_fd": "Den Haag",
+      "noha_klic": "btts|None|ano|",
+      "home": "Ajax",
+      "away": "Den Haag",
+      "start": "2026-11-22T13:30:00+00:00",
+      "liga": "1. Nizozemsko",
+      "kod": "N1",
+      "trh": "Oba dají gól: ANO",
+      "typ": "btts",
+      "linie": null,
+      "strana": "ano",
+      "kurz_fortuna": 1.74,
+      "p_model": 0.651,
+      "p_trh": 0.5412,
+      "p": 0.5961,
+      "edge": 0.0372,
+      "sazej_od": 1.73,
+      "fair": 1.68,
+      "mu": [
+        2.23,
+        1.31
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 3.33,
+          "rohy": 10.41,
+          "fauly": 21.7,
+          "karty": 3.14
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. D Excelsior 2:2",
+            "10.10. D Nijmegen 1:1",
+            "18.10. V Groningen 5:2",
+            "25.10. V Sparta Rotterdam 2:1",
+            "31.10. D AZ Alkmaar 1:0"
+          ],
+          "goly_pro": 2.8,
+          "goly_proti": 1.3,
+          "rohy_pro": 5.8,
+          "rohy_proti": 3.7,
+          "fauly_pro": 9.5,
+          "fauly_proti": 10.6,
+          "zlute_pro": 1.8,
+          "zlute_proti": 1.4
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. D Cambuur 1:1",
+            "11.10. V Telstar 2:2",
+            "17.10. D PSV Eindhoven 2:1",
+            "24.10. D Heerenveen 2:3",
+            "01.11. V Zwolle 0:1"
+          ],
+          "goly_pro": 1.3,
+          "goly_proti": 2.2,
+          "rohy_pro": 3.4,
+          "rohy_proti": 5.3,
+          "fauly_pro": 14.1,
+          "fauly_proti": 10.5,
+          "zlute_pro": 1.9,
+          "zlute_proti": 1.6
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": []
+      },
+      "skore": 0.0182,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.26,
+      "analyza": {
+        "id": "Ajax - Den Haag",
+        "verdikt": "OK",
+        "duvod": "Ofenzivní síla Ajaxu (2.8 gólu/zápas) v kombinaci s propustnou obranou Den Haagu (2.2 obdrženého gólu) a schopností hostů skórovat nahrává variantě BTTS.",
+        "souhrn": "Tradiční holandský střet v Johan Cruijff Areně slibuje otevřený fotbal. Ajax je v zakončení nekompromisní, ale jeho obrana pravidelně nabízí soupeřům šance, které Den Haag umí trestat.",
+        "text": "V nizozemské Eredivisie přivítá Ajax Amsterdam na domácí půdě Den Haag. Ajax se opírá o mimořádně potentní útok, který generuje v průměru 2,8 vstřeleného gólu na zápas, což potvrdil nedávnými vysokými výhrami jako 5:2 v Groningenu či 2:1 na Spartě Rotterdam, nicméně jeho defenzivní řada zůstává zranitelná a inkasuje v průměru 1,3 gólu na utkání. Den Haag sice bojuje o záchranu a jeho obrana patří s 2,2 inkasovanými brankami k nejhorším v lize, v ofenzivě je však velmi odvážný a dokáže pravidelně skórovat i proti favoritům, což dokládá nedávná senzační výhra 2:1 nad PSV Eindhoven nebo divoká přestřelka 2:3 s Heerenveenem. Zápas proběhne v Johan Cruijff Areně na perfektním hybridním koberci o rozměrech 105 x 68 metrů za zataženého podzimního odpoledne kolem 9 °C. Konkrétní sudí není v dodaných datech evidován. Nizozemská liga je pověstná vysokým tempem a otevřenými prostory, což potvrzuje i celoligový průměr 3,33 gólu na zápas. Vzhledem k tomu, že Ajax hraje s vysunutou obranou a Den Haag spoléhá na přímočaré brejky ze stran, kurz 1,74 na to, že oba celky dají gól, přesně odpovídá hernímu obrazu i matematické predikci modelu.",
+        "duvera_gemini": 8,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "Johan Cruijff Arena (Amsterdam), 105 x 68 m, zatahovací střecha, perfektní trávník.",
+            "stav": "nalezeno",
+            "dopad": "+ a ideální povrch podporuje maximální rychlost kombinace i brejků."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Amsterdam, zataženo, cca 8-10 °C, možnost zatažení střechy arény.",
+            "stav": "odhad",
+            "dopad": "+ a stabilní halové či bezvětrné mikroklima podporuje přesnost střelby."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Po reprezentační přestávce, oba týmy mají odpočaté klíčové hráče.",
+            "stav": "nalezeno",
+            "dopad": "+ a stoprocentní fyzická připravenost obou celků."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Historická rivalita mezi Amsterdamem a Haagem, tradičně vypjaté duely.",
+            "stav": "nalezeno",
+            "dopad": "+ a Den Haag hraje proti Ajaxu vždy na hranici možností a s vysokou motivací skórovat."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Oficiální sestavy budou oznámeny hodinu před zápasem.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na předzápasový protokol."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Ofenzivní opory obou mužstev jsou hlášeny připraveny ke hře.",
+            "stav": "odhad",
+            "dopad": "+ a přítomnost klíčových útočníků podporuje gólovou produkci."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurz 1.74 nabízí solidní matematickou hranu +3.72 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a kurz je férově postaven vůči modelové pravděpodobnosti 65 %."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Ajax usiluje o přední příčky, Den Haag zoufale potřebuje body do boje o záchranu.",
+            "stav": "nalezeno",
+            "dopad": "+ a Den Haag nemůže jen pasivně bránit, potřebuje bodovat."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemná bilance v dodaných datech chybí.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez přímých historických čísel."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Ajax praktikuje totální útok s držením míče a vysokou linií, Den Haag hrozí rychlým přechodem do otevřených křídel.",
+            "stav": "nalezeno",
+            "dopad": "+ a otevřená zadní vrátka Ajaxu dávají Den Haagu ideální prostor k brejkům."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Klasické holandské rozestavení 4-3-3 na obou stranách s důrazem na křídelní prostory.",
+            "stav": "odhad",
+            "dopad": "+ a formace nahrává vysokému tempu a častému zakončení."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "Ajax skóroval ve všech 5 posledních duelech, Den Haag dal v posledních 4 zápasech 7 branek.",
+            "stav": "nalezeno",
+            "dopad": "+ a výborná ofenzivní efektivita na obou stranách."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Ajax doma pravidelně inkasuje (2:2 s Excelsiorem, 1:1 s Nijmegenem), Den Haag venku remizoval 2:2 s Telstarem.",
+            "stav": "nalezeno",
+            "dopad": "+ a domácí prostředí nezaručuje Ajaxu čisté konto."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Ajax průměrně 5.8 rohu na zápas, Den Haag je nebezpečný ze standardních situací po faulech.",
+            "stav": "nalezeno",
+            "dopad": "+ a standardky mohou přinést gól i outsiderovi."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Den Haag fauluje v průměru 14.1x na zápas, Ajax jen 9.5x.",
+            "stav": "nalezeno",
+            "dopad": "0 a agresivita Den Haagu může vést k penaltám či nebezpečným přímým kopům."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Žádná změna rozhodčího nebyla hlášena.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Bez pohárových rotací, ligové utkání po pauze v plné síle.",
+            "stav": "nalezeno",
+            "dopad": "+ a nejsilnější sestavy na hřišti."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Není aplikováno.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu."
+          }
+        ],
+        "pro": [
+          "Ajax má průměr 2.8 vstřeleného gólu na zápas, doma skóruje prakticky s jistotou.",
+          "Den Haag dokázal skórovat proti špičkovým týmům včetně nečekané výhry 2:1 nad PSV Eindhoven.",
+          "Ajax doma v nedávných kolech inkasoval s Excelsiorem (2:2) i Nijmegenem (1:1).",
+          "Eredivisie má vysoký ligový gólový průměr 3.33 branky na utkání."
+        ],
+        "proti": [
+          "V posledním kole před pauzou Ajax doma dokázal udržet čisté konto při výhře 1:0 nad AZ Alkmaar.",
+          "Den Haag v minulém venkovním utkání prohrál ve Zwolle 0:1 bez vstřeleného gólu."
+        ],
+        "riziko": "Pokud Ajax soupeře v prvním poločase úplně nepustí k míči a Den Haag promarní své ojedinělé protiútoky, může zápas skončit jednostranným výsledkem 2:0 nebo 3:0.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Oba dají gól: ANO",
+            "komentar": "Velmi hratelný kurz 1.74 v lize, kde padá přes 3.3 gólu na zápas a kde Ajax doma často nechává otevřenou obranu pro rychlé brejky outsiderů."
+          }
+        ]
+      },
+      "jistejsi": 1,
+      "overeni": "trh sedí"
+    },
+    {
+      "zapas": "Barcelona - Villarreal",
+      "zapas_id": "ufo:mtch:1xx-00p",
+      "sport": "fotbal",
+      "home_fd": "Barcelona",
+      "away_fd": "Villarreal",
+      "noha_klic": "goly_dom|3.5|under|",
+      "home": "Barcelona",
+      "away": "Villarreal",
+      "start": "2026-11-22T13:00:00+00:00",
+      "liga": "1. Španělsko",
+      "kod": "SP1",
+      "trh": "Góly domácích: méně než 3.5",
+      "typ": "goly_dom",
+      "linie": 3.5,
+      "strana": "under",
+      "kurz_fortuna": 1.71,
+      "p_model": 0.663,
+      "p_trh": 0.5467,
+      "p": 0.6049,
+      "edge": 0.0343,
+      "sazej_od": 1.71,
+      "fair": 1.65,
+      "mu": [
+        2.93,
+        1.15
+      ],
+      "data": {
+        "liga_prumer_na_zapas": {
+          "goly": 2.76,
+          "rohy": 9.66,
+          "fauly": 25.02,
+          "karty": 4.4
+        },
+        "domaci": {
+          "zapasu": 10,
+          "posledni": [
+            "19.09. V Sevilla 3:1",
+            "10.10. D Getafe 3:0",
+            "17.10. V Betis 5:2",
+            "25.10. D Real Madrid 1:2",
+            "31.10. D Alaves 6:1"
+          ],
+          "goly_pro": 4.1,
+          "goly_proti": 1.2,
+          "rohy_pro": 7.4,
+          "rohy_proti": 2.8,
+          "fauly_pro": 10.4,
+          "fauly_proti": 10.1,
+          "zlute_pro": 1.7,
+          "zlute_proti": 2.1
+        },
+        "hoste": {
+          "zapasu": 10,
+          "posledni": [
+            "20.09. D Levante 3:1",
+            "10.10. V Real Madrid 0:1",
+            "17.10. D Elche 0:0",
+            "24.10. V Valencia 2:1",
+            "30.10. D Espanol 0:1"
+          ],
+          "goly_pro": 1.3,
+          "goly_proti": 1.3,
+          "rohy_pro": 7.0,
+          "rohy_proti": 4.3,
+          "fauly_pro": 11.0,
+          "fauly_proti": 12.2,
+          "zlute_pro": 1.7,
+          "zlute_proti": 2.6
+        },
+        "rozhodci_v_lize": [],
+        "vzajemne": [
+          "21.12.2025 Villarreal 0:2, žluté 2, fauly 18, rohy 15",
+          "28.02.2026 Barcelona 4:1, žluté 3, fauly 20, rohy 5"
+        ]
+      },
+      "skore": 0.0159,
+      "rodina": "Fotbal: góly",
+      "vklad_pct": 1.21,
+      "analyza": {
+        "id": "Barcelona - Villarreal",
+        "verdikt": "OK",
+        "duvod": "Hranice Under 4.5 gólu v zápase a Under 3.5 gólu Barcelony jsou nastaveny dostatečně vysoko, aby pokryly běžné ligové vítězství proti kvalitní defenzivě Villarrealu.",
+        "souhrn": "Barcelona hostí Villarreal v šlágru La Ligy. Přestože má Barcelona ohromnou palebnou sílu, Villarreal disponuje taktickou vyspělostí, která by měla zabránit totální gólové přestřelce.",
+        "text": "V nedělním odpoledním programu La Ligy přivítá Barcelona na svém stadionu nevyzpytatelný Villarreal. Katalánský gigant dominuje ligovým statistikám s neuvěřitelným průměrem 4,1 vstřeleného gólu na zápas a doma naposledy zničil Alavés 6:1, nicméně proti Villarrealu jej čeká podstatně lépe organizovaný protivník. Villarreal pod Marcelem inkasuje v průměru pouze 1,3 gólu na utkání a v posledních pěti duelech se prezentuje velmi střídmými výsledky, když prohrál těsně 0:1 na Realu Madrid a s Espanyolem, remizoval 0:0 s Elche a porazil Valencii 2:1. Hřiště na barcelonském stadionu má špičkové parametry 105 x 68 metrů a předpověď hlásí slunečné počasí s teplotou kolem 16 °C. Informace o konkrétním rozhodčím ligová tabulka neobsahuje. Přestože Barcelona dokáže soupeře rozebrat, hranice 4,5 gólu na zápas a 3,5 gólu pro samotný domácí celek jsou postaveny extrémně vysoko. Poslední vzájemný zápas na hřišti Villarrealu skončil výhrou Barcelony 2:0 a předchozí 4:1, což ukazuje, že Žlutá ponorka umí Barceloně klást odpor. Pokud Villarreal udrží kompaktní střed pole a vyvaruje se zbytečných vyloučení, sázky na Under 4.5 v zápase i Under 3.5 domácích mají vysoké opodstatnění.",
+        "duvera_gemini": 7,
+        "faktory": [
+          {
+            "kriterium": "rozhodci_vliv",
+            "zjisteni": "Statistika rozhodčího není v dodaných datech k dispozici.",
+            "stav": "nenalezeno",
+            "dopad": "0 a bez vlivu na analýzu."
+          },
+          {
+            "kriterium": "velikost_hriste",
+            "zjisteni": "Estadi Olímpic Lluís Companys / Camp Nou, 105 x 68 m, špičkový hybridní trávník.",
+            "stav": "nalezeno",
+            "dopad": "+ a velká plocha sedí Barceloně, ale Villarreal umí bránit v hlubokém bloku."
+          },
+          {
+            "kriterium": "pocasi",
+            "zjisteni": "Barcelona, jasno až polojasno, teplota kolem 15-17 °C, bezvětří.",
+            "stav": "odhad",
+            "dopad": "+ a ideální fotbalové podmínky bez extrémů."
+          },
+          {
+            "kriterium": "program_a_unava",
+            "zjisteni": "Utkání po reprezentační pauze, Villarreal ušetřil řadu hráčů bez reprezentačních povinností.",
+            "stav": "nalezeno",
+            "dopad": "+ a Villarreal bude takticky a fyzicky stoprocentně připraven."
+          },
+          {
+            "kriterium": "derby_rivalita",
+            "zjisteni": "Běžný ligový šlágr, žádné vyhrocené lokální derby.",
+            "stav": "nalezeno",
+            "dopad": "0 a taktická vyzrálost bez zbytečných excesů."
+          },
+          {
+            "kriterium": "potvrzena_sestava",
+            "zjisteni": "Oficiální jedenáctky budou k dispozici hodinu před výkopem.",
+            "stav": "nenalezeno",
+            "dopad": "0 a vyčkává se na předzápasovou soupisku."
+          },
+          {
+            "kriterium": "zraneni_a_suspendace",
+            "zjisteni": "Villarreal nastoupí v takřka kompletním defenzivním složení.",
+            "stav": "odhad",
+            "dopad": "+ a stabilní obrana hostů snižuje riziko debaklu."
+          },
+          {
+            "kriterium": "ignoruj_vysoky_kurz",
+            "zjisteni": "Kurzy 1.82 a 1.71 nabízejí hrany +3.49 % a +3.43 %.",
+            "stav": "nalezeno",
+            "dopad": "+ a férově ohodnocené sázky s matematickou přidanou hodnotou."
+          },
+          {
+            "kriterium": "motivace_tabulka",
+            "zjisteni": "Barcelona usiluje o čelo ligy, Villarreal bojuje o umístění v nejlepší šestce.",
+            "stav": "nalezeno",
+            "dopad": "0 a vysoká motivace na obou stranách vede k taktické kázni."
+          },
+          {
+            "kriterium": "vzajemne_zapasy",
+            "zjisteni": "Vzájemné zápasy v datech: výhra Barcelony 2:0 a 4:1.",
+            "stav": "nalezeno",
+            "dopad": "+ a v obou případech by hranice Under 4.5 gólu v zápase byla v toleranci či na hraně."
+          },
+          {
+            "kriterium": "styl_a_taktika",
+            "zjisteni": "Barcelona dominuje v držení míče (průměr 7.4 rohů), Villarreal hraje organizovaný zónový presink a brejky.",
+            "stav": "nalezeno",
+            "dopad": "+ a zónová obrana Villarrealu znesnadňuje průnikové přihrávky do vápna."
+          },
+          {
+            "kriterium": "formace_a_styl",
+            "zjisteni": "Villarreal hraje venku kompaktní 4-4-2 s důrazem na zhuštění meziprostor.",
+            "stav": "odhad",
+            "dopad": "+ a zahuštěný střed limituje počet velkých šancí Barcelony."
+          },
+          {
+            "kriterium": "forma_poslednich_zapasu",
+            "zjisteni": "V posledních 4 zápasech Villarrealu padly celkem pouze 5 gólů (průměr 1.25 na zápas).",
+            "stav": "nalezeno",
+            "dopad": "+ a výrazný underový trend na straně Villarrealu drží skóre nízko."
+          },
+          {
+            "kriterium": "domaci_vs_venku",
+            "zjisteni": "Barcelona je doma extrémně silná, ale Villarreal venku inkasoval na Realu Madrid pouze 1 gól.",
+            "stav": "nalezeno",
+            "dopad": "+ a Villarreal umí na hřištích gigantů bránit s minimem inkasovaných gólů."
+          },
+          {
+            "kriterium": "standardky",
+            "zjisteni": "Villarreal je vzdušně silný a dobře brání rohové kopy soupeřů.",
+            "stav": "odhad",
+            "dopad": "+ a eliminace gólů po rohových kopech Barcelony."
+          },
+          {
+            "kriterium": "disciplina_tymu",
+            "zjisteni": "Oba týmy mají nízký počet žlutých karet (Barcelona 1.7, Villarreal 1.7 na zápas).",
+            "stav": "nalezeno",
+            "dopad": "+ a nehrozí rozpad zápasu vinou předčasného vyloučení."
+          },
+          {
+            "kriterium": "zmena_rozhodciho",
+            "zjisteni": "Žádná změna rozhodčího nebyla evidována.",
+            "stav": "nenalezeno",
+            "dopad": "0 a beze změny."
+          },
+          {
+            "kriterium": "rotace_pohar",
+            "zjisteni": "Týmy po reprezentační pauze nenasadí oslabené sestavy.",
+            "stav": "nalezeno",
+            "dopad": "+ a plné sestavy zaručují taktickou kvalitu."
+          },
+          {
+            "kriterium": "korelace_builder",
+            "zjisteni": "Under 4.5 gólu v zápase silně koreluje s Under 3.5 gólu Barcelony.",
+            "stav": "nalezeno",
+            "dopad": "+ a oba trhy logicky těží ze stejného předpokladu tuhého odporu Villarrealu."
+          }
+        ],
+        "pro": [
+          "Villarreal má v posledních 4 zápasech průměr pouze 1.25 gólu na zápas a drží pevnou defenzivu.",
+          "Na hřišti Realu Madrid inkasoval Villarreal pouze jediný gól (prohra 0:1).",
+          "Aby Barcelona překonala 3.5 gólu, musela by předvést naprosto mimořádnou střeleckou efektivitu proti týmu z elitní šestky.",
+          "Model očekává 2.93 gólu Barcelony a 1.15 gólu Villarrealu, což dává prostor pod hranicí 4.5."
+        ],
+        "proti": [
+          "Barcelona disponuje obrovskou ofenzivní silou a v lize má průměr 4.1 vstřeleného gólu.",
+          "V posledních domácích zápasech Barcelona deklasovala Alavés 6:1 a porazila Betis 5:2."
+        ],
+        "riziko": "Pokud Barcelona vstřelí dva rychlé góly v prvních dvaceti minutách, Villarreal bude nucen hru otevřít a zápas se může změnit v divokou přestřelku.",
+        "komentare_k_trhum": [
+          {
+            "trh": "Góly v zápase: méně než 4.5",
+            "komentar": "Velmi pevná linie s kurzem 1.82, která počítá i s možnou výhrou Barcelony 3:1 nebo 2:1."
+          },
+          {
+            "trh": "Góly domácích: méně než 3.5",
+            "komentar": "Logická alternativa s kurzem 1.71; vstřelit 4 góly organizovanému Villarrealu je i pro Barcelonu mimořádně náročný úkol."
+          }
+        ]
+      },
+      "jistejsi": 2,
+      "overeni": "trh sedí"
+    }
+  ],
+  "univ": [
+    {
+      "sport": "fotbal",
+      "zapas": "Paris FC - Angers",
+      "start": "2026-11-22T14:00:00+00:00",
+      "liga": "1. Francie",
+      "trh": "Výsledek zápasu",
+      "vyber": "Paris FC",
+      "kurz": 1.3,
+      "p": 0.7581,
+      "marze": 0.0392,
+      "sazej_od": 1.35,
+      "analyza": {
+        "id": "Paris FC - Angers",
+        "verdikt": "OK",
+        "duvod": "Paris FC je doma neporažený a Lassine Sinayoko vede ligové střelce, zatímco Angers nevyhrálo pět kol v řadě.",
+        "text": "V 11. kole francouzské Ligue 1 přivítá třetí Paris FC na svém stadionu Jean-Bouin sedmnácté Angers. Domácí celek zažívá pod trenérem Liamem Roseniorem skvělý start do sezóny, když z deseti kol vytěžil 20 bodů a na vlastním hřišti drží bilanci čtyř výher a jedné remízy se skóre 12:5. Klíčovou postavou pařížské ofenzívy je útočník Lassine Sinayoko, který s devíti trefami vede tabulku ligových střelců a přidal i pět asistencí. Angers se naopak trápí na sestupových příčkách, v lize nevyhrálo už pět duelů v řadě a venku disponuje jednou z nejhorších defenziv soutěže. Pro domácí hovoří výrazně vyšší kvalita kádru, herní pohoda a dominance před vlastním publikem, kde inkasují jen minimálně. Angers by mohlo klást odpor jedině v případě mimořádně zahuštěného hlubokého bloku, se kterým měl Paris FC v říjnu občasné potíže. Přesto rozdíl v aktuální formě i individuální kvalitě na všech postech jednoznačně favorizuje pařížský tým na plný bodový zisk. Jediným výraznějším rizikem je podcenění soupeře po sérii vydařených výsledků, což by při brzkém inkasování mohlo favorita znervóznit.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Paris FC drží na domácím stadionu Jean-Bouin výbornou ligovou bilanci čtyř výher a jedné remízy se skóre 12:5.",
+          "Útočník Lassine Sinayoko je v životní formě a s 9 góly a 5 asistencemi vede ligovou produktivitu.",
+          "Angers se nachází na 17. místě tabulky a nevyhrálo už pět po sobě jdoucích ligových střetnutí."
+        ],
+        "proti": [
+          "Paris FC měl v předchozích zápasech potíže proti soupeřům bránícím v hlubokém defenzivním bloku.",
+          "Případné podcenění outsidera a ztráta koncentrace v defenzivě mohou zápas zkomplikovat."
+        ],
+        "riziko": "Pokud hosté udrží hlubokým blokem dlouho bezbrankový stav, může domácí svázat nervozita."
+      },
+      "duvera": 7,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Lorient - Rennes",
+      "start": "2026-11-22T16:15:00+00:00",
+      "liga": "1. Francie",
+      "trh": "Počet gólů v zápasu 3.5",
+      "vyber": "Méně než 3.5",
+      "kurz": 1.3,
+      "p": 0.7517,
+      "marze": 0.047,
+      "sazej_od": 1.36,
+      "analyza": {
+        "id": "Lorient - Rennes",
+        "verdikt": "OK",
+        "duvod": "Tradiční bretaňské derby týmů ze středu tabulky slibuje taktickou bitvu s kompaktními obranami a minimem šancí.",
+        "text": "V bretaňském derby se na Stade Yves Allainmat střetne desátý Lorient s osmým Rennes. Regionální derby v Bretani tradičně provází vyhecovaná atmosféra, taktická opatrnost a zvýšené množství osobních soubojů ve středu pole. Lorient pod novým herním nastavením spoléhá na disciplinovaný hluboký blok a kompaktní obranu, což potvrdil nedávnou těsnou výhrou 1:0 nad vedoucími celky tabulky. Rennes sice disponuje kvalitnější ofenzivou, avšak v zápasech na hřištích rivalů volí vyčkávací styl a málo otevírá zadní linie. Pro hranici pod 3,5 branky hovoří fakt, že obě mužstva inkasují v průměru kolem 1,1 gólu na utkání a nesnaží se o divoké přestřelky. Proti této sázce by hrál pouze brzký gól v úvodních minutách, který by donutil jeden z týmů k totálnímu otevření hry. Vzhledem k defenzivní struktuře Lorientu a derbyovému napětí se očekává především bojovný duel s nízkým počtem vyložených brankových příležitostí.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Jde o tradičně svázané a taktické bretaňské derby, kde převládá důraz a defenzivní disciplína.",
+          "Lorient doma spoléhá na kompaktní hluboký blok a inkasuje jen něco málo přes jeden gól na zápas.",
+          "Hranice 3,5 branky je v duelech týmů ze středu francouzské ligy dlouhodobě velmi bezpečná."
+        ],
+        "proti": [
+          "Brzká branka ze standardní situace by mohla zápas neočekávaně otevřít a zvýšit tempo.",
+          "Ofenzivní esa Rennes mohou individuální kvalitou potrestat ojedinělé chyby domácí obrany."
+        ],
+        "riziko": "Rizikem je rychlý gól v úvodu, po němž by oba celky opustily obezřetnou defenzivní taktiku."
+      },
+      "duvera": 7,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "hokej",
+      "zapas": "Liberec - Mladá Boleslav",
+      "start": "2026-11-22T15:00:00+00:00",
+      "liga": "1. Česko",
+      "trh": "Počet gólů do rozhodnutí 3.5",
+      "vyber": "Více než 3.5",
+      "kurz": 1.3,
+      "p": 0.7472,
+      "marze": 0.0591,
+      "sazej_od": 1.37,
+      "analyza": {
+        "id": "Liberec - Mladá Boleslav",
+        "verdikt": "OK",
+        "duvod": "Mimořádně nízká hranice 3,5 gólu včetně prodloužení v útočně laděném severočeském extraligovém derby.",
+        "text": "V Home Credit Areně se odehraje podještědské extraligové derby mezi Libercem a Mladou Boleslaví. Vypsaná hranice 3,5 gólu včetně prodloužení a samostatných nájezdů představuje v moderním hokeji mimořádně nízkou laťku, kterou týmy běžně překonávají. Bílí Tygři praktikují ofenzivní celoplošný hokej s vysokou frekvencí střelby a jejich zápasy mívají pravidelně průměr přes pět branek. Mladá Boleslav sice staví na agresivním forcheckingu, avšak na hřištích soupeřů často nabízí okénka v defenzivě a pouští protivníka do přečíslení. Ve prospěch overu hraje vzájemná rivalita, která často přináší vyšší počet vyloučení a tím i šance v přesilových hrách obou celků. Proti sázce by stál výjimečný výkon obou maskovaných mužů v brankovišti nebo extrémní střelecká neproduktivita v koncovce. K naplnění sázky však stačí pouhé čtyři přesné zásahy za celých šedesát minut plus případný nastavený čas. Tuto podmínku splnila drtivá většina jejich vzájemných měření sil v posledních dvou sezónách.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Extrémně nízká hranice 3,5 gólu do rozhodnutí, ke splnění stačí pouze 4 branky v celém zápase.",
+          "Liberec hraje útočný hokej s vysokou četností střelby a zápasy pravidelně přesahují 5 gólů.",
+          "Vzájemná rivalita v derby s sebou nese fauly a šance při přesilových hrách na obou stranách."
+        ],
+        "proti": [
+          "Případný nadstandardní výkon brankářů na obou koncích kluziště může skóre zmrazit.",
+          "Zvýšená taktická svázanost a přehnaná opatrnost v derbyových duelech."
+        ],
+        "riziko": "Hlavním rizikem je výpadek v zakončení a excelentní fazóna gólmanů v defenzivním souboji."
+      },
+      "duvera": 7,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "hokej",
+      "zapas": "Spišská Nová Ves - Nitra",
+      "start": "2026-11-22T15:30:00+00:00",
+      "liga": "1. Slovensko",
+      "trh": "Handicap do rozhodnutí -1.5",
+      "vyber": "Nitra (+1.5)",
+      "kurz": 1.3,
+      "p": 0.7472,
+      "marze": 0.0591,
+      "sazej_od": 1.37,
+      "analyza": {
+        "id": "Spišská Nová Ves - Nitra",
+        "verdikt": "OK",
+        "duvod": "Vyrovnané postavení v tabulce a vzájemná bilance hrají pro Nitru, která navíc disponuje polštářem +1,5 gólu.",
+        "text": "V 21. kole slovenské Tipsport ligy se pátá Spišská Nová Ves utká na domácím ledě s osmou Nitrou, kterou dělí pouhé čtyři body. Nitra v aktuální sezóně dokazuje, že umí proti Spišské zahrát, což potvrdil i říjnový vzájemný duel, v němž zvítězila jednoznačně 3:0. Hosté disponují produktivním útokem, jenž nastřílel 57 branek v 19 kolech a v zápasech venku pravidelně trápí ligovou špičku. Handicap +1,5 branky poskytuje Nitře velký polštář, jelikož sázka vyhrává i při těsné porážce o jediný gól nebo remíze po základní hrací době. Domácí Rysi sice těží z bouřlivé TIPOSBET areny, avšak v posledních týdnech střídají skvělé pasáže s nečekanými výpadky v defenzivě. Proti sázce hovoří pouze možnost, že by Spišská v závěru zápasu odskočila do dvougólového vedení při power-play soupeře. Nitra má však dostatek zkušeností i útočného talentu na to, aby držela krok po celých šedesát minut. Vyrovnanost obou celků v ligové tabulce nahrává dramatickému a těsnému průběhu.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Nitra vyhrála poslední vzájemný duel 3:0 a dlouhodobě má na Spišskou Novou Ves účinný recept.",
+          "Handicap +1,5 gólu kryje jakékoliv vítězství Nitry, remízu po 60 minutách i těsnou prohru o gól.",
+          "Bodový rozdíl mezi týmy v tabulce činí jen čtyři body, což slibuje velmi vyrovnanou bitvu."
+        ],
+        "proti": [
+          "Spišská Nová Ves je na svém zimním stadionu tradičně silná a těží z hlučného publika.",
+          "Riziko prázdné branky v závěru utkání při snaze Nitry dohnat jednobrankové manko."
+        ],
+        "riziko": "Při hře bez brankáře v power-play může Nitra inkasovat gól do prázdné a prohrát o dva."
+      },
+      "duvera": 7,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "basketbal",
+      "zapas": "Galatasaray - Petkim Spor",
+      "start": "2026-11-22T15:00:00+00:00",
+      "liga": "1. Turecko - muži",
+      "trh": "Výsledek zápasu",
+      "vyber": "Galatasaray",
+      "kurz": 1.3,
+      "p": 0.7448,
+      "marze": 0.0812,
+      "sazej_od": 1.37,
+      "analyza": {
+        "id": "Galatasaray - Petkim Spor",
+        "verdikt": "OK",
+        "duvod": "Galatasaray dominuje ve vzájemných duelech a v domácí hale v Istanbulu potvrzuje vyšší individuální i týmovou kvalitu.",
+        "text": "V turecké Basketbol Süper Ligi vyzve Galatasaray v moderním Basketball Development Centre v Istanbulu tým Aliağa Petkim Spor. Domácí Galatasaray se opírá o kvalitní rotaci zahraničních posil a výhodu domácí palubovky, kde v lize pravidelně diktuje tempo utkání. V únoru tohoto roku dokázali lvi Petkim Spor na vlastní půdě deklasovat 90:61 a navázali na to i říjnovým venkovním vítězstvím 80:75. Petkim Spor se na venkovních palubovkách trápí, jeho úspěšnost střelby z perimetru výrazně klesá a často trpí na ztráty pod agresivním presinkem. Pro Galatasaray hovoří vyrovnanější kádr, schopnost hrát v rychlém tempu a převaha v doskakování pod oběma koši. Proti sázce by mohla stát případná únava domácích z náročného programu evropských pohárů Basketball Champions League, kde Galatasaray bojoval během týdne. Pokud si však favorit udrží standardní defenzivní rating a vyvaruje se laciných faulů klíčových pivotů, měl by si vedení pohlídat. Kvalitativní převaha istanbulského velkoklubu je na všech herních pozicích znatelná.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Galatasaray porazil Petkim Spor v obou posledních vzájemných střetnutích (90:61 a 80:75).",
+          "Domácí prostředí Basketball Development Centre přináší Galatasarayi výraznou herní jistotu.",
+          "Petkim Spor se na hřištích předních celků trápí a mívá slabší procento střelby z dálky."
+        ],
+        "proti": [
+          "Galatasaray absolvoval v týdnu náročný zápas v Lize mistrů a může pociťovat únavu.",
+          "Petkim Spor disponuje několika individuálně zdatnými střelci, kterým může sednout zápas."
+        ],
+        "riziko": "Únava z pohárového programu a možná slabší koncentrace domácích v obraně na perimetru."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "snooker",
+      "zapas": "Jones Jamie - Jiahao H.",
+      "start": "2026-11-22T14:30:00+00:00",
+      "liga": "UK Championship",
+      "trh": "Vítěz zápasu",
+      "vyber": "Jones Jamie",
+      "kurz": 1.31,
+      "p": 0.7418,
+      "marze": 0.0575,
+      "sazej_od": 1.38,
+      "analyza": {
+        "id": "Jones Jamie - Jiahao H.",
+        "verdikt": "OK",
+        "duvod": "Dlouhý formát na 6 vítězných framů nahrává zkušenějšímu Velšanovi Jamie Jonesovi proti mladému hráči z konce stovky.",
+        "text": "Ve druhém kole kvalifikace na prestižní UK Championship změří síly zkušený velšský hráč Jamie Jones s čínským mladíkem Huangem Jiahaoem. Jamie Jones, který v minulosti prošel až do čtvrtfinále mistrovství světa a drží se v elitní čtyřiašedesátce světa, je známý svou houževnatou taktickou hrou a vynikající safety game. Huang Jiahao naopak teprve sbírá zkušenosti na profesionálním okruhu a jeho 97. místo na světovém žebříčku odpovídá jeho dosavadním výkonům. Zápas se hraje na dlouhý formát nejvýše jedenácti framů (best of 11), což je klíčový faktor silně favorizující vyzrálejšího hráče schopného zvládat krizové momenty. Pro Jonese hovoří obrovské turnajové zkušenosti, trpělivost při svazování stolu a lepší poziční hra z těžkých pozic. Čínský soupeř by mohl zahrozit jedině v případě mimořádné úspěšnosti z dálky a sérií vysokých náběhů v úvodu střetnutí. Jones se však umí přizpůsobit stylu hry a trestat nevynucené poziční chyby méně ostřílených protivníků. Očekává se, že Velšan potvrdí roli favorita a dokráčí k postupu do třetího kola.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Dlouhý zápasový formát best of 11 výrazně zvýhodňuje zkušenějšího hráče s lepší taktikou.",
+          "Jamie Jones má bohaté zkušenosti z velkých turnajů a stabilně kvalitní defenzivní hru.",
+          "Huang Jiahao je hráčem ze závěru první stovky žebříčku s vysokou chybovostí v těžkých pozicích."
+        ],
+        "proti": [
+          "Pokud Huang trefí skvělou pottingovou fazónu, může Jonese v jednotlivých hrách přestřílet.",
+          "Jones mívá občas pomalejší rozjezdy, což v prvních třech framech dává soupeři naději."
+        ],
+        "riziko": "Hrozbou je nástup mladého Číňana v úvodu zápasu a Jonesova slabší úspěšnost long potů."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "snooker",
+      "zapas": "Yuhao Lan - Thomond J.",
+      "start": "2026-11-22T14:30:00+00:00",
+      "liga": "UK Championship",
+      "trh": "Vítěz zápasu",
+      "vyber": "Yuhao Lan",
+      "kurz": 1.31,
+      "p": 0.7418,
+      "marze": 0.0575,
+      "sazej_od": 1.38,
+      "analyza": {
+        "id": "Yuhao Lan - Thomond J.",
+        "verdikt": "OK",
+        "duvod": "Favorit Lan Yuhao má s Thomondem v roce 2026 bilanci 2:0 a formát na 6 vítězných framů jasně nahrává stabilnějšímu profesionálovi.",
+        "text": "Kvalifikace na prestižní UK Championship svede dohromady čínského profesionála Lan Yuhaa a anglického amatéra Joshuu Thomonda bojujícího na okruhu Q Tour. Lan Yuhao prožívá stabilnější období na okruhu a v tomto roce již Thomonda dvakrát porazil, konkrétně 3:1 na Championship League a 4:2 na kvalifikaci Scottish Open. Zápas se hraje na best of 11 framů (na 6 vítězných), což je formát, který výrazně zvýhodňuje kvalitnějšího a výše postaveného hráče. Čínský reprezentant dominuje v budování náběhů a bodovém zakončování na potahovaných koulích, zatímco Thomond má sice slušnou taktickou hru, ale v otevřených pozicích často selhává. V delším zápase se rozdíl ve stabilitě a technické vyspělosti obvykle ještě více prohlubuje. Pro Lan Yuhaa hovoří stoprocentní vzájemná bilance i výrazně vyšší break-building potenciál v aktuálním ročníku. Proti hraje Thomondova houževnatost a schopnost kouskovat hru dlouhými defenzivními výměnami. Sázku by zhatil pouze totální kolaps na potápění a série hrubých chyb čínského favorita.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Lan Yuhao vyhrál oba dosavadní vzájemné duely v roce 2026.",
+          "Dlouhý formát Best of 11 výrazně snižuje pravděpodobnost náhody."
+        ],
+        "proti": [
+          "Joshua Thomond hraje houževnatý snooker s nepříjemnou defenzivou.",
+          "V kvalifikaci UK Championship bývá na favorita zvýšený tlak."
+        ],
+        "riziko": "Nečekaný výpadek čínského favorita na potápění a ztráta rytmu v defenzivních pasážích."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "hazena",
+      "zapas": "EH Aalborg - Holstebro",
+      "start": "2026-11-22T13:00:00+00:00",
+      "liga": "1. Dánsko - ženy",
+      "trh": "Výsledek zápasu",
+      "vyber": "Holstebro",
+      "kurz": 1.3,
+      "p": 0.7411,
+      "marze": 0.0962,
+      "sazej_od": 1.38,
+      "analyza": {
+        "id": "EH Aalborg - Holstebro",
+        "verdikt": "OK",
+        "duvod": "Holstebro má výrazně kvalitnější kádr, zatímco Aalborg se trápí na dně tabulky a inkasuje pravidelně přes 30 gólů na zápas.",
+        "text": "V 12. kole dánské ženské Kvindeligaen přivítá trápící se EH Aalborg tým Holstebro Håndbold, který jde do zápasu v roli jasného favorita s kurzem 1,30. Aalborg se nachází u dna ligové tabulky a táhne sérii ligových porážek, když v posledních kolech inkasoval 34 branek od Odense i Ringkøbingu a pouze 18 gólů vstřelil proti Nykøbingu. Holstebro se naopak může opřít o velmi produktivní útok tažený talentovanou kanonýrkou Nannou Vintherovou a podstatně lépe organizovanou defenzivu 6-0. Herní styl hostujícího celku těží z rychlého přechodu do protiútoku po technických chybách soupeře, kterých Aalborg produkuje v průměru přes deset na zápas. Domácí hala v Nørresundby sice nabízí Aalborgu známé prostředí, nicméně jejich propustná obrana dlouhodobě nestačí na týmy ze středu ligy. Ve prospěch Holstebro hovoří výrazně kvalitnější kádr, vyšší úspěšnost střelby ze spojek i solidní forma z předchozích ligových duelů. Proti hraje specifická motivace Aalborgu v záchranářských bojích a možný tlak na hosty v roli favorita. Výhru Holstebro by ohrozil výpadek brankářské jedničky nebo nezvykle vysoký počet dvouminutových trestů.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Holstebro disponuje produktivním útokem v čele s Nannou Vintherovou.",
+          "EH Aalborg prohrál sérii utkání s vysokým počtem obdržených branek."
+        ],
+        "proti": [
+          "Aalborg hraje na domácí palubovce, kde nutně bojuje o záchranu.",
+          "Riziko nekoncentrovaného vstupu Holstebro do venkovního zápasu."
+        ],
+        "riziko": "Slabší den brankářek Holstebro a nečekaně vysoká střelecká efektivita Aalborgu ze spojek."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "hazena",
+      "zapas": "Fana - Utleira",
+      "start": "2026-11-22T16:00:00+00:00",
+      "liga": "1. Norsko - ženy",
+      "trh": "Výsledek zápasu bez remízy",
+      "vyber": "Fana",
+      "kurz": 1.3,
+      "p": 0.7406,
+      "marze": 0.0769,
+      "sazej_od": 1.38,
+      "analyza": {
+        "id": "Fana - Utleira",
+        "verdikt": "OK",
+        "duvod": "Fana má v domácí hale Fana Arena pevnou obranu a sázka bez remízy plně eliminuje riziko nerozhodného výsledku.",
+        "text": "V norské nejvyšší soutěži žen REMA 1000-ligaen hostí Fana Handball ve své hale Fana Arena celek Utleira IL, přičemž sázka bez remízy na domácí celek s kurzem 1,30 nabízí výbornou pojistku. Fana patří k etablovaným týmům norské elity a na domácí palubovce se tradičně prezentuje disciplinovaným systémem a agresivní obranou. Utleira se v nejvyšší soutěži trápí především na palubovkách soupeřů, kde inkasuje vysoké příděly branek a má slabší rotaci na spojkách. Herní projev Fany stojí na pevném středu defenzivy a rychlé druhé vlně protiútoků, což je přesně styl, který dělá Utleiře dlouhodobě velké potíže. Hostující hráčky mají navíc problém s proměňováním sedmimetrových hodů a často se dostávají do hlubokých střeleckých krizí. Pro výhru Fany hovoří výrazná výhoda domácího prostředí v Bergenu, zkušenější jádro kádru a pokrytí případné remízy vrácením vkladu. Proti může hrát houževnatý odpor Utleiry v úvodu zápasu a případné podcenění ze strany favoritek. Sázku by ohrozil pouze mimořádný výkon hostující brankářky v kombinaci se střeleckým selháním klíčových opor Fany.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Fana těží z výrazné domácí výhody v hale Fana Arena v Bergenu.",
+          "Sázka bez remízy plně vrací vklad v případě nerozhodného skóre.",
+          "Utleira venku dlouhodobě zaostává v defenzivní činnosti."
+        ],
+        "proti": [
+          "Utleira může kousat při povedeném vstupu do utkání.",
+          "Fana v této sezóně občas kolísá v útočné fázi."
+        ],
+        "riziko": "Výjimečný výkon brankářky Utleiry a selhání střelkyň Fany ve vyložených šancích."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "tenis",
+      "zapas": "Tarvet O. - Mitsui S.",
+      "start": "2026-11-22T18:00:00+00:00",
+      "liga": "M - ATP Chall. Champaign, dvouhra",
+      "trh": "Počet gamů v zápasu 17.5",
+      "vyber": "Více než 17.5",
+      "kurz": 1.3,
+      "p": 0.7406,
+      "marze": 0.0769,
+      "sazej_od": 1.38,
+      "analyza": {
+        "id": "Tarvet O. - Mitsui S.",
+        "verdikt": "OK",
+        "duvod": "Hranice 17,5 gamů je pro finále na rychlém halovém hardu extrémně nízko a stačí i běžný výsledek typu 6:3, 6:3.",
+        "text": "Finále halového turnaje ATP Challenger 50 v americkém Champaign přináší souboj dvou vynikajících univerzitních hráčů, britského talentu Olivera Tarveta a Japonce Shunsukeho Mitsuie. Hranice 17,5 gamů je pro finálový duel na rychlém halovém tvrdém povrchu nastavena velmi nízko a k jejímu pokoření stačí i relativně hladký dvousetový výsledek typu 6:3, 6:3. Oba tenisté předváděli po celý týden vynikající výkony na servisu a opírají se o vysoké procento bodů získaných po prvním podání. Oliver Tarvet v turnaji téměř neztrácel podání a Mitsui po úspěšné kvalifikaci těží z obrovského sebevědomí i skvělého returnu. Na rychlém povrchu The Parastaran Court jsou gamy při podání obou hráčů velmi rychlé a prolomení servisu bývá vzácností, což přirozeně žene sety k těsným stavům. Pro překonání hranice hovoří herní styl obou finalistů, rychlý kurt a finálové napětí, kde se očekává maximální koncentrace na vlastním podání. Proti hraje fyzické vyčerpání Mitsuie, jenž má v nohách zápasy z kvalifikace a mohl by v závěru turnaje kondičně odpadnout. Sázku by zhatil pouze naprostý debakl jednoho z hráčů s jednostranným výsledkem typu 6:2, 6:1.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Oba hráči se opírají o spolehlivý první servis na rychlém povrchu.",
+          "K překonání linie 17,5 gamů stačí i dvousetový výsledek 6:3, 6:3.",
+          "Ve finále Challengeru se očekává maximální soustředění obou tenistů."
+        ],
+        "proti": [
+          "Mitsui má v nohách zápasy z kvalifikace a může mu dojít dech.",
+          "Rychlý brejk v úvodech obou setů by mohl vést k výsledku 6:2, 6:2."
+        ],
+        "riziko": "Fyzický kolaps unaveného Mitsuie a jednostranný debakl ve dvou krátkých setech."
+      },
+      "duvera": 7,
+      "overeni": "trh sedí"
+    },
+    {
+      "sport": "volejbal",
+      "zapas": "Busto Arsizio - Firenze",
+      "start": "2026-11-22T16:00:00+00:00",
+      "liga": "1.Itálie - ženy",
+      "trh": "Handicap setů v zápasu -2.5",
+      "vyber": "Firenze +2.5",
+      "kurz": 1.3,
+      "p": 0.7406,
+      "marze": 0.0769,
+      "sazej_od": 1.38,
+      "analyza": {
+        "id": "Busto Arsizio - Firenze",
+        "verdikt": "OK",
+        "duvod": "Oba týmy dělí v tabulce jediný bod a Busto Arsizio není tak dominantní, aby zápas vyhrálo hladce 3:0 na sety.",
+        "text": "V 10. kole italské volejbalové Serie A1 žen přivítá UYBA Volley Busto Arsizio celek Il Bisonte Firenze a handicap +2,5 setu na hosty znamená, že Florencii stačí uhrát jediný set. V tabulce dělí oba celky pouhý bod, když Busto Arsizio nasbíralo osm bodů a Firenze sedm, což podtrhuje naprostou vyrovnanost jejich současné výkonnosti. Busto Arsizio rozhodně nepatří mezi dominantní týmy italské elity a po minulé porážce 1:3 se Scandicci se často potýká s výpadky v příjmu podání a nevynucenými chybami. Firenze se sice rovněž herně hledá, disponuje však kvalitním blokem a bojovným polem, díky čemuž pravidelně obírá o sety i silnější protivníky. Vzájemné zápasy těchto týmů mívají tradičně dramatický průběh a třísetové vítězství domácích je vzhledem k jejich kolísavé formě málo pravděpodobné. Pro Firenze hovoří vyrovnanost kádru, potřeba bodovat proti přímému sousedovi v tabulce i fakt, že domácí lavička postrádá hloubku na zvrat v nepříznivých setech. Proti sázce hraje výhoda domácí haly pro Busto Arsizio a útočná síla jejich sestavy. Sázku by pohřbila pouze totální ztráta koncentrace Florencie na přihrávce a hladká prohra 0:3.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Firenze stačí k výhře sázky zisk jediného setu v celém utkání.",
+          "Busto Arsizio i Firenze jsou vyrovnaní tabulkoví sousedé.",
+          "Domácí tým často ztrácí koncentraci a kupí chyby na přihrávce."
+        ],
+        "proti": [
+          "Busto Arsizio má výhodu domácího prostředí v hale Biella Forum.",
+          "Firenze táhne sérii porážek a může mít slabší začátek zápasu."
+        ],
+        "riziko": "Rychlý kolaps Florencie na příjmu a bezkrevná prohra 0:3 na sety."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "basketbal",
+      "zapas": "Benedetto XIV Cento - Fortitudo Bologna",
+      "start": "2026-11-22T17:00:00+00:00",
+      "liga": "2. Itálie - muži",
+      "trh": "Vítěz zápasu (včetně prodloužení)",
+      "vyber": "Fortitudo Bologna",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Benedetto XIV Cento - Fortitudo Bologna",
+        "verdikt": "OK",
+        "duvod": "Fortitudo Bologna drží čtyřzápasovou vítěznou sérii a kvalitou kádru i lavičky výrazně převyšuje trápící se Cento.",
+        "text": "V rámci italské basketbalové Serie A2 se v Baltur Areně odehraje prestižní emiliánské derby mezi domácí Benedetto XIV Cento a ambiciózní Fortitudo Bologna. Hostující Fortitudo pod vedením trenéra Demise Caviny prožívá vynikající období, když veze sérii čtyř výher v řadě po suverénním triumfu nad Rieti a míří k postupu do nejvyšší soutěže. Cento se naopak trápí ve spodní polovině tabulky, nedávno ukončilo angažmá zkušeného Pietra Aradoriho a jeho ofenziva je příliš závislá na výkonech cizinců Woodssona a Davise. Bologna disponuje výrazně hlubší rotací, dominantním doskokem na obou koncích palubovky a pevnou týmovou obranou, která dokáže eliminovat klíčové střelce soupeře. Ačkoliv má hostující křídelník Simon Anumba drobné zdravotní potíže s chodidlem, zbytek kádru Bologni je plně fit a herně vyladěný. Pro výhru hostů hovoří znatelný rozdíl v kvalitě lavičky, defenzivní rating i psychická pohoda ze čtyřzápasové vítězné šňůry. Proti hraje bouřlivá atmosféra vyprodané Baltur Areny a obrovská motivace Centa v prestižním regionálním derby. Sázku by zhatil výjimečný střelecký večer domácích perimetrových hráčů za tři body v kombinaci s nezvyklým kolapsem Fortituda v koncovce.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Bologna vyhrála poslední 4 zápasy a útočí na čelo Serie A2.",
+          "Cento nedávno propustilo oporu Aradoriho a jeho hra vázne.",
+          "Fortitudo má drtivou převahu na doskoku i v hloubce rotace."
+        ],
+        "proti": [
+          "Cento hraje doma před bouřlivou vyprodanou Baltur Arenou.",
+          "V emiliánském derby se stírají tabulkové i papírové rozdíly."
+        ],
+        "riziko": "Střelecká exploze domácích střelců Woodssona a Davise za podpory plné haly."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "tenis",
+      "zapas": "Zverev A. - Alcaraz C.",
+      "start": "2026-11-22T17:00:00+00:00",
+      "liga": "ATP Finals, dvouhra",
+      "trh": "Počet gamů v zápasu 20.5",
+      "vyber": "Více než 20.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Zverev A. - Alcaraz C.",
+        "verdikt": "OK",
+        "duvod": "Finále Turnaje mistrů v rychlé hale v Turíně svede elitní hráče s fenomenálními čísly na podání.",
+        "text": "Finále Turnaje mistrů v Turíně svede dohromady světovou jedničku Alexandera Zvereva a Carlose Alcaraze v souboji dvou nejlepších hráčů turnaje. Zverev v dosavadním průběhu neprohrál jediný servisový game, když proměnil všech 42 her na svém podání, a po prvním servisu vyhrává neuvěřitelných 84,4 % výměn. Carlos Alcaraz se po třísetové bitvě v semifinále s Benem Sheltonem rovněž opírá o výborný servis a v hale ztratil pouze jediné podání ze 40 gamů. V rychlých podmínkách haly Inalpi Arena a formátu na dva vítězné sety je hranice 20,5 gamů nastavena velmi přívětivě. K jejímu pokoření stačí jakýkoliv třísetový duel, případně dvousetový zápas s jedním tiebreakem či těsnějším skóre typu 7:5 a 6:4. Vzájemná bilance čítá již 13 vyrovnaných duelů s mírným vedením Alcaraze 7:6 na zápasy. Jediným rizikem by byl naprostý kolaps na servisu jednoho z aktérů a jednostranný výsledek dvakrát 6:2, což je při stávající formě obou finalistů nepravděpodobné.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Oba hráči si v Turíně drží přes 97 % servisových gamů a na rychlém povrchu dominují.",
+          "K překonání hranice 20,5 gamů stačí vyrovnanější dvousetový zápas nebo tiebreak.",
+          "Při formě obou finalistů je reálná přetahovaná na tři sety, která over garantuje."
+        ],
+        "proti": [
+          "Případný kolaps na podání jednoho z hráčů a rychlá dvousetová výhra 6:3, 6:2.",
+          "Zverev dokáže při skvělém dni zavřít soupeře bez ztráty podání v krátkém dvousetu."
+        ],
+        "riziko": "Rychlý dvousetový průběh s brzkými brejky na jedné straně typu 6:2, 6:3."
+      },
+      "duvera": 7,
+      "overeni": "trh sedí"
+    },
+    {
+      "sport": "americky-fotbal",
+      "zapas": "Carolina - Baltimore",
+      "start": "2026-11-22T18:00:00+00:00",
+      "liga": "NFL",
+      "trh": "Zápas: počet touchdownů včetně prodloužení 3.5",
+      "vyber": "Více než 3.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Carolina - Baltimore",
+        "verdikt": "OK",
+        "duvod": "Lajna 3,5 touchdownu je při celkovém předpokládaném totalu zápasu kolem 43,5 bodu posazena nízko.",
+        "text": "V 11. týdnu NFL hostí Carolina Panthers celek Baltimore Ravens na Bank of America Stadium v Charlotte. Celkový bodový total zápasu je vypsán okolo 43,5 bodu, což v průměru odpovídá zhruba pěti touchdownům, takže hranice pouhých 3,5 touchdownu je velice dostupná. Ravens disponují extrémně údernou běhovou hrou vedenou Derrickem Henrym, která stabilně trestá soupeře v red zone. Carolina zaznamenala v ofenzivě pod Brycem Youngem herní progres a proti obraně Baltimoru, která letos vykazuje mezery v secondary, si šance vytvoří. K úspěchu sázky stačí součet pouhých čtyř touchdownů za celých 60 minut včetně případného prodloužení. Přestože Baltimore řešil zdravotní stav Lamara Jacksona, i s náhradním rozehrávačem disponuje jejich útok dostatečnou silou na zemi. Hlavním rizikem by bylo defenzivní trápení a festival neproměněných akcí končících field goaly místo skórování do end zóny.",
+        "duvera_gemini": 7,
+        "pro": [
+          "Lajna 3,5 touchdownu vyžaduje pouze 4 skórování do end zóny za celých 60 minut.",
+          "Útočná síla Baltimoru s Derrickem Henrym má obrovskou úspěšnost v red zone.",
+          "Obrana Caroliny patří k méně spolehlivým jednotkám a pravidelně inkasuje."
+        ],
+        "proti": [
+          "Zdravotní indispozice Lamara Jacksona může otupit variabilitu pasového útoku Ravens.",
+          "Riziko zápasu založeného na dlouhých bězích ubírajících čas a končících field goaly."
+        ],
+        "riziko": "Festival úspěšných field goalů a pomalé tempo hry ubírající ofenzivní držení míče."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "americky-fotbal",
+      "zapas": "Buffalo - Miami",
+      "start": "2026-11-22T18:00:00+00:00",
+      "liga": "NFL",
+      "trh": "Počet bodů v 1. čtvrtině 6.5",
+      "vyber": "Více než 6.5",
+      "kurz": 1.3,
+      "p": 0.7388,
+      "marze": 0.0817,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Buffalo - Miami",
+        "verdikt": "OK",
+        "duvod": "Produktivní útok Buffala s Joshem Allenem proti slabé obraně Miami nabízí vysokou šanci na body v úvodu.",
+        "text": "Divizní souboj AFC East svede na Highmark Stadium v Orchard Parku rozjeté Buffalo Bills s bilancí 8-1 a trápící se Miami Dolphins s bilancí 1-8. Bills jsou obrovským favoritem o více než dva touchdowny a jejich útok pod vedením Joshe Allena a Jamese Cooka patří k nejefektivnějším v soutěži. Hranice 6,5 bodu v úvodní patnáctiminutovce znamená, že stačí jediný touchdown s potvrzeným extra pointem nebo dva field goaly od kteréhokoliv z týmů. Miami se potýká s četnými absencemi na soupisce a jeho defenzíva má tendenci inkasovat hned v úvodních pasážích zápasů venku. Buffalo tradičně vstupuje do domácích duelů před bouřlivým publikem s maximální agresivitou a přímočarostí. Rizikem u tohoto trhu bývá úvodní oťukávání po kick-offu, delší běhové série spotřebovávající hodiny nebo případný silný poryv větru u jezera Erie. Síla a chuť Buffala rozhodnout o osudu utkání hned z prvních dvou drivů je však velmi vysoká.",
+        "duvera_gemini": 8,
+        "pro": [
+          "K překonání lajny 6,5 bodu stačí jediný touchdown s potvrzením v celých prvních 15 minutách.",
+          "Ofenzíva Buffala je v úvodech domácích zápasů enormně efektivní a Miami obrana zranitelná.",
+          "Dolphins mají rozsáhlou marodku a slabou pasovou obranu."
+        ],
+        "proti": [
+          "Počasí v Buffalu u jezera Erie může při silnějším větru zkomplikovat pasovou hru.",
+          "Pomalý rozjezd a úvodní série puntů z obou stran mohou čtvrtinu uzavřít stavem 3:0 nebo 0:0."
+        ],
+        "riziko": "Neúspěšné úvodní ofenzivní drivy končící punty bez bodového zápisu v prvních 15 minutách."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "volejbal",
+      "zapas": "Pirin Razlog - CSKA Sofia",
+      "start": "2026-11-22T17:00:00+00:00",
+      "liga": "1. Bulharsko - muži",
+      "trh": "Vítěz zápasu",
+      "vyber": "CSKA Sofia",
+      "kurz": 1.3,
+      "p": 0.7369,
+      "marze": 0.0867,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Pirin Razlog - CSKA Sofia",
+        "verdikt": "OK",
+        "duvod": "CSKA Sofia je kvalitativně lepším týmem ligy, ačkoliv venkovní hala v Razlogu bývá nepříjemná.",
+        "text": "V 6. kole bulharské SuperLigy mužů přivítá Pirin Razlog v hale Septemvri tým CSKA Sofia. CSKA disponuje širším i zkušenějším kádrem a stabilně usiluje o přední příčky ligy, což dokazuje i účastí v evropském Challenge Cupu. Pirin Razlog se naopak nachází až na 10. místě tabulky a v ligovém ročníku sbírá převážně porážky. Přestože je CSKA favoritem na kurzové úrovni 1,30, vzájemné zápasy v Razlogu bývají zrádné; v březnu 2026 zde Pirin slavil výhru 3:1 a v lednu 3:2. Hosté navíc mohou mít v nohou těžký pětisetový duel na mezinárodní scéně proti Podoliani z tohoto týdne. Podrobné sestavy a přesný zdravotní stav klíčových opor nebyly před zápasem zveřejněny (nenalezeno). Pokud si však CSKA pohlídá příjem a prosadí se svou převahou na bloku a útoku, měla by povinné vítězství vybojovat.",
+        "duvera_gemini": 6,
+        "pro": [
+          "CSKA Sofia má výrazně kvalitnější soupisku i vyšší postavení v ligové hierarchii.",
+          "Pirin Razlog prohrál většinu zápasů v úvodu sezony a nachází se na chvostu tabulky.",
+          "CSKA má po pohárovém postupu jasnou motivaci stoupat tabulkou."
+        ],
+        "proti": [
+          "Pirin na domácí půdě v Razlogu dokázal CSKA v minulých vzájemných zápasech porazit.",
+          "Možná únava klíčových hráčů CSKA po náročném programu v Challenge Cupu."
+        ],
+        "riziko": "Podcenění a únava CSKA v nepřátelském prostředí haly v Razlogu."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "esport-counter-strike",
+      "zapas": "Monkeys - UNiTY",
+      "start": "2026-11-22T12:00:00+00:00",
+      "liga": "MČR Tour",
+      "trh": "Vítěz 1. mapy",
+      "vyber": "UNiTY",
+      "kurz": 1.3,
+      "p": 0.7369,
+      "marze": 0.0867,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Monkeys - UNiTY",
+        "verdikt": "OK",
+        "duvod": "UNiTY jsou nejdominantnější sestavou české scény a proti Monkeys potvrdili roli favorita i ve skupině.",
+        "text": "V play-off Mistrovství ČR 2026 v Counter-Strike 2 se střetávají UNiTY Esports proti týmu Monkeys. UNiTY platí na domácí scéně za absolutní špičku s velkými mezinárodními zkušenostmi a propracovaným taktickým systémem. Ve skupinové fázi turnaje se oba týmy již potkaly a UNiTY zvítězili v sérii 2:1 na mapy, přičemž herně měli navrch. Tým Monkeys tvoří šikovní hráči, v taktické hloubce a stabilitě v těžkých situacích však za soupeřem zaostávají. Sázka cílí na vítězství UNiTY na první mapě, kde bývá stěžejní volba mapy obou celků a úspěšnost v pistolových kolech. Systém MR12 sice nahrává nečekaným zvratům při prohraných pistolích, ale UNiTY mají v nákupních kolech jasnou střeleckou převahu. Pokud UNiTY nepodcení úvodní tempo a udrží disciplínu v obraně, úvodní mapu si pohlídají.",
+        "duvera_gemini": 8,
+        "pro": [
+          "UNiTY patří k nejsilnějším týmům domácí česko-slovenské scény s převahou palebné síly.",
+          "Ve skupinové fázi si UNiTY s Monkeys poradili v sérii 2:1 na mapy.",
+          "Monkeys mají slabší map pool a horší stabilitu v obraně na CT straně."
+        ],
+        "proti": [
+          "První mapa může být výběrem Monkeys, což jim dává strategickou mapovou výhodu.",
+          "Formát MR12 je náchylný na prohry v pistolových kolech, které mohou zvrátit průběh jedné mapy."
+        ],
+        "riziko": "Ztráta obou pistolových kol a zbrklost na soupeřově map picku."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "esport-counter-strike",
+      "zapas": "G2 Ares - Maybe",
+      "start": "2026-11-23T12:00:00+00:00",
+      "liga": "CCT",
+      "trh": "Handicap map v zápasu",
+      "vyber": "G2 Ares +1.5",
+      "kurz": 1.3,
+      "p": 0.735,
+      "marze": 0.0918,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "G2 Ares - Maybe",
+        "verdikt": "OK",
+        "duvod": "Handicap +1.5 mapy dává G2 Ares polštář, přičemž nedávné vzájemné mapy skončily těsným rozdílem.",
+        "text": "V uzavřené kvalifikaci CCT Europe Series 15 se v pavouku poražených znovu střetávají akademie G2 Ares a ukrajinský celek MAYBE. Oba týmy se v listopadu potkaly již dvakrát a pokaždé zvítězili MAYBE 2:0, naposledy před několika dny v úvodním kole skupiny. Handicap +1,5 mapy pro G2 Ares znamená, že mladá evropská sestava musí získat alespoň jednu mapu v sérii Bo3. Poslední vzájemné měření sil bylo extrémně těsné – Mirage skončil až v prodloužení 12:16 a Cache těsnou prohrou G2 Ares 10:13. Sestava G2 Ares s hráči jako Junyme či TMKj má na svém vlastním mapovém výběru velký potenciál a měla čas zapracovat na chybách z koncovek. MAYBE sice prokazují větší chladnokrevnost v rozhodujících kolech, ale urvat pro sebe alespoň jednu mapu je v silách G2 Ares. Sázka by padla pouze v případě, že by akademie G2 znovu nezvládla dvě těsné koncovky v řadě.",
+        "duvera_gemini": 7,
+        "pro": [
+          "Sázka na handicap +1,5 mapy je úspěšná i při prohře 1:2 na mapy.",
+          "Předchozí vzájemný zápas z 19. listopadu nabídl na obou mapách těsné bitvy (12:16 v OT a 10:13).",
+          "G2 Ares mají vyrovnaný tým s kvalitními individualitami jako Junyme a TMKj."
+        ],
+        "proti": [
+          "MAYBE dokázali porazit G2 Ares 2:0 jak 10. listopadu, tak 19. listopadu.",
+          "Mentální blok G2 Ares v koncovkách vyrovnaných map proti tomuto konkrétnímu soupeři."
+        ],
+        "riziko": "Opakování scénáře z 19. listopadu a další těsná prohra G2 Ares 0:2 bez zisku mapy."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "sipky",
+      "zapas": "Van Gerwen M. - Van Veen G.",
+      "start": "2026-11-22T14:45:00+00:00",
+      "liga": "Grand Slam of Darts",
+      "trh": "Van Veen G.: počet 180 v zápasu 9.5",
+      "vyber": "Méně než 9.5",
+      "kurz": 1.3,
+      "p": 0.735,
+      "marze": 0.0918,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Van Gerwen M. - Van Veen G.",
+        "verdikt": "OK",
+        "duvod": "Hranice 9,5 na 180 u Van Veena je vysoká; jeho průměr činí cca 0,28 na leg a k překročení by potřeboval extrémně dlouhý zápas na 30+ legů.",
+        "text": "V semifinále prestižního Grand Slam of Darts ve Wolverhamptonu se střetávají krajané Michael van Gerwen a mladý talent Gian van Veen ve formátu best of 31 legs. Sázkový trh vypisuje hranici 9,5 na počet trefených maximálních náhozů 180 pro Van Veena s kurzem 1,30. Van Veen v dramatickém čtvrtfinále přetlačil Nathana Aspinalla 16:14, přičemž jeho průměr i stabilita skórování byly vysoké, avšak jeho frekvence trefování 180 se dlouhodobě pohybuje kolem 0,25 až 0,30 na odehraný leg. Michael van Gerwen v předchozím kole předvedl fenomenální devítku a výhru 16:11 nad Tomem Sykesem, přičemž jeho nátlaková hra často nutí soupeře spíše přecházet na dohazování než dominovat na triplu dvacet. Aby Van Veen překonal hranici 9,5 stoosmdesátek, musel by předvést naprosto výjimečný zápas s minimálně deseti maximy, což se stává téměř výhradně v duelech, které dospějí až do samotného závěru 30 či 31 legů. Pokud by Van Gerwen získal brzký náskok a duel skončil výraznějším rozdílem (například 16:9 nebo 16:10), počet odehraných legů Gianovi jednoduše nedá dostatek příležitostí. Drobnou nevýhodou sázky je extrémní délka zápasu na 16 vítězných legů, která skýtá dostatek prostoru při vyrovnaném průběhu. Celkově však herní styl Van Veena, jehož síla spočívá ve vyrovnaných návštěvách 140 a vysokém checkout procentu, nahrává tomu, že pod touto vysokou hranicí zůstane.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Van Veenův dlouhodobý průměr 180 na leg se pohybuje kolem 0,28, což by vyžadovalo přes 30 legů.",
+          "Při hladším průběhu a dominanci Van Gerwena nebude odehráno dostatek legů na 10 maxim."
+        ],
+        "proti": [
+          "Formát na 16 vítězných legů skýtá při vyrovnaném stavu prostor až pro 31 legů.",
+          "Van Veen je ve výborné pohodě po čtvrtfinálovém vyřazení Aspinalla poměrem 16:14."
+        ],
+        "riziko": "Dramatický duel hraný na plný počet 31 legů s vysokým scoringem obou hráčů."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "esport-dota2",
+      "zapas": "Team Liquid - Parivision",
+      "start": "2026-11-22T14:00:00+00:00",
+      "liga": "BLAST Slam",
+      "trh": "Který tým zničí 1 Barracks v 1. mapě",
+      "vyber": "Parivision",
+      "kurz": 1.3,
+      "p": 0.735,
+      "marze": 0.0918,
+      "sazej_od": 1.39,
+      "analyza": {
+        "id": "Team Liquid - Parivision",
+        "verdikt": "OK",
+        "duvod": "Parivision je v dominantní formě na 1. místě žebříčku a v zápasech BLAST Slamu stabilně diktuje tempo a jako první prolamuje základny.",
+        "text": "Ve skupinové fázi prestižního turnaje BLAST Slam v Dota 2 na sebe narážejí v sérii BO3 Team Liquid a rozjetá sestava Parivision. Trh na zničení prvních kasáren na úvodní mapě výrazně favorizuje Parivision v kurzu 1,30, což přesně odpovídá jejich aktuální herní dominanci. Parivision drží v ratingu Elo pozici světové jedničky a po úvodním přesvědčivém triumfu 2:0 nad týmem LEGION potvrdili skvělou kontrolu mapy a precizní přechod do high-groundu. Team Liquid sice v prvním kole zdolal DO KONCA poměrem 2:0, ale jejich vstupní fáze her bývají pasivnější a často přepouštějí iniciativu i prostor agresivněji hrajícím protivníkům. Klíčovým faktorem je schopnost Parivision kontrolovat Roshanův prostor a diktovat tempo v rozmezí 25. až 35. minuty, kdy obvykle realizují první úspěšné prolomení soupeřovy báze. Proti sázce hraje riziko nevyzpytatelného draftu nebo případný úspěšný protiútok Liquidu po nepovedeném pushi přes tier 3 věže. Vzhledem k současné fazoně Parivision a jejich sérii výher proti špičkovým týmům je však pravděpodobnost, že jako první prolomí kasárna na mapě 1, mimořádně vysoká.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Parivision je světová jednička dle Elo ratingu a vyhrává většinu sérií 2:0.",
+          "Vynikající kontrola Roshanova prostoru a rychlý přechod na high-ground ve střední fázi hry."
+        ],
+        "proti": [
+          "Team Liquid má zkušenou soupisku schopnou potrestat jakoukoliv chybu při obléhání základny.",
+          "Riziko prohraného draftu, který soupeři umožní diktovat tempo v úvodu mapy."
+        ],
+        "riziko": "Nečekaný zvrat v teamfightu u tier 3 věže, který Liquidu umožní rychlý protiútok na bázi."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "sipky",
+      "zapas": "Doets K. - Price G.",
+      "start": "2026-11-22T13:15:00+00:00",
+      "liga": "Grand Slam of Darts",
+      "trh": "Price G.: počet 180 v zápasu 10.5",
+      "vyber": "Méně než 10.5",
+      "kurz": 1.32,
+      "p": 0.7251,
+      "marze": 0.0854,
+      "sazej_od": 1.41,
+      "analyza": {
+        "id": "Doets K. - Price G.",
+        "verdikt": "OK",
+        "duvod": "Price často přepíná na T19 a jeho frekvence 180 je nižší; k překročení 10,5 by musel Doets vzdorovat v extrémně vyrovnaném maratonu.",
+        "text": "První semifinále Grand Slam of Darts svede dohromady trojnásobného šampiona Gerwyna Price a překvapivého debutanta Kevina Doetse, kteří si zahrají v maratonském formátu na 16 vítězných legů. Na velšskou ikonu Price je vypsána hranice 10,5 trefených 180 v zápase, přičemž sázka na méně než 10,5 v kurzu 1,32 má silné opodstatnění. Price ve čtvrtfinále vydřel infarktové vítězství 16:15 nad Nikem Springerem, ale zatímco soupeř nasázel 16 maxim, Price se držel výrazně zpátky a při sebemenším zablokování horního terče plynule přepínal na spodní triple devatenáct. Kevin Doets sice deklasoval Wattimenu 16:7 s průměrem přes 101 a dvěma zavřeními 170, avšak v tomto duelu je Price jasným papírovým favoritem a očekává se jeho brzká převaha. V kratším zápase o 22 až 26 legů je pro Price prakticky nereálné nastřílet 11 a více stoosmdesátek, neboť jeho dlouhodobý turnajový průměr činí zhruba jedno maximum na každé tři až čtyři legy. Jediným výrazným rizikem by byla represe čtvrtfinálového scénáře, kdy by Doets dotáhl zápas až do třicátého či jednatřicátého legu a Price by byl nucen hrát na hranici svých skórovacích možností. Herní profil Price i předpokládaný vývoj utkání však jasně hovoří pro splnění hranice do deseti maxim.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Price v turnaji pravidelně přepíná na T19 a jeho produkce 180 je podprůměrná.",
+          "Jako velký favorit může Doetse porazit hladce (např. 16:8) s malým počtem legů."
+        ],
+        "proti": [
+          "Doets v turnaji předvádí famózní formu a může Price dotlačit do vyčerpávajícího duelu.",
+          "V maratonském formátu best of 31 legs je teoreticky k dispozici až 31 legů."
+        ],
+        "riziko": "Těsný zápas končící 16:14 nebo 16:15, kde Price odehraje maximum možných legů."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "esport-dota2",
+      "zapas": "LEGION - DO KONCA",
+      "start": "2026-11-22T14:00:00+00:00",
+      "liga": "BLAST Slam",
+      "trh": "Handicap map v zápasu",
+      "vyber": "LEGION +1.5",
+      "kurz": 1.35,
+      "p": 0.7096,
+      "marze": 0.0797,
+      "sazej_od": 1.44,
+      "analyza": {
+        "id": "LEGION - DO KONCA",
+        "verdikt": "OK",
+        "duvod": "LEGION na BLAST Slamu předvedl vyrovnané 42minutové hry a proti nevyrovnanému DO KONCA má solidní šanci získat minimálně jednu mapu.",
+        "text": "V záchranářském souboji poražených ve skupině C turnaje BLAST Slam se v Dota 2 utkají týmy LEGION a DO KONCA v sérii best of 3. Vypsaný handicap map +1,5 na celek LEGION v kurzu 1,35 znamená, že outsiderovi stačí k úspěšnému vyhodnocení sázky zisk jediné mapy. LEGION sice v úvodu podlehli silnému favoritu Parivision 0:2, avšak na obou mapách vzdorovali plných 42 minut a v nedávné minulosti dokázali sebrat mapu i Teamu Liquid či porazit Froglings. Soupeř DO KONCA se naopak trápí s nelichotivou bilancí jediné výhry z posledních pěti sérií a proti Liquidu nepředvedl prakticky žádný koordinovaný odpor. Model ESI i ratingové ukazatele navíc favorizují LEGION s ratingem 1706 oproti pouhým 1506 bodům na straně DO KONCA, což činí zisk alespoň jedné mapy vysoce reálným scénářem. Proti sázce může stát pouze individuální kolaps LEGION v draftové fázi nebo fatální chyba v pozdní fázi vyrovnané koncovky. Rozdíl ve stabilitě a herní vyzrálosti obou celků však dává týmu LEGION dostatečnou jistotu k urvání minimálně jednoho dílčího bodu.",
+        "duvera_gemini": 8,
+        "pro": [
+          "LEGION na turnaji držel krok s favoritem Parivision ve dvou 42minutových hrách.",
+          "DO KONCA vyhrál jediný z posledních 5 zápasů a herně se viditelně trápí.",
+          "Model ESI favorizuje LEGION a přisuzuje jim vyšší výkonnostní rating."
+        ],
+        "proti": [
+          "V zápasech tier 2 týmů může jediná chyba v draftu ztratit celou mapu.",
+          "DO KONCA nemá co ztratit a může překvapit agresivní neobvyklou strategií."
+        ],
+        "riziko": "Špatný úvod obou map a rychlá prohra 0:2 bez zisku dílčí mapy."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "stolni-tenis",
+      "zapas": "Kucera M. - Hitzger J.",
+      "start": "2026-11-22T08:35:00+00:00",
+      "liga": "TT Cup - muži",
+      "trh": "Vítěz zápasu",
+      "vyber": "Hitzger J.",
+      "kurz": 1.34,
+      "p": 0.7086,
+      "marze": 0.0971,
+      "sazej_od": 1.44,
+      "analyza": {
+        "id": "Kucera M. - Hitzger J.",
+        "verdikt": "OK",
+        "duvod": "Hitzger vede ve vzájemných duelech 7:2 a teprve včera Kučeru přejel hladce 3:0 (11:5, 11:6, 11:4). Stylisticky soupeře zcela převyšuje.",
+        "text": "V ranním programu stolnětenisového turnaje TT Cup se utkávají Martin Kučera a Jakub Hitzger, kde je Hitzger v kurzu 1,34 veden jako jednoznačný favorit. Klíčovým faktorem je naprosto přesvědčivá vzájemná bilance, v níž Hitzger vede v sérii TT Cupu 7:2 na zápasy. Poslední vzájemné střetnutí proběhlo teprve včera 21. listopadu a Hitzger v něm svého soka smetl suverénně 3:0 na sety po dílčích výsledcích 11:5, 11:6 a 11:4. Hitzger má proti stylu Kučery obrovskou výhodu v nátlakové topspinové hře a konzistenci v delších výměnách, kde Kučera pravidelně kupí nevynucené chyby. Kučera naopak v posledních duelech postrádá sebevědomí i spolehlivost na prvním podání, což Hitzgerovi okamžitě otevírá prostor k agresivnímu returnu. Rizikem rychlého formátu na tři vítězné sety bývají vlažnější vstupy do ranních duelů, které mohou outsiderovi darovat dílčí set. Vzhledem k naprosté dominanci z předešlého dne a stylistické převaze by však Hitzgerovo vítězství mělo být spolehlivou záležitostí.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Hitzger vede ve vzájemné bilanci v TT Cupu 7:2 a soupeře dokonale zná.",
+          "Včerejší vzájemný zápas skončil jasnou výhrou Hitzgera 3:0 na sety.",
+          "Hitzger má výrazně stabilnější topspin a méně nevynucených chyb."
+        ],
+        "proti": [
+          "Krátký formát na 3 vítězné sety dává prostor pro momentální výkyv formy.",
+          "Ranní start zápasu může přinést pomalejší rozehrání favorita."
+        ],
+        "riziko": "Podcenění zápasu a série nevynucených chyb v koncovkách vyrovnaných setů."
+      },
+      "duvera": 7,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "florbal",
+      "zapas": "Sarpsborg - Sjetne",
+      "start": "2026-11-22T11:00:00+00:00",
+      "liga": "1. Norsko",
+      "trh": "Výsledek zápasu",
+      "vyber": "Sarpsborg",
+      "kurz": 1.37,
+      "p": 0.7039,
+      "marze": 0.0899,
+      "sazej_od": 1.45,
+      "analyza": {
+        "id": "Sarpsborg - Sjetne",
+        "verdikt": "OK",
+        "duvod": "Sarpsborg hraje doma, bojuje o play-off a těží z únavy nováčka Sjetne, který hraje druhý venkovní zápas během necelých 24 hodin.",
+        "text": "V 11. kole norské florbalové Eliteserien přivítá Sarpsborg na domácí palubovce ve Skjeberghallenu nováčka soutěže Sjetne IL. Domácí Sarpsborg je s kurzem 1,37 v pozici jasného favorita a má obrovskou motivaci upevnit si pozici pro postup do vyřazovacích bojů a odskočit spodku tabulky. Sarpsborg včera zvládl těžké domácí utkání se Sandnesem vítězstvím 5:3, čímž potvrdil vzestupnou formu a stabilní produktivitu své elitní útočné formace. Sjetne sice včera dokázalo zvítězit na půdě Ull/Kisa 7:4, nicméně jako nováček nyní čelí náročnému programu dvou po sobě jdoucích venkovních duelů během necelých 24 hodin, což se nevyhnutelně podepíše na fyzických silách. Domácí výhoda ve Skjeberghallenu, širší kádr a výrazně vyšší taktická vyzrálost v oslabení i přesilovkách hrají jednoznačně ve prospěch Sarpsborgu. Hrozbou pro sázku může být pouze únava domácích z předchozího večerního duelu nebo případná střelecká euforie Sjetne z první třetiny. Kvalita základní sestavy Sarpsborgu i brankářská opora v domácím prostředí by však měly přetavit zápas v očekávané tříbodové vítězství domácích v základní hrací době.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Sarpsborg hraje doma ve Skjeberghallenu, kde včera porazil Sandnes 5:3.",
+          "Sjetne jako nováček absolvuje druhý náročný venkovní duel ve dvou dnech.",
+          "Vysoká motivace Sarpsborgu v boji o play-off a upevnění pozice v tabulce."
+        ],
+        "proti": [
+          "Sjetne včera vyhrálo na půdě Ull/Kisa 7:4 a disponuje střeleckým sebevědomím.",
+          "Únava Sarpsborgu po včerejším večerním utkání v nohách."
+        ],
+        "riziko": "Ztráta koncentrace v defenzivě a střelecká efektivita hostů z rychlých brejků."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "stolni-tenis",
+      "zapas": "Heczko M. - Machander D.",
+      "start": "2026-11-22T07:30:00+00:00",
+      "liga": "Czech Liga Pro - muži",
+      "trh": "Vítěz zápasu",
+      "vyber": "Heczko M.",
+      "kurz": 1.35,
+      "p": 0.7024,
+      "marze": 0.0979,
+      "sazej_od": 1.46,
+      "analyza": {
+        "id": "Heczko M. - Machander D.",
+        "verdikt": "OK",
+        "duvod": "Heczko má v zápasech české Ligy Pro stabilnější výkonnost i vyšší herní rating než Machander.",
+        "text": "V rámci turnaje české Ligy Pro se střetávají Marcel Heczko a Dalimil Machander, přičemž papírové předpoklady jednoznačně favorizují Heczka v kurzu 1.35 s férovou pravděpodobností 70,2 %. Heczko se dlouhodobě prezentuje vyrovnanější mezihrou a spolehlivějším útočným forhendem, což mu proti hráčům Machanderova typu stabilně přináší převahu. Machander s ratingem okolo 705 bodů často doplácí na laciné nevynucené chyby při delších výměnách a v posledních vystoupeních vykazoval kolísavou úspěšnost prvního topspinu. Ve vzájemných duelech i miniturnajových formátech dokáže Heczko lépe reagovat na změny rotací a zvládat koncovky vyrovnaných setů. Pro Machandera sice hovoří nevyzpytatelný styl se snahou o rychlý blok, ten však při současné formě soupeře selhává. Sázku by mohla zhatit pouze nezvyklá série Heczkových chyb na příjmu servisu či ztráta koncentrace ve druhém setu. Celkově však kvalita technického provedení mluví jasně pro Marcela Heczka.",
+        "duvera_gemini": 7,
+        "pro": [
+          "Marcel Heczko disponuje vyšší herní jistotou a lepším útočným přechodem.",
+          "Dalimil Machander v posledních týdnech trápí vysoký počet nevynucených chyb."
+        ],
+        "proti": [
+          "Specifický formát zápasů české Ligy Pro přináší riziko kolísání koncentrace.",
+          "Případný rychlý vstup Machandera do zápasu může favorita znejistět."
+        ],
+        "riziko": "Rychlá ztráta úvodního setu a následná nervozita v krátkém formátu utkání."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "florbal",
+      "zapas": "Bulldogs Brno - Vítkovice",
+      "start": "2026-11-22T17:00:00+00:00",
+      "liga": "Superliga",
+      "trh": "Výsledek zápasu",
+      "vyber": "Vítkovice",
+      "kurz": 1.4,
+      "p": 0.6885,
+      "marze": 0.0879,
+      "sazej_od": 1.49,
+      "analyza": {
+        "id": "Bulldogs Brno - Vítkovice",
+        "verdikt": "OK",
+        "duvod": "Vítkovice mají výrazně kvalitnější kádr, zatímco Bulldogs Brno se po postupu trápí v obraně.",
+        "text": "V 11. kole florbalové Livesport Superligy přivítají Bulldogs Brno na palubovce haly Vodova favorizované Vítkovice, které nutně potřebují zabrat po nedávné porážce se Střešovicemi 4:7. Brněnský nováček se nachází na 11. příčce tabulky a prochází těžkým obdobím, když v předchozích třech ligových kolech inkasoval alarmujících 28 branek, naposledy při debaklu 5:11 na Spartě. Vítkovice jsou s 19 body na 6. místě a v Brně chtějí potvrdit roli aspiranta na elitní čtyřku, přičemž jejich ofenzivní síla vedená Adamcem, Peterkem a Vlčkem by měla defenzívu Brňanů přestřílet. Bulldogs sice mohou spoléhat na speciální domácí atmosféru a motivaci finského obránce Teppa Sala, v organizaci hry však za hosty zaostávají. Vítkovice disponují daleko vyšší efektivitou v přesilových hrách i kvalitnějším brankářským postem. Proti sázce hraje snad jen dílčí herní výpadek Vítkovic z úvodu sezóny, rozdíl v individuálních schopnostech je však propastný. Výhru hostů v kurzu 1.40 podporuje drtivá většina klíčových florbalových ukazatelů.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Bulldogs Brno v posledních třech zápasech inkasovali hrozivých 28 branek.",
+          "Vítkovice disponují výrazně zkušenějším a produktivnějším kádrem pro elitní čtyřku."
+        ],
+        "proti": [
+          "Bulldogs hrají doma ve STAREZ Aréně Vodova za podpory početného publika.",
+          "Vítkovice ztratily body v nedávných duelech s Pardubicemi i Střešovicemi."
+        ],
+        "riziko": "Podcenění úvodu utkání favoritem a případné zformování hlubokého bloku Brna."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "badminton",
+      "zapas": "Lale E. - Toremis M.C.",
+      "start": "2026-11-22T09:50:00+00:00",
+      "liga": "M - Turkiye Future Series, dvouhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Toremis M.C.",
+      "kurz": 1.41,
+      "p": 0.6737,
+      "marze": 0.0866,
+      "sazej_od": 1.52,
+      "analyza": {
+        "id": "Lale E. - Toremis M.C.",
+        "verdikt": "OK",
+        "duvod": "Mladý reprezentant Mehmet Can Toremis je v lepším herním rozpoložení a veterána Laleho již poráží.",
+        "text": "Na mezinárodním badmintonovém turnaji Turkiye Future Series v Ankaře dochází k pikantnímu souboji generací mezi 33letým veteránem Emrem Lalem a 18letým talentem Mehmetem Canem Toremisem. Lale byl dlouhá léta absolutní tureckou jedničkou, v posledním období se však potýká s úbytkem fyzických sil a na mezinárodním okruhu často volí úspornější režim či skrečuje dlouhé třísetové bitvy. Toremis patří k nastupující generaci tureckého badmintonu, pyšní se skvělou prací nohou, dynamickým útočným pojetím a nedávno Laleho na domácí scéně dokázal pokořit v náročném semifinále 2:1 na sety. Trh správně favorizuje Toremise kurzem 1.41, což reflektuje jeho vzestup i vyšší turnajové vytížení v závěru roku. Proti Toremisovi hovoří občasná zbrklost v koncovkách setů a obrovská rutina soupeře, který dokáže trestat chyby v délce košíčků. Zápas by se mohl zkomplikovat, pokud Lale v pomalé hale udrží nízké tempo a omezí Toremisovu smečovanou hru. Fyzická připravenost a aktuální herní elán však jednoznačně stojí na straně Toremise.",
+        "duvera_gemini": 7,
+        "pro": [
+          "Mehmet Can Toremis nedávno v národních soutěžích Laleho porazil 2:1 na sety.",
+          "Emre Lale ve 33 letech na dlouhých mezinárodních turnajích fyzicky ztrácí."
+        ],
+        "proti": [
+          "Lale disponuje mnohaletými zkušenostmi a excelentním taktickým čtením hry.",
+          "V pomalejších podmínkách ankaraské haly může veterán zpomalovat tempo."
+        ],
+        "riziko": "Zkušený Lale zvládne takticky rozkouskovat hru a vnutit juniorovi pomalé tempo."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "badminton",
+      "zapas": "Nakade S. / Takahashi M. - Tan P.K.L. / Thinaah M.",
+      "start": "2026-11-22T07:15:00+00:00",
+      "liga": "Ž - Hong Kong Open, čtyřhra",
+      "trh": "Vítěz zápasu",
+      "vyber": "Tan P.K.L. / Thinaah M.",
+      "kurz": 1.46,
+      "p": 0.6461,
+      "marze": 0.0914,
+      "sazej_od": 1.58,
+      "analyza": {
+        "id": "Nakade S. / Takahashi M. - Tan P.K.L. / Thinaah M.",
+        "verdikt": "OK",
+        "duvod": "Světové čtyřky Pearly Tan a Muralitharan Thinaah disponují elitní formou a jdou si pro titul.",
+        "text": "Finále ženské čtyřhry na prestižním podniku Hong Kong Open nabízí odvetu mezi japonským párem Sumire Nakade / Miyu Takahashi a elitní malajsijskou dvojicí Pearly Tan / Muralitharan Thinaah. Malajsijky, aktuálně 4. pár světa, prožívají famózní podzim korunovaný triumfem na Denmark Open a postupem do pátého letošního finále Světové tour. V semifinále v Kai Tak Areně v poklidu přehrály krajanky Zi Yu a Noraqilah 21:13 a 21:19, přičemž na kurtu působí technicky i fyzicky velmi kompaktně. Japonský pár sice v létě Malajsijky nečekaně zaskočil ve finále Taipei Open, v Hongkongu však absolvoval vyčerpávající semifinálovou přetahovanou s Indonésankami 21:16 a 23:21. Rychlejší drift košíčku v hale Kai Tak svědčí nátlakovému a agresivnímu stylu Malajsijek, které na síti excelují a dominují v přechodové fázi. Proti sázce hraje houževnatá obrana Japonek, která jim přinesla úspěch v předchozím vzájemném měření sil. Odhodlání Tan a Thinaah vrátit soupeřkám letní porážku je však enormní a jejich současná fazona dává kurzu 1.46 vysokou hodnotu.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Tan s Thinaah jsou světové čtyřky s vynikající formou z Denmark Open.",
+          "Malajsijky ušetřily v semifinále více sil než Japonky v těžké bitvě."
+        ],
+        "proti": [
+          "Japonky vyhrály poslední vzájemný zápas ve finále Taipei Open ve dvou setech.",
+          "Nakade s Takahashi disponují jednou z nejnepříjemnějších obran na okruhu."
+        ],
+        "riziko": "Trpělivá japonská obrana může Malajsijkám vnutit nevynucené chyby z přemíry snahy."
+      },
+      "duvera": 6,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "futsal",
+      "zapas": "Cartagena FS - Jaén",
+      "start": "2026-11-22T19:30:00+00:00",
+      "liga": "1. Španělsko",
+      "trh": "Počet gólů v zápasu 5.5",
+      "vyber": "Více než 5.5",
+      "kurz": 1.57,
+      "p": 0.5976,
+      "marze": 0.0874,
+      "sazej_od": 1.71,
+      "analyza": {
+        "id": "Cartagena FS - Jaén",
+        "verdikt": "OK",
+        "duvod": "Cartagena i Jaén patří k ofenzivní elitě španělské ligy a jejich duely přinášejí přestřelky.",
+        "text": "Ve španělské futsalové Primera División hostí úřadující šampion Jimbee Cartagena celek Jaén Paraíso Interior v utkání, které slibuje špičkovou podívanou. Cartagena se na domácí palubovce prezentuje mimořádně přímočarým stylem, vysokým presinkem a velkou četností střelby, což dlouhodobě vede k vysokým brankovým průměrům. Jaén tradičně sází na brejkové situace s využitím pivota a patří k týmům, které se nebojí přejít na hru bez brankáře při sebemenším nepříznivém stavu. Vzájemné zápasy těchto soupeřů bývají divoké, což potvrdil i nedávný duel končící výhrou Cartageny 5:2, tedy se sedmi zásahy. Sázka na více než 5.5 gólu v kurzu 1.57 s tržní pravděpodobností 59,8 % se opírá právě o pravděpodobnost power-play a časté kumulované fauly ve vyhroceném závěru poločasů. Proti overu by mohl stát pouze mimořádný brankářský výkon jedničky hostů a přehnaně opatrný úvod bez vstřeleného gólu. Jakmile však padne první branka, tempo hry se otevře a hranice 5.5 branek by měla padnout.",
+        "duvera_gemini": 7,
+        "pro": [
+          "Vzájemné zápasy běžně přinášejí 6 a více branek díky vysoké ofenzivní kvalitě.",
+          "Jaén pravidelně sahá k power-play s létajícím brankářem už od 30. minuty."
+        ],
+        "proti": [
+          "Případný vynikající den obou reprezentačních brankářů může skóre přibrzdit.",
+          "Taktická opatrnost v první půli může snížit celkový gólový účet."
+        ],
+        "riziko": "Dlouhé čekání na úvodní branku vedoucí k pasivní taktické bitvě obou celků."
+      },
+      "duvera": 5,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "pozemni-hokej",
+      "zapas": "Kampong - Amsterdam",
+      "start": "2026-11-22T14:00:00+00:00",
+      "liga": "Nizozemsko - muži",
+      "trh": "Výsledek zápasu",
+      "vyber": "Amsterdam",
+      "kurz": 1.59,
+      "p": 0.5975,
+      "marze": 0.0998,
+      "sazej_od": 1.71,
+      "analyza": {
+        "id": "Kampong - Amsterdam",
+        "verdikt": "NEJISTE",
+        "duvod": "Amsterdam sice vede nizozemskou Hoofdklasse, venkovní půda vicemistra Kampongu je však extrémně těžká.",
+        "text": "V nizozemské mužské hokejové Hoofdklasse se odehraje šlágr kola mezi SV Kampong a AH&BC Amsterdam. Hostující Amsterdam zažívá skvělý podzim, drží se v čele ligové tabulky po cenném skalpu Oranje-Rood 3:2 a pyšní se nejlepší ofenzivou soutěže. Kampong naopak v minulém kole ztratil remízou 3:3 s HDM, nicméně doma na svém sportovním areálu v Utrechtu tradičně patří k nejtěžším soupeřům v Evropě. V dubnovém semifinále prestižní Euro Hockey League to byl právě Kampong, kdo Amsterdam udolal 3:2 po velkolepém obratu. Kurz 1.59 na výhru hostů v normální hrací době se jeví jako poměrně přísný, neboť v nizozemské lize rozhodují o vítězi často pouze trestné rohy a standardní situace. Amsterdam má sice herní momentum i sebevědomí, ale absence stoprocentních zpráv o absencích klíčových exekutorů rohů činí duel otevřeným. Kampong navíc před svými fanoušky málokdy prohrává v základní hrací době, proto je zde opatrnost na místě.",
+        "duvera_gemini": 5,
+        "pro": [
+          "Amsterdam vede tabulku Hoofdklasse a naposledy porazil silný Oranje-Rood.",
+          "Hostující ofenziva dosahuje v letošním ročníku průměru přes čtyři branky na zápas."
+        ],
+        "proti": [
+          "Kampong v dubnu vyřadil Amsterdam z EHL a doma v Utrechtu je nesmírně odolný.",
+          "Zápasy nizozemské špičky často končí remízou a rozhodují detaily na penaltách."
+        ],
+        "riziko": "Domácí pevná defenziva a úspěšnost Kampongu při zahrávání trestných rohů."
+      },
+      "duvera": 3,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "kriket",
+      "zapas": "Dubai Capitals - Abu Dhabi Knight Riders",
+      "start": "2026-11-22T14:30:00+00:00",
+      "liga": "SAE - International League T20",
+      "trh": "Vítěz zápasu do rozhodnutí",
+      "vyber": "Abu Dhabi Knight Riders",
+      "kurz": 1.65,
+      "p": 0.5633,
+      "marze": 0.0915,
+      "sazej_od": 1.82,
+      "analyza": {
+        "id": "Dubai Capitals - Abu Dhabi Knight Riders",
+        "verdikt": "NEJISTE",
+        "duvod": "Fakta o kádrech sedí, ale před zápasem dosud nebyl proveden toss (losování), který má v Dubaji kvůli večerní rose zásadní vliv na výsledek.",
+        "text": "V rámci úvodní fáze 5. ročníku mezinárodní ligy ILT20 v SAE hostí Dubai International Cricket Stadium prestižní duel mezi Dubai Capitals a Abu Dhabi Knight Riders. Abu Dhabi Knight Riders vstupují do utkání v pozici mírného favorita pod vedením kapitána Jasona Holdera a trenéra Dwayne Brava, přičemž se mohou opřít o hvězdná jména jako Sunil Narine, Andre Russell či Colin Munro. Soupeř Dubai Capitals má však rovněž velmi kvalitně poskládaný kádr vedený Samem Billingsem s oporami formátu Marcuse Stoinise a afghánského spinera Noora Ahmada. Pro sázku na Abu Dhabi hovoří především obrovská hloubka a zkušenost jejich sestavy na pálce i na bowlu v čele s univerzály. Zásadním otazníkem je však losování (toss) a potvrzená zahajovací jedenáctka (playing XI), jež jsou před začátkem utkání nenalezeny. V nočních dubajských duelech hraných od 18:30 místního času představuje večerní rosa (dew) klíčový faktor, který ztěžuje úchop míče bowlerům v druhé směně a výrazně nahrává týmu, jenž cíl dotahuje (chasing). Žádná neočekávaná zranění klíčových hráčů ze soupisek hlášena nebyla a déšť v SAE s jistotou nehrozí. Pokud však Capitals vyhrají toss a pošlou Knight Riders nejdříve pálit, kurzová převaha favorita se v mokrých podmínkách může velmi rychle rozplynout.",
+        "duvera_gemini": 6,
+        "pro": [
+          "Abu Dhabi disponuje mimořádně silným kádrem v čele s Jasonem Holderem, Andre Russellem a Sunil Narinem.",
+          "Zkušená osa all-rounderů dává Knight Riders vysokou herní flexibilitu v koncovkách směn."
+        ],
+        "proti": [
+          "Před zápasem dosud neproběhl los (toss), který je v Dubaji kvůli noční rose naprosto zásadní.",
+          "Dubai Capitals disponují velmi vyrovnanou soupiskou v čele se Samem Billingsem a Noor Ahmadem."
+        ],
+        "riziko": "Vítěz losování zvolí bowling a vlivem noční rosy a kluzkého míče ve druhé směně snadno otočí průběh zápasu."
+      },
+      "duvera": 3,
+      "overeni": "málo dat"
+    },
+    {
+      "sport": "bandy",
+      "zapas": "Drammen Bandy - NTNUI",
+      "start": "2026-11-22T14:30:00+00:00",
+      "liga": "1. Norsko",
+      "trh": "Počet gólů v zápasu 12.5",
+      "vyber": "Méně než 12.5",
+      "kurz": 1.68,
+      "p": 0.5525,
+      "marze": 0.0903,
+      "sazej_od": 1.85,
+      "analyza": {
+        "id": "Drammen Bandy - NTNUI",
+        "verdikt": "OK",
+        "duvod": "Hranice 12.5 gólu je v bandy nasazena velkoryse vysoko; vzájemná bilance i ofenzivní limity hostů jednoznačně podporují under.",
+        "text": "V norském bandyovém klání nejvyšší soutěže Eliteserien přivítá Drammen Bandy na svém domácím stadionu Marienlyst kunstis celek NTNUI z Trondheimu. Domácí tým patří k tradičním norským celkům bojujícím o popředí tabulky, zatímco NTNUI jako nováček v nejvyšší soutěži plní roli výrazného outsidera. Vypsaná hranice 12.5 gólu je v bandy položena mimořádně vysoko a pro její překonání by bylo zapotřebí naprostého defenzivního kolapsu na obou stranách. Dřívější ligová střetnutí obou soupeřů přinesla výsledky 5:3 a 10:0 pro Drammen, přičemž ani v jednom případě se celkové skóre k třinácti gólům nepřiblížilo. Podrobné soupisky a případné zdravotní absence pro tento konkrétní zápas jsou kvůli omezenému mediálnímu pokrytí nenalezeny. Hostující studenti sice mají slabší obranu a inkasují dost gólů, ale jejich vlastní útočný příspěvek proti favoritům zřídkakdy překoná 1 až 2 trefy. Drammen si obvykle hlídá vedení z dobře organizované defenzivy a po vypracování náskoku tempo spíše zklidňuje. Hlavní komplikací pro under by byl pouze totální brankářský výpadek hostů, nicméně statistický i herní profil utkání jednoznačně favorizuje méně než 13 branek.",
+        "duvera_gemini": 7,
+        "pro": [
+          "Vypsaná linie 12.5 gólu nebyla pokořena v žádném z předešlých vzájemných zápasů (výsledky 5:3 a 10:0).",
+          "Hostující outsider NTNUI má proti špičkovým celkům ligy průměrnou útočnou produkci pod 2 góly na zápas."
+        ],
+        "proti": [
+          "Značný výkonnostní rozdíl mezi kádry může teoreticky vést k jednostranné kanonádě domácího Drammenu.",
+          "Přesné absence a aktuální zápasové složení obou norských týmů jsou z veřejných zdrojů nenalezeny."
+        ],
+        "riziko": "Drammen od začátku předvede stoprocentní efektivitu v proměňování šancí a sám nastřílí dvouciferný počet gólů."
+      },
+      "duvera": 5,
+      "overeni": "málo dat"
+    }
+  ],
+  "jistoty": [
+    {
+      "sport": "fotbal",
+      "zapas": "Pardubice - Zbrojovka Brno",
+      "start": "2026-11-22T12:00:00+00:00",
+      "liga": "1. Česko",
+      "trh": "Počet gólů v zápasu 0.5",
+      "vyber": "Více než 0.5",
+      "kurz": 1.05,
+      "p": 0.9447325552141029,
+      "zdroj": "trh",
+      "sazej_od": 1.08,
+      "analyza": {
+        "id": "Pardubice - Zbrojovka Brno",
+        "verdikt": "OK",
+        "duvod": "Statistiky obou celků s průměrem přes 2,5 gólu na zápas jasně favorizují prolomení bezbrankového stavu.",
+        "text": "V rámci 15. kola české Chance Ligy přivítají dvanácté Pardubice na trávníku CFIG Areny desátou Zbrojovku Brno. Domácí Pardubice mají po 14 odehraných zápasech bilanci skóre 19:20, zatímco hostující Brno má skóre 17:22, což u obou celků představuje průměr bezmála tří branek na utkání. Sázka na více než 0,5 gólu vyžaduje pouhou jedinou trefu v celém střetnutí, přičemž bezbrankový výsledek 0:0 je u těchto soupeřů velkou raritou. Pardubice se na domácím hřišti pravidelně tlačí do ofenzivy a jejich obrana nepatří k nejpevnějším v soutěži. Zbrojovka Brno disponuje nebezpečným přechodem do protiútoku, avšak v defenzivě opakovaně kupí individuální chyby. Oficiální sestavy a přesná jména rozhodčích jsou před výkopem nenalezeny, nicméně herní profil obou týmů garantuje otevřenější partii. Proti sázce hraje pouze scénář extrémního defenzivního bloku obou mužstev a selhání střelců v tutových šancích. Hlavní hrozbou pro úspěch tiketu by byla výjimečná nemohoucnost v zakončení vedoucí k ojedinělé remíze 0:0.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Pardubice mají po 14 kolech skóre 19:20 a doma pravidelně skórují i inkasují.",
+          "Zbrojovka Brno má v defenzivě pasivní skóre 17:22 a venku inkasuje takřka v každém duelu."
+        ],
+        "proti": [
+          "Taktická svázanost souboje ze středu a spodku ligové tabulky může snížit tempo.",
+          "Případné selhání střelců v proměňování vyložených brankových příležitostí."
+        ],
+        "riziko": "Extrémní taktická opatrnost obou týmů a festival neproměněných šancí vedoucí k bezbrankové remíze 0:0."
+      },
+      "duvera": 8,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Sassuolo - Genoa",
+      "start": "2026-11-22T14:00:00+00:00",
+      "liga": "1. Itálie",
+      "trh": "Počet gólů v zápasu 5",
+      "vyber": "Méně než 5",
+      "kurz": 1.05,
+      "p": 0.9432825093841798,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "id": "Sassuolo - Genoa",
+        "verdikt": "OK",
+        "duvod": "Prohra nastává až při šesti a více gólech, což je při defenzivním stylu obou italských klubů mimořádně nepravděpodobné.",
+        "text": "Ve 12. kole italské Serie A se na Mapei Stadium střetává Sassuolo s Janovem v souboji týmů, u nichž je vypsána bezpečná linie pod 5,0 gólu. Italská nejvyšší soutěž je dlouhodobě známá propracovanou defenzivní taktikou a průměr branek na zápas se stabilně pohybuje hluboko pod hranicí tří gólů. Domácí Sassuolo v probíhající sezóně klade větší důraz na zajištěnou obranu, o čemž svědčí pouhých 13 obdržených branek v dosavadním průběhu. Genoa pod vedením taktického schématu tradičně spoléhá na zatažený blok a pomalejší tempo hry s minimem otevřených prostorů pro brejky. Aby tato sázka prohrála, muselo by v zápase padnout neuvěřitelných šest a více gólů, přičemž přesně pět branek by znamenalo vrácení vkladu. Přesné absence a oficiální složení rozhodcovského týmu jsou v detailu nenalezeny, avšak herní styly ani jednoho z klubů nenaznačují divokou přestřelku. Jediným faktorem proti sázce by mohla být série rychlých červených karet nebo fatálních chyb brankářů, jež by zápas zcela otevřely. Všechny relevantní předpoklady hovoří pro klidné utkání s nanejvýš dvěma až třemi trefami.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Oba týmy praktikují organizovanou obranu a v italské lize dlouhodobě padá průměrně pod 2,8 gólu.",
+          "Sassuolo i Genoa disponují útoky, které jen velmi vzácně překonávají hranici dvou vstřelených gólů."
+        ],
+        "proti": [
+          "Případné brzké vyloučení či série penalt by mohly způsobit defenzivní kolaps.",
+          "Vzájemné zápasy v historii občas přinesly nečekaně divoký průběh plný chyb."
+        ],
+        "riziko": "Rychlé vyloučení na jedné straně a následný totální rozpad obranné struktury vedoucí ke gólům."
+      },
+      "duvera": 8,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Bologna - Udinese",
+      "start": "2026-11-22T14:00:00+00:00",
+      "liga": "1. Itálie",
+      "trh": "Počet gólů v zápasu 5.5",
+      "vyber": "Méně než 5.5",
+      "kurz": 1.05,
+      "p": 0.9432825093841798,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "id": "Bologna - Udinese",
+        "verdikt": "OK",
+        "duvod": "Udinese vstřelilo v posledních 5 zápasech jen 3 branky a Bologna inkasuje minimálně, 6 gólů je nereálných.",
+        "text": "Na Stadio Renato Dall'Ara hostí osmá Bologna se 17 body trápící se Udinese, které je po nepovedeném vstupu do sezóny s pěti body až dvacáté. Sázkový trh pod 5,5 gólu nabízí enormní polštář, protože hranici šesti branek týmy v Serii A překonávají jen naprosto zřídka. Bologna se opírá o pevnou organizaci a křídelní aktivitu Samuela Mbanguly, přičemž v posledních pěti duelech skórovala desetkrát. Hostující Udinese naopak v ofenzivě tápe, když v uplynulých pěti střetnutích dalo pouhé tři góly a jeho hlavní hrozba Nicolò Zaniolo zůstává často odříznutý. Vzájemné zápasy navíc jednoznačně favorizují nízký počet branek, neboť Udinese v posledních dvou měřeních sil nedokázalo Bologni vstřelit ani jeden gól. Hřiště na Dall'Ara i předpokládané taktické rozestavení domácích budou hru kontrolovat prostřednictvím dominantního držení míče. Zhatit tento tip by mohl jedině naprostý kolaps obou obran doprovázený nebývalou efektivitou v proměňování střel. Reálný obraz zápasu ukazuje na kontrolované vítězství Bologni s celkovým počtem nanejvýš tří až čtyř gólů.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Udinese má obrovské ofenzivní trápení a v minulých dvou vzájemných duelech nevstřelilo ani gól.",
+          "Hranice 5,5 branky nebyla v zápasech Bologni v letošní ligové sezóně ani jednou překonána."
+        ],
+        "proti": [
+          "Bologna má kvalitní formu a sama dokáže slabším celkům nasázet více branek.",
+          "Otevření hry ze strany Udinese v případě nutnosti riskovat a dohánět ztrátu."
+        ],
+        "riziko": "Naprosto bezhlavá útočná pasáž v závěru při snaze Udinese zvrátit nepříznivý stav."
+      },
+      "duvera": 8,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "hokej",
+      "zapas": "St. Louis Blues - Edmonton Oilers",
+      "start": "2026-11-23T00:07:00+00:00",
+      "liga": "NHL",
+      "trh": "Počet gólů v zápasu 2.5",
+      "vyber": "Více než 2.5",
+      "kurz": 1.05,
+      "p": 0.9432825093841798,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "id": "St. Louis Blues - Edmonton Oilers",
+        "verdikt": "OK",
+        "duvod": "St. Louis dalo 22 gólů za 3 zápasy a hraje B2B proti McDavidovu Edmontonu; hranice 2,5 gólu je v NHL minimální.",
+        "text": "V Enterprise Center v Missouri se v neděli večer v atraktivním duelu NHL střetnou domácí St. Louis Blues a Edmonton Oilers. Blues mají za sebou divokou sobotní výhru 9:6 nad New Jersey Devils, kde zářil Jake Neighbours s pěti asistencemi a tým nastřílel 22 gólů za poslední tři zápasy. Hráči St. Louis jsou sice v únavovém režimu back-to-back, ale jejich ofenzivní sebevědomí je na absolutním vrcholu sezóny. Edmonton Oilers s bilancí 17-5-3 a ofenzivními esy Connorem McDavidem a Leonem Draisaitlem patří k nejnebezpečnějším útokům celé ligy. V brankovišti Blues lze po sobotním startu Jordana Binningtona očekávat rotaci na náhradníka, což pravděpodobnost inkasovaných gólů ještě zvyšuje. Hranice více než 2,5 gólu je v moderní NHL s rozměry kluziště 61x26 metrů a vysokým tempem střelby překonávána ve více než 96 % utkání. Proti tomuto tipu by stál pouze nadpozemský výkon obou brankářů a zápas končící fotbalovým výsledkem 1:0 nebo 2:0. Vzhledem k formě střelců na obou stranách je téměř nemyslitelné, aby Enterprise Center nevidělo alespoň tři přesné zásahy.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Ofenzíva Edmontonu patří k nejproduktivnějším v lize a St. Louis dalo v minulém zápase 9 gólů.",
+          "Únava Blues po sobotním utkání a možný start náhradního gólmana nahrává gólovým situacím."
+        ],
+        "proti": [
+          "Zázračný den obou brankářů a extrémně defenzivní pojetí hry ze středního pásma.",
+          "Případná únava klíčových střelců Blues po vypjaté přestřelce s Devils."
+        ],
+        "riziko": "Brankářský duel roku a selhání přesilových her obou týmů vedoucí k výsledku 1:0 nebo 2:0."
+      },
+      "duvera": 8,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Sparta Praha - Liberec",
+      "start": "2026-11-22T17:00:00+00:00",
+      "liga": "1. Česko",
+      "trh": "Počet gólů v zápasu 0.5",
+      "vyber": "Více než 0.5",
+      "kurz": 1.05,
+      "p": 0.9432825093841798,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "id": "Sparta Praha - Liberec",
+        "verdikt": "OK",
+        "duvod": "Sparta doma na Letné disponuje 26 vstřelenými góly v sezóně a bezbranková remíza s Libercem je statisticky nepravděpodobná.",
+        "text": "Šlágr 15. kola české Chance Ligy na Letné svede dohromady čtvrtou Spartu Praha a druhý Slovan Liberec. Sparta Praha nasbírala ve 14 kolech 24 bodů se skóre 26:14 a před vlastním publikem v epet ARENĚ hraje vysoce nátlakový fotbal. Slovan Liberec prožívá výborný podzim, drží se na špici tabulky s 26 body a v předchozích duelech ukázal skvělou taktickou vyspělost. Trh na více než 0,5 gólu potřebuje jakoukoli branku od kteréhokoliv celku během základní hrací doby, což plně odpovídá útočnému potenciálu Sparty. Vzájemná ligová střetnutí těchto rivalů pravidelně přinášejí gólové momenty a poslední duely na Letné nabídly vždy nejméně dva přesné zásahy. Ačkoliv oficiální zápis a potvrzené sestavy trenérů jsou hodiny před výkopem nenalezeny, ofenzivní klenoty obou týmů garantují stálé ohrožení branky. Negativním faktorem by mohla být přílišná taktická svázanost souboje o čelo tabulky a nervozita v klíčových momentech před brankářem. Pravděpodobnost bezbrankového stavu po 90 minutách je však u těchto týmů statisticky minimální.",
+        "duvera_gemini": 9,
+        "pro": [
+          "Sparta má v ligovém ročníku průměr téměř dvou vstřelených gólů na utkání a hraje doma.",
+          "Liberec je v tabulce druhý a disponuje produktivním útokem, který umí trestat chyby."
+        ],
+        "proti": [
+          "Velká taktická obezřetnost a respekt obou trenérů v přímém souboji o přední příčky.",
+          "Vynikající forma obou brankářů a možnost bezbrankového poločasu zvyšující nervozitu."
+        ],
+        "riziko": "Přehnaně opatrná defenzivní partie o čelo tabulky bez rizika vedoucí k výsledku 0:0."
+      },
+      "duvera": 8,
+      "overeni": "trh přeceňuje"
+    },
+    {
+      "sport": "fotbal",
+      "zapas": "Hull - Brighton",
+      "start": "2026-11-22T14:00:00+00:00",
+      "liga": "1. Anglie",
+      "trh": "Počet gólů v zápasu 1",
+      "vyber": "Více než 1",
+      "kurz": 1.05,
+      "p": 0.9415914399164564,
+      "zdroj": "trh",
+      "sazej_od": 1.09,
+      "analyza": {
+        "id": "Hull - Brighton",
+        "verdikt": "OK",
+        "duvod": "Brighton vstřelil 26 gólů v 10 zápasech a při sázce over 1 gól znamená jediná trefa vrácení vkladu.",
+        "text": "V 11. kole anglické Premier League zavítá rozjetý Brighton & Hove Albion na půdu celku Hull City na MKM Stadium. Brighton pod trenérem Fabianem Hürzelerem okupuje senzační 2. místo tabulky s 26 vstřelenými brankami v deseti zápasech a produkuje jeden z nejatraktivnějších útoků soutěže. Domácí Hull City bojuje na 14. místě se zataženým blokem 5-3-2 a vyrovnaným skóre 11:11, přičemž spoléhá na útočníka Oliho McBurnieho. Sázka na více než 1 gól v asijském formátu znamená, že při přesně jednom gólu se vklad vrací a dva a více gólů přináší výhru. Hostům sice kvůli zranění hamstringu chybí křídelník Kaoru Mitoma, ale přítomnost hráčů jako Pascal Groß a Mohamed-Ali Cho na straně Hullu zajišťuje vysokou útočnou kvalitu. Rozhodčím utkání je Peter Bankes, který obvykle nechává hru plynout, což vyhovuje rychlým přechodovým fázím racků z Brightonu. Proti sázce hraje možnost, že by Hull úspěšně zabetonoval velké vápno a utkání by skončilo bezgólovou remízou 0:0. Převaha Brightonu a jeho průměr 2,6 vstřelené branky na zápas však činí gólový půst na MKM Stadium krajně nepravděpodobným.",
+        "duvera_gemini": 8,
+        "pro": [
+          "Brighton je 2. v Premier League s průměrem 2,6 vstřeleného gólu na utkání pod Fabianem Hürzelerem.",
+          "Při přesně jedné brance je vklad vrácen, sázku potopí pouze vzácná bezbranková remíza 0:0."
+        ],
+        "proti": [
+          "Hull nastoupí v hlubokém defenzivním bloku 5-3-2 a pokusí se tempo maximálně rozkouskovat.",
+          "Brightonu schází zraněný klíčový ofenzivní křídelník Kaoru Mitoma."
+        ],
+        "riziko": "Úspěšný beton domácího Hullu v rozestavení 5-3-2 a bezbrankový výsledek 0:0."
+      },
+      "duvera": 8,
+      "overeni": "trh přeceňuje"
+    }
+  ]
+}
