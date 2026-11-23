@@ -166,6 +166,10 @@ def rozhodni(r, v):
     return None, "trh nerozpoznán"
 
 
+SEZNAMY_DNI = 3        # seznamy výsledků Fortuny se stahují jen za tolik posledních dní
+MAX_STUBU = 250        # kolik starších zápasů se za běh dohledá přímo podle id
+
+
 def vyhodnot_radky(rows, ted, log=print):
     """Vyhodnotí (na místě) řádky, jejichž zápas už skončil (start + 5 h < ted). Vrací počet nově vyhodnocených."""
     cek = []
@@ -188,9 +192,13 @@ def vyhodnot_radky(rows, ted, log=print):
     hotovo = 0
     try:                                                    # 1) výsledky přímo z API Fortuny (u každého trhu WINNING/LOSING/VOIDED)
         from . import vysledky_fortuna as vf
-        fzap = vf.stahni({vf.pražský_den(r["start"]) for r, _ in cek}, {r["sport"] for r, _ in cek}, log=log)
+        mapa_id = vf.nacti_idy([r for r, _ in cek])
+        # Seznamy výsledků se stahují jen za poslední dny (stahování celého dne je pomalé). Starší sázky, u kterých známe id zápasu, se dohledají přímo podle id.
+        hranice = (ted - datetime.timedelta(days=SEZNAMY_DNI)).date().isoformat()
+        cek_sez = [(r, s) for r, s in cek if vf.pražský_den(r["start"]) >= hranice or not vf.id_radku(mapa_id, r)]
+        fzap = vf.stahni({vf.pražský_den(r["start"]) for r, _ in cek_sez}, {r["sport"] for r, _ in cek_sez}, log=log)
         idx = vf.index(fzap)
-        mapa_id, id_zap, stuby = vf.nacti_idy([r for r, _ in cek]), {z["id"]: z for z in fzap if z.get("id")}, {}
+        id_zap, stuby = {z["id"]: z for z in fzap if z.get("id")}, {}
 
         def nalezni(r):
             """Zápas k sázce: nejdřív podle id zápasu ve Fortuně (přesné), pak podle názvu a času; zápas mimo seznam výsledků dne se dohledá přímo podle id."""
@@ -198,7 +206,7 @@ def vyhodnot_radky(rows, ted, log=print):
             z = id_zap.get(fid) if fid else None
             if z is None:
                 z = vf.najdi(idx, r["zapas"], r["start"]) if idx else None
-            if z is None and fid and len(stuby) < 150:
+            if z is None and fid and len(stuby) < MAX_STUBU:
                 z = stuby.get(fid) or stuby.setdefault(fid, vf.stub(fid, r))
             return z
         zbyva = []

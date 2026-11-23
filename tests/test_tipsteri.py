@@ -910,3 +910,28 @@ def test_fortuna_prestane_zkouset_po_sade_vypadku(monkeypatch):
         except fortuna.FortunaChyba:
             pass
     assert k2.chyb == 0                                       # 404 výpadek serveru není
+
+
+def test_stare_sazky_se_dohledaji_podle_id_bez_seznamu_dne(monkeypatch, tmp_path):
+    """Seznam výsledků se stahuje jen za poslední dny; sázka starší než 3 dny se dohledá přímo podle id zápasu."""
+    import datetime, json
+    from bot import config, fortuna, vyhodnoceni, vysledky_fortuna as vf
+    vf._CACHE.clear()
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    start = "2026-11-01T18:00:00+00:00"
+    (tmp_path / "fortuna_nabidka_2026-11-01.json").write_text(json.dumps([{"id": "ufo:mtch:Z", "nazev": "Old - Match", "start": start}]), encoding="utf-8")
+    dotazy = []
+
+    class K:
+        def __init__(self, pauza=0): pass
+        def get(self, u):
+            dotazy.append(u)
+            if "/fixture/ufo:mtch:Z?date=2026-11-01" in u:
+                return {"fixture": {"id": "ufo:mtch:Z", "score": {"homeScore": 1, "awayScore": 0}},
+                        "markets": [{"fixtureId": "ufo:mtch:Z", "name": "Výsledek zápasu", "outcomes": [{"name": "1", "longName": "Old", "result": "WINNING"}]}]}
+            raise AssertionError(u)
+    monkeypatch.setattr(fortuna, "Klient", K)
+    rows = [{"id": "x", "datum": "2026-11-01", "sport": "hokej", "liga": "L", "zapas": "Old - Match", "start": start, "trh": "Výsledek zápasu", "vyber": "Old", "kurz": "2.0", "p": "0.5",
+             "zdroj": "trh", "skupina": "vyber", "vysledek": "", "duvod": ""}]
+    assert vyhodnoceni.vyhodnot_radky(rows, datetime.datetime(2026, 11, 20, 6, tzinfo=datetime.timezone.utc), log=lambda m: None) == 1
+    assert rows[0]["vysledek"] == "1" and not any("/sports?" in d for d in dotazy)
