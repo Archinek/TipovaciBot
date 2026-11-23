@@ -65,11 +65,13 @@ class FortunaBlok(FortunaChyba):
 
 
 class Klient:
+    MAX_CHYB = 6                                           # tolik výpadků serveru po sobě a Klient dál nezkouší (jinak by každý požadavek čekal desítky sekund)
     OPAKOVANI = (3, 10, 30)                                # pauzy v sekundách mezi novými pokusy při výpadku serveru
 
     def __init__(self, pauza=0.4, timeout=25):
         self.pauza, self.timeout, self._posledni, self.pocet = pauza, timeout, 0.0, 0
         self.opakovani = type(self).OPAKOVANI
+        self.chyb = 0
         self._zamek = threading.Lock()
 
     def get(self, url):
@@ -78,6 +80,8 @@ class Klient:
             if cekat > 0:
                 time.sleep(cekat)
             self._posledni = time.time()
+        if self.chyb >= self.MAX_CHYB:
+            raise FortunaChyba(f"Fortuna nedostupná ({self.chyb} výpadků po sobě), dál nezkouším: {url}")
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
         for i, cekani in enumerate((0,) + tuple(self.opakovani)):          # krátká pauza a nový pokus při výpadku serveru (5xx) nebo sítě
             if cekani:
@@ -86,16 +90,22 @@ class Klient:
             try:
                 with urllib.request.urlopen(req, timeout=self.timeout) as r:
                     data = json.load(r)
+                self.chyb = 0
                 break
             except urllib.error.HTTPError as e:
                 if e.code in (401, 403, 429):
                     raise FortunaBlok(f"HTTP {e.code} u {url}. Web přístup odmítl, končím a nic neobcházím.") from None
-                if e.code in (500, 502, 503, 504, 520, 521, 522, 523, 524) and not posledni:
-                    continue
+                if e.code in (500, 502, 503, 504, 520, 521, 522, 523, 524):
+                    if not posledni:
+                        continue
+                    self.chyb += 1
+                else:
+                    self.chyb = 0                              # server odpověděl (např. 404), jen tento požadavek je neplatný
                 raise FortunaChyba(f"HTTP {e.code} u {url}") from None
             except (urllib.error.URLError, ValueError, TimeoutError) as e:
                 if not posledni and not isinstance(e, ValueError):
                     continue
+                self.chyb += 1
                 raise FortunaChyba(f"{type(e).__name__} u {url}") from None
             finally:
                 self.pocet += 1

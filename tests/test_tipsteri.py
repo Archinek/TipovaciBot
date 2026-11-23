@@ -882,3 +882,31 @@ def test_pyramida_pocita_jen_od_data():
     assert pyramida.postup(log, nohy)["aktualni"]["ceka"]
     p = pyramida.postup(log, nohy, {"pyramida": {"od": "2026-11-20"}})
     assert not p["aktualni"]["ceka"] and p["aktualni"]["kolo"] == 2 and p["dnu"] == 1
+
+
+def test_fortuna_prestane_zkouset_po_sade_vypadku(monkeypatch):
+    import urllib.error
+    from bot import fortuna
+    monkeypatch.setattr(fortuna.time, "sleep", lambda s: None)
+    volani = []
+
+    def otevri(req, timeout=0):
+        volani.append(1)
+        raise urllib.error.HTTPError(req.full_url, 522, "x", {}, None)
+    monkeypatch.setattr(fortuna.urllib.request, "urlopen", otevri)
+    k = fortuna.Klient(pauza=0)
+    k.opakovani = (1, 1)
+    for _ in range(10):
+        try:
+            k.get("https://x/y")
+        except fortuna.FortunaChyba:
+            pass
+    assert len(volani) == fortuna.Klient.MAX_CHYB * 3       # po šesti vyčerpaných výpadcích už žádný další požadavek
+    k2 = fortuna.Klient(pauza=0)
+    monkeypatch.setattr(fortuna.urllib.request, "urlopen", lambda req, timeout=0: (_ for _ in ()).throw(urllib.error.HTTPError(req.full_url, 404, "x", {}, None)))
+    for _ in range(10):
+        try:
+            k2.get("https://x/y")
+        except fortuna.FortunaChyba:
+            pass
+    assert k2.chyb == 0                                       # 404 výpadek serveru není
