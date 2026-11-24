@@ -1,1 +1,216 @@
-[]
+[
+ {
+  "turnaj": "2. Anglie",
+  "home": "Wolverhampton",
+  "away": "Derby",
+  "kod_ligy": "E1",
+  "chybi": [
+   "Wolverhampton"
+  ]
+ },
+ {
+  "turnaj": "2. Anglie",
+  "home": "Norwich",
+  "away": "Q.P.R.",
+  "kod_ligy": "E1",
+  "chybi": [
+   "Q.P.R."
+  ]
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Galatasaray",
+  "away": "Aston Villa",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Bodo Glimt",
+  "away": "LASK",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Man.City",
+  "away": "Napoli",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Feyenoord",
+  "away": "FC Porto",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "RB Leipzig",
+  "away": "Lens",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Real Madrid",
+  "away": "PSV Eindhoven",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Slovan Bratislava",
+  "away": "Betis",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Como",
+  "away": "AEK Atheny",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Arsenal",
+  "away": "Dortmund",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Newcastle Jets",
+  "away": "Kashiwa",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Daejeon Citizen",
+  "away": "Beijing Guoan",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Kyoto",
+  "away": "Pohang",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Cong An",
+  "away": "Vissel Kobe",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Shanghai Port FC",
+  "away": "Buriram Utd.",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Ratchaburi",
+  "away": "Johor DT",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Shabab Al Ahli",
+  "away": "Al Qadisiyah",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Al Nassr",
+  "away": "Al Sadd",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Sabah",
+  "away": "Barcelona",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Inter Milano",
+  "away": "VFB Stuttgart",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Shakhtar Donetsk",
+  "away": "Fenerbahce",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Club Brugge",
+  "away": "Liverpool",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "PSG",
+  "away": "AS Roma",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Atl.Madrid",
+  "away": "Viking",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Sporting CP",
+  "away": "Man.United",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Lille",
+  "away": "Bayern",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga mistrů",
+  "home": "Slavia Praha",
+  "away": "Villarreal",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Gamba Osaka",
+  "away": "Port FC",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Asie",
+  "home": "Kashima",
+  "away": "Jeonbuk",
+  "kod_ligy": null,
+  "chybi": []
+ }
+]
