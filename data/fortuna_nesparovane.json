@@ -1,142 +1,5 @@
 [
  {
-  "turnaj": "2. Anglie",
-  "home": "Wolverhampton",
-  "away": "Derby",
-  "kod_ligy": "E1",
-  "chybi": [
-   "Wolverhampton"
-  ]
- },
- {
-  "turnaj": "2. Anglie",
-  "home": "Norwich",
-  "away": "Q.P.R.",
-  "kod_ligy": "E1",
-  "chybi": [
-   "Q.P.R."
-  ]
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Galatasaray",
-  "away": "Aston Villa",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Bodo Glimt",
-  "away": "LASK",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Man.City",
-  "away": "Napoli",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Feyenoord",
-  "away": "FC Porto",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "RB Leipzig",
-  "away": "Lens",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Real Madrid",
-  "away": "PSV Eindhoven",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Slovan Bratislava",
-  "away": "Betis",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Como",
-  "away": "AEK Atheny",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga mistrů",
-  "home": "Arsenal",
-  "away": "Dortmund",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Newcastle Jets",
-  "away": "Kashiwa",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Daejeon Citizen",
-  "away": "Beijing Guoan",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Kyoto",
-  "away": "Pohang",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Cong An",
-  "away": "Vissel Kobe",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Shanghai Port FC",
-  "away": "Buriram Utd.",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Ratchaburi",
-  "away": "Johor DT",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Shabab Al Ahli",
-  "away": "Al Qadisiyah",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Al Nassr",
-  "away": "Al Sadd",
-  "kod_ligy": null,
-  "chybi": []
- },
- {
   "turnaj": "Liga mistrů",
   "home": "Sabah",
   "away": "Barcelona",
@@ -200,16 +63,254 @@
   "chybi": []
  },
  {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Gamba Osaka",
-  "away": "Port FC",
+  "turnaj": "Evropská liga",
+  "home": "St.Gilloise",
+  "away": "Lech Poznaň",
   "kod_ligy": null,
   "chybi": []
  },
  {
-  "turnaj": "Liga Mistrů - Asie",
-  "home": "Kashima",
-  "away": "Jeonbuk",
+  "turnaj": "Evropská liga",
+  "home": "Olympiakos",
+  "away": "AC Milan",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Ferencváros",
+  "away": "NK Celje",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Crystal Palace",
+  "away": "Real Sociedad",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "OFI Kreta",
+  "away": "Anderlecht",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Lyon",
+  "away": "Lilleström",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Sunderland",
+  "away": "Jag.Bialystok",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Salzburg",
+  "away": "Ararat Armenia",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Hoffenheim",
+  "away": "Sturm Graz",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Nijmegen",
+  "away": "Rennes",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Juventus",
+  "away": "Omonia Nicosia",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "SCU Torreense",
+  "away": "Celtic",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Celta Vigo",
+  "away": "Bournemouth",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Besiktas",
+  "away": "Hap.Beer Sheva",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Marseille",
+  "away": "Levski Sofia",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Dinamo Zagreb",
+  "away": "Leverkusen",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Sparta Praha",
+  "away": "AZ Alkmaar",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Evropská liga",
+  "home": "Plzeň",
+  "away": "SL Benfica",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Egnatia",
+  "away": "Lincoln Red",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Kauno Žalgiris",
+  "away": "Riga FC",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Ajax",
+  "away": "Thun",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "CSKA Sofia",
+  "away": "Trabzonspor",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Hajduk Split",
+  "away": "Truidense",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "SC Braga",
+  "away": "Kuopion PS",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Nordsjaeland",
+  "away": "Panathinaikos",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Gent",
+  "away": "CZ Beograd",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Freiburg",
+  "away": "Twente Enschede",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Inter Escaldes",
+  "away": "FC Kodaň",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Borac Banja Luka",
+  "away": "Atalanta",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Kairat Almaty",
+  "away": "Mjällby",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Iberia 1999",
+  "away": "Getafe",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Brighton",
+  "away": "Univ.Craiova",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "SK Brann",
+  "away": "AGF Aarhus",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Hearts",
+  "away": "Monaco",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Jablonec",
+  "away": "Lugano",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Konferenční liga",
+  "home": "Pafos",
+  "away": "Midtjylland",
   "kod_ligy": null,
   "chybi": []
  }
