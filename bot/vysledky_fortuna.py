@@ -8,6 +8,7 @@ Pravidla slušnosti stejná jako u nabídky: poctivý User-Agent, pauzy, při 40
 import datetime
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor
 import unicodedata
 from zoneinfo import ZoneInfo
 
@@ -71,7 +72,7 @@ def _skore(data):
 
 def doplnit_detail(zapasy, log=print, klient=None, max_zapasu=300):
     """U zápasů, které Fortuna ukazuje jen přehledově, stáhne detail se VŠEMI trhy (hráči, over/under, rohy...): fixture/<id>?date=&markets=true."""
-    k = klient or fortuna.Klient(pauza=0.3)
+    k = klient or fortuna.Klient(pauza=0.15)
     ok = 0
     try:
         for z in [x for x in zapasy if x.get("id") and not x.get("detail")][:max_zapasu]:
@@ -102,6 +103,9 @@ def _zapas(fx, trhy_podle, tur, sport):
             "h": sk.get("homeScore"), "a": sk.get("awayScore"), "trhy": trhy}
 
 
+VLAKNA = 4
+
+
 def stahni(dny, sporty, log=print, klient=None):
     """Zápasy s výsledky pro dané dny (YYYY-MM-DD, pražský den začátku) a sporty (názvy jako v nabídce). -> [zápas]."""
     k = klient or fortuna.Klient(pauza=0.3)
@@ -130,18 +134,21 @@ def stahni(dny, sporty, log=print, klient=None):
                     except fortuna.FortunaChyba as e:
                         log(f"   ⚠️ Výsledky Fortuny {d} {sp.get('name')}: {e}")
                         continue
-                    for t in tt:
+                    def turnaj(t, d=d, sp=sp):
                         try:
                             data = k.get(f"{ZAKLAD}/tournament/{t['id']}/matches?date={d}&overviewMarkets=true")
                         except fortuna.FortunaBlok:
                             raise
                         except fortuna.FortunaChyba as e:
                             log(f"   ⚠️ Výsledky Fortuny {d} {t.get('name')}: {e}")
-                            continue
+                            return []
                         podle = {}
                         for m in data.get("markets") or []:
                             podle.setdefault(m.get("fixtureId"), []).append(m)
-                        zap += [_zapas(fx, podle, t.get("name"), sp.get("name")) for fx in data.get("fixtures") or []]
+                        return [_zapas(fx, podle, t.get("name"), sp.get("name")) for fx in data.get("fixtures") or []]
+                    with ThreadPoolExecutor(VLAKNA) as ex:                # turnaje jednoho sportu a dne se stahují souběžně (klient drží společný rozestup požadavků)
+                        for casti in ex.map(turnaj, tt):
+                            zap += casti
                     _CACHE[klic] = zap
                 out += _CACHE[klic]
     except fortuna.FortunaBlok as e:
