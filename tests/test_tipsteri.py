@@ -935,3 +935,11 @@ def test_stare_sazky_se_dohledaji_podle_id_bez_seznamu_dne(monkeypatch, tmp_path
              "zdroj": "trh", "skupina": "vyber", "vysledek": "", "duvod": ""}]
     assert vyhodnoceni.vyhodnot_radky(rows, datetime.datetime(2026, 11, 20, 6, tzinfo=datetime.timezone.utc), log=lambda m: None) == 1
     assert rows[0]["vysledek"] == "1" and not any("/sports?" in d for d in dotazy)
+
+
+def test_vysledky_fortuna_vice_linii_pod_jednim_nazvem():
+    from bot import vysledky_fortuna as vf
+    m = [{"name": "Počet střel v zápasu", "outcomes": [{"name": "Více než 25.5", "result": "WINNING"}, {"name": "Méně než 25.5", "result": "LOSING"}]},
+         {"name": "Počet střel v zápasu", "outcomes": [{"name": "Více než 36.5", "result": "WINNING"}, {"name": "Méně než 36.5", "result": "LOSING"}]}]
+    t = vf._trhy(m)["pocet strel v zapase"] if "pocet strel v zapase" in vf._trhy(m) else list(vf._trhy(m).values())[0]
+    assert len(vf._trhy(m)) == 1 and len(t) == 4

@@ -40,8 +40,8 @@ def _trhy(markets):
             for jm in (o.get("name"), o.get("longName")):
                 if jm:
                     vyst[_n(jm)] = res
-        if vyst:
-            trhy[_n(m.get("name"))] = vyst
+        if vyst:                                                       # pod jedním názvem je víc linií (25.5, 30.5...): sloučit, ne přepsat
+            trhy.setdefault(_n(m.get("name")), {}).update(vyst)
     return trhy
 
 
