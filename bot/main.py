@@ -574,6 +574,12 @@ def main(argv):
         api, cfg = OddsApi(config.env("ODDS_API_KEY")), config.nacti_cfg()
         nove = vyhodnot(api, cfg, _nyni())
         _log(f"Vyhodnoceno {len(nove)} řádků. {souhrn_vcera(nove)}")
+    elif cmd == "doplnit_vysledky":                       # jen vyhodnocení (bez nabídky a reportu): papírové sázky a učící příležitosti zpětně
+        from . import ucici, vyhodnoceni
+        ted = _nyni()
+        vyhodnoceni.vyhodnot(ted, log=_log)
+        _log(f"🧠 Papírové tipy (učení): vyhodnoceno {ucici.vyhodnot(ted, log=_log)}")
+        ucici.uloz_kalibraci(log=_log)
     elif cmd == "resend":
         resend()
     elif cmd == "sports":
