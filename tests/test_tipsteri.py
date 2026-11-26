@@ -957,3 +957,28 @@ def test_poslat_wa_odesle_odlozenou_zpravu(tmp_path, monkeypatch):
     (tmp_path / "wa_cekajici.txt").write_text("ahoj", encoding="utf-8")
     main.poslat_wa_po_zverejneni(cekani_s=1, krok_s=1)
     assert poslano == ["ahoj"] and not (tmp_path / "wa_cekajici.txt").exists()
+
+
+def test_db_postavi_a_pohledy_pocitaji(tmp_path, monkeypatch):
+    import gzip, json, sqlite3
+    from bot import config, db
+    (tmp_path / "ucici").mkdir()
+    (tmp_path / "vysledky").mkdir()
+    (tmp_path / "hist").mkdir()
+    nab = [{"id": "ufo:mtch:1", "nazev": "A - B", "home": "A", "away": "B", "start": "2026-11-26T17:45:00+00:00", "sport": "fotbal", "turnaj": "L", "turnaj_id": "t", "kategorie": "k",
+            "trhy": [{"nazev": "Počet gólů v zápasu 2.5", "typ": "Počet gólů", "vysledky": [{"nazev": "Více než 2.5", "kurz": 1.9}, {"nazev": "Méně než 2.5", "kurz": 1.9}]}],
+            "nohy": [{"trh": "goly", "linie": 2.5, "strana": "over", "kurz": 1.9}]}]
+    (tmp_path / "fortuna_nabidka_2026-11-26.json").write_text(json.dumps(nab), encoding="utf-8")
+    with gzip.open(tmp_path / "ucici" / "2026-11-26.csv.gz", "wt", encoding="utf-8") as f:
+        f.write("id,datum,sport,liga,zapas,start,trh,vyber,kurz,p,zdroj,skupina,vysledek,duvod,sazej_od,duvera\n"
+                "x1,2026-11-26,fotbal,L,A - B,2026-11-26T18:45,t,Více než 2.5,2.0,0.5,trh,ucici,1,,,\n"
+                "x2,2026-11-26,fotbal,L,A - B,2026-11-26T18:45,t,Méně než 2.5,2.0,0.5,trh,ucici,0,,,\n"
+                "x3,2026-11-26,fotbal,L,A - B,2026-11-26T18:45,t,Více než 3.5,4.0,0.25,trh,ucici,,,,\n")
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    p = db.postav(tmp_path / "t.sqlite", log=lambda *a: None)
+    c = sqlite3.connect(tmp_path / "t.sqlite")
+    assert p["nabidka"] == 2 and p["prilezitosti"] == 3
+    assert c.execute("select count(*) from v_nabidka").fetchone()[0] == 2
+    assert c.execute("select zapas_id from prilezitosti limit 1").fetchone()[0] == "ufo:mtch:1"
+    assert c.execute("select n, roi_plochy_vklad from v_kalibrace_sport_kurz").fetchone() == (2, 0.0)
+    assert c.execute("select sum(n) from v_nevyhodnocene").fetchone()[0] == 1

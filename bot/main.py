@@ -613,6 +613,10 @@ def main(argv):
         ucici.uloz_kalibraci(log=_log)
     elif cmd == "poslat_wa":
         poslat_wa_po_zverejneni()
+    elif cmd == "postavit_db":
+        from pathlib import Path
+        from . import db
+        db.postav(Path(argv[2]) if len(argv) > 2 and argv[2] else None, log=_log)
     elif cmd == "resend":
         resend()
     elif cmd == "sports":
