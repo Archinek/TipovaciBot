@@ -943,3 +943,17 @@ def test_vysledky_fortuna_vice_linii_pod_jednim_nazvem():
          {"name": "Počet střel v zápasu", "outcomes": [{"name": "Více než 36.5", "result": "WINNING"}, {"name": "Méně než 36.5", "result": "LOSING"}]}]
     t = vf._trhy(m)["pocet strel v zapase"] if "pocet strel v zapase" in vf._trhy(m) else list(vf._trhy(m).values())[0]
     assert len(vf._trhy(m)) == 1 and len(t) == 4
+
+
+def test_poslat_wa_odesle_odlozenou_zpravu(tmp_path, monkeypatch):
+    from bot import main, config, report
+    monkeypatch.setattr(config, "nacti_cfg", lambda: {"nastaveni": {"zona": "Europe/Prague"}})
+    monkeypatch.setattr(config, "ROOT", tmp_path)
+    monkeypatch.delenv("PAGES_URL", raising=False)
+    poslano = []
+    monkeypatch.setattr(report, "posli_wa", lambda t: poslano.append(t))
+    main.poslat_wa_po_zverejneni(cekani_s=1, krok_s=1)            # bez souboru se nic neodešle
+    assert poslano == []
+    (tmp_path / "wa_cekajici.txt").write_text("ahoj", encoding="utf-8")
+    main.poslat_wa_po_zverejneni(cekani_s=1, krok_s=1)
+    assert poslano == ["ahoj"] and not (tmp_path / "wa_cekajici.txt").exists()

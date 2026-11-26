@@ -494,7 +494,11 @@ def morning(api=None, veto_fn=None, wa_fn=None, ted=None, force=False):
         ensure_ascii=False, indent=2), encoding="utf-8")
 
     text = report.wa_ranni(datum, picks, vcera, config.pages_reports_url(), nast["zona"], dopl=dopl, fort=fort, log_text=log_text, univ=univ, tik=tik, jist=jist)
-    wa_fn(text)
+    if config.env("ODLOZIT_WA") == "1":                              # workflow pošle zprávu až po uložení dat a zveřejnění reportu (příkaz poslat_wa)
+        (config.ROOT / "wa_cekajici.txt").write_text(text, encoding="utf-8")
+        _log("📨 WhatsApp zpráva odložena: odešle se po zveřejnění reportu.")
+    else:
+        wa_fn(text)
     return {"picks": picks, "vyrazene": vyrazene, "celkem": celkem}
 
 
@@ -526,6 +530,33 @@ def sestav_vystupy(datum, picks, vyrazene, vcera, rows, cfg, nast, dopl=None, ka
 
 
 # ------------------------------------------------------------ ostatní příkazy
+def poslat_wa_po_zverejneni(cekani_s=600, krok_s=20):
+    """Odešle odloženou ranní zprávu, až je report na Pages dostupný (jinak odkaz vede na 404). Po vypršení čekání pošle zprávu stejně."""
+    import urllib.request
+    f = config.ROOT / "wa_cekajici.txt"
+    if not f.exists():
+        _log("📨 Není co odesílat.")
+        return
+    text = f.read_text(encoding="utf-8")
+    datum = _nyni().astimezone(ZoneInfo(config.nacti_cfg()["nastaveni"]["zona"])).strftime("%Y-%m-%d")
+    zaklad = config.pages_reports_url()
+    url = f"{zaklad}/{datum}.html" if zaklad else ""
+    zacatek = time.time()
+    while url and time.time() - zacatek < cekani_s:
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"{url}?c={int(time.time())}", headers={"User-Agent": "tipovacibot"}), timeout=20) as r:
+                if r.status == 200:
+                    _log(f"📨 Report je zveřejněný ({int(time.time() - zacatek)} s).")
+                    break
+        except Exception:
+            pass
+        time.sleep(krok_s)
+    else:
+        _log("⚠️ Report se na Pages do limitu neobjevil, zpráva se odesílá i tak.")
+    report.posli_wa(text)
+    f.unlink()
+
+
 def resend():
     cfg = config.nacti_cfg()
     nast = cfg["nastaveni"]
@@ -580,6 +611,8 @@ def main(argv):
         vyhodnoceni.vyhodnot(ted, log=_log)
         _log(f"🧠 Papírové tipy (učení): vyhodnoceno {ucici.vyhodnot(ted, log=_log)}")
         ucici.uloz_kalibraci(log=_log)
+    elif cmd == "poslat_wa":
+        poslat_wa_po_zverejneni()
     elif cmd == "resend":
         resend()
     elif cmd == "sports":

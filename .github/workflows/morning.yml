@@ -58,6 +58,7 @@ jobs:
           AKCE: ${{ github.event.inputs.akce || 'morning' }}
           ARGS: ${{ github.event.inputs.args }}
           FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+          ODLOZIT_WA: "1"
         run: python -m bot.main "$AKCE" "$ARGS"
       - name: Report ke stažení (záloha, kdyby nešly GitHub Pages)
         if: always()
@@ -78,3 +79,12 @@ jobs:
             git pull --rebase -X theirs
             git push
           fi
+      - name: Počkat na zveřejnění reportu a odeslat WhatsApp
+        env:
+          WA_INSTANCE_ID: ${{ secrets.WA_INSTANCE_ID }}
+          WA_API_TOKEN: ${{ secrets.WA_API_TOKEN }}
+          WA_GROUP_ID: ${{ secrets.WA_GROUP_ID }}
+          WA_API_URL: ${{ vars.WA_API_URL }}
+          PAGES_URL: ${{ vars.PAGES_URL }}
+          TZ: Europe/Prague
+        run: python -m bot.main poslat_wa
