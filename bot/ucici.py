@@ -104,7 +104,7 @@ def zaloguj(datum, zapasy, ted, okno_h=36, log=print, cfg=None):
     return nove
 
 
-def vyhodnot(ted, log=print, dni=4):
+def vyhodnot(ted, log=print, dni=14):
     """Vyhodnotí nevyhodnocené sázky ze souborů posledních `dni` dní (čas začátku zápasu je v řádku)."""
     celkem = 0
     for dd in range(0, dni + 1):

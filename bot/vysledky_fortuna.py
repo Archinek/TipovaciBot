@@ -70,29 +70,37 @@ def _skore(data):
     return None
 
 
-def doplnit_detail(zapasy, log=print, klient=None, max_zapasu=300):
-    """U zápasů, které Fortuna ukazuje jen přehledově, stáhne detail se VŠEMI trhy (hráči, over/under, rohy...): fixture/<id>?date=&markets=true."""
+def doplnit_detail(zapasy, log=print, klient=None, max_zapasu=1500):
+    """U zápasů, které Fortuna ukazuje jen přehledově, stáhne detail se VŠEMI trhy (hráči, over/under, rohy, střely...): fixture/<id>?date=&markets=true.
+    Stahuje souběžně (klient drží společný rozestup požadavků); výpadek jednoho zápasu ostatní nezastaví, blokace (403/429) stahování ukončí."""
     k = klient or fortuna.Klient(pauza=0.15)
-    ok = 0
-    try:
-        for z in [x for x in zapasy if x.get("id") and not x.get("detail")][:max_zapasu]:
-            d = datetime.datetime.fromtimestamp((z.get("start_ms") or 0) / 1000, ZoneInfo("Europe/Prague")).date().isoformat()
-            try:
-                data = k.get(f"{ZAKLAD}/fixture/{z['id']}?date={d}&markets=true")
-            except fortuna.FortunaBlok:
-                raise
-            except fortuna.FortunaChyba as e:
-                log(f"   ⚠️ Detail zápasu {z['name']}: {e}")
-                z["detail"] = True
-                continue
-            z["trhy"].update(_trhy(_najdi_trhy(data)))
-            sk = _skore(data) or {}
-            if z.get("h") is None and sk:
-                z["h"], z["a"] = sk.get("homeScore"), sk.get("awayScore")
+    seznam = [x for x in zapasy if x.get("id") and not x.get("detail")][:max_zapasu]
+    blok = []
+
+    def jeden(z):
+        if blok:
+            return 0
+        d = datetime.datetime.fromtimestamp((z.get("start_ms") or 0) / 1000, ZoneInfo("Europe/Prague")).date().isoformat()
+        try:
+            data = k.get(f"{ZAKLAD}/fixture/{z['id']}?date={d}&markets=true")
+        except fortuna.FortunaBlok as e:
+            blok.append(e)
+            return 0
+        except fortuna.FortunaChyba as e:
+            log(f"   ⚠️ Detail zápasu {z['name']}: {e}")
             z["detail"] = True
-            ok += 1
-    except fortuna.FortunaBlok as e:
-        log(f"   ⛔ {e}")
+            return 0
+        z["trhy"].update(_trhy(_najdi_trhy(data)))
+        sk = _skore(data) or {}
+        if z.get("h") is None and sk:
+            z["h"], z["a"] = sk.get("homeScore"), sk.get("awayScore")
+        z["detail"] = True
+        return 1
+
+    with ThreadPoolExecutor(VLAKNA) as ex:
+        ok = sum(ex.map(jeden, seznam))
+    if blok:
+        log(f"   ⛔ {blok[0]}")
     return ok
 
 
