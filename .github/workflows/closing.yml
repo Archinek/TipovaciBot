@@ -34,6 +34,6 @@ jobs:
           git add data
           if ! git diff --cached --quiet; then
             git commit -m "bot: closing $(date -u +%FT%H:%M)"
-            git pull --rebase
+            git pull --rebase -X theirs
             git push
           fi
