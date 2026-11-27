@@ -542,17 +542,22 @@ def poslat_wa_po_zverejneni(cekani_s=600, krok_s=20):
     zaklad = config.pages_reports_url()
     url = f"{zaklad}/{datum}.html" if zaklad else ""
     zacatek = time.time()
+    posledni = ""
+    ok = False
+    _log(f"📨 Čekám na zveřejnění: {url}")
     while url and time.time() - zacatek < cekani_s:
         try:
-            with urllib.request.urlopen(urllib.request.Request(f"{url}?c={int(time.time())}", headers={"User-Agent": "tipovacibot"}), timeout=20) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 tipovacibot", "Cache-Control": "no-cache"}), timeout=20) as r:
+                posledni = f"HTTP {r.status}"
                 if r.status == 200:
+                    ok = True
                     _log(f"📨 Report je zveřejněný ({int(time.time() - zacatek)} s).")
                     break
-        except Exception:
-            pass
+        except Exception as e:
+            posledni = f"{type(e).__name__}: {e}"
         time.sleep(krok_s)
-    else:
-        _log("⚠️ Report se na Pages do limitu neobjevil, zpráva se odesílá i tak.")
+    if not ok:
+        _log(f"⚠️ Report se na Pages do limitu neobjevil (poslední odpověď: {posledni or 'žádná'}), zpráva se odesílá i tak.")
     report.posli_wa(text)
     f.unlink()
 
