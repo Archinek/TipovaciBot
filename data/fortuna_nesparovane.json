@@ -1,1 +1,212 @@
-[]
+[
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "RSB Berkane",
+  "away": "Colombe Lobo",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "Zamalek SC",
+  "away": "Club Africain",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "Young Africans",
+  "away": "MC Alger",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "Esperance Tunis",
+  "away": "Wiliet",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "Pyramids",
+  "away": "Maghreb Fes",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "2. Anglie",
+  "home": "Q.P.R.",
+  "away": "Sheffield United",
+  "kod_ligy": "E1",
+  "chybi": [
+   "Q.P.R."
+  ]
+ },
+ {
+  "turnaj": "2. Anglie",
+  "home": "Lincoln",
+  "away": "Wolverhampton",
+  "kod_ligy": "E1",
+  "chybi": [
+   "Wolverhampton"
+  ]
+ },
+ {
+  "turnaj": "1. Řecko",
+  "home": "Volos FC",
+  "away": "Asteras Tripolis",
+  "kod_ligy": "G1",
+  "chybi": [
+   "Volos FC"
+  ]
+ },
+ {
+  "turnaj": "1. Německo",
+  "home": "Hamburger SV",
+  "away": "Bayern",
+  "kod_ligy": "D1",
+  "chybi": [
+   "Bayern"
+  ]
+ },
+ {
+  "turnaj": "1. Německo",
+  "home": "VFB Stuttgart",
+  "away": "Frankfurt",
+  "kod_ligy": "D1",
+  "chybi": [
+   "Frankfurt"
+  ]
+ },
+ {
+  "turnaj": "1. Španělsko",
+  "home": "Málaga",
+  "away": "Bilbao",
+  "kod_ligy": "SP1",
+  "chybi": [
+   "Bilbao"
+  ]
+ },
+ {
+  "turnaj": "1. Francie",
+  "home": "PSG",
+  "away": "Lorient",
+  "kod_ligy": "F1",
+  "chybi": [
+   "PSG"
+  ]
+ },
+ {
+  "turnaj": "2. Německo",
+  "home": "Kiel",
+  "away": "K lautern",
+  "kod_ligy": "D2",
+  "chybi": [
+   "Kiel",
+   "K lautern"
+  ]
+ },
+ {
+  "turnaj": "1. Turecko",
+  "home": "Gaziantep FK",
+  "away": "Amed SK",
+  "kod_ligy": "T1",
+  "chybi": [
+   "Amed SK"
+  ]
+ },
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "Al Hilal Omdurman",
+  "away": "Horoya",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "Simba SC",
+  "away": "Orlando Pirates",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "Liga Mistrů - Afrika",
+  "home": "Petro de Luanda",
+  "away": "Nouadhibou",
+  "kod_ligy": null,
+  "chybi": []
+ },
+ {
+  "turnaj": "1. Portugalsko",
+  "home": "FC Porto",
+  "away": "Sporting CP",
+  "kod_ligy": "P1",
+  "chybi": [
+   "Sporting CP"
+  ]
+ },
+ {
+  "turnaj": "1. Řecko",
+  "home": "OFI Kreta",
+  "away": "APO Levadiakos",
+  "kod_ligy": "G1",
+  "chybi": [
+   "OFI Kreta"
+  ]
+ },
+ {
+  "turnaj": "1. Belgie",
+  "home": "Truidense",
+  "away": "Genk",
+  "kod_ligy": "B1",
+  "chybi": [
+   "Truidense"
+  ]
+ },
+ {
+  "turnaj": "1. Belgie",
+  "home": "St.Liege",
+  "away": "Club Brugge",
+  "kod_ligy": "B1",
+  "chybi": [
+   "St.Liege"
+  ]
+ },
+ {
+  "turnaj": "1. Nizozemsko",
+  "home": "Sittard",
+  "away": "Heerenveen",
+  "kod_ligy": "N1",
+  "chybi": [
+   "Sittard"
+  ]
+ },
+ {
+  "turnaj": "2. Německo",
+  "home": "Fürth",
+  "away": "Bielefeld",
+  "kod_ligy": "D2",
+  "chybi": [
+   "Fürth"
+  ]
+ },
+ {
+  "turnaj": "1. Turecko",
+  "home": "Eyupspor",
+  "away": "Istanbul Basaksehir",
+  "kod_ligy": "T1",
+  "chybi": [
+   "Istanbul Basaksehir"
+  ]
+ },
+ {
+  "turnaj": "2. Španělsko",
+  "home": "Almeria",
+  "away": "Sporting Gijón",
+  "kod_ligy": "SP2",
+  "chybi": [
+   "Sporting Gijón"
+  ]
+ }
+]
