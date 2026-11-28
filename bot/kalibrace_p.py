@@ -13,6 +13,8 @@ from . import config
 
 MIN_PARU = 5000        # dvoucestných zápasů-trhů ve sportu
 HOLDOUT_PODIL = 0.3    # poslední část dnů slouží jen k ověření
+MIN_ZLEPSENI = 0.0002   # holdout log-loss se musí zlepšit aspoň o tolik (jinak jde o šum)
+MIN_ODCHYLKA_B = 0.02   # a sklon se musí od 1 lišit aspoň o tolik
 MAX_POSUN = 0.03       # oprava nikdy nezmění p o víc než 3 procentní body
 
 
@@ -83,7 +85,7 @@ def odhad(rows):
         if len(tr) >= MIN_PARU and len(te) >= MIN_PARU // 2:
             a, b = _fit(tr)
             zaznam.update(ll_pred=round(_ll(te, 0, 1), 5), ll_po=round(_ll(te, a, b), 5))
-            zaznam["pouzit"] = zaznam["ll_po"] < zaznam["ll_pred"]
+            zaznam["pouzit"] = zaznam["ll_pred"] - zaznam["ll_po"] >= MIN_ZLEPSENI and abs(b - 1) >= MIN_ODCHYLKA_B
         a, b = _fit(x)
         zaznam.update(a=round(a, 4), b=round(b, 4))
         vys[sport] = zaznam

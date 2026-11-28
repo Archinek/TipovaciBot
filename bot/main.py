@@ -540,7 +540,7 @@ def poslat_wa_po_zverejneni(cekani_s=600, krok_s=20):
     text = f.read_text(encoding="utf-8")
     datum = _nyni().astimezone(ZoneInfo(config.nacti_cfg()["nastaveni"]["zona"])).strftime("%Y-%m-%d")
     zaklad = config.pages_reports_url()
-    url = f"{zaklad}/{datum}.html" if zaklad else ""
+    url = f"{zaklad}/reports/{datum}.html" if zaklad else ""
     zacatek = time.time()
     posledni = ""
     ok = False
