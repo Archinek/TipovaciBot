@@ -982,3 +982,22 @@ def test_db_postavi_a_pohledy_pocitaji(tmp_path, monkeypatch):
     assert c.execute("select zapas_id from prilezitosti limit 1").fetchone()[0] == "ufo:mtch:1"
     assert c.execute("select n, roi_plochy_vklad from v_kalibrace_sport_kurz").fetchone() == (2, 0.0)
     assert c.execute("select sum(n) from v_nevyhodnocene").fetchone()[0] == 1
+
+
+def test_kalibrace_p_pouzije_jen_overenou(tmp_path, monkeypatch):
+    import random
+    from bot import config, kalibrace_p
+    monkeypatch.setattr(config, "DATA", tmp_path)
+    kalibrace_p._CACHE.clear()
+    random.seed(1)
+    rows = []
+    for d in range(10):
+        for i in range(1500):
+            p = random.uniform(0.2, 0.8)
+            skut = random.random() < (0.5 + (p - 0.5) * 0.8)          # trh je příliš krajní -> oprava má pomoci
+            for vyb, pp, y in (("A", p, skut), ("B", 1 - p, not skut)):
+                rows.append({"datum": f"2026-11-{10 + d}", "zapas": f"z{d}-{i}", "trh": "t", "sport": "hokej", "vyber": vyb, "p": str(pp), "vysledek": "1" if y else "0"})
+    v = kalibrace_p.uloz(rows, log=lambda *a: None)
+    assert v["hokej"]["pouzit"] and v["hokej"]["b"] < 0.9
+    kalibrace_p._CACHE.clear()
+    assert kalibrace_p.oprav(0.8, "hokej") < 0.8 and kalibrace_p.oprav(0.8, "fotbal") == 0.8

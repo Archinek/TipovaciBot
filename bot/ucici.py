@@ -156,4 +156,9 @@ def uloz_kalibraci(log=print):
     (config.DATA / "kalibrace_trhu.json").write_text(json.dumps(k, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     n = sum(v["n"] for kk, v in k.items() if kk.endswith("|vše"))
     log(f"   kalibrace trhu: {n} vyhodnocených papírových sázek, {len(k)} řádků tabulky")
+    try:
+        from . import kalibrace_p
+        kalibrace_p.uloz(vsechny_radky(), log=log)
+    except Exception as e:                                   # kalibrace p je doplněk, nesmí shodit běh
+        log(f"   ⚠️ kalibrace p se nepodařila: {e}")
     return k

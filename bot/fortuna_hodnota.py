@@ -12,7 +12,7 @@ import math
 from collections import defaultdict
 from difflib import SequenceMatcher
 
-from . import config, doplnkove as dp, engine, histdata
+from . import config, doplnkove as dp, engine, histdata, kalibrace_p
 from .fortuna import klic_nohy, kod_ligy
 
 
@@ -214,7 +214,7 @@ def vyhodnot(zapasy, cfg, ted, log=print, nacti_model=None):
                     continue
                 opak = strany.get(_protistrana(st))
                 if opak:                                   # férová p. samotného trhu (dvoucestný)
-                    ptrh = engine.no_vig_power([n["kurz"], opak["kurz"]])[0]
+                    ptrh = kalibrace_p.oprav(engine.no_vig_power([n["kurz"], opak["kurz"]])[0], "fotbal")
                     if abs(pm - ptrh) > max_rozchod:
                         continue                           # model se s trhem rozchází příliš -> něco model neví
                     p = w * pm + (1 - w) * ptrh
@@ -365,7 +365,7 @@ def vyhodnot_tenis(zapasy, cfg, ted, log=print, nacti_data=None):
             kmin, kmax = pasmo(fh, "esa" if n["trh"].startswith("esa") else "df", kmin0, kmax0)
             if not (kmin <= n["kurz"] <= kmax):
                 continue
-            ptrh = engine.no_vig_power([n["kurz"], opak["kurz"]] + ([opak["_tie"]] if opak.get("_tie") else []))[0]
+            ptrh = kalibrace_p.oprav(engine.no_vig_power([n["kurz"], opak["kurz"]] + ([opak["_tie"]] if opak.get("_tie") else []))[0], "tenis")
             if abs(pm - ptrh) > max_rozchod:
                 continue
             p = w * pm + (1 - w) * ptrh
